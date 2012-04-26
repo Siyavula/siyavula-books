@@ -1,0 +1,34 @@
+___________________________________
+
+                The
+          ChemFig package
+               v1.0a
+
+            2011/09/18
+___________________________________
+
+Maintainer: Christian Tellechea
+E-mail    : unbonpetit@gmail.com
+            Comments, bug reports and suggestions are welcome.
+Licence   : Released under the LaTeX Project Public License v1.3c or
+            later, see http://www.latex-project.org/lppl.txt
+
+----------------------------------------------------------------------
+
+This package provides the \chemfig{<code>} command which draws the 2D
+representation of a chemical molecule. The <code> describes the
+drawing using an easy, flexible and intuitive syntax.
+
+The drawing is made with the tikz package. Therefore, Chemfig works
+in dvi or pdf mode.
+
+----------------------------------------------------------------------
+
+Cette extension fournit la commande \chemfig{<code>} qui dessine la
+repr\'esentation en 2D d'une mol\'ecule chimique. Le <code> d\'ecrit
+le dessin selon une syntaxe simple, souple et intuitive.
+
+Le dessin est fait avec l'extension tikz. ChemFig fonctionne donc en
+mode dvi ou pdf.
+
+                                                 Christian Tellechea
