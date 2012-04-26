@@ -1,0 +1,1893 @@
+         \chapter{Vektore en skalare}\fancyfoot[LO,RE]{Fisika: Meganika}\label{chap:vectors}
+    \setcounter{figure}{1}
+    \setcounter{subfigure}{1}
+    \label{59e414b70efc194a27a122db47d06ce6}
+         \section{Inleiding tot vektore en skalare}
+    \nopagebreak
+%            \label{m38812} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11305.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: P10091 )} \par 
+%     \label{m38812*cid2}
+%             \subsection*{Introduction}
+%             \nopagebreak
+%      \label{m38812*id186361}This chapter focuses on vectors. We will learn what is a vector and how it differs from everyday numbers. We will also learn how to add, subtract and multiply them and where they appear in Physics.\par 
+%      \label{m38812*id186366}Are vectors Physics? No, vectors themselves are not Physics. Physics is just a description of the world around us. To describe something we need to use a language. The most common language used to describe Physics is Mathematics. Vectors form a very important part of the mathematical description of Physics, so much so that it is
+%absolutely essential to master the use of vectors.\par 
+Ons kom op  'n daaglikse basis in kontak met fisiese hoeveelhede soos tyd, massa, gewig, krag en elektriese lading. Hierdie is fisiese hoeveelhede wat ons almal ken. Ons weet dat tyd verloop en dat fisiese voorwerpe massa het. Voorwerpe het gewig as gevolg van gravitasie. Ons oefen krag uit wanneer ons deure oopmaak, in die straat afstap of  'n bal skop. Ons ervaar elektriese lading wanneer ons in die winter  'n skok voel as gevolg van statiese elektrisiteit en deur enige iets wat ons gebruik wat elektrisiteit nodig het om te werk.
+
+Daar is baie fisiese hoeveelhede wat natuurlik voorkom. Ons verdeel hulle in twee basiese groepe: \textbf{vektore} en \textbf{skalare}.\\
+\chapterstartvideo{VPgao}
+
+\subsection*{Skalare en vektore}
+            \nopagebreak
+
+Skalare is fisiese hoeveelhede wat slegs  'n numeriese waarde of grootte het.  'n Skalaar s\^{e} vir jou \textbf{hoeveel} van iets daar is.  
+
+\Definition{Skalaar}{'n Skalaar is 'n fisiese hoeveelheid wat slegs grootte en 'n eenheid het.} 
+
+Byvoorbeeld:  'n Persoon koop  'n houer margarien wat gemerk is met  'n massa van 500 g. Die massa van die margarien houer is  'n skalare hoeveelheid. Dit het slegs een getal wat dit beskryf, in hierdie geval, 500 g. 
+
+Vektore is anders – hulle is fisiese hoeveelhede wat grootte en rigting het.  'n Vektor sê vir jou \textbf{hoeveel} van iets daar is \textbf{en} in \textbf{watter rigting} dit is.
+
+\Definition{Vektor} { 'n Vektor is  'n fisiese hoeveelheid wat beskryf word deur \textbf{grootte}, \textbf{eenheid} en \textbf{rigting}.}
+
+
+%      \label{m38812*id186720}In Mathematics, you learned that a number is something that represents a quantity. For example if you have 5 books, 6 apples and 1 bicycle, the 5, 6, and 1 represent how many of each item you have.\par 
+%      \label{m38812*id186725}These kinds of numbers are known as \textsl{scalars}.\par 
+
+%      \label{m38812*id186750}An extension to a scalar is a vector, which is a scalar with a direction. For example, if you travel 1 km down Main Road to school, the quantity \textbf{1 km down Main Road} is a vector. The ``\textbf{1 km}'' is the quantity (or scalar) and the ``\textbf{down Main Road}'' gives a direction.\par 
+%      \label{m38812*id186771}In Physics we use the word \textsl{magnitude} to refer to the scalar part of the vector.\par 
+ 
+%      \label{m38812*id186797}A vector should tell you \textbf{how much} and \textbf{which way}.\par 
+
+Byvoorbeeld:  'n Motor ry teen $100\phantom{\rule{2pt}{0ex}}\text{km}\ensuremath{\cdot}\text{h}{}^{-1}$ in  'n ooswaartse rigting op die snelweg. Hier het ons te make met  'n vektor – snelheid. Die motor beweeg teen $100\phantom{\rule{2pt}{0ex}}\text{km}\ensuremath{\cdot}\text{h}{}^{-1}$ (dit is die grootte) en ons weet waarheen dit gaan – die motor beweeg oos (dit is die rigting). Hierdie twee waardes, die spoed en die rigting van die motor ( 'n grootte en  'n rigting), vorm saam  'n vektor wat snelheid genoem word.
+
+\textbf{Voorbeelde van skalaarhoeveelhede:}
+\begin{itemize}
+\item \textbf{massa} het slegs grootte en 'n eenheid, nie rigting nie.
+\item \textbf{elektriese lading} het slegs grootte en 'n eenheid, nie rigting nie.
+\end{itemize}
+
+\textbf{Voorbeelde van vektorhoeveelhede:} 
+\begin{itemize}
+\item \textbf{krag} het grootte en rigting. Jy stoot of trek iets met  'n sekere krag (grootte) in  'n sekere rigting
+\item \textbf{gewig} het grootte en rigting. Jou gewig is proporsioneel (in dieselfde verhouding) tot jou massa (grootte) en is altyd in die rigting van die aarde se middelpunt.
+\end{itemize}
+
+\begin{exercises}{Vektore en skalare}
+Klassifiseer die volgende as vektore of skalare
+ \begin{enumerate}[noitemsep,label=\textbf{\arabic*}.]
+\item lengte
+\item krag
+\item rigting
+\item hoogte
+\item tyd
+\item spoed
+\item temperatuur
+ \end{enumerate}
+\par \practiceinfo
+ \par \begin{tabular}[h]{cccccc}
+ (1.) 02vk   \end{tabular}
+\end{exercises}
+
+    \label{m38812*cid4}
+      \label{m38812*uid1}
+\subsection*{Vektornotasie}
+            \nopagebreak
+Vektore verskil van skalare en moet daarom hulle eie notasie hê. Daar is verskillende maniere om die simbool vir vektore neer te skryf. In hierdie boek word vektore aangedui deur die simbool met  'n pyltjie wat na regs wys bo die simbool. So byvoorbeeld word krag, gewig en snelheid soos volg voorgestel: $\stackrel{\to }{F}$, $\stackrel{\to }{W}$ en $\stackrel{\to }{v}$. Dit beteken dat hulle beide \textbf{grootte} en \textbf{rigting} het.
+
+Somtyds word net die grootte van die vektor benodig. In di\'e geval word die pyltjie weggelaat. In die geval van die kragvektor:
+\begin{itemize}
+\item  $\stackrel{\to }{F}$ stel die kragvektor voor 
+\item $F$ stel die grootte van die kragvektor voor 
+\end{itemize}
+
+
+      \label{m38812*uid2}
+
+\section*{Grafiese voorstelling van vektore}
+            \nopagebreak
+Vektore word as reguit lyne met pylpunte voorgestel. So  'n pyl het beide grootte (hoe lank dit is) en rigting (die rigting waarheen dit wys). Die beginpunt van  'n vektor word die stert genoem en die eindpunt word die kop genoem.\\
+\mindsetvid{Graphing vectors}{VPgdw} 
+    \setcounter{subfigure}{0}
+% \begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(0,-1)(5,1)
+%\psgrid[gridcolor=lightgray]
+\SpecialCoor
+\psline{->}(0,0)({1.5;0})\psdot(0,0)
+\rput(2.5,0){\psdot(0,0)\psline{->}(0,0)({2;25})}
+\rput(3,0){\psdot(0,0)\psline{->}(0,0)({2;345})}
+\psline{->}(1.8,0.8)(1.8,-0.8)\psdot(1.8,0.8)
+\end{pspicture}
+\end{center}
+\caption{Voorbeelde van vektore}
+\end{figure}
+% \end{minipage}
+% \begin{minipage}{0.5\textwidth}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(0,-0.6)(5,0.6)
+%\psgrid[gridcolor=lightgray]
+\psline{->}(0,0)(5,0)
+\pcline[offset=8pt]{|-|}(0,0)(5,0)
+\lput*{:U}{magnitude}
+\psdot(0,0)
+\uput[d](0,0){tail}
+\uput[d](5,0){head}
+\end{pspicture}
+\end{center}
+\caption{Dele van 'n vektor}
+\end{figure}
+% \end{minipage}       
+    \label{m38812*cid5}
+
+\subsection*{Rigting}
+            \nopagebreak
+Daar is verskillende aanvaarbare maniere om vektore uit te druk. Solank die vektor grootte en rigting het, is dit oor die algemeen aanvaarbaar. Die verskillende maniere van vektore uitdruk kom van die verskillende maniere om rigting aan te dui.
+      \label{m38812*uid5}
+            \subsubsection*{Relatiewe rigting}
+            \nopagebreak
+Die eenvoudigste manier om rigting aan te dui is met relatiewe rigtings: na regs, na links, vorentoe, agtertoe, op en af.
+      \label{m38812*uid6}
+            \subsubsection*{Kompasrigting}
+            \nopagebreak
+Nog  'n algemene manier om rigting uit te druk is deur die punte van  'n kompas te gebruik: Noord, Suid, Oos en Wes. As  'n vektor nie presies na een van die windrigtings wys nie, gebruik ons  'n hoek. So byvoorbeeld kan ons  'n vektor h\^{e} wat $40{}^{\circ }$ Noord van Wes wys. Begin by die vektor wat na Wes wys (kyk na die stippel pyl hieronder), roteer dan die vektor noordwaarts totdat daar  'n $40{}^{\circ }$ hoek tussen die vektor en Wes is (die soliede pyl hieronder). Die rigting van hierdie vektor kan as: W $40{}^{\circ }$ N (Wes $40{}^{\circ }$ Noord); of N $50{}^{\circ }$ W (Noord $50{}^{\circ }$ Wes) beskryf word.\\ \\
+    \setcounter{subfigure}{0}
+\begin{minipage}{.5\textwidth}
+\begin{center}
+% \begin{pspicture}(-1.2,-1.4)(1.2,1.4)
+% \pscompass
+% \end{pspicture}
+\includegraphics[width=.4\textwidth]{photos/ecastro.jpg}
+\end{center}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+%\begin{center}
+%\begin{pspicture}(-2,-0.2)(2,0.2)
+%\psgrid[gridcolor=lightgray]
+%\psline{->}(1.5,0)(-1.5,0)
+%\end{pspicture}
+%\end{center}
+\begin{center}
+\begin{pspicture}(-1.5,-1)(1,1)
+%\psgrid[gridcolor=lightgray]
+\psarc{<-}(1,-1){1}{135}{180}
+\psline{->}(1,-1)(-0.77,0.643)
+\psline[linestyle=dashed]{->}(1,-1)(-1,-1)
+\rput(0.35,-0.75){40$^\circ$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+     \par 
+      \label{m38812*uid7}
+            \subsubsection*{Posisie }
+            \nopagebreak
+Mens kan rigting in terme van posisie uitdruk. Die posisie van  'n voorwerp is sy rigting relatief tot  'n vaste punt. As jy net  'n hoek het, is die gebruik om die hoek kloksgewys ten opsigte van Noord te definieer. So is 'n vektor in die rigting 110$^{\circ}$ volgens definisie kloksgwys van Noord af 110$^{\circ}$ geroteer.\par  
+        \label{m38812*id187459}
+    \setcounter{subfigure}{0}
+\begin{center}
+\begin{pspicture}(0,0)(2,2.5)
+%\psgrid[gridcolor=lightgray]
+\psline[linestyle=dashed]{->}(0,0)(0,2)
+%\psline{->}(0,0)(1.5,-0.25)
+\psline{->}(0,0)(1.88,-0.684)
+\psarc{<-}(0,0){1}{-20}{90}
+\rput(0.4,0.4){110$^\circ$}
+\rput(0,2.2){N}
+\end{pspicture}
+\end{center}      
+        \par 
+\label{m38812*secfhsst!!!underscore!!!id146}
+            
+
+\begin{exercises}{Scalars and Vectors }
+            \vspace{-1cm}
+\noindent \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m38812*uid8}\item Klassifiseer die volgende hoeveelhede as skalare of vektore:
+\label{m38812*id187490}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m38812*uid9}\item 12 km
+\label{m38812*uid10}\item 1 m suid
+\label{m38812*uid11}\item $2\phantom{\rule{2pt}{0ex}}\text{m}\ensuremath{\cdot}{\text{s}}^{-1}$, $45{}^{\circ }$\label{m38812*uid12}\item $075{}^{\circ }$, 2 cm
+\label{m38812*uid13}\item $100\phantom{\rule{2pt}{0ex}}\text{k}\ensuremath{\cdot}{\text{h}}^{-1}$, $0{}^{\circ }$\end{enumerate}
+\item Gebruik twee verskillende notasies om die rigting van die vektor in elk van die volgende diagramme neer te skryf:    \begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.86)(11.360068,1.46)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.227168,-0.76)(1.247168,1.44)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.207168,-0.78)(6.807168,-0.8)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.207168,-0.78)(5.947168,1.22)
+\psarc[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(4.697168,-0.79){0.65}{0.0}{83.659805}
+\rput(4.8546534,-0.555){\small $60^{\circ}$}
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(11.007168,1.42)(11.027168,-0.84)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(11.027168,1.4)(9.607168,-0.68)
+\psarc[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(10.687168,0.88){0.52}{234.46233}{314.56595}
+\rput(10.794653,0.645){\small $40^{\circ}$}
+\rput(0.113310546,1.225){a.}
+\rput(3.870166,1.245){b.}
+\rput(9.453574,1.245){c.}
+\end{pspicture} 
+}
+\end{center}
+ \end{enumerate}
+
+\practiceinfo
+ \par \begin{tabular}[h]{cccccc}
+ (1.) 02vm  &  (2.) 02vn  & \end{tabular}
+\end{exercises}
+            \subsection*{Teken vektore}
+            \nopagebreak
+      \label{m38812*id187709}Om vektore akkuraat te kan teken moet ons die grootte akkuraat voorstel en  'n verwysingsrigting insluit in die diagram. Ons gebruik  'n skaal om die lengte van die pyl, wat die grootte van die vektor voorstel, voor te stel. As jy, byvoorbeeld,  'n skaal van 1 cm = 2 N (1 cm stel 2 N voor), kies. 'n Krag van 20 N in  'n ooswaartse rigting word deur 'n pyl van 10 cm wat na regs wys, voorgestel. Ons gebruik dikwels die punte van  'n kompas om rigting aan te dui. Alternatiewelik kan  'n pyl wat na die verwysingsrigting wys, gebruik word.  
+      \label{m38812*id187716}
+    \setcounter{subfigure}{0}
+\begin{center}
+\begin{pspicture}(0,-0.2)(10,0.6)
+%\psgrid[gridcolor=lightgray]
+\psline[arrowscale=2]{->}(0,0)(10,0)
+\pcline[offset=8pt]{|-|}(0,0)(10,0)
+\lput*{:U}{20 N}
+\end{pspicture}
+\scalebox{0.7}{\pscompass}
+\end{center}      
+      \par 
+      \label{m38812*id187725}
+        \textbf{Metode: Teken vektore}
+        \label{m38812*id187736}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m38812*uid18}\item Kies  'n skaal en skryf dit neer.
+            \item Kies  'n verwysingsrigting.
+\label{m38812*uid19}\item Bepaal die lengte van die pyl, wat die vektor voorstel, deur middel van die skaal.
+\label{m38812*uid20}\item Teken  'n pyl wat die vektor voorstel. Maak seker dat jy die pylpunt ook teken.
+\label{m38812*uid21}\item Skryf die grootte en eenheid van die vektor neer.
+\end{enumerate}
+
+
+\begin{wex}{Teken vektore I}
+{
+Teken die volgende vektorhoeveelheid: $\stackrel{\to }{v}$ =  6 \ms Noord
+}
+{
+\westep{	Kies  'n skaal en skryf dit neer.}
+1 cm = 2 \ms
+\westep{Kies  'n verwysingsrigting}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,0)(8,1.5)
+\psline{->}(1,0)(1,1)
+\rput(1,1.2){N}
+\rput(4.5,0.5){Noord sal na die bokant van die bladsy wys.}
+\end{pspicture} 
+}
+\westep{Bepaal die lengte van die pyl wat die vektor voorstel. Gebruik die skaal.}
+As 1 cm = 2 \ms, dan is 6 \ms = 3 cm
+\westep{Teken die pyl wat die vektor voorstel.}
+
+Skaal: 1 cm = 2 \ms\\
+\begin{center}
+\begin{pspicture}(0,-1.3091797)(4.3466406,1.3291796)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.104746096,0.45082033)(0.12474609,0.9708203)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.13456054,1.1558204){N}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.5047461,-1.2891797)(1.5047461,1.0908203)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.957959,-0.26417968){6 $\mathsf{m\cdot s^{-1}}$}
+\end{pspicture} 
+\end{center}
+%Direction = North\\
+%\begin{center}
+%\begin{pspicture}(-0.7,0)(0.2,3)
+%\psgrid[gridcolor=lightgray]
+%\psline[arrowscale=2]{->}(0,0)(0,3)
+%\rput(-0.7,1.5){6 \ms}
+%\pcline[offset=8pt]{|-|}(0,0)(0,3)
+%\lput*{:U}{3 cm}
+%\end{pspicture}
+%\end{center}}
+}
+\end{wex}
+
+\begin{wex}{Teken vektore 2}
+{
+Teken die volgende vektor hoeveelheid: $\stackrel{\to }{s}$ =  16 m oos
+}
+{
+\westep{Kies  'n skaal en skryf dit neer.}
+1 cm = 4 m
+\westep{Kies  'n verwysingsrigting}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,0)(8,1.5)
+\psline{->}(1,0)(1,1)
+\rput(1,1.2){N}
+\rput(5,0.5){Noord sal altyd na die bokant van die bladsy wys.}
+\end{pspicture} 
+}
+\westep{Bepaal die lengte van die pyl wat die vektor voorstel. Gebruik die skaal.}
+As 1 cm = 4 m, dan is 16 m = 4 cm
+\westep{Teken die pyl wat die vektor voorstel.}
+\noindent Skaal: 1 cm = 4 m\\
+Rigting = Oos\\
+\begin{center}
+\begin{pspicture}(0,-0.7391797)(4.16,0.7591797)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.76,-0.11917969)(3.78,0.4008203)
+\rput(3.7898145,0.5858203){N}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,-0.6991797)(4.14,-0.7191797)
+\rput(1.828125,-0.3941797){16 m}
+\end{pspicture} 
+%\begin{pspicture}(0,0)(4,0.6)
+%\psgrid[gridcolor=lightgray]
+%\psline[arrowscale=2]{->}(0,0)(4,0)
+%\rput(2,0.4){16 m}
+%\pcline[offset=8pt]{|-|}(0,0)(4,0)
+%\lput*{:U}{4 cm}
+%\end{pspicture}
+\end{center}
+
+}
+\end{wex}
+\vspace{-1cm}
+
+\label{m38812*secfhsst!!!underscore!!!id228}
+\begin{exercises}{Drawing Vectors}
+\nopagebreak
+Teken elkeen van die volgende vektore op skaal. Dui telkens die skaal aan wat jy gebruik het.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+    \item 12 km suid
+    \item 1,5 m N $45{}^{\circ }$ W
+    \item $1\phantom{\rule{2pt}{0ex}}\text{m}\ensuremath{\cdot}\text{s}{}^{-1}$, $20{}^{\circ }$ Oos van Noord
+    \item $50\phantom{\rule{2pt}{0ex}}\text{km}\ensuremath{\cdot}\text{h}{}^{-1}$, $085{}^{\circ }$\label{m38812*uid34}\item 5 mm, $225{}^{\circ }$
+\end{enumerate} \vspace{-.5cm}
+ \practiceinfo \vspace{-.5cm}
+  \begin{tabular}[h]{cccccc}
+ (1.--5.) 02vp  & \end{tabular}
+\end{exercises}
+         
+
+\section{Eienskappe van vektore}
+    \nopagebreak
+%            \label{m38813} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}} {(section shortcode: P10092 )} 
+    \label{m38813*cid7}
+      \label{m38813*id188277}
+
+Vektore is wiskundige begrippe, daarom sal ons sommige van die wiskundige eienskappe bestudeer.
+
+As twee vektore dieselfde grootte \textit{en} rigting het, kan ons sê hulle is gelyk aan mekaar. As ons, byvoorbeeld, twee kragte  $\stackrel{\to }{F_{1}} = 20$ N \textit{in  'n opwaartse rigting} en $\stackrel{\to }{F_{2}} = 20$ N \textit{in  'n opwaartse rigting}, het, kan ons s\^{e} dat $\stackrel{\to }{F_{1}} = \stackrel{\to }{F_{2}}$.
+
+%need to understand the mathematical properties of vectors, like adding and subtracting.
+%      \label{m38813*id188281}For all the examples in this section, we will use displacement as our vector quantity. 
+%      \label{m38813*id188286}Displacement is defined as the distance together with direction of the straight line joining a final point to an initial point.
+%      \label{m38813*id188290}Remember that displacement is just one example of a vector. We could just as well have decided to use forces or velocities to illustrate the properties of vectors.
+
+\Definition{Gelyke vektore}{Twee vektore is gelyk as hulle \textbf{dieselfde} grootte en \textbf{dieselfde} rigting het.}
+
+Soos skalare positiewe en negatiewe waardes kan hê, kan vektore ook positief of negatief wees.  'n Negatiewe vektor is een wat in die teenoorgestelde rigting as die positiewe verwysingsrigting wys. Byvoorbeeld: As ons in  'n sekere situasie die opwaartse rigting as die positiewe verwysingsrigting definieer, sal  'n krag $\stackrel{\to }{F_{1}} = 30$~N \textit{afwaarts} 'n \textit{negatiewe vektore} wees. Ons kan dit as volg skryg: $\stackrel{\to }{F_{1}} = -30$~N. In hierdie geval dui die negatiewe teken ($-$) aan dat $\stackrel{\to }{F_{1}}$ in die teenoorgestelde rigting as die positiewe verwysingsrigting is.
+
+\Definition{Negatiewe vektor}{ 'n Negatiewe vektor is  'n vektor wat die teenoorgestelde rigting as die positiewe verwysingsrigting het.}
+
+Vektore kan, soos skalare, ook opgetel en afgetrek word. Kom ons kyk hoe om dit te doen.
+
+\label{m38813*uid35}
+\subsection*{Optelling en aftrekking van vektore}
+            \nopagebreak
+        \label{m38813*id188304}
+
+\subsubsection{Optelling van vektore}
+Wanneer vektore opgetel word, moet jy die grootte en rigting van die vektore in ag neem. \\
+\mindsetvid{Addition of vectors}{VPgel}
+
+Veronderstel die volgende: Jy en  'n vriend moet  'n swaar kartondoos skuif. Jy staan agter die kartondoos en skuif dit vorentoe met  'n krag $\stackrel{\to }{F_{1}}$ Jou vriend staan aan die voorkant en trek dit na hom toe met  'n krag $\stackrel{\to }{F_{2}}$. Die twee kragte is in dieselfde rigting (m.a.w. vorentoe). Daarom sal die totale krag wat op die kartondoos inwerk:
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.18)(5.62,1.18)
+\psframe[linewidth=0.04,dimen=outer](3.94,1.18)(1.58,-1.18)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,-0.08)(1.64,-0.1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.96,-0.12)(5.6,-0.12)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7814551,0.205){$\stackrel{\to }{F_{1}}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.741455,0.205){$\stackrel{\to }{F_{2}}$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{equation*}
+\stackrel{\to }{F_{Tot}} = \stackrel{\to }{F_{1}} + \stackrel{\to }{F_{2}}
+\end{equation*}
+\end{minipage}
+
+ 'n Mens kan hierdie begrip van die optelling van vektore maklik verstaan as jy  'n aktiwiteit met verplasingsvektore doen.   \\
+Verplasing is die vektor wat die verandering in  'n voorwerp se posisie aandui. Hierdie vektor strek vanaf die oorspronklike posisie na die uiteindelike posisie.\\
+
+\begin{activity}{Optelling van vektore}
+\textbf{Benodighede:} maskeerband \\
+\textbf{Metode:} \\
+Gebruik  'n stuk maskeerband om  'n horisontale lyn op die vloer te plak. Dit is jou beginpunt. \\
+\textit{Opdrag 1}:\\
+Neem 2 tre\"{e} vorentoe. Gebruik  'n stuk maskeerband om jou eindpunt te merk. Merk dit duidelik as \textbf{A}. Neem nog 3 tre\"{e} vorentoe. Gebruik nog  'n stuk maskeerband om jou eindpunt te merk. Merk dit duidelik as posisie \textbf{B}. Probeer om al jou tre\"{e} dieselfde lengte te hou. \\
+\textit{Opdrag 2}:\\
+Gaan terug na jou beginpunt. Neem nou 3 tre\"{e} vorentoe. Gebruik  'n stuk maskeerband en merk jou eindpunt as \textbf{B}. Neem nog 2 treë vorentoe en gebruik  'n nuwe stuk maskeerband om jou finale posisie as \textbf{A} te merk. \\
+\textbf{Bespreking:}\\
+Wat let jy op?\\
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item In \textsl{Opdrag 1} verteenwoordig die eerste 2 treë vorentoe  'n verplasingsvektor, so ook die volgende 3 treë vorentoe. As jy nie na 2 treë gestop het nie, sou jy in totaal 5 treë vorentoe gegee het. As ons daarom die verplasingsvektore vir die eerste 2 treë en die laaste 3 treë bymekaar tel, kry ons  'n totaal van 5 treë vorentoe.
+\item Dit maak nie saak of jy eers 3 treë vorentoe en dan 2 treë vorentoe gee, of eers 2 treë en dan 3 treë vorentoe gee nie. Jou eindpunt bly dieselfde. Die volgorde waarin ons die getalle optel maak dus nie saak nie.
+\end{enumerate}
+\end{activity}
+
+Ons kan hierdie aktiwiteit gebruik om die optelling van vektore grafies voor te stel. Teken die vektor vir die eerste 2 treë vorentoe, gevolg deur die vektor vir die volgende 3 treë vorentoe.
+        \label{m38813*id188318}
+    \setcounter{subfigure}{0}
+	\begin{figure}[H] % horizontal\label{m38813*id188322}
+\begin{center}
+\begin{pspicture}(-6,-1)(5,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\uput[u](-5,0){2 tre\"e}
+\psline[linewidth=0.04cm]{->}(-6,0)(-4,0)
+\rput(-3.8,0){+}
+\uput[u](-2.1,0){3 tre\"e}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(-3.6,0)(-0.6,0)
+\rput(-0.4,0.){=}
+\psline[linewidth=0.04cm]{->}(-0.2,0)(1.8,0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.8,0)(4.8,0)
+\rput(-0.4,-1){=}
+\uput[u](2.3,-1){5 tre\"e}
+\psline[linewidth=0.04cm]{->}(-0.2,-1)(4.8,-1)
+\end{pspicture}
+\end{center}
+ \end{figure} 
+
+Die tweede vektor word aan die einde van die eerste vektor geteken aangesien die eerste beweging daar gestop het en die tweede daar begin. Die vektor wat jy van die stert van die eerste vektor (die beginpunt) tot by die koppunt van die tweede vektor (die eindpunt) kan teken is die vektorsom (wanneer jy die vektore bymekaar tel).
+%This is called the \textbf{head-to-tail} method of vector addition.\par 
+
+Jy kan daarom sien dat die volgorde waarin jy die vektore bymekaar tel nie saak maak nie. As jy in die voorbeeld hierbo besluit het om eers 3 treë en dan nog 2 treë vorentoe te gee, sou die eindresultaat nogsteeds 5 treë vorentoe wees.
+
+\subsubsection{Aftrekking van vektore}
+
+Kom ons kyk weer na die probleem van die swaar kartondoos wat jy en jou vriend probeer beweeg. As julle nie met mekaar gepraat het nie, kon julle dalk al twee in jul eie rigting begin trek het. Verbeel jou jy staan agter die kartondoos en trek dit na jou toe met  'n krag $\stackrel{\to }{F_{1}}$. Jou vriend staan aan die voorkant en trek die kartondoos na hom toe met  'n krag $\stackrel{\to }{F_{2}}$. In hierdie geval is die kragte in die teenoorgestelde rigtings. As ons die rigting waarin jou vriend trek as positief definieer, moet die krag wat jy op die kartondoos uitoefen negatief wees, aangesien dit in die teenoorgestelde rigting is. Die totale krag wat op die kartondoos uitgeoefen word, is dus die som van die individuele kragte:
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.18)(5.62,1.18)
+\psframe[linewidth=0.04,dimen=outer](3.94,1.18)(1.58,-1.18)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(0.0,-0.1)(1.64,-0.1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.96,-0.12)(5.6,-0.12)
+\rput(0.7814551,0.205){$\stackrel{\to }{F_{1}}$}
+\rput(4.741455,0.205){$\stackrel{\to }{F_{2}}$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{eqnarray*}
+\stackrel{\to }{F_{Tot}} & = & \stackrel{\to }{F_{2}} + (-\stackrel{\to }{F_{1}}) \\
+& = & \stackrel{\to }{F_{2}} - \stackrel{\to }{F_{1}}
+\end{eqnarray*}
+\end{minipage}
+
+Jy het eintlik nou die twee vektore van mekaar afgetrek. Dit is dieselfde as om twee vektore wat in verskillende rigtings wys bymekaar te tel.
+
+Soos in die vorige voorbeeld, kan ons vektoraftrekking met behulp van vektorverplasing illustreer. As jy 5 treë vorentoe gee en dan 3 van die vorentoe treë daarvan aftrek, het jy net 2 treë vorentoe oor. 
+
+\begin{center}
+\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\rput(-3.5,0.25){{5 tre\"e}}
+\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
+\rput(-0.8,0){-}
+\rput(1.1,0.25){{3 tre\"e}}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(-0.6,0)(2.6,0)
+\rput(2.8,0.){=}
+\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
+\rput(4.0,0.25){{2 tre\"e}}
+\end{pspicture}
+\end{center}
+
+As jy dit fisies moes doen, wat sou jy doen? Jy sou 5 treë vorentoe gegee het en dan 3 treë agtertoe, sodat jy op die ou einde net 2 treë vorentoe gegee het. Die verplasing na agter word voorgestel deur  'n pyl wat links (agtertoe) wys met  'n lengte van 3. Die netto resultaat as die twee vektore bymekaar getel word, is dus 2 treë vorentoe.
+
+\begin{center}
+\begin{pspicture}(-6,-0.5)(5,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\uput[u](-3.5,0){{5 tre\"e}}
+\psline[linewidth=0.04cm]{->}(-6,0)(-1,0)
+\rput(-0.8,0){+}
+\uput[u](1.1,0){{3 tre\"e}}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(-0.6,0)(2.6,0)
+\rput(2.8,0.){=}
+\psline[linewidth=0.04cm]{->}(3.0,0)(5.0,0)
+\uput[u](4.0,0){{2 tre\"e}}
+\end{pspicture}
+\end{center}
+
+As jy een vektor van  'n ander een aftrek is dit dus dieselfde as om twee vektore in teen\-oor\-ge\-stel\-de rigtings bymekaar te tel (m.a.w. om 3 treë af te trek is dieselfde as om drie treë agtertoe by te tel).
+
+\Tip{Om een vektor van  'n ander af te trek is dieselfde as om twee vektore in teenoorgestelde rigtings bymekaar te tel.}
+
+
+\subsubsection{Die resultante}
+
+\label{m38813*id188345}Die uiteindelike hoeveelheid wat jy kry wanneer jy vektore optel of aftrek word die \textbf{resultante} genoem. Die afsonderlike vektore kan daarom vervang word met die resultante – die algehele effek is dieselfde.\\
+\mindsetvid{Resultant vectors}{VPgem}
+
+\Definition{Resultante} {Die resultante is die enkele vektor waarvan die uitwerking dieselfde is as die oorspronklike vektore wat saamwerk. } 
+
+Ons kan hierdie begrip van die resultante illustreer deur weer te kyk na die kragte wat inwerk om die swaar kartondoos in ons voorbeeld, te skuif. In die eerste geval (die linkerkantste voorbeeld) is die krag wat jy en jou vriend op die kartondoos uitoefen in dieselfde rigting. In die tweede geval (die regterkantste voorbeeld) is die kragte wat op die kartondoos uitgeoefen word in die teenoorgestelde rigtings. Die resultante sal die som van die twee kragte wat op die kartondoos uitgeoefen word wees. As jy egter  'n positiewe rigting kies, sal een krag positief en die ander krag negatief wees. Die teken van die resulterende krag sal daarom afhang van watter rigting jy as positief gekies het. Oorweeg die diagramme hieronder vir duidelikheid oor die konsep.\\
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+Kragte word in dieselfde rigting toegepas\\
+(positiewe rigting na regs)\par \\
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+%\begin{pspicture}(0,-1.06)(6.88,1.06)
+\begin{pspicture}(0,-1.06)(6.88,1.5)
+\psframe[linewidth=0.04,dimen=outer](4.94,1.06)(2.82,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.0)(2.86,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.92,0.0)(6.86,0.0)
+\rput(1.4814551,0.725){$\stackrel{\to }{F_{1}}$}
+\rput(5.701455,0.725){$\stackrel{\to }{F_{2}}$}
+\rput(1.4551758,0.265){(20 \ \mathsf{N})}
+\rput(5.6151757,0.265){(15 \ \mathsf{N})}
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{R}} &=& \stackrel{\to }{F_{1}} + \stackrel{\to }{F_{2}} \\
+&=& 20 \ \mathsf{N} + 15 \ \mathsf{N} \\
+& = & 35 \ \mathsf{N} \ \mathsf{\textit{na regs}}
+\end{eqnarray*} \par \\
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+Kragte word in teenoorgestelde rigtings toegepas\\
+(positiewe rigting na regs)\par \\
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(6.88,1.06)
+\psframe[linewidth=0.04,dimen=outer](4.94,1.06)(2.82,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(0.0,0.0)(2.86,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.92,0.0)(6.86,0.0)
+\rput(1.4814551,0.725){$\stackrel{\to }{F_{1}}$}
+\rput(5.701455,0.725){$\stackrel{\to }{F_{2}}$}
+\rput(1.4551758,0.265){(20 \ \mathsf{N})}
+\rput(5.6151757,0.265){(15 \ \mathsf{N})}
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{R}} &=& \stackrel{\to }{F_{2}} + (\stackrel{\to }{-F_{2}}) \\
+&=& \stackrel{\to }{F_{2}} - \stackrel{\to }{F_{1}} \\
+&=& 15 \ \mathsf{N} - 20 \ \mathsf{N} \\
+& = & -5 \ \mathsf{N} \\
+& = & 5 \ \mathsf{N} \ \mathsf{\textit{na links}}
+\end{eqnarray*} \par \\
+\end{center}
+\end{minipage}
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(5.06,1.06)
+\psframe[linewidth=0.04,dimen=outer](2.12,1.06)(0.0,-1.06)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.1,0.0)(5.04,0.0)
+\rput(3.551455,0.730){$\stackrel{\to }{F_{R}}$}
+\rput(3.5351758,0.225){(35 \ \mathsf{N})}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(3.5010157,1.06)
+\psframe[linewidth=0.04,dimen=outer](3.5010157,1.06)(1.3810157,-1.06)
+\rput(0.6324707,0.730){$\stackrel{\to }{F_{R}}$}
+\rput(0.8461914,0.225){(5 \ \mathsf{N})}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.4210156,0.0)(0.58101565,0.0)
+\end{pspicture} 
+}
+\end{center}
+\end{minipage} \\
+
+ 'n Vektor wat dieselfde grootte as  'n resultante het maar in die teenoorgestelde rigting is, het  'n spesiale naam: dit word die \textbf{ekwilibrant} genoem. As jy die resultante en die ekwilibrant bymekaar tel sal die antwoord altyd nul wees aangesien die ekwilibrant die resultante uit kanselleer.
+
+\Definition{Ekwilibrant}{Die ekwilibrant is daardie vektor wat dieselfde grootte het maar in die teenoorgestelde rigting van die resultante is.}
+
+As jy na die sketse van die swaar kartondoos hieronder kyk, sal die ekwilibrante kragte vir die twee situasies as volg lyk:  \par
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(7.74,1.06)
+\psframe[linewidth=0.04,dimen=outer](4.92,1.06)(2.8,-1.06)
+\rput(6.131455,0.665){$\stackrel{\to }{F_{R}}$}
+\rput(6.1351757,0.245){(35 \ \mathsf{N})}
+\psline[linewidth=0.04cm,linecolor=white,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.78,0.0)(1.94,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.9,-0.02)(7.72,-0.02)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.82,-0.02)(0.0,-0.02)
+\rput(1.4614551,0.685){$\stackrel{\to }{F_{E}}$}
+\rput(1.4751757,0.245){(35 \ \mathsf{N})}
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{E}} &=& -\stackrel{\to }{F_{R}} \\
+&=& 35 \ \mathsf{N} \ \mathsf{\textit{na links}}
+\end{eqnarray*}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.06)(4.46291,1.06)
+\psframe[linewidth=0.04,dimen=outer](3.2210157,1.06)(1.1010156,-1.06)
+\rput(3.7624707,0.725){$\stackrel{\to }{F_{E}}$}
+\rput(3.7461915,0.245){(5N)}
+\psline[linewidth=0.04cm,linecolor=white,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.0810156,0.0)(0.24101563,0.0)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.1210157,-0.02)(0.021015625,-0.02)
+\rput(0.6324707,0.725){$\stackrel{\to }{F_{R}}$}
+\rput(0.6261914,0.205){(5N)}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2010157,-0.02)(4.301016,-0.02)
+\end{pspicture} 
+}
+\begin{eqnarray*}
+\stackrel{\to }{F_{E}} &=& -\stackrel{\to }{F_{R}} \\
+&=& 5 \ \mathsf{N} \ \mathsf{\textit{na regs}}
+\end{eqnarray*}
+\end{center}
+\end{minipage} 
+
+
+\section{Metodes van vektoroptelling}
+
+Jy het nou geleer van die wiskundige eienskappe van vektore, kom ons kyk nou in meer detail hoe om vektore op te tel. Daar is verskeie metodes van vektoroptelling. Die metode word in twee kategorieë geklassifiseer: grafiese en algebraïese metodes.
+
+\subsection*{Grafiese metodes}
+Grafiese metodes behels die akkurate teken van skaaldiagramme om individuele vektore en hul resultante voor te stel. Ons gaan net na een grafiese metode kyk: die stert-by-kop metode.
+
+\textbf{Metode: Stert-by-kop-metode van vektoroptelling}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item{Teken  'n rowwe skets van die situasie.}
+\item{Kies  'n skaal en sluit  'n verwysingsrigting in.}
+\item{Kies enige vektor en teken dit as  'n pyl in die regte rigting, met die regte lengte -- onthou om  'n pylpunt aan die einde te teken om rigting aan te dui.}
+\item{Teken nou die volgende vektor as  'n pyl wat begin by die pylpunt van die vorige vektor in die regte rigting, met die regte lengte.}
+\item{Hou so aan totdat jy al die vektore geteken het -- begin elke keer by die kop van die vorige vektor. As jy dit doen sal al die vektore wat bymekaar getel moet word een na die ander kop-aan-stert l\^{e}.}
+\item{Die resultante sal dan die vektor wees wat van die stert van die eerste vektor tot by die kop van die laaste vektor geteken kan word. Die grootte daarvan kan vasgestel word deur die lengte van die pyl te bepaal en die skaal te gebruik. Die rigting van die resultante kan ook met die skaaldiagram bepaal word. }
+\end{enumerate} \par
+
+
+Kom ons kyk na  'n paar voorbeelde van vektoroptelling deur na verplasings te kyk. Die pyle wys vir jou hoe ver jy beweeg en in watter rigting. Pyle na regs beteken treë vorentoe, en pyle na links beteken treë agtertoe. Kyk na en toets al die voorbeelde hieronder..\par 
+
+Hierdie voorbeeld sê dat as jy 1 tree vorentoe gee en dan nog  'n tree is dit dieselfde as  'n pyl wat twee keer so lank is -- 2 treë vorentoe.
+        \label{m38813*id186651}
+    \setcounter{subfigure}{0}
+	\begin{figure}[H] % horizontal\label{m38813*id186654}
+\begin{center}
+\begin{pspicture}(0,0)(8,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\uput[u](0.48,0){1 tree}
+\psline[linewidth=0.04cm]{->}(1,0)
+\rput(1.3,0){+}
+\rput[u](2.08,0.325){1 tree}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.6,0)(2.6,0)
+\rput(2.9,-0.025){=}
+\uput[u](4.18,0){2 tre\"e}
+\psline[linewidth=0.04cm]{->}(3.2,0)(4.2,0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(4.2,0)(5.2,0)
+\rput(5.5,-0.025){=}
+\uput[u](6.78,0){2 tre\"e}
+\psline[linewidth=0.04cm]{->}(5.8,0)(7.8,0)
+\end{pspicture}
+\end{center}
+\end{figure}       
+       
+Die voorbeeld hieronder sê dat een tree agtertoe en dan nog  'n tree agtertoe dieselfde is as  'n pyl wat twee keer so lank is -- 2 treë agtertoe.
+
+
+        \label{m38813*id186668}
+    \setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+ \begin{pspicture}(0,0)(8,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\rput(0.48,0.25){{1 tree}}
+\psline[linewidth=0.04cm]{<-}(1,0)
+\rput(1.3,0){+}
+\rput(2.08,0.25){{1 tree}}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.6,0)(2.6,0)
+\rput(2.9,-0.025){=}
+\rput(4.18,0.25){{2 tre\"e}}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.2,0)(4.2,0)
+\psline[linewidth=0.04cm]{<-}(4.2,0)(5.2,0)
+\rput(5.5,-0.025){=}
+\rput(6.78,0.25){{2 tre\"e}}
+\psline[linewidth=0.04cm]{<-}(5.8,0)(7.8,0)
+\end{pspicture}
+\end{center}
+ \end{figure}      
+        \par 
+ 
+
+Partykeer gebeur dit dat jy weer eindig waar jy begin het. In daardie geval is die netto resultaat van wat jy gedoen het, dat jy niks gedoen het nie -- jy het nêrens heen gegaan nie (jou begin- en eindpunt is dieselfde). In sulke gevalle is jou resulterende verplasing  'n vektor met  'n lengte van nul eenhede. Die simbool $\vec{0}$ word gebruik om sulke vektore aan te dui:
+
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(8,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\rput(0.48,0.25){{1 tree}}
+\psline[linewidth=0.04cm]{->}(1,0)
+\rput(1.3,0){+}
+\rput(2.08,0.25){{1 tree}}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.6,0)(2.6,0)
+\rput(2.9,-0.025){=}
+\rput(4.18,0.25){{1 tree}}
+%\psline[linewidth=0.04cm]{->}(3.7,0.05)(4.7,0.05)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.7,-0.05)(4.7,-0.05)
+\psline[linewidth=0.04cm]{->}(3.7,0.0)(4.7,0.0)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(3.7,-0.0)(4.7,-0.0)
+\rput(4.18,-0.28){{1 tree}}
+\rput(5.5,0){= $\vec{0}$}
+\end{pspicture}
+\end{center}
+
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(8,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\rput(0.48,0.25){{1 tree}}
+\psline[linewidth=0.04cm]{<-}(1,0)
+\rput(1.3,0){+}
+\rput(2.08,0.25){{1 tree}}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.6,0)(2.6,0)
+\rput(2.9,-0.025){=}
+\rput(4.18,0.25){{1 tree}}
+%\psline[linewidth=0.04cm]{<-}(3.7,0.05)(4.7,0.05)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(3.7,-0.05)(4.7,-0.05)
+\psline[linewidth=0.04cm]{<-}(3.7,0.0)(4.7,0.0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3.7,-0.0)(4.7,-0.0)
+\rput(4.18,-0.28){{1 tree}}
+\rput(5.5,0){= $\vec{0}$}
+\end{pspicture}
+\end{center}     
+
+Toets die volgende voorbeelde op dieselfde manier. Pyle wat boontoe wys (na die bokant van die bladsy) kan beskou word as treë na links, en pyl wat ondertoe wys (na die onderkant van die bladsy) kan beskou word as treë na regs.\par 
+Kyk na die volgende voorbeelde en probeer duidelikheid oor die begrip kry.\par \nopagebreak
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+%\begin{tabular}{cc}
+\begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0, -0.35)(0,0.35)
+\rput(0.3,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(0.6,-0.35)(0.6,0.35)
+\rput(0.9,0){=}
+\psline[linewidth=0.04cm]{->}(1.2,-0.7)(1.2,0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.2,0)(1.2,0.7)
+\rput(1.5,0){=}
+\psline[linewidth=0.04cm]{->}(1.8,-0.7)(1.8,0.7)
+\end{pspicture}
+%&
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{<-}(0, -0.35)(0,0.35)
+\rput(0.3,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(0.6,-0.35)(0.6,0.35)
+\rput(0.9,0){=}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.2,-0.7)(1.2,0)
+\psline[linewidth=0.04cm]{<-}(1.2,0)(1.2,0.7)
+\rput(1.5,0){=}
+\psline[linewidth=0.04cm]{<-}(1.8,-0.7)(1.8,0.7)
+\end{pspicture}
+%\end{tabular}
+\end{center}
+\end{minipage}\par
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+%\begin{tabular}{cc}
+\begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{<-}(0, -0.35)(0,0.35)
+\rput(0.3,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(0.6,-0.35)(0.6,0.35)
+\rput(0.9,0){=}
+%\psline[linewidth=0.04cm]{<-}(1.2,-0.35)(1.2,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
+\psline[linewidth=0.04cm]{<-}(1.1,-0.35)(1.1,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.1,-0.35)(1.1,0.35)
+\rput(1.6,0){=}
+\rput(2.0,0){$\vec{0}$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.5,-1.)(2.3,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0, -0.35)(0,0.35)
+\rput(0.3,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(0.6,-0.35)(0.6,0.35)
+\rput(0.9,0){=}
+%\psline[linewidth=0.04cm]{->}(1.2,-0.35)(1.2,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
+\psline[linewidth=0.04cm]{->}(1.1,-0.35)(1.1,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.1,-0.35)(1.1,0.35)
+\rput(1.6,0){=}
+\rput(2.0,0){$\vec{0}$}
+\end{pspicture}
+%\end{tabular}
+\end{center}
+\end{minipage}
+    \par
+Dit is belangrik dat jy verstaan dat rigting op sigself nie belangrik is nie -- vorentoe en agtertoe, of links en regs word presies dieselfde hanteer. Dieselfde geld vir parallelle rigtings. 
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.1,-1.)(5.,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0, -.35)(.7,0.35)
+\rput(0.8,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(0.9,-.35)(1.6,0.35)
+\rput(1.7,0){=}
+\psline[linewidth=0.04cm]{->}(1.8,-0.7)(2.5,0)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(2.5,0)(3.2,0.7)
+\rput(3.3,0){=}
+\psline[linewidth=0.04cm]{->}(3.4,-0.7)(4.8,0.7)
+\end{pspicture}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.1,-1.)(5.,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{<-}(0, -.35)(.7,0.35)
+\rput(0.8,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(0.9,-.35)(1.6,0.35)
+\rput(1.7,0){=}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.8,-0.7)(2.5,0)
+\psline[linewidth=0.04cm]{<-}(2.5,0)(3.2,0.7)
+\rput(3.3,0){=}
+\psline[linewidth=0.04cm]{<-}(3.4,-0.7)(4.8,0.7)
+\end{pspicture}
+\end{center}
+\end{minipage} \par
+
+
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.1,-1.)(3.5,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0, -.35)(.7,0.35)
+\rput(0.8,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(0.9,-.35)(1.6,0.35)
+\rput(1.7,0){=}
+\psline[linewidth=0.04cm]{->}(1.8,-0.35)(2.5,.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.9,-0.35)(2.6,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.8,-0.35)(2.5,0.35)
+\rput(2.7,0){=}
+\rput(3.1,0){$\vec{0}$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{center}
+\begin{pspicture}(-0.1,-1.)(3.5,1)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{<-}(0, -.35)(.7,0.35)
+\rput(0.8,0.0){+}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(0.9,-.35)(1.6,0.35)
+\rput(1.7,0){=}
+\psline[linewidth=0.04cm]{<-}(1.8,-0.35)(2.5,.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.9,-0.35)(2.6,0.35)
+\psline[linecolor=blue,linewidth=0.04cm]{->}(1.8,-0.35)(2.5,0.35)
+\rput(2.7,0){=}
+\rput(3.1,0){$\vec{0}$}
+\end{pspicture}
+\end{center}
+\end{minipage} \par
+
+In die voorbeelde hierbo was die afsonderlike verplasings parallel aan mekaar. Dieselfde stert-by-kop metode van vektoroptelling word egter nogsteeds gevolg, dit maak nie saak in watter rigting die vektor is nie.
+
+%\begin{center}
+%\begin{tabular}{ccc}
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+%\psline[linewidth=0.04cm]{->}(0.7,0)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.3,0.35)
+%\rput(1.5,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.8,-0.35)(2.5,-0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(2.5,-0.35)(2.5,0.35)
+%\psline[linestyle=dotted]{->}(1.8,-0.35)(2.5,0.35)
+%\rput(2.8,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.1,-0.35)(3.8,0.35)
+%\end{pspicture}
+%&
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+%\psline[linewidth=0.04cm]{->}(0.7,0)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(1.3,-0.35)(1.3,0.35)
+%\rput(1.5,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.8,0.35)(2.5,0.35)
+%\psline[linecolor=blue,linewidth=0.04cm]{<-}(2.5,-0.35)(2.5,0.35)
+%\psline[linestyle=dotted]{->}(1.8,0.35)(2.5,-0.35)
+%\rput(2.8,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.1,0.35)(3.8,-0.35)
+%\end{pspicture}
+%&
+%\begin{pspicture}(-0.5,-0.5)(4.0,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+%\psline[linewidth=0.04cm]{->}(0.,-0.1)(0.7,0.1)
+%\rput(1,0){+}
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(1.3,-0.35)(1.5,0.35)
+%\rput(1.6,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(1.7,-0.45)(2.4,-0.25)
+%\psline[linecolor=blue,linewidth=0.04cm]{->}(2.4,-0.25)(2.6,0.45)
+%\psline[linestyle=dotted]{->}(1.7,-0.45)(2.6,0.45)
+%\rput(2.9,0.025){=}
+%\psline[linewidth=0.04cm]{->}(3.2,-0.45 )(4.1,0.45)
+%\end{pspicture}
+%\end{tabular}
+%\end{center}
+
+
+
+
+%\subsection*{Scalar Multiplication}
+%What happens when you multiply a vector by a scalar (an ordinary
+%number)?
+%Going back to normal multiplication we know that $2 \times 2$ is just
+%$2$ groups of $2$ added together to give $4$. We can adopt a similar  approach to understand how vector multiplication works.
+
+%\begin{center}
+%\begin{pspicture}(-0.5,-0.5)(6.2,0.5)%%\psgrid
+%\psgrid[gridcolor=lightgray]
+%\rput(0.7,0){2}
+%\rput(1,0){x}
+%\psline[linewidth=0.04cm]{->}(1.3,0)(2,0)
+%\rput(2.3,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(2.6,0)(3.3,0)
+%\rput(3.45,0){+}
+%\psline[linewidth=0.04cm]{->}(3.6,0)(4.3,0)
+%\rput(4.6,-0.025){=}
+%\psline[linewidth=0.04cm]{->}(4.9,0)(6.3,0)
+%\end{pspicture}
+%\end{center}
+
+\begin{wex}{Stert-by-kop optelling 1}{Jy en jou vriend loop toevallig verby  'n motor wat in die middel van die pad gaan staan het. Julle help die bestuurder om die motor uit die pad te stoot. Jy en jou vriend staan saam aan die agterkant van die motor. As jy met  'n krag van 50 N stoot en jou vriend stoot met  'n krag van 45 N, wat is die resulterende krag wat julle op die motor uitoefen? Gebruik die stert-by-kop metode om die antwoord grafies voor te stel.}{
+\westep{Teken  'n rowwe skets van die situasie}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.0,0.01)(7.8,0.01)
+\rput(2.0, 0.25){50~N}
+\rput(5.9, 0.25){45~N}
+\end{pspicture} 
+}
+\end{center}
+\westep{Kies  'n skaal en  'n verwysingsrigting}
+Kom ons kies die rigting na regs as die positiewe rigting. Die skaal kan 1~cm = 10~N wees.
+\westep{Kies een van die vektore en teken dit as  'n pyl met die regte lengte, in die regte rigting.}
+Begin met jou kragvektor en teken  'n pyl na regs wat 5 cm lank is (d.w.s. 50 N = 5$\times$10~N, jy moet dus jou skaal ook met 5 vermenigvuldig.)
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\rput(2.0, 0.25){50~N}
+\end{pspicture} 
+}
+\end{center}
+\westep{Teken die volgende vektor – begin by die pylpunt van die vorige vektor.}
+Aangesien jou vriend in dieselfde rigting as jy stoot, moet julle kragvektore in dieselfde rigting wees. Gebruik die skaal: hierdie pyl behoort 4,5 cm lank te wees.
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(4.04,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.0,0.01)(7.8,0.01)
+\rput(2.0, 0.25){50~N}
+\rput(5.9, 0.25){45~N}
+\end{pspicture} 
+}
+\end{center} \pagebreak
+\westep{Teken die resultante, meet sy lengte en bepaal rigting.}
+Aangesien daar net twee vektore in hierdie probleem is, moet die resultante van die stert (m.a.w. die beginpunt) van die eerste vektor tot die kop (m.a.w. die eindpunt) van die tweede vektor geteken word.
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1)(7.82,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(7.8,0.01)
+\rput(4.0, 0.25){50~N + 45~N = 95~N}
+\end{pspicture} 
+}
+\end{center}
+Die resultante is 9,5 cm lank en wys na regs. Die resultante is dus 95 N in  'n positiewe rigting (of na regs).
+}
+\end{wex}
+
+
+
+
+\begin{wex}{Stert-by-kop optelling 2}
+{Gebruik die grafiese stert-by-kop-metode om die resulterende krag van  'n rugbyspeler te bepaal indien twee spelers van sy eie span hom vorentoe stoot, onderskeidelik met kragte $\stackrel{\to }{F_{1}}$ = 60~N en $\stackrel{\to }{F_{2}}$ = 90~N en twee spelers van die opposisie hom agtertoe stoot, onderskeidelik met kragte $\stackrel{\to }{F_{3}}$ = 100~N en $\stackrel{\to }{F_{4}}$ = 65~N respektiewelik.
+}
+{
+\westep{Kies  'n skaal en verwysingsrigting}
+Kom ons kies  'n skaal van 0,5 cm = 10 N en om die diagram te teken kies ons na regs as die positiewe rigting.
+
+\westep{Kies een van die vektore en teken dit met die regte lengte, in die regte rigting.}
+Begin deur die vektor $\stackrel{\to }{F_{1}}$ = 60~N, wat in die positiewe rigting wys, te teken. Gebruik die skaal van 0,5~cm = 10~N, die lengte van die pyl is dus 3 cm na regs. \\ \\
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(8.5,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\end{pspicture} 
+}
+
+\westep{Teken die volgende vektor – begin by die pylpunt van die vorige vektor.}
+Die volgende vektor is $\stackrel{\to }{F_{2}}$ = 90~N in dieselfde rigting as $\stackrel{\to }{F_{1}}$. Gebruik die skaal: die pyl behoort 4,5 cm na regs te wees.\\ 
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\end{pspicture} 
+}
+
+\westep{Teken die volgende vektor – begin by die pylpunt van die vorige vektor.}
+Die volgende vektor is $\stackrel{\to }{F_{3}}$ = 100~N in die teenoorgestelde rigting. Gebruik die skaal: hierdie pyl behoort 5 cm lank te wees en moet na links wys. \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Teken die volgende vektor – begin by die pylpunt van die vorige vektor.}
+Die vierde vektor is $\stackrel{\to }{F_{4}}$ = 65~N ook in die teenoorgestelde rigting. Gebruik die skaal: hierdie pyl moet 3,25 cm lank te wees en moet ook links wys. \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-1)(17,1)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,0.01)(-0.75,0.01)
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\rput(1, -0.3){$\stackrel{\to }{F_{4}}$ = 65~N}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Teken die resultante, meet sy lengte en bepaal sy rigting}
+Ons het nou al die kragvektore geteken wat op die speler inwerk. Die resultante is die pyl wat by die stert van die eerste vektor begin en by die kop van die laaste vektor eindig.  \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(-2,-3)(17,3)\
+\psdot(0.0,0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(3.0,0.01)
+\psline[linecolor=blue,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0,0.01)(7.5,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,0.01)(2.5,0.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,0.01)(-0.75,0.01)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.01)(-0.75,0.01)
+\psline[linecolor=red,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(7.5,-.75)(2.5,-.75)
+\psline[linestyle=dotted,linecolor=gray]{->}(7.5,-.75)(7.5,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(2.5,-.75)(2.5,.01)
+\psline[linecolor=green,linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.5,-0.75)(-0.75,-.75)
+\psline[linestyle=dotted,linecolor=gray]{->}(-.75,-.75)(-.75,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(2.5,-.75)(2.5,.01)
+
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.5)(-0.75,0.5)
+\psline[linestyle=dotted,linecolor=gray]{->}(-.75,.5)(-.75,.01)
+\psline[linestyle=dotted,linecolor=gray]{->}(0.0,.5)(0.0,.01)
+
+
+\rput(1.5,0.3){$\stackrel{\to }{F_{1}}$ = 60~N}
+\rput(5.25,0.3){$\stackrel{\to }{F_{2}}$ = 90~N}
+\rput(5, -0.3){$\stackrel{\to }{F_{3}}$ = 100~N}
+\rput(1.5, -0.3){$\stackrel{\to }{F_{4}}$ = 65~N}
+\rput(-0.3, 0.95){$\stackrel{\to }{F_{R}}$ = 15~N}
+\end{pspicture} 
+}
+\end{center}
+Die resultante is dus 0,75 cm lank en wys na regs. Die resultante krag is 15 N na links (of in die negatiewe rigting of in die rigting waarin die opposisie spanlede die speler stoot).
+
+}
+\end{wex}
+%\begin{wex}{Stert-by-kop optelling 3 (Nie in CAPS nie)}{ 'n Skip verlaat die hawe H en seil 6km noord na poort A. Van daar seil die skip 12km oos na poort B, voordat dit nog 5,5km suidwes vaar na poort C. Bepaal die skip se resulterende verplasing deur van die stert-by-kop-metode gebruik te maak.}{
+%
+%\westep{Teken  'n rowwe skets van die situasie}
+%Dit is makliker om die situasie te verstaan as jy eers  'n skets daarvan maak. Die rowwe skets moet al die inligting bevat wat die probleem vir jou gee. Al die groottes van die verplasings moet aangedui word. Ons wil net rofweg die vorm van die vektordiagram bepaal as ons  'n rowwe skets maak.
+%
+%\begin{center}
+%\begin{pspicture}(-4,-4)(4,0.5)
+%\psgrid[gridcolor=lightgray]
+%\psline[arrowscale=2]{->}(-3.8,-3.8)(-3.8,0)
+%\psline[arrowscale=2,linecolor=blue]{->}(-3.8,0)(3.8,0)
+%\psline[arrowscale=2,linecolor=red]{->}(3.8,0)(1.11,-2.69)
+%\rput(-4,-3.8){H}
+%\rput(-4.2,-1.9){6 km}
+%\rput(-4,0){A}
+%\rput(0,0.3){12 km}
+%\rput(4,0){B}
+%\rput(3.1,-1.4){5,5 km}
+%\rput(1.35,-2.69){C}
+%\psarc{-}(3.8,0){1.4}{180}{225}
+%\rput(3.05,-0.35){45$^\circ$}
+%\psline[arrowscale=2]{->}(-3.8,-3.8)(1.11,-2.69)
+%\end{pspicture}
+% \scalebox{0.7}{\pscompass}
+%\end{center}
+%
+%\westep{Kies  'n skaal en  'n verwysingsrigting}
+%Die keuse van  'n skaal hang van die vraag af -- jy moet  'n skaal kies sodat jou vektordiagram op een bladsy kan pas. Deur die rowwe skets te maak kan ons aflei dat  'n skaal: 1cm stel 2km voor (1cm= 2km)  'n goeie keuse vir hierdie probleem is. Ons moet nou  'n akkurate skets maak.
+%
+%\westep{Kies een van die vektore en teken dit as  'n pyl met die regte lengte, in die regte rigting. Onthou om die pylpunt aan die einde te teken om rigting aan te dui.}
+%Begin by die hawe H en teken die eerste vektor 3cm lank in die rigting noord.
+%
+%\MarginTip{Scale: 1~cm = 2~km}
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
+%\psgrid[gridcolor=lightgray]
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\end{pspicture}
+%\end{center}
+%
+%\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
+%Aangesien die skip nou by poort A is, moet ons die volgende vektor vanaf punt A, 6cm oos teken.
+
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
+%\psgrid[gridcolor=lightgray]
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){12 km}
+%\uput[u](6.5,3){B}
+%\end{pspicture}
+% \scalebox{0.7}{\pscompass}
+%\end{center}
+%
+%\westep{Teken die volgende vektor -- begin by die pylpunt van die vorige vektor}
+%Aangesien die skip nou by poort B is, moet ons die derde vektor vanaf punt B, 2,256cm in die rigting suidwes teken. Jy het  'n gradeboog nodig om die 45$^\circ$ hoek te meet.
+%
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
+%\psgrid[gridcolor=lightgray]
+%\SpecialCoor
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){12 km}
+%\uput[u](6.5,3){B}
+%\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
+%\uput[u]({2.25;225}){C}}
+%\uput[r](5.8,2){5,5 km}
+%\psarc{->}(6.5,3){1.4}{180}{225}
+%\rput(5.7,2.65){45$^\circ$}
+%\end{pspicture}
+% \scalebox{0.7}{\pscompass}
+%\end{center}
+%
+%\westep{Die resultante word van die stert van die eerste vektor na die kop van die laaste vektor geteken. Sy grootte kan bepaal word deur die lengte van die pyl te meet en die skaal te gebruik. So ook kan rigting met behulp van die skaaldiagram bepaal word.}
+%
+%Uiteindelik teken ons die resultante van die beginpunt (van die hawe H) na die eindpunt (poort C). Ons meet die lengte van die pyl en bepaal met  'n gradeboog die rigting.
+%
+%\begin{center}
+%\begin{pspicture}(0,0)(8,3.5)
+%\psgrid[gridcolor=lightgray]
+%\SpecialCoor
+%\psline[arrowscale=2]{->}(0.5,0)(0.5,3)
+%\uput[l](0.5,0){H}
+%\uput[l](0.5,1.5){3 cm = 6 km}
+%\uput[l](0.5,3){A}
+%\psline[arrowscale=2,linecolor=blue]{->}(0.5,3)(6.5,3)
+%\uput[u](3.5,3){6 cm = 12 km}
+%\uput[u](6.5,3){B}
+%\rput(6.5,3){\psline[arrowscale=2,linecolor=red]{->}(0,0)({2.25;225})
+%\uput[u]({2.25;225}){C}}
+%\uput[r](5.8,2){2,25 cm = 5,5 km}
+%\psline[linewidth=2pt]{->}(0.5,0)(4.91,1.41)
+%\pcline[offset=8pt,linestyle=none](0.5,0)(4.91,1.41)
+%\lput*{:U}{4,6 cm = 9,2 km}
+%\psarc{->}(0.5,0){0.9}{17.7}{90}
+%\rput(0.85,0.45){?}
+%\end{pspicture}
+% \scalebox{0.7}{\pscompass}
+%\end{center}
+%
+%\westep{ Pas die skaal toe om omskakeling te doen.}
+%Ons gebruik nou die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die eintlike verplasing van die probleem. Aangesien ons  'n skaal van 1cm = 2km gekies het, het die resultante  'n grootte van 9,2km. Die rigting kan bepaal word in terme van die hoek wat ons gemeet het, m.a.w. of 072,3$^\circ$ oos van noord of met  'n posisie van 072,3$^\circ$.
+%
+%\westep{Skryf die finale antwoord neer}
+%Die resulterende verplasing van die skip is 9,2 km op  'n bearing van 072,3$^\circ$.}
+%\end{wex}
+
+
+% \begin{wex}{Stert-by-kop-metode: Grafiese optelling 4 (Nie in CAPS nie)}{ 'n Man loop 40m oos en dan 30m noord.
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+% \item{Wat is die totale afstand wat hy geloop het?}
+% \item{Wat is sy resulterende verplasing.}
+% \end{enumerate}}
+% {
+% \westep{Teken  'n rowwe skets}
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \psline[linewidth=2pt]{->}(0,0)(4,3)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
+% \lput*{:U}{resultant}
+% \uput[d](2,0){40 m}
+% \uput[r](4,1.5){30 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Bepaal die afstand wat die man geloop het}
+% In die eerste deel van die man se reis loop hy 40m en daarna  'n verdere 30m. Dit gee  'n totale afstand van 40m + 30m = 70m
+% 
+% \westep{Bepaal sy resulterende verplasing}
+% Die man se resulterende verplasing is die vektor van sy beginpunt tot by sy eindpunt. Dit is die vektorsom van die twee afsonderlike verplasings. Ons gebruik die stert-by-kop-metode om  'n akkurate konstruksie van die vektor te maak.
+% 
+% \westep{Kies  'n geskikte skaal}
+%  'n Skaal:1cm stel 10m voor (1cm = 10m) is  'n goeie keuse. Ons kan nou begin konstrueer.
+% 
+% \westep{Teken die eerste vektor op skaal.}
+% Teken die eerste verplasing as  'n pyl wat 4cm lank is en in  'n ooswaartse rigting dui.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,0.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \uput[d](2,0){4 cm = 40 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Teken die tweede vektor op skaal}
+% Begin by die kop van die eerste vektor en teken die tweede vektor as  'n 3cm pyl wat in  'n noordelike rigting wys.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \uput[d](2,0){4 cm = 40 m}
+% \uput[r](4,1.5){3 cm = 30 m}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Bepaal die resultante.}
+% Ons kan nou die begin- en eindpunt verbind en die lengte en rigting van die pyl meet. Dit is die resultante.
+% 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(6,3)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(4,0)
+% \psline[arrowscale=2,linecolor=blue]{->}(4,0)(4,3)
+% \psline[linewidth=2pt]{->}(0,0)(4,3)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(4,3)
+% \lput*{:U}{5 cm = 50 m}
+% \uput[d](2,0){4 cm = 40 m}
+% \uput[r](4,1.5){3 cm = 30 m}
+% \psarc{->}(0,0){1.25}{0}{36.9}
+% \rput(0.85,0.25){?}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% \westep{Find the direction}
+% To find the direction you measure the angle between the resultant and the 40~m vector. You should get about 37$^\circ$.
+% 
+% \westep{Bepaal die rigting}
+% Ons gebruik uiteindelik die skaal om die lengte van die resultante in die skaaldiagram om te skakel na die ware grootte van die resulterende verplasing. Volgens die skaal is 1cm = 10m. 5cm stel dus 50m voor. Die resulterende verplasing is daarom 50m 37$^\circ$ noord van oos.
+% }
+% \end{wex}
+
+\subsection*{Algebraïese metodes}
+\subsubsection*{Vektore in  'n reguit lyn}
+
+Wanneer jy vektore in  'n reguit lyn (m.a.w. vektore wat na links en sommiges na regs werk of waar die vektore opwaarts en afwaarts werk) bymekaar moet tel, kan jy  'n eenvoudige algebraïese metode gebruik.\\
+
+\begin{minipage}{\textwidth}
+\textbf{Metode: Optelling/aftrekkking van vektore in  'n reguit lyn}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item{Kies  'n positiewe rigting. Jy kan, byvoorbeeld, vir  'n situasie wat verplasings na wes en na oos het, wes as die positiewe rigting kies. In so  'n geval is alle verplasings oos, negatief.}
+\item{Tel nou die grootte van die vektore (met die regte tekens) bymekaar (of trek hulle af).}
+\item{Die laaste stap is om die rigting van die resultante in woorde by te skryf. (Positiewe antwoorde is in die positiewe rigting, terwyl negatiewe resultate in die negatiewe rigting is.)}\\
+\end{enumerate}
+\end{minipage}
+
+Kom ons kyk na  'n paar voorbeelde.
+
+\begin{wex}{Tel vektore algebraïes op I}{ 'n Tennisbal word na  'n muur, wat 10 m van die bal af weg is, gerol. Nadat dit die muur tref, rol die bal nog 2,5 m verder grondlangs weg van die muur af. Bereken die bal se resulterende verplasing met die algebraïese metode.}{
+\westep{Teken  'n rowwe skets van die situasie.}
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(6,2)
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0,1.5)(5,1.5)
+\rput(2.5,1.7){10 m}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(5,1.5)(3.75,1.5)
+\rput(4.5,1.2){2,5 m}
+\psline{-}(5,0)(5,2)
+\rput(5.5,1){Muur}
+\psline[linestyle=dashed]{-}(0,0)(0,2)
+\rput(0,-0.2){Start}
+\end{pspicture}
+\end{center} 
+\westep{ Besluit watter metode jy gaan gebruik om die resultante te bereken.}
+Ons weet dat die resulterende verplasing van die bal ($\vec{x}_{R}$) gelyk is aan die som van die bal se afsonderlike verplasings ($\vec{x}_1$ and $\vec{x}_2$):
+\begin{eqnarray*}
+\vec{x}_{R} & = & \vec{x}_{1} + \vec{x}_{2}
+\end{eqnarray*}
+Aangesien die bal in  'n reguit lyn beweeg (m.a.w. die bal beweeg na die muur toe en weg van die muur af), kan ons die algebraïese metode, wat ons sopas verduidelik het, gebruik.
+\westep{Kies  'n positiewe rigting}
+Kom ons kies die positiewe rigting as die rigting na die muur toe. Dit beteken dat die negatiewe rigting die beweging weg van die muur af is.
+\westep{Definieer nou die vektore algebraïes.}
+Met regs as positief:
+\begin{eqnarray*}
+\vec{x}_{1} & = & +10,0\emm \\
+\vec{x}_{2} & = & -2,5\emm 
+\end{eqnarray*}
+
+\westep{Tel nou die vektore bymekaar}
+Tel nou eenvoudig die twee verplasings bymekaar om die resultante te kry.
+\begin{eqnarray*}
+\vec{x}_{R} & = & (+10\emm) + (-2,5\emm) \\
+& = & (+7,5)\emm
+\end{eqnarray*}
+\westep{Skryf die resultante in woorde}
+Die beweging na die muur toe was in hierdie geval die positiewe rigting, daarom:
+$\vec{x}_{R}$  =  7,5 m na die muur toe.}
+\end{wex}
+
+\begin{wex}{Trek vektore algebraïes van mekaar af I}{Veronderstel  'n tennisbal word horisontaal na  'n muur gegooi met  'n aanvangsnelheid van 3 \ms na regs. Nadat die bal die muur tref, beweeg die bal terug na die gooier toe teen 2 \ms. Bepaal die verskil in snelheid van die bal.}{
+\westep{Teken  'n skets}
+ 'n Vinnige skets help ons om die probleem te verstaan.
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(4,2)
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0,1.5)(3,1.5)
+\rput(1.5,1.7){3 \ms}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3,1.5)(1,1.5)
+\rput(2,1.2){2 \ms}
+\psline{-}(3,0)(3,2)
+\rput(3.5,1){Muur}
+\psline[linestyle=dashed]{-}(0,0)(0,2)
+\rput(0,-0.2){Start}
+\end{pspicture}
+\end{center} 
+\westep{Besluit watter metode jy gaan gebruik om die resultante te bepaal.}
+Onthou dat snelheid  'n vektor is. Die verandering in die snelheid van die bal is gelyk aan die verskil tussen die bal se aanvangsnelheid en sy finale snelheid:
+\begin{equation*}
+\Delta\vec{v}  =  \vec{v}_{f} - \vec{v}_{i} 
+\end{equation*}
+
+Aangesien die bal in  'n reguit lyn beweeg (m.a.w. na links en regs) kan ons die algebraïese metode om vektore af te trek gebruik wat ons bespreek het.
+
+\westep{Kies  'n positiewe rigting} 
+Kies die positiewe rigting van die bal as die rigting na die muur toe. Dit beteken dat die negatiewe rigting weg van die muur is.
+
+\westep{Definieer die vektore algebraïes}
+\begin{eqnarray*}
+\vec{v}_{i} & = & +3\ems \\
+\vec{v}_{f} & = & -2\ems 
+\end{eqnarray*}
+
+\westep{Trek die vektore af}
+Die verandering in die snelheid van die bal is dus:
+
+\begin{eqnarray*}
+\Delta\vec{v} & = & (-2\ems) - (+3\ems) \\
+& = & (-5)\ems
+\end{eqnarray*}
+\westep{Skryf die resultante in woorde}
+Onthou dat die rigting na die muur toe in hierdie geval  'n positiewe snelheid beteken, daarom sal weg van die muur af  'n negatiewe snelheid wees. Dus:
+$\Delta\vec{v} =  5\ems$ weg van die muur.}
+\end{wex}
+\Tip{Onthou dat hierdie metode van optelling en aftrekking van vektore net van toepassing is op vektore wat in  'n reguit lyn is. Wanneer vektore nie in  'n reguit lyn is nie, m.a.w. hulle vorm  'n hoek met mekaar, moet eenvoudige meetkundige en trigonometriese metodes gebruik word om die resultante te bereken.}
+\begin{wex}{Algebraïese metode van vektoroptelling II}{ 'n Man oefen  'n krag van $5 ~\text{N}$ op  'n krat uit. Die krat stoot terug teen die man met  'n krag van $2~ \text{N}$. Bereken die resulterende krag wat die man op die krat uitoefen met die algebraïese metode.}{
+\westep{Teken  'n rowwe skets van die situasie.}
+ 'n Vinnige skets help om die situasie duidelik te maak.
+\begin{center}
+\begin{pspicture}(-0.5,-0.5)(4,2)
+%\psgrid[gridcolor=lightgray]
+\psline[linewidth=0.04cm]{->}(0,1.5)(3,1.5)
+\rput(1.5,1.7){$5~\text{N}$}
+\psline[linecolor=blue,linewidth=0.04cm]{->}(3,1.5)(1,1.5)
+\rput(2,1.2){$2~\text{N}$}
+% \psline{-}(3,0)(3,2)
+% \rput(3.5,1){Wall}
+% \psline[linestyle=dashed]{-}(0,0)(0,2)
+% \rput(0,-0.2){Start}
+\end{pspicture}
+\end{center} 
+\westep{Besluit watter metode jy gaan gebruik om die resultante te bereken.}
+Onthou dat krag  'n vektor is. Aangesien die bal in  'n reguit lyn beweeg (m.a.w. links en regs) kan ons die algebraïese metode, wat ons sopas verduidelik het, gebruik.
+
+\westep{Kies  'n positiewe rigting} 
+Kom ons kies die positiewe rigting as die rigting na die krat toe (m.a.w. in dieselfde rigting wat die man stoot). Dit beteken dat die negatiewe rigting die rigting weg van die krat is (m.a.w. teen die rigting wat die man stoot).
+
+\westep{Definieer die vektore algebraïes.}
+\begin{eqnarray*}
+\vec{F}_{\text{man}} & = & +5~\text{N} \\
+\vec{F}_{\text{krat}} & = & -2~\text{N} 
+\end{eqnarray*}
+
+\westep{Trek die vektore af}
+Die resulterende krag is:
+
+\begin{eqnarray*}
+\vec{F}_{\text{man}} + \vec{F}_{\text{krat}} & = & (5~{\text{N}}) + (2~{\text{N}}) \\
+& = & 7~\text{N}
+\end{eqnarray*}
+\westep{Skryf die resultante in woorde}
+Die beweging na die krat toe was in hierdie geval  'n positiewe krag, daarom: $7~\text{N}$ na die krat toe.}
+\end{wex}
+
+\begin{exercises}{Resultant Vectors}{ \noindent\vspace{-1cm}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item Harold stap skool toe deur 600 m noordoos en daarna 500 m N 40$^\circ$ W. te stap. Bepaal sy resulterende verplasing met akkurate skaaltekeninge.
+\item  'n Duif vlieg van haar nes af om haar kuiken te soek. Sy vlieg teen  'n snelheid van 2 \ms in die rigting 135$^\circ$ en dan teen  'n snelheid van 1,2 \ms in die rigting 230$^\circ$. Bereken haar resulterende snelheid met akkurate skaaltekeninge.
+\item  'n Muurbalbal val op die grond met  'n aanvangsnelheid van 2,5 \ms. Dit bons terug (boontoe) met  'n snelheid van 0,5 \ms. \begin{enumerate}
+	\item Wat is die verandering in die snelheid van die muurbalbal?
+	\item Wat is die resulterende snelheid van die muurbalbal?
+	\end{enumerate}
+\item  'n Padda probeer  'n rivier oorsteek. Dit swem 3 \ms in  'n noordelike rigting na die oorkantste oewer. Die water vloei in  'n westelike rigting teen 5 \ms. Bepaal die padda se resulterende snelheid deur middel van toepaslike berekeninge. Jy moet  'n rowwe skets van die situasie maak.
+\item Mpihlonhle stap winkel toe deur 500 m noordwes en dan 400 m N 30$^\circ$ E. Bepaal haar resulterende verplasing met behulp van toepaslike berekeninge.
+  \label{59e414b70efc194a27a122db47d06ce6**end}
+\par \practiceinfo
+ \par \begin{tabular}[h]{ccccc}
+ (1.) 02vq  &  (2.) 02vr  &  (3.) 02vs &  (4.) 02vt  &  (5.) 02vu \end{tabular}
+\end{enumerate}
+}
+\end{exercises}
+
+
+
+% \section{Komponente van Vektore}
+% \textbf{(Nie in CAPS nie)}\\
+% In die vorige bespreking waar ons oor die optelling van vektore gepraat het, het ons gesien dat vektore wat saamwerk kan kombineer om een enkele vektor (die resultante) te vorm. Net so kan een vektor dan opgebreek word in die verskillende vektore wat bymekaar getel is om daardie vektor te vorm. Hierdie vektore wat optel om die oorspronklike vektor te vorm word die komponente van die oorspronklike vektor genoem. Die proses waardeur  'n vektor in sy komponente opgebreek word, word die beginsel van ontbinding van vektore genoem.
+% 
+% Wanneer jy  'n stel vektore bymekaar tel kan jy net een antwoord (die resultante) kry.  'n Enkele vektor kan egter in  'n oneindige hoeveelheid verskillende stelle komponente opgebreek word. Die diagramme hieronder wys hoe dieselfde vektor (die donker streep) in verskillende pare komponente opgebreek kan word. Hierdie komponente word met stippellyne aangedui. Wanneer die twee stippellyne (vektore) bymekaar getel word, gee dit die oorspronklike vektor (die donker streep). Die oorspronklike vektor is dus die resultante van sy komponente.
+% 
+% \begin{center}
+% \begin{pspicture}(-2.5,-2.6)(2.5,2.6)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(-2,0.5)(0,2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,0.5)(-2,1.25)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,1.25)(0,2.5)
+% 
+% \psline[arrowscale=2]{->}(0.5,0.5)(2.5,2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(0.5,0.5)(2.5,-0.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(2.5,-0.5)(2.5,2.5)
+% \psline[arrowscale=2]{->}(-2,-2.5)(0,-0.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(-2,-2.5)(0,-2.5)
+% \psline[arrowscale=2,linestyle=dashed]{->}(0,-2.5)(0,-0.5)
+% \psline{-}(-0.25,-2.25)(0,-2.25)
+% \psline{-}(-0.25,-2.25)(-0.25,-2.5)
+% \end{pspicture} 
+% \end{center}
+% 
+% In praktyk help dit baie om  'n vektor in sy komponente op te breek, veral as die komponente  'n reghoek met mekaar vorm, gewoonlik dan  'n horisontale en  'n vertikale komponent.
+% 
+% Enige vektor kan in  'n horisontale en vertikale komponent opgebreek word. As $\vec{A}$  'n vektor is, dan is $\vec{A}_x$ die horisontale komponent en  $\vec{A}_y$ is die vertikale komponent.
+% 
+% \begin{center}
+% \begin{pspicture}(0,-0.5)(3,3)
+% %\psgrid[gridcolor=lightgray]
+% % \psaxes[linewidth=1.2pt,labels=none,showorigin=false,ticks=none]{<->}((0,0)(-1,-1)(3,3)
+% \psline[arrowscale=2]{->}(0,0)(2.5,2.5)
+% \psline[linestyle=dashed](2.5,0)(2.5,2.5)
+% \psline[linestyle=dashed](0,0)(2.5,0)
+% \uput[ul](1,1){$\vec{A}$}
+% \uput[r](2.5,1.25){$\vec{A}_y$}
+% \uput[d](1.25,0){$\vec{A}_x$}
+% \psline{-}(2.25,0.25)(2.5,0.25)
+% \psline{-}(2.25,0)(2.25,0.25)
+% \psarc{->}(-1,0){1.4}{0}{15}
+% \rput(0.6,0.2){$\theta$}
+% \end{pspicture} 
+% \end{center}
+% Note that $\vec{A}_{x} = A cos \theta$ en $\vec{A}_{y} = A sin \theta$
+% \begin{wex}{Breek  'n vektor in komponente op.}{ 'n Motoris ondergaan  'n verplasing van 250km in  'n rigting 30$^\circ$ noord van oos. Breek hierdie verplasing op in sy komponente in die rigting noord ($\vec{x}_N$) en oos ($\vec{x}_E$).\\}{
+% \westep{Teken  'n rowwe skets van die oorspronklike vektor}
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(7,3.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(6,3.46)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
+% \psarc{->}(0,0){1.4}{0}{30}
+% \lput{:U}{250 km}
+% \rput(0.9,0.25){30$^\circ$}
+% \psline[linestyle=dashed]{-}(0,0)(2,0)
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% \westep{Bepaal die vektor se komponente} 
+% Breek die verplasing in sy komponente noord en oos op. Aangesien hierdie rigtings loodreg met mekaar is, vorm die komponente  'n reghoekige driehoek met die oorspronklike verplasing as skuinssy. 
+% \begin{center}
+% \begin{pspicture}(-0.5,-0.5)(7,3.5)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(6,3.46)
+% \pcline[offset=8pt,linestyle=none]{-}(0,0)(6,3.46)
+% \psarc{->}(0,0){1.4}{0}{30}
+% \lput{:U}{250 km}
+% \rput(0.9,0.25){30$^\circ$}
+% \psline[linestyle=dashed]{-}(0,0)(2,0)
+% \psline[linestyle=dashed,linewidth=2pt]{->}(0,0)(6,0)
+% \psline[linestyle=dashed,linewidth=2pt]{->}(6,0)(6,3.46)
+% \pcline[offset=-8pt,linestyle=none]{-}(0,0)(6,0)
+% \lput{:U}{$\vec{x}_E$}
+% \pcline[offset=-8pt,linestyle=none]{-}(6.2,0)(6.2,3.46)
+% \lput{:U}{\rotateright{$\vec{x}_N$}}
+% \end{pspicture}
+% % \scalebox{0.7}{\pscompass}
+% \end{center}
+% 
+% Let daarop dat die twee komponente wat saam werk die oorspronklike vektor as resultante het.
+% 
+% \westep{ Bepaal die lengte van die komponent vektore}
+% Ons kan nou trigonometrie gebruik om die grootte van die komponente van die oorspronklike verplasing te bereken:
+% \begin{eqnarray*}
+% x_N &=& (250) (\sin{30^\circ})\\
+% &=& 125\ \text{km}
+% \end{eqnarray*}
+% en
+% \begin{eqnarray*}
+% x_E &=& (250)(\cos{30^\circ})\\
+% &=& 216,5\ \text{km}
+% \end{eqnarray*}
+% 
+% Onthou dat $x_N$ en $x_E$ die grootte van die komponente is, hulle is onderskeidelik in die rigting noord en oos.}
+% \end{wex}
+
+% \subsection{Vektoroptelling met behulp van komponente}
+% Komponente kan ook gebruik word om die resultante te bepaal. Ons kan hierdie metode vir sowel grafiese as algebraïese metodes om die resultante te bepaal, gebruik. Die metode is eenvoudig: maak  'n rowwe skets van die probleem, kry die horisontale en vertikale komponent van elke vektor, bereken die som van al die horisontale komponente en daarna van al die vertikale komponente en gebruik hulle dan om die resultante te kry.
+% 
+% Kyk na hierdie twee vektore, $\vec{A}$ en $\vec{B}$, in Figuure~\ref{fig:p:v:components:addition:vectors}, met hul resultante, $\vec{R}$. 
+% 
+% \begin{figure}[!htbp]
+% \begin{center}
+% \scalebox{0.7}
+% {
+% \begin{pspicture}(0,0)(8,6)%%\psgrid
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,2)
+% \lput{:U}{$\vec{A}$}
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,6)
+% \lput{:U}{$\vec{B}$}
+% \psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
+% \pcline[offset=8pt,linestyle=none](0,0)(8,6)
+% \lput{:U}{$\vec{R}$}
+% \end{pspicture}
+% }
+% \end{center}
+% \caption{An example of two vectors being added to give a resultant}
+% \label{fig:p:v:components:addition:vectors}
+% \end{figure}
+% 
+% Elke vektor in Figuur~\ref{fig:p:v:components:addition:vectors} kan opgebreek word in een komponent in die $x$-rigting (horisontaal) en een in die $y$-direction (vertical). rigting (vertikaal). Hierdie komponente is twee vektore wat bymekaargetel kan word om die oorspronklike vektor as die resultante te gee. As jy na Figuur~\ref{fig:p:v:components:addition:vectors:components} kyk sal jy sien dat:
+% 
+% \begin{minipage}{0.5\textwidth}
+% \begin{eqnarray*}
+% \vec{A}&=&\vec{A}_x+\vec{A}_y\\
+% \vec{B}&=&\vec{B}_x+\vec{B}_y\\
+% \vec{R}&=&\vec{R}_x+\vec{R}_y\\
+% \end{eqnarray*}
+% \end{minipage}
+% \begin{minipage}{0.5\textwidth}
+% \begin{eqnarray*}
+% \mbox{But,}\quad \vec{R}_x&=&\vec{A}_x+\vec{B}_x\\
+% \mbox{and}\quad\vec{R}_y&=&\vec{A}_y+\vec{B}_y\\
+% \end{eqnarray*}
+% \end{minipage}
+% 
+% Om op te som: deur die $x$ komponente van die twee oorspronklike vektore bymekaar te tel, kry ons die $x$ komponent van die resultante. Dieselfde is waar vir die $y$ komponente. As ons daarom al die komponente bymekaar tel, sal ons dieselfde antwoord kry. Hierdie is  'n belangrike eienskap van vektore.
+% 
+% \begin{figure}[H]
+% \begin{center}
+% \scalebox{1}
+% {
+% \begin{pspicture}(-1,-0.6)(8.6,7)
+% %\psgrid[gridcolor=lightgray]
+% %A
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,2)
+% \lput{:U}{$\vec{A}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)(5,2)	%components of A
+% \pcline[offset=-8pt,linestyle=none](0,0)(5,0)
+% \lput{:U}{$\vec{A}_x$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
+% \pcline[offset=8pt,linestyle=none](0,6.5)(5,6.5)
+% \lput{:U}{$\vec{A}_x$}
+% \pcline[offset=-8pt,linestyle=none](5,0)(5,2)
+% \lput{:U}{$\vec{A}_y$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,0)(-0.5,2)
+% \pcline[offset=8pt,linestyle=none](-0.5,0)(-0.5,2)
+% \lput{:U}{$\vec{A}_y$}
+% %Right angle in corner! (5,0)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
+% %B
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,6)
+% \lput{:U}{$\vec{B}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)(8,6)	%components of B
+% \pcline[offset=-8pt,linestyle=none](5,2)(8,2)
+% \lput{:U}{$\vec{B}_x$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
+% \pcline[offset=8pt,linestyle=none](5,6.5)(8,6.5)
+% \lput{:U}{$\vec{B}_x$}
+% \pcline[offset=-8pt,linestyle=none](8,2)(8,6)
+% \lput{:U}{$\vec{B}_y$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
+% \pcline[offset=8pt,linestyle=none](-0.5,2)(-0.5,6)
+% \lput{:U}{$\vec{B}_y$}
+% %Right angle in corner (8,2)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
+% %R
+% \psline[arrowscale=2,linewidth=2pt]{->}(0,0)(8,6)
+% \pcline[offset=8pt,linestyle=none](0,0)(8,6)
+% \lput{:U}{$\vec{R}$}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)(8,6)	%components of B
+% \pcline[offset=-8pt,linestyle=none](0,6)(8,6)
+% \lput{:U}{$\vec{R}_x$}
+% \pcline[offset=-8pt,linestyle=none](0,0)(0,6)
+% \lput{:U}{$\vec{R}_y$}
+% %Right angle in corner (0,6)
+% \psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
+% \psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
+% \end{pspicture}
+% }
+% \end{center}
+% \caption{Adding vectors using components.}
+% \label{fig:p:v:components:addition:vectors:components}
+% \end{figure}
+% To find the resultant we note that $R=\sqrt{R_{x}^{2} + R_{y}^{2}}$. To find the angle we use $\theta = tan^{-1} (\frac{R_{y}}{R_{x}})$.
+% \begin{wex}{Adding Vectors Using Components}{If in Figure~\ref{fig:p:v:components:addition:vectors:components}, $\vec{A}=5,385\emm$ at an angle of 21.8$^\circ$ to the horizontal and $\vec{B}=5\emm$ at an angle of 53,13$^\circ$ to the horizontal, find $\vec{R}$.\\}{
+% \westep{Decide how to tackle the problem} 
+% The first thing we must realise is that the order that we add the vectors does not matter. Therefore, we can work through the vectors to be added in any order.
+% 
+% \westep{Resolve $\vec{A}$ into components}
+% We find the components of $\vec{A}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $A_y$:
+% \begin{eqnarray*}
+% \sin \theta &=& \frac{A_y}{A} \\
+% \sin{21,8^\circ} &=& \frac{A_y}{5,385}\\
+% A_y &=& (5,385)(\sin{21,8^\circ})\\
+%  &=& 2\emm
+% \end{eqnarray*}
+% 
+% Secondly we find the magnitude of the horizontal component, $A_x$:
+% \begin{eqnarray*}
+% \cos \theta &=& \frac{A_x}{A} \\
+% \cos{21.8^\circ} &=& \frac{A_x}{5,385}\\
+% A_x &=& (5,385) (\cos{21,8^\circ})\\
+%  &=& 5\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(-0.2,-0.6)(5.6,2.4)%%\psgrid
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(5,2)
+% \pcline[offset=8pt]{|-|}(0,0)(5,2)
+% \lput*{:U}{5,385 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(5,0)
+% \pcline[offset=-8pt]{|-|}(0,0)(5,0)
+% \lput*{:U}{5 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,0)(5,2)
+% \pcline[offset=-8pt]{|-|}(5,0)(5,2)
+% \lput*{:U}{2 m}
+% %Right angle in corner! (5,0)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0)(4.7,0.3)
+% \psline[linestyle=dashed,arrowscale=2](4.7,0.3)(5.,0.3)
+% \end{pspicture}
+% \end{center}
+% 
+% The components give the sides of the right angle triangle, for which the original vector, $\vec{A}$, is the hypotenuse. 
+% 
+% \westep{Resolve $\vec{B}$ into components}
+% We find the components of $\vec{B}$ by using known trigonometric ratios. First we find the magnitude of the vertical component, $B_y$:
+% \begin{eqnarray*}
+% \sin{\theta} & = & \frac{B_y}{B} \\
+% \sin{53,13^\circ} & = &\frac{B_y}{5}\\
+% B_y & = & (5)(\sin{53,13^\circ})\\
+%  & = & 4\emm
+% \end{eqnarray*}
+% 
+% Secondly we find the magnitude of the horizontal component, $B_x$:
+% \begin{eqnarray*}
+% \cos{\theta} &=& \frac{B_x}{B} \\
+% \cos{21,8^\circ} &=& \frac{B_x}{5,385}\\
+% B_x & = & (5,385) (\cos{53,13^\circ})\\
+% & = & 5\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(4.6,1.4)(8.6,6.4)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(5,2)(8,6)
+% \pcline[offset=8pt]{|-|}(5,2)(8,6)
+% \lput*{:U}{5 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,2)(8,2)
+% \pcline[offset=-8pt]{|-|}(5,2)(8,2)
+% \lput*{:U}{3 m}
+% \psline[linestyle=dashed,arrowscale=2]{->}(8,2)(8,6)
+% \pcline[offset=-8pt]{|-|}(8,2)(8,6)
+% \lput*{:U}{4 m}
+% %Right angle in corner (8,2)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2)(7.7,2.3)
+% \psline[linestyle=dashed,arrowscale=2](7.7,2.3)(8,2.3)
+% \end{pspicture}
+% \end{center}
+% 
+% \westep{Determine the components of the resultant vector}
+% Now we have all the components. If we add all the horizontal components then
+% we will have the $x$-component of the resultant vector, $\vec{R}_x$.  Similarly, we add all the vertical components then we will have the $y$-component of the resultant vector, $\vec{R}_y$.
+% \begin{eqnarray*}
+% R_x &=& A_x+B_x\\
+% &=&5\emm + 3\emm\\
+% &=&8\emm
+% \end{eqnarray*}
+% Therefore, $\vec{R}_x$ is 8 m to the right.
+% \begin{eqnarray*}
+% R_y &=& A_y+B_y\\
+% &=&2\emm + 4\emm\\
+% &=&6\emm
+% \end{eqnarray*}
+% Therefore, $\vec{R}_y$ is 6 m up.
+% 
+% \westep{Determine the magnitude and direction of the resultant vector}
+% Now that we have the components of the resultant, we can use the Theorem of Pythagoras to determine the magnitude of the resultant, $R$.
+% \begin{eqnarray*}
+% R^2&=&(R_x)^2 + (R_y)^2\\
+% R^2&=&(6)^2 + (8)^2\\
+% R^2&=&100\\
+% \therefore R&=&10\emm
+% \end{eqnarray*}
+% 
+% \begin{center}
+% \begin{pspicture}(-1,-0.4)(8.4,7)
+% %\psgrid[gridcolor=lightgray]
+% \psline[arrowscale=2]{->}(0,0)(8,6)
+% \pcline[offset=-8pt]{|-|}(0,0)(8,6)
+% \lput*{:U}{10 m}
+% 
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,0)(0,6)
+% \psline[linestyle=dashed,arrowscale=2]{->}(-.5,0)(-0.5,2)
+% \psline[linestyle=dashed,arrowscale=2]{->}(-0.5,2)(-0.5,6)
+% \pcline[offset=8pt]{|-|}(-.5,0)(-0.5,6)
+% \lput*{:U}{6 m}
+% 
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6)(8,6)
+% \psline[linestyle=dashed,arrowscale=2]{->}(0,6.5)(5,6.5)
+% \psline[linestyle=dashed,arrowscale=2]{->}(5,6.5)(8,6.5)
+% \pcline[offset=8pt]{|-|}(0,6.5)(8,6.5)
+% \lput*{:U}{8 m} 
+% 
+% %Right angle in corner (0,6)
+% \psline[linestyle=dashed,arrowscale=2](0,5.7)(0.3,5.7)
+% \psline[linestyle=dashed,arrowscale=2](0.3,5.7)(0.3,6)
+% \psline[linestyle=dashed,arrowscale=2](0,0)(4,0)
+% \rput(0.7,0.25){$\alpha$}
+% \psarc{->}(0,0){1}{0}{36.8}
+% \end{pspicture}
+% \end{center}
+% 
+% The magnitude of the resultant, $R$ is 10 m.  So all we have to do is calculate its direction. We can specify the direction as the angle the vectors makes with a known direction. To do this you only need to visualise the vector as starting at the origin of a coordinate system. We have drawn this explicitly below and the angle we will calculate is labelled $\alpha$.
+% 
+% Using our known trigonometric ratios we can calculate the value of $\alpha$;
+% \begin{eqnarray*}
+% \tan \alpha & = & \frac{6 \emm}{8\emm} \\
+% \alpha & = & \tan^{-1} \frac{6\emm}{8\emm}\\
+% \alpha & = & 36,8^o.
+% \end{eqnarray*}
+% \westep{Quote the final answer}
+% $\vec{R}$ is 10 m at an angle of $36,8^\circ$ to the positive $x$-axis.}
+% \end{wex}
+% 
+% \begin{exercises}{Adding and Subtracting Components of Vectors}
+% \noindent\vspace{-1cm}
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+% \item Harold stap skool toe deur 600m noordoos en dan 500m N $40^o$ W te stap. Bepaal sy resulterende verplasing as die som van die komponente van sy vektore.
+% \item  'n Duif vlieg van haar nes af om haar kuiken te soek. Sy vlieg teen  'n snelheid van 2 \ms met  'n bearing 135${^\circ}$ en dan teen  'n snelheid van 1,2 \ms met 'n bearing 230${^\circ}$. Bereken haar resulterende snelheid deur die horisontale en vertikale komponente van haar vektore op te tel.
+% \end{enumerate}
+% 
+% \par \practiceinfo
+%  \par \begin{tabular}[h]{cc}
+%  (1.) 0090  &  (2.) 0091   & \end{tabular}
+% \end{exercises}
+
+\summary{VPgig}
+\begin{itemize}
+\item  'n Skalaar is  'n fisiese hoeveelheid wat net grootte het.
+\item  'n Vektor is  'n fisiese hoeveelheid wat grootte en rigting het.
+\item Vektore word voorgestel deur pyle waar die lengte van die pyl die grootte van die vektor en die pylpunt die rigting van die vektor aandui.
+\item Die rigting van  'n vektor kan uitgedruk word deur te verwys na  'n ander vektor of  'n vaste punt (bv. $30^{\circ}$ van die oewer); deur  'n kompas te gebruik (bv. N $30^\circ$ W); of deur sy posisie (bv. $053 ^\circ$).
+\item Die resultante is die enkele vektor waarvan die uitwerking dieselfde is as die twee individuele vektore wat saamwerk. 
+\end{itemize}
+
+\begin{eocexercises}{Vectors}\noindent
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item Twee kragte in ewewig werk op  'n punt in. Die kragte
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item het gelyke grootte en rigtings.
+    \item het gelyke grootte maar verskillende rigtings.
+    \item werk loodreg tot mekaar.
+    \item werk in dieselfde rigting.
+\end{enumerate}
+
+\item Watter een van die volgende bevat twee vektore en  'n skalaar?
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item afstand, snelheid, spoed
+    \item verplasing, snelheid, versnelling
+    \item afstand, massa, spoed
+    \item verplasing, spoed, snelheid
+\end{enumerate}
+
+
+\label{m38819*uid107}\item Twee vektore werk op dieselfde punt in. Wat moet die hoek tussen hulle wees sodat daar  'n maksimum resultante kan wees?
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $0{}^{\circ }$
+    \item $90{}^{\circ }$
+    \item $180{}^{\circ }$
+    \item kan nie bepaal nie.
+\end{enumerate}
+
+\item Twee kragte, $4 ~\text{N}$ en $11 ~\text{N}$, werk op  'n punt in. Watter een van die volgende kan nie die grootte van die resultante wees nie.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $4 ~\text{N}$
+    \item $7 ~\text{N}$
+    \item $11 ~\text{N}$
+    \item $15 ~\text{N}$
+\end{enumerate}
+
+\end{enumerate}
+
+\practiceinfo
+ \par \begin{tabular}[h]{cccccc}
+ (1.) 02vv  &  (2.) 02vw  & (3.) 02vx & (4.) 02vy & \end{tabular}
+\end{eocexercises}
