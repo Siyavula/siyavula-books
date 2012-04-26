@@ -1,0 +1,108 @@
+\documentclass[9pt,a4paper,titlepage,twoside,openany]{extbook}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{extsizes}
+\usepackage{float} % for figures to appear where you want them
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{changebar}
+\usepackage{pst-all}
+\usepackage{pst-eucl}        %Jo
+\usepackage{pst-poly}        %Jo
+
+\usepackage{pst-lens}
+\usepackage{pst-3dplot}
+\usepackage{xcolor}
+\usepackage{multicol}
+% \usepackage{pst-3dplot}        %Jo
+\usepackage{pst-spectra}
+\usepackage{pst-slpe}
+\usepackage{pst-math}
+%\usepackage{pst-diffraction}
+
+%% ************* NB ************
+%% The order in which pstricks packages are loaded
+%% matters - so I copied the order from pst-all.sty
+%% and then added the two additional packages at the end.
+%% ************* End NB ************
+
+%% ************* Packages ************
+\usepackage{pst-circ}
+\usepackage{pst-optic}         %Jo
+\usepackage{pstricks-add}         %Jo
+\usepackage{pst-labo}         %Jo
+
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{url}
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{eurosym}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{chemfig}
+\sffamily
+
+\usepackage{mdframed}
+\usepackage{tikz}
+
+\input{../../DefinitionsV0-5-1}
+
+\usepackage[paper=a4paper, 
+  lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
+  tmargin=1in, bmargin=1in,
+  twoside, centering,
+  includehead, marginsep=3mm, marginparwidth=0.225\paperwidth]{geometry}
+
+
+
+
+\begin{document}
+
+
+\renewcommand{\scienceormathsurl}{www.everythingscience.co.za}
+
+\setlength{\parskip}{0.7ex plus 0.2ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+\setcounter{tocdepth}{1}
+\include{EverythingScienceTitlePages}
+
+% Stuff copied from thesis
+% Dutch style of paragraph formatting, i.e. no indents. 
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+% change shortcodeprefix to the correct value
+\renewcommand{\shortcodeprefix}{ESB}
+
+
+\clearpage
+\tableofcontents
+\pagenumbering{arabic}
+\part{Chemistry}
+\include{PhSc_Gr11_Ch_1-chapterAtomicCombinations}
+\include{PhSc_Gr11_Ch_2-chapterIntermolecularForces}
+\include{PhSc_Gr11_Ch_3-chapterSolutionsandsolubility}
+\include{PhSc_Gr11_Ch_4-chapterAtomicNuclei}
+\include{PhSc_Gr11_Ch_5-chapterThermalPropertiesandIdealGases}
+\include{PhSc_Gr11_Ch_6-chapterQuantitativeAspectsofChemicalChange}
+\include{PhSc_Gr11_Ch_7-chapterEnergyChangesInChemicalReactions}
+\include{PhSc_Gr11_Ch_8-chapterTypesofReactions}
+\include{PhSc_Gr11_Ch_9-chapterTheLithosphere}
+\include{PhSc_Gr11_Ch_10-chapterTheAtmosphere}
+
+\part{Physics}
+\include{PhSc_Gr11_Ch_11-chapterVectors}
+\include{PhSc_Gr11_Ch_12-chapterForceMomentumandImpulse}
+\include{PhSc_Gr11_Ch_13-chapterGeometricalOptics}
+\include{PhSc_Gr11_Ch_14-chapterLongitudinalWaves}
+\include{PhSc_Gr11_Ch_15-chapterSound}
+\include{PhSc_Gr11_Ch_16-chapterThePhysicsofMusic}
+\include{PhSc_Gr11_Ch_17-chapterElectrostatics}
+\include{PhSc_Gr11_Ch_18-chapterElectromagnetism}
+\include{PhSc_Gr11_Ch_19-chapterElectricCircuits}
+\include{PhSc_Gr11_Ch_20-chapterElectronicPropertiesofMatter}
+\end{document}
