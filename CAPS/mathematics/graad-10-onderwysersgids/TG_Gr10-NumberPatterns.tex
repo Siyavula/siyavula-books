@@ -1,0 +1,258 @@
+         \chapter{Getalpatrone}
+% \section{Number pattern examples}
+% \section{Describing sequences}
+\begin{exercises}{}
+{ 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Skryf die volgende drie terme neer in elk van die reekse:
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
+  \item $5;~15;~25;~\ldots$
+  \item $-8;-3;~2;`\ldots$
+  \item $30;~27;~24;~\ldots$
+  \end{enumerate}
+ \item Hieronder is die algemene formules gegee vir ’n paar reekse. Bereken die terme wat weggelaat is.
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
+  \item $0;3;~\ldots;~15;~24$\hspace{2.2cm}$T_{n}={n}^{2}-1$
+  \item $3;~2;~1;~0;~\ldots;~-2$\hspace{2cm}$T_{n}=-n+4$
+  \item $-11;~\ldots;~-7;~\ldots;~-3$\hspace{1.5cm}$T_{n}=-13+2n$
+  \end{enumerate}
+\item Vind die algemene formule vir elk van die volgende reekse en vind dan ${T}_{10}$, ${T}_{50}$ en ${T}_{100}$:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item $2;~5;~8;~11;~14;~\ldots$
+  \item $0;~4;~8;~12;~16;~\ldots$
+  \item $2;~-1;~-4;~-7;~-10;~\ldots$
+  \end{enumerate}
+\end{enumerate}
+
+}%\End of exercise
+\end{exercises}
+
+
+ \begin{solutions}{}{
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item 
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
+  \item $35;45;55$
+  \item $7;12;7$
+  \item $21;18;15$
+  \end{enumerate}
+ \item 
+\begin{multicols}{2}
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
+
+  \item $T_n = n^{2}-1\\
+T_3 = 3^2 - 1\\
+= 9 -1\\
+= 8$
+  \item $T_n = -n + 4\\
+T_5 = -5 + 4\\
+= -1$
+  \item $T_n = -13 + 2n\\
+T_2 = -13 + 2(2)\\
+= -13 + 4\\
+= -9$ \\
+$T_n = -13 + 2n\\
+T_4 = -13 + 2(4)\\
+= -13 + 8\\
+= -5$
+  \end{enumerate}
+\end{multicols}
+\item 
+\begin{multicols}{2}
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item 
+$a = 2\\
+d = 3\\
+T_n = 3n - 1\\
+T_{10} = 3(10) - 1 = 29\\
+T_{50} = 3(50) - 1 = 149\\
+T_{100} = 3(100) - 1 = 299$ 
+  \item $a = 0\\
+d = 4\\
+T_n = 4n - 4\\
+T_{10} = 4(10) - 4 = 36\\
+T_{50} = 4(50) - 4 = 196\\
+T_{100} = 4(100) - 4 = 396$ 
+  \item $a = 2\\
+d = -3\\
+T_n = 5 - 3n\\
+T_{10} = 5 - 3(10) = -25\\
+T_{50} = 5 - 3(50) = -145\\
+T_{100} = 5 - 3(100) = -295$ 
+  \end{enumerate}
+\end{multicols}
+\end{enumerate}
+
+}
+\end{solutions}
+
+
+% \section{Patterns and conjecture}
+\begin{eocexercises}{}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Vind die $6^{de}$ term vir die volgende reekse:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item $4;~13;~22;~31;~\ldots$
+  \item $5;~2;~-1;~-4;~\ldots$
+  \item $7,4;~9,7;~12;~14,3;~\ldots$
+  \end{enumerate}
+\item Vind die algemene term vir die volgende reekse:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item $3;~7;~11;~15;~\ldots$
+  \item $-2;~1;~4;~7;~\ldots$
+  \item $11;~15;~19;~23;~\ldots$
+  \item $\dfrac{1}{3};~\dfrac{2}{3};~1;~1\dfrac{1}{3};~\ldots$
+  \end{enumerate}
+\item Die sitplekke in ’n gedeelte van ’n sportstadion kan so gerangskik word dat die eerste ry $15$ sitplekke het,
+die tweede ry $19$ sitplekke, die derde ry $23$ sitplekke, ens. Bereken hoeveel sitpleke is daar in ry $25$.
+\item ’n Enkele vierkant kan gemaak word van $4$ vuurhoutjies. Om twee vierkante langs mekaar te maak het $7$ vuurhoutjies nodig, om drie vierkante langs mekaar in ’n ry te maak het ons $10$ vuurhoutjies nodig. Bepaal:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item die eerste term
+    \item die konstante verskil
+    \item die algemene formule
+    \item hoeveel vuurhoutjies benodig word om $25$ vierkante langs mekaar te maak.
+  \end{enumerate}
+\setcounter{subfigure}{0}
+\begin{figure}[H] 
+\begin{center}
+\begin{pspicture}(0,0)(8,2)
+\def\match{\psline(0,0)(2,0)\psellipse*(1.8,0)(0.2,0.1)}
+\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}
+\rput{270}(0,2){\match}
+\rput(2,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\rput(4,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\rput(6,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\end{pspicture}
+\vspace{2pt}
+\vspace{.1in}
+\end{center}
+\end{figure}       
+\item Jy wil begin om geld te spaar, maar omdat jy dit nog nooit gedoen het nie, besluit jy om stadig te begin. Aan die einde van die eerste week sit jy R$~5$ in jou bankrekening, aan die einde van die tweede week R$~10$ en aan die einde van die derde week R$~15$. Na hoeveel weke sit jy R$~50$ in jou bankrekening?
+\item ’n Horisontale lyn kruis ’n tou op $4$ punte en deel die tou op in $4$ dele, soos hieronder gewys word.
+\setcounter{subfigure}{0}
+\begin{figure}[H] 
+\begin{center}
+\begin{pspicture}(-1,-2)(6,2)
+\psplot[xunit=0.00556, linewidth=1pt]{90}{810}{x sin}
+\psline[linestyle=dashed](-1,0)(6,0)
+\psdots[dotsize=5pt](1,0)(2,0)(3,0)(4,0)
+\rput(0.5,1.5){\psframebox{1}}
+\rput(1.5,-1.5){\psframebox{2}}
+\rput(2.5,1.5){\psframebox{3}}
+\rput(3.5,-1.5){\psframebox{4}}
+\rput(4.5,1.5){\psframebox{5}}
+\end{pspicture}
+\end{center}
+\end{figure}  
+As die tou $19$ keer gekruis word deur ewewydige lyne en elke lyn kruis die tou $4$ keer op verskillende
+plekke, bereken in hoeveel dele die tou opgedeel word.
+\item Beskou die volgende patroon:
+  \begin{equation*}
+    \begin{array}{ccl}\hfill 9+16&=& 25\\ 9+28 &=& 37\\9+43&=& 52\end{array}
+  \end{equation*} 
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Watter patroon sien jy?
+  \item Maak 'n bewering en druk dit uit in woorde.
+  \item Veralgemeen jou bewering en druk dit algebra\"ies uit.
+  \item Bewys dat jou bewering waar is.
+  \end{enumerate}
+\end{enumerate}
+
+\end{eocexercises}
+
+
+ \begin{eocsolutions}{}{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+ \item \begin{multicols}{2}
+
+
+
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item $T_6 = 49$
+  \item $T_6 = -10$
+  \item $T_6 = 18,9$
+  \end{enumerate}
+\end{multicols}
+\item \begin{multicols}{2}
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item 
+% $a = 3\\
+% d = 4\\
+% T_n = 3 + (n - 1)(4)\\
+$T_n = 4n - 1$ 
+  \item 
+% $a = -2\\
+% d = 3\\
+% T_n = -2 + (n-1)(3) \\
+$T_n = 3n -5$ 
+  \item 
+% $a = 11\\
+% d = 4\\
+% T_n = 11 + 4(n-1)\\
+$T_n = 4n + 7 $ 
+  \item 
+% $a = \frac{1}{3}\\
+% d = \frac{1}{3}\\
+% T_n = \frac{1}{3} + \frac{1}{3}(n - 1)\\
+$T_n = \frac{n}{3} $ 
+  \end{enumerate}
+\end{multicols}
+\item Onttrek die toepaslike inligting wat 'n patroon is: $15; 19 ; 23 \ldots$\\
+$a = 15\\
+d = 4\\
+% T_n = 15 + 4(n - 1)\\
+T_n = 4n + 11 $ \\
+So die aantal sitplekke in ry 25 is:\\
+$T_{25} = 4(25) + 11 = 111$ 
+\item 
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Die eerste term $4$ omdat dit die nommer vuurhoutjies wat vir een vierhoek nodig is.
+  \item Die konstante verskil tussen die terme is $3$. ($7 -4 = 3$ ; $10 - 7 = 3$)
+  \item 
+$%T_n = 4 + 3(n -1)\\
+T_n = 3n + 1$
+  \item $T_25 = 3(25) + 1 \\
+= 76$
+  \end{enumerate}   
+\item Skryf neer die eerste patroon:\\
+$5 ; 10 ; 15 ; \ldots$
+Eerstens vind ons die algemene formule:\\
+$a = 5\\
+d = 5\\
+%T_n = 5 + 5(n - 1)\\
+T_n = 5n  \\
+50 = 5n \\
+n = 10 $ weke
+\item Met een lyn wat by vier punte kruis, kry ons vyf dele. As ons 'n tweede lyn byvoeg, is dit nou in 9 parte opgedeel. En, as ons 'n derde lyn byvoeg is dit nout in $13$ parte opgedeel. Dus sien ons dat elke bykomende lyn vier meer dele byvoeg. Die volgorde is: $5 ; 9 ; 13 \ldots$\\
+$a = 5\\
+d = 4\\
+%T_n = 5 + 4(n - 1)\\
+T_n = 4n + 1  \\
+T_{19} = 4(19) + 1 \\
+T_{19} = 77 $
+\item 
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Die eerste syfer van die antwoord verhoog by een getal en die tweede syfer verminder by een getal.
+  \item Waaneer $9$ by enige twee-syfer nommer getel is, is die antwoord die twee-syfer nommer, met sy eerste ('tien) syfer verhoog by een nommer en sy tweede ('een') syfer verminder by een nommer.
+  \item $9 + (10x + y) = 10(x+1)+(y-1)$
+  \item $9 + 16 = 25\\
+9 + (10x + y) = 10(x + 1) + (y-1)\\
+9 + (10 + 6) = 10(2) + (6-1)\\
+9 + 16 = 20 + 5 = 25\\
+9 + (10x + y) = 10x + 10 + y - 1\\
+9 + (10x + y) = (10 - 1) + (10x + y) 
+= 9 + (10x + y)$
+  \end{enumerate}
+\end{enumerate}}
+\end{eocsolutions}
+
+
