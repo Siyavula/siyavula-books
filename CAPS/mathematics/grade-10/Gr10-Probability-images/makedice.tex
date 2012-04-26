@@ -1,0 +1,87 @@
+\def\makedieempty#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+  \end{scope}
+}
+
+\def\makedieone#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (0, 0) circle (0.125);
+  \end{scope}
+}
+
+\def\makedietwo#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (-0.3, -0.3) circle (0.125);
+    \fill (0.3, 0.3) circle (0.125);
+  \end{scope}
+}
+
+\def\makediethree#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (-0.3, -0.3) circle (0.125);
+    \fill (0, 0) circle (0.125);
+    \fill (0.3, 0.3) circle (0.125);
+  \end{scope}
+}
+
+\def\makediefour#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (-0.3, -0.3) circle (0.125);
+    \fill (0.3, -0.3) circle (0.125);
+    \fill (0.3, 0.3) circle (0.125);
+    \fill (-0.3, 0.3) circle (0.125);
+  \end{scope}
+}
+
+\def\makediefive#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (0, 0) circle (0.125);
+    \fill (-0.3, -0.3) circle (0.125);
+    \fill (0.3, -0.3) circle (0.125);
+    \fill (0.3, 0.3) circle (0.125);
+    \fill (-0.3, 0.3) circle (0.125);
+  \end{scope}
+}
+
+\def\makediesix#1#2{
+  \begin{scope}[#1]
+    \pgfsetcornersarced{\pgfpoint{#2}{#2}}
+    \draw (-0.5cm, -0.5cm) rectangle (0.5cm, 0.5cm);
+    \fill (-0.3, -0.3) circle (0.125);
+    \fill (-0.3,  0.0) circle (0.125);
+    \fill (-0.3,  0.3) circle (0.125);
+    \fill ( 0.3, -0.3) circle (0.125);
+    \fill ( 0.3,  0.0) circle (0.125);
+    \fill ( 0.3,  0.3) circle (0.125);
+  \end{scope}
+}
+
+\def\makediegeneral#1#2#3{
+  \ifthenelse{#1=1}{\makedieone{#2}{#3}}{
+    \ifthenelse{#1=2}{\makedietwo{#2}{#3}}{
+      \ifthenelse{#1=3}{\makediethree{#2}{#3}}{
+        \ifthenelse{#1=4}{\makediefour{#2}{#3}}{
+          \ifthenelse{#1=5}{\makediefive{#2}{#3}}{
+            \ifthenelse{#1=6}{\makediesix{#2}{#3}}{
+              \makedieempty{#2}{#3}}}}}}}
+}
+
+\def\makedie#1#2{
+  \makediegeneral{#1}{#2}{0.175cm}
+}
+
+\def\makediesmall#1#2{
+  \makediegeneral{#1}{#2}{0.0875cm}
+}

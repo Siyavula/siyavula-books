@@ -1,0 +1,4398 @@
+
+\chapter{Functions}
+\setcounter{figure}{0}
+\setcounter{subfigure}{0}
+
+\section{Functions in the real world}
+Functions are mathematical building blocks for designing machines, predicting natural disasters, curing diseases, understanding world economies and for keeping aeroplanes in the air. Functions can take input from many variables, but always give the same output, unique to that function. 
+% It is the fact that you always get a predictable answer from a set of inputs that makes functions special.
+\par 
+Functions also allow us to visualise relationships in terms of graphs, which are much easier to read and interpret than lists of numbers. 
+% In addition to their use in the problems facing humanity, functions also appear on a day-to-day level, so they are worth learning about. A function is always dependent on one or more variables, like time, distance or a more abstract quantity.\par 
+\par
+Some examples of functions include:
+
+\begin{itemize}[itemsep=3pt]
+\item Money as a function of time. You never have more than one amount of money at any time because you can always add everything to give one total amount. By understanding how your money changes over time, you can plan to spend your money sensibly. Businesses find it very useful to plot the graph of their money over time so that they can see when they are spending too much. %Such observations are not always obvious from lofontoking at the numbers alone.
+\item Temperature as a function of various factors. Temperature is a very complicated function because it has so many inputs, including: the time of day, the season, the amount of clouds in the sky, the strength of the wind, where you are and many more. But the important thing is that there is only one temperature output when you measure it in a specific place. %By understanding how the temperature is affected by these things, you can plan for the day.
+\item Location as a function of time. You can never be in two places at the same time. If you were to plot the graphs of where two people are as a function of time, the place where the lines cross means that the two people meet each other at that time. This idea is used in logistics, an area of mathematics that tries to plan where people and items are for businesses.
+%\item Your weight as a function of how much you eat and how much exercise you do.
+\end{itemize}
+\chapterstartvideo{VMawb}
+\Definition{Function}{A function is a mathematical relationship between two variables, where every input variable has one output variable.}
+%\Note{One output can have different input variables.}
+\par
+
+
+\subsection*{Dependent and independent variables}
+In functions, the $x$-variable is known as the input or independent variable, because its value can be chosen freely. The calculated $y$-variable is known as the output or dependent variable, because its value depends on the chosen input value.\par 
+
+
+\subsection*{Set notation}
+Examples:
+\\
+\begin{table}[H]
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+  $\{x: x \in \mathbb{R}, x > 0\}$ &  The set of all $x$-values such that $x$ is an element of the set of real numbers and is greater than $0$.
+\\ \hline
+    $\{y: y \in \mathbb{N}, 3 < y \leq 5\}$ & The set of all
+    $y$-values such that $y$ is a natural number, is greater than
+    $3$ and is less than or equal to $5$.
+\\ \hline
+  $\{z: z \in \mathbb{Z}, z \leq 100\}$ & The set of all $z$-values such that $z$ is an integer and is less than or equal to $100$.  
+\\ \hline
+\end{tabular}
+\end{table}
+\subsection*{Interval notation}
+It is important to note that this notation can only be used to represent an interval of real numbers.
+\par
+Examples:
+\\
+\begin{table}[H]
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+  $(3;11)$ &  Round brackets indicate that the number is not included. This interval includes all real numbers greater than but not equal to $3$ and less than but not equal to $11$.
+\\ \hline
+ $(- \infty; -2)$ & Round brackets are always used for positive and negative infinity. This interval includes all real numbers less than, but not equal to $-2$.
+\\ \hline
+ $[1; 9)$ & A square bracket indicates that the number is included. This interval includes all real numbers greater than or equal to $1$ and less than but not equal to $9$.
+\\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Function notation}
+This is a very useful way to express a function. Another way of
+writing $y=2x+1$ is $f(x) = 2x+1$. We say ``$f$ of $x$ is equal to
+$2x+1$''. Any letter can be used, for example, $g(x)$, $h(x)$, $p(x)$, etc. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item \textbf{Determine the output value}: \\
+``Find the value of the function for $x=-3$'' can be written as: ``find $f(-3)$''.
+\\Replace $x$ with $-3$:
+\begin{eqnarray*}
+  f(-3) & = & 2(-3)+1=-5 \\
+  \therefore f(-3) & = & -5
+\end{eqnarray*}
+This means that when $x=-3$, the value of the function is $-5$.
+\item \textbf{Determine the input value}:\\
+ ``Find the value of $x$ that will give a $y$-value of $27$'' can be written as: ``find $x$ if $f(x)= 27$''. \\
+We write the following equation and solve for $x$:
+\begin{eqnarray*}
+  2x+1 &=& 27 \\
+  \therefore x &=& 13
+\end{eqnarray*}
+This means that when $x=13$ the value of the function is $27$.
+
+\end{enumerate}
+% \Note{$x$-value $=$ input value.\\
+% $y$-value $=$ output or function value.}
+
+\subsection*{Representations of functions}
+Functions can be expressed in many different ways for different purposes. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Words: ``The relationship between two variables is such that one is always $5$ less than the other.''
+\item Mapping diagram: 
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1360937)(6.7240624,1.1360937)
+\psframe[linewidth=1pt,dimen=outer](3.7046876,0.32890624)(2.6246874,-0.75109375)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,0.14890625)(5.0246873,0.40890625)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,-0.57109374)(5.0046873,-0.85109377)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1046877,-0.21109375)(4.9846873,-0.21109375)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.073937,-0.58032197)(1.2008146,-0.86255836)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.055675,0.13944638)(1.1888499,0.39754358)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.104793,-0.21942326)(1.2250762,-0.24174327)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.44671875,0.93890625){Input:}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.0242186,0.93890625){Output:}
+\rput(3.2,0.93890625){Function:}
+% \usefont{T1}{ptm}{m}{n}  
+\rput(0.82609373,0.41890624){$-3$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.7753125,-0.22109374){$0$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.82953125,-0.92109376){$5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.1746874,-0.19609375){$x-5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.368125,0.45890626){$-8$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.3646874,-0.24109375){$-5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.3553123,-0.98109376){$0$}
+\end{pspicture}
+}
+\end{center}
+\end{figure}
+\item Table: 
+
+ \begin{table}[H]
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+   \hline
+\textbf{Input variable} $(x)$ & $-3$&$0$&$5$
+\\ \hline
+\textbf{Output variable} $(y)$ &$-8$&$-5$&$0$
+\\ \hline
+  \end{tabular}
+\end{center}
+ \end{table}
+
+
+
+\item Set of ordered number pairs: $(-3; -8)$, $(0; -5)$, $(5; 0)$
+\item Algebraic formula: $f(x) = x-5$
+\clearpage
+\item Graph:
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0284376)(6.52125,3.0684376)
+\rput(3.0,-0.0284375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.3754687,0.1615625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3557813,3.2){$f(x)$}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.0,-2.0884376)(5.18,0.8915625)
+\psdots[dotsize=0.16](2.98,-1.1684375)
+\psdots[dotsize=0.16](4.16,-0.0284375)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1448436,0.2415625){$5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3,-1.2384375){$-5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8,-0.3){$0$}
+\end{pspicture}
+}
+\end{center}
+\end{figure}
+\end{enumerate}
+
+\subsection*{Domain and range}
+
+The domain of a function is the set of all independent $x$-values for
+which there is one dependent $y$-value according to that function.
+
+The range is the set of all dependent $y$-values which can be obtained
+using an independent $x$-value.\par
+
+
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Write the following in set notation:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+ \item $(-\infty; 7]$
+\item $[13; 4)$
+\item $(35; \infty)$
+\item $[\frac{3}{4}; 21)$
+\item $[-\frac{1}{2}; \frac{1}{2}]$
+\item $(-\sqrt{3}; \infty)$
+\end{enumerate}
+
+\item Write the following in interval notation:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+% \setcounter{enumi}{6}
+ \item $\{p: p \in \mathbb{R},~ p \leq 6\}$
+ \item $\{k: k \in \mathbb{R},~ -5 < k < 5\}$
+ \item $\{x: x \in \mathbb{R},~ x > \frac{1}{5}\}$
+ \item $\{z: z \in \mathbb{R},~ 21 \leq z < 41\}$
+\end{enumerate}
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-f.) 00f9&  (2a-d.) 00fa&  %(3.) 00fb&  (4.) 00fc&  (5.) 00fd&  (6.) 00fe&  (7.) 00ff&  (8.) 00fg& 
+\end{tabular}
+} 
+\end{exercises}
+
+
+\section{Linear functions}
+
+
+\subsection*{Functions of the form $y = x$}       
+Functions of the form $y=mx+c$ are called straight line functions. In the equation, $y=mx+c$, $m$ and $c$ are constants and have different effects on the graph of the function. 
+
+\mindsetvid{Straight line graph}{VMjlm}
+
+\begin{wex}{Plotting a straight line graph}
+{
+\begin{equation*}
+ y = f(x) = x
+\end{equation*}
+Complete the following table for $f(x)=x$ and plot the points on a set of axes.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)$& $-2$ & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$}
+\\ \hline
+\end{tabular}
+\end{center}
+\vspace{10pt}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Join the points with a straight line.
+\item Determine the domain and range.
+\item About which line is $f$ symmetrical?
+\item Using the graph, determine the value of $x$ for which $f(x) = 4$. Confirm your answer graphically.
+\item Where does the graph cut the axes?
+
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Substitute values into the equation}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)$& $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+\end{tabular}
+\end{center}
+
+\westep{Plot the points and join with a straight line curve}
+From the table, we get the following points and the graph:
+\begin{equation*}
+  (-2;-2),~(-1;-1),~(0;0),~(1;1),~(2;2)
+\end{equation*}
+ \\
+% \begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+% label the axes
+%\psgrid-\infty ;q
+\psaxes[arrows=<->](0,0)(-4,-4)(4,4)
+\psset{yunit=1}
+\psplot[plotstyle=curve,arrows=<->]{-3}{3}{x}
+\psdots(-2,-2)(-1,-1)(0,0)(1,1)(2,2)
+
+% \rput(-0.2, -0.3){$0$}
+\rput(4.3, 0.1){$x$}
+\rput(0.1, 4.3){$y$}
+\rput(3.2, 2){$f(x)=x$}
+\rput(0.2,-0.2){$0$}
+\end{pspicture}
+% \caption{Graph of $f(x)=x^2-1$.}
+% \label{fig:mf:g:parabola10}
+\end{center}
+% \end{figure}    
+
+\westep{Determine the domain and range}
+Domain: $x \in \mathbb{R}$\\
+Range: $f(x) \in \mathbb{R}$
+
+\westep{Determine the value of $x$ for which $f(x)=4$}
+From the graph we see that when $f(x)=4$, $x=4$.
+This gives the point $(4; 4)$.
+
+\westep{Determine the intercept}
+The function $f$ intercepts the axes at the origin $(0;0)$.
+}
+\end{wex}
+\vspace*{-40pt}
+
+\subsection*{Functions of the form $y=mx+c$}   
+
+% \subsection*{Investigating the effects of $m$ and $c$}
+
+\begin{Investigation}{The effects of $m$ and $c$ on a straight line graph}
+
+On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y=x-2$
+\item $y=x-1$
+\item $y=x$
+\item $y=x+1$
+\item $y=x+2$
+\end{enumerate}
+Use your results to deduce the effect of different values of $c$ on the graph.
+
+On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y=-2x$
+\item $y=-x$
+\item $y=x$
+\item $y=2x$
+\end{enumerate}
+Use your results to deduce the effect of different values of $m$ on the graph.
+\end{Investigation}
+
+
+\begin{table}[htb]
+\begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=mx+q=c$.}
+\label{tab:mf:graphs:summarystr10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|m{2cm}|}\hline
+&\hspace{0.5cm}$m<0$&\hspace{0.5cm}$m=0$&\hspace{0.5cm}$m>0$\\ \hline
+$c>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 add}
+\end{pspicture}
+
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5}
+% \rput(-0.5, 2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 add}
+\end{pspicture}
+\\\hline
+$c=0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg}
+\end{pspicture}
+
+&
+
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x}
+\end{pspicture}
+\\ \hline
+$c<0$
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5 neg}
+% \rput(-0.5, -2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 sub}
+
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{The effect of $m$}\\
+We notice that the value of $m$ affects the slope of the graph. As $m$ increases, the gradient of the graph increases. \\
+If $m>0$ then the graph increases from left to right (slopes upwards). \\
+If $m<0$ then the graph increases from right to left (slopes downwards). For this reason, $m$ is referred to as the gradient of a straight-line graph.\par 
+
+\textbf{The effect of $c$}\\
+We also notice that the value of $c$ affects where the graph cuts the $y$-axis. For this reason, $c$ is known as the $y$-intercept.\\
+If $c>0$ the graph shifts vertically upwards. \\
+If $c<0$, the graph shifts vertically downwards.
+\par
+\mindsetvid{Analysing the gradient}{VMaxf}
+
+\subsection*{Discovering the characteristics} 
+The standard form of a straight line graph is the equation $y=mx + c$. 
+\subsubsection*{Domain and range}
+\nopagebreak
+The domain is $\{x:x\in \mathbb{R}\}$ because there
+is no value of $x$ for which $f(x)$ is undefined.
+
+The range of $f(x)=mx+c$ is also $\{f(x):f(x)\in \mathbb{R}\}$ because
+$f(x)$ can take on any real value.
+
+\subsubsection*{Intercepts}
+\textbf{The $y$-intercept:}\\
+Every point on the $y$-axis has an $x$-coordinate of $0$. Therefore to calculate the $y$-intercept, let $x=0$.\par
+For example, the $y$-intercept of $g(x)=x-1$ is given by setting $x=0$:\par 
+
+\begin{equation*}
+  \begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+    \hfill g(0) &=& 0-1\hfill \\
+    & =& -1\hfill 
+  \end{array}
+\end{equation*}
+This gives the point $(0;-1)$.
+\par
+\textbf{The $x$-intercept:}\\
+Every point on the $x$-axis has a $y$-coordinate of $0$. Therefore to
+calculate the $x$-intercept, let $y=0$.
+
+For example, the $x$-intercept of $g(x)=x-1$ is given by setting
+$y=0$:
+
+\begin{equation*}
+  \begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+    \hfill 0& =& x-1\hfill \\
+    \hfill \therefore x& =& 1\hfill 
+  \end{array}
+\end{equation*}
+This gives the point $(1;0)$.
+
+
+\subsection*{Sketching graphs of the form $y=mx+c$}
+
+
+In order to sketch graphs of the form, $f(x)=mx+c$, we need to determine three characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $m$
+\item $y$-intercept
+\item $x$-intercept
+\end{enumerate}
+
+\subsection*{Dual intercept method}
+Only two points are needed to plot a straight line graph. The easiest points to use are the $x$-intercept and the $y$-intercept.\par 
+\pagebreak
+\begin{wex}{Sketching a straight line graph using the dual intercept method}
+{Sketch the graph of $g(x)=x-1$ using the dual intercept method.}
+{
+\westep{Examine the standard form of the equation}
+$m>0$. This means that the graph increases as $x$ increases.
+
+\westep{Calculate the intercepts}
+For $y$-intercept, let $x=0$; therefore $g(0)=-1$. This gives the point $(0;-1)$.
+
+For $x$-intercept, let $y=0$; therefore $x=1$. This gives the point $(1;0)$. 
+
+\westep{Plot the points and draw the graph}
+
+\begin{center}
+\begin{pspicture}(-4,-4)(4,3)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{4}{x 1 sub}
+\psdots(0,-1)(1,0)
+\uput[r](0,-1.3){$(0;-1)$}
+\uput[ul](1.4,0.1){$(1;0)$}
+\rput(5.2,0.3){$x$}
+\rput(0.3, 4.2){$y$}
+\rput(5.5,3){$g(x)=x-1$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+% \caption{Graph of the function $g(x)=x-1$}
+% \label{fig:mf:g:sketchexamplestr}
+\end{center}
+}
+\end{wex}
+
+\subsection*{Gradient and $y$-intercept method}
+We can draw a straight line graph of the form $y=mx+c$ using the gradient $m$ and the $y$-intercept $c$. \par We calculate the $y$-intercept by letting $x=0$. This gives us one point $(0;c)$ for drawing the graph and we use the gradient ($m$) to calculate the second.\par
+
+The gradient of a line is the measure of steepness. Steepness is determined by the ratio of vertical change to horizontal change:
+\begin{equation*}
+m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{\mbox{\footnotesize vertical change}}{\mbox{\footnotesize horizontal change}}
+\end{equation*}
+For example, $y=\frac{3}{2}x-1$, therefore $m > 0$ and the graph slopes upwards.
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{3\uparrow}{2\rightarrow} = \dfrac{-3\downarrow}{-2\leftarrow}
+\end{equation*}
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.7584376)(9.34125,4.7584376)
+\rput(4.0,0.3215625){\psaxes[linewidth=0.04,ticksize=0.2cm, arrows=<->](0,0)(-5,-5)(5,5)}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{*-*}(1.92,-3.6984375)(5.96,2.3815625)
+\psarc[linewidth=0.04](4.49,2.3515625){0.49}{0.0}{180.0}
+\psarc[linewidth=0.04](5.51,2.3315625){0.51}{0.0}{180.0}
+\rput{178.47418}(6.9182076,-7.536676){\psarc[linewidth=0.04](3.509283,-3.7222767){0.49}{0.0}{180.0}}
+\rput{178.47418}(4.8816133,-7.4152513){\psarc[linewidth=0.04](2.4901774,-3.675124){0.51}{0.0}{180.0}}
+\rput{88.38591}(3.753576,-4.18539){\psarc[linewidth=0.04](4.029283,-0.1622766){0.49}{0.0}{180.0}}
+\rput{273.13806}(6.9809837,0.9839488){\psarc[linewidth=0.04](4.010177,-3.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(5.9635777,1.9092364){\psarc[linewidth=0.04](3.9901774,-2.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(4.9839826,2.874464){\psarc[linewidth=0.04](4.010177,-1.1951239){0.51}{0.0}{180.0}}
+\rput{88.38591}(4.694869,-3.1535814){\psarc[linewidth=0.04](3.969283,0.8377234){0.49}{0.0}{180.0}}
+\rput{88.38591}(5.6944723,-2.1817489){\psarc[linewidth=0.04](3.969283,1.8377234){0.49}{0.0}{180.0}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1,-3.7){$(-2;-4)$}
+\rput(4.6,-0.5){$(0;1)$}
+\rput(6.6,2.5){$(2;2)$}
+\rput(9.195469,0.6515625){$x$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.355781,5.2){$y$}
+% \usefont{T1}{ptm}{m}{n}
+\psdot[dotsize=0.2](4,-0.65)
+\rput(5.1275,3.3){\Large$+2\rightarrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7,1.5){\Large$+3\uparrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.161406,-2.1884375){\Large$-3\downarrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.9578125,-4.6084375){\Large$-2\leftarrow$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{wex}{Sketching a straight line graph using the gradient--intercept method}
+{Sketch the graph of $p(x)=\frac{1}{2}x-3$ using the gradient--intercept method.}
+{
+\westep{Use the intercept}
+$c=-3$, which gives the point $(0;-3)$.
+
+\westep{Use the gradient}
+
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{1\uparrow}{2\rightarrow} = \dfrac{-1\downarrow}{-2\leftarrow}
+\end{equation*}
+Start at  $(0;-3)$. Move $1$ unit up and $2$ units to the right. This gives the second point $(2;-2)$. \\
+Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives the second point $(-2;-4)$.
+
+\westep{Plot the points and draw the graph}
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,5)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-6,-6)(7,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
+\psline[linestyle=dashed,linewidth=.7pt](0,-2)(2,-2)
+\psline[linewidth=.7pt](0,-3)(0,-2)
+\psdots(0,-3)(2,-2)(-2,-4)
+\uput[r](0,-3.3){$(0;-3)$}
+\uput[ul](4,-2.6){$(2;-2)$}
+\rput(7.4,0.3){$x$}
+\rput(0.5, 4.3){$p(x)$}
+\rput(-0.3,-0.3){$0$}
+\rput(-3.3,-3.8){$(-2;-4)$}
+
+\rput(-0.6, -2.5){\footnotesize$1\uparrow$}
+\rput(1, -1.7){\footnotesize$2\rightarrow$}
+\end{pspicture}
+\end{center}
+\vspace*{-20pt}
+}
+\end{wex}
+\clearpage
+Always write the function in the form $y=mx+c$ and take note of $m$. After plotting the graph, make sure that the graph increases if $m>0$ and that the graph decreases if $m<0$.\\
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+
+\item List the $x$ and $y$-intercepts for the following straight line graphs. Indicate whether the graph is increasing or decreasing:
+      \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+      \item $y=x+1$
+      \item $y=x-1$
+      \item $h(x)=2x-1$
+      \item $y+3x=1$
+      \item $3y-2x=6$
+      \item$k(x)=-3$
+      \item $x=3y$
+      \item $\frac{x}{2} - \frac{y}{3} = 1$
+      \end{enumerate}
+
+
+\item For the functions in the diagram below, give the equation of the line:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
+  \item $a(x)$
+  \item $b(x)$
+  \item $p(x)$
+  \item $d(x)$
+  \end{enumerate} 
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.1467185)(9.493593,4.1867185)
+\rput(4.0,-0.1467186){\psaxes[linewidth=0.03,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,tickstyle=bottom,labels=none,ticks=none,ticksize=0.08cm]{<->}(0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm](2.74,1.7332813)(7.72,-0.9467186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1768746,3.9832811){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.234531,-0.036718614){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.4442186,1.3432813){$(0;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.9642186,0.043281388){$(4;0)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.274531,-0.9){$a(x)$}
+\psline[linewidth=0.04cm](3.2,-3.6332815)(8.42,2.3067186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.6742187,-2.8167186){$(0;-6)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.869062,2.4967186){$b(x)$}
+\psline[linewidth=0.04cm](0.96,1.0667186)(7.86,1.0467187)
+\usefont{T1}{ptm}{m}{n}
+\rput(8.274531,1.1567186){$p(x)$}
+\psline[linewidth=0.04cm](7.42,-2.0332813)(1.1,1.4667186)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.8745313,-2.1032813){$d(x)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.7745314,-0.39999998){$0$}
+\psline[linewidth=0.04cm,arrowsize=0.113cm 4.0,arrowlength=1.4,arrowinset=0.4]{>>-}(3.16,0.30671862)(2.92,0.4467186)
+\psline[linewidth=0.04cm,arrowsize=0.113cm 4.0,arrowlength=1.4,arrowinset=0.4]{>>-}(5.14,0.4067186)(4.9,0.5467186)
+\end{pspicture} 
+}
+\end{center}
+\end{figure}  
+\clearpage
+
+\item Sketch the following functions on the same set of axes, using the dual intercept method. Clearly indicate the intercepts and the point of intersection of the two graphs: $x+2y-5=0$ and $3x-y-1=0$
+\item On the same set of axes, draw the graphs of $f(x)=3-3x$ and $g(x)=\frac{1}{3}x+1$ using the gradient--intercept method.
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-h.) 00fh&  (2a-d.) 00fi&  (3.) 00fj& (4.) 00fk\end{tabular}
+}
+\end{exercises}
+   
+
+
+\section{Quadratic functions}
+
+\subsection*{Functions of the form $y={x}^{2}$}       
+Functions of the general form $y=a{x}^{2}+q$ are called parabolic functions. In the equation $y=a{x}^{2}+q$, $a$ and $q$ are constants and have different effects on the parabola. 
+\par
+\mindsetvid{The quadratic function}{VMaxl}
+
+\begin{wex}{Plotting a quadratic function}
+{
+\begin{equation*}
+ y = f(x) = x^{2}
+\end{equation*}
+
+Complete the following table for $f(x)=x^{2}$ and plot the points on a system of axes.
+\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$
+\\ \hline
+ $f(x)$& $9$ & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
+\\ \hline
+\end{tabular}
+\end{center}
+\vspace{10pt}
+
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Join the points with a smooth curve.
+\item The domain of $f$ is $x \in \mathbb{R}$. Determine the range.
+\item About which line is $f$ symmetrical?
+\item Determine the value of $x$ for which $f(x) = 6\frac{1}{4}$. \\Confirm your answer graphically.
+\item  where does the graph cut the axes?
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Substitute values into the equation}
+\begin{equation*}
+ \begin{array}{cclcc}
+  f(x) &=& x^{2} & &\\
+ f(-3) &=& (-3)^{2} &=& 9 \\ 
+ f(-2) &=& (-2)^{2} &=& 4 \\
+ f(-1) &=& (-1)^{2} &=& 1 \\
+f(0) &=& (0)^{2} &= &0 \\
+f(1) &=& (1)^{2} &= &1 \\ 
+f(2) &=& (2)^{2} &= &4 \\
+f(3) &=& (3)^{2} &= &9
+ \end{array}
+\end{equation*}
+\\
+\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$
+\\ \hline
+ $f(x)$& $9$ &$4$&$1$&$0$&$1$&$4$&$9$
+\\ \hline
+\end{tabular}
+\end{center}
+
+\westep{Plot the points and join with a smooth curve}
+From the table, we get the following points:
+\begin{equation*}
+  (-3;9),~(-2;4),~(-1;1),~(0;0),~(1;1),~(2;4),~(3;9)
+\end{equation*}
+ 
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+% label the axes
+%\psgrid-\infty ;q
+\psaxes[arrows=<->,dy=0.5](0,0)(-5,-0.8)(5,5)
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-3.2}{3.2}{x 2 exp}
+\psdots(-2.5, 6.25)(2.5,6.25)(-3,9)(-2,4)(-1,1)(0,0)(1,1)(2,4)(3,9)
+\rput(-2.2, 6.3){$B$}
+\rput(2.2, 6.3){$A$}
+% \rput(-0.2, -0.3){$0$}
+\rput(5.3, 0.1){$x$}
+\rput(0.1, 10.3){$y$}
+\rput(3.7, 7){$f(x)=x^{2}$}
+\rput(-0.2,-0.4){$0$}
+\end{pspicture}
+% \caption{Graph of $f(x)=x^2-1$.}
+\label{fig:mf:g:parabola10}
+\end{center}
+\end{figure}    
+
+\westep{Determine the domain and range}
+Domain: $x \in \mathbb{R}$.\\
+From the graph we see that for all values of $x$, $~~y \geq 0$.\\
+Range: $\{y: y \in \mathbb{R}, ~~y \ge 0\}$.
+
+\westep{Find the axis of symmetry}
+$f$ is symmetrical about the $y$-axis. Therefore the axis of symmetry of $f$ is the line $x=0$. 
+
+\westep{Determine the $x$-value}
+\begin{equation*}
+ \begin{array}{ccl}
+f(x) &=& \frac{25}{4} \\
+\therefore \frac{25}{4} &=& x^{2} \\
+x &=& \pm \frac{5}{2} 
+  &=& \pm 2\frac{1}{2} 
+\end{array}
+\end{equation*}
+See points $A$ and $B$ on the graph.
+
+\westep{Determine the intercept}
+The function $f$ intercepts the axes at the origin $(0;0)$.\\
+We notice that as the value of $x$ increases from $-\infty$ to $0$, $f(x)$ decreases.\\
+At the turning point $(0;0)$, $f(x) = 0$. \\
+As the value of $x$ increases from $0$ to $\infty$, $f(x)$ increases.
+}
+\end{wex}
+\pagebreak
+
+\subsection*{Functions of the form $y=a{x}^{2}+q$}
+\begin{Investigation}{The effects of $a$ and $q$ on a parabola}
+Complete the table and plot the following graphs on the same system of axes:
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+    \item $y_1={x}^{2}-2$
+    \item $y_2={x}^{2}-1$
+    \item $y_3={x}^{2}$
+    \item $y_4={x}^{2}+1$
+    \item $y_5={x}^{2}+2$
+        \end{enumerate}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}\hline
+      $x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ \\ \hline
+      $y_1$ & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  \\ \hline
+      $y_2$ & & & & & \\ \hline
+      $y_3$ & & & & & \\ \hline
+      $y_4$ & & & & & \\ \hline
+      $y_5$ & & & & & \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+Use your results to deduce the effect of $q$.
+
+Complete the table and plot the following graphs on the same system of axes:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y_6=-2{x}^{2}$
+\item $y_7=-{x}^{2}$
+\item $y_8={x}^{2}$
+\item $y_9=2{x}^{2}$
+\end{enumerate}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}\hline
+      $x$&$-2$&$-1$&$0$&$1$&$2$\\ \hline
+      $y_6$ & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} \\ \hline
+      $y_7$&&&&&\\ \hline
+      $y_8$&&&&&\\ \hline
+      $y_9$&&&&&\\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Use your results to deduce the effect of $a$.
+\end{Investigation}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=mx+q=c$.}
+\label{tab:mf:graphs:summarystr10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|}
+\hline
+ &\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$
+\\ \hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 add}
+\end{pspicture}
+
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 add}
+\end{pspicture}
+\\\hline
+$q=0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp }
+\end{pspicture}
+
+\\ \hline
+$q<0$
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 sub}
+\end{pspicture}
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{The effect of $q$}
+\\
+The effect of $q$ is called a vertical shift because all points are moved the same distance in the same direction (it slides the entire graph up or down). 
+\begin{itemize}
+\item For $q>0$, the graph of $f(x)$ is shifted vertically upwards by $q$ units. The turning point of $f(x)$ is above the $y$-axis.
+\item For $q<0$, the graph of $f(x)$ is shifted vertically downwards by $q$ units. The turning point of $f(x)$ is below the $y$-axis.
+\end{itemize}
+\textbf{The effect of $a$}
+\\
+The sign of $a$ determines the shape of the graph. 
+\begin{itemize}
+ \item For $a>0$, the graph of $f(x)$ is a ``smile'' and has a minimum turning point at $(0;q)$.\\
+The graph of $f(x)$ is stretched vertically upwards; as $a$ gets larger, the graph gets narrower.
+\\For $0<a<1$, as $a$ gets closer to $0$, the graph of $f(x)$ get wider.
+\item For $a<0$, the graph of $f(x)$ is a ``frown'' and has a maximum turning point at $(0;q)$. 
+\\The graph of $f(x)$ is stretched vertically downwards; as $a$ gets smaller, the graph gets narrower. \\
+For $-1<a<0$, as $a$ gets closer to $0$, the graph of $f(x)$ get wider.
+\end{itemize}
+
+\setcounter{subfigure}{0}
+\begin{figure}[!ht]
+\begin{center}
+\begin{pspicture}(-4,-0.5)(6,2)
+%\psgrid
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-2}{0}{x 1 add 2 exp}
+\psplot[plotstyle=curve,arrows=<->]{3}{5}{x 4 sub 2 exp neg 1 add}
+\psdots(-1.5,3)(-0.5,3)(3.5,3)(4.5,3)
+\uput[d](-1,-0.5){$a>0$ ($a$ positive smile)}
+\uput[d](4,-0.5){$a<0$ ($a$ negative frown)}
+\end{pspicture}
+% \caption{Distinctive shape of graphs of a parabola if $a>0$ and $a<0$.}
+\label{fig:mf:g:parabola10a}
+\end{center}
+\end{figure}   
+
+\simulation{Graphing}{MG10018}
+% This simulation allows you to visualise the effect of changing $a$ and $q$. Note that in this simulation $q = c$. Also an extra term $bx$ has been added in. You can leave $bx$ as $0$, or you can also see what effect this has on the graph.
+% \par 
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39345*Ohms-Law}
+% \textnormal{Phet simulation for graphing}\vspace{.1in} \nopagebreak
+% \label{m39345*phet!!!underscore!!!sim}\label{m39345*phet-simulation}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Simulation:  MG10018 )}
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{figure}       
+
+
+\subsection*{Discovering the characteristics}
+The standard form of a parabola is the equation $y=ax^{2} + q$.
+\subsubsection*{Domain and range}
+
+The domain is $\{x:x\in \mathbb{R}\}$ because there is no value for which $f(x)$ is undefined.\par 
+\par 
+If $a>0$ then we have:
+\begin{equation*}
+\begin{array}{cccl}\hfill {x}^{2}& \geq & 0\hfill & (\mbox{Perfect square is always positive})\hfill \\
+ \hfill a{x}^{2}& \geq & 0\hfill & (\mbox{since } a>0)\hfill \\
+ \hfill a{x}^{2}+q& \geq & q\hfill & (\mbox{add $q$ to both sides}) \\
+ \hfill \therefore f(x)& \geq & q\hfill & 
+\end{array}
+\end{equation*}
+Therefore if $a>0$, the range is $[q; \infty )$.
+
+Similarly, if $a<0$ then the range is $ (-\infty; q]$. 
+
+\begin{wex}{Domain and range of a parabola}
+{If $g(x)={x}^{2}+2$, determine the domain and range of the function.\vspace*{-15pt}}
+{
+\westep{Determine the domain}
+The domain is $\{x:x\in \mathbb{R}\}$ because there is no value for which $g(x)$ is undefined.
+\westep{Determine the range}
+
+The range of $g(x)$ can be calculated as follows:
+
+\begin{equation*}
+\begin{array}{ccc}\hfill {x}^{2}& \geq & 0\hfill \\
+ \hfill {x}^{2}+2& \geq & 2\hfill \\
+ \hfill g(x)& \geq & 2\hfill 
+\end{array}
+\end{equation*}
+Therefore the range is $\{g(x):g(x)\geq 2\}$.
+}
+\end{wex}
+
+
+
+\subsubsection*{Intercepts}
+\textbf{The $y$-intercept:}\\
+Every point on the $y$-axis has an $x$-coordinate of $0$, therefore to calculate the $y$-intercept let $x=0$.\\
+
+For example, the $y$-intercept of $g(x)={x}^{2}+2$ is given by setting $x=0$:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& {x}^{2}+2\hfill \\ 
+\hfill g(0)& =& {0}^{2}+2\hfill \\
+ & =& 2\hfill 
+\end{array}
+\end{equation*}
+This gives the point $(0;2)$.\par
+
+\textbf{The $x$-intercepts:}\\
+Every point on the $x$-axis has a $y$-coordinate of $0$, therefore to calculate the $x$-intercepts let $y=0$.\\
+
+For example, the $x$-intercepts of $g(x)={x}^{2}+2$ are given by setting $y=0$:\par
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& {x}^{2}+2\hfill \\
+ \hfill 0& =& x^{2}+2\hfill \\
+ \hfill -2& =& x^{2}\hfill 
+\end{array}
+\end{equation*}
+There is no real solution, therefore the graph of $g(x)={x}^{2}+2$ does not have any $x$-intercepts. 
+
+\subsubsection*{Turning points}
+
+The turning point of the function of the form $f(x)=ax^{2}+q$ is determined by examining the range of the function. 
+\begin{itemize}
+ \item If $a>0$, the graph of $f(x)$ is a ``smile'' and has a minimum turning point at $(0;q)$.
+\item If $a<0$, the graph of $f(x)$ is a ``frown'' and has a maximum turning point at $(0;q)$.
+\end{itemize}
+
+
+\subsubsection*{Axes of symmetry}
+
+The axis of symmetry for functions of the form $f(x)=ax^{2}+q$ is the $y$-axis, which is the line $x=0$. 
+
+\subsection*{Sketching graphs of the form $y=ax^{2}+q$}
+
+In order to sketch graphs of the form $f(x)=ax^{2}+q$, we need to determine the following characteristics:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $a$
+\item $y$-intercept
+\item $x$-intercept
+\item turning point
+\end{enumerate}
+% \clearpage
+\vspace*{-30pt}
+\begin{wex}
+{Sketching a parabola}
+{Sketch the graph of $y={2x}^{2}-4$. Mark the intercepts and the turning point.}
+{
+\westep{Examine the standard form of the equation}
+We notice that $a>0$. Therefore the graph of the function is a ``smile'' and has a minimum turning point.
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 2x^{2}-4\hfill \\
+ \hfill & =& 2(0)^{2}-4\hfill \\
+ \hfill & =& -4\hfill 
+\end{array}
+\end{equation*}
+This gives the point $(0;-4)$.\\
+For $x$-intercept, let $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =&2x^{2}-4\hfill \\
+ \hfill 0& =& 2x^{2}-4\hfill \\
+ \hfill x^{2}& =& 2\hfill\\
+\therefore x& =& \pm \sqrt{2} 
+\end{array}
+\end{equation*}
+This gives the points $(-\sqrt{2};0)$ and $(\sqrt{2};0)$.
+
+\westep{Determine the turning point}
+From the standard form of the equation we see that the turning point is $(0;-4)$.
+
+\westep{Plot the points and sketch the graph}
+\vspace*{-20pt}
+\begin{center}
+\scalebox{1}
+{
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-4,-5)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.8}{1.8}{x 2 exp 2 mul 4 sub}
+\psdots(0,-4)(-1.41;0)(1.41;0)
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 4.3){$y$}
+\rput (4.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(2.6,2.7){$y={2x}^{2}-4$}
+\rput(0.6,-4.2){$(0;-4)$}
+\rput(-2.3,0.4){$(-\sqrt{2};0)$}
+\rput(2.2,0.4){$(\sqrt{2};0)$}
+\end{pspicture}
+
+
+}
+\end{center}
+Domain: $\{x:x \in \mathbb{R}\}$\\
+Range: $\{y: y \geq -4, y \in \mathbb{R}\}$\\
+The axis of symmetry is the line $x=0$.
+}
+\end{wex}
+
+
+\begin{wex}
+ {Sketching a parabola}
+{Sketch the graph of $g(x)=-\frac{1}{2}x^{2}-3$. Mark the intercepts and the turning point.}
+{
+\westep{Examine the standard form of the equation}
+We notice that $a<0$. Therefore the graph is a ``frown'' and has a maximum turning point.
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}
+\hfill g(x)& =& -\frac{1}{2}x^{2}-3\hfill \\
+ g(0)& =& -\frac{1}{2}(0)^{2}-3\hfill \\
+ & =& -3\\
+\end{array}
+\end{equation*}
+This gives the point $(0; -3)$.\\
+\\
+For the $x$-intercept let $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill 0& =& -\frac{1}2x^{2}-3\hfill \\ 
+\hfill 3& =& -\frac{1}2x^{2}\hfill \\
+ \hfill -2(3)& =& x^{2}\hfill \\
+\hfill -6& =& x^{2}\hfill \\
+\end{array}
+\end{equation*}
+There is no real solution, therefore there are no $x$-intercepts.
+\westep{Determine the turning point}
+From the standard form of the equation we see that the turning point is $(0;-3)$.
+\westep{Plot the points and sketch the graph}
+% \begin{figure}[!ht]
+% Add g(x) label. Label all origins!!
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
+\psdots(0,-3)
+\uput[r](0,-2.7){$(0;-3)$}
+\rput(0.4, 1){$y$}
+\rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(4, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
+\end{pspicture}
+% \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+% % \label{fig:mf:g:sketchexamplepar10}
+\end{center}
+% \end{figure}
+\\
+Domain: $x \in \mathbb{R}$.\\
+Range: $y \in (- \infty; -3]$. \\
+The axis of symmetry is the line $x=0$.
+}
+\end{wex}
+
+
+
+\noindent
+% The following video shows one method of graphing parabolas. Note that in this video the term vertex is used in place of turning point. The vertex and the turning point are the same thing.
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39345*parabola-1}
+% \textnormal{Khan academy video on graphing parabolas - 1}\vspace{.1in} \nopagebreak
+% \label{m39345*yt-media1}\label{m39345*yt-video1}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10019 )}
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{figure} 
+
+   
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Show that if $a<0$ the range of $f(x)=ax^{2}+q$ is $\{f(x):f(x) \leq q \}$.
+\item Draw the graph of the function $y=-x^{2}+4$ showing all intercepts with the axes.
+
+\item Two parabolas are drawn: $g:y=ax^{2}+p$ and $h:y=bx^{2}+q$.
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[arrows=<->,dx=2,Dx=2,dy=2,Dy=2, labels=none, ticks=none](0,0)(-10,-15)(10,28)
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp  9 sub}
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp 1 mul neg 23 add}
+\rput(0.6,28){$y$}
+\rput(0.6,-10){$-9$}
+\rput(-5.5,7.5){$(-4;7)$} 
+\rput(5.1,7.5){$(4;7)$}
+\rput(5.3,-1.1){$3$}
+\rput(5.6,17){$g$}
+\rput(5.6,-4){$h$}
+\rput(0.5, 24){$23$}
+\rput (10.4, 0.2){$x$}
+\rput(-0.5,-1.1){$0$}
+\end{pspicture}
+\end{center}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+    \item Find the values of $a$ and $p$.
+    \item Find the values of $b$ and $q$.
+    \item Find the values of $x$ for which $g(x)\geq h(x)$.
+    \item For what values of $x$ is $g$ increasing?
+\end{enumerate}
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1.) 00fm&  (2.) 00fn& (3a-d.) 00fp\end{tabular}
+}
+\end{exercises}   
+
+
+\section{Hyperbolic functions}
+\mindsetvid{The hyperbolic function}{VMaxw}
+
+\subsection*{Functions of the form $y=\frac{1}{x}$}  
+Functions of the general form $y=\frac{a}{x}+q$ are called hyperbolic functions. 
+\clearpage
+\begin{wex}
+{Plotting a hyperbolic function}
+{
+\begin{minipage}{\textwidth}
+\begin{equation*}
+ y = h(x) = \frac{1}{x}
+\end{equation*}
+
+Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a system of axes.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
+\\ \hline
+ $h(x)$& $-\frac{1}{3}$ & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} 
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Join the points with smooth curves.
+\item What happens if $x=0$?
+\item Explain why the graph consists of two separate curves.
+\item What happens to $h(x)$ as the value of $x$ becomes very small or very large?
+\item The domain of $h(x)$ is $\{x : x \in \mathbb{R}, x \ne 0\}$. Determine the range.
+\item About which two lines is the graph symmetrical?
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Substitute values into the equation}{
+\begin{equation*}
+  \begin{array}{cllll}
+    h(x) &=& \frac{1}{x} \\
+    h(-3) &=& \frac{1}{-3} &=& -\frac{1}{3} \vspace{5pt}\\ 
+    h(-2) &=& \frac{1}{-2} &=& -\frac{1}{2}\vspace{5pt} \\ 
+    h(-1) &=& \frac{1}{-1} &=& -1 \vspace{5pt}\\ 
+    h(-\frac{1}{2}) &=& \dfrac{1}{-\frac{1}{2}} &=& -2 \vspace{5pt}\\ 
+    h(-\frac{1}{4}) &=& \dfrac{1}{-\frac{1}{4}} &=& -4 \vspace{5pt}\\ 
+    h(0) &=& \frac{1}{0} &=& \mbox{undefined}\vspace{5pt} 
+  \end{array}
+\end{equation*}
+\begin{equation*}
+  \begin{array}{cllll}
+    h(\frac{1}{4}) &=& \dfrac{1}{\frac{1}{4}} &=& 4 \vspace{5pt}\\ 
+    h(\frac{1}{2}) &=& \dfrac{1}{\frac{1}{2}} &=& 2 \vspace{5pt}\\ 
+    h(1) &=& \frac{1}{1} &=& 1\\ 
+    h(2) &=& \frac{1}{2} &=& \frac{1}{2} \\ 
+    h(3) &=& \frac{1}{3} &=& \frac{1}{3}  
+  \end{array}
+\end{equation*}
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
+\\ \hline
+ $h(x)$& $-\frac{1}{3}$ &$-\frac{1}{2}$&$-1$&$-2$&$-4$&undefined&$4$&$2$&$1$&$\frac{1}{2}$&$\frac{1}{3}$
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+}
+\westep{Plot the points and join with two smooth curves}
+From the table we get the following points: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; 4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$, $(3; \frac{1}{3})$. 
+
+
+\setcounter{subfigure}{0}
+% \begin{figure}[tbp]
+\begin{center}
+\begin{pspicture}(-5,-2)(5,5)
+%\psgrid
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.2}{x -1 exp}
+\psplot[plotstyle=curve,arrows=<->]{0.2}{5}{x -1 exp}
+\psdots(-3,-0.33)(-2,-0.5)(-1,-1)(-0.5,-2)(-0.25, -4)(0.25, 4)(0.5, 2)(1, 1)(2,0.5)(3,0.33) 
+\rput(5.2,0.3){$x$}
+\rput(0.3,5.2){$y$}
+\rput(1.7,1.5) {$h(x) = \frac{1}{x}$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+
+\end{center}
+% \end{figure}      
+
+
+For $x=0$ the function $h$ is undefined. This is called a discontinuity at $x=0$. \vspace{8pt} \\
+$y=h(x) = \frac{1}{x}$ therefore we can write that $x \times y = 1$. Since the product of two positive numbers \textbf{and} the product of two negative numbers can be equal to $1$, the graph lies in the first and third quadrants.
+
+\westep{Determine the asymptotes}
+As the value of $x$ gets larger, the value of $h(x)$ gets closer to, but does not equal $0$. This is a horizontal asymptote, the line $y=0$. The same happens in the third quadrant; as $x$ gets smaller, $h(x)$ also approaches the negative $x$-axis asymptotically.\vspace{8pt} \\
+
+We also notice that there is a vertical asymptote, the line $x=0$; as $x$ gets closer to $0$, $h(x)$ approaches the $y$-axis asymptotically.
+\westep{Determine the range}
+Domain: $\{x : x \in \mathbb{R}, x \ne 0\}$\\
+From the graph, we see that $y$ is defined for all values except $0$.\\
+Range: $\{y : y \in \mathbb{R}, y \ne 0\}$
+\westep{Determine the lines of symmetry}
+The graph of $h(x)$ has two axes of symmetry: the lines $y=x$ and $y=-x$. About these two lines,\ one half of the hyperbola is a mirror image of the other half. 
+}
+\end{wex}
+
+
+
+
+\subsection*{Functions of the form $y=\frac{a}{x}+q$}
+\begin{Investigation}{The effects of $a$ and $q$ on a hyperbola}
+  On the same set of axes, plot the following graphs:
+  \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+  \item $y_1=\dfrac{1}{x}-2$
+  \item $y_2=\dfrac{1}{x}-1$
+  \item $y_3=\dfrac{1}{x}$
+  \item $y_4=\dfrac{1}{x}+1$
+  \item $y_5=\dfrac{1}{x}+2$
+  \end{enumerate}
+Use your results to deduce the effect of $q$.\\
+\par
+On the same set of axes, plot the following graphs:
+\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y_6=\dfrac{-2}{x}$
+\item $y_7=\dfrac{-1}{x}$
+\item $y_8=\dfrac{1}{x}$
+\item $y_9=\dfrac{2}{x}$
+\end{enumerate}
+\par
+Use your results to deduce the effect of $a$.
+\end{Investigation}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|}\hline
+&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm, arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
+\end{pspicture}
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{5}{x -1 exp 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
+\end{pspicture}
+\\\hline
+$q=0$ & 
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrowsize=0.07cm,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.3}{-0.25}{x -1 exp neg }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.3}{x -1 exp neg }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.4}{-0.25}{x -1 exp }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.4}{x -1 exp }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
+\end{pspicture}
+\\ \hline
+$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-2}{4}{2 neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2 neg}
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{The effect of $q$}\newline
+
+The effect of $q$ is called a vertical shift because all points are moved the same distance in the same direction (it slides the entire graph up or down). 
+\begin{itemize}
+\item For $q>0$, the graph of $f(x)$ is shifted vertically upwards by $q$ units. 
+\item For $q<0$, the graph of $f(x)$ is shifted vertically downwards by $q$ units.
+\end{itemize}
+The horizontal asymptote is the line $y=q$ and the vertical asymptote is always the $y$-axis, the line $x=0$.\par
+\vspace{8pt}
+\textbf{The effect of $a$}\newline
+The sign of $a$ determines the shape of the graph. 
+\begin{itemize}
+ \item If $a>0$, the graph of $f(x)$ lies in the first and third quadrants. \\
+For $a>1$, the graph of $f(x)$ will be further away from the axes than $y=\frac{1}{x}$.
+\\For $0<a<1$, as $a$ tends to $0$, the graph moves closer to the axes than $y=\frac{1}{x}$. 
+\item If $a<0$, the graph of $f(x)$ lies in the second and fourth quadrants.\\
+For $a<-1$, the graph of $f(x)$ will be further away from the axes than $y=-\frac{1}{x}$.
+\\For $-1<a<0$, as $a$ tends to $0$, the graph moves closer to the axes than $y=-\frac{1}{x}$. 
+\end{itemize}
+
+
+
+\subsection*{Discovering the characteristics}  
+The standard form of a hyperbola is the equation $y=\frac{a}{x}+q$.
+
+\subsubsection*{Domain and range}
+
+For $y=\frac{a}{x}+q$, the function is undefined for $x=0$. The domain is therefore $\{x:x\in \mathbb{R},~x\ne 0\}$.\par 
+We see that $y=\frac{a}{x}+q$ can be re-written as:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& \dfrac{a}{x}+q\hfill \vspace{4pt} \\
+ \hfill y-q& =& \dfrac{a}{x}\hfill \\
+ \hfill \mbox{If }x \ne  0 \mbox{ then}:(y-q)x& =& a\hfill \\
+ \hfill x& =& \dfrac{a}{y-q}\hfill 
+\end{array}
+\end{equation*}
+This shows that the function is undefined only at $y=q$.
+\par
+Therefore the range is $\{f(x):f(x) \in \mathbb{R},~f(x)\ne q\}$.\par 
+
+\begin{wex}{Domain and range of a hyperbola}
+{If $g(x)=\frac{2}{x}+2$, determine the domain and range of the function.}
+{
+\westep{Determine the domain}
+The domain is $\{x:x\in \mathbb{R},~x\ne 0\}$ because $g(x)$ is undefined only at $x=0$.
+\westep{Determine the range}
+We see that $g(x)$ is undefined only at $y=2$. Therefore the range is
+$\{g(x):g(x) \in \mathbb{R},~g(x)\ne 2\}$.
+}
+\end{wex}
+
+
+\subsubsection*{Intercepts}
+
+\textbf{The $y$-intercept:} \\
+Every point on the $y$-axis has an $x$-coordinate of $0$, therefore to calculate the $y$-intercept, let $x=0$.\\
+For example, the $y$-intercept of $g(x)=\frac{2}{x}+2$ is given by setting $x=0$:
+\begin{equation*}
+\begin{array}{ccc}\hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
+ \hfill y& =& \dfrac{2}{0}+2\hfill 
+\end{array}
+\end{equation*}
+which is undefined, therefore there is no $y$-intercept.\\
+\\
+
+\textbf{The $x$-intercept:} \\
+Every point on the $x$-axis has a $y$-coordinate of $0$, therefore to calculate the $x$-intercept, let $y=0$.\\
+For example, the $x$-intercept of $g(x)=\frac{2}{x}+2$ is given by setting $y=0$:
+\begin{equation*}
+\begin{array}{ccl}
+\hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
+ \hfill 0& =& \dfrac{2}{x}+2\hfill \vspace{4pt} \\
+ \hfill \dfrac{2}{x}& =& -2\hfill \vspace{4pt}\\
+ \hfill x& =& \dfrac{2}{-2}\hfill \\
+ &=& -1\hfill
+\end{array}
+\end{equation*}
+This gives the point $(-1; 0)$.
+
+
+\subsubsection*{Asymptotes}
+
+There are two asymptotes for functions of the form $y=\frac{a}{x}+q$. \par 
+The horizontal asymptote is the line $y=q$ and the vertical asymptote is always the $y$-axis, the line $x=0$. 
+
+\subsubsection*{Axes of symmetry}
+There are two lines about which a hyperbola is symmetrical: $y=x+q$ and $y = -x +q$.
+
+
+\subsection*{Sketching graphs of the form $y=\frac{a}{x}+q$}
+
+In order to sketch graphs of functions of the form, $y=f(x)=\frac{a}{x}+q$, we need to determine four characteristics:
+\\
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $a$
+\item $y$-intercept
+\item $x$-intercept
+\item asymptotes
+\end{enumerate}
+
+\begin{wex}{Sketching a hyperbola}
+{Sketch the graph of $g(x)=\frac{2}{x}+2$. Mark the intercepts and the asymptotes.}
+{
+\westep{Examine the standard form of the equation}
+We notice that $a>0$ therefore the graph of $g(x)$ lies in the first and third quadrant. 
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{rcl}
+  g(x) = & \dfrac{2}{x} + 2  \vspace{4pt} \\
+  g(0) = & \dfrac{2}{0} +2  
+ \end{array}
+\end{equation*}
+This is undefined, therefore there is no $y$-intercept.\vspace{10pt} \\
+
+For the $x$-intercept, let $y=0$:
+\begin{eqnarray*}
+  g(x) & = & \dfrac{2}{x} + 2 \vspace{4pt} \\
+  0 & = & \dfrac{2}{x} + 2 \vspace{4pt} \\
+  \dfrac{2}{x} & = & -2 \\
+  \therefore x & = & -1
+\end{eqnarray*}
+
+This gives the point $(-1;0)$.
+
+
+\westep{Determine the asymptotes}
+The horizontal asymptote is the line $y=2$. The vertical asymptote is the line $x=0$.
+
+\westep{Sketch the graph}
+\setcounter{subfigure}{0}
+% \begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-4)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.4}{x -1 exp 2 mul 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.4}{5}{x -1 exp 2 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.2,0.2){$x$}
+\rput(0.2, 7.3){$y$}
+\rput(3.5,3.3){$g(x)=\frac{2}{x}+2$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+% \caption{Graph of $g(x)=\frac{2}{x} + 2$.}
+% \label{fig:mf:g:hyperbolasketchexample}
+\end{center}
+% \end{figure} 
+\\
+Domain: $\{x:x \in \mathbb{R},~x\ne 0\}$.\\
+Range: $\{y:y \in \mathbb{R},~y\ne 2\}$.
+}
+\end{wex}
+
+\begin{wex}
+{Sketching a hyperbola}
+{Sketch the graph of $y=\frac{-4}{x}+7$.}
+{
+\westep{Examine the standard form of the equation}
+We see that $a<0$ therefore the graph lies in the second and fourth quadrants.
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+ \begin{array}{ccc}
+ \hfill  y &= & \dfrac{-4}{x}+7 \vspace{4pt}\hfill \\
+ \hfill &= & \dfrac {-4}{0} +7  \hfill
+ \end{array}
+\end{equation*}
+This is undefined, therefore there is no $y$-intercept.\vspace{10pt} \\
+
+For the $x$-intercept, let $y=0$:
+\begin{equation*}
+ \begin{array}{ccl}
+ y &=&  \dfrac{-4}{x}+7\vspace{4pt}\\
+ 0 &=&  \dfrac{-4}{x}+7\vspace{6pt}\\ 
+ \dfrac{-4}{x} &=& -7\vspace{4pt} \\
+\therefore x &= &\dfrac{4}{7}
+ \end{array}
+\end{equation*}
+
+This gives the point $\left(\frac{4}{7};0\right)$.
+
+
+\westep{Determine the asymptotes}
+The horizontal asymptote is the line $y=7$. The vertical asymptote is the line $x=0$.
+
+\westep{Sketch the graph}
+\par
+\setcounter{subfigure}{0}
+% \begin{figure}[]
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.65,xunit=0.65}
+\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
+\psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+\psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
+\psline[linestyle=dashed](-7,7)(7,7)
+\rput(7.3,0.3){$x$}
+\rput(0.3, 15.3){$y$}
+\rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+\rput(8.2,7){$y=7$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+}
+\end{center}
+
+
+Domain: $\{x:x \in \mathbb{R},~x\ne 0\}$\\
+Range: $\{y:y \in \mathbb{R},~y\ne 7\}$\\
+Axis of symmetry: $y=x+7$ and $y=-x+7$
+}
+\end{wex}
+
+\begin{exercises}{}{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Draw the graph of $xy=-6$.
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+  \item Does the point $(-2; 3)$ lie on the graph? Give a reason for your answer.
+  \item If the $x$-value of a point on the drawn graph is $0,25$ what is the corresponding $y$-value?
+  \item What happens to the $y$-values as the $x$-values become very large?
+  \item Give the equations of the asymptotes.
+  \item With the line $y=-x$ as line of symmetry, what is the point symmetrical to $(-2; 3)$?
+  \end{enumerate}
+\item Draw the graph of $h(x)=\frac{8}{x}$.
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+% \setcounter{enumi}{7}
+  \item How would the graph $g(x)=\frac{8}{x}+3$ compare with that of $h(x)=\frac{8}{x}$? Explain your answer fully.
+  \item Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
+  \end{enumerate}
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-e.) 00fq&  (2a-b.) 00fr& \end{tabular}
+}
+\end{exercises}
+
+\section{Exponential functions}
+
+\subsection*{Functions of the form $y=b^{x}$}        
+Functions of the general form $y=ab^{x}+q$ are called exponential functions. In the equation $a$ and $q$ are constants and have different effects on the function.
+\par
+\mindsetvid{The exponential function}{VMaxx}
+% \pagebreak
+\begin{wex}{Plotting an exponential function}
+{
+\begin{equation*}
+  y=f(x)=b^{x} \mbox{ for } b>0 \mbox{ and } b \neq 1
+\end{equation*}
+Complete the following table for each of the functions and draw the graphs on the same system of axes:
+$f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)=2^{x}$& \hspace{1cm}   & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
+\\ \hline
+ $g(x)=3^{x}$&  &&&&
+\\ \hline
+ $h(x)=5^{x}$&  &&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{minipage}{0.8\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item At what point do these graphs intersect?
+\item Explain why they do not cut the $x$-axis.
+\item Give the domain and range of $h(x)$.
+ \item As $x$ increases, does $h(x)$ increase or decrease?
+\item Which of these graphs increases at the slowest rate?
+\item For $y=k^{x}$ and $k>1$, the greater the value of $k$, the steeper the curve of the graph. True or false?
+\end{enumerate}
+\vspace*{1em}
+\end{minipage}\\Complete the following table for each of the functions and draw the graphs on the same system of axes:
+$F(x) =(\frac{1}{2})^{x}$, $G(x) =(\frac{1}{3})^{x}$, $H(x) =(\frac{1}{5})^{x}$.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$F(x)=(\frac{1}{2})^{x}$&  \hspace{1cm}  & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
+\\ \hline
+$G(x)=(\frac{1}{3})^{x}$&  &&&&
+\\ \hline
+$H(x)=(\frac{1}{5})^{x}$&  &&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{minipage}{0.8\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+ \item Give the $y$-intercept for each function.
+\item Describe the relationship between the graphs $f(x)$ and $F(x)$.
+\item Describe the relationship between the graphs $g(x)$ and $G(x)$.
+\item Give the domain and range of $H(x)$.
+\item For $y=(\frac{1}{k})^{x}$ and $k>1$, the greater the value of $k$, the steeper the curve of the graph. True or false?
+\item Give the equation of the asymptote for the functions.
+\end{enumerate}
+\end{minipage}\\
+}
+{
+\westep{Substitute values into the equations}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)=2^{x}$& $\frac{1}{4}$ &$\frac{1}{2}$&$1$&$2$&$4$
+\\ \hline
+ $g(x)=3^{x}$& $\frac{1}{9}$ &$\frac{1}{3}$&$1$&$3$&$9$
+\\ \hline
+ $g(x)=5^{x}$& $\frac{1}{25}$ &$\frac{1}{5}$&$1$&$5$&$25$
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $F(x)=(\frac{1}{2})^{x}$& $4$ &$2$&$1$&$\frac{1}{2}$&$\frac{1}{4}$
+\\ \hline
+$G(x)=(\frac{1}{3})^{x}$&  $9$&$3$&$1$&$\frac{1}{3}$&$\frac{1}{9}$
+\\ \hline
+$H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+\westep{Plot the points and join with a smooth curve}
+
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-3}{2}{2 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{0.9}{5 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(2.2,4.2){$f(x)$}
+\rput(1.4,4.4){$g(x)$}
+\rput(0.6,4.4){$h(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+
+\end{center}
+\end{figure}  
+
+    
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item We notice that all graphs pass through the point $(0;1)$. Any number with exponent $0$ is equal to $1$.
+\item The graphs do not cut the $x$-axis because $0^{0}$ is undefined.
+\item Domain: $\{x: x \in \mathbb{R}\}$.\\
+  Range: $\{y: y \in \mathbb{R}, ~y>0\}$.
+\item As $x$ increases, $h(x)$ increases.
+\item $f(x)=2^{x}$ increases at the slowest rate because it has the smallest base.
+\item True: the greater the value of $k$ $(k>1)$, the steeper the graph of $y=k^{x}$.
+\end{enumerate}
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-2}{3}{0.5 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-1.3}{2}{0.33 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-0.9}{1}{0.2 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(-2.2,4.2){$F(x)$}
+\rput(-1.4,4.4){$G(x)$}
+\rput(-0.6,4.4){$H(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+\end{center}
+\end{figure}  
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item The $y$-intercept is the point $(0; 1)$ for all graphs. For any real number $z$, $z^{0}=1$.
+\item $F(x)$ is the reflection of $f(x)$ about the $y$-axis. 
+\item $G(x)$ is the reflection of $g(x)$ about the $y$-axis. 
+\item  Domain: $\{x: x \in \mathbb{R}\}$.\\
+Range: $\{y: y \in \mathbb{R}, ~y>0\}$.
+\item True: the greater the value of $k$ $(k>1)$, the steeper the graph of $y=(\frac{1}{k})^{x}$.
+\item The equation of the horizontal asymptote is $y=0$, the $x$-axis.
+\end{enumerate}
+
+}
+\end{wex}
+
+   
+
+\subsection*{Functions of the form $y=ab^{x}+q$}
+\begin{Investigation}{The effects of $a$ and $q$ on an exponential graph}
+On the same set of axes, plot the following graphs ($b=2$, $a=1$ and $q$ changes):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=2^{x}-2$
+\item $y_2=2^{x}-1$
+\item $y_3=2^{x}$
+\item $y_4=2^{x}+1$
+\item $y_5=2^{x}+2$
+\end{enumerate}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$y_1=2^{x}-2$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
+\\ \hline
+ $y_2=2^{x}-1$&  &&&&
+\\ \hline
+$y_3=2^{x}$&  &&&&
+\\ \hline
+$y_4=2^{x}+1$&  &&&&
+\\ \hline
+$y_5=2^{x}+2$&  &&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+Use your results to deduce the effect of $q$.
+\\
+\\
+On the same set of axes, plot the following graphs ($b=2$, $q=0$ and $a$ changes):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=2^{x}$
+\item $y_7=2 \times 2^{x}$
+\item $y_8=-2^{x}$
+\item $y_9=-2 \times 2^{x}$
+\end{enumerate}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$y_6=2^{x}$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
+\\ \hline
+$y_7=2 \times 2^{x}$&  &&&&
+\\ \hline
+$y_8=-2^{x}$&  &&&&
+\\ \hline
+$y_9=-2 \times 2^{x}$&  &&&&
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+Use your results to deduce the effect of $a$.
+\end{Investigation}
+
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|m{1.5cm}|m{2cm}|m{2cm}|}\hline
+\hspace{0.25cm}\fbox{$b>1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02, arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
+\end{pspicture}
+\\\hline
+\hspace{0.25cm}$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|m{2cm}|m{2cm}|m{2cm}|}\hline
+\fbox{$0<b<1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
+\end{pspicture}
+\\\hline
+\hspace{0.25cm}$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+\textbf{The effect of $q$}\newline
+
+The effect of $q$ is called a vertical shift because all points are moved the same distance in the same direction (it slides the entire graph up or down). 
+\begin{itemize}
+\item For $q>0$, the graph is shifted vertically upwards by $q$ units. 
+\item For $q<0$, the graph is shifted vertically downwards by $q$ units.
+\end{itemize}
+The horizontal asymptote is shifted by $q$ units and is the line $y=q$. \vspace{8pt}\\
+
+
+\textbf{The effect of $a$}\newline
+The sign of $a$ determines whether the graph curves upwards or downwards. 
+\begin{itemize}
+ \item For $a>0$, the graph curves upwards.
+\item For $a<0$, the graph curves downwards. It reflects the graph about the horizontal asymptote.
+\end{itemize}
+
+\subsection*{Discovering the characteristics}
+The standard form of an exponential function is $y=ab^{x} + q$.
+\subsubsection*{Domain and range}
+
+For $y=ab^{x}+q$, the function is defined for all real values of $x$. Therefore, the domain is $\{x:x\in \mathbb{R}\}$.\par 
+The range of $y=ab^{x}+q$ is dependent on the sign of $a$.\par 
+For $a>0$:\par
+\begin{equation*}
+\begin{array}{ccc}\hfill b^{x}& > & 0\hfill \\
+ \hfill ab^{x}& > & 0\hfill \\ 
+\hfill ab^{x}+q& > & q\hfill \\ 
+\hfill f(x)& > & q\hfill 
+\end{array}
+\end{equation*}
+Therefore, for $a>0$ the range is $\{f(x):f(x) > q\}$.\par 
+For $a<0$:\par 
+
+\begin{equation*}
+\begin{array}{ccc}\hfill b^{x}&> & 0\hfill \\
+ \hfill ab^{x}& < & 0\hfill \\
+\hfill ab^{x}+q& < & q\hfill \\
+ \hfill f(x)& < & q\hfill 
+\end{array}
+\end{equation*}
+Therefore, for $a<0$ the range is $\{f(x):f(x) < q\}$.
+\begin{wex}{Domain and range of an exponential function}
+{Find the domain and range of $g(x)=5.2^{x}+1$}
+{
+\westep{Find the domain}
+The domain of $g(x)=5 \times 2^{x}+1$ is $\{x:x\in \mathbb{R}\}$.
+\westep{Find the range}
+\begin{equation*}
+\begin{array}{ccc}\hfill 2^{x}& > & 0\hfill \\
+ \hfill 5 \times 2^{x}& > & 0\hfill \\
+ \hfill 5 \times 2^{x}+1& > & 1\hfill 
+\end{array}
+\end{equation*}
+Therefore the range is $\{g(x):g(x) > 1\}$.\par 
+}
+\end{wex}
+
+
+
+
+\subsubsection*{Intercepts}
+\textbf{The $y$-intercept:}\\
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& ab^{x}+q\hfill \\
+ \hfill & =& ab^{0}+q\hfill \\
+ & =& a(1)+q\hfill \\
+ & =& a+q\hfill 
+\end{array}
+\end{equation*}
+
+For example, the $y$-intercept of $g(x)=5 \times 2^{x}+1$ is given by setting $x=0$:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 5 \times 2^{x}+1\hfill \\
+ \hfill & =& 5 \times 2^{0}+1\hfill \\
+ & =& 5+1\hfill \\ & =& 6\hfill 
+\end{array}
+\end{equation*}
+This gives the point $(0;6)$.\vspace{10pt}
+\\
+\textbf{The $x$-intercept:}\\
+For the $x$-intercept, let $y=0$. \\
+For example, the $x$-intercept of $g(x)=5 \times 2^{x}+1$ is given by setting $y=0$:\par 
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 5 \times 2^{x}+1\hfill \\
+ \hfill 0& =& 5 \times 2^{x}+1\hfill \\
+ \hfill -1& =& 5 \times 2^{x}\hfill \\
+ \hfill {2}^{x}& =& -\dfrac{1}{5}\hfill 
+\end{array}
+\end{equation*}
+There is no real solution. Therefore, the graph of $g(x)$ does not have any $x$-intercepts.\par 
+
+\subsubsection*{Asymptotes}
+
+Exponential functions of the form $y=ab^{x}+q$ have a single horizontal asymptote, the line $x=q$. 
+
+
+\subsection*{Sketching graphs of the form $y=ab^{x}+q$}
+
+In order to sketch graphs of functions of the form, $y=ab^{x}+q$, we need to determine four characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $a$
+\item $y$-intercept
+\item $x$-intercept
+\item asymptote
+\end{enumerate}
+\clearpage
+\begin{wex}{Sketching an exponential function}
+{Sketch the graph of $g(x)=3 \times 2^{x}+2$. Mark the intercept and the asymptote.}
+{
+\westep{Examine the standard form of the equation}
+From the equation we see that $a>1$, therefore the graph curves upwards. $q>0$ therefore the graph is shifted vertically upwards by $2$ units.
+
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill & =& 3 \times 2^{0}+2\hfill \\
+ & =& 3+2\hfill \\ & =& 5\hfill 
+\end{array}
+\end{equation*}
+This gives the point $(0;5)$.\\
+
+For the $x$-intercept, let $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill 0& =& 3 \times 2^{x}+2\hfill \\
+ \hfill -2& =& 3 \times 2^{x}\hfill \\
+ \hfill {2}^{x}& =& -\dfrac{2}{3}\hfill 
+\end{array}
+\end{equation*}
+There is no real solution, therefore there is no $x$-intercept.
+
+\westep{Determine the asymptote}
+The horizontal asymptote is the line $y=2$.
+
+\westep{Plot the points and sketch the graph}
+\setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.6}{2 x exp 3 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.8,2.2){$y=2$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,3){$y= 3 \times 2^{x}+2$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+% \end{figure}    
+\\
+Domain: $\{x: x \in \mathbb{R}\}$\\
+Range: $\{g(x): g(x) >2\}$\\
+
+Note that there is no axis of symmetry for exponential functions.
+} 
+\end{wex}
+
+\vspace*{-30pt}
+\begin{wex}{Sketching an exponential graph}
+{Sketch the graph of $y=-2 \times 3^{x}+6$.}
+{
+\westep{Examine the standard form of the equation} 
+From the equation we see that $a<0$ therefore the graph curves downwards. $q>0$ therefore the graph is shifted vertically upwards by $6$ units.
+\westep{Calculate the intercepts}
+
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill & =& -2 \times 3^{0}+6\hfill \\
+ & =& 4\hfill \\
+
+\end{array}
+\end{equation*}
+This gives the point $(0;4)$.\\
+
+For the $x$-intercept, let $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill 0& =& -2 \times 3^{x}+6\hfill \\
+ \hfill -6& =& -2 \times 3^{x}\hfill \\
+ \hfill {3}^{1}& =& {3}^{x}\hfill \\
+\hfill \therefore x & =& 1 
+\end{array}
+\end{equation*}
+This gives the point $(1; 0)$.
+\westep{Determine the asymptote} The horizontal asymptote is the line $y=6$.
+
+
+
+\westep{Plot the points and sketch the graph} 
+\setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-3)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp -2 mul 6 add}
+\psdots(0,4)(1,0)
+\psline[linestyle=dashed](-5,6)(5,6)
+\rput(5.8,6.2){$y=6$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,5.3){$y= -2.3^{x}+6$}
+\rput(-0.3,-0.3){$0$}
+\rput(0.8,4){$(0;4)$}
+\rput(1.7,0.5){$(1;0)$}
+\end{pspicture}
+\end{center}
+% \end{figure}    
+\\
+Domain: $\{x:x \in \mathbb{R}\}$\\
+Range: $\{g(x): g(x) <6\}$
+}
+\end{wex}
+
+\begin{exercises}{}{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Draw the graphs of $y=2^{x}$ and $y=(\frac{1}{2})^{x}$ on the same set of axes.
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
+  \item Which graph is represented by the equation $y=2^{-x}$? Explain your answer.
+  \item Solve the equation $2^{x}=(\frac{1}{2})^{x}$ graphically and check that your answer is correct by using substitution.
+  \end{enumerate}
+\item The curve of the exponential function $f$ in the accompanying diagram cuts the $y$-axis at the point $A(0; 1)$ and passes through the point $B(2; 9)$.
+\begin{center}
+\begin{pspicture}(-3,-1)(4,4)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-2)(5,10)
+\psplot[plotstyle=curve,arrows=<->]{-2}{2.1}{3 x exp}
+\psdots(0,1)(2,9)
+\rput(1,1){$A(0;1)$}
+\rput(3,9){$B(2;9)$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,10.2){$y$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Determine the equation of the function $f$.
+\item Determine the equation of $h$, the reflection of $f$ in the $x$-axis.
+\item Determine the range of $h$.
+\item Determine the equation of $g$, the reflection of $f$ in the $y$-axis.
+\item Determine the equation of $j$ if $j$ is a vertical stretch of $f$ by $+2$ units.
+\item Determine the equation of $k$ if $k$ is a vertical shift of $f$ by $-3$ units.
+\end{enumerate}
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-c.) 00fs&  (2a-f.) 00ft& \end{tabular}
+}
+\end{exercises}
+
+\section{Trigonometric functions}
+This section describes the graphs of trigonometric functions.\par 
+\mindsetvid{Sine and cosine graphs}{VMazc}
+% \pagebreak
+ % fixes the open page before this next wex
+\subsection{Sine function}
+\subsection*{Functions of the form $y=sin~\theta$}
+\begin{wex}
+{Plotting a sine graph}
+{
+\begin{equation*}
+  y = f(\theta) = sin~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+
+
+Use your calculator to complete the following table. \\
+Choose an appropriate scale and plot the values of $\theta $ on the $x$-axis and of $sin~\theta $ on the $y$-axis. (Round answers to $2$ decimal places). 
+
+
+\begin{table}[H]
+
+% \begin{center}
+
+\begin{tabular}{|c|m{0.3cm}|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$sin~\theta$&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+% \end{center}
+
+\end{table}
+}
+{
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.08cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$sin~\theta$&
+\footnotesize$0$&
+\footnotesize$0,5$&
+
+\footnotesize$0,87$&
+\footnotesize$1$&
+\footnotesize$0,87$&
+\footnotesize$0,5$&
+\footnotesize$0$&
+\footnotesize$-0,5$&
+\footnotesize$-0,87$&
+\footnotesize$-1$&
+\footnotesize$-0,87$&
+\footnotesize$-0,5$&
+\footnotesize$0$&
+
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Plot the points and join with a smooth curve}
+\setcounter{subfigure}{0}
+
+\begin{center}
+\begin{pspicture}(0,-1)(5,1)
+\psset{xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30,  xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psdots(30,0.5)(60,0.87)(90,1)(120,0.87)(150,0.5)(180,0)(210,-0.5)(240,-0.87)(270,-1)(300,-0.87)(330,-0.5)(360,0)
+\rput(370, 0.2){$\theta$}
+\rput(10, 1.5){$y$}
+
+\end{pspicture}
+\end{center}    
+\\
+Notice the wave shape of the graph. Each complete wave takes $360^{\circ}$ to complete. This is called the period. The height of the wave above and below the $x$-axis is called the graph's amplitude. The maximum value of $y=sin~\theta$ is $1$ and the minimum value is $-1$.\\
+\\
+Domain: $[~0^{\circ}; 360^{\circ}]$\\
+Range: $[-1; 1]$\\
+$x$-intercepts: $(0^{\circ}; 0)$, $(180^{\circ}; 0)$, $(360^{\circ}; 0)$\\
+$y$-intercept: $(0^{\circ};0)$\\
+Maximum turning point: $(90^{\circ};1)$\\
+Minimum turning point: $(270^{\circ};-1)$
+}
+\end{wex}
+\clearpage
+\subsection*{Functions of the form $y=a~sin~\theta+q$}
+\begin{Investigation}{The effects of $a$ and $q$ on a sine graph}
+
+{In the equation, $y=a~sin~\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+
+
+On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=sin~\theta -2$
+\item $y_2=sin~\theta -1$
+\item $y_3=sin~\theta $
+\item $y_4=sin~\theta +1$
+\item $y_5=sin~\theta +2$
+\end{enumerate}
+Use your results to deduce the effect of $q$.\\
+\\
+On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=-2~sin~\theta $
+\item $y_7=-sin~\theta $
+\item $y_8=sin~\theta $
+\item $y_9=2~sin~\theta $\end{enumerate}
+Use your results to deduce the effect of $a$.\\
+}
+\end{Investigation}
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $a$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x sin 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x sin 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x sin -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+}
+
+
+\\  \cline{1-1}
+$a>1$: vertical stretch, amplitude increases&\\ \cline{1-1}
+$a=1$: basic sine graph&\\ \cline{1-1}
+
+$0<a<1$: vertical contraction, amplitude decreases&\\ \cline{1-1}
+$-1<a<0$: reflection about $x$-axis of $0<a<1$&\\ \cline{1-1}
+$a<-1$: reflection about $x$-axis of $a>1$&\\ 
+ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $q$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x sin 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin 1.3 sub}  
+\psline[linewidth=1pt](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+}
+\\  \cline{1-1}
+$q>0$: vertical shift upwards by $q$ units&\\ \cline{1-1}
+
+$q=0$: basic sine graph&\\ \cline{1-1}
+$q<0$: vertical shift downwards by $q$ units&\\ \cline{1-1}
+ 
+& 
+\\
+&
+\\
+&
+\\
+&
+\\ \hline
+ \end{tabular}
+\end{center}
+\end{table}
+
+\textbf{The effect of $q$}
+\\
+The effect of $q$ is called a vertical shift because the whole sine graph shifts up or down by $q$ units. 
+\begin{itemize}
+\item For $q>0$, the graph is shifted vertically upwards by $q$ units. 
+\item For $q<0$, the graph is shifted vertically downwards by $q$ units. 
+\end{itemize}
+
+\textbf{The effect of $a$}
+\\
+The value of $a$ affects the amplitude of the graph; the height of the
+peaks and the depth of the troughs.
+\begin{itemize}
+ \item For $a>1$, there is a vertical stretch and the amplitude increases.\\
+For $0<a<1$, the amplitude decreases.
+\item For $a<0$, there is a reflection about the $x$-axis.\\ 
+For $-1<a<0$, there is a reflection about the $x$-axis and the amplitude decreases.\\
+For $a<-1$, there is a reflection about the $x$-axis and the amplitude increases.
+\end{itemize}
+
+Note that amplitude is always positive.\\
+
+
+
+% \begin{table}[htb]
+% \begin{center}
+% % \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a sin~(x) + q$.}
+% \label{tab:mt:g:summarysin10}
+% \begin{tabular}{|c|c|c|}\hline\begin{table}[H]
+
+% \begin{center}
+
+
+
+
+% & $a>0$&$a<0$\\\hline
+% $q>0$&
+% \begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin 0.5 add}
+% % \rput(5.1,-.3){Degrees}
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin neg 0.5 add}
+% % \rput(5.1,-.3){Degrees}
+% \end{pspicture}\\\hline
+% $q<0$&
+% \begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin 0.5 sub}
+% % \rput(5.1,-.3){Degrees}
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin neg 0.5 sub}
+% % \rput(5.1,-.3){Degrees}
+% \end{pspicture}\\\hline
+% \end{tabular}
+% \end{center}
+% \end{table}
+% \par
+
+
+
+\subsection*{Discovering the characteristics}
+\subsubsection*{Domain and range}
+\nopagebreak
+For $f(\theta) = a~sin~\theta + q$, the domain is $[~0^{\circ}; 360^{\circ}]$. \par
+The range of $f(\theta )=a~sin~\theta +q$ depends on the values for $a$ and $q$:\par 
+For $a>0$:\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+  \begin{array}{rcccl}
+    \hfill   -1 & \leq &  sin~\theta     & \leq & 1   \hfill \\
+    \hfill   -a & \leq & a~sin~\theta     & \leq & a   \hfill \\
+    \hfill -a+q & \leq & a~sin~\theta + q & \leq & a+q \hfill \\
+    \hfill -a+q & \leq &  f(\theta)      & \leq & a+q \hfill 
+  \end{array}
+\end{equation*}
+\par
+For all values of $\theta$, $f(\theta)$ is always between $-a+q$ and
+$a+q$.\\
+
+Therefore for $a>0$, the range of $f(\theta )=a~sin~\theta +q$ is
+$\{f(\theta ):f(\theta )\in [-a+q,~a+q]\}$.\\
+
+Similarly, for $a<0$, the range of $f(\theta )=a~sin~\theta +q$ is
+$\{f(\theta ):f(\theta )\in [a+q,~{-a}+q]\}$.
+
+
+% \Tip{The easiest way to find the range is simply to look for the peak and the trough of the graph.}
+
+\subsubsection*{Period}
+The period of $y=a~sin~\theta+q$ is $360^{\circ}$. This means that one sine wave is completed in $360^{\circ}$. 
+
+\subsubsection*{Intercepts}
+\nopagebreak
+The $y$-intercept of $f(\theta )=a~sin~\theta+q$ is simply the value of $f(\theta )$ at $\theta =0^{\circ }$.
+\begin{eqnarray*}
+  y & = & f(0^{\circ }) \\
+    & = & a~sin~ 0^{\circ } + q \\
+    & = & a(0) + q \\
+    & = & q
+\end{eqnarray*}
+This gives the point $(0;q)$.
+\par
+\textbf{Important:} when sketching trigonometric graphs, always start with the basic graph and then consider the effects of $a$ and $q$.
+\vspace*{-20pt}
+\begin{wex}{Sketching a sine graph}
+{Sketch the graph of $f(\theta)=2~sin~\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Examine the standard form of the equation}
+From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$f(\theta) $&
+\footnotesize$3$&
+\footnotesize$4$&
+\footnotesize$4,73$&
+\footnotesize$5$&
+\footnotesize$4,73$&
+\footnotesize$4$&
+\footnotesize$3$&
+\footnotesize$2$&
+\footnotesize$1,27$&
+\footnotesize$1$&
+\footnotesize$1,27$&
+\footnotesize$2$&
+\footnotesize$3$
+ \\ \hline
+
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Plot the points and join with a smooth curve}
+
+\begin{center}
+\scalebox{0.95}{
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
+     {0}{360}{x sin 2 mul 3 add}  
+\psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
+     {0}{360}{3}  
+\rput(370, 0.2){$\theta$}
+\rput(0.4, 6.2){$f(\theta)$}
+\rput(380,3.4){$f(\theta)=2~sin~\theta+3$}
+\psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
+
+\end{pspicture}}
+\end{center} 
+\\
+Domain: $[~0^{\circ}; 360^{\circ}]$\\
+Range: $[1;5]$\\
+$x$-intercepts: none\\
+$y$-intercept: $(0^{\circ};3)$\\
+Maximum turning point: $(90^{\circ};5)$\\
+Minimum turning point: $(270^{\circ};1)$
+}
+\end{wex}
+% \pagebreak
+\subsection{Cosine function}
+\subsection*{Functions of the form $y=cos ~\theta$}
+\begin{wex}
+{Plotting a cosine graph}
+{
+\begin{equation*}
+  y=f(\theta)=cos ~  \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+Use your calculator to complete the following table. \\
+Choose an appropriate scale and plot the values of
+$\theta$ on the $x$-axis and $cos ~\theta$ on the $y$-axis. (Round
+answers to $2$ decimal places.)
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|m{0.3cm}|m{0.3cm}|m{0.3cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$cos ~\theta $&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+\end{table}
+}
+{
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$cos ~\theta $&
+\footnotesize$1$&
+\footnotesize$0.87$&
+\footnotesize$0,5$&
+\footnotesize$0$&
+\footnotesize$-0,5$&
+\footnotesize$-0,87$&
+\footnotesize$-1$&
+\footnotesize$-0,87$&
+\footnotesize$-0,5$&
+\footnotesize$0$&
+\footnotesize$0,5$&
+\footnotesize$0,87$&
+\footnotesize$1$&
+   \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table} 
+
+
+
+\westep{Plot the points and join with a smooth curve}
+\setcounter{subfigure}{0}
+
+\begin{center}
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.8)
+\psplot[plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos}  
+\psdots(0,1)(30,0.87)(60,0.5)(90,0)(120,-0.5)(150,-0.87)(180,-1)(210,-0.87)(240,-0.5)(270,0)(300,0.5)(330,0.87)(360,1)
+\rput(370, 0.2){$\theta$}
+\rput(10, 1.8){$y$}
+\end{pspicture}
+\end{center}    
+
+Notice the similar wave shape of the graph. The period is also
+$360^{\circ}$ and the amplitude is $1$. The maximum value of
+$y=cos ~\theta$ is $1$ and the minimum value is $-1$.
+
+Domain: $[~0^{\circ}; 360^{\circ}]$\\
+Range: $[-1;1]$\\
+$x$-intercepts: $(90^{\circ}; 0)$, $(270^{\circ}; 0)$\\
+$y$-intercept: $(0^{\circ};1)$\\
+Maximum turning points: $(0^{\circ};1)$, $(360^{\circ};1)$\\
+Minimum turning point: $(180^{\circ};-1)$
+}
+\end{wex}
+
+\subsection*{Functions of the form $y=a~cos ~\theta +q$}
+\begin{Investigation}{The effects of $a$ and $q$ on a cosine graph}
+{In the equation, $y=a~cos ~\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+
+On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=cos ~\theta -2$
+\item $y_2=cos ~\theta -1$
+\item $y_3=cos ~\theta $
+\item $y_4=cos ~\theta +1$
+\item $y_5=cos ~\theta +2$
+\end{enumerate}
+Use your results to deduce the effect of $q$.
+\par
+On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=-2cos ~\theta $
+\item $y_7=-cos ~\theta $
+\item $y_8=cos ~\theta $
+\item $y_9=2cos ~\theta $\end{enumerate}
+Use your results to deduce the effect of $a$.
+}
+\end{Investigation}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $a$}&\\
+&
+
+\multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x cos 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x cos 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x cos -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+
+}
+
+
+\\ 
+&
+\\  \cline{1-1}
+$a>1$: vertical stretch, amplitude increases&\\ \cline{1-1}
+ $a=1$: basic cosine graph&\\ \cline{1-1}
+$0<a<1$: amplitude decreases&\\ \cline{1-1}
+$-1<a<0$: reflection about $x$-axis, amplitude decreases&\\ \cline{1-1}
+$a<-1$: reflection about $x$-axis, amplitude increases&
+\\
+& 
+
+\\ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|p{6.5cm}|m{7cm}|}
+      \hline
+      \textbf{Effect of $q$} & \\
+      & \multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x cos 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos 1.3 sub}  
+\psline[linewidth=1pt](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+} \\ 
+& \\ \cline{1-1}
+$q>0$: vertical shift upwards by $q$ units&\\ \cline{1-1}
+$q=0$: basic cosine graph&\\ \cline{1-1}
+$q<0$: vertical shift downwards by $q$ units&\\ \cline{1-1}
+& \\
+& \\
+& \\
+& \\ \hline
+ \end{tabular}
+  \end{center}
+\end{table}
+
+\textbf{The effect of $q$} \\
+The effect of $q$ is called a vertical shift because the whole cosine graph shifts up or down by $q$ units. 
+\begin{itemize}
+\item For $q>0$, the graph is shifted vertically upwards by $q$ units. 
+\item For $q<0$, the graph is shifted vertically downwards by $q$ units. 
+\end{itemize}
+
+\textbf{The effect of $a$} \\
+The value of $a$ affects the amplitude of the graph; the height of the
+peaks and the depth of the troughs.
+\begin{itemize}
+ \item For $a>0$, there is a vertical stretch and the amplitude increases.\\
+For $0<a<1$, the amplitude decreases.
+\item For $a<0$, there is a reflection about the $x$-axis.\\ 
+For $-1<a<0$, there is a reflection about the $x$-axis and the amplitude decreases.
+For $a<-1$, there is reflection about the $x$-axis and the amplitude increases.
+\end{itemize}
+
+Note that amplitude is always positive.
+
+
+% \begin{table}[htb]
+% \begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ cos ~ x + q$.}
+% \label{tab:mt:g:summarycos10}
+% \begin{tabular}{|c||c|c|}\hline
+% & $a>0$&$a<0$\\\hline\hline
+% $q>0$&
+% \begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos 0.5 add}
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos neg 0.5 add}
+% \end{pspicture}\\\hline
+% $q<0$&
+% \begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos 0.5 sub}
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos neg 0.5 sub}
+% \end{pspicture}\\\hline
+% \end{tabular}
+% \end{center}
+% \end{table}
+% \par
+
+\subsection*{Discovering the characteristics}
+\subsubsection*{Domain and range}
+
+For $f(\theta )=a~cos ~\theta +q$, the domain is $[~0^{\circ}; 360^{\circ}]$.\par 
+It is easy to see that the range of $f(\theta )$ will be the same as the range of $a~sin~\theta+q$. This is because the maximum and minimum values of $a~cos ~(\theta )+q$ will be the same as the maximum and minimum values of $a~sin~\theta+q$.\\
+\par
+For $a>0$ the range of $f(\theta)=a~cos ~\theta+q$ is $\{f(\theta): f(\theta) \in [-a+q; a+q]\}$. \\
+For $a<0$ the range of $f(\theta)=a~cos ~\theta+q$ is $\{f(\theta): f(\theta) \in [a+q; -a+q]\}$.
+\subsubsection*{Period}
+The period of $y=a~cos ~\theta+q$ is $360^{\circ}$. This means that one cosine wave is completed in $360^{\circ}$. 
+
+\subsubsection*{Intercepts}
+\nopagebreak
+The $y$-intercept of $f(\theta )=a~cos ~\theta+q$ is calculated in the same way as for sine.\par 
+\nopagebreak\noindent{}
+\begin{eqnarray*}
+  y &=& f({0}^{\circ}) \\
+    &=& a~cos ~ 0^{\circ } + q \\
+    &=& a(1) + q \\
+    &=& a + q
+\end{eqnarray*}
+This gives the point $(0^{\circ};a+q)$.
+
+\begin{wex}{Sketching a cosine graph}
+{Sketch the graph of $f(\theta)=2~cos ~\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Examine the standard form of the equation}
+From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$f(\theta) $&
+\footnotesize$5$&
+\footnotesize$4,73$&
+\footnotesize$4$&
+\footnotesize$3$&
+\footnotesize$2$&
+\footnotesize$1,27$&
+\footnotesize$1$&
+\footnotesize$1,27$&
+\footnotesize$2$&
+\footnotesize$3$&
+\footnotesize$4$&
+\footnotesize$4,73$&
+\footnotesize$5$&
+% \hline0.4
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Plot the points and join with a smooth curve}
+\begin{center}
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos 2 mul 3 add}  
+\psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
+     {0}{360}{3}  
+\rput(370, 0.2){$\theta$}
+\rput(0.4, 6.2){$f(\theta)$}
+\rput(380,5.4){$f(\theta)=2~cos ~\theta+3$}
+\psdots(0,5)(30,4.73)(60,4)(90,3)(120,2)(150,1.27)(180,1)(210,1.27)(240,2)(270,3)(300,4)(330,4.73)(360,5)
+
+\end{pspicture}
+\end{center} 
+\\
+Domain: $[~0^{\circ}; 360^{\circ}]$\\
+Range: $[1;5]$\\
+$x$-intercepts: none\\
+$y$-intercept: $(0^{\circ};5)$\\
+Maximum turning points: $(0^{\circ};5)$, $(360^{\circ};5)$\\
+Minimum turning point: $(180^{\circ};1)$
+}
+\end{wex}
+
+\subsection*{Comparison of graphs of $y=sin~\theta $ and \\$y=cos ~\theta $}
+\nopagebreak
+\begin{center}
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2.5}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.8)
+\psplot[plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos}  
+\psplot[plotpoints=300, linestyle=dashed, linewidth=1pt]
+     {0}{360}{x sin}  
+
+\rput(390, 1.2){$y=cos ~\theta$}
+\rput(400, 0.2){$y=sin~\theta$}
+\rput(385, -0.2){$\theta$}
+\rput(10, 1.8){$y$}
+\end{pspicture}
+\end{center}    
+Notice that the two graphs look very similar. Both waves move up and down along the $x$-axis. The distances between the peaks for each graph is the same. The height of the peaks and the depths of the troughs are also the same.\par 
+If you shift the whole cosine graph to the right by $90 ^{\circ }$ it
+will overlap perfectly with the sine graph. If you shift the sine
+graph by $90 ^{\circ }$ to the left and it would overlap perfectly with the cosine graph. This means that:\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+  \begin{array}{rcll}
+    sin~\theta & = & cos ~ (\theta - 90^{\circ}) & (\mbox{shift the cosine graph to the right}) \\
+    cos ~\theta & = & sin~ (\theta + 90^{\circ}) & (\mbox{shift the sine graph to the left})
+  \end{array}
+\end{equation*}
+\clearpage
+\subsection{Tangent function}
+\subsection*{Functions of the form $y=tan ~\theta$}
+%  %MANUAL PAGE BREAK TO FORCE WEX TO SPLIT OVER TWO PAGES
+\begin{wex}
+{Plotting a tangent graph}
+{
+\begin{equation*}
+ y=f(\theta)=tan ~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+
+Use your calculator to complete the following table. \\
+Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis and $tan ~\theta$ on the $y$-axis. (Round answers to $2$ decimal places). 
+
+\begin{table}[H]
+\begin{tabular}{|c|m{0.3cm}|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$tan ~\theta $&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+% \end{center}
+
+\end{table}
+}
+{
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$tan ~\theta $&
+\footnotesize$0$&
+\footnotesize$0,58$&
+
+\footnotesize$1,73$&
+\footnotesize undf&
+\footnotesize$-1,73$&
+\footnotesize$-0,58$&
+\footnotesize$0$&
+\footnotesize$0,58$&
+\footnotesize$1,73$&
+\footnotesize undf&
+\footnotesize$-1,73$&
+\footnotesize$-0,58$&
+\footnotesize$0$&
+% \hline
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+\westep{Plot the points and join with a smooth curve}
+
+\begin{center}
+\begin{pspicture}(-6,-3)(6,3)
+\psset{xunit=1}
+\psaxes[Dx=90, dx=1, Dy=1, dy=1, xlabelFactor=^{\circ}]{<->}(0,0)(0,-3)(4.5,3)
+\psline[linestyle=dashed](1,-2.5)(1,2.5)
+\psline[linestyle=dashed](3,-2.5)(3,2.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{70}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div}
+ \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
+
+\rput(.2,3.3){$f(\theta)$}
+\rput(4.7,0.3){$\theta$}
+\end{pspicture}
+\end{center}
+
+There is an easy way to visualise the tangent graph. Consider our definitions of $sin~\theta $ and $cos ~\theta $ for right-angled triangles.\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+\frac{sin~\theta }{cos ~\theta }=\frac{\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}}{\frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}}}=\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}=tan ~\theta 
+\end{equation*}
+So for any value of $\theta$:
+\nopagebreak\noindent{}
+\begin{equation*}
+tan ~\theta =\frac{sin~\theta }{cos ~\theta }
+\end{equation*}
+
+So we know that for values of $\theta $ for which $sin~\theta =0$, we must also have $tan ~\theta =0$. Also, if $cos ~\theta =0$ the value of $tan ~\theta $ is undefined as we cannot divide by $0$. The dashed vertical lines are at the values of $\theta $ where $tan ~\theta $ is not defined and are called the asymptotes.
+\vspace{8pt}\\
+
+Asymptotes: the lines $\theta = 90^{\circ}$ and $\theta = 270^{\circ}$ \\
+
+Period: $180^{\circ}$ \\
+Domain: $\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$\\
+Range: $\{f(\theta): f(\theta) \in \mathbb{R}\}$\\
+$x$-intercepts: $(0^{\circ}; 0)$, $(180^{\circ}; 0)$, $(360^{\circ}; 0)$\\
+$y$-intercept: $(0^{\circ};0)$
+}
+\end{wex}
+
+\clearpage
+
+
+% \setcounter{subfigure}{0}
+% \\begin{figure}[h]
+% \begin{center}
+% \begin{pspicture}(-6,-3)(6,3)
+% \psaxes[Dx=180, dx=2, Dy=2, dy=1]{<->}(0,0)(-4.5,-3)(4.5,3)
+% \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
+% \psline[linestyle=dashed](1,-2.5)(1,2.5)
+% \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
+% \psline[linestyle=dashed](3,-2.5)(3,2.5)
+% \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=<->]{-80}{80}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div}
+% % \rput(5.1,-.3){$\theta$\ Degrees}
+% \rput(.4,3.3){$f(\theta$)}
+% \end{pspicture}
+% % \caption{The graph of $tan ~ \theta$.}
+% \label{trig:tan}
+% \end{center}
+% \end{figure}       
+% 
+% \subsection*{Graphs of the form $y=a ~tan ~ x+q$}
+% \nopagebreak
+% In the figure below is an example of a function of the form $y=a tan ~(x)+q$.\par 
+
+       
+
+\subsection*{Functions of the form $y=a~tan ~\theta+q$}
+\begin{Investigation}{The effects of $a$ and $q$ on a tangent graph}
+{On the same set of axes, plot the following graphs for $0^{\circ}\leq\theta\leq360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=tan ~\theta -2$
+\item $y_2=tan ~\theta -1$
+\item $y_3=tan ~\theta $
+\item $y_4=tan ~\theta +1$
+\item $y_5=tan ~\theta +2$
+\end{enumerate}
+
+Use your results to deduce the effect of $q$.\\
+\par
+On the same set of axes, plot the following graphs for
+$0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y_6=-2~tan ~\theta $
+\item $y_7=-tan ~\theta $
+\item $y_8=tan ~\theta $
+\item $y_9=2~tan ~\theta $
+\end{enumerate}
+Use your results to deduce the effect of $a$.
+}
+\end{Investigation}
+
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|m{0.9cm}|m{4cm}|m{4cm}|}\hline
+&\hspace{1.5cm}$a<0$&\hspace{1.5cm}$a>0$\\ 
+\hline
+
+$q>0$&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, linewidth=0.02,labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linewidth=0.04,linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+
+
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linewidth=0.04,linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\\hline
+$q=0$ & 
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linewidth=0.02,linestyle=dashed](1,-2)(1,2)
+\psline[linewidth=0.02,linestyle=dashed](3,-2)(3,2)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul}
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linewidth=0.02,linestyle=dashed](1,-2)(1,2)
+\psline[linewidth=0.02,linestyle=dashed](3,-2)(3,2)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div }
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div }
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div }
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\ \hline
+$q<0$&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linewidth=0.04,linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linewidth=0.04,linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+\textbf{The effect of $q$}
+\\
+The effect of $q$ is called a vertical shift because the whole tangent graph shifts up or down by $q$ units. 
+\begin{itemize}
+\item For $q>0$, the graph is shifted vertically upwards by $q$ units. 
+\item For $q<0$, the graph is shifted vertically downwards by $q$ units. 
+\end{itemize}
+
+\textbf{The effect of $a$}
+\\
+The value of $a$ affects the steepness of each of the branches of the graph. The greater the value of $a$, the quicker the branches of the graph approach the asymptotes.
+
+% \begin{table}[htb]
+% \begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ tan ~ x + q$.}
+% \label{tab:mt:g:summarytan10}
+% \begin{tabular}{|c||c|c|}\hline
+% & $a>0$&$a<0$\\\hline\hline
+% $q>0$&
+% \begin{pspicture}(-1.2,-0.6)(1.2,0.8)
+% %\psgrid[gridcolor=gray]
+% \psset{yunit=0.1,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-6)(450,7)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-81.5}{78}{x sin x cos div 1.5 add}cos
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-0.6)(1.2,0.8)
+% %\psgrid[gridcolor=gray]
+% \psset{yunit=0.1,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-6)(450,7)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-78}{82.5}{x sin x cos div neg 1.5 add}
+% \end{pspicture}\\\hline
+% $q<0$&
+% \begin{pspicture}(-1.2,-0.8)(1.2,0.8)
+% %\psgrid[gridcolor=gray]
+% \psset{yunit=0.1,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-7)(450,6)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-80}{80}{x sin x cos div 1.5 sub}
+% \end{pspicture}
+% &
+% \begin{pspicture}(-1.2,-0.8)(1.2,0.8)
+% %\psgrid
+% \psset{yunit=0.1,xunit=0.0111}
+% \psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-7)(450,6)
+% \psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-80}{80}{x sin x cos div neg 1.5 sub}
+% \end{pspicture}\\\hline
+% \end{tabular}
+% \end{center}
+% \end{table}
+% \par
+
+\subsection*{Discovering the characteristics}
+\subsubsection*{Domain and range}
+
+From the graph we see that $tan ~\theta$ is undefined at
+$\theta = 90^{\circ}$ and $\theta = 270^{\circ}$. \\
+Therefore the domain is
+$\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$.\\
+
+The range is $\{f(\theta): f(\theta) \in \mathbb{R}\}$.
+
+\subsubsection*{Period}
+The period of $y=a~tan ~\theta+q$ is $180^{\circ}$. This means that one tangent cycle is completed in $180^{\circ}$. 
+
+
+\subsubsection*{Intercepts}
+\nopagebreak
+The $y$-intercept of $f(\theta)=a~tan ~\theta+q$ is simply the value of
+$f(\theta)$ at $\theta = {0}^{\circ}$.
+
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& f({0}^{\circ })\hfill \\
+ & =& a~tan ~ {0}^{\circ } + q \hfill \\
+ & =& a(0)+q\hfill \\
+ & =& q\hfill 
+\end{array}
+\end{equation*}
+This gives the point $(0^{\circ}; q)$.
+\subsubsection*{Asymptotes}
+\nopagebreak
+The graph has asymptotes at $\theta ={90}^{\circ }$ and $\theta={270}^{\circ }$.
+
+\begin{wex}{Sketching a tangent graph}
+{Sketch the graph of $y=2~tan ~\theta+1$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Examine the standard form of the equation}
+We see that $a>1$ so the branches of the curve will be steeper. We also see that $q>0$ so the graph is shifted vertically upwards by $1$ unit.
+
+\westep{Substitute values for $\theta$}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$y $&
+\footnotesize$1$&
+\footnotesize$2,15$&
+\footnotesize$4,46$&
+\footnotesize --&
+\footnotesize$-2,46$&
+\footnotesize$-0,15$&
+\footnotesize$1$&
+\footnotesize$2,15$&
+\footnotesize$4,46$&
+\footnotesize--&
+\footnotesize$-2,46$&
+\footnotesize$-0,15$&
+\footnotesize$1$&
+% \hline
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+\westep{Plot the points and join with a smooth curve}
+
+
+
+% \begin{center}
+% \begin{pspicture}(-6,-3)(6,3)
+% \psset{xunit=1}
+% \psaxes[Dx=180, dx=2, Dy=1, dy=1]{<->}(0,0)(0,-3)(4.5,3)
+% \psline[linestyle=dashed](1,-2.5)(1,2.5)
+% \psline[linestyle=dashed](3,-2.5)(3,2.5)
+% \psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{70}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
+%  \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
+% 
+% \rput(.2,3.3){$y$}
+% \rput(4.3,0.3){$\theta$}
+% \end{pspicture}
+% \end{center}
+
+
+\begin{center}
+\begin{pspicture}(0,-3)(6,3)
+
+\psaxes[Dx=180, dx=2, Dy=1, dy=0.5,xlabelFactor=^{\circ} ]{<->}(0,0)(0,-3)(4.5,3)
+% \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
+\psline[linestyle=dashed](1,-3)(1,3)
+% \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
+\psline[linestyle=dashed](3,-3)(3,3)
+\psline[linestyle=dashed](0,0.5)(4.5,0.5)
+\psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{70}{x sin x cos div 2 mul 1 add}
+
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
+% \rput(5.1,-.3){$\theta$\ Degrees}
+ \psdots(0,0.5)(0.33,1.08)(0.66,2.23)(1.33,-1.23)(1.66,-0.08)(2,0.5)(2.33,1.08)(2.66,2.23)(3.33,-1.23)(3.66,-0.08)(4,0.5)
+\rput(.2,3.3){$y$}
+\rput(4.7,0.2){$\theta$}
+\end{pspicture}
+\end{center}\\
+Domain: $\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$.\\
+Range: $\{f(\theta): f(\theta) \in \mathbb{R}\}$.
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Using your knowledge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [~{0}^{\circ };{360}^{\circ }]$.
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $y=2~sin~\theta $
+\item $y=-4~cos ~\theta $
+\item $y=-2~cos ~\theta +1$
+\item $y=sin~\theta -3$
+\item $y=tan ~\theta -2$
+\item $y=2~cos ~\theta -1$
+\end{enumerate}
+\item Give the equations of each of the following graphs:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+
+
+\item
+\begin{pspicture}(-2.5,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}
+
+
+\item
+\begin{pspicture}(-0.3,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}
+
+
+% \item
+% \begin{pspicture}(-2.2,-3)(2.2,3.2)
+% \psset{yunit=0.2}
+% \psaxes[Dx=90, dx=1, Dy=5, dy=5]{<->}(0,0)(-2,-12)(2,12)
+% \psline[linestyle=dashed](-1,0)(-1,12.5)
+% \psline[linestyle=dashed](1,-12.5)(1,-3)
+% \psline[linestyle=dashed](-1,-12.5)(-1,-3)
+% \psline[linestyle=dashed](1,0)(1,12.5)
+% \psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-75}{83}{x sin x cos div -2 mul 5 add}
+% \rput(-0.2,-0.7){$0$}
+% \end{pspicture}
+
+% \end{minipage}      \par 
+\end{enumerate}
+\end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-f.) 00fu&  (2a-b.) 00fv& \end{tabular}
+}
+\end{exercises}
+\clearpage
+\section{Interpretation of graphs}
+\begin{wex}{Determining the equation of a parabola}
+{Use the sketch below to determine the values of $a$ and $q$ for the parabola of the form $y=ax^{2}+q$.
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,3)
+\psplot[plotstyle=curve,arrows=<->]{-1.8}{1.8}{x 2 exp -1 mul 1 add}
+ \psdots(0,1)(-1,0)
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 3.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.6,1.2){$(0;1)$}
+\rput(-2.1,-0.4){$(-1;0)$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Examine the sketch}
+From the sketch we see that the shape of the graph is a ``frown'', therefore $a<0$. We also see that the graph has been shifted vertically upwards, therefore $q>0$. 
+\westep{Determine $q$ using the $y$-intercept}
+The $y$-intercept is the point $(0;1)$.
+\begin{eqnarray*}
+  y &=& ax^{2} + q \\
+  1 &=& a(0)^{2} +q \\
+  \therefore q&=&1
+\end{eqnarray*}
+
+\westep{Use the other given point to determine $a$}
+Substitute point $(-1;0)$ into the equation:
+\begin{eqnarray*}
+  y &=& ax^{2} + q\\
+  0 &=& a(-1)^{2} +1\\
+  \therefore a&=&-1
+\end{eqnarray*}
+
+\westep{Write the final answer}
+$a=-1$ and $q=1$, so the equation of the parabola is $y=-x^{2} +1$.
+}
+\end{wex}
+
+\begin{wex}{Determining the equation of a hyperbola}
+{Use the sketch below to determine the values of $a$ and $q$ for the hyperbola of the form $y=\dfrac{a}{x}+q$.
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,4)
+
+\psplot[plotstyle=curve,arrows=<->]{-2.8}{-0.35}{x -1 exp -1 mul 1 add}
+\psplot[plotstyle=curve,arrows=<->]{0.3}{2.8}{x -1 exp -1 mul 1 add}
+ \psdots(1,0)(-1,2)
+\psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 4.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(1.4,-0.4){$(1;0)$}
+\rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Examine the sketch}
+The two curves of the hyperbola lie in the second and fourth quadrant, therefore $a<0$. We also see that the graph has been shifted vertically upwards, therefore $q>0$. 
+\westep{Substitute the given points into the equation and solve}
+Substitute the point $(-1;2)$:
+\begin{eqnarray*}
+  y&=& \dfrac{a}{x}+q \vspace{11pt}\\
+  2&=& \dfrac{a}{-1}+q \\
+  \therefore 2&=&-a+q
+\end{eqnarray*}
+
+Substitute the point $(1;0)$:
+\begin{eqnarray*}
+y&=&\frac{a}{x} + q \vspace{11pt}\\
+  0&=& \frac{a}{1}+q\\
+  \therefore a&=&-q
+\end{eqnarray*}
+
+\westep{Solve the equations simultaneously using substitution}
+\begin{eqnarray*}
+  2 & = &-a+q \\
+    & = & q+q \\
+    & = & 2q \\
+  \therefore q & = & 1 \\
+  \therefore a & = & -q \\
+    & = & -1
+\end{eqnarray*}
+
+\westep{Write the final answer}
+$a=-1$ and $q=1$, the equation of the hyperbola is $y=\dfrac{-1}{x}+1$.
+}
+\end{wex}
+
+\begin{wex}{Interpreting graphs}
+{The graphs of $y=-x^{2}+4$ and $y=x-2$ are given. Calculate the following:\\
+% \vspace*{20pt}
+\begin{minipage}{\textwidth}
+\vspace*{15pt}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item coordinates of $A$, $B$, $C$, $D$
+\item coordinates of $E$
+\item distance $CD$ 
+\end{enumerate}
+\end{minipage}
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-6)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-3.2}{3.2}{x 2 exp -1 mul 4 add}
+\psplot[plotstyle=curve,arrows=<->]{-4}{3}{x 2 sub}
+ \psdots(-2,0)(2,0)(0,-2)(0,4)(-3,-5)
+
+\rput(0.3, 5.3){$y$}
+\rput(5.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.3,4.3){$C$}
+\rput(2.4,-0.3){$B$}
+\rput(-2.4,-0.3){$A$}
+\rput(0.3,-2.3){$D$}
+\rput(-2.6,-5){$E$}
+\rput(4.2,1){$y=x-2$}
+\rput(-2.5,3.3){$y=-x^{2}+4$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Calculate the intercepts}
+For the parabola, to calculate the $y$-intercept, let $x=0$:
+\begin{eqnarray*}
+  y&=& -x^{2}+4\\
+  &=& -0^{2}+4 \\
+  &=&4
+\end{eqnarray*}
+This gives the point $C(0;4)$.
+\\\\
+To calculate the $x$-intercept, let $y=0$:
+\begin{eqnarray*}
+  y&=& -x^{2}+4\\
+  0&=& -x^{2}+4 \\
+  x^{2}-4&=&0\\
+  (x+2)(x-2)&=&0\\
+  \therefore x&=& \pm2
+\end{eqnarray*}
+This gives the points $A(-2;0)$ and $B(2;0)$.
+\\\\
+For the straight line, to calculate the $y$-intercept, let $x=0$:
+\begin{eqnarray*}
+  y&=&x-2\\
+  &=& 0-2 \\
+  &=&-2
+\end{eqnarray*}
+This gives the point $D(0;-2)$.
+
+For the straight line, to calculate the $x$-intercept, let $y=0$:
+\begin{eqnarray*}
+  y&=&x-2\\
+  0&=& x-2 \\
+  x&=&2
+\end{eqnarray*}
+This gives the point $B(2;0)$.
+
+\westep{Calculate the point of intersection $E$}
+At $E$ the two  graphs intersect so we can equate the two expressions:
+\begin{eqnarray*}
+  x-2 &=& -x^{2}+4 \\
+  \therefore x^2 + x - 6 &=& 0 \\
+  \therefore (x-2)(x+3) &=& 0 \\
+  \therefore x &=& 2 \mbox{ or } -3
+\end{eqnarray*}
+At $E$, $x=-3$, therefore $y=x-2=-3-2=-5$. This gives the point $E(-3;-5)$.
+
+\westep{Calculate distance $CD$}
+\begin{equation*}
+ \begin{array}{rcl}
+  CD&=&CO+OD\\
+ &=& 4+2 \\
+&=&6\\
+ \end{array}
+\end{equation*}
+Distance $CD$ is $6$ units.
+}
+\end{wex}
+\begin{wex}{Interpreting trigonometric graphs}
+{Use the sketch to determine the equation of the trigonometric
+  function $f$ of the form $y=a~f(\theta)+q$.\\
+\begin{center}
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, labels=none, ticks=none]{<->}(0,0)(-30,-1)(370,2)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 0.5 add}  
+\rput(375, 0.2){$\theta$}
+\rput(0.4, 2.2){$y$}
+\psdots(210,0)(90,1.5)(0,0.5)
+\rput(120,1.8){$M(90^{\circ}; \frac{3}{2})$}
+\rput(240,0.3){$N(210^{\circ};0)$}
+\rput(-7,-0.2){$0$}
+\end{pspicture}
+\end{center} 
+}
+{
+\westep{Examine the sketch}
+From the sketch we see that the graph is a sine graph that has been shifted vertically upwards. The general form of the equation is $y=a~sin~\theta +q$.
+
+\westep{Substitute the given points into equation and solve}
+At $N$, $\theta = 210^{\circ}$ and $y=0$:
+\begin{eqnarray*}
+  y&=&a~sin~\theta +q\\
+  0&=& a~sin~ 210^{\circ}+q \\
+  &=&a\left(-\frac{1}{2}\right)+q\\
+  \therefore q&=&\dfrac{a}{2}
+\end{eqnarray*}
+
+At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
+\begin{eqnarray*}
+  \dfrac{3}{2}&=&a~sin~ 90^{\circ} +q\\
+  &=& a+q \\
+\end{eqnarray*}
+
+\westep{Solve the equations simultaneously using substitution}
+\begin{eqnarray*}
+  \frac{3}{2}  &=& a + q \\
+               &=& a + \frac{a}{2} \\
+            3  &=& 2a + a \\
+           3a  &=& 3 \\
+  \therefore a &=& 1 \\
+  \therefore q &=& \frac{a}{2} \\
+               &=& \frac{1}{2}
+\end{eqnarray*}
+
+\westep{Write the final answer}
+\begin{equation*}
+  y = sin~\theta + \frac{1}{2}
+\end{equation*}
+}
+\end{wex}
+
+\summary{VMdkf}
+
+\begin{itemize}[noitemsep]
+\item Characteristics of functions: 
+\begin{itemize}[noitemsep]
+\item The given $x$-value is known as the independent variable, because its value can be chosen freely. The calculated $y$-value is known as the dependent variable, because its value depends on the  $x$-value.
+\item The domain of a function is the set of all $x$-values for which there exists at most one $y$-value according to that function. The range is the set of all $y$ values, which can be obtained using at least one $x$-value.
+\item An asymptote is a straight  line, which the graph of a function will approach, but never touch.
+\item A graph is said to be continuous if there are no breaks in the graph. 
+\end{itemize}
+
+\item Special functions and their properties:
+  \begin{itemize}[noitemsep]
+  \item Linear functions of the form $y=ax+q$.
+  \item Parabolic functions of the form $y=a{x}^{2}+q$. 
+  \item Hyperbolic functions of the form $y=\frac{a}{x}+q$. 
+  \item Exponential functions of the form $y=a{b}^{x}+q$. 
+  \item Trigonometric functions of the form \\$y=a~sin~\theta+q$ \\$y=a~cos ~\theta+q$\\ $y=a~tan ~\theta+q$ 
+  \end{itemize}
+\end{itemize}
+
+\begin{eocexercises}{}
+  \begin{enumerate}[itemsep=9pt, label=\textbf{\arabic*}. ] 
+  \item Sketch the graphs of the following: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $y=2x+4$ 
+    \item $y-3x=0$ 
+    \item $2y=4-x$
+    \end{enumerate}
+  \item Sketch the following functions: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{3} 
+    \item $y=x^{2}+3$ 
+    \item $y=\frac{1}{2}x^{2}+4$
+    \item $y=2x^{2}-4$
+    \end{enumerate}
+  \item Sketch the following functions and identify the asymptotes: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{6} 
+    \item $y=3^{x}+2$ 
+    \item $y=-4 \times 2^{x}$ 
+    \item $y=\left(\dfrac{1}{3}\right)^{x}-2$ 
+    \end{enumerate}
+  \item Sketch the following functions and identify the asymptotes: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{9} 
+    \item $y=\frac{3}{x}+4$ 
+    \item $y=\frac{1}{x}$ 
+    \item $y=\frac{2}{x}-2$ 
+    \end{enumerate}
+  \item Determine whether the following statements are true or false. If the statement is false, give reasons why:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{12} 
+    \item The given or chosen $y$-value is known as the independent variable.
+    \item A graph is said to be congruent if there are no breaks in the graph.
+    \item Functions of the form $y=ax+q$ are straight lines.
+    \item Functions of the form $y=\frac{a}{x}+q$ are exponential functions.
+    \item  An asymptote is a straight line which a graph will intersect at least once.
+    \item Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
+    \end{enumerate}
+  \item Given the functions $f(x)=2{x}^{2}-6$ and $g(x)=-2x+6$:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{18} 
+    \item Draw $f$ and $g$ on the same set of axes.
+    \item Calculate the points of intersection of $f$ and $g$.
+    \item Use your graphs and the points of intersection to solve for $x$ when:
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] % \setcounter{enumi}{20} 
+      \item $f(x)>0$
+      \item $g(x)<0$
+      \item $f(x)\leq g(x)$
+      \end{enumerate}
+    \item Give the equation of the reflection of $f$ in the $x$-axis.
+    \end{enumerate}
+  \item After a ball is dropped, the rebound height of each bounce
+    decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship
+    between the number of bounces $x$ and the height of the bounce $y$
+    for a certain ball.  What is the approximate height of the fifth
+    bounce of this ball to the nearest tenth of a unit?
+  \item Mark had $15$ coins in R$~5$ and R$~2$ pieces. He had $3$ more
+    R$~2$ coins than R$~5$ coins. He wrote a system of equations to
+    represent this situation, letting $x$ represent the number of R$~5$
+    coins and $y$ represent the number of R$~2$ coins. Then he solved
+    the system by graphing.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{24} 
+    \item Write down the system of equations.
+    \item Draw their graphs on the same set of axes.
+    \item Use your sketch to determine how many R$~5$ and R$~2$ pieces Mark had.
+    \end{enumerate}
+  \item Sketch graphs of the following trigonometric functions for
+    $\theta \in[~0^{\circ};360^{\circ}]$. Show intercepts and
+    asymptotes.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{27} 
+    \item $y=-4~cos~\theta$
+    \item $y=sin~\theta -2$
+    \item $y=-2~sin~\theta +1$
+    \item $y=tan~\theta+2$
+    \item $y=\dfrac{cos~\theta}{2}$
+    \end{enumerate}
+  \item Given the general equations $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ and $y=a~tan~x$, determine the
+    specific equations for each of the following graphs:\vspace{20pt}\\
+    \begin{center}
+      \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+%           \hline
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-7)(6,6)
+                \psline[linewidth=0.02, linestyle=dashed](-2,0)(-2,-6)
+                \psline[linewidth=0.02, linestyle=dashed](-0,-6)(-2,-6)
+                \psplot[plotstyle=curve,arrows=<->]{-2.2}{2}{x 3 mul}
+                \rput(-5,5){\textbf{(a)}}
+                \psdots(-2,-6)
+                \rput(0.3, 6.3){$y$}
+                \rput(6.2, 0.3){$x$}
+                \rput(-0.37,-0.3){$0$}
+                \rput(-3.7,-6){$(-2;-6)$}
+              \end{pspicture}
+            }
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-1.7}{1.7}{x 2 exp -2 mul 3 add}
+                \rput(-5,5){\textbf{(b)}}
+                \psdots(1,1)(0,3)
+                \rput(0.3, 5.3){$y$}
+                \rput(5.4, 0.2){$x$}
+                \rput(-0.37,-0.3){$0$}
+                \rput(1.8,1.5){$(1;1)$}
+
+\rput(1,3.3){$(0;3)$}
+            \end{pspicture}}
+          \end{center}
+          \\ %\hline
+   
+        \end{tabular}
+      \end{table}
+    \end{center}
+
+   \begin{center}
+      \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+     
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-4.5}{-0.6}{x -1 exp -3 mul}
+                \psplot[plotstyle=curve,arrows=<->]{0.6}{4.5}{x -1 exp -3 mul }
+                \psdots(3,-1)
+                \rput(-5,5){\textbf{(c)}}
+                \rput(0.3, 5.3){$y$}
+                \rput(5.3, 0.2){$x$}
+                \rput(-0.37,-0.3){$0$}
+                \rput(3.6,-1.7){$(3;-1)$}
+            \end{pspicture}}
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-2)(6,7)
+                \psplot[plotstyle=curve,arrows=<->]{-3.5}{5}{x 2 add}
+                \rput(-5,7){\textbf{(d)}}
+                \psdots(0,2)(4,6)
+                \rput(0.3, 7.3){$y$}
+                \rput(6.4, 0.2){$x$}
+                \rput(-0.42,-0.3){$0$}
+                \rput(1,2){$(0;2)$}
+                \rput(5,5.8){$(4;6)$}
+            \end{pspicture}}
+          \end{center}
+        \end{tabular}
+    \end{table}
+    \end{center}
+    \begin{center}
+        \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-6,-5)(5,6)
+                \psset{yunit=0.4, xunit=1}
+                \psset{xunit=0.01111}
+                \psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-45,-4.5)(400,6.5)
+                \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 5 mul 1 add}  
+                \rput(415, 0.2){$x$}
+                \rput(15, 6.5){$y$}
+                \rput(-90,5){\textbf{(e)}}
+%                 \psline[linewidth=0.02, linestyle=dashed](0,6)(360,6)
+                \psline[linewidth=0.02, linestyle=dashed](0,1)(360,1)
+%                 \psline[linewidth=0.02, linestyle=dashed](0,-4)(360,-4)
+                \rput(-30,6){$6$}
+                \rput(-30,1){$1$}
+                \rput(-30,-4){$-4$}
+                \psdots(195,0)(350,0)(90,6)(270,-4)
+                \rput(160,-0.8){$180^{\circ}$}
+                \rput(340,-0.8){$360^{\circ}$}
+                \rput(-20,-0.4){$0$}
+              \end{pspicture}
+            }
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-3)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-4}{1}{2 x exp 2 mul 1 add}
+                \psdots(0,3)
+                \psline[linewidth=0.02,linestyle=dashed](-5,1)(5,1)
+                \rput(-5,5){\textbf{(f)}}
+                \rput(0.3, 5.3){$y$}
+                \rput(5.4, 0.3){$x$}
+                \rput(-0.37,-0.4){$0$}
+                \rput(6,1){$y=1$}
+                \rput(1,3){$(0;3)$}
+            \end{pspicture}}
+          \end{center}
+       \end{tabular}
+    \end{table}
+    \end{center}
+    \begin{center}
+        \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+          \begin{center}
+            \scalebox{0.9}{
+              \begin{pspicture}(0,-2.5)(4,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-4)(4.5,2)
+                \rput(-1,3){\textbf{(g)}}
+                \psline[linewidth=0.02,linestyle=dashed](1,-4)(1,2)
+                \psline[linewidth=0.02,linestyle=dashed](3,-4)(3,2)
+                \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul 2 sub}
+                \rput(0.2,2.3){$y$}
+                \rput(4.5,0.2){$x$}
+                \rput(-0.5,-1){$-2$}
+  \rput(2,-0.4){$180^{\circ}$}
+                \rput(4,-0.4){$360^{\circ}$}
+                \psdots(1.5,-0.5)(2,-1)
+                \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
+              \end{pspicture}
+            }
+          \end{center}
+          
+          \\ %\hline
+          
+        \end{tabular}
+      \end{table}
+    \end{center}
+
+
+
+  \item $y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:
+\begin{center}
+    \scalebox{0.9}{
+      \begin{pspicture}(-5,-5)(5,1)
+        %\psgrid
+        \psset{yunit=1.3,xunit=1.3}
+        \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-2.5,-2.5)(2,2.5)
+        \psplot[plotstyle=curve,arrows=<->]{-1.7}{0.6}{2 x exp}
+        \psplot[plotstyle=curve,arrows=<->]{-1.7}{0.6}{2 x exp -1 mul}
+        \psdots(0,1)(0,-1)(-1,0.5)(-1,-0.5)
+        \rput(0.2, 2.6){$y$}
+        \rput(2.1, 0.2){$x$}
+        \rput(-0.2,-0.2){$0$}
+        \rput(0.3,1){$M$}
+        \rput(0.3,-1){$N$}
+        \rput(-1,0.8){$P$}
+        \rput(-1,-0.8){$Q$}
+        \rput(-1.2,0.15){$R$}
+        \psline[linewidth=0.01,linestyle=dashed, dash=0.10cm 0.10cm](-1,0.5)(-1,-0.5)
+        \psline[linewidth=0.01](-1,0.2)(-0.8,0.2)
+        \psline[linewidth=0.01](-0.8,0.2)(-0.8,0)
+    \end{pspicture}}
+\end{center}
+    \\
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{39}
+    \item Calculate the coordinates of $M$ and $N$.
+    \item Calculate the length of $MN$.
+    \item Calculate length $PQ$ if $OR=1$ unit.
+    \item Give the equation of $y=2^x$ reflected about the $y$-axis.
+    \item Give the range of both graphs.
+    \end{enumerate}
+    
+  \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and $C$ are given. Answer the questions that follow:
+  \begin{center}  
+    \scalebox{1}{
+      \begin{pspicture}(-5,-5)(5,1)
+        %\psgrid
+        \psset{yunit=0.5,xunit=1}
+        \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-2.5,-5)(2,5)
+        \psplot[plotstyle=curve,arrows=<->]{-1}{1.2}{4 x exp}
+        \psplot[plotstyle=curve,arrows=<->]{-1.2}{1.2}{x 2 exp -4 mul 1 add}
+        \psdots(0,1)(1,4)(1,-3)
+        \rput(0.2, 5.2){$y$}
+        \rput(2.2, 0.1){$x$}
+        \rput(-0.3,1.3){$A$}
+        \rput(1.2,4){$B$}
+        \rput(1.3,-3){$C$}
+        \rput(-0.2,-0.4){$0$}
+        \rput(2.2,5.2){$f(x)=4^x$}
+        \rput(2.7,-4){$g(x)=-4x^2+q$}
+        \psline[linewidth=0.01,linestyle=dashed, dash=0.10cm 0.10cm](1,4)(1,-3)
+        \psline[linewidth=0.02](1,0.4)(1.2,0.4)
+        \psline[linewidth=0.02](1.2,0.4)(1.2,0)
+        
+    \end{pspicture}}
+\end{center}
+    \\
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{44}
+    \item Determine the value of $q$.
+    \item Calculate the length of $BC$.
+    \item Give the equation of $f(x)$ reflected about the $x$-axis.
+    \item Give the equation of $f(x)$ shifted vertically upwards by $1$ unit.
+    \item Give the equation of the asymptote of $f(x)$.
+\item Give the ranges of $f(x)$ and $g(x)$.
+    \end{enumerate}
+    
+  \item Sketch the graphs $h(x)=x^2-4$ and $k(x)=-x^2+4$ on the same set of axes and answer the questions that follow: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{49}
+    \item Describe the relationship between $h$ and $k$.
+    \item Give the equation of $k(x)$ reflected about the line $y=4$.
+    \item Give the domain and range of $h$.
+    \end{enumerate}
+    
+  \item Sketch the graphs $f(\theta)=2~ sin~\theta$ and $g(\theta)=cos~\theta-1$ on the same set of axes. Use your sketch to determine:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{52}
+    \item $f(180^{\circ})$
+    \item $g(180^{\circ})$
+    \item $g(270^{\circ}) -f(270^{\circ})$
+    \item The domain and range of $g$.
+    \item The amplitude and period of $f$.
+    \end{enumerate}
+%additional interpretation of graph exercises
+\pagebreak
+\item The graphs of $y=x$ and $y=\frac{8}{x}$ are shown in the following diagram.\\
+
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[labels=none, ticks=none]{<->}(0,0)(-5,-8)(5,8)
+
+\psplot[plotstyle=curve,arrows=<->]{1}{5}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{-1}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{5}{x}
+\psdots(2.83,2.83)(-2.83,-2.83)
+% \psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 8.3){$y$}
+\rput(5.4, 0.2){$x$}
+\psline(-2,0)(-2,-4)
+\psline[linestyle=dashed](-2.83,0)(-2.83,-2.83)
+\psline[linestyle=dashed](2.83,0)(2.83,2.83)
+\psline(2.83, 0.5)(3.3,0.5)
+\psline(3.3,0.5)(3.3,0)
+\psline(-2.83, -0.5)(-3.3,-0.5)
+\psline(-3.3,-0.5)(-3.3,0)
+
+\uput[u](-2.83,0){$C$}
+\uput[d](2.83,0){$D$}
+\uput[u](-2,0) {$G$}
+\uput[u](2.83,2.85){$A$}
+\uput[ur] (5,5) {$y=x$}
+\uput[d](-2.83,-2.85){$B$}
+\uput[r](-2,-4){$E$}
+\uput[dr](-2,-2){$F$}
+\uput[dr](0,0) {$0$}
+% \rput(-0.37,-0.3){$0$}
+% \rput(1.4,-0.4){$(1;0)$}
+% \rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+}
+\end{center}
+    Calculate:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item the coordinates of points $A$ and $B$.
+    \item the length of $CD$.
+    \item the length of $AB$.
+    \item the length of $EF$, given $G(-2;0)$.
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\item Given the diagram with $y=-3x^2+3$ and $y=-\frac{18}{x}$.\\
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[dx=1, dy=1, Dy=1,Dx=1, arrows=<->, labels=none, ticks=none](0,0)(-5,-14)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.3}{2.3}{x 2 exp -3 mul 3 add}
+\psplot[plotstyle=curve,arrows=<->]{1.3}{5}{x -1 exp -18 mul}
+
+ \psdots(2,-9)(-1,0)(1,0)(0,3)
+
+\rput(0.3, 7.4){$y$}
+\rput(5.3, 0.4){$x$}
+\uput[dl](0,0){$0$}
+% \rput(0.3,4.3){$C$}
+% \rput(2.4,-0.3){$B$}
+% \rput(-2.4,-0.3){$A$}
+% \rput(0.3,-2.3){$D$}
+% \rput(-2.6,-5){$E$}
+\rput(4.8,-3){$y=-\frac{18}{x}$}
+\rput(-4.2,-5){$y=-3x^2+3$}
+\uput[ul](-1,0){$A$}
+\uput[ur](1,0){$B$}
+\uput[ur](0,3){$C$}
+\uput[l](2,-9){$D$}
+\end{pspicture}
+\end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Calculate the coordinates of $A$, $B$ and $C$.
+    \item Describe in words what happens at point $D$.
+    \item Calculate the coordinates of $D$.
+    \item Determine the equation of the straight line that would pass through points $C$ and $D$ .
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\pagebreak
+\item The diagram shows the graphs of $f(\theta)=3~sin~\theta$ and $g(\theta)=-tan~\theta$.\\
+          \begin{center}
+            \scalebox{1}{
+              \begin{pspicture}(0,-2.5)(4,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-3)(4.5,3)
+             
+                \psline[linewidth=0.01,linestyle=dashed](1,-3)(1,3)
+                \psline[linewidth=0.01,linestyle=dashed](3,-3)(3,3)
+%                 \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{0}{360}{x sin 3 mul}
+                \rput(0.2,3.3){$y$}
+                \rput(4.5,0.2){$x$}
+%                 \rput(-0.5,-1){$-2$}
+  \rput(2,-0.3){$180^{\circ}$}
+                \rput(4,-0.3){$360^{\circ}$}
+\rput(1,-0.3){$90^{\circ}$}
+\rput(3,-0.3){$270^{\circ}$}
+                \psdots(2,0)(1,1.5)(3,-1.5)
+\rput(3.7,-1){$f$}
+\rput(3.5,2){$g$}
+\uput[l](0,1.5){$3$}
+\uput[l](0,-1.5){$-3$}
+%                 \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
+              \end{pspicture}
+            }
+          \end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Give the domain of $g$.
+    \item What is the amplitude of $f$?
+    \item Determine for which values of $\theta$:
+      \begin{enumerate}[itemsep=4pt, label=\textbf{\roman*}. ]
+	    \item $f(\theta)=0=g(\theta)$
+	    \item $f(\theta)\times g(\theta)<0$
+	    \item $\dfrac{g(\theta)}{f(\theta)}>0$
+	    \item $f(\theta)$ is increasing?
+  \end{enumerate}
+%NEED DIAGRAM HERE
+  \end{enumerate}
+  \end{enumerate}
+\practiceinfo
+\par 
+\par \begin{tabular}[h]{ccccc}
+(1a-c.) 00fw&  (2a-c.) 00fx&  (3a-c.) 00fy&  (4a-c.) 00fz&  (5a-f.) 00g0&  (6a-d.) 00g1&  (7.) 00g2&  (8a-c.) 00g3& (9a-e.) 00g4& (10a-f.) 0241 & (11a-e.) 00g5& (12a-f.) 00g6& (13a-c.) 00g7& (14a-e.) 00mi& (15a-d.) 02si& (16a-d.) 02sh& (17a-c.) 02sj
+\end{tabular}
+\end{eocexercises}

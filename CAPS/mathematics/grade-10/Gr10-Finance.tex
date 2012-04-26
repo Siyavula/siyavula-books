@@ -1,0 +1,910 @@
+\chapter{Finance and growth}
+
+\section{Being interested in interest}
+
+In this chapter, we apply mathematics skills to everyday financial situations.\par
+
+If you had R~$1~000$, you could either keep it in your piggy bank, or deposit it into a bank account. If you deposit the
+money into a bank account, you are effectively lending money to the bank and as a result, you can expect to receive
+interest in return. Similarly, if you borrow money from a bank, then you can expect to pay interest on the loan.
+Interest is charged at a percentage of the money owed over the period of time it takes to pay back the loan, meaning
+the longer the loan exists, the more interest will have to be paid on it.\par
+
+The concept is simple, yet it is core to the world of finance. Accountants, actuaries and bankers can spend their
+entire working career dealing with the effects of interest on financial matters.\par
+
+\chapterstartvideo{VMbal}
+
+\section{Simple interest}
+\Definition{Simple interest}{Simple interest is interest calculated only on the initial amount that you invested.}
+  
+As an easy example of simple interest, consider how much we will get by investing R~$1~000$ for $1$ year with a bank that pays $5\%$ p.a.\@{} simple interest. 
+\clearpage
+At the end of the year we have
+\begin{align*}
+    \mbox{Interest} &= \mbox{R}~1~000 \times 5\%\\
+    &= \mbox{R}~1~000 \times \frac{5}{100}\\
+    &= \mbox{R}~1~000 \times 0,05\\
+    &= \mbox{R}~50
+\end{align*}
+
+With an opening balance of R~$1~000$ at the start of the year, the closing balance at the end of the year will therefore be 
+\begin{align*
+    \mbox{Closing balance} &= \mbox{Opening balance + Interest}\\
+    &= \mbox{R}~1~000 + \mbox{R}~50\\
+    &= \mbox{R}~1~050
+\end{align*}
+
+The opening balance in financial calculations is often called the principal, denoted as $P$ (R~$1~000$ in the example). The interest rate is usually labelled $i$ ($5\%$ p.a.\@{} in the example and ``p.a.'' means per annum or per year). The interest amount is labelled $I$ (R~$50$ in the example).\par 
+
+So we can see that
+        
+\begin{align*}
+    I = P \times i
+\end{align*}
+
+and
+
+\begin{align*}
+    \mbox{Closing balance} &= \mbox{Opening balance + Interest} \nonumber\\
+    &= P + I \nonumber\\
+    &= P + P \times i\nonumber\\
+    &= P(1 + i)
+\end{align*}
+
+% \Tip{Remember that percentage is a number written over the denominator of $100$. In other words, $12\%$ can be written as $\frac{12}{100}$ and can  also be written in decimal form, $0,12$.}
+
+
+The above calculations give a good idea of what the simple interest
+formula looks like. However, the example shows an investment that
+lasts for only one year. If the investment or loan is over a longer
+period, we need to take this into account. We use the symbol $n$ to
+indicate time period, which must be given in years.\par
+
+The general formula for calculating simple interest is
+% \Tip{Annual rates means yearly rates, and p.a.\@ (per annum) = per year.}
+
+\Identity{
+\vspace*{-2em}
+    \begin{eqnarray*}
+	\label{FG:SI}
+	A &=& P (1 + in)\\
+	\mbox{Where:} \nonumber\\
+	A &=& \mbox{accumulated amount (final)} \nonumber\\
+	P &=& \mbox{principal amount (initial)} \nonumber\\
+	i &=& \mbox{interest written as decimal} \nonumber\\
+	n &=& \mbox{number of years} \nonumber
+    \end{eqnarray*}
+}
+
+
+\begin{wex}{Calculating interest on a deposit}
+{Carine deposits R~$1~000$ into a special bank account which pays a
+  simple interest rate of $7\%$ p.a.\@ for $3$ years, how much will be
+  in her account at the end of the investment term?}
+{
+    \westep{Write down known values}
+    \begin{align*}
+	P &= 1~000\\
+	i &= 0,07\\
+	n &= 3
+    \end{align*}
+    
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 1~000(1 + 0,07 \times 3)\\
+	  &= 1~210
+    \end{align*}
+
+    \westep{Write the final answer}
+    At the end of $3$ years, Carine will have R~$1~210$ in her bank account.
+    }
+\end{wex}
+
+
+\begin{wex}{Calculating interest on a loan}
+{Sarah borrows R~$5~000$ from her neighbour at an agreed simple
+  interest rate of $12,5\%$ p.a.\@ She will pay back the loan in one
+  lump sum at the end of $2$ years. How much will she have to pay her
+  neighbour?}
+{
+    \westep{Write down the known variables}
+    \begin{align*}
+	P &= 5~000\\
+	i &= 0,125\\
+	n &= 2
+    \end{align*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 5~000(1 + 0,125 \times 2)\\
+	  &= 6~250
+    \end{align*}
+
+    \westep{Write the final answer}
+    At the end of $2$ years, Sarah will pay her neighbour R~$6~250$.
+    }
+\end{wex}
+
+
+We can use the simple interest formula to find pieces of missing information. For example, if we have an amount of money that we want to invest for a set amount of time to achieve a goal amount, we can rearrange the variables to solve for the required interest rate. The same principles apply to finding the length of time we would need to invest the money, if we knew the principal and accumulated amounts and the interest rate.
+\par
+\textbf{Important:} to get a more accurate answer, try to do all your calculations on the calculator in one go. This will prevent rounding off errors from influencing your final answer.
+
+\begin{wex}{Determining the investment period to achieve a goal amount}
+{Prashant deposits R~$30~000$ into a bank account that pays a simple
+  interest rate of $7,5\%$ p.a., for how many years must he invest to
+  generate R~$45~000$?}
+{
+    \westep{Write down the known variables}
+    \begin{align*}
+	A &= 45~000\\
+	P &= 30~000\\
+	i &= 0,075
+    \end{align*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values and solve for $n$}
+    \begin{align*}
+	45~000 &= 30~000(1 + 0,075 \times n)\\
+	\frac{45~000}{30~000} &= 1 + 0,075 \times n \\[5pt]
+	\frac{45~000}{30~000} -1 &= 0,075 \times n\\[5pt]
+	\frac{(\frac{45~000}{30~000}) -1}{0,075} &= n\\
+	n &= 6\frac{2}{3}
+    \end{align*}
+
+    \westep{Write the final answer}
+    It will take $6$ years and $8$ months to make R~$45~000$ from R~$30~000$ at a simple interest rate of $7,5\%$ p.a.
+    }
+\end{wex}
+
+
+
+\begin{wex}{Calculating the simple interest rate to achieve the
+    desired growth}
+{At what simple interest rate should Fritha invest if she wants to
+  grow R~$2~500$ to R~$4~000$ in $5$ years?}
+{
+    \westep{Write down the known variables}
+    \begin{align*}
+	A &= 4~000\\
+	P &= 2~500\\
+	n &= 5
+    \end{align*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values and solve for $i$}
+    \begin{align*}
+	4~000 &= 2~500(1 + i \times 5)\\
+	\frac{4~000}{2~500} &= 1 + i \times 5\\[5pt]
+	\frac{4~000}{2~500} - 1&= i \times 5\\[5pt]
+	\frac{(\frac{4~000}{2~500}) - 1}{5} &= i\\
+	i &= 0,12
+    \end{align*}
+
+    \westep{Write the final answer}
+    A simple interest rate of $12\%$ p.a. will be needed when investing R~$2~500$ for $5$ years to become R~$4~000$.
+    }
+\end{wex}
+
+% 
+% \subsection{When the time period is not in years}
+% 
+% Often people are not able to invest money for a full year, or they want to take out a loan for a shorter period. How do we calculate the accumulated amount if the time period is not in years?\par
+% 
+% We know that there are $12$ months in every year. If we wanted to invest money for just three months, $n$ would be equal to $\frac{3}{12}$. Similarly, if we wanted to take out a loan for a period of $7$ months, $n = \frac{7}{12}$.
+% 
+
+\begin{exercises}{}{
+    \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+	\item An amount of R~$3~500$ is invested in a savings account which pays simple interest at a rate of $7,5\%$ per annum. Calculate the balance accumulated by the end of $2$ years.
+
+	\item Calculate the accumulated amount in the following situations:
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item A loan of R~$300$ at a rate of $8\%$ for $1$ year.
+
+	    \item An investment of R~$2~250$ at a rate of $12,5\%$p.a.\@ for $6$ years.
+	\end{enumerate}
+
+	\item Sally wanted to calculate the number of years she needed to invest R~$1~000$ for in order to accumulate R~$2~500$. She has been offered a simple interest rate of $8,2\%$ p.a. How many years will it take for the money to grow to R~$2~500$?
+
+	\item Joseph made a deposit of R~$5~000$ in the bank for his $5$ year old son's $21^{\mathrm{st}}$ birthday. He has given his son the amount of R~$18~000$ on his birthday. At what rate was the money invested, if simple interest was calculated?
+    \end{enumerate}
+\practiceinfo
+
+\begin{tabular}[h]{ccccc}
+	(1.) 00f5&(2.) 023y	&(3.) 023k &	(4.) 00me
+\end{tabular}
+}
+\end{exercises}
+
+
+\section{Compound interest}
+
+Compound interest allows interest to be earned on interest. With simple interest, only the original investment earns interest, but with compound interest, the original investment and the interest earned on it, both earn interest.
+
+Compound interest is advantageous for investing money but not for taking out a loan.
+
+\Definition{Compound interest}{Compound interest is the interest earned on the principal amount and on its accumulated interest.}
+Consider the example of R $1~000$ invested for $3$ years with a bank that pays $5\%$ compound interest.
+
+At the end of the first year, the accumulated amount is 
+\begin{align*}
+  A_1 &= P(1 + i)\\
+  &= 1~000(1+0,05)\\
+  &=1~050
+\end{align*}
+The amount $A_1$ becomes the new principal amount for calculating the accumulated amount at the end of the second year.
+
+\begin{align*}
+    A_2 &= P(1 + i)\\
+&= 1~050(1+0,05)\\
+&=1~000(1+0,05)(1+0,05)\\
+&= 1~000(1+0,05)^2
+\end{align*}
+
+Similarly, we use the amount $A_2$ as the new principal amount for calculating the accumulated amount at the end of the third year.
+\begin{align*}
+    A_3 &= P(1 + i)\\
+&=1~000(1+0,05)^2(1+0,05)\\
+&= 1~000(1+0,05)^3
+\end{align*}
+Do you see a pattern?
+
+Using the formula for simple interest, we can develop a similar formula for compound interest.
+
+With an opening balance $P$ and an interest rate of $i$, the closing balance at the end of the first year is:
+\begin{eqnarray*}
+    \mbox{Closing balance after $1$ year} = P(1 + i)
+\end{eqnarray*}
+
+This is the same as simple interest because it only covers a single year. This closing balance becomes the opening balance for the second year of investment. 
+\begin{eqnarray*}
+    \mbox{Closing balance after $2$ years} &=& [P(1 + i)] \times (1 + i)\\
+    &=& P(1 + i)^2
+\end{eqnarray*}
+
+And similarly, for the third year
+
+\begin{eqnarray*}
+    \mbox{Closing balance after $3$ years} &=& [P(1 + i)^2] \times (1 + i)\\
+    &=& P(1 + i)^3
+\end{eqnarray*}
+
+We see that the power of the term $(1 + i)$ is the same as the number of years. Therefore the general formula for calculating compound interest is:
+
+\Identity{
+\vspace*{-2em}
+  \begin{eqnarray*}
+    \label{FG:CI}
+    A &=& P(1 + i)^n\\
+    \mbox{Where:~} \\
+    A &=& \mbox{accumulated amount} \\
+    P &=& \mbox{principal amount} \\
+    i &=& \mbox{interest written as decimal} \\
+    n &=& \mbox{number of years} 
+  \end{eqnarray*}
+}
+
+
+\begin{wex}{Compound interest}
+{Mpho wants to invest R~$30~000$ into an account that offers a
+  compound interest rate of $6\%$ p.a. How much money will be in the
+  account at the end of $4$ years?}
+{
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	P &=& 30~000\\
+	i &=& 0,06\\
+	n &=& 4
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 30~000(1 + 0,06)^4\\
+	  &= 37~874,31
+    \end{align*}
+
+    \westep{Write the final answer}
+    Mpho will have R~$37~874,31$ in the account at the end of $4$ years.
+    }
+\end{wex}
+
+
+\begin{wex}{Calculating the compound interest rate to achieve the
+    desired growth}
+{Charlie has been given R~$5~000$ for his sixteenth birthday. Rather
+  than spending it, he has decided to invest it so that he can put
+  down a deposit of R~$10~000$ on a car on his eighteenth
+  birthday. What compound interest rate does he need to achieve this
+  growth? Comment on your answer.}
+{
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& 10~000\\
+	P &=& 5~000\\
+	n &=& 2
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for $i$}
+    \begin{align*}
+	10~000 &= 5~000(1 + i)^2\\
+	\frac{10~000}{5~000}&= (1 +i)^2\\[5pt]
+	\sqrt[]{\frac{10~000}{5~000}} &= 1 + i\\[5pt]
+	\sqrt[]{\frac{10~000}{5~000}} - 1 &= i\\
+	i &= 0,4142
+    \end{align*}
+
+    \westep{Write the final answer and comment}
+    Charlie needs to find an account that offers a compound interest
+    rate of $41,42\%$ p.a. to achieve the desired growth.  A typical
+    savings account gives a return of approximately $2\%$ p.a. and an
+    aggressive investment portfolio gives a return of approximately
+    $13\%$ p.a. It therefore seems unlikely that Charlie will be able to
+    invest his money at an interest rate of $41,42\%$ p.a.
+}
+\end{wex}
+
+
+\subsection{The power of compound interest}
+
+To illustrate how important ``interest on interest'' is, we compare the difference in closing balances for an investment earning simple interest and an investment earning compound interest. Consider an amount of R~$10~000$ invested for $10$ years, at an interest rate of $9\%$ p.a.
+
+The closing balance for the investment earning simple interest is
+\begin{align*}
+    A &= P(1 + in)\\
+      &= 10~000(1 + 0,09 \times 10)\\
+      &= \mbox{R}~19~000\\
+\end{align*}
+
+The closing balance for the investment earning compound interest is
+\begin{align*}
+    A &= P(1 + i)^n\\
+      &= 10~000(1 + 0,09)^{10}\\
+      &= \mbox{R}~23~673,64
+\end{align*}
+
+We plot the growth of the two investments on the same set of axes and note the significant different in their rate of change: simple interest is a straight line graph and compound interest is an exponential graph.
+
+\begin{figure}[H]
+    \begin{center}
+      \scalebox{.85}{
+	\begin{pspicture}(-5,-2)(7,8)
+	    \psset{yunit=0.75,xunit=1}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12)
+	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
+% 	    \psline[linecolor=red](0,5)(10,9.5)
+	    \psplot{0}{10}{  x 0.09 mul 1 add 5 mul}
+\uput[ur](10.2,0){Years}
+\uput [u](0,12.5){Rands}
+\psplot{0}{10}{1.09 x exp 5 mul}
+	\end{pspicture}}\\
+% 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+
+% \begin{figure}[H]
+%     \begin{center}
+% \scalebox{0.8}
+% 	\footnotesize\begin{pspicture}(-5,-2)(7,8)
+% 	    \psset{yunit=0.75,xunit=1}
+% 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.3)
+% 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000](0,0)(0,0)(10.4,12.3)
+% 	    \psplot[linecolor=red]{0}{10}{1.09 x exp 5 mul}
+% 	\end{pspicture}\normalsize}\\
+% 	\begin{caption*}The growth of money in a compound interest account over 10 years.\end{caption*}
+% 	\label{FG:fig:CI10}
+%     \end{center}
+% \end{figure}
+
+It is easier to see the vast difference in growth if we extend the time period to 50 years:
+
+\begin{figure}[H]
+    \begin{center}
+\scalebox{.9}{
+	\begin{pspicture}(-2,-2)(7,8)
+	    \psset{yunit=0.75,xunit=0.65}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
+	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
+% 	    \psline[linecolor=red](0,0.2)(20,1.1)
+	    \psplot{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
+\uput[ur](20.2,0){Years}
+\uput [u](0,15){Rands}
+\psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
+	\end{pspicture}}\\
+% 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+\clearpage
+% \begin{figure}[H]
+%     \begin{center}
+% \scalebox{0.8}{
+% 	\footnotesize\begin{pspicture}(-2,-2)(7,8)
+% 	    \psset{yunit=0.75,xunit=0.65}
+% 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
+% 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000](0,0)(0,0)(20,15)
+% 	    \psplot[linecolor=red]{0}{20}{1.09 x 2.5 mul exp 0.2 mul}
+% 	\end{pspicture}\normalsize}\\
+% 	\begin{caption*}The growth of money in a compound interest account over 50 years.\end{caption*}
+% 	\label{FG:fig:CI10}
+%     \end{center}
+% \end{figure}
+
+Keep in mind that this is good news and bad news. When earning interest on money invested, compound interest helps that amount to grow exponentially. But if money is borrowed the accumulated amount of money owed will increase exponentially too.
+
+
+\begin{exercises}{}{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item An amount of R~$3~500$ is invested in a savings account which pays a compound interest rate of $7,5\%$ p.a. Calculate the balance accumulated by the end of $2$ years.
+
+	\item Morgan invests R~$5~000$ into an account which pays out a lump sum at the end of $5$ years. If he gets R~$7~500$ at the end of the period, what compound interest rate did the bank offer him?
+
+	\item Nicola wants to invest some money at a compound interest rate of $11\%$ p.a. How much money (to the nearest Rand) should be invested if she wants to reach a sum of R~$100~000$ in five years time?\\
+    \end{enumerate}
+\practiceinfo
+
+\begin{tabular}[h]{ccccc}
+	(1.) 023m &	(2.) 00f6&	(3.) 00mg
+    \end{tabular}
+}
+\end{exercises}
+
+
+\subsection{Hire purchase}
+
+As a general rule, it is not wise to buy items on credit. When buying
+on credit you have to borrow money to pay for the object, meaning you
+will have to pay more for it due to the interest on the loan. That
+being said, occasionally there are appliances, such as a fridge, that
+are very difficult to live without. Most people don't have the cash up
+front to purchase such items, so they buy it on a hire purchase
+agreement.\par
+
+A hire purchase agreement is a financial agreement between the shop
+and the customer about how the customer will pay for the desired
+product. The interest on a hire purchase loan is always charged at a
+simple interest rate and only charged on the amount owing. Most
+agreements require that a deposit is paid before the product can be
+taken by the customer. The principal amount of the loan is therefore
+the cash price minus the deposit. The accumulated loan will be worked
+out using the number of years the loan is needed for. The total loan
+amount is then divided into monthly payments over the period of the
+loan.
+\par
+\textbf{Remember:} hire purchase is charged at a simple interest rate. When you are asked a hire purchase question in a test, don't forget to always use the simple interest formula.
+
+\begin{wex}{Hire purchase}
+{Troy is keen to buy an additional screen for his computer, advertised
+  for R~$2~500$ on the Internet. There is an option of paying a $10\%$
+  deposit then making $24$ monthly payments using a hire purchase
+  agreement, where interest is calculated at $7,5\%$ p.a.\@ simple
+  interest. Calculate what Troy's monthly payments will be.}
+{
+\westep{Write down the known variables}
+A new opening balance is required, as the $10\%$ deposit is paid in cash.
+    \begin{align*}
+      10\% &\mbox{ of } 2~500= 250\\
+      \therefore P &= 2~500-250 =2~250\\
+      i &= 0,075\\
+      n &= \frac{24}{12} =2
+    \end{align*}
+   
+
+    \westep{Write down the formula}
+    \begin{align*}
+	    A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 2~250(1 + 0,075 \times 2)\\
+	  &= 2~587,50\\
+    \end{align*}
+
+    \westep{Calculate the monthly repayments on the hire purchase agreement}
+    \begin{align*}
+	\mbox{Monthly payment} &= \frac{2~587,50}{24}\\
+			&=107,81
+    \end{align*}
+
+    \westep{Write the final answer}
+    Troy's monthly payment is R~$107,81$.
+}
+\end{wex}
+
+
+A shop can also add a monthly insurance premium to the monthly instalments. This insurance premium will be an amount of money paid monthly and gives the customer more time between a missed payment and possible repossession of the product.
+
+
+\begin{wex}{Hire purchase with extra conditions}
+{Cassidy desperately wants to buy a TV and decides to buy one on a hire purchase agreement. The TV's cash price is R~$5~500$. She will pay it off over $54$ months at an interest rate of $21\%$ p.a. An insurance premium of R~$12,50$ is added to every monthly payment. How much are her monthly payments?}{
+
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	P &=& 5~500\\
+	i &=& 0,21\\
+	n &=& \frac{54}{12} = 4,5
+    \end{eqnarray*}
+    (The question does not mention a deposit, therefore we assume that Cassidy did not pay one.)
+
+    \westep{Write down the formula}
+    \begin{align*}
+	    A &= P(1 + in)
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 5~500(1 + 0,21 \times 4,5)\\
+	  &= 10~697,50\\
+    \end{align*}
+
+    \westep{Calculate the monthly repayments on the hire purchase agreement}
+    \begin{align*}
+	\mbox{Monthly payment} &= \frac{10~697,50}{54}\\
+			&= 198,10
+    \end{align*}
+
+    \westep{Add the insurance premium}
+    \begin{align*}
+	198,10 + 12,50 &= 210,60
+    \end{align*}
+
+    \westep{Write the final answer}
+    Cassidy will pay R~$210,60$ per month for $54$ months until her TV is paid off.
+}
+\end{wex}
+
+
+
+\begin{exercises}{}{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Vanessa wants to buy a fridge on a hire purchase agreement. The cash price of the fridge is R~$4~500$. She is required to pay a deposit of $15\%$ and pay the remaining loan amount off over $24$ months at an interest rate of $12\%$ p.a.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item What is the principal loan amount?
+	    \item What is the accumulated loan amount?
+	    \item What are Vanessa's monthly repayments?
+	    \item What is the total amount she has paid for the fridge?
+	\end{enumerate}
+
+
+	\item Bongani buys a dining room table costing R~$8~500$ on a
+          hire purchase agreement. He is charged an interest rate of
+          $17,5\%$ p.a.\@ over $3$ years.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item How much will Bongani pay in total?
+	    \item How much interest does he pay?
+	    \item What is his monthly instalment?
+	\end{enumerate}
+
+	\item A lounge suite is advertised on TV, to be paid off over $36$ months at R~$150$ per month.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Assuming that no deposit is needed, how much will the buyer pay for the lounge suite once it has been paid off?
+	    \item If the interest rate is $9\%$ p.a., what is the cash price of the suite?\\
+	\end{enumerate}
+    \end{enumerate}
+\practiceinfo
+
+\begin{tabular}[h]{ccccc}
+	(1.) 023z	&	(2.) 023n &	(3.) 00mf
+    \end{tabular}
+}
+\end{exercises}
+
+
+\subsection{Inflation}
+
+There are many factors that influence the change in price of an item,
+one of them is inflation. Inflation is the average increase in the
+price of goods each year and is given as a percentage. Since the rate
+of inflation increases from year to year, it is calculated using the
+compound interest formula.
+
+
+\begin{wex}{Calculating future cost based on inflation}
+{Milk costs R~$14$ for two litres. How much will it cost in $4$ years
+  time if the inflation rate is $9\%$ p.a.?}
+{
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	P &=& 14\\
+	i &=& 0,09\\
+	n &=& 4
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 14(1 + 0,09)^4\\
+	  &= 19,76
+    \end{align*}
+
+    \westep{Write the final answer}
+    In four years time, two litres of milk will cost R~$19,76$.
+    }
+\end{wex}
+
+
+\begin{wex}{Calculating past cost based on inflation}
+{A box of chocolates costs R~$55$ today. How much did it cost $3$
+  years ago if the average rate of inflation was $11\%$ p.a.?}
+{
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& 55\\
+	i &=& 0,11\\
+	n &=& 3
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for $P$}
+    \begin{align*}
+	55 &= P(1 + 0,11)^3\\
+	\frac{55}{(1 + 0,11)^3} &= P\\
+	\therefore P  &= 40,22
+    \end{align*}
+
+    \westep{Write the final answer}
+    Three years ago, a box of chocolates would have cost R~$40,22$.
+    }
+\end{wex}
+
+
+\subsection{Population growth}
+
+Family trees increase exponentially as every person born has the ability to start another family. For this reason we calculate population growth using the compound interest formula.
+
+
+\begin{wex}{Population growth}
+    {If the current population of Johannesburg is $3~888~180$, and the average rate of population growth in South Africa is $2,1\%$ p.a., what can city planners expect the population of Johannesburg to be in $10$ years?}{
+    
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	P &=& 3~888~180\\
+	i &=& 0,021\\
+	n &=& 10
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values}
+    \begin{align*}
+	A &= 3~888~180(1 + 0,021)^{10}\\
+	  &= 4~786~343
+    \end{align*}
+
+    \westep{Write the final answer}
+    City planners can expect Johannesburg's population to be $4~786~343$ in ten years time.
+    }
+\end{wex}
+
+
+\begin{exercises}{}{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item If the average rate of inflation for the past few years was $7,3\%$ p.a.\@ and your water and electricity account is R~$1~425$ on average, what would you expect to pay in $6$ years time?
+
+	\item The price of popcorn and a coke at the movies is now R~$60$. If the average rate of inflation is $9,2\%$ p.a. What was the price of popcorn and coke $5$ years ago?
+
+	\item A small town in Ohio, USA is experiencing a huge increase in births. If the average growth rate of the population is $16\%$ p.a., how many babies will be born to the $1~600$ residents in the next $2$ years?\\
+    \end{enumerate}
+\practiceinfo
+
+\begin{tabular}[h]{ccccc}
+	(1.) 00f7&	(2.) 00f8&	(3.) 00mh
+    \end{tabular}
+}
+\end{exercises}
+
+
+
+\subsection{Foreign exchange rates}
+
+Different countries have their own currencies. In England, a Big Mac
+from McDonald's costs £~$4$, in South Africa it costs R~$20$ and in
+Norway it costs $48$~kr. The meal is the same in all three countries
+but in some places it costs more than in others. If £~$1$ $=$
+R~$12,41$ and $1$~kr $=$ R~$1,37$, this means that a Big Mac in
+England costs R~$49,64$ and a Big Mac in Norway costs R~$65,76$.
+\par
+Exchange rates affect a lot more than just the price of a Big Mac. The price of oil increases when the South African Rand weakens. This is because when the Rand is weaker, we can buy less of other currencies with the same amount of money.
+\par
+A currency gets stronger when money is invested in the country. When we buy products that are made in South Africa, we are investing in South African business and keeping the money in the country. When we buy products imported from other countries, we are investing money in those countries and as a result, the Rand will weaken. The more South African products we buy, the greater the demand for them will be and more jobs will become available for South Africans. Local is lekker!
+\par
+\mindsetvid{Foreign exchange rates}{VMbcj}
+
+\begin{wex}{Foreign exchange rates}
+    {Saba wants to travel to see her family in Spain. She has been given R~$10~000$ spending money. How many Euros can she buy if the exchange rate is currently €~$1$ $=$ R~$10,68$?}{
+    \westep{Write down the equation}
+Let the equivalent amount in Euros be $x$.
+\begin{align*}
+ x &= \dfrac{10~000}{10,68}\\
+&= 936,33
+\end{align*}
+\westep{Write the final answer}
+
+    Saba can buy €~$936,33$ with R~$10~000$.
+}
+\end{wex}
+
+
+\begin{exercises}{}
+{
+    \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+	\item Bridget wants to buy an iPod that costs £~$100$, with the exchange rate currently at £~$1$ $=$ R~$14$. She estimates that the exchange rate will drop to R~$12$ in a month.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item How much will the iPod cost in Rands, if she buys it now?
+	    \item How much will she save if the exchange rate drops to R~$12$?
+	    \item How much will she lose if the exchange rate moves to R~$15$?
+	\end{enumerate}
+
+	\item Study the following exchange rate table:\\
+	\begin{center}
+	    \begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{Country}	&	\textbf{Currency}	&	\textbf{Exchange Rate}\\ \hline
+		United Kingdom (UK)	&	Pounds (£)	&	R~$14,13$\\ \hline
+		United States (USA)	&	Dollars (\$)	&	R~$7,04$\\ \hline
+	    \end{tabular}
+	\end{center}
+	\vspace{8pt}\\
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item In South Africa the cost of a new Honda Civic is R~$173~400$. In England the same vehicle costs £~$12~200$ and in the USA \$~$21~900$. In which country is the car the cheapest?
+
+	    \item Sollie and Arinda are waiters in a South African restaurant attracting many tourists from abroad. Sollie gets a £~$6$ tip from a tourist and Arinda gets \$~$12$. Who got the better tip?
+	\end{enumerate}
+    \end{enumerate}
+\practiceinfo
+\begin{tabular}[h]{ccccc}
+	(1.) 023p &	(2.) 0240 
+    \end{tabular}
+}
+\end{exercises}
+
+
+\summary{VMdib}
+
+\begin{itemize}
+    \item There are two types of interest rates:\\
+    
+% \framebox{
+    \begin{tabularx}{\textwidth}{XX}
+	Simple	interest &	Compound interest\\
+	$A = P (1 + in)$	&	$A = P(1 + i)^n$\\
+    \end{tabularx}
+    \par
+    Where:
+    \begin{eqnarray*}
+% 	\mbox{Where:~}\\
+	A &=& \mbox{accumulated amount}\\
+	P &=& \mbox{principal amount}\\
+	i &=& \mbox{interest written as decimal}\\
+	n &=& \mbox{number of years}
+    \end{eqnarray*}
+% }
+
+    \item Hire purchase loan repayments are calculated using the simple interest formula on the cash price, less the deposit.  Monthly repayments are calculated by dividing the accumulated amount by the number of months for the repayment.
+
+    \item Population growth and inflation are calculated using the compound interest formula.
+
+    \item Foreign exchange rate is the price of one currency in terms of another.
+\end{itemize}
+
+
+% The following three videos provide a summary of how to calculate interest. Take note that although the examples are done using dollars, we can use the fact that dollars are a decimal currency and so are interchangeable (ignoring the exchange rate) with rands. This is what is has done in the subtitles.\par 
+% 
+% \begin{figure}[H]
+%     \textnormal{Khan academy video on interest - 1}
+%     \vspace{.1in}
+%     \nopagebreak
+%     \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10030 )}
+%  \end{figure}
+% 
+% \begin{figure}[H] % horizontal\label{m39335*interest-2}
+%     \textnormal{Khan academy video on interest - 2}
+%     \vspace{.1in}
+%     \nopagebreak
+%     \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10031 )}
+% \end{figure}
+% 
+% Note in this video that at the very end the ``Rule of 72'' is mentioned. Rather use a trial and error method to solve the problem posed.
+% 
+% \begin{figure}[H] % horizontal\label{m39335*interest-3}
+%     \textnormal{Khan academy video on interest - 3}
+%     \vspace{.1in}
+%     \nopagebreak
+%     \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10032 )}
+% \end{figure}
+
+
+\begin{eocexercises}{}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Alison is going on holiday to Europe. Her hotel will cost €~$200$ per night. How much will she need in Rands to cover her hotel bill, if the exchange rate is €~$1$ = R~$9,20$?
+
+	\item Calculate how much you will earn if you invested R~$500$ for 1 year at the following interest rates:
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item $6,85\%$ simple interest
+	    \item $4,00\%$ compound interest
+	\end{enumerate}
+
+	\item Bianca has R~$1~450$ to invest for 3 years. Bank A offers a savings account which pays simple interest at a rate of $11\%$ per annum, whereas Bank B offers a savings account paying compound interest at a rate of $10,5\%$ per annum. Which account would leave Bianca with the highest accumulated balance at the end of the 3 year period?
+
+	\item How much simple interest is payable on a loan of R~$2~000$ for a year, if the interest rate is $10\%$ p.a.?
+
+	\item How much compound interest is payable on a loan of R~$2~000$ for a year, if the interest rate is $10\%$ p.a.?
+
+	\item Discuss:
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Which type of interest would you like to use if you are the borrower?
+
+	    \item Which type of interest would you like to use if you were the banker?
+	\end{enumerate}
+
+	\item Calculate the compound interest for the following problems.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item A R~$2~000$ loan for 2 years at $5\%$ p.a.
+	    \item A R~$1~500$ investment for 3 years at $6\%$ p.a.
+	    \item A R~$800$ loan for 1 year at $16\%$ p.a.
+	\end{enumerate}
+
+	\item If the exchange rate to the Rand for Japanese Yen is
+          ¥~$100$ = R~$6,2287$ and for Australian Dollar is $1$~AUD =
+          R~$5,1094$, determine the exchange rate between the
+          Australian Dollar and the Japanese Yen.
+
+	\item Bonnie bought a stove for R~$3~750$. After $3$ years she had finished paying for it and the R~$956,25$ interest that was charged for hire purchase. Determine the rate of simple interest that was charged.
+
+	\item According to the latest census, South Africa currently has a population of $57~000~000$.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item If the annual growth rate is expected to be $0,9\%$, calculate how many South Africans there will be in $10$ years time (correct to the nearest hundred thousand).
+
+	    \item If it is found after 10 years that the population has actually increased by $10$ million to $67$ million, what was the growth rate?
+	\end{enumerate}
+
+    \end{enumerate}
+\practiceinfo
+
+    \begin{tabular}[h]{ccccc}
+	(1.) 0235 & (2.) 0236 & (3.) 0237 & (4.) 0238 & (5.) 0239 & (6.) 023a \\
+	(7.) 023b & (8.) 023c & (9.) 023d & (10.) 023e
+    \end{tabular}
+\end{eocexercises}

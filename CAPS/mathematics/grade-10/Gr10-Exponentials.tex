@@ -1,0 +1,658 @@
+\chapter{Exponents}
+\setcounter{figure}{1}
+\setcounter{subfigure}{1}
+
+Exponential notation is a short way of writing the same number multiplied by
+itself many times.  We will now have a closer look at writing numbers using exponential notation. Exponents can also be called indices.
+
+%  \begin{Large}
+% \begin{center}
+% $ _{\mbox{base}~\leftarrow} $\begin{Large} $ ~a^{n~\rightarrow~}$ \end{Large}$\mbox{exponent / index} $
+% \end{center}
+%  \end{Large}
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.27015626)(5.1884375,0.27015626)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.3,-0.11328125){\small base}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.5,-0.07828125){\Large $a^n$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.65,0.06671875){\small exponent/index}
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.2,-0.15)(0.7871875,-0.15)
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.85,0.03671875)(2.3471875,0.03671875)
+\end{pspicture}
+}
+\end{center}
+For any real number $a$ and natural number $n$, we can write $a$ multiplied by itself $n$ times as $a^n$.
+
+ 
+\Identity{
+\vspace*{-3em}
+\begin{flushleft}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
+ \item $a^n = a \times a \times a \times \cdots \times a ~~ (n ~ \mbox{times}) ~~~~ (a \in \mathbb{R}, n \in \mathbb{N})$
+ \item $a^0 = 1 \hspace{1cm}$  ($a \ne 0 $ because $0^0$ is undefined)
+ \item $a^{-n} = \frac{1}{a^n}\hspace{0.5cm}$ ($a \ne 0 $ because $\frac{1}{0}$ is undefined)
+\end{enumerate}
+\end{flushleft}
+} 
+
+Examples:
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*.}]
+\item $3 \times 3 = 3^2$
+\item $5 \times 5 \times 5 \times 5 = 5^4 $
+\item $p \times p \times p = p^3$
+\item $(3^x)^0 = 1$
+\item $ 2^{-4} = \dfrac{1}{2^4} = \dfrac{1}{16}$
+\item $ \dfrac{1}{5^{-x}} = 5^x$
+\end{enumerate}
+
+Notice that we always write the final answer with positive exponents.
+\par
+\chapterstartvideo{VMald}
+
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m38359*Exponents-1}
+% \textnormal{Khan Academy video on Exponents - 1}\vspace{.1in} 
+% \label{m38359*yt-media1}\label{m38359*yt-video1}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10044 )}
+% % \vspace{2pt}
+% % \vspace{.1in}
+% \end{figure}       
+
+
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m38359*Exponents-2}
+% \textnormal{Khan Academy video on Exponents-2}\vspace{.1in} 
+% \label{m38359*yt-media2}\label{m38359*yt-video2}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10045 )}
+% % \vspace{2pt}
+% % \vspace{.1in}
+% \end{figure}       
+
+
+
+
+\section {Laws of exponents}
+There are several laws we can use to make working with exponential numbers easier. 
+Some of these laws might have been done in earlier grades, but we list all the laws here for easy reference: 
+
+\Identity{
+\vspace*{-3em}
+\begin{center}
+\begin{itemize}
+
+% \begin{align*}
+  \item $a^{m} \times a^{n} = a^{m+n}$ 
+  \item $\frac{a^{m}}{a^{n}} = a^{m-n}$ 
+  \item ${(ab)}^{n} = a^{n}b^{n}$ 
+  \item $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ 
+  \item ${({a}^{m})}^{n} = a^{mn}$
+% \end{align*}
+
+\end{itemize}
+\end{center}
+where $a > 0$, $b > 0$ and $m, n \in \mathbb{Z}$.
+}
+% OUT FOR DBE!
+% \Identity
+% {
+% $${a}^{m}\times{a}^{n}={a}^{m+n}$$
+% 
+% Our definition shows that
+% \begin{eqnarray*}
+% 	      {a}^{m}\times{a}^{n}& =& a\times a \times \cdots \times a\hfill & (\mbox{$m$ times})\hfill \\ 
+% 	      & & \phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}\times a \times a\times \cdots \times a\hfill & (\mbox{$n$ times})\hfill \\ 
+% 	      & =& a\times a \times \cdots \times a\hfill & (\mbox{$m+n$ times})\hfill \\ 
+% 	      & =& {a}^{m+n}\hfill & 
+% \end{eqnarray*}
+% }
+% 
+% 
+% For example,
+% \begin{eqnarray*}
+% {2}^{4} \times{2}^{3}& =& (2 \times 2 \times 2 \times 2) \times (2 \times 2\times2)\hfill \\
+% 	      & =& {2}^{4+3} \\
+% 	      & =& {2}^{7}
+% \end{eqnarray*}
+% 
+% \Note{This simple law is the reason why exponentials were originally invented. In the days before calculators, all multiplication had to be done by hand with a pencil and paper. Multiplication takes a very long time to do and is very tedious. Adding numbers however, is very easy and quick to do. If you look at what this law is saying you will realise that it means that adding the exponents of two exponential numbers (of the same base) is the same as multiplying the two numbers together. This meant that for certain numbers, there was no need to actually multiply the numbers together in order to find out what their multiple was. This saved mathematicians a lot of time.}
+
+% \begin{figure}[H] % horizontal\label{m38359*ExponentsRule1}
+% \textnormal{Khan Academy video on Exponents - 3}\vspace{.1in} \nopagebreak
+% \label{m38359*yt-media3}\label{m38359*yt-video3}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10047 )}
+% % \vspace{2pt}
+% % \vspace{.1in}
+% \end{figure}
+%     
+% 
+% 
+% \Identity
+% {
+% $$ \frac{ {a}^{m} }{ {a}^{n} }={a}^{m-n}$$
+% \begin{align*}
+%   \frac{a^m}{a^n} &= \frac
+%     {a \times a \times a \times \cdots \times a ~ (m~\mbox{times})}
+%     {a \times a \times a \times \cdots \times a ~ (n~\mbox{times})} \\
+%   &= a \times a \times a \times \cdots \times a ~ (m-n~\mbox{times}) \\
+%   &= a^{m-n}
+% \end{align*}
+% 
+% }
+% For example,
+% \begin{eqnarray*}
+%     \dfrac{{2}^{7}}{{2}^{3}}& =& \dfrac{2  \times 2  \times 2  \times 2  \times 2  \times 2  \times 2}{2  \times 2  \times 2}\hfill \\
+% 						     & =& 2  \times 2  \times 2  \times 2\hfill \\
+% 						     & =& {2}^{4}\hfill \hfill 
+% \end{eqnarray*}
+% 
+% % \setcounter{subfigure}{0}
+% % \begin{figure}[H] % horizontal\label{m38359*exponents-5}
+% % \textnormal{Khan academy video on exponents - 4}\vspace{.1in} \nopagebreak
+% % \label{m38359*yt-media6}\label{m38359*yt-video6}
+% % \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10048 )}
+% % % \vspace{2pt}
+% % % \vspace{.1in}
+% % \end{figure}       
+% 
+% 
+% \Identity
+% {
+%  $$ {(ab)}^{n}={a}^{n}{b}^{n}$$
+% 
+% The order in which two numbers are multiplied together does not matter. We know that $a \times b = b \times a$ 
+% \begin{equation*}
+% \begin{array}{cclc}\hfill {(ab)}^{n}& =& (a \times b) \times (a \times b) \times \cdots \times (a \times b)\hfill & (\mbox{$n$ times})\hfill \\
+% 	\hfill & =& a  \times a  \times \cdots  \times a\hfill & (\mbox{$n$ times})\hfill \\
+% 	\hfill & & \phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}\phantom{\rule{-0.166667em}{0ex}}  \times b  \times b  \times \cdots  \times b\hfill & (\mbox{$n$ times})\hfill \\
+% 	\hfill & =& {a}^{n}{b}^{n}\hfill & 
+% \end{array}
+% \end{equation*}
+% }
+% 
+% For example,
+% \begin{equation*}
+%   \begin{array}{ccl}\hfill {(2 \times 3)}^{4}& =& (2 \times 3)  \times (2 \times 3)  \times (2 \times 3)  \times (2 \times 3)\hfill \\
+%     & =& (2  \times 2  \times 2  \times 2)  \times (3  \times 3  \times 3  \times 3)\hfill \\
+%     & =& ({2}^{4})  \times ({3}^{4})\hfill \\
+%     & =& {2}^{4} {3}^{4}\hfill 
+%   \end{array}
+% \end{equation*}
+% 
+% \Identity
+% {
+% $$ \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} $$
+% 
+% \begin{eqnarray*}
+%  \left(\frac{a}{b}\right)^n & = & \left(\frac{a}{b}\right) \times \left(\frac{a}{b}\right) \times \left(\frac{a}{b}\right) \times \cdots \times \left(\frac{a}{b}\right) ~~~(n~\mbox{times}) \\
+%                          & = & \frac{a \times a \times a \times \cdots \times a ~~~(n~\mbox{times})}{b \times b \times b \times \cdots \times b ~~~(n~\mbox{times})}\\
+%                          & = & \frac{a^n}{b^n}
+% \end{eqnarray*}
+% }
+% 
+% 
+% 
+% 
+% For example,
+% \begin{eqnarray*}
+% \left(\frac{2}{3}\right)^3 & = & \left(\frac{2}{3}\right) \times  \left(\frac{2}{3}\right) \times \left(\frac{2}{3}\right) \\
+%                         & = & \frac{2 \times 2 \times 2}{3 \times 3 \times 3} \\
+% 		        & = & \frac{2^3}{3^3}
+% \end{eqnarray*}
+% 
+% \Identity
+% {
+% $$ {({a}^{m})}^{n}={a}^{mn} $$
+% 
+% We can find the exponential of an exponential of a number. Even though this sentence sounds complicated, it is just saying that you can find the exponential of a number and then take the exponential of that number. \par
+% 
+% 
+% \begin{equation*}
+%     \begin{array}{ccll}\hfill {({a}^{m})}^{n}& =& {a}^{m}  \times {a}^{m}  \times \cdots  \times {a}^{m}\hfill & (\mbox{$n$ times})\hfill \\
+% 	\hfill & =& a  \times a  \times \cdots  \times a\hfill & ({m}  \times \mbox{$n$ times})\hfill \\
+% 	\hfill & =& {a}^{mn}\hfill & 
+%     \end{array}
+% \end{equation*}
+% 
+% }
+% \Note{
+%   $5^2 \times 5^4 = 5^{2+4} = 5^6$ \\
+%   $(5^2)^4 = 5^{2\times4} = 5^8$
+% }
+% For example,
+% \begin{equation*}
+%     \begin{array}{ccl}\hfill {({5}^{2})}^{3}& =& ({5}^{2})  \times ({5}^{2})  \times ({5}^{2})\hfill \\ 
+% 	      & =& (5  \times 5)  \times (5  \times 5)  \times (5  \times 5)\hfill \\
+% 	      & =& 5^6\hfill
+%     \end{array}
+% \end{equation*}
+% 
+
+
+\begin{wex}
+{Applying the exponential laws}
+{
+\begin{minipage}{\textwidth}
+Simplify:
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+\item $2^{3x} \times 2^{4x}$
+\item $\dfrac{12p^2t^5}{3pt^3}$
+\item $ (3x)^2 $
+\item $(3^4 5^2)^3$
+\end{enumerate}
+\end{minipage}
+}
+{
+\begin{minipage}{\textwidth}
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+\item  $2^{3x} \times 2^{4x} = 2^{3x+4x} = 2^{7x}$
+ \item $\dfrac{12p^2t^5}{3pt^3} = 4p^{(2-1)}t^{(5-3)} = 4pt^2$
+ \item $ (3x)^2 = 3^2x^2 = 9x^2$
+ \item $(3^4\times5^2)^3 = 3^{(4\times3)}\times5^{(2\times3)} = 3^{12}\times5^6 $
+\end{enumerate}
+\end{minipage}
+\vspace*{-20pt}
+}
+\end{wex}
+\vspace*{-30pt}
+\begin{wex}
+{Exponential expressions}
+{Simplify: $\dfrac{2^{2n} \times 4^n \times 2}{16^n}$}
+{
+\westep{Change the bases to prime numbers}
+\begin{equation*}
+  \dfrac{2^{2n} \times 4^n \times 2}{16^n} = \dfrac{2^{2n} \times (2^2)^n \times 2^1}{(2^4)^n} 
+\end{equation*}
+
+\westep{Simplify the exponents}
+\begin{align*}
+  &= \dfrac{2^{2n} \times 2^{2n} \times 2^1}{2^{4n}} \\
+  &= \dfrac{2^{2n + 2n +1}}{2^{4n}} \\
+  &= \dfrac{2^{4n+1}}{2^{4n}} \\
+  &= 2^{4n+1-(4n)} \\
+  &= 2
+\end{align*}
+\vspace*{-30pt}
+}
+\end{wex}
+     
+\begin{wex}
+{Exponential expressions}
+{Simplify: $\dfrac{{5}^{2x-1}{9}^{x-2}}{{15}^{2x-3}}$}
+{
+\westep{Change the bases to prime numbers}
+\begin{equation*}
+\begin{array}{lcl} \dfrac{{5}^{2x-1}  {9}^{x-2}}{{15}^{2x-3}}& =& \dfrac{{5}^{2x-1}  {({3}^{2})}^{x-2}}{{(5\times3)}^{2x-3}}\hfill \vspace{5pt}\\
+		  & =& \dfrac{{5}^{2x-1}  {3}^{2x-4}}{{5}^{2x-3}  {3}^{2x-3}}\hfill 
+\end{array}
+\end{equation*}
+  
+\westep{Subtract the exponents (same base)}
+\begin{equation*}
+\begin{array}{lcl}
+& =& {5}^{(2x-1)-(2x-3)} \times {3}^{(2x-4)-(2x-3)}\hfill \\ 
+& =& 5^{2x-1-2x+3} \times 3^{2x-4 - 2x+3} \\
+& =& {5}^{2} \times {3}^{-1}\hfill \end{array}
+\end{equation*}
+
+
+\westep{Write the answer as a fraction}  
+\begin{align*}
+  &= \frac{25}{3} \\
+  &= 8\frac{1}{3}
+\end{align*}
+}
+\end{wex}
+
+\clearpage
+\textbf{Important:} when working with exponents, all the laws of operation for algebra apply.
+
+\begin{wex}
+{Simplifying by taking out a common factor}
+{Simplify: $\dfrac{2^t-2^{t-2}}{3 \times 2^t - 2^t}$}
+{%answer
+\westep{Simplify to a form that can be factorised}
+\begin{equation*}
+  \dfrac{2^t-2^{t-2}}{3 \times 2^t-2^t} =
+  \dfrac{2^t-(2^t \times 2^{-2})}{3 \times 2^t - 2^t}
+\end{equation*}
+
+\westep{Take out a common factor}
+\begin{equation*}
+  \phantom{\frac{2^t-2^{t-2}}{3 \times 2^t-2^t}} = \frac{2^t(1-2^{-2})}{2^t(3-1)}
+\end{equation*}
+
+\westep{Cancel the common factor and simplify}
+\begin{align*}
+  \phantom{\frac{2^t-2^{t-2}}{3.2^t-2^t}}
+  &= \dfrac{1- \frac{1}{4}}{2} \\
+  &= \dfrac{\frac{3}{4}}{2} \\
+  &= \dfrac{3}{8} 
+\end{align*}
+} 
+\end{wex}
+
+
+\begin{wex}
+{Simplifying using difference of two squares}
+{Simplify: $\dfrac{9^x-1}{3^x+1}$}
+{
+\westep{Change the bases to prime numbers}
+\begin{eqnarray*}
+ \frac{9^x-1}{3^x+1} & = & \frac{(3^2)^x -1}{3^x+1} \\
+		     & = & \frac{(3^x)^2-1}{3^x+1} 
+\end{eqnarray*}
+
+\westep{Factorise using the difference of squares}
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & \frac{(3^x-1)(3^x+1)}{3^x+1}\\
+\end{eqnarray*}
+
+\westep{Simplify}
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & 3^x-1\\
+\end{eqnarray*}
+}
+\end{wex}
+
+
+\begin{exercises}{}{Simplify without using a calculator:
+\begin{multicols}{2}
+\begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+ \item $16^0$
+ \item $16a^0$
+ \item $\dfrac{2^{-2}}{3^2}$
+ \item $ \dfrac{5}{2^{-3}}$
+ \item $ \left(\dfrac{2}{3}\right)^{-3} $
+ \item $ x^2 x^{3t+1} $
+ \item $ 3 \times 3^{2a} \times 3^2$
+ \item $ \dfrac{a^{3x}}{a^x} $
+ \item $ \dfrac{32p^2}{4p^8}$
+ \item $ (2t^4)^3$
+ \item $ (3^{n+3})^2$
+ \item $ \dfrac{3^n 9^{n-3}}{27^{n-1}}$
+\end{enumerate}
+\end{multicols}
+\practiceinfo
+\par
+\begin{tabular}[h]{ccccc}
+(1.-12.) 00f0\end{tabular}
+}
+\end{exercises}
+
+\section{Rational exponents}
+
+We can also apply the exponential laws to expressions with rational exponents.
+\par
+\mindsetvid{Fractions with exponents}{VMaln}
+\pagebreak
+\begin{wex}
+{Simplifying rational exponents}
+{Simplify: $2x^{\frac{1}{2}}\times 4x^{-\frac{1}{2}}$}
+{
+
+\begin{eqnarray*}
+ 2x^{\frac{1}{2}} \times 4x^{-\frac{1}{2}} & = & 8x^{\frac{1}{2}-\frac{1}{2}} \\
+					  & = & 8x^0 \\
+					  & = & 8(1) \\
+					  & = & 8 
+\end{eqnarray*}
+}
+\end{wex}
+
+
+\begin{wex}
+{Simplifying rational exponents} 
+{Simplify: $(0,008)^{\frac{1}{3}}$}
+{
+\westep{Write as a fraction and change the bases to prime numbers}
+\begin{eqnarray*}
+ 0,008 & = & \frac{8}{1~000} \\
+       & = & \frac{2^3}{10^3} \\
+       & = & \left(\frac{2}{10}\right)^3\\
+\end{eqnarray*}
+\westep{Therefore}
+\begin{eqnarray*}
+ (0,008)^{\frac{1}{3}} & = & \left[\left(\frac{2}{10}\right)^3\right]^{\frac{1}{3}} \\
+		 & = & \frac{2}{10} \\
+		 & = & \frac{1}{5}
+\end{eqnarray*}
+}
+\end{wex}
+
+\begin{exercises}{}{Simplify without using a calculator:
+\begin{multicols}{2}
+\begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+ \item $ t^{\frac{1}{4}} \times 3t^{\frac{7}{4}} $
+ \item $ \dfrac{16x^2}{(4x^2)^{\frac{1}{2}}} $
+ \item $ (0,25)^{\frac{1}{2}} $
+ \item $ (27)^{-\frac{1}{3}} $
+ \item $ (3p^2)^{\frac{1}{2}} \times (3p^4)^{\frac{1}{2}} $
+\end{enumerate}
+\end{multicols}
+\practiceinfo
+\par 
+\begin{tabular}[h]{ccccc}
+(1.-5.) 00f1\end{tabular}
+}
+\end{exercises}
+
+
+% The following video gives an example on using some of the concepts covered in this chapter.
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m38359*ExponentsLaw3}
+% \textnormal{Khan Academy video on Exponents - 5}\vspace{.1in} \nopagebreak
+% \label{m38359*yt-media5}\label{m38359*yt-video5}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10049 )}
+% % \vspace{2pt}
+% % \vspace{.1in}
+% \end{figure}    
+
+
+\section{Exponential equations}
+
+Exponential equations have the unknown variable in the exponent. Here are some examples:
+\begin{eqnarray*}
+ 3^{x+1} & = & 9 \\
+5^t + 3 \times 5^{t-1} & = & 400
+\end{eqnarray*}
+
+Solving exponential equations is simple: we need to apply the laws of exponents. This means that if we can write a single term with the same base on each side of the equation, we can equate the exponents.
+
+\par
+\textbf{Important:} if $a>0$ and $a \ne 1$ \\
+\begin{center}
+ $ a^x &= a^y $ \\
+then $ x &= y ~~\mbox{(same base)}$\\
+\end{center}
+\par
+Also notice that if $a=1$, then $x$ and $y$ can be different.
+
+
+\begin{wex}
+{Equating exponents}
+{Solve for $x$: $3^{x+1} = 9$.}
+{
+\westep{Change the bases to prime numbers}
+\begin{eqnarray*}
+ 3^{x+1} & = & 3^2 
+\end{eqnarray*}
+
+\westep{The bases are the same so we can equate exponents}
+\begin{eqnarray*}
+ {x+1} & = & 2 \\
+\therefore x & = & 1
+\end{eqnarray*}
+}
+\end{wex}
+
+\textbf{Note:} to solve exponential equations, we use all the strategies for solving linear and quadratic equations.
+
+\begin{wex}{Solving equations by taking out a common factor}
+{Solve for $t$: $5^t + 3 \times 5^{t+1} = 400$.}
+{
+\westep{Rewrite the expression}
+\begin{equation*}
+  5^t + 3 ( 5^t \times 5) = 400 
+\end{equation*}
+
+\westep{Take out a common factor}
+\begin{equation*}
+ 5^t(1 + 15) = 400 
+\end{equation*}
+
+
+\westep{Simplify}
+\begin{align*}
+ 5^t(16) &= 400 \\
+  5^t &= 25 
+\end{align*}
+
+
+\westep{Change the bases to prime numbers}
+\begin{equation*}
+  5^t = 5^2 
+\end{equation*}
+
+
+\westep{The bases are the same so we can equate exponents}
+\begin{equation*}
+\therefore t = 2
+\end{equation*}
+}
+\end{wex}
+
+\begin{wex}
+{Solving equations by factorising a trinomial}
+{Solve: $ p-13 p^{\frac{1}{2}} + 36 =  0$.}
+{
+\westep{We notice that $(p^{\frac{1}{2}})^2=p$ so we can rewrite the equation as}
+
+$$ (p^{\frac{1}{2}})^2 -13p^{\frac{1}{2}} + 36 = 0 $$
+
+\westep{Factorise as a trinomial}
+
+$$ (p^{\frac{1}{2}} -9)(p^{\frac{1}{2}}-4) = 0 $$
+
+\westep{Solve to find both roots}
+
+%Left Column				%right column
+\begin{align*}
+p^{\frac{1}{2}} - 9 &= 0			&   p^{\frac{1}{2}} - 4 &= 0		\\
+p^{\frac{1}{2}} &= 9				&   p^{\frac{1}{2}} &= 4		\\		
+(p^{\frac{1}{2}})^2 &= (9)^2			&   (p^{\frac{1}{2}})^2 &= (4)^2\\
+p &= 81				&   p &= 16\\
+\end{align*} 
+Therefore $p=81$ or $p=16$.
+}
+\end{wex}
+
+\begin{exercises}{}{
+\begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+\item Solve for the variable:
+\begin{enumerate}[label=\textbf{(\alph*)}, itemsep=5pt]
+\begin{multicols}{2}
+\item $ 2^{x+5} = 32 $
+\item $ 5^{2x+2} = \frac{1}{125} $
+\item $ 64^{y+1} = 16^{2y+5} $
+\item $ 3^{9x-2} = 27 $
+\item $ 81^{k+2} = 27^{k+4} $
+\item $ 25^{(1-2x)}-5^4 = 0 $
+\item $ 27^x \times 9^{x-2} = 1 $
+\item $ 2^t + 2^{t+2} = 40 $
+\item $ 2 \times 5^{2-x} = 5+ 5^x $
+\item $ 9^m + 3^{3-2m} = 28 $
+\item $ y - 2y^{\frac{1}{2}} + 1 = 0 $
+\item $4^{x+3} = 0,5$
+\item $2^a = 0,125$
+\item $10^x = 0,001$
+\item $2^{x^2-2x-3} = 1$
+\end{multicols}
+\end{enumerate}
+
+ \item The growth of algae can be modelled by the function $f(t) = 2^t$. Find the value of $t$ such that $f(t)=128$.   
+\end{enumerate}
+\practiceinfo
+\par 
+\begin{tabular}[h]{ccccc}
+(1a-m.) 00f2 & (2.) 0234\end{tabular}
+}
+\end{exercises}
+
+\summary{VMdgh}
+
+\begin{itemize}[noitemsep, label=\textbullet{}]
+\item Exponential notation means writing a number as ${a}^{n}$ where $n$ is an integer and $a$ can be any real number.
+\item $a$ is the base and $n$ is the exponent or index.
+\item Definition: 
+  \begin{itemize}[noitemsep]
+  \item ${a}^{n} = a \times a \times \cdots \times a\phantom{\rule{2.em}{0ex}}(\mbox{$n$ times})$
+  \item ${a}^{0} = 1$, if $a \ne 0$
+  \item ${a}^{-n}=\frac{1}{{a}^{n}}$, if $a \ne 0$
+  \end{itemize}
+\item  The laws of exponents: 
+  \begin{itemize}[itemsep=4pt]
+  \item  ${a}^{m}  \times {a}^{n}={a}^{m+n}$
+  \item  $\dfrac{{a}^{m}}{{a}^{n}}={a}^{m-n}$
+  \item  ${(ab)}^{n}={a}^{n}{b}^{n}$
+  \item  $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$
+  \item  ${({a}^{m})}^{n}={a}^{mn}$
+  \end{itemize}
+\end{itemize}
+
+\begin{eocexercises}{}
+  \begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+  \item Simplify:
+    \begin{multicols}{2}
+      \begin{enumerate}[label=\textbf{(\alph*)}, itemsep=7pt]
+      \item $ t^3 \times 2t^0 $
+      \item $ 5^{2x+y} 5^{3(x+z)} $
+      \item $ (b^{k+1})^k $
+      \item $ \dfrac{6^{5p}}{9^p} $
+      \item $ m^{-2t} \times (3m^t)^3 $
+      \item $\dfrac{3{x}^{-3}}{{(3x)}^{2}}$
+      \item $\dfrac{{5}^{b-3}}{{5}^{b+1}}$
+      \item $\dfrac{{2}^{a-2} {3}^{a+3}}{{6}^{a}}$
+      \item $\dfrac{{3}^{n} {9}^{n-3}}{{27}^{n-1}}$
+      \item ${\left(\dfrac{2{x}^{2a}}{{y}^{-b}}\right)}^{3}$
+      \item $\dfrac{{2}^{3x-1} {8}^{x+1}}{{4}^{2x-2}}$
+      \item $\dfrac{{6}^{2x} {11}^{2x}}{{22}^{2x-1} {3}^{2x}}$
+      \item $\dfrac{{(-3)}^{-3} {(-3)}^{2}}{{(-3)}^{-4}}$
+      \item ${({3}^{-1}+{2}^{-1})}^{-1}$
+      \item $\dfrac{{9}^{n-1} {27}^{3-2n}}{{81}^{2-n}}$
+      \item $\dfrac{{2}^{3n+2} {8}^{n-3}}{{4}^{3n-2}}$
+      \item $\dfrac{3^{t+3} + 3^t}{2 \times 3^t} $
+      \item $\dfrac{2^{3p} +1}{2^p + 1} $
+      \end{enumerate}
+    \end{multicols}
+
+  \item Solve:
+    \begin{multicols}{2}
+      \begin{enumerate}[label=\textbf{(\alph*)}, itemsep=7pt]
+        \setcounter{enumi}{18}
+      \item $ 3^x = \dfrac{1}{27} $
+      \item $ 5^{t-1} = 1 $
+      \item $ 2 \times 7^{3x} = 98 $
+      \item $ 2^{m+1} = (0,5)^{m-2}$
+      \item $ 3^{y+1} = 5^{y+1} $
+      \item $ z^{\frac{3}{2}} = 64 $
+      \item $ 16x^{\frac{1}{2}} - 4 = 0 $
+      \item $ m^0 + m^{-1} = 0 $
+      \item $ t^{\frac{1}{2}} - 3t^{\frac{1}{4}} + 2 = 0 $
+      \item $ 3^p + 3^p + 3^p = 27 $
+      \item $ k^{-1} - 7k^{-\frac{1}{2}} -18 = 0 $
+      \item $ x^{\frac{1}{2}}+3x^{\frac{1}{4}}-18 = 0 $
+      \end{enumerate}
+    \end{multicols}
+  \end{enumerate}
+\practiceinfo
+\par 
+\begin{tabular}[h]{ccccc}
+(1.) 00f3& (2.) 00f4\end{tabular}
+\end{eocexercises}
+
+ 
