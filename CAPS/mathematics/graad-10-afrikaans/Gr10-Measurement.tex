@@ -1,0 +1,3303 @@
+\chapter{Meting }  
+Hierdie hoofstuk ondersoek die buite-oppervlaktes en volumes van die drie-dimensionele voorwerpe, bekend as vaste liggame. Om hiermee te werk, moet jy weet hoe om die oppervlaktes en omtrekke van twee-dimensionele voorwerpe te bereken.
+\par
+
+\chapterstartvideo{VMcmk}
+
+\section{Oppervlaktes van veelhoeke}
+\Definition{Oppervlakte}{Oppervlakte of area is'n twee-dimensionele ruimte binne die grense van 'n plat voorwerp. Dit word gemeet in vierkante eenhede.}
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.3in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2.2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{1.65in} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Naam} & \textbf{Vorm} & \textbf{Formule} \\ \hline
+ Vierkant &
+        \begin{center}
+\scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+            \pspolygon(0,0)(0,1)(1,1)(1,0)
+            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+            \rput(-0.25,0.5){$s$}
+            \rput(0.5,-0.25){$s$}
+        \end{pspicture}}
+        \end{center}
+&
+
+$\mbox{Oppervlakte} = s^2$ \\ \hline
+
+Reghoek &
+    \begin{center}
+\scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+            \pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
+            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+            \rput(2.75,0.5){$h$}
+            \rput(1.25,-0.25){$b$}
+        \end{pspicture}}
+    \end{center}
+& $\mbox{Oppervlakte} =  b \times h $ \\ \hline
+
+Driehoek &
+\begin{center} 
+\scalebox{0.9}{
+    \begin{pspicture}(0,-0.5)(5,2)
+        \pspolygon(0,0)(2,1)(3,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+        \rput(1.8,0.5){$h$}
+        \rput(1.5,-0.25){$b$}
+    \end{pspicture}}
+\end{center}
+
+& $ \mbox{Oppervlakte} = \dfrac{1}{2} b \times h $ \\ \hline
+
+
+
+\end{tabular}
+% NOTE: table manually split in half for formatting purposes (no time to learn about/make long tables/supertabular)
+\end{table}
+
+\begin{table}[H]
+
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.3in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2.2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{1.65in} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Naam} & \textbf{Vorm} & \textbf{Formule} \\ \hline
+
+%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+
+ Trapesium &
+\begin{center}
+\scalebox{0.9}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pspolygon(-1.5,0)(0,1)(2,1)(3,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+        \rput(1.8,0.5){$h$}
+        \rput(0.75,-0.25){$b$}
+        \rput(0.75,1.25){$a$}
+    \end{pspicture}}
+\end{center}
+& $\mbox{Oppervlakte} = \frac{1}{2} (a + b) \times h $ \\ \hline 
+Parallelogram &
+
+\begin{center}
+\scalebox{0.9}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pspolygon(-1,0)(0,1)(3,1)(2,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
+        \pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
+        \rput(0.3,0.5){$h$}
+        \rput(0.7,-0.25){$b$}
+    \end{pspicture}}
+\end{center}
+
+& $\mbox{Oppervlakte} =  b \times h $ \\ \hline
+
+Sirkel &
+
+\begin{center}
+\scalebox{0.9}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pscircle[dimen=outer](0.5,0.5){0.7}
+        \psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
+        \psdots[dotsize=0.08](0.5,0.5)
+        \rput(0.85,0.75){$r$}
+    \end{pspicture}}
+\end{center} & 
+\begin{aligned}$
+&\mbox{Oppervlakte} = \pi r^2 \\
+&(\mbox{Omtrek}= 2\pi r)$
+\end{aligned}
+ \\ \hline
+
+
+\end{tabular}
+
+
+
+%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+\end{table}
+
+%        \Note{Onthou area word gemeet in vierkante eenhede: b.v. cm$^2$, m$^2$ of mm$^2$.}     
+
+\mindsetvid{area and perimeter}{VMdxu}%Khan Academy
+\par
+\mindsetvid{area of a circle}{VMdya}%Khan academy
+
+\begin{wex}{Bepaling van die oppervlakte van 'n veelhoek}{
+    Vind die oppervlakte van die volgende parallelogram:\\
+
+  \begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.403125)(5.6790624,1.403125)
+\pspolygon[linewidth=0.028222222](0.31,-1.0003124)(1.81,0.9996875)(5.31,0.9996875)(3.81,-1.0003124)
+\psline[linewidth=0.014111111cm,linestyle=dashed,dash=0.16cm 0.16cm](1.81,0.9996875)(1.81,-1.0003124)
+\pspolygon[linewidth=0.028222222](1.81,-1.0003124)(1.81,-0.7003125)(2.11,-0.7003125)(2.11,-1.0003124)
+% \usefont{T1}{ppl}{m}{n}
+\rput(0.28453124,-1.2003125){$A$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.7845312,1.1996875){$B$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(5.284531,1.1996875){$C$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(3.7845314,-1.2003125){$D$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.7845312,-1.2003125){$E$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(0.45,0){\small $5$ mm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.0345312,-1.3003125){\small $3$ mm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.3003125){\small $4$ mm}
+\psline[linewidth=0.04](4.287036,-0.07316559)(4.5628867,0.011133511)(4.550078,-0.28859293)
+\psline[linewidth=0.04](1.0870358,0.3068344)(1.3628865,0.39113352)(1.3500777,0.09140708)
+\psline[linewidth=0.04](4.427036,0.08683441)(4.7028866,0.1711335)(4.690078,-0.12859292)
+\psline[linewidth=0.04](1.2270358,0.4868344)(1.5028865,0.5711335)(1.4900777,0.27140707)
+\psline[linewidth=0.04](3.1252131,1.1690861)(3.3666022,1.0111897)(3.1281846,0.8290991)
+\psline[linewidth=0.04](2.245213,-0.83091384)(2.4866023,-0.98881024)(2.2481847,-1.1709008)
+\end{pspicture} 
+}
+    \end{center}
+    }{
+
+    \westep{Gebruik die stelling van Pythagoras om die loodregte hoogte $BE$ van die parallelogram te vind}
+\begin{equation*}
+\begin{array}{ccl}
+AB^2 &=& BE^2 + AE^2\\
+\therefore BE^2 &=& AB^2 - AE^2\\
+	&=& 5^2 - 3^2\\
+	 &=& 16\\
+	\therefore BE &=& 4\mbox{ mm}
+    \end{array}
+\end{equation*}
+    
+    \westep{ Gebruik die formule vir 'n parallelogram om die oppervlakte van die parallelogram te vind}
+\begin{equation*}
+\begin{array}{ccl}
+	\mbox{Oppervlakte} &=& b \times h\\
+&=& AD \times BE \\
+		    &=& 7 \times 4\\
+		    &=& 28 \mbox{ mm}^2
+    \end{array}
+\end{equation*}
+    }
+\end{wex}
+
+\begin{exercises}{}
+
+
+Vind die oppervlaktes vir elk van die gegewe figure:
+
+\begin{center}
+ \scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0)(15.739843,2.0)
+\psline[linewidth=0.04cm](1.1998438,-0.97)(5.199844,-0.97)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.1798437,0.9917188)(3.1798437,0.07)
+\psline[linewidth=0.04cm](1.1998438,-0.97)(3.1598437,1.03)
+\psline[linewidth=0.04cm](3.1798437,1.03)(5.159844,-0.9299999)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2446876,-0.18){$5$ cm}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.1798437,-0.4100001)(3.1798437,-0.9582812)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2295313,-1.34){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.96203125,0.8600002){\textbf{1.}}
+\psframe[linewidth=0.04,dimen=outer](9.959844,1.02)(5.9598436,-0.98)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.52375,0.8399999){\textbf{2.}}
+\psframe[linewidth=0.04,dimen=outer](6.2898436,1.02)(5.969844,0.7000001)
+\psline[linewidth=0.04cm](7.9398437,1.1700001)(8.139844,1.01)
+\psline[linewidth=0.04cm](7.945185,0.843746)(8.134502,1.0162542)
+\psline[linewidth=0.04cm](7.9398437,-0.8099999)(8.139844,-0.97)
+\psline[linewidth=0.04cm](7.945185,-1.136254)(8.134502,-0.9637458)
+\psline[linewidth=0.04cm](5.8135858,0.0121696)(5.9799337,0.2069218)
+\psline[linewidth=0.04cm](6.139843,0.0070184)(5.973511,0.2017842)
+\psline[linewidth=0.04cm](5.8135858,-0.1878302)(5.9799337,0.0069218)
+\psline[linewidth=0.04cm](6.139843,-0.1929815)(5.973511,0.0017841)
+\psline[linewidth=0.04cm](9.773585,0.0121696)(9.939933,0.2069218)
+\psline[linewidth=0.04cm](10.099843,0.0070184)(9.933511,0.2017842)
+\psline[linewidth=0.04cm](9.773585,-0.1678302)(9.939933,0.0269218)
+\psline[linewidth=0.04cm](10.099843,-0.1729815)(9.933511,0.0217841)
+% \usefont{T1}{ptm}{m}{n}
+\rput(10.504687,-0.0399999){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.989531,-1.34){$10$ cm}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](11.719844,-0.01)(15.719844,-0.01)
+\pscircle[linewidth=0.04,dimen=outer](13.729844,0.0){2.0}
+\psdots[dotsize=0.16](13.719844,-0.01)
+% \usefont{T1}{ptm}{m}{n}
+\rput(13.669531,-0.3399999){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(11.431406,0.8399999){\textbf{3.}}
+\end{pspicture} 
+}
+
+\end{center}
+
+
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.7133768)(14.640156,2.6933768)
+% \usefont{T1}{ppl}{m}{n}
+\rput(0.96203125,2.2894359){\textbf{4.}}
+% \usefont{T1}{ppl}{m}{n}
+\rput(6.2753124,1.289436){$5$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(3.297656,2.389436){$7$ cm}
+\psline[linewidth=0.04cm](2.9486384,0.7596123)(3.1473107,0.5979669)
+\psline[linewidth=0.04cm](2.9512868,0.43332523)(3.1420212,0.60426503)
+\psline[linewidth=0.04cm](2.7486954,0.7548319)(2.947368,0.59318656)
+\psline[linewidth=0.04cm](2.751344,0.42854482)(2.9420784,0.5994846)
+\psline[linewidth=0.04cm](0.97046876,0.5994359)(4.9704685,0.5994359)
+\psline[linewidth=0.04cm](2.1904688,2.139436)(6.190469,2.139436)
+\psline[linewidth=0.04cm](4.168638,2.2996123)(4.3673105,2.1379669)
+\psline[linewidth=0.04cm](4.1712866,1.9733253)(4.362021,2.144265)
+\psline[linewidth=0.04cm](3.9686954,2.294832)(4.167368,2.1331866)
+\psline[linewidth=0.04cm](3.9713438,1.9685448)(4.1620784,2.1394846)
+\psline[linewidth=0.04cm](4.979685,0.588864)(6.182779,2.136302)
+\psline[linewidth=0.04cm](5.4097567,1.3953004)(5.6600804,1.449505)
+\psline[linewidth=0.04cm](5.666236,1.1935861)(5.651858,1.4493072)
+\psline[linewidth=0.04cm](0.9996847,0.608864)(2.202779,2.156302)
+\psline[linewidth=0.04cm](1.4297568,1.4153003)(1.6800802,1.469505)
+\psline[linewidth=0.04cm](1.6862361,1.2135861)(1.6718578,1.4693072)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](4.9504685,0.5994359)(4.9504685,2.139436)
+\psframe[linewidth=0.04,dimen=outer](5.260469,2.149436)(4.940469,1.829436)
+% \usefont{T1}{ppl}{m}{n}
+\rput(5.538906,2.369436){$3$ cm}
+\psline[linewidth=0.04cm](6.8104687,0.65943605)(10.810469,0.65943605)
+% \usefont{T1}{ppl}{m}{n}
+\rput(8.280156,0.36943594){$12$ cm}
+\psline[linewidth=0.04cm](9.626046,2.2959907)(10.814892,0.6628813)
+\psline[linewidth=0.04cm](9.610469,2.299436)(6.8104687,0.65943605)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](9.610469,2.2794359)(9.610469,0.679436)
+\psframe[linewidth=0.04,dimen=outer](9.640469,0.96943593)(9.320469,0.64943606)
+% \usefont{T1}{ppl}{m}{n}
+\rput(9.981563,0.40943602){$8$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(10.700157,1.649436){$10$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(7.0120316,2.329436){\textbf{5.}}
+\psline[linewidth=0.04cm](12.350469,0.7394359)(14.370469,0.7394359)
+\psline[linewidth=0.04cm](12.353,0.72549516)(12.887937,2.6733768)
+\psline[linewidth=0.04cm](12.895847,2.6482944)(14.365088,0.75057733)
+\psline[linewidth=0.04cm](12.410469,1.599436)(12.730469,1.499436)
+\psline[linewidth=0.04cm](12.4704685,1.739436)(12.790469,1.639436)
+\psline[linewidth=0.04cm](12.950469,0.89943606)(12.950469,0.559436)
+\psline[linewidth=0.04cm](13.110469,0.89943606)(13.110469,0.559436)
+% \usefont{T1}{ppl}{m}{n}
+\rput(11.864688,2.329436){\textbf{6.}}
+% \usefont{T1}{ppl}{m}{n}
+\rput(13.515312,0.44943604){$5$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(13.945156,1.909436){$6$ cm}
+\pstriangle[linewidth=0.04,dimen=outer](2.8204687,-2.4005642)(3.4,2.4)
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.0020312,-0.17056407){\textbf{7.}}
+\psline[linewidth=0.04cm](2.6904688,-2.2405643)(2.6904688,-2.5605638)
+\psline[linewidth=0.04cm](1.8904687,-1.020564)(2.1304688,-1.240564)
+\psline[linewidth=0.04cm](3.4730175,-1.2832813)(3.70792,-1.0578467)
+% \usefont{T1}{ppl}{m}{n}
+\rput(4.4201565,-1.0505642){$10$ cm}
+\pspolygon[linewidth=0.04](5.990469,-2.2805643)(9.990469,-2.2805643)(8.9704685,-0.5805641)(6.9704685,-0.5805641)(6.7904687,-0.8805641)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](6.9504685,-0.5805641)(6.9504685,-2.2605643)
+\psline[linewidth=0.04cm](7.89534,-0.44012147)(8.098558,-0.59601265)
+\psline[linewidth=0.04cm](7.9073286,-0.766199)(8.093091,-0.58986866)
+\psline[linewidth=0.04cm](7.89534,-2.1201212)(8.098558,-2.2760127)
+\psline[linewidth=0.04cm](7.9073286,-2.4461987)(8.093091,-2.2698686)
+\psframe[linewidth=0.04,dimen=outer](7.260469,-1.9705642)(6.940469,-2.2905638)
+% \usefont{T1}{ppl}{m}{n}
+\rput(6.1201563,-0.8905641){$15$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(6.303437,-2.5105643){$9$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(8.4201565,-0.31056416){$16$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(8.692187,-2.5105643){$21$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(5.854375,-0.17056407){\textbf{8.}}
+\end{pspicture} 
+}
+
+\end{center}
+
+}
+% Automatically inserted shortcodes - number to insert 8
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02p3	&
+% Question 2
+(2.)	02p4	&
+% Question 3
+(3.)	02p5	&
+% Question 4
+(4.)	02p6	&
+% Question 5
+(5.)	02p7	&
+% Question 6
+(6.)	02p8	\\ % End row of shortcodes
+% Question 7
+(7.)	02p9	&
+% Question 8
+(8.)	02pa	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 8
+\end{exercises}
+
+
+\section{Regte prismas en silinders}
+
+\Definition{Regte prisma}{'n Regte prisma is a geometriese vaste liggaam met 'n veelhoek as basis en een of meer sye loodreg op die basis. Die basis en die boonste vlak het dieselfde grootte en vorm en hulle is ewewydig aan mekaar. Dit word genoem 'n regte prisma omdat die hoeke tussen die basis en die sye regte hoeke is.}
+
+%english
+'n Driehoekige prisma het 'n driehoek as sy basis, 'n reghoekige prisma het
+'n reghoek as sy voetstuk, en 'n kubus is 'n reghoekige prisma waarin al
+die sye van gelyke lengte is.
+'n Silinder is 'n ander tipe regte prisma wat 'n sirkel as sy
+basis het. Voorbeelde van regte prismas word hieronder gegee: 'n reghoekige prisma, 'n
+kubus, 'n driehoekige prisma en 'n silinder.
+\par
+
+\mindsetvid{different viewpoints}{VMcph}
+\par 
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+    \begin{center}
+	%% Rectangular Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
+	    \psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=none}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)
+	    
+	\end{pspicture}
+\hspace{10pt}
+	%% Square Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}
+\hspace{10pt}
+	%% Triangular Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+\psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=1.0]
+{\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \psSolid[object=face,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)}
+% 	    \psset{viewpoint=8 12 8}
+
+	\end{pspicture}
+\hspace{10pt}
+	%% Cylindrical Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+	\end{pspicture}
+
+	\vspace{0.75cm}
+% 	\begin{caption*}{}\end{caption}
+    \end{center}
+\end{figure}   
+
+\subsection{Buite-oppervlaktes van prismas en silinders}
+
+\Definition{Buite-oppervlakte}{Die term buite-oppervlakte verwys na die totale oppervlakte aan die buitekant van die prisma. }
+Dit is makliker om te verstaan as ’n mens aan die prisma dink as ’n soliede voorwerp.
+'n Soliede voorwerp wat oopgevou word, word 'n ontvouing genoem. Wanneer 'n prisma ontvou word, kan ons elke vlak duidelik sien. Om die buite-oppervlakte van die prisma te bereken, bereken ons eenvoudig die oppervlakte van elke vlak en tel hulle almal bymekaar.
+\par 
+
+
+Byvoorbeeld, die driehoekige prisma het twee syvlakke wat driehoekig is en drie syvlakke wat reghoekig is. Om die buite-oppervlakte van ’n driehoekige prisma te bereken moet die oppervlak van al vyf syvlakte bereken en bymekaar getel word.
+  \par
+’n Silinder bestaan uit twee sirkelvormige syvlakke en ’n reghoekige kolom met 'n lengte wat gelyk is aan die omtrek van die sirkelvormige basis. Om die buite-oppervlakte te bereken, vind ons die oppervlakte van die twee sirkels en van die reghoek en tel hulle bymekaar.\par
+\mindsetvid{triangular prisms}{VMcre}
+% \Note{Onthou area word gemeet in vierkante eenhede cm$^2$, m$^2$ of mm$^2$.}
+\par
+Onder is voorbeelde van regte prismas wat ontvou is:
+
+\begin{figure}[H]
+ \begin{caption*}{\textbf{Reghoekige prisma}}\end{caption*}
+   \begin{center}
+	%% Rectangular Prism
+    \scalebox{0.8}{
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
+	\end{pspicture}}
+
+	%% Rectangular Prism Unfolded
+    \scalebox{0.8}{
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
+	\end{pspicture}}
+
+\vspace{10pt}
+
+	%% Rectangular Prism Unfolded Birdseye
+\scalebox{0.8}{ 
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=90,Beta=90}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
+	\end{pspicture}}
+\newline
+    \end{center}
+\end{figure}   
+
+'n Reghoekige prisma wat ontvou is, bestaan uit ses reghoeke. 
+
+
+\begin{figure}[H]
+ \begin{caption*}{\textbf{Kubus}}\end{caption*}
+    \begin{center}
+
+	%% Square Prism
+    \scalebox{0.8}{ 
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+            \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}}
+
+
+	%% Square Prism Unfolded
+    \scalebox{0.8}{
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}}
+
+	%% Square Prism Unfolded Birdseye
+    \scalebox{0.8}{
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=0,Beta=90}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}}
+
+    \end{center}
+\end{figure}   
+
+'n Kubus wat ontvou is, bestaan uit ses identiese vierkante. 'n Kubus is dus 'n vierkantige prisma wat uit ses ewe groot vierkante bestaan.
+
+
+
+\begin{figure}[H]
+    \begin{caption*}{\textbf{Driehoekige prisma}}\end{caption*}
+    \begin{center}
+	%% Triangular Prism
+    \scalebox{0.8}{
+	\begin{pspicture}(-1.5,-1.5)(1,1)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+% 	    \psset{viewpoint=0 0 200}
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.4]
+	\end{pspicture}}
+
+	%% Triangular Prism Unfolded
+    \scalebox{0.8}{
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+% 	    \psset{viewpoint=8 12 8}
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	\end{pspicture}}
+
+	%% Triangular Prism Unfolded Birdseye
+    \scalebox{0.8}{
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+	    \psset{viewpoint=0 0 20,RotZ=0}
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	\end{pspicture}}
+
+
+    \end{center}
+\end{figure} 
+
+Die ontvouing van 'n driehoekige prisma bestaan uit twee identiese driehoeke en een reghoek, wat weer bestaan uit drie reghoeke met dieselfde hoogte.
+
+
+\begin{figure}[H]
+\begin{caption*}{\textbf{Silinder}}\end{caption*}
+\begin{center}
+
+	%% Cylindrical Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+	\end{pspicture}
+\hspace{20pt}
+	%% Cylindrical Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=solid](4,-4)(1.0,1.0)
+	    \psellipse[fillstyle=none](0,1)(1.0,1)
+	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5,0)
+	\end{pspicture}
+
+    \end{center}
+\end{figure}   
+
+'n Silinder wat ontvou word, bestaan uit twee identiese sirkels en 'n reghoek waarvan die lengte gelyk is aan die omtrek van die sirkels.
+
+
+\begin{wex}
+{Berekening van die buite-oppervlakte van 'n reghoekige prisma
+
+}
+{%Problem
+Bereken die buite-oppervlakte van die volgende reghoekige prisma:
+\begin{center}
+\scalebox{0.9}{
+    \begin{pspicture}(-2,-3.5)(3,1.5)
+        \psset{yunit=0.9,xunit=0.9}
+        \psset{Alpha=30,Beta=15}
+        \pstThreeDBox(-1,1,2)(0,0,2)(10,0,0)(0,5,0)
+        \pstThreeDPut(8,6,3){$2$ cm}
+        \pstThreeDPut(10,3.5,2){$5$ cm}
+        \pstThreeDPut(5,7,2){$10$ cm}
+   \end{pspicture}}
+\end{center}
+
+}
+{%Solution
+
+\westep{Skets die ontvouing van die prisma en skryf die sylengtes neer}
+
+\begin{center}
+	%% Rectangular Prism Unfolded Birdseye
+\scalebox{1}{ 
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=180,Beta=90}
+	    {\psset{fillcolor=white,fillstyle=solid,opacity=0,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-1,0,2)(2,0,0)(0,1,0)
+            \rput(0,6.){$5$ cm}
+            \rput(1.5, 5){$2$ cm}
+ \rput(3,5){$5$ cm}
+            \rput(-1.7, 5){$2$ cm}
+            \rput(4.5, 3){$10$ cm}
+	\end{pspicture}}
+\end{center}
+
+\westep{Vind die oppervlaktes van die verskillende vorme in die ontvouing}
+\begin{align*} 
+\mbox{Groot reghoek} &= \mbox{omtrek van kleiner reghoek} \times \mbox{lengte} \\
+                        &= (2+ 5 +2 + 5) \times 10 \\
+                        &= 14 \times 10 \\
+                        &= 140~\mbox{cm}^2  \\ \\
+2 \times \mbox{kleiner reghoek} &= 2(5 \times 2) \\
+                                &= 2(10) \\
+                                &= 20~\mbox{cm}^2
+\end{align*}
+
+
+
+\westep{Vind die som van die oppervlaktes van die vlakke}
+
+$\mbox{groot reghoek} + 2 \times \mbox{klein reghoek} = 140 + 20 = 160$ cm$^2$.
+\westep{Skryf die finale antwoord}
+Die buite-oppervlakte van die reghoekige prisma is 160~cm$^2$.
+}
+\end{wex}
+
+
+\begin{wex}
+{Berekening van die buite-oppervlakte van 'n driehoekige prisma}
+{Vind die buite-oppervlakte van die volgende driehoekige prisma:\\
+\begin{center}
+
+	%% Triangular Prism
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8707813)(4.78,1.8484201)
+\pstriangle[linewidth=0.04,dimen=outer](1.09,-1.3667188)(2.18,1.72)
+\psline[linewidth=0.035277776cm](1.08,0.33328116)(3.38,1.8307812)
+\psline[linewidth=0.035277776cm,linestyle=dotted,dotsep=0.10583334cm](0.06,-1.3267188)(2.76,0.39078125)
+\psline[linewidth=0.035277776cm](3.38,1.8107812)(4.64,0.43328106)
+\psline[linewidth=0.035277776cm](2.14,-1.3467188)(4.66,0.43328124)
+\psline[linewidth=0.035277776cm,linestyle=dashed,dash=0.16cm 0.16cm](1.08,0.29328126)(1.06,-1.3467188)
+\psline[linewidth=0.035277776cm,linestyle=dotted,dotsep=0.10583334cm](3.38,1.7732812)(2.74,0.41078126)
+\psline[linewidth=0.035277776cm,linestyle=dotted,dotsep=0.10583334cm](4.68,0.43078125)(2.78,0.41078126)
+\psline[linewidth=0.03](1.089162,-1.0679687)(1.309162,-1.0679687)(1.309162,-1.2679688)(1.309162,-1.3679688)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.045,-1.6679688){$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.975,-0.7679688){$12$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.475,-0.86796874){$3$ cm}
+\psline[linewidth=0.04cm](1.4877112,-0.53157985)(1.5077113,-0.53157985)
+\psline[linewidth=0.04cm](1.5077113,-0.53157985)(1.7077112,-0.37157986)
+\psline[linewidth=0.04cm](0.68771124,-0.61157984)(0.44771126,-0.47157985)
+\end{pspicture} 
+}
+
+\end{center}
+
+
+}
+{%Solution
+
+\westep{Skets en benoem die ontvouing van die prisma}
+
+% LaTeX Draw
+% \usepackage{pst-plot} % For axes
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.538172)(7.78,3.5381718)
+\psframe[linewidth=0.02,dimen=outer](6.3,2.2243125)(0.0,-2.2243125)
+\pstriangle[linewidth=0.02,dimen=outer](3.15,2.2072406)(2.87,1.3345875)
+\rput{-180.0}(6.3,-5.7490687){\pstriangle[linewidth=0.02,dimen=outer](3.15,-3.541828)(2.87,1.3345875)}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.696875,2.5231717){$3$ cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](3.14,3.5181718)(3.14,2.2181718)
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.975,0.0831719){$12$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.175,1.9000001){$8$ cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](1.74,2.2181718)(1.76,-2.2218282)
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](4.52,2.2381718)(4.54,-2.2018282)
+\psline[linewidth=0.04cm](3.56,2.8781717)(3.82,3.1381717)
+\psline[linewidth=0.04cm](2.4066818,3.0833232)(2.6933181,2.8530202)
+\end{pspicture} 
+}
+\end{center}
+\westep{Vind die oppervlaktes van verskillende vorme in die ontvouing}
+Om die oppervlakte van 'n reghoek te bereken, moet ons sy lengte vind. Dit is gelyk aan die omtrek van die driehoeke.\\
+\\
+Gebruik Pythagoras om die hoogte van die driehoekige vlak te bereken:
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.8885703)(2.856284,0.844914)
+\pstriangle[linewidth=0.02,dimen=outer](1.435,-0.4860172)(2.87,1.3345875)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.9,-0.010085966){\small$3$ cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](1.425,0.82491404)(1.425,-0.47508597)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.475,-0.6857578){\small$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.42534634,0.26915622){$x$}
+\psline[linewidth=0.04cm](1.8662839,0.26491404)(2.026284,0.42491403)
+\psline[linewidth=0.04cm](0.96628386,0.26491404)(0.78628385,0.42491403)
+\end{pspicture} 
+}
+\end{center}
+
+
+\begin{equation*}
+\begin{array}{rcl}
+x^2 &=& 3^2 + \frac{8}{2}^2 \\
+x^2 &=& 3^2 + 4^2 \\
+&=& 25 \\
+\therefore x &=& 5\mbox{ cm}\\
+\therefore \mbox{Omtrek van driehoek} &=& 5 + 5 + 8 \\
+&=&18\mbox{ cm}\\
+
+\end{array}
+\end{equation*}
+
+\begin{equation*}
+\begin{array}{rcl}
+ \therefore \mbox{Oppervlakte van groot driehoek}&=& \mbox{ omtrek van driehoek}\times \mbox{lengte}\\
+&=& 18 \times 12 \\
+&=&216 \mbox{ cm}^2
+\end{array}
+\end{equation*}
+
+
+
+
+\begin{equation*}
+\begin{array}{rcl}
+\mbox{Oppervlakte van driehoek } &= &\frac{1}{2}b \times h\\
+&=&\frac{1}{2} \times 8 \times 3\\
+&=&12 \mbox{ cm}^2
+\end{array}
+\end{equation*}
+
+
+
+\westep{Vind die som van die oppervlaktes van die vlakke}
+
+\begin{equation*}
+\begin{array}{rcl}
+ \mbox{Buite-oppervlakte}&=& \mbox{oppervlakte groot reghoek}  + (2\times \mbox{oppervlakte driehoek})\\
+&=& 216 + 2(12) \\
+&=& 240\mbox{ cm}^2
+\end{array}
+\end{equation*}
+
+ \westep{Skryf die finale antwoord}
+Die buite-oppervlakte van die driehoekige prisma is $240$ cm$^2$.
+
+}
+\end{wex}
+\pagebreak
+
+
+\begin{wex}
+{Bereken die buite-oppervlakte van 'n silindriese prisma 
+}
+{% Question
+Vind die buite-oppervlakte van die volgende silinder (korrek tot $1$ desimale plek):
+\begin{center}
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse(0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,](-1,-3)(1,0)
+	    \psellipse[linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+            \psline(0,0)(1.0,0)
+            \rput(1.7,-1.5){ \small $30$ cm}
+            \rput(0.3,0.2){\small$10$ cm}
+	\end{pspicture}
+\end{center}
+
+
+\vspace*{-20pt}
+}
+{% solution
+
+\westep{Skets en benoem die ontvouing van die prisma}
+\begin{center}
+	%% Cylindrical Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[linestyle=solid](4,-4)(1.0,1.0)
+	    \psellipse(0,1)(1.0,1)
+	    \psframe[linestyle=solid](-1,-3)(5,0)
+            \rput(0.2,1.2){$10$ cm}
+            \rput(5.7,-1.5){$30$ cm}
+\psline(0,1)(1,1)
+	\end{pspicture}
+\end{center}
+
+
+
+\westep{Vind die oppervlaktes van die verskillende vorme in die ontvouing}
+
+\begin{equation*}
+\begin{array}{rcl}
+\mbox{Oppervlakte van groot reghoek} &=& \mbox{omtrek van sirkel} \times \mbox{lengte} \\
+
+&=& 2\pi r \times l \\
+&=& 2\pi(10) \times 30 \\
+&=& 1~884,96 \mbox{ cm}^2 \\[10pt]
+\end{array}
+\end{equation*}
+\begin{equation*}
+\begin{array}{rcl}
+\mbox{Oppervlakte van sirkel }  &=&\pi r^2  \\
+&=& \pi10^2 \\
+&=&314,16\mbox{ cm}^2
+\end{array}
+\end{equation*}
+
+\begin{equation*}
+\begin{array}{rcl}
+ \mbox{Buite-oppervlakte }&=& \mbox{oppervlakte van groot reghoek}  \\
+&&+ (2\times \mbox{oppervlakte van sirkel})\\
+&=& 1~884,96 + 2(314,16) \\
+&=&2~513,3\mbox{ cm}^2
+\end{array}
+\end{equation*}
+
+\westep{Skryf die finale antwoord}
+Die buite-oppervlakte van die silinder is $2~513,3\mbox{ cm}^2$.
+}
+\end{wex}
+
+
+
+
+
+\begin{exercises}{ }
+% \vspace*{-30pt}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Bereken die buite-oppervlaktes van die volgende prismas:
+% \vspace*{-30pt}
+\setcounter{subfigure}{0}
+  \begin{figure}[H]
+    \begin{center}
+      \scalebox{1}{% Change this value to rescale the drawing.
+        \begin{pspicture}(0,-4.3556247)(11.315155,4.3556247)
+          \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.90234375,0.8371875)(1.9023438,1.8171875)
+          \psline[linewidth=0.04cm](2.6423438,0.8571875)(3.58,1.8756249)
+          \psline[linewidth=0.04cm](0.9,0.8556249)(2.64,0.8556249)
+          \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.9023438,1.8371875)(3.54,1.8356249)
+          \psline[linewidth=0.04cm](1.9,3.795625)(1.9223437,1.8371875)
+          \psline[linewidth=0.04cm](1.8823438,3.8171875)(3.58,3.815625)
+          \psline[linewidth=0.04cm](2.6,2.875625)(2.6223435,0.8371875)
+          \psline[linewidth=0.04cm](0.92,2.8956249)(0.92234373,0.8571875)
+          \psline[linewidth=0.04cm](0.9423438,2.8571877)(2.6,2.855625)
+          \psline[linewidth=0.04cm](0.92234373,2.8771877)(1.9023438,3.8171875)
+          \psellipse[linewidth=0.04,dimen=outer](9.092343,1.8371875)(0.99,0.38)
+          \psellipse[linewidth=0.04,dimen=outer](9.092343,3.1771872)(0.99,0.38)
+          \psline[linewidth=0.04cm](8.122344,3.1371875)(8.122344,1.8771876)
+          \psline[linewidth=0.04cm](10.062345,3.1771872)(10.062345,1.8571875)
+          \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.10583334cm](9.122344,1.8171875)(10.042343,1.8371875)
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(9.06172,1.9671875){$5$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(10.6,2.5871873){$10$ cm}
+          \pstriangle[linewidth=0.04,dimen=outer](2.2723436,-3.9028125)(2.18,1.72)
+          \psline[linewidth=0.04cm](2.2623436,-2.2028127)(4.6223435,-0.7828125)
+          \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.2423439,-3.8628125)(4.4223437,-1.7828124)
+          \psline[linewidth=0.04cm](4.6223435,-0.7628125)(5.842344,-2.1028128)
+          \psline[linewidth=0.04cm](3.3223438,-3.8828125)(5.842344,-2.1028123)
+          \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.10583334cm](2.2623436,-2.2428124)(2.2423437,-3.8828125)
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(1.5089062,-1.2678123){\textbf{(c)}}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(4.952656,-3.3){$20$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(2.65,-3.3999999){\small$5$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(2.3156252,-4.1528125){$10$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(1.0320313,4.1521873){\textbf{(a)}}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(7.833125,4.0121875){\textbf{(b)}}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(1.915625,0.6071877){$6$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(3.8587499,1.3071878){$7$ cm}
+          % \usefont{T1}{ptm}{m}{n}
+          \rput(4.3,2.9471874){$10$ cm}
+          \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](4.6223435,-0.7628123)(4.4223437,-1.8028125)
+          \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](5.842344,-2.1028123)(4.382344,-1.8028125)
+          \psline[linewidth=0.04cm](2.7279687,-3.104375)(2.8879688,-2.984375)
+          \psline[linewidth=0.04cm](1.8279687,-3.1643748)(1.6279688,-3.004375)
+          \psline[linewidth=0.04cm](2.6,2.855625)(3.5623438,3.8171875)
+          \psline[linewidth=0.04cm](3.56,3.815625)(3.56,1.8356249)
+        \end{pspicture} 
+      }
+    \end{center}
+  \end{figure}   
+\clearpage
+\item As ’n liter verf nodig is vir ’n oppervlakte van $2$ m$^{2}$, bereken hoeveel verf die verwer nodig het om die volgende
+oppervlaktes te verf:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{3}
+\item ’n Reghoekige swembad met binnewande en bodem met die volgende afmetings: $4$ m $\times~3$ m $\times~2,5$ m (slegs binnewande en vloer).
+\item ’n Sirkelvormige opgaardam waarvan die bodem ’n middellyn het van $4$ m en met ’n diepte van $2,5$ m.
+\end{enumerate}
+
+\setcounter{subfigure}{0}
+
+
+\begin{figure}[H] % horizontal\label{m39357*id62926}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.6)(3.8067188,1.6)
+\psellipse[linewidth=0.04,dimen=outer](1.29,-1.09)(1.27,0.51)
+\psellipse[linewidth=0.04,dimen=outer](1.27,1.09)(1.27,0.51)
+\psline[linewidth=0.04cm](0.04,-1.1)(0.02,1.14)
+\psline[linewidth=0.04cm](2.54,1.12)(2.56,-1.1)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.10583334cm](0.06,-1.1)(2.52,-1.1)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.2675,-0.95){$4$ m}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.15,0.25){$2,5$ m}
+\end{pspicture} 
+}
+\end{center}
+
+\end{figure}   
+
+\addtocounter{footnote}{-0}
+
+ \end{enumerate}       
+}
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02pb	&
+% Question 2
+(2.)	02pc	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+\end{exercises}        
+\subsection{Volume van prismas en silinders}
+\Definition{Volume}{Volume is die drie-dimensionele ruimte wat in beslag geneem word, deur 'n voorwerp, of die inhoud van 'n voorwerp. Dit word gemeet in kubieke eenhede.}
+Die volume van ’n reghoekige prisma word bereken deur die oppervlakte van die basis met die hoogte te vermenigvuldig. 
+\par 
+\mindsetvid{Calculating volume}{VMcth}
+
+\clearpage
+
+\begin{table*}[h]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.75in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2.1in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{2.8in} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{ Reghoekige prisma}
+&
+\begin{center}
+\scalebox{0.8}{
+\begin{pspicture}(0,-1.3537499)(4.565781,1.3337499)
+\psline[linewidth=0.04cm](0.04,-0.92625)(1.04,0.05375004)
+\psline[linewidth=0.04cm](3.0,-0.92625)(3.98,0.03375004)
+\psline[linewidth=0.04cm](0.02,-0.94625)(3.0,-0.92625)
+\psline[linewidth=0.04cm](1.0,0.05374995)(3.98,0.05374995)
+\psline[linewidth=0.04cm](4.0,1.3137498)(3.96,-0.0062502)
+\psline[linewidth=0.04cm](1.02,1.2937498)(1.02,0.0337498)
+\psline[linewidth=0.04cm](1.02,1.2937499)(4.0,1.3137499)
+\psline[linewidth=0.04cm](3.0,0.3737498)(3.0,-0.92625)
+\psline[linewidth=0.04cm](0.0,0.3537498)(0.0,-0.96625)
+\psline[linewidth=0.04cm](0.02,0.35375005)(3.0,0.35375005)
+\psline[linewidth=0.04cm](0.04,0.35375005)(1.02,1.2937499)
+\psline[linewidth=0.04cm](2.98,0.35375014)(4.0,1.3137498)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2710937,-1.1762499){$l$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.904219,-0.57624984){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2553124,0.5237501){$h$}
+\end{pspicture}}
+\end{center} 
+&
+$
+\begin{aligned}
+\mbox{Volume} &= \mbox{oppervlakte basis} \times \mbox{hoogte} \\
+                &= \mbox{oppervlakte reghoek} \times \mbox{hoogte} \\
+                &= l \times b \times h \\
+\end{aligned}$   \\ \hline
+
+
+\textbf{Driehoekige prisma} &
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8337499)(4.9209375,1.8137499)
+\pstriangle[linewidth=0.04,dimen=outer](1.3309375,-1.3462498)(2.18,1.72)
+\psline[linewidth=0.04cm](1.3209375,0.35375)(3.6809375,1.77375)
+\psline[linewidth=0.04cm](3.6809375,1.7937499)(4.9009376,0.4537499)
+\psline[linewidth=0.04cm](2.3809376,-1.32625)(4.9009376,0.4537501)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.3209375,0.3137501)(1.3009375,-1.32625)
+\psframe[linewidth=0.04,dimen=outer](1.4809375,-1.1462499)(1.2809376,-1.3462499)
+\psline[linewidth=0.04cm](0.6209375,-0.3462499)(1.0009375,-0.5462499)
+\psline[linewidth=0.04cm](0.5609375,-0.4462499)(0.9409375,-0.6462499)
+\psline[linewidth=0.04cm](2.0409374,-0.3462499)(1.6609375,-0.5462499)
+\psline[linewidth=0.04cm](2.1009376,-0.4462499)(1.7209375,-0.6462499)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.1923437,-0.5212499){$H$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.2723438,-1.6612499){$b$}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.21234375,-0.2412499){$s$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.4723438,-0.7612499){$h$}
+\end{pspicture} 
+}
+\end{center}
+&
+
+$\begin{aligned}
+\mbox{Volume} &= \mbox{oppervlakte basis} \times \mbox{hoogte} \\
+                &= \mbox{oppervlakte driehoek} \times \mbox{hoogte} \\
+                &=\left(\frac{1}{2}b\times h\right) \times H \\
+\end{aligned}$  \\ \hline
+
+\textbf{Silinder} &
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.05)(2.761875,1.05)
+\psellipse[linewidth=0.04,dimen=outer](0.99,-0.66999996)(0.99,0.38)
+\psellipse[linewidth=0.04,dimen=outer](0.99,0.66999996)(0.99,0.38)
+\psline[linewidth=0.04cm](0.02,0.63000023)(0.02,-0.6299999)
+\psline[linewidth=0.04cm](1.96,0.66999996)(1.96,-0.65)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.02,-0.68999994)(1.94,-0.66999996)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.4514062,0.09500025){$h$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.1014062,-0.50499976){$r$}
+\end{pspicture} 
+}
+\end{center}
+&
+
+$\begin{aligned}
+\mbox{Volume} &= \mbox{oppervlakte basis} \times \mbox{hoogte} \\
+                &= \mbox{oppervlakte sirkel} \times \mbox{hoogte} \\
+                &= \pi r^2 \times h \\
+\end{aligned}$  \\ \hline
+
+
+
+\end{tabular}
+\end{table*}
+
+% \Note{Onthou volume word gemeet in kubieke eenhede: b.v. cm$^3$, m$^3$ or mm$^3$.}
+
+
+
+
+\begin{wex}
+{% Title
+Berekening van die volume van 'n kubus
+}
+{% question
+Vind die volume van die volgende kubus:
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.0258813)(5.423805,1.3541186)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=-49.7](1.6365356,0.0)(1.27,1.0687643)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2365355,0.0)(1.27,1.0687643)
+\psline[linewidth=0.04](0.8223988,0.96411866)(2.5318084,1.2441187)(4.02,0.9541186)
+\psline[linewidth=0.04cm](0.6423988,0.14411865)(1.0223988,0.14411865)
+\psline[linewidth=0.04cm](2.2423987,-0.115881346)(2.6223986,-0.115881346)
+\psline[linewidth=0.04cm](3.8423986,0.044118654)(4.2223988,0.044118654)
+\psline[linewidth=0.04cm](1.7123986,0.95411867)(1.7123986,0.5741187)
+\psline[linewidth=0.04cm](1.5723988,-0.60588133)(1.5723988,-0.9858813)
+\psline[linewidth=0.04cm](3.2723987,-0.6258814)(3.2723987,-1.0058813)
+\psline[linewidth=0.04cm](3.292399,1.0141187)(3.292399,0.6341187)
+\psline[linewidth=0.04cm](1.8723989,1.3341186)(1.8723989,0.95411867)
+\psline[linewidth=0.04cm](3.0723987,1.3341186)(3.0723987,0.95411867)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.728805,0.109118655){$3$ cm}
+\end{pspicture} 
+}
+\end{center}
+\vspace*{-30pt}
+}
+{%solution
+
+\westep{Vind die oppervlakte van die basis}
+\vspace*{-30pt}
+\begin{align*}
+\mbox{Oppervlakte van vierkant} 
+  &= s^2 \\
+  &= 3^2 \\
+  &= 9\mbox{ cm}^2
+\end{align*}
+
+\westep{Vermenigvuldig die oppervlakte van die basis van die vaste liggaam met die hoogte om die volume te kry}
+\begin{align*}
+\mbox{Volume} &= \mbox{oppervlakte van basis} \times \mbox{hoogte}\\
+                    &= 9 \times 3 \\
+                    &= 27\mbox{ cm}^3 
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van die kubus is $27\mbox{ cm}^3 $. 
+
+}
+\end{wex}
+
+
+
+
+\begin{wex}
+{Berekening van die volume van 'n driehoekige prisma
+}
+
+{%problem
+Vind die volume van ’n driehoekige
+prisma:\\
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8489062)(4.7628126,1.8289062)
+\pstriangle[linewidth=0.04,dimen=outer](1.09,-1.3310935)(2.18,1.72)
+\psline[linewidth=0.04cm](1.08,0.36890626)(3.44,1.7889062)
+\psline[linewidth=0.04cm](3.44,1.8089062)(4.6600003,0.46890616)
+\psline[linewidth=0.04cm](2.14,-1.3110938)(4.6600003,0.46890634)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.08,0.32890636)(1.06,-1.3110938)
+\psframe[linewidth=0.04,dimen=outer](1.3077112,-1.0710938)(1.0400001,-1.3310937)
+\psline[linewidth=0.04cm](0.38,-0.33109364)(0.76,-0.53109366)
+\psline[linewidth=0.04cm](0.32,-0.43109366)(0.7,-0.6310936)
+\psline[linewidth=0.04cm](1.8,-0.33109364)(1.42,-0.53109366)
+\psline[linewidth=0.04cm](1.8600001,-0.43109366)(1.48,-0.6310936)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.9578123,-0.6){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.2078125,-1.6460936){$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.485,-0.78484374){\small$10$ cm}
+\end{pspicture} 
+}
+
+\end{center} \vspace*{-30pt}
+}
+{%solution
+\westep{Vind die oppervlakte van die basis}
+\vspace*{-30pt}
+\begin{align*}
+\mbox{Oppervlakte van driehoek} 
+&=\dfrac{1}{2}b \times h\\
+&= \left( \dfrac{1}{2} \times 8 \right)\times 10\\
+                        &= 40\mbox{ cm}^2
+\end{align*}
+
+\westep{Vermenigvuldig die oppervlakte van die basis met die
+hoogte van die prisma om die volume te kry}
+\begin{align*}
+\mbox{Volume} &= \mbox{oppervlakte van die basis} \times \mbox{hoogte}\\
+
+                        &= \dfrac{1}{2}b \times h \times H \\
+ &= 40 \times 20 \\
+                        &= 800\mbox{ cm}^3
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van 'n driehoekige prisma is $800\mbox{ cm}^3$.
+
+}
+\end{wex}
+
+\begin{wex}{Berekening van die volume van 'n silindriese prisma}
+{Vind die volume van die volgende silinder (korrek tot $1$ desimale plek):
+\begin{center}
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse(0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,](-1,-3)(1,0)
+	    \psellipse[linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+            \psline(0,0)(1.0,0)
+            \rput(1.7,-1.5){$15$ cm}
+            \rput(0.3,0.2){$4$ cm}
+	\end{pspicture}
+\end{center}
+}
+{
+\westep{Vind die oppervlakte van die basis}
+
+
+\begin{align*}
+\mbox{Oppervlakte van sirkel} &= \pi~r^2\\
+&= \pi(4)^{2} \\
+&= 16 \pi\mbox{ cm}^{2}\\
+\end{align*}
+
+\westep{Vermenigvuldig die oppervlakte van die basis met die
+hoogte van die prisma om die volume te kry}
+\begin{align*}
+\mbox{Volume} &= \mbox{oppervlakte van die basis} \times \mbox{hoogte}\\
+&=\pi r^{2} \times h\\
+&= 16 \pi \times 15\\
+&= 754,0\mbox{ cm}^{3}\\
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van die silinder is $754,0\mbox{ cm}^{3}$.
+}
+\end{wex}
+
+\begin{exercises}{}
+Bereken die volume van elkeen van die volgende prismas (korrek tot $1$ desimale plek):
+\begin{center}
+
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.0576563)(12.394375,4.0376563)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.2203125,0.64156264)(2.2203126,1.6215626)
+\psline[linewidth=0.04cm](2.9603124,0.6615626)(3.8979688,1.6800001)
+\psline[linewidth=0.04cm](1.2179687,0.66)(2.9579687,0.66)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](2.2203126,1.6415627)(3.8579688,1.6400001)
+\psline[linewidth=0.04cm](2.2179687,3.6000001)(2.2403126,1.6415627)
+\psline[linewidth=0.04cm](2.9179688,2.68)(2.9403124,0.64156264)
+\psline[linewidth=0.04cm](1.2379688,2.7)(1.2403125,0.6615626)
+\psline[linewidth=0.04cm](1.2603126,2.661563)(2.9179688,2.66)
+\psline[linewidth=0.04cm](1.2403125,2.681563)(2.2203126,3.6215627)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.2335937,0.41156286){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.1767187,1.111563){$7$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.6378126,2.7515626){$10$ cm}
+\psline[linewidth=0.04cm](2.9179688,2.66)(3.8803124,3.6215627)
+\psline[linewidth=0.04cm](3.8779688,3.6200001)(3.8779688,1.6400001)
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.889843,1.0651562){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.135625,0.4851563){$10$ cm}
+\psline[linewidth=0.04cm](8.78125,2.0576563)(11.421249,4.0176563)
+\psline[linewidth=0.04cm](7.94125,0.83765644)(8.78125,2.0776563)
+\psline[linewidth=0.04cm](7.92125,0.83765644)(9.72125,0.83765644)
+\psline[linewidth=0.04cm](9.74125,0.7976564)(8.76125,2.0976562)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](10.561251,2.7376564)(11.401251,3.9776564)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](10.541249,2.7376564)(12.341249,2.7376564)
+\psline[linewidth=0.04cm](12.36125,2.7176564)(11.381249,4.0176563)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](7.98125,0.83765644)(10.62125,2.7976563)
+\psline[linewidth=0.04cm](9.70125,0.8176564)(12.341249,2.7776563)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](8.78125,2.0376563)(8.8012495,0.8176564)
+% \usefont{T1}{ptm}{m}{n}
+\rput(11.579374,1.5076563){$20$ cm }
+\psline[linewidth=0.04cm](2.34125,-1.1848438)(2.34125,-3.4248438)
+\psline[linewidth=0.04cm](4.20125,-1.1848438)(4.20125,-3.4248438)
+\psellipse[linewidth=0.04,dimen=outer](3.2712502,-1.2048438)(0.95,0.26)
+\psellipse[linewidth=0.04,dimen=outer](3.2712502,-3.4648438)(0.95,0.26)
+\psdots[dotsize=0.12](3.30125,-3.4648438)
+\psline[linewidth=0.03cm,linestyle=dotted,dotsep=0.10583334cm](3.30125,-3.4628437)(4.18125,-3.4628437)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.954531,-3.8548439){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.765156,-2.4123437){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.9817188,3.7926562){\textbf{1.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.0,3.7726562){\textbf{2.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.96203125,-0.8273437){\textbf{3.}}
+\psline[linewidth=0.04cm](2.2203126,3.6015627)(3.8779688,3.6000001)
+\end{pspicture} 
+}
+
+\end{center}
+% Automatically inserted shortcodes - number to insert 3
+\clearpage
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02pd	&
+% Question 2
+(2.)	02pe	&
+% Question 3
+(3.)	02pf	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+\end{exercises}
+
+\section{Regte piramides, regte keëls en \\sfere}
+\Definition{Piramide}{’n Piramide is ’n soliede geometriese figuur met ’n veelhoekbasis wat verbind is aan die toppunt waar die syvlakke
+ontmoet (met ander woorde die sye is \textbf{nie} loodreg op die basis nie).} 
+
+Die driehoekige piramide en vierkantige piramide neem hulle name van die vorm van die basis. Ons noem 'n piramide 'n 'regte piramide' as die hoogtelyn van die piramide by die tophoek loodreg is op die basis. Keëls is soortgelyk aan piramides behalwe dat hulle basisse sirkels is en nie veelhoeke nie.\par
+Voorbeelde van 'n vierkantige en driehoekige piramides, 'n keël en 'n sfeer:
+\begin{figure}[ht]
+\begin{center}
+% \usepackage[usenames,dvipsnames]{pstricks}
+% \usepackage{epsfig}
+% \usepackage{pst-grad} % For gradients
+% \usepackage{pst-plot} % For axes
+\scalebox{1.4} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.9969445)(9.265889,0.99705553)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](2.621611,-0.26305547)(3.099611,0.46944445)(4.068611,-0.4720555)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](2.6316354,-0.66294444)(3.06,0.4170556)(2.54,-0.26294434)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.03411105,-0.32955545)(0.869611,0.48944443)(1.361111,-0.24505551)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](1.705111,-0.6149472)(0.869611,0.48944443)(0.37811106,-0.70294446)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.38,-0.70294446)(0.84,0.45705566)(0.0,-0.34294435)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.1,-0.49978656)(3.1,0.4770556)(2.62,-0.68294436)
+\psline[linewidth=0.035,linestyle=dotted,dotsep=0.09cm](0.8858889,0.4570556)(0.8658889,-0.46294445)(1.125889,-0.64294446)
+\psline[linewidth=0.01cm,linestyle=dashed,dash=0.1cm 0.1cm](0.0,-0.34294435)(1.08,-0.26294434)
+\psline[linewidth=0.01cm,linestyle=dashed,dash=0.1cm 0.1cm](2.54,-0.26294434)(4.08,-0.48294446)
+\psline[linewidth=0.01,linestyle=dashed,dash=0.1cm 0.1cm](1.72,-0.6229445)(1.08,-0.26294434)(0.86,0.45705566)
+\psline[linewidth=0.028222222](5.12,-0.48294446)(5.7990556,0.9829444)(6.52,-0.5170556)
+\psbezier[linewidth=0.027999999](5.1394444,-0.44294444)(5.04,-0.66294444)(5.34,-0.94294447)(5.7,-0.96294445)(6.06,-0.9829444)(6.52,-0.82294446)(6.52,-0.50294447)
+\psbezier[linewidth=0.01,linestyle=dashed,dash=0.1cm 0.1cm](6.52,-0.52294445)(6.4,-0.34294435)(6.18,-0.2222707)(5.89007,-0.21260755)(5.60014,-0.2029444)(5.36,-0.2229444)(5.12,-0.50294447)
+\pscircle[linewidth=0.027999999,dimen=outer](8.435889,-0.052944418){0.83}
+\psellipse[linewidth=0.01,linestyle=dashed,dash=0.1cm 0.1cm,dimen=outer](8.435889,-0.11294442)(0.83,0.19)
+\psline[linewidth=0.01cm,linestyle=dashed,dash=0.1cm 0.1cm](8.4458885,-0.122944415)(9.225889,-0.10294441)
+\psdots[dotsize=0.068](8.425889,-0.122944415)
+\psline[linewidth=0.02](0.8658889,-0.3629444)(0.8658889,-0.46294445)(0.9458889,-0.52294445)(0.9458889,-0.42294446)(0.8658889,-0.3629444)
+\psline[linewidth=0.035,linestyle=dotted,dotsep=0.09cm](3.1258888,0.4770556)(3.1458888,-0.44294447)(2.6458888,-0.64294446)
+\psline[linewidth=0.02](3.1458888,-0.3429444)(3.1458888,-0.44294447)(3.065889,-0.48294446)(3.065889,-0.3829444)(3.1458888,-0.3429444)
+\psline[linewidth=0.036,linestyle=dotted,dotsep=0.16cm](5.7858887,0.9570555)(5.7858887,-0.52294445)(6.505889,-0.52294445)
+\psframe[linewidth=0.02,dimen=outer](5.925889,-0.38294446)(5.7658887,-0.5429445)
+\end{pspicture} 
+
+}
+
+% \begin{caption*}{Examples of a square pyramid, a triangular pyramid, a cone and a sphere.}\end{caption*}
+% \label{fig:mg:sav:pyramids}
+\end{center}
+\end{figure}
+
+\subsection{Buite-oppervlaktes van piramides, keëls en sfere}
+
+
+
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.9in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{1.4in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{9.3cm} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Vierkantige piramide}
+&
+\begin{center}
+
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9993507)(4.767494,1.9734617)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.095092274,-0.42983752)(2.4242375,1.9593507)(3.794405,-0.18333401)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.753383,-1.2623826)(2.4242375,1.9593507)(1.0540702,-1.5190883)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](1.0593361,-1.5190883)(2.3858888,1.9269619)(0.0,-0.46889564)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.0,-0.46889564)(3.0107446,-0.23551947)
+\psline[linewidth=0.027999999,linestyle=dotted,dotsep=0.16cm](2.465889,1.8869619)(2.3658888,-0.8130381)(3.305889,-1.3465382)(2.445889,1.8469619)(2.485889,1.8069619)
+\psline[linewidth=0.024cm,linestyle=dashed,dash=0.16cm 0.16cm](3.025889,-0.2530381)(4.7258887,-1.2530382)
+\psline[linewidth=0.02](2.3658888,-0.6130381)(2.545889,-0.6930381)(2.545889,-0.91303813)(2.3658888,-0.8330382)
+\psline[linewidth=0.02cm](2.3658888,-0.6330381)(2.3658888,-0.8330382)
+\psline[linewidth=0.04cm](0.3058889,-0.9465382)(0.70588887,-0.9465382)
+\psline[linewidth=0.04cm](2.8458889,-1.5265381)(2.6258888,-1.2465382)
+\psline[linewidth=0.04cm](3.6458888,-0.7065382)(4.025889,-0.7265382)
+\psline[linewidth=0.04cm](1.9058889,-0.44653818)(1.6858889,-0.20653819)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.1304202,0.24346182){$h_s$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.9704201,-1.7965382){$b$}
+\psline[linewidth=0.02](3.245889,-1.1265382)(3.305889,-1.3665382)(3.545889,-1.3465382)(3.485889,-1.1065382)(3.245889,-1.1265382)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2,0.6834618){$H$}
+\end{pspicture} 
+}
+\end{center} 
+&
+$\begin{aligned}
+\mbox{Buite-oppervlakte} &= \mbox{ oppervlakte basis } +\\
+&~~~~~~\mbox{ oppervlakte driehoekige vlakke } \\
+&=b^{2} + 4\left(\frac{1}{2}bh_s\right)\\
+&=b(b+2h_s)
+ \end{aligned}$
+\\ \hline
+
+
+\textbf{Driehoekige piramide} &
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0793507)(4.2198644,2.0534618)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.2523495,-0.43995067)(1.5305833,2.0138543)(4.1218147,-1.1400807)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.24,-1.8206493)(1.5,1.9393507)(0.034111112,-0.43957838)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.2057533,-1.232977)(1.5316236,2.0393507)(0.24804147,-1.8465381)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.034111112,-0.43957838)(4.1522703,-1.1765574)
+\psline[linewidth=0.024,linestyle=dotted,dotsep=0.16cm](1.5199999,1.9793508)(1.48,-1.1806492)(4.1800003,-1.2206492)
+\psline[linewidth=0.02](1.48,-0.96064925)(1.7,-0.96064925)(1.7,-1.1865382)(1.48,-1.1806492)(1.48,-0.96064925)
+\psline[linewidth=0.04cm](1.86,-0.84653825)(2.02,-0.6865382)
+\psline[linewidth=0.04cm](1.72,-1.5265383)(1.76,-1.7465383)
+\psline[linewidth=0.04cm](0.24,-1.0865382)(0.0,-1.1265383)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.54,2.0334618)(2.5,-1.5065383)
+\psline[linewidth=0.02](2.44,-1.2465383)(2.496,-1.4865382)(2.72,-1.4465382)(2.66,-1.2065382)(2.44,-1.2465383)
+\psline[linewidth=0.024cm,linestyle=dotted,dotsep=0.16cm](1.56,-1.1865382)(0.12,-1.1465383)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.4145312,0.08346178){$h_s$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.1045313,-1.8765383){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.3845313,-1.2965382){$h_b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.3,0.3){$H$}
+\end{pspicture} 
+}
+\end{center}
+&
+
+$\begin{aligned}
+\mbox{Buite-oppervlakte} &= \mbox{ oppervlakte basis } +\\
+&~~~~~~\mbox{oppervlakte driehoekige sye} \\
+&=(\frac{1}{2}b \times h_b) + 3(\frac{1}{2}b \times h_s)\\
+&=\frac{1}{2}b(h_b + 3h_s)
+ \end{aligned}$
+ \\ \hline
+
+\textbf{Regte keël} &
+\begin{center}
+ \scalebox{0.5} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8704202,1.0400556){\LARGE$h_s$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){\LARGE$r$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){\LARGE$H$}
+\end{pspicture} 
+}
+\end{center}
+
+
+
+&
+
+$\begin{aligned}
+\mbox{\small Buite-oppervlakte} &=  \mbox{\small oppervlakte basis }+\mbox{\small oppervlakte  syvlak}\\
+&= \pi r^{2} +(\frac{1}{2} \times 2\pi rh_s)\\
+&=\pi r^{2} +\pi rh_s\\
+&=\pi r(r+h_s)\\
+ \end{aligned}$\\ \hline
+
+\textbf{Sfeer} &
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.6345313,0.2){$r$}
+\end{pspicture} 
+}
+
+\end{center}
+
+
+&
+$\begin{aligned}
+\mbox{\small Buite-oppervlakte} &=  4\pi r^{2}
+ \end{aligned}$\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+\begin{wex}{Bereken die buite-oppervlakte van 'n driehoekige piramide}
+ {Vind die buite-oppervlakte van die volgende driehoekige piramide (korrek tot 1 desimale plek):\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1164062)(4.2998643,2.0964062)
+\pspolygon[linewidth=0.028222222](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252286)
+\pspolygon[linewidth=0.028222222](4.2857533,-1.1959213)(1.6116236,2.0764062)(0.32804146,-1.8094827)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.11411111,-0.40252286)(4.2322707,-1.1395019)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.6,2.0764062)(2.26,-1.5035938)
+\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235936)(2.48,-1.4635936)(2.5,-1.4635936)
+\psline[linewidth=0.04cm](1.86,-0.5835937)(1.8,-0.8435938)
+\psline[linewidth=0.04cm](0.0,-1.0835936)(0.34,-1.0235938)
+\psline[linewidth=0.04cm](1.78,-1.4435936)(1.96,-1.7035936)
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.46,-1.9135938){$6$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.375,0.3864063){$10$ cm}
+\psline[linewidth=0.024cm](2.22,-1.2635938)(2.26,-1.5035938)
+\end{pspicture} 
+}
+\end{center}
+}
+
+{
+\westep{Vind die oppervlakte van die basis}
+\begin{align*}
+ \mbox{Oppervlakte van 'n driehoek} &= \frac{1}{2} bh_b\\
+
+\end{align*}
+Gebruik die stelling van Pythagoras om die hoogte van die basis driehoek $(h_b)$ te kry:
+\\
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$3$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$h_b$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+
+6^2 &= 3^2+h_b^2\\
+\therefore h_b&=\sqrt{6^2-3^2}\\
+&=3\sqrt{3}\mbox{ cm} \\
+\therefore \mbox{Oppervlakte van basis driehoek} &= \frac{1}{2} \times 6 \times 3\sqrt{3}\\
+&=9\sqrt{3}\mbox{ cm}^2
+\end{align*}
+\westep{Vind die oppervlakte van die syvlakke}
+\begin{align*}
+ \mbox{Oppervlakte van vlakke} &= 3\left(\frac{1}{2} \times b\times h_s\right)\\
+&=3\left(\frac{1}{2} \times 6 \times 10\right)\\
+&=90\mbox{ cm}^2
+\end{align*}
+
+\westep{Vind die som van die oppervlaktes}
+\begin{align*}
+9\sqrt{3} + 90&=105,6\mbox{ cm}^2\\
+
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die buite-oppervlakte van die driehoekige piramide is $105,6$ cm$^{2}$.
+}
+\end{wex}
+\clearpage
+\begin{wex}{Vind die buite-oppervlakte van 'n keël}
+ {Vind die buite-oppervlakte van die volgende keël (korrek tot 1 desimale plek):
+\begin{center}
+ \scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8704202,1.0400556){$h_s$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$14$ cm}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Vind die oppervlakte van die basis}
+\begin{align*}
+ \mbox{Oppervlakte van basis sirkel} &= \pi r^2\\
+&= \pi4^2\\
+&=16\pi
+\end{align*}
+
+\westep{Vind die oppervlakte van die kante}
+\begin{align*}
+ \mbox{Oppervlakte van kante} &= \pi rh_s
+\end{align*}
+Gebruik die stelling van Pythagoras om die skuinshoogte, $h_s$, te vind:\\
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing. walls
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7,0.62640625){$h_s$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7,0.04640625){$14$ cm}
+\end{pspicture}
+ 
+}
+\end{center}
+\begin{align*}
+ h_s^2 &= 4^2 + 14^2\\
+\therefore h_s &= \sqrt{4^2 + 14^2}\\
+&= 2\sqrt{53}\mbox{ cm}
+\end{align*}
+
+\begin{align*}
+ \mbox{Oppervlakte van syvlakke} &= \frac{1}{2}2\pi r h_s\\
+&=\pi(4)(2\sqrt{53})\\
+&= 8\pi\sqrt{53}\mbox{ cm}^2
+\end{align*}
+\westep{Vind die som van die oppervlaktes}
+\begin{align*}
+\mbox{Totale buite-oppervlakte } &= 16\pi + 8\pi\sqrt{53}\\
+&=233,2\mbox{ cm}^2
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die buite-oppervlakte van die driehoekige piramide is $233,2\mbox{ cm}^2$.
+}
+\end{wex}
+
+\begin{wex}{Vind die buite-oppervlakte van 'n sfeer}
+ {Vind die buite-oppervlakte van die volgende sfeer (korrek tot $1$ desimale plek):
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\definecolor{color129b}{rgb}{0.9490196078431372,0.9490196078431372,0.9490196078431372}
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.15cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7095313,0.12){\psframebox[linewidth=0.002,linecolor=color129b,fillstyle=solid,fillcolor=color129b]{$5$ cm}}%this framebox background colour is tweaked to match the wex colour - otherwise radius label sits too close between the dotted lines. framebox behind label blanks out some of eliptical dotted line to make it more legible
+\end{pspicture} 
+}
+
+\end{center}
+}
+{
+\westep{Gebruik die formule om die buite-oppervlakte te vind}
+\begin{align*}
+ \mbox{Buite-oppervlakte van sfeer} &= 4 \pi r^2\\
+&= 4\pi5^2\\
+&=100\pi\\
+&=314,2\mbox{ cm}^2
+\end{align*}
+\westep{Skryf die finale antwoord neer}
+Die buite-oppervlakte van die sfeer is $314,2\mbox{ cm}^2$.
+}
+
+\end{wex}
+
+
+\begin{wex}
+{Ondersoek die buite-oppervlakte van 'n keël}
+{As ’n keël ’n hoogte het van $h$ en ’n
+basis met radius $r$, toon aan dat die buite-oppervlakte gegee word deur: $\pi r^2 + \pi r \sqrt{r^2+h^2}$.}
+{
+\westep{Skets en benoem die keël}
+\begin{center}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.07)(6.5141115,2.0841112)
+\psellipse[linewidth=0.028222222,dimen=outer](1.5000001,-1.0699999)(1.5000001,1.0)
+\psellipse[linewidth=0.028222222,linestyle=dotted,dotsep=0.10583334cm,dimen=outer](1.5,-1.07)(1.5,1.0)
+\psline[linewidth=0.028222222](0.02,-0.93)(1.52,2.07)(2.985889,-0.9158889)
+\psline[linewidth=0.028222222cm,linestyle=dashed](0.0,-1.07)(1.5,-1.07)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.6890625,-1.35){$r$}
+\psline[linewidth=0.028222222cm,linestyle=dashed](1.5,-1.07)(1.5258889,1.9641111)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7090626,0.37){$h$}
+\psline[linewidth=0.028222222](1.1,-1.07)(1.1,-0.67)(1.5,-0.67)
+\pspolygon[linewidth=0.028222222](3.5,-1.07)(5.0,1.93)(6.5,-1.07)
+\psline[linewidth=0.028222222cm,linestyle=dashed](3.5,-1.27)(5.0,-1.27)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2690625,-1.57){$r$}
+\psline[linewidth=0.028222222cm,linestyle=dashed](5.0,-1.07)(5.0,1.93)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.2745314,0.25){$h$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.9490623,0.63){$a$}
+\psline[linewidth=0.028222222](4.6,-1.07)(4.6,-0.67)(5.0,-0.67)
+\end{pspicture} 
+}
+\end{center}
+
+
+\westep{Identifiseer die vlakke waaruit die keël bestaan}
+Die keël het twee vlakke: die basis en die wand. Die basis is ’n
+sirkel met radius $r$ en die wand kan ontvou word tot ’n sektor van
+’n sirkel:
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing. 
+{ \begin{pspicture}(0,-1.2046875)(7.8553123,1.1646875) 
+\psline[linewidth=0.04cm](1.24,1.1046875)(0.02,-0.3753125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(2.44,-0.3753125) 
+\psarc[linewidth=0.04](1.24,1.0046875){1.84}{228.81407}{312.27368} 
+\psline[linewidth=0.04cm](1.24,1.0846875)(0.18,-0.4953125) 
+\psline[linewidth=0.04cm](1.24,1.0846875)(0.34,-0.5953125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(0.5,-0.6753125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(0.7,-0.7353125) 
+\psline[linewidth=0.04cm](1.22,1.0846875)(0.92,-0.8153125) 
+\psline[linewidth=0.04cm](3.98,-0.6753125)(7.6,-0.6753125) 
+\psline[linewidth=0.04cm](3.98,-0.6753125)(4.16,1.1246876) 
+\psline[linewidth=0.04cm](4.16,1.1246876)(4.24,-0.6753125) 
+\psline[linewidth=0.04cm](4.24,-0.6553125)(4.42,1.1446875) 
+\psline[linewidth=0.04cm](4.42,1.1446875)(4.5,-0.6553125) 
+\psline[linewidth=0.04cm](4.5,-0.6953125)(4.68,1.1046875) 
+\psline[linewidth=0.04cm](4.68,1.1046875)(4.76,-0.6953125) 
+\psline[linewidth=0.04cm](4.76,-0.6753125)(4.94,1.1246876) 
+\psline[linewidth=0.04cm](4.94,1.1246876)(5.02,-0.6753125) 
+\psline[linewidth=0.04cm](5.02,-0.6753125)(5.2,1.1246876) 
+\psline[linewidth=0.04cm](5.2,1.1246876)(5.28,-0.6753125) 
+\psline[linewidth=0.04cm](5.28,-0.6753125)(5.46,1.1246876) 
+\psline[linewidth=0.04cm](5.46,1.1246876)(5.54,-0.6753125) 
+\psline[linewidth=0.04cm](3.96,-0.6753125)(5.58,-0.6753125) 
+\psline[linewidth=0.04cm](5.54,-0.6753125)(5.72,1.1246876) 
+\psline[linewidth=0.04cm](5.72,1.1246876)(5.8,-0.6753125) 
+\psline[linewidth=0.04cm](5.8,-0.6753125)(5.98,1.1246876) 
+\psline[linewidth=0.04cm](5.98,1.1246876)(6.06,-0.6753125) 
+\psline[linewidth=0.04cm](6.06,-0.6953125)(6.24,1.1046875) 
+\psline[linewidth=0.04cm](6.24,1.1046875)(6.32,-0.6953125) 
+\psline[linewidth=0.04cm](6.32,-0.6553125)(6.5,1.1446875) 
+\psline[linewidth=0.04cm](6.5,1.1446875)(6.58,-0.6553125) 
+\psline[linewidth=0.04cm](6.58,-0.6753125)(6.76,1.1246876) 
+\psline[linewidth=0.04cm](6.76,1.1246876)(6.84,-0.6753125) 
+\psline[linewidth=0.04cm](6.84,-0.6753125)(7.02,1.1246876) 
+\psline[linewidth=0.04cm](7.02,1.1246876)(7.1,-0.6753125) 
+\psline[linewidth=0.04cm](7.1,-0.6753125)(7.28,1.1246876) 
+\psline[linewidth=0.04cm](7.28,1.1246876)(7.36,-0.6753125) 
+\psline[linewidth=0.04cm](7.36,-0.6553125)(7.54,1.1446875) 
+\psline[linewidth=0.04cm](7.54,1.1446875)(7.62,-0.6553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.16,-0.8153125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.1246876)(1.42,-0.8553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.66,-0.7553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.94,-0.6553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.2,1.0846875)(2.22,-0.5353125) 
+\psline[linewidth=0.11cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.46,0.4246875)(3.04,0.4246875) 
+\rput(3.6859374,0.4146875){$a$} 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.68,0.2646875)(3.68,-0.6753125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.68,0.5446875)(3.68,1.1246876) 
+\rput(5.6826563,-0.9853125){$2\pi r$ = omtrek} \end{pspicture} } 
+\end{center}
+\\ Die geboë vlak kan opgesny word in ’n klomp smal driehoekies
+waarvan die hoogte, wat byna gelyk is aan $a$ (waar $a$ die skuinshoogte
+genoem word). Die som van die oppervlaktes van hierdie driehoekies is: 
+\begin{align*}
+\mbox{Oppervlakte van sektor }&=\frac{1}{2}\times \mbox{basis } \times \mbox{ hoogte (van ’n klein driehoekie)}\\
+ &=\frac{1}{2}\times2\pi r \times a \\
+&= \pi r a 
+\end{align*}
+
+
+\westep{Bereken $a$}
+Bereken $a$ met die stelling van Pythagoras:
+\begin{equation*}
+a = \sqrt{r^{2} + h^{2}}
+\end{equation*}
+\westep{Bereken die oppervlakte van die sirkelvormige basis ($A_{b}$)}
+\begin{equation*}
+A_{b} = \pi r^{2}
+\end{equation*}
+\westep{Bereken die oppervlakte van die gebo\"e wand ($A_{w}$)}
+\begin{eqnarray*}
+A_{w} &=& \pi r a \\
+&=& \pi r \sqrt{r^{2}+h^{2}}
+\end{eqnarray*}
+\westep{Vind die som van die oppervlaktes $A$}
+\begin{eqnarray*}
+ A &=& A_{b} + A_{w} \\
+  &=& \pi r^{2} + \pi r \sqrt{r^{2}+h^{2}}\\
+&=& \pi r(r + \sqrt{r^{2}+h^{2}})
+\end{eqnarray*}
+}
+\end{wex}
+
+\subsection{Volume van piramides, keëls en sfere}
+
+
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.8in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Vierkantige piramide}
+&
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9993507)(4.767494,1.9734619)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.095092274,-0.42983752)(2.4242375,1.9593507)(3.794405,-0.18333401)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.753383,-1.2623826)(2.4242375,1.9593507)(1.0540702,-1.5190883)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](1.0593361,-1.5190883)(2.3858888,1.9269619)(0.0,-0.46889564)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.0,-0.46889564)(3.0107446,-0.23551947)
+\psline[linewidth=0.027999999,linestyle=dotted,dotsep=0.16cm](2.465889,1.8869619)(2.3658888,-0.8130381)(3.305889,-1.3465382)(2.445889,1.8469619)(2.485889,1.8069619)
+\psline[linewidth=0.024cm,linestyle=dashed,dash=0.16cm 0.16cm](3.025889,-0.2530381)(4.7258887,-1.2530382)
+\psline[linewidth=0.02](2.3658888,-0.6130381)(2.545889,-0.6930381)(2.545889,-0.91303813)(2.3658888,-0.8330382)
+\psline[linewidth=0.02cm](2.3658888,-0.6330381)(2.3658888,-0.8330382)
+\psline[linewidth=0.04cm](0.3058889,-0.9465382)(0.70588887,-0.9465382)
+\psline[linewidth=0.04cm](2.8458889,-1.5265381)(2.6258888,-1.2465382)
+\psline[linewidth=0.04cm](3.6458888,-0.7065382)(4.025889,-0.7265382)
+\psline[linewidth=0.04cm](1.9058889,-0.44653818)(1.6858889,-0.20653819)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.9449513,-1.7965382){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1745312,0.2834618){$H$}
+\end{pspicture} 
+
+
+}
+\end{center} 
+&
+$\begin{aligned}
+\mbox{ Volume} &=  \frac{1}{3} \times \mbox{ oppervlakte basis } \times\\
+&~~~~~~ \mbox{hoogte van piramide }\\
+&=\frac{1}{3}\times b^{2} \times H
+ \end{aligned}$
+\\ \hline
+
+
+\textbf{Driehoekige piramide} &
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0793507)(4.2198644,2.0534618)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.2523495,-0.43995062)(1.5305833,2.0138543)(4.1218147,-1.1400807)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.24,-1.8206493)(1.5,1.9393507)(0.034111112,-0.43957832)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.2057533,-1.2329769)(1.5316236,2.0393507)(0.24804147,-1.8465381)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.034111112,-0.43957832)(4.1522703,-1.1765573)
+\psline[linewidth=0.024,linestyle=dotted,dotsep=0.16cm](1.5199999,1.9793508)(1.48,-1.1806492)(4.1800003,-1.2206491)
+\psline[linewidth=0.02](1.48,-0.9606492)(1.7,-0.9606492)(1.7,-1.1865381)(1.48,-1.1806492)(1.48,-0.9606492)
+\psline[linewidth=0.04cm](1.86,-0.8465382)(2.02,-0.68653816)
+\psline[linewidth=0.04cm](1.72,-1.5265383)(1.76,-1.7465383)
+\psline[linewidth=0.04cm](0.24,-1.0865382)(0.0,-1.1265383)
+\psline[linewidth=0.024cm,linestyle=dotted,dotsep=0.16cm](1.56,-1.1865381)(0.12,-1.1465383)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.0790625,-1.8765383){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.99906254,-1.3965381){$h$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.2545313,0.3434618){$H$}
+\end{pspicture} 
+}
+\end{center}
+&
+
+$\begin{aligned}
+\mbox{Volume} &= \frac{1}{3} \times \mbox{ oppervlakte basis } \times \\
+&~~~~~~\mbox{ hoogte van piramide }\\
+&=\frac{1}{3} \times \frac{1}{2}bh \times H
+ \end{aligned}$
+ \\ \hline
+
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.8in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Regte keël} &
+\begin{center}
+ \scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(3.8704202,1.0400556){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$r$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$H$}
+\end{pspicture} 
+}
+\end{center}
+
+
+
+&
+
+$\begin{aligned}
+\mbox{Volume} &=  \frac{1}{3} \times \mbox{ oppervlakte basis } \times\\
+&~~~~~~ \mbox{ hoogte van keël }\\
+&= \frac{1}{3} \times \pi r^2 \times H
+ \end{aligned}$\\ \hline
+
+\textbf{Sfeer} &
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.6345313,0.2){$r$}
+\end{pspicture} 
+}
+
+\end{center}
+
+
+&
+$\begin{aligned}
+\mbox{Volume} &=  \frac{1}{3} \times 4\pi r^2\\
+&=\frac{4}{3}\pi r^{3}
+ \end{aligned}$\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+\begin{wex}{Berekening van die volume van ’n piramide}
+{
+Bereken die volume van ’n
+vierkantige piramide, $3$ cm hoog met ’n sylengte van $2$ cm.
+\vspace*{-30pt}}
+{
+\westep{Skets en benoem die piramide}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.89)(5.58,2.89)
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.7}(-0.022694819,-0.047077317){\rput(5.1,-2.1803145){$2~$cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.040004794,0.011890239){\rput(1,-2.2194574){$2~$cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.0929687,1.255){\small $3~$cm}
+\psline[linewidth=0.04cm](5.54,-0.97)(2.74,2.85)
+\psline[linewidth=0.04cm](2.9,-2.85)(2.74,2.87)
+\psline[linewidth=0.04cm](2.74,2.87)(0.02,-0.87)
+\psline[linewidth=0.04cm](0.04,-0.87)(2.78,0.89)
+\psline[linewidth=0.04cm](2.76,0.89)(5.56,-0.99)
+\psline[linewidth=0.04cm](0.0,-0.87)(2.9,-2.87)
+\psline[linewidth=0.04cm](2.9,-2.87)(5.56,-0.99)
+\psdots[dotsize=0.12](2.62,-0.83)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](2.64,-0.81)(2.72,2.75)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](2.62,-0.85)(1.44,0.03)
+\psline[linewidth=0.04cm](2.4,-0.69)(2.4,-0.33)
+\psline[linewidth=0.04cm](2.38,-0.33)(2.66,-0.53)
+\end{pspicture} 
+}
+\end{center}
+\westep{Gebruik die toepaslike formule en vervang die gegewe waardes}
+Die volume van ’n piramide is 
+$$V=\frac{1}{3} \times b^{2} \times H$$ \\
+Ons word gegee $b=2$ en $H=3$, dus
+\begin{eqnarray*}
+\mbox{Volume}&=&\frac{1}{3} \times 2^{2} \times 3\\
+&=&\frac{1}{3} \times 12\\
+&=&4\mbox{ cm}^3
+\end{eqnarray*}
+\westep{Skryf die finale antwoord}
+Die volume van die vierkantige piramide is $4\mbox{ cm}^3$.
+}
+
+
+\end{wex}
+
+
+\begin{wex}{Berekening van die volume van ’n driehoekige piramide}
+ {Vind die volume van ’n driehoekige piramide (korrek tot $1$ desimale plek):\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0893507)(4.2198644,2.0634618)
+\pspolygon[linewidth=0.028222222](0.24,-1.8106492)(1.5,1.9493507)(0.034111112,-0.42957833)
+\pspolygon[linewidth=0.028222222](4.2057533,-1.222977)(1.5316236,2.0493507)(0.24804147,-1.8365381)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.034111112,-0.42957833)(4.1522703,-1.1665573)
+\psline[linewidth=0.024,linestyle=dotted,dotsep=0.16cm](1.5199999,1.9893508)(1.48,-1.1706492)(4.1800003,-1.2106491)
+\psline[linewidth=0.02](1.48,-0.9506492)(1.7,-0.9506492)(1.7,-1.1765381)(1.48,-1.1706492)(1.48,-0.9506492)
+\psline[linewidth=0.04cm](1.86,-0.8365382)(2.02,-0.67653817)
+\psline[linewidth=0.04cm](2.1,-1.4565382)(2.14,-1.6765382)
+\psline[linewidth=0.04cm](0.24,-1.0765382)(0.0,-1.1165383)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.54,2.0434618)(2.5,-1.4965383)
+\psline[linewidth=0.02](2.44,-1.2365383)(2.496,-1.4765382)(2.72,-1.4365381)(2.66,-1.1965381)(2.44,-1.2365383)
+\psline[linewidth=0.024cm,linestyle=dotted,dotsep=0.16cm](1.56,-1.1765381)(0.12,-1.1365383)
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.6495311,0.09346183){\small $12$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.3795314,-1.8865383){$8$ cm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.3590626,-1.2865381){$h_b$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.2745312,0.31000006){$H$}
+\end{pspicture} 
+}
+
+\end{center}
+}
+
+{
+\westep{Skets die driehoek en bereken die oppervlakte}
+
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$h_b$}
+\end{pspicture} 
+}
+\end{center}
+Die skuinshoogte van die driehoek ($h_b$) kan bereken word met die stelling van Pythagoras:
+\\
+
+\begin{align*}
+ 8^2 &= 4^2+h_b^2\\
+\therefore h_b&=\sqrt{8^2-4^2}\\
+&=4\sqrt{3}\mbox{ cm}\\
+
+\end{align*}
+
+\begin{align*}
+\therefore \mbox{Oppervlakte van basis driehoek} &= \frac{1}{2} b \times h_b\\
+&= \frac{1}{2} \times 8 \times 4\sqrt{3}\\
+&=16\sqrt{3}\mbox{ cm}^2
+\end{align*}
+
+
+\westep{Skets die sykant driehoek en bereken $H$, die loodregte hoogte van die piramide}
+
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$12$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$H$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+ 12^2 &= 4^2+h^2\\
+\therefore H&=\sqrt{12^2-4^2}\\
+&=8\sqrt{2}\mbox{ cm}\\
+
+\end{align*}
+\westep{Bereken die volume van die piramide}
+\begin{align*}
+\mbox{ Volume} &= \frac{1}{3} \times \frac{1}{2}bh_b \times H \\ 
+&=\frac{1}{3} \times 16\sqrt{3} \times 8\sqrt{2}\\
+&=104,5\mbox{ cm}^3
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van die driehoekige piramide is $104,5\mbox{ cm}^3$.
+}
+\end{wex}
+
+\begin{wex}{Berekening van die volume van 'n keël}
+ {Vind die volume van die volgende keël (korrek tot $1$ desimale plek):
+\begin{center}
+ \scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(3.8704202,1.0400556){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$3$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$11$ cm}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Vind die oppervlakte van die basis}
+\begin{align*}
+ \mbox{Oppervlakte van sirkel} &= \pi r^2\\
+&= \pi3^2\\
+&=9\pi\mbox{ cm}^2
+\end{align*}
+
+\westep{Bereken die volume}
+\begin{align*}
+ \mbox{Volume} &= \frac{1}{3} \times \pi r^{2} \times H\\
+&=\frac{1}{3} \times 9\pi \times 11\\
+&=103,7\mbox{ cm}^3
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van die keël is $ 103,7\mbox{ cm}^3$.
+}
+\end{wex}
+
+\begin{wex}{Berekening van die volume van 'n sfeer}
+ {Vind die volume van die volgende sfeer (korrek tot $1$ desimale plek):
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\definecolor{color129b}{rgb}{0.9490196078431372,0.9490196078431372,0.9490196078431372}
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.15cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7095313,0.12){\psframebox[linewidth=0.002,linecolor=color129b,fillstyle=solid,fillcolor=color129b]{$4$ cm}}%this framebox background colour is tweaked to match the wex colour - otherwise radius label sits too close between the dotted lines. framebox behind label blanks out some of eliptical dotted line to make it more legible
+\end{pspicture} 
+}
+
+\end{center}
+}
+{
+\westep{Gebruik die formule om die volume te bereken}
+\begin{align*}
+ \mbox{Volume} &= \frac{4}{3} \pi r^3\\
+&= \frac{4}{3}\pi(4)^2\\
+&=268,1\mbox{ cm}^3
+\end{align*}
+\westep{Skryf die finale antwoord}
+Die volume van die sfeer is $268,1\mbox{ cm}^3$.
+}
+
+\end{wex}
+\begin{wex}{Berekening van die volume van 'n saamgestelde voorwerp}
+ {
+\begin{minipage}{\textwidth}
+'n Driehoekige piramide word bo-op ’n driehoekige
+prisma geplaas. Die prisma het ’n gelyksydige driehoek met ’n sylengte
+van $20$ cm as basis en ’n hoogte van  $42$ cm. Die piramide is $12$ cm hoog. Bereken die volgende (korrek tot $1$ desimale plek):
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Vind die totale volume van die voorwerp.
+\item Vind die oppervlakte van elke vlak van die piramide.
+\item Vind die totale buite-oppervlakte van die voorwerp.
+\end{enumerate}
+\end{minipage}
+\begin{center}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0664062)(5.57,2.0464063)
+\definecolor{color338b}{rgb}{0.6,0.6,0.6}
+\definecolor{color376b}{rgb}{0.8,0.8,0.8}
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.45,0.6053162)(3.87,1.7664063)(3.87,-0.6525037)(3.45,-1.8135937)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.03,2.0264063)(3.87,1.8321205)(3.45,0.6064063)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](3.03,2.0264063)(2.23,1.3264062)(3.43,0.62640625)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](2.25,1.3264062)(3.45,0.62640625)(3.45,-1.8735938)(2.25,-1.1735938)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,1.3664062)(3.83,1.8064063)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,-1.1735938)(3.83,-0.61359376)
+\psline[linewidth=0.04cm](3.03,-0.75359374)(3.13,-0.9735938)
+\psline[linewidth=0.04cm](2.93,-1.4135938)(2.77,-1.6135937)
+\psline[linewidth=0.04cm](3.53,-1.1335938)(3.77,-1.1935937)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.265,-1.8635937){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.765,0.5964062){$42$ cm}
+\psline[linewidth=0.03,linestyle=dotted,dotsep=0.1cm](3.03,1.9664062)(3.05,1.2664063)(2.79,1.0464063)(2.79,1.0464063)(2.79,1.0464063)(2.75,1.0464063)
+\psline[linewidth=0.04cm](3.05,1.6064062)(1.51,1.6064062)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.705,1.6164062){$12$ cm}
+\psline[linewidth=0.02](3.09,1.4064063)(2.97,1.3464062)(2.97,1.2064062)
+\end{pspicture} 
+}
+\end{center}
+
+}
+{
+\westep{Bereken die volume van die prisma}
+
+a) Vind die hoogte van die basis driehoek
+\begin{center}
+ \scalebox{0.8}
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){ $20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){\Large $h_b$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+ 20^2 &= 10^2 + h_b^2\\
+\therefore h_b&= \sqrt{20^2-10^2}\\
+&=10 \sqrt{3}\mbox{ cm}
+\end{align*}
+
+a) Vind die oppervlakte van die basis driehoek
+% \begin{center}
+% 
+% \scalebox{0.8} % Change this value to rescale the drawing.
+% {
+% \begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+% \pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+% \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+% \psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% % \usefont{T1}{ptm}{m}{n}
+% \rput(3.165,-1.9535937){\LARGE $4$ cm}
+% % \usefont{T1}{ptm}{m}{n}
+% \rput(3.945,0.62640625){\LARGE $12$ cm}
+% % \usefont{T1}{ptm}{m}{n}
+% % \rput(2.5845313,0.04640625){$H$}
+% \end{pspicture} 
+% }
+% \end{center}
+
+\begin{align*}
+\mbox{Oppervlakte van basis driehoek } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
+&=100 \sqrt{3}\mbox{ cm}^2
+\end{align*}
+
+c) Vind die volume van die prisma
+\begin{align*}
+\therefore \mbox{Volume van prisma} &= \mbox{oppervlakte van basis driehoek }\times \mbox{ hoogte van prisma}\\
+&=100 \sqrt{3} \times 42\\
+&=4~200\sqrt{3}\mbox{ cm}^3
+\end{align*}
+
+\westep{Vind die volume van die piramide}
+\\
+Die oppervlakte van die basis driehoek is gelyk aan die oppervlakte van die basis van die piramide.
+
+\begin{align*}
+\therefore \mbox{Volume van piramide} &= \frac{1}{3} (\mbox{oppervlakte van basis}) \times H\\
+&= \frac{1}{3} \times 100 \sqrt{3} \times 12 \\
+
+&=400\sqrt{3}\mbox{ cm}^3
+\end{align*}
+\westep{Bereken die totale volume}
+\begin{align*}
+\mbox{Totale volume } &= 4~200\sqrt{3}+400\sqrt{3}\\
+&= 4~600 \sqrt{3}\\
+&=7~967,4\mbox{ cm}^3
+\end{align*}
+Dus die totale volume van die voorwerp is $7~967,4 \mbox{ cm}^3$.
+}
+\end{wex}
+
+%english below
+\begin{wex}{Vind die oppervlakte van 'n komplekse voorwerp}
+{
+\begin{minipage}{0.9\textwidth}
+Met dieselfde komplekse voorwerp soos in die vorige voorbeeld, kry jy
+  die bykomende inligting dat die skuinshoogte $ h_s $ van die
+  driehoekige piramiede $ 13,3 $ cm is. Bereken die totale oppervlakte
+  van die voorwerp.
+\end{minipage}
+}
+{
+\westep{Bereken die buite-oppervlakte van elke sigbare vlak van die piramide}
+\begin{align*}
+  \mbox{Oppervlak van een vlak van die piramide}
+
+  &= \frac{1}{2}b \times h_s \\
+  &= \frac{1}{2} \times 20 \times 13,3 \\
+  &= 133\mbox{ cm}^2
+\end{align*}
+Omdat die basis driehoek gelyksydig is, het elke vlak dieselfde basis,
+en dus dieselfde oppervlakte. Daarom is die buite-oppervlakte vir
+elke vlak van die piramide is $133$ cm$^{2}$.
+
+\westep{Bereken die buite-oppervlakte van elke vlak van die prisma}
+Elke vlak van die prisma is 'n reghoek met basis $b = 20$ cm en hoogte $h_p = 42$ cm.
+
+
+\begin{align*}
+  \mbox{Oppervlak van een vlak van die prisma}
+  &= b \times h_p \\
+  &= 20 \times 42 \\
+  &= 840\mbox{ cm}^2
+\end{align*}
+Omdat die basis driehoek gelyksydig is, het elke vlak dieselfde oppervlakte. Daarom die buite-oppervlakte vir
+elke vlak van die prisma is
+is $840$ cm$^{2}$.
+
+\westep{Bereken die totale buite-oppervlakte vir die voorwerp}
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Totale buite-oppervlakte} &=& \mbox{area van basis van prisma} + \mbox{area van sye van prisma } + \\
+                              & & \mbox{oppervlakte van elke sigbare vlak van die piramide} \\
+    &=& (100 \sqrt{3}) + 3(840) + 3(133) \\
+    &=& 3~092,2\mbox{ cm}^2
+  \end{array}
+\end{equation*}
+Dus, die totale buite-oppervlakte (van die sigbare kante) van die voorwerp is $3~092,2$ cm$^{2}$.
+}
+\end{wex}
+
+
+\begin{exercises}{}
+ {
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Vind die totale buite-oppervlaktes van die volgende prismas (korrek tot $1$ desimale plek indien nodig):
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-6.555141)(11.58,6.555141)
+\psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.8189373,6.4493885)(2.736479,1.7205143)(4.962867,1.6926974)(4.962867,1.831782)(4.935381,1.831782)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7499313,4.485141){$13$ cm}
+\psbezier[linewidth=0.027999999](0.78034645,2.0499592)(0.47451097,1.3570333)(1.3971436,0.47512725)(2.5043025,0.41213384)(3.6114616,0.34914044)(5.026165,0.85308695)(5.026165,1.8609792)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](5.026165,1.7979861)(4.657112,2.3649256)(3.9805148,2.7450073)(3.0888517,2.7754428)(2.1971886,2.8058784)(1.4586524,2.7428854)(0.7205463,1.8609792)
+\psframe[linewidth=0.04,dimen=outer](3.1003997,2.115141)(2.7003999,1.7151409)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.009931,2.0051408){$5$ cm}
+\pspolygon[linewidth=0.028222222](7.28,1.7148592)(8.54,5.474859)(7.074111,3.09593)
+\pspolygon[linewidth=0.028222222](11.245753,2.3025317)(8.571624,5.574859)(7.2880416,1.6889703)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](7.074111,3.09593)(11.19227,2.358951)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.1cm](8.56,5.574859)(9.22,1.9948592)
+\psline[linewidth=0.024](9.18,2.2348592)(9.4,2.2748594)(9.44,2.0348594)(9.46,2.0348594)
+\psline[linewidth=0.04cm](8.82,2.9148593)(8.76,2.6548593)
+\psline[linewidth=0.04cm](6.96,2.4148595)(7.3,2.4748592)
+\psline[linewidth=0.04cm](8.74,2.0548594)(8.92,1.7948594)
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.395,1.5848593){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.31,3.8848593){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0020312,5.3748593){\textbf{(a)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.9220314,5.3748593){\textbf{(b)}}
+\pscircle[linewidth=0.027999999,dimen=outer](9.68,-3.4851408){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.68,-3.6151407)(1.84,0.23)
+\psline[linewidth=0.027999999cm,linestyle=dotted,dotsep=0.1cm](9.74,-3.6251407)(11.52,-3.6251407)
+\psdots[dotsize=0.09](9.7,-3.6451406)
+% \usefont{T1}{ppl}{m}{n}
+\rput(10.499532,-3.1651409){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.04,-2.8101408){$12$ cm}
+\psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
+\psline[linewidth=0.04cm](3.76,-6.5151405)(3.6,-0.79514074)
+\psline[linewidth=0.04cm](3.6,-0.79514074)(0.88,-4.5351405)
+\psline[linewidth=0.04cm](0.9,-4.5351405)(3.64,-2.7751408)
+\psline[linewidth=0.04cm](3.62,-2.7751408)(6.42,-4.655141)
+\psline[linewidth=0.04cm](0.86,-4.5351405)(3.76,-6.5351405)
+\psline[linewidth=0.04cm](3.76,-6.5351405)(6.42,-4.655141)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](5.26,-5.4551406)(3.58,-0.91514075)
+\psline[linewidth=0.04cm](5.16,-5.155141)(5.4,-4.9751406)
+\psline[linewidth=0.04cm](5.38,-4.9751406)(5.5,-5.2951407)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.3220313,-1.3851408){\textbf{(c)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.5220313,-1.4251407){\\textbf{(d)}}
+\end{pspicture} 
+}
+\end{center}
+
+\item 
+Vind die volumes van die volgende prismas (korrek tot $1$ desimale plek waar nodig):
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-6.555141)(11.58,6.555141)
+\psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.8189373,6.4493885)(2.736479,1.7205143)(4.962867,1.6926974)(4.962867,1.831782)(4.935381,1.831782)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7499313,4.485141){$13$ cm}
+\psbezier[linewidth=0.027999999](0.78034645,2.0499592)(0.47451097,1.3570333)(1.3971436,0.47512725)(2.5043025,0.41213384)(3.6114616,0.34914044)(5.026165,0.85308695)(5.026165,1.8609792)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](5.026165,1.7979861)(4.657112,2.3649256)(3.9805148,2.7450073)(3.0888517,2.7754428)(2.1971886,2.8058784)(1.4586524,2.7428854)(0.7205463,1.8609792)
+\psframe[linewidth=0.04,dimen=outer](3.1003997,2.115141)(2.7003999,1.7151409)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.009931,2.0051408){$5$ cm}
+\pspolygon[linewidth=0.028222222](7.28,1.7148592)(8.54,5.474859)(7.074111,3.09593)
+\pspolygon[linewidth=0.028222222](11.245753,2.3025317)(8.571624,5.574859)(7.2880416,1.6889703)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](7.074111,3.09593)(11.19227,2.358951)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.1cm](8.56,5.574859)(9.22,1.9948592)
+\psline[linewidth=0.024](9.18,2.2348592)(9.4,2.2748594)(9.44,2.0348594)(9.46,2.0348594)
+\psline[linewidth=0.04cm](8.82,2.9148593)(8.76,2.6548593)
+\psline[linewidth=0.04cm](6.96,2.4148595)(7.3,2.4748592)
+\psline[linewidth=0.04cm](8.74,2.0548594)(8.92,1.7948594)
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.395,1.5848593){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.31,3.8848593){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0020312,5.3748593){\textbf{(a)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.9220314,5.3748593){\textbf{(b)}}
+\pscircle[linewidth=0.027999999,dimen=outer](9.68,-3.4851408){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.68,-3.6151407)(1.84,0.23)
+\psline[linewidth=0.027999999cm,linestyle=dotted,dotsep=0.1cm](9.74,-3.6251407)(11.52,-3.6251407)
+\psdots[dotsize=0.09](9.7,-3.6451406)
+% \usefont{T1}{ppl}{m}{n}
+\rput(10.499532,-3.1651409){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.04,-2.8101408){$12$ cm}
+\psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
+\psline[linewidth=0.04cm](3.76,-6.5151405)(3.6,-0.79514074)
+\psline[linewidth=0.04cm](3.6,-0.79514074)(0.88,-4.5351405)
+\psline[linewidth=0.04cm](0.9,-4.5351405)(3.64,-2.7751408)
+\psline[linewidth=0.04cm](3.62,-2.7751408)(6.42,-4.655141)
+\psline[linewidth=0.04cm](0.86,-4.5351405)(3.76,-6.5351405)
+\psline[linewidth=0.04cm](3.76,-6.5351405)(6.42,-4.655141)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](5.26,-5.4551406)(3.58,-0.91514075)
+\psline[linewidth=0.04cm](5.16,-5.155141)(5.4,-4.9751406)
+\psline[linewidth=0.04cm](5.38,-4.9751406)(5.5,-5.2951407)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.3220313,-1.3851408){\textbf{(c)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.5220313,-1.4251407){ \textbf{(d)}}
+\end{pspicture} 
+}
+
+\end{center}
+\item
+Die vaste liggaam bestaan uit 'n kubus en 'n vierkantige piramide. Vind die volume en buite-oppervlak van die voorwerp (korrek tot $1$ desimale plek):
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8370537)(6.719142,2.2091963)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=130.79651](1.6439155,-0.50671875)(1.2616725,1.0826066)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2356775,-0.49835977)(1.27,1.0687643)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.85914207,0.46575883)(2.497392,0.74575895)(3.979142,0.49575883)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.8815407,-1.1342412)(2.499142,-0.78424114)(4.019142,-1.1642412)
+\psline[linewidth=0.04](0.839142,0.43575883)(2.439142,1.9957589)(2.439142,0.23575884)(2.439142,0.17575884)(2.459142,0.19575883)(2.459142,0.21575883)
+\psline[linewidth=0.04cm](4.039142,0.45575884)(2.439142,2.0157588)
+\psline[linewidth=0.02](4.619142,2.075759)(4.979142,2.075759)(4.999142,-1.1042411)(4.659142,-1.1042411)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.914142,0.5057588){$11$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.524142,-1.6342412){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.1611733,2.0057588){\textbf{9.}}
+\end{pspicture} 
+}
+\end{center}
+\end{enumerate}
+}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02pg	&
+% Question 2
+(2.)	02ph	&
+% Question 3
+(3.)	02pi	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+\end{exercises}
+% slight mod to this long heading. Makes it fit in book and TOC.
+\section{Vermenigvuldiging van 'n afmeting met 'n faktor $k$}
+Wanneer een of meer van die afmetings van 'n prisma of 'n silinder met 'n konstante vermenigvuldig word, sal die buite-oppervlakte en die volume verander. 
+%english
+Die nuwe oppervlakte en volume kan bereken word deur die toepaslike formules te gebruik.
+\par
+Dit is moontlik om 'n verband te sien tussen die verandering in afmetings en die gevolglike veranding in buite-oppervlakte en volume. Hierdie verwantskap maak dit moontlik om die verandere volume en buite-oppervlakte te bereken as die afmetings van 'n voorwerp groter of kleiner gemaak word .\par
+\mindsetvid{increasing surface area}{VMctl}
+Beskou 'n rehoekige prisma met afmetings $l$, $b$ en $h$. Ons vermenigvuldig vervolgens een, twee en drie afmetings van die prisma se met 'n konstante faktor van $5$ en bereken dan die nuwe volume en buite-oppervlakte.\par
+\begin{table}[H]
+
+\begin{center}
+ \hspace*{-20pt}
+
+
+\begin{tabular}{|m{4cm}|c|c|}
+\hline
+\textbf{Afmetings} & 
+\textbf{Volume} & 
+\textbf{Buite-oppervlakte} \\ \hline
+Oorspronklime afmetings
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.9664062)(2.8190625,0.94640625)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.33359376)(0.92,-0.5935938)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.28,-0.49359375)(1.84,-0.29359376)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.06,0.64640623)(2.06,-0.13359375)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.26453125,-0.76359373){$l$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.6845312,-0.70359373){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.4445312,0.27640626){$h$}
+\psline[linewidth=0.02cm](0.06,0.6664063)(0.06,-0.13359375)
+\psline[linewidth=0.02cm](0.06,0.6664063)(1.08,0.44640625)
+\psline[linewidth=0.02cm](1.0394049,-0.40186626)(1.8688747,-0.13507086)
+\psline[linewidth=0.02cm](0.0899311,0.6581822)(0.91940093,0.92497766)
+\psline[linewidth=0.02cm](1.0534269,0.4367113)(1.8828968,0.7035067)
+\psline[linewidth=0.02cm](0.04,-0.15359375)(1.0448525,-0.3976128)
+\psline[linewidth=0.02cm](1.06,0.46640626)(1.0594049,-0.40186626)
+\psline[linewidth=0.02cm](1.86,0.70640624)(1.86,-0.15359375)
+\psline[linewidth=0.02cm](0.9,0.92640626)(1.8448526,0.7023872)
+\end{pspicture} 
+
+}
+\end{center}
+&
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V
+    &= l \times b \times h \\
+    &= lbh
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  O
+  &= 2[(l\times h) + (l \times b)+ (b \times h)] \\
+  &= 2(lh + lb + bh)
+  \end{array}
+\end{equation*}
+\\ \hline
+
+Vermenigvuldig een afmeting met $5$ 
+\begin{center}
+\scalebox{.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.4867684)(2.0090625,1.4667684)
+\psline[linewidth=0.02cm](0.6727914,-0.97690886)(1.0821153,-0.84186465)
+\psline[linewidth=0.02cm](0.19934765,-0.8512404)(0.6754797,-0.9747559)
+\psline[linewidth=0.02cm](0.68295467,-0.53741413)(0.68266094,-0.97690886)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.13,-0.96235126)(0.59,-1.0939559)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.81,-1.0739558)(1.19,-0.93395585)
+\psline[linewidth=0.02cm](0.68295467,-0.102106705)(0.68266094,-0.5416014)
+\psline[linewidth=0.02cm](0.6779195,-0.5416014)(1.0821153,-0.40655723)
+\psline[linewidth=0.02cm](0.19,-0.41395584)(0.6805741,-0.53944844)
+\psline[linewidth=0.02cm](0.17934765,1.2744327)(0.63355875,1.4459476)
+\psline[linewidth=0.02cm](0.61366063,1.4467683)(1.0908254,1.3180801)
+\psline[linewidth=0.02cm](0.68295467,1.1633219)(0.68266094,0.744074)
+\psline[linewidth=0.02cm](0.68295467,0.33320072)(0.68266094,-0.10629402)
+\psline[linewidth=0.02cm](0.68295467,0.76850814)(0.68266094,0.3290134)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.29,1.3260442)(1.29,-0.81395584)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.21453124,-1.2839558){$l$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.1145313,-1.2439559){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.6345313,0.13604417){$5h$}
+\psline[linewidth=0.02cm](1.09,1.3260442)(1.09,-0.8539558)
+\psline[linewidth=0.02cm](0.6927914,-0.12160144)(1.1021153,0.013442772)
+\psline[linewidth=0.02cm](0.1996086,0.004067012)(0.6954797,-0.11944846)
+\psline[linewidth=0.02cm](0.6927914,0.31839857)(1.1021153,0.45344278)
+\psline[linewidth=0.02cm](0.1996086,0.444067)(0.6954797,0.32055154)
+\psline[linewidth=0.02cm](0.6727914,0.75839853)(1.0821153,0.89344275)
+\psline[linewidth=0.02cm](0.1796086,0.884067)(0.6754797,0.7605515)
+\psline[linewidth=0.02cm](0.19,1.2860441)(0.19,-0.87395585)
+\psline[linewidth=0.02cm](0.6927914,1.1583985)(1.1021153,1.2934427)
+\psline[linewidth=0.02cm](0.1996086,1.284067)(0.6954797,1.1605515)
+\end{pspicture} 
+}
+\end{center}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  V_1
+  &= l \times b \times 5h \\
+  &= 5(lbh) \\
+  &= 5V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  O_1
+  &= 2[(l\times 5h) + (l \times b)+ (b \times 5h)] \\
+  &= 2(5lh + lb + 5bh)
+  \end{array}
+\end{equation*}
+\\ \hline
+Vermenigvuldig twee afmetings met $5$ 
+\begin{center}
+\scalebox{.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.696225)(4.1590624,1.716225)
+\psline[linewidth=0.02cm](2.7097116,-1.1182724)(3.1489298,-0.98734313)
+\psline[linewidth=0.02cm](2.720617,-0.6921695)(2.7203019,-1.1182724)
+\psline[linewidth=0.02cm](2.720617,-0.27012625)(2.7203019,-0.6962292)
+\psline[linewidth=0.02cm](2.7152143,-0.6962292)(3.1489298,-0.5652999)
+\psline[linewidth=0.02cm](2.18023,1.0644687)(2.6676135,1.2307575)
+\psline[linewidth=0.02cm](0.60357034,1.696225)(3.1797369,1.1067861)
+\psline[linewidth=0.02cm](2.720617,0.95674354)(2.7203019,0.5502705)
+\psline[linewidth=0.02cm](2.720617,0.15191695)(2.7203019,-0.274186)
+\psline[linewidth=0.02cm](2.720617,0.5739602)(2.7203019,0.14785723)
+\psline[linewidth=0.02cm](2.7311723,-0.28902698)(3.1703906,-0.15809768)
+\psline[linewidth=0.02cm](2.7311723,0.13756584)(3.1703906,0.2684951)
+\psline[linewidth=0.02cm](2.7097116,0.5641586)(3.1489298,0.6950879)
+\psline[linewidth=0.02cm](2.1916602,1.0757264)(2.1916602,-1.0184565)
+\psline[linewidth=0.02cm](2.7311723,0.9519703)(3.1703906,1.0828996)
+\psline[linewidth=0.02cm](1.676604,1.1920699)(1.676604,-0.90211296)
+\psline[linewidth=0.02cm](1.6866343,1.1808122)(2.1740181,1.347101)
+\psline[linewidth=0.02cm](1.1830086,1.3084134)(1.1830086,-0.78576946)
+\psline[linewidth=0.02cm](1.1715782,1.2971557)(1.658962,1.4634445)
+\psline[linewidth=0.02cm](0.6464917,1.4247569)(0.6464917,-0.66942596)
+\psline[linewidth=0.02cm](0.6350614,1.4134992)(1.1224451,1.579788)
+\psline[linewidth=0.02cm](0.13143557,1.560491)(0.13143557,-0.5336919)
+\psline[linewidth=0.02cm](0.12000524,1.5492333)(0.62503105,1.696225)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.7234125)(2.6,-1.3234125)
+\usefont{T1}{ppl}{m}{n}
+\rput(1.0845313,-1.3334125){$5l$}
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.8,-1.3034126)(3.18,-1.1634126)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.1045313,-1.4934125){$b$}
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.38,1.0965874)(3.36,-0.9634125)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.7845314,0.04658747){$5h$}
+\psline[linewidth=0.02cm](3.1573904,1.1145076)(3.1573904,-0.9990659)
+\psline[linewidth=0.02cm](0.13143557,1.5411004)(2.707602,0.9516615)
+\psline[linewidth=0.02cm](0.13143557,1.1532887)(2.707602,0.56384987)
+\psline[linewidth=0.02cm](0.13143557,0.72669595)(2.707602,0.13725708)
+\psline[linewidth=0.02cm](0.13143557,0.30010313)(2.707602,-0.28933573)
+\psline[linewidth=0.02cm](0.15289624,-0.10709909)(2.7290628,-0.696538)
+\psline[linewidth=0.02cm](0.13143557,-0.5336919)(2.707602,-1.1231308)
+\end{pspicture} 
+}
+
+\end{center}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_2
+    &= 5l \times b \times 5h \\
+    &= 5.5(lbh) \\
+    &= 5^2 \times V
+  \end{array}
+\end{equation*}
+&
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    O_2
+    &= 2[(5l\times 5h) + (5l \times b)+ (b \times 5h)] \\
+    &= 2\times 5(5lh + lb + bh)
+  \end{array}
+\end{equation*}
+\\ \hline
+
+
+
+Vermenigvuldig al drie afmetings met $5$ 
+\begin{center}
+\scalebox{0.65} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8564062)(5.8090625,1.8764062)
+\psline[linewidth=0.02cm](2.690617,-0.9723507)(2.690302,-1.3984536)
+\psline[linewidth=0.02cm](2.690617,-0.55030745)(2.690302,-0.9764104)
+\psline[linewidth=0.02cm](0.5735704,1.3960438)(3.149737,0.806605)
+\psline[linewidth=0.02cm](2.690617,0.6765623)(2.690302,0.2700893)
+\psline[linewidth=0.02cm](2.690617,-0.12826428)(2.690302,-0.5543672)
+\psline[linewidth=0.02cm](2.690617,0.29377893)(2.690302,-0.132324)
+\psline[linewidth=0.02cm](2.1616602,0.79554516)(2.1616602,-1.2986376)
+\psline[linewidth=0.02cm](1.646604,0.91188866)(1.646604,-1.1822941)
+\psline[linewidth=0.02cm](1.1530086,1.0282322)(1.1530086,-1.0659506)
+\psline[linewidth=0.02cm](0.61649173,1.1445757)(0.61649173,-0.9496072)
+\psline[linewidth=0.02cm](0.10143557,1.2803097)(0.10143557,-0.8138731)
+\psline[linewidth=0.02cm](3.13,0.81640625)(3.1273904,-1.279247)
+\psline[linewidth=0.02cm](0.10143557,1.2609191)(2.677602,0.6714803)
+\psline[linewidth=0.02cm](0.10143557,0.8731075)(2.677602,0.28366867)
+\psline[linewidth=0.02cm](0.10143557,0.4465147)(2.677602,-0.14292414)
+\psline[linewidth=0.02cm](0.10143557,0.019921906)(2.677602,-0.56951696)
+\psline[linewidth=0.02cm](0.12289625,-0.38728032)(2.6990628,-0.97671914)
+\psline[linewidth=0.02cm](0.10143557,-0.8138731)(2.677602,-1.403312)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.01,-1.0435938)(2.61,-1.6435938)
+\usefont{T1}{ppl}{m}{n}
+\rput(1.0945313,-1.6535938){\LARGE$5l$}
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.81,-1.6035937)(4.81,-1.0035938)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.9545312,-1.5735937){\LARGE$ 5b$}
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.03,1.2764063)(5.01,-0.7835938)
+\usefont{T1}{ppl}{m}{n}
+\rput(5.434531,0.22640625){\LARGE$5h$}
+\psline[linewidth=0.02cm](0.97357035,1.4960438)(3.5497367,0.90660495)
+\psline[linewidth=0.02cm](3.53,0.9164063)(3.5473905,-1.159247)
+\psline[linewidth=0.02cm](1.3935704,1.6160438)(3.9697368,1.026605)
+\psline[linewidth=0.02cm](3.95,1.0364063)(3.9473903,-1.039247)
+\psline[linewidth=0.02cm](2.67,-1.4035938)(4.7989297,-0.7675243)
+\psline[linewidth=0.02cm](2.2335703,1.8560438)(4.8097367,1.266605)
+\psline[linewidth=0.02cm](4.79,1.2764063)(4.78739,-0.7792471)
+\psline[linewidth=0.02cm](1.8135704,1.7360438)(4.3897367,1.146605)
+\psline[linewidth=0.02cm](4.3873906,1.1743263)(4.39,-0.88359374)
+\psline[linewidth=0.02cm](2.67,0.67640626)(4.79,1.2564063)
+\psline[linewidth=0.02cm](2.69,-0.9635937)(4.79,-0.36359376)
+\psline[linewidth=0.02cm](2.67,-0.56359375)(4.79,0.05640625)
+\psline[linewidth=0.02cm](2.69,-0.14359374)(4.77,0.45640624)
+\psline[linewidth=0.02cm](2.69,0.27640626)(4.77,0.89640623)
+\psline[linewidth=0.02cm](0.11,1.2764063)(2.23,1.8564062)
+\psline[linewidth=0.02cm](0.61,1.1364063)(2.77,1.7364062)
+\psline[linewidth=0.02cm](1.15,1.0164063)(3.31,1.6164062)
+\psline[linewidth=0.02cm](1.67,0.89640623)(3.83,1.4964062)
+\psline[linewidth=0.02cm](2.19,0.7764062)(4.37,1.3764062)
+\end{pspicture} 
+}
+\end{center}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_3
+    &= 5l \times 5b \times 5h \\
+    &= 5^3(lbh) \\
+    &= 5^3V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    O_3
+    &= 2[(5l\times 5h) + (5l \times 5b)+ (5b \times 5h)]\\
+    &= 2(5^2 lh + 5^2 lb +  5^2 bh) \\
+    &= 5^2 \times 2(lh + lb + bh) \\
+    &= 5^2 O
+  \end{array}
+\end{equation*}
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+% \end{minipage}
+
+
+% \hspace*{-50pt}
+% \begin{minipage}[h]{1\textwidth}
+\begin{table}[H]
+\begin{center}
+ \hspace*{-30pt}
+
+
+\begin{tabular}{|m{4.3cm}|c|c|}
+\hline
+\textbf{Afmetings} & 
+\textbf{Volume} & 
+\textbf{Buite-oppervlak} \\ \hline
+Vermenigvuldig al drie afmetings met $k$ 
+\begin{center}
+\scalebox{0.65} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8990625)(6.586406,1.8690625)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.1835704,1.3987)(3.7597368,0.8092612)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.7630085,1.0308884)(1.7630085,-1.0632944)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.2264917,1.1472318)(1.2264917,-0.946951)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.71143556,1.2829659)(0.71143556,-0.81121683)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.71143556,1.2635753)(3.287602,0.6741366)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.71143556,0.8757638)(3.287602,0.28632492)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.71143556,0.44917095)(3.287602,-0.1402679)
+\psline[linewidth=0.02cm](2.28,-0.3409375)(3.287602,-0.56686074)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.73289627,0.015375933)(2.3,-0.3409375)
+\psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.84093744)(3.1,-1.5809375)
+\usefont{T1}{ppl}{m}{n}
+\rput(1.5356251,-1.5909375){\LARGE $kl$}
+\psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.54,-1.5409374)(6.14,-0.74093753)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.855625,-1.4509375){\LARGE $kb$}
+\psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.62,1.6790625)(5.62,-0.6409375)
+\usefont{T1}{ppl}{m}{n}
+\rput(5.975625,0.6890625){\LARGE $kh$}
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.5835704,1.4987)(4.1597366,0.90926117)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.0035703,1.6187001)(4.5797367,1.0292612)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.56,1.0390625)(4.55739,-1.0365908)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.8435705,1.8587002)(5.419737,1.2692612)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](5.4,1.2790625)(5.3973904,-0.7765908)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.4235704,1.7387002)(4.999737,1.1492612)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.9973903,1.1769825)(5.0,-0.8809375)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](3.28,0.6790625)(5.4,1.2590624)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.14,-0.72093743)(5.4,-0.3209375)
+\psline[linewidth=0.02cm](3.3,-0.96093756)(4.14,-0.72093743)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](3.3,-0.1409375)(5.38,0.4590625)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](3.3,0.2790625)(5.38,0.89906245)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.72,1.2790625)(2.84,1.8590626)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.22,1.1390624)(3.38,1.7390625)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.76,1.0190624)(3.92,1.6190624)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.28,0.89906245)(4.44,1.4990624)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.8,0.77906257)(4.98,1.3790624)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.12,-0.3209375)(5.38,0.0790625)
+\psline[linewidth=0.02cm](3.28,-0.5609375)(4.12,-0.3209375)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.12,-1.1609374)(5.38,-0.7609375)
+\psline[linewidth=0.02cm](3.28,-1.4009374)(4.12,-1.1609374)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](3.28,0.65906256)(3.28,-0.5809375)
+\psline[linewidth=0.02cm](3.28,-0.5809375)(3.28,-1.4009374)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](3.74,0.7990625)(3.74,-0.4409375)
+\psline[linewidth=0.02cm](3.74,-0.4409375)(3.74,-1.2609375)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.78,0.75906247)(2.78,-0.48093754)
+\psline[linewidth=0.02cm](2.78,-0.46093747)(2.78,-1.3009374)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.3,0.89906245)(2.3,-0.3409375)
+\psline[linewidth=0.02cm](2.3,-0.36093748)(2.3,-1.1809374)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.69289625,-0.36462408)(2.26,-0.72093743)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.69289625,-0.804624)(2.26,-1.1609374)
+\psline[linewidth=0.02cm](2.3,-0.74093753)(3.307602,-0.9668608)
+\psline[linewidth=0.02cm](2.28,-1.1809374)(3.287602,-1.4068607)
+\psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.16,0.9190625)(4.16,-0.3209375)
+\psline[linewidth=0.02cm](4.16,-0.3209375)(4.16,-1.1409374)
+\psline[linewidth=0.02cm](2.74,-0.20093751)(3.747602,-0.42686072)
+\psline[linewidth=0.02cm](3.16,-0.10093751)(4.167602,-0.32686073)
+\psline[linewidth=0.02cm](2.32,-0.3409375)(3.16,-0.1009375)
+\psline[linewidth=0.02cm](2.78,-0.44093752)(3.62,-0.2009375)
+\end{pspicture} 
+}
+\end{center}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_k
+    &= kl \times kb \times kh \\
+    &= k^3(lbh) \\
+    &= k^3V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    O_k
+    &= 2[(kl\times kh) + (kl \times kb)+ (kb \times kh)] \\
+    &= k^2 \times 2(lh+lb+bh) \\
+    &= k^2 O
+  \end{array}
+\end{equation*}
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+% \end{minipage}
+\vspace*{-30pt}
+\begin{wex}{Bereken nuwe buite-oppervlakte en volume van 'n kubus}
+ {
+\vspace{10pt}
+\begin{minipage}{\textwidth}
+Beskou 'n kubus met 'n hoogte van $4$ cm en 'n basis sylengte van $3$ cm.
+\vspace{10pt}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.2891959)(5.494142,1.2016168)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=130.79651](1.6473784,-0.0028731404)(1.2669724,1.0826066)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2356775,0.009498077)(1.27,1.0687643)
+\psline[linewidth=0.027999999](0.8591421,0.9536167)(2.5,1.1876167)(4.019142,0.9808309)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm](0.8815408,-0.6263833)(2.56,-0.31238326)(4.019142,-0.65638334)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.799142,0.21361668){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.399142,-1.0863833){$3$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.599142,-1.0263833){$3$ cm}
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](2.52,1.1676167)(2.54,-0.33238328)
+\end{pspicture} 
+}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Bereken die oorspronklike buite-oppervlakte en volume.
+\item Bereken die nuwe buite-oppervlakte ($A_n$) en volume ($V_n$) as die lengte van 'n sy van die basis vermeeder word met 'n konstante faktor van $3$.
+\item Druk die nuwe buite-oppervlakte en volume uit as 'n faktor van die oorspronklike buite-oppervlakte en volume.
+\end{enumerate}
+\end{minipage} \vspace*{-20pt}
+}
+{
+\westep{Bereken die oorsponklike volume en buite-oppervlakte}
+\vspace*{-20pt}
+\begin{align*}
+V&=l\times b\times h\\
+&=3\times3\times4\\
+&= 36\mbox{ cm}^3
+\end{align*}
+\begin{align*}
+A &= 2[(l \times h) + (l \times b) + (b \times h)]\\
+&= 2[(3 \times 4) + (3 \times 3) + (3 \times 4)]\\
+&= 66 \mbox{ cm}^2
+\end{align*}
+\westep{Bereken die nuwe volume en buite-oppervlakte}
+Twee van die afmetings word vermeeder met 'n faktor van $3$.
+\begin{align*}
+V_n&=3l\times 3b \times h\\
+&=3.3\times3\times4\\
+&= 324\mbox{ cm}^3
+\end{align*}
+\begin{align*}
+A_n &= 2[(3l \times h) + (3l \times 3b) + (3b \times h)]\\
+&= 2[(3.3 \times 4) + (3.3 \times 3.3) + (3.3 \times 4)]\\
+&= 306 \mbox{ cm}^2
+\end{align*}
+\westep{Druk die nuwe volume en buite-oppervlakte uit as 'n faktor van die oorspronklike volume en buite-oppervlakte}
+\begin{align*}
+V&=36\\
+V_n&= 324\\
+\dfrac{V_n}{V} &=\dfrac{324}{36}\\
+&=9\\
+\therefore V_n&=9V\\
+&=3^2 V
+\end{align*}
+\vspace{-20pt}
+\begin{align*}
+A &= 66 \\
+A_n&= 306\\
+\dfrac{A_n}{A} &=\dfrac{306}{66}\\
+\therefore A_n&= \dfrac{306}{66}A\\
+&=\frac{51}{11}A\\
+
+\end{align*}
+\vspace{-40pt}
+}
+\end{wex}
+
+% Ons kan hierdie resultaat in algemene terme uitdruk wanneer ons vermenigvuldig met 'n faktor van $k$.
+
+\begin{wex}{Vermenigvuldig 'n afmeting van 'n reghoekige prisma met 'n faktor $k$}
+ {
+Bewys dat as die hoogte van 'n reghoekige prisma (met afmetings $l$,$b$ en $h$) met 'n konstante faktor $k$ vermenigvuldig word, sal die volume ook vermenigvuldig word met $k$.
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1364063)(4.0990624,1.1164062)
+\psline[linewidth=0.04cm](0.02,0.8564063)(0.02,-0.02359375)
+\psline[linewidth=0.04cm](0.0,0.83640623)(2.32,0.27640626)
+\psline[linewidth=0.04cm](2.2794049,-0.5718663)(3.1088746,-0.30507085)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.01770038,0.004156353)(0.84,0.31640625)
+\psline[linewidth=0.04cm](0.009931098,0.8281822)(0.83940095,1.0949776)
+\psline[linewidth=0.04cm](2.293427,0.2667113)(3.1228967,0.5335067)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,0.29640624)(3.0943224,-0.3008174)
+\psline[linewidth=0.04cm](0.0,-0.00359375)(2.2848525,-0.5676128)
+\psline[linewidth=0.04cm](0.8,1.0964062)(3.126553,0.5432085)
+\psline[linewidth=0.04cm](2.3,0.29640624)(2.2994049,-0.5718663)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,1.0764062)(0.84,0.31640625)
+\psline[linewidth=0.04cm](3.1,0.5364063)(3.1,-0.32359374)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.04,-0.26359376)(1.94,-0.76359373)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.52,-0.7235938)(3.08,-0.5235937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.32,0.47640625)(3.32,-0.26359376)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.8045313,-0.73359376){$l$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.9245312,-0.93359375){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.7245312,0.14640625){$h$}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Bereken die oorspronklike volume}
+Ons word oorspronklike afmetings $l$, $b$ en $h$ gegee dus die oorspronklike volume is $V = l \times b \times h$.
+\westep{Bereken die nuwe volume}
+Die nuwe afmetings is $l$, $b$, en $kh$ en dus is die nuwe volume
+\begin{align*}
+V_n &= l \times b \times (kh)\\
+& = k(lbh)\\
+&= kV
+\end{align*}
+\westep{Skryf die finale antwoord}
+As die hoogte van 'n reghoekige prisma vermenigvuldig word met 'n faktor $k$, sal die volume ook vermeigvuldig word met $k$.
+
+}
+\end{wex}
+
+\begin{wex}{Vermenigvuldig 'n afmeting van 'n silinder met faktor $k$}
+{Beskou 'n silinder met radius $r$ en hoogte $h$. Bereken die nuwe volume en buite-oppervlakte (uitgedruk in terme van $r$ en $h$) as die radius vermenigvuldig word met 'n konstante faktor van $k$.
+\begin{center}
+\begin{pspicture}(0,-1.6)(3.5434375,1.6) 
+\psellipse[linewidth=0.04,dimen=outer](1.29,-1.09)(1.27,0.51) 
+\psellipse[linewidth=0.04,dimen=outer](1.27,1.09)(1.27,0.51) 
+\psline[linewidth=0.04cm](0.04,-1.1)(0.02,1.14) 
+\psline[linewidth=0.04cm](2.54,1.12)(2.56,-1.1) 
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.3, -1.1)(2.52,-1.1) 
+\rput(1.7,-0.95){$r$} 
+\rput(2.9,0.25){$h$} 
+\end{pspicture} 
+\end{center}
+\vspace*{-20pt}
+}
+
+{
+\westep{Bereken die oorspronklike volume en buite-oppervlakte}
+\begin{align*}
+ V&= \pi r^2 \times h\\
+A&= \pi r^2 + 2\pi rh
+\end{align*}
+\westep{Bereken die nuwe volume en buite-oppervlakte}
+Die nuwe afmetings is $kr$ en $h$.
+\begin{align*}
+ V_n&= \pi (kr)^{2} \times h\\
+&= \pi k^{2}r^{2} \times h\\
+&=k^{2} \times \pi r^{2} h\\
+&= k^{2}V
+\end{align*}
+\begin{align*}
+A_n&= \pi (kr)^{2} + 2\pi (kr)h\\
+&= \pi k^{2}r^{2} +2\pi krh\\
+&= k^2(\pi r^2) + k(2\pi rh) 
+\end{align*}
+}
+\end{wex}
+
+\begin{exercises}{}
+ {
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item As die hoogte van 'n prisma verdubbel, met hoeveel sal die volume toeneem?
+\item Beskryf die verandering in die volume van 'n reghoekige prisma as:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item die lengte en die breedte vermeeder met 'n konstante faktor van $3$.
+\item lengte, breedte en hoogte vermenigvuldig work met 'n konstante faktor van $2$.
+\end{enumerate}
+\item Gegewe 'n prisma met 'n volume van $493$ cm$^{3}$ en 'n buite-oppervlakte van $6~007$ cm$^{2}$, 
+vind die nuwe buite-oppervlakte en volume vir die prisma as al die afmetings vermeeder word met 'n konstante faktor van $4$. 
+\end{enumerate}
+
+}
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02pj	&
+% Question 2
+(2.)	02pk	&
+% Question 3
+(3.)	02pm	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+\end{exercises}
+
+\summary{VMdml}
+\begin{itemize}[noitemsep]
+ \item Oppervlakte is die twee-dimensionele spasie binne die grense van 'n plat voorwerp, gemeet in vierkante eenhede.
+\item Oppervlakte formules:
+\begin{itemize}[noitemsep]
+\item vierkantige $= s^2$
+\item reghoek $= b \times h$
+\item driehoek $= \frac{1}{2} b \times h$
+\item trapesium $= \frac{1}{2} (a+b) \times h$
+\item parallelogram $= b \times h$
+\item sirkel $= \pi r^2$
+\end{itemize}
+\item Buite-oppervlakte is die totale van die buite of sigbare oppervlaktes van 'n prisma.
+\item 'n Ontvouing is die oopgevoude 'plan' van 'n vaste liggaam.
+\item Volume is die drie-dimensionele spasie wat ingeneem word deur 'n voorwerp, of die inhoud van 'n voorwerp. Dit word gemeet in kubieke eenhede.
+\item Volume formules:
+\begin{itemize}[noitemsep]
+\item kubus $=l \times b \times h$
+\item driekhoekige prism $= (\frac{1}{2} b \times h) \times H$
+\item vierkantige prisma of kubus $=s^3$
+\item silinder$=\pi r^2 \times h$
+\end{itemize}
+%english
+\item ’n Piramide is ’n soliede geometriese figuur met ’n veelhoekbasis wat verbind is aan
+die toppunt waar die syvlakke ontmoet. (met ander woorde die sye is nie loodreg op
+die basis nie).
+
+\item Totale buite-oppervlakte formules:
+\begin{itemize}[noitemsep]
+\item vierkant piramide $=b(b+2h)$
+\item driehoekige piramide $= \frac{1}{2}b(h_b +3h_s)$
+\item keël $= \pi r(r+h_s)$
+\item sfeer $= 4\pi r^2$
+\end{itemize}
+\item Volume formules:
+\begin{itemize}[noitemsep]
+\item vierkantige piramide $=\frac{1}{3} \times b^2 \times H$
+\item driehoekige piramide $= \frac{1}{3} \times \frac{1}{2}bh \times H$
+\item keël $= \frac{1}{3} \times \pi r^2 \times H$
+\item sfeer $= \frac{1}{3} \times 4\pi r^2$
+\end{itemize}
+\item Vermenigvuldiging van een of meer afmetings van 'n prisma of silinder met 'n konstante $k$, be\"invloed die buite-oppervlakte en volume.
+
+\clearpage
+\begin{eocexercises}{}
+\vspace{20pt}
+
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Beskou die vaste liggame hieronder en beantwoord die vrae wat volg (korrek tot $1$ desimale plek waar nodig):\\
+\begin{center}
+    \scalebox{0.8}{% Change this value to rescale the drawing.
+      \begin{pspicture}(0,-3.9464064)(10.693593,3.9264061)
+        \psline[linewidth=0.04cm](0.75328124,-3.513594)(1.7532812,-2.533594)
+        \psline[linewidth=0.04cm](3.753281,-3.493594)(4.733281,-2.533594)
+        \psline[linewidth=0.04cm](0.7732813,-3.513594)(3.753281,-3.493594)
+        \psline[linewidth=0.04cm](1.7532812,-2.513594)(4.733281,-2.513594)
+        \psline[linewidth=0.04cm](4.753281,-1.4735942)(4.733281,-2.573594)
+        \psline[linewidth=0.04cm](1.7532812,-1.493594)(1.7732812,-2.513594)
+        \psline[linewidth=0.04cm](1.7732812,-1.513594)(4.753281,-1.493594)
+        \psline[linewidth=0.04cm](3.753281,-2.433594)(3.753281,-3.493594)
+        \psline[linewidth=0.04cm](0.75328124,-2.473594)(0.75328124,-3.533594)
+        \psline[linewidth=0.04cm](0.75328124,-2.4535937)(3.7332811,-2.4535937)
+        \psline[linewidth=0.04cm](0.7732813,-2.4535937)(1.7532812,-1.513594)
+        \psline[linewidth=0.04cm](3.753281,-2.4535937)(4.733281,-1.513594)
+        % \usefont{T1}{ptm}{m}{n}
+        % \rput(1.3409375,-0.818594){\textbf{1.}}%number for box
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(2.1515625,-3.7435937){$5$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(4.7346873,-3.1435938){$4$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(5.2,-2.043594){$2$ cm}
+        \psellipse[linewidth=0.04,dimen=outer](2.203281,1.1064061)(0.99,0.38)
+        \psellipse[linewidth=0.04,dimen=outer](2.203281,2.446406)(0.99,0.38)
+        \psline[linewidth=0.04cm](1.233281,2.4064062)(1.233281,1.1464062)
+        \psline[linewidth=0.04cm](3.173282,2.446406)(3.173282,1.1264061)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.233281,1.086406)(3.153281,1.1064061)
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(2.197657,1.2364061){$4$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(3.75,1.8564061){$10$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        % \rput(0.96203125,3.2814062){\textbf{3.}}%number for cylinder
+        \pstriangle[linewidth=0.04,dimen=outer](7.083281,0.76640624)(2.18,1.72)
+        \psline[linewidth=0.04cm](7.0732813,2.466406)(9.433281,3.886406)
+        \psline[linewidth=0.04cm](6.0532813,0.80640626)(9.233281,2.8864062)
+        \psline[linewidth=0.04cm](9.433281,3.9064062)(10.653281,2.566406)
+        \psline[linewidth=0.04cm](8.133282,0.7864063)(10.653281,2.5664062)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](7.0732813,2.4264064)(7.0532813,0.7864063)
+        % \usefont{T1}{ptm}{m}{n}
+        % \rput(6.3378124,3.4014063){\textbf{2.}}%number for prism
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(9.888594,1.4764062){$20$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(7.591875,1.2892188){$3$ cm}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput(7.0415626,0.51640624){$8$ cm}
+        \psline[linewidth=0.04cm](9.433281,3.9064062)(9.233281,2.8664062)
+        \psline[linewidth=0.04cm](10.653281,2.5664062)(9.193281,2.8664062)
+        % \usefont{T1}{ptm}{m}{n}
+        \rput{58.291424}(4.633092,-4.489355){\rput(6.311875,1.9092188){$5$ cm}}
+      \end{pspicture} 
+    }
+  \end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Bereken die buite-oppervlakte van elke vaste liggaam.
+\item Bereken die volume van elke voorwerp.
+\item As elke afmeting van die voorwerpe vermeerder met 'n faktor van $3$, bereken die nuwe buite-oppervlakte van elk.
+\item As elke afmeting van die voorwerpe vermeerder met 'n faktor van  $3$, bereken die nuwe volume van elk.
+ \end{enumerate}
+\item 
+Beskou die vaste (soliede) liggame hieronder:
+ \begin{center}
+    \scalebox{0.7}{% Change this value to rescale the drawing.
+      \begin{pspicture}(0,-5.4207597)(13.96,5.741175)
+        \definecolor{color3715b}{rgb}{0.996078431372549,0.996078431372549,0.996078431372549}
+        \psline[linewidth=0.028222222](1.5205463,1.1100069)(3.6089423,5.727064)(5.826165,1.0025685)
+        \psline[linewidth=0.04,linestyle=dotted,dotsep=0.16cm](3.6189375,5.6354227)(3.536479,0.9065488)(5.762867,0.8787319)(5.762867,1.0178165)(5.735381,1.0178165)
+        % \usefont{T1}{ppl}{m}{n}
+        \rput(4.409931,3.5911753){\Large $10$ cm}
+        \psbezier[linewidth=0.027999999](1.5803465,1.2359936)(1.274511,0.5430677)(2.1971436,-0.3388383)(3.3043027,-0.40183172)(4.4114614,-0.46482512)(5.826165,0.039121386)(5.826165,1.0470136)
+        \psbezier[linewidth=0.022,linestyle=dashed,dash=0.16cm 0.16cm](5.826165,0.9840206)(5.457112,1.55096)(4.7805147,1.9310416)(3.888852,1.9614773)(2.9971886,1.991913)(2.2586524,1.9289197)(1.5205463,1.0470136)
+        \psframe[linewidth=0.04,dimen=outer](3.9003997,1.3011752)(3.5004,0.9011754)
+        % \usefont{T1}{ppl}{m}{n}
+        \rput(4.809931,1.1911753){\Large $3$ cm}
+        % \usefont{T1}{ppl}{m}{n}
+        % \rput(1.5420313,5.5008936){\textbf{1.}}
+        % \usefont{T1}{ppl}{m}{n}
+        % \rput(8.442031,5.5008936){\textbf{2.}}
+        % \usefont{T1}{ppl}{m}{n}
+        % \rput(0.96203125,-2.3191063){\textbf{3.}}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput{0.6029805}(0.004622919,-0.1373882){\rput(13.026947,0.3702635){\Large$15$ cm}}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput{-1.0300905}(-0.006498412,0.16914946){\rput(9.374943,0.4457077){\Large$15$ cm}}
+        % \usefont{T1}{ptm}{m}{n}
+        \rput{90.771416}(14.2,-7.43){\rput(10.82,3.3058937){\Large $12$ cm}}
+        \psline[linewidth=0.04cm](13.92,1.7008936)(11.12,5.5208936)
+        \psline[linewidth=0.04cm](11.28,-0.1791063)(11.12,5.5408936)
+        \psline[linewidth=0.04cm](11.12,5.5408936)(8.4,1.8008937)
+        \psline[linewidth=0.04cm](8.42,1.8008937)(11.16,3.5608938)
+        \psline[linewidth=0.04cm](11.14,3.5608938)(13.94,1.6808937)
+        \psline[linewidth=0.04cm](8.38,1.8008937)(11.28,-0.1991063)
+        \psline[linewidth=0.04cm](11.28,-0.1991063)(13.94,1.6808937)
+        \psdots[dotsize=0.12](11.0,1.8408937)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.02,1.8608937)(11.1,5.4208937)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
+        \psline[linewidth=0.04cm](10.78,1.9808937)(10.78,2.3408937)
+        \psline[linewidth=0.04cm](10.76,2.3408937)(11.04,2.1408937)
+        \rput{14.5046}(-0.70283186,-0.89219034){\pswedge[linewidth=0.04](3.1540546,-3.2075646){2.0675611}{178.8065}{0.0}}
+        \rput{13.78588}(-0.6714317,-0.8455882){\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color3715b](3.1616797,-3.1998694)(2.0922363,0.47717163)}
+        \psdots[dotsize=0.12](3.1473527,-3.2047362)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.1332812,-3.2387989)(5.147353,-2.7047362)
+        % \usefont{T1}{ptm}{m}{n}
+        \rput{14.285164}(-0.57707244,-0.95){\rput(3.9257896,-2.8347287){\Large$4$ cm}}
+      \end{pspicture} 
+    }
+  \end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{4}
+ \item Bereken die buite-oppervlaktes van die soliede liggame.
+\item Bereken die volumes van die soliede liggame.
+
+\end{enumerate}
+
+% \setcounter{enumi}{6}
+\item Bereken die volume en buite-oppervlakte van die volgende soliede liggaam (korrek tot $1$ desimale plek):
+
+\begin{center}
+    \scalebox{1}{% Change this value to rescale the drawing.
+      \begin{pspicture}(0,-1.4992187)(4.081249,1.5192188)
+        \psellipse[linewidth=0.02,dimen=outer](2.2743747,-1.1192187)(0.99,0.38)
+        \psellipse[linewidth=0.02,dimen=outer](2.2743747,0.22078115)(0.99,0.38)
+        \psline[linewidth=0.02cm](1.3043747,0.18078145)(1.3043747,-1.0792186)
+        \psline[linewidth=0.02cm](3.2443757,0.22078115)(3.2443757,-1.0992187)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2.3043747,-1.1392188)(3.2243748,-1.1192187)
+        % \usefont{T1}{ppl}{m}{n}
+        \rput(2.518282,-0.96921873){\small $40$ cm}
+        % \usefont{T1}{ppl}{m}{n}
+        \rput(3.8,-0.44921875){\small$50$ cm}
+        \psline[linewidth=0.02](1.31,0.27921876)(2.33,1.4992187)(3.23,0.29921874)(3.23,0.27921876)(3.23,0.27921876)
+        \psline[linewidth=0.027999999](0.93,1.4592187)(0.67,1.4592187)(0.67,0.29921874)(0.93,0.29921874)
+        % \usefont{T1}{ppl}{m}{n}
+        \rput(0.1,0.88921875){\small$30$ cm}
+      \end{pspicture} 
+    }
+  \end{center}
+\end{enumerate}
+}
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02pn	&
+% Question 2
+(2.)	02pp	&
+% Question 3
+(3.)	02pq	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+\end{eocexercises}
+

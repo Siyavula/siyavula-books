@@ -1,0 +1,617 @@
+\chapter{Eksponensiale}\fancyfoot[LO,RE]{Fokus Area: Wiskunde}
+\setcounter{figure}{1}
+\setcounter{subfigure}{1}
+
+Eksponensiaalnotasie is ’n kort manier om te skryf dat ’n getal meermale met homself vermenigvuldig word. Laat ons beter definieer hoe om eksponensiaalnotasie te gebruik.
+
+%  \begin{Large}
+% \begin{center}
+% $ _{\mbox{grondtal}~\leftarrow} $\begin{Large} $ ~a^{n~\rightarrow~$ \end{Large}$\mbox{eksponent / indeks}} $
+% \end{center}
+%  \end{Large}
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.27015626)(5.1884375,0.27015626)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0,-0.11328125){grondtal}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.5,-0.07828125){\Large $a^n$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.85,0.06671875){eksponent/indeks}
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.2871875,-0.15)(0.7871875,-0.15)
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.8071876,0.03671875)(2.3471875,0.03671875)
+\end{pspicture} 
+}
+\end{center}
+Vir enige re\"ele getal $a$ en natuurlike getal $n$, kan ons $a$ wat $n$ keer vermenigvuldig word met homself skryf as $a^n$.
+
+ 
+\Identity{
+\vspace*{-3em}
+\begin{flushleft}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
+ \item $a^n = a \times a \times a \times \ldots \times a ~~ (n ~ \mbox{keer}) ~~~~ (a \in \mathbb{R}, n \in \mathbb{N})$
+ \item $ a^0 = 1 \hspace{1cm}$  ($a \ne 0 $ want $0^0$ is ongedefinieer)
+ \item $a^{-n} &=& \frac{1}{a^n}\hspace{0.5cm}$ ($a \ne 0 $ want $\frac{1}{0}$ is ongedefinieer)
+\end{enumerate}
+\end{flushleft}
+}
+
+
+Voorbeelde:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*.}]
+\item $3 \times 3 = 3^2$
+\item $5 \times 5 \times 5 \times 5 = 5^4 $
+\item $p \times p \times p = p^3$
+\item $(3^x)^0 = 1$
+\item $ 2^{-4} = \dfrac{1}{2^4} = \frac{1}{16}$
+\item $ \dfrac{1}{5^{-x}} = 5^x$
+\end{enumerate}
+
+% We now expand the definition to include 0 and the negative integers.
+% 
+% If exponent $n$ is 0, then we have 
+% 
+% 
+% 
+% \Tip{The restriction applies because $0^0$ is undefined }
+% 
+% We also define what it means if we have a negative exponent $a^{-n}$.
+% \begin{eqnarray*}
+%     a^{-n} &=& \frac{1}{a^n} \\
+%            &=& \frac{1}{a \times a \times a \times \ldots \times a ~~ (n ~ \textrm{times})} 
+% \end{eqnarray*}
+% 
+% 
+% \Tip{Here $a$ cannot equal 0 because $\frac{1}{0}$ is undefined}      
+      
+\textbf{Nota:} Ons skryf altyd die finale antwoord met positiewe eksponente.
+
+
+% If exponent $n$ is an even integer, then ${a}^{n}$ will always be positive for any non-zero real number $a$. 
+% 
+% For example, although $-3$ is negative, but $(-3)^2=-3 \times -3 = 9$ which is positive and $(-3)^{-2} = \frac{1}{-3 \times -3} = \frac{1}{9} $ is also positive.
+% 
+% If the exponent $n$ is an odd integer, then for any non-zero real number $a$ 
+% 
+% \begin{eqnarray*}
+% a^n ~~ \mbox{is positive if} ~~ a > 0 \\
+% a^n ~~ \mbox{is negative if} ~~ a < 0
+% \end{eqnarray*}
+% 
+% For example, $(-2)^3 = -2 \times -2 \times -2 = -8$ and $(2)^{-5} = \dfrac{1}{2 \times 2 \times 2 \times 2 \times 2} = \dfrac{1}{32}$.
+
+\par
+\chapterstartvideo{VMald}  
+    
+
+
+\section {Eksponentwette}
+\nopagebreak
+
+Daar is 'n aantal eksponentwette wat ons kan gebruik om getalle met eksponente te vereenvoudig. Sommige
+van hierdie wette het ons reeds in vorige grade teëgekom, maar hier is die volledige lys:
+
+\Identity{
+\vspace*{-3em}
+\begin{center}
+\begin{itemize}
+
+% \begin{align*}
+  \item $a^{m} \times a^{n} = a^{m+n}$ 
+  \item $\frac{a^{m}}{a^{n}} = a^{m-n}$ 
+  \item ${(ab)}^{n} = a^{n}b^{n}$ 
+  \item $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ 
+  \item ${({a}^{m})}^{n} = a^{mn}$
+% \end{align*}
+
+\end{itemize}
+\end{center}
+waar $a > 0, b > 0$ en $m,n \in \mathbb{Z}$
+}
+
+
+
+\begin{wex}
+{ %title
+Toepassing van eksponentwette
+}
+{%question
+Vereenvoudig:\\
+\\
+\begin{minipage}{\textwidth}
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+\item  $2^{3x} \times 2^{4x}$
+\item $\frac{12p^2t^5}{3pt^3}$
+\item $ (3x)^2 $
+\item $(3^4 5^2)^3$
+\end{enumerate}
+\end{minipage}
+}
+{%answer
+\begin{minipage}{\textwidth}
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
+\item  $2^{3x} \times 2^{4x} = 2^{3x+4x} = 2^{7x}$
+ \item $\dfrac{12p^2t^5}{3pt^3} = 4p^{(2-1)}t^{(5-3)} = 4pt^2$
+ \item $ (3x)^2 = 3^2x^2 = 9x^2$
+ \item $(3^4\times5^2)^3 = 3^{(4\times3)}\times5^{(2\times3)} = 3^{12}\times5^6 $
+\end{enumerate}
+\end{minipage}
+}
+\end{wex}
+
+
+\begin{wex}
+{
+Eksponentuitdrukkings
+}
+{
+Vereenvoudig: $\dfrac{2^{2n} \times 4^n \times 2}{16^n}$
+}
+{
+
+\westep{Verander grondtalle na priemgetalle}
+\begin{equation*}
+  \dfrac{2^{2n} \times 4^n \times 2}{16^n} = \dfrac{2^{2n} \times (2^2)^n \times 2^1}{(2^4)^n} 
+\end{equation*}
+\westep{Vereenvoudig die eksponente}
+\begin{align*}
+  &= \dfrac{2^{2n} \times 2^{2n} \times 2^1}{2^{4n}} \\
+  &= \dfrac{2^{2n + 2n +1}}{2^{4n}} \\
+  &= \dfrac{2^{4n+1}}{2^{4n}} \\
+  &= 2^{4n+1-(4n)} \\
+  &= 2
+\end{align*}
+}
+\end{wex}
+
+
+     \clearpage
+\begin{wex}{Eksponentuitdrukkings}
+{Vereenvoudig: $\dfrac{{5}^{2x-1}{9}^{x-2}}{{15}^{2x-3}}$}
+{
+
+\westep{Verander grondgetalle na priemgetalle}
+\begin{equation*}
+\begin{array}{lcl} \dfrac{{5}^{2x-1}  {9}^{x-2}}{{15}^{2x-3}}& =& \dfrac{{5}^{2x-1}  {({3}^{2})}^{x-2}}{{(5\times3)}^{2x-3}}\hfill \vspace{5pt}\\
+		  & =& \dfrac{{5}^{2x-1}  {3}^{2x-4}}{{5}^{2x-3}  {3}^{2x-3}}\hfill 
+\end{array}
+\end{equation*}
+\westep{Trek eksponente af (dieselfde grondtal)}
+\begin{equation*}
+\begin{array}{lcl}
+& =& {5}^{(2x-1)-(2x-3)} \times {3}^{(2x-4)-(2x-3)}\hfill \\ 
+& =& 5^{2x-1-2x+3} \times 3^{2x-4 - 2x+3} \\
+& =& {5}^{2} \times {3}^{-1}\hfill \end{array}
+\end{equation*}
+\westep{Skryf die antwoord as 'n breuk}  
+\begin{align*}
+  &= \frac{25}{3} \\
+  &= 8\frac{1}{3}
+\end{align*}
+}
+\end{wex}
+
+\textbf{Nota:} Wanneer ons met eksponentuitdrukkings werk, geld al die re\"els vir algebrai\"ese bewerkings nog steeds.
+
+\begin{wex}{Vereenvoudig deur die uithaal van 'n gemene faktor}
+{Vereenvoudig: $\dfrac{2^t-2^{t-2}}{3 \times 2^t - 2^t}$}
+{
+\westep{Vereenvoudig tot 'n faktoriseerbare vorm}
+\begin{equation*}
+  \dfrac{2^t-2^{t-2}}{3 \times 2^t-2^t} =
+  \dfrac{2^t-(2^t \times 2^{-2})}{3 \times 2^t - 2^t}
+\end{equation*}
+\westep{Haal die gemeenskaplike faktor uit}
+\begin{equation*}
+  \phantom{\frac{2^t-2^{t-2}}{3 \times 2^t-2^t}} = \frac{2^t(1-2^{-2})}{2^t(3-1)}
+\end{equation*}
+\westep{Kanselleer die gemeenskaplike faktor en vereenvoudig}
+\begin{align*}
+  \phantom{\frac{2^t-2^{t-2}}{3.2^t-2^t}}
+  &= \dfrac{1- \frac{1}{4}}{2} \\
+  &= \dfrac{\frac{3}{4}}{2} \\
+  &= \dfrac{3}{8} 
+\end{align*}
+} 
+\end{wex}
+
+\clearpage
+\begin{wex}
+{Vereenvoudig met die gebruik van die verskil van twee kwadrate}
+{Vereenvoudig: $\dfrac{9^x-1}{3^x+1}$}
+{
+\westep{Verander grondtalle na priemgetalle}
+\begin{eqnarray*}
+ \frac{9^x-1}{3^x+1} & = & \frac{(3^2)^x -1}{3^x+1} \\
+		     & = & \frac{(3^x)^2-1}{3^x+1} 
+\end{eqnarray*}
+\westep{Faktoriseer deur die verskil van twee vierkante te gebruik}
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & \frac{(3^x-1)(3^x+1)}{3^x+1}\\
+\end{eqnarray*}
+\westep{Vereenvoudig}
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & 3^x-1\\
+\end{eqnarray*}
+}
+\end{wex}
+
+
+\begin{exercises}{Vereenvoudig eksponentuitdrukkings}
+{
+Vereenvoudig sonder om ’n sakrekenaar te gebruik:
+\begin{multicols}{2}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}., itemsep=5pt]
+ \item $16^0$
+ \item $16a^0$
+ \item $\dfrac{2^{-2}}{3^2}$
+ \item $ \dfrac{5}{2^{-3}}$
+ \item $ \left(\dfrac{2}{3}\right)^{-3} $
+ \item $ x^2 x^{3t+1} $
+ \item $ 3 \times 3^{2a} \times 3^2$
+ \item $ \dfrac{a^{3x}}{a^x} $
+ \item $ \dfrac{32p^2}{4p^8}$
+ \item $ (2t^4)^3$
+ \item $ (3^{n+3})^2$
+ \item $ \dfrac{3^n 9^{n-3}}{27^{n-1}}$
+\end{enumerate}
+\end{multicols}
+
+ 
+% Automatically inserted shortcodes - number to insert 1
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.-12.)	02kc	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 1
+
+}
+\end{exercises}
+
+
+
+
+\section{Rasionale eksponente}
+
+Ons kan ook die eksponentwette toepas op uitdrukkings met rasionale eksponente.
+\par
+\mindsetvid{Fractions with exponents}{VMaln}
+\clearpage
+\begin{wex}{Vereenvoudig rasionale eksponente }
+{Vereenvoudig: $2x^{\frac{1}{2}}\times 4x^{-\frac{1}{2}}$}
+{
+\begin{eqnarray*}
+ 2x^{\frac{1}{2}} \times 4x^{-\frac{1}{2}} & = & 8x^{\frac{1}{2}-\frac{1}{2}} \\
+					  & = & 8x^0 \\
+					  & = & 8(1) \\
+					  & = & 8 
+\end{eqnarray*}
+}
+\end{wex}
+
+
+\begin{wex}{Vereenvoudig rasionale eksponente} 
+{Vereenvoudig: $(0,008)^{\frac{1}{3}}$}
+{% answer
+\westep{Skryf as 'n breuk en verander grondtalle na priemgetalle}
+
+\begin{eqnarray*}
+ 0,008 & = & \frac{8}{1~000} \\
+       & = & \frac{2^3}{10^3} \\
+       & = & \left(\frac{2}{10}\right)^3\\
+\end{eqnarray*}
+
+\westep{Dus}
+\begin{eqnarray*}
+ (0,008)^{\frac{1}{3}} & = & \left[\left(\frac{2}{10}\right)^3\right]^{\frac{1}{3}} \\
+		 & = & \frac{2}{10} \\
+		 & = & \frac{1}{5}
+\end{eqnarray*}
+}
+\end{wex}
+
+\begin{exercises}{Vereenvoudig rasionale eksponenete}
+{
+Vereenvoudig sonder om ’n sakrekenaar te gebruik:
+\begin{multicols}{2}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}., itemsep=5pt]
+ \item $ t^{\frac{1}{4}} \times 3t^{\frac{7}{4}} $
+ \item $ \dfrac{16x^2}{(4x^2)^{\frac{1}{2}}} $
+ \item $ (0,25)^{\frac{1}{2}} $
+ \item $ (27)^{-\frac{1}{3}} $
+ \item $ (3p^2)^{\frac{1}{2}} \times (3p^4)^{\frac{1}{2}} $
+\end{enumerate}
+\end{multicols}
+
+% Automatically inserted shortcodes - number to insert 1
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.-5.)	02kd	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 1
+}
+\end{exercises}
+
+
+
+
+
+
+
+\section{Eksponentvergelykings}
+
+Eksponentvergelykings het die onbekende veranderlike in die eksponent. Hier is voorbeelde:
+\begin{eqnarray*}
+ 3^{x+1} & = & 9 \\
+5^t + 3 \,.\, 5^{t-1} & = & 400
+\end{eqnarray*}
+
+Om eksponentvergelykings op te los, moet ons die eksponentwette toepas. Dit beteken dat as ons weerskante van die gelykaanteken 'n enkele term het met dieselfde grondtal, kan ons die eksponente gelykstel.
+\par
+\textbf{Nota:} Indien $a>0$ en $a \ne 0$ en
+\begin{center}
+ $ a^x &= a^y $ \\
+dan sal $ x &= y ~~\mbox{(dieselfde grondtal)}$\\
+\end{center}
+\par
+Indien $a=1$, dan kan $x$ en $y$ verskil.
+
+\begin{wex}{Stel eksponente gelyk}
+{Los op vir $x$: $3^{x+1} = 9$.}
+{%answer
+\westep{Verander grondtalle na priemgetalle}
+\begin{eqnarray*}
+ 3^{x+1} & = & 3^2 \\
+\end{eqnarray*}
+\westep{Grondtalle is dieselfde, dus kan ons eksponente gelykstel}
+\begin{eqnarray*}
+ {x+1} & = & 2 \\
+\therefore x & = & 1
+\end{eqnarray*}
+}
+\end{wex}
+
+\textbf{Nota:} Om eksponentvergelykings op te los, gebruik ons al die prosedures vir oplos van line\^ere en kwadratiese vergelykings.
+
+
+
+\begin{wex}
+{%title
+Oplos van vergelykings deur die uithaal van 'n gemene faktor
+}
+{%question
+Los op vir $t$: $5^t + 3 \times 5^{t+1} = 400$.}
+{%answer
+
+\westep{Herskryf die vergelyking}
+\begin{equation*}
+  5^t + 3 ( 5^t \times 5) = 400 
+\end{equation*}
+
+\westep{Haal 'n gemeenskaplike faktor uit}
+\begin{equation*}
+ 5^t(1 + 15) = 400 
+\end{equation*}
+
+
+\westep{Vereenvoudig}
+\begin{align*}
+ 5^t(16) &= 400 \\
+  5^t &= 25 
+\end{align*}
+
+
+
+\westep{Verander grondtalle na priemgetalle}
+\begin{equation*}
+  5^t = 5^2 
+\end{equation*}
+
+
+\westep{Grondtalle is dieselfde, dus kan ons eksponente gelykstel}
+\begin{equation*}
+\therefore t = 2
+\end{equation*}
+
+}
+\end{wex}
+
+\begin{wex}
+{Oplos van vergelykings deur die faktorisering van \\'n kwadratiese drieterm}
+{Los op: $ p-13 p^{\frac{1}{2}} + 36 =  0$.}
+{ % Answer
+
+\westep{Let op dat $(p^{\frac{1}{2}})^2=p$ so ons kan die vergelyking herskryf as}
+
+$$ (p^{\frac{1}{2}})^2 -13p^{\frac{1}{2}} + 36 = 0 $$
+
+\westep{Faktoriseer as 'n drieterm}
+
+$$ (p^{\frac{1}{2}} -9)(p^{\frac{1}{2}}-4) = 0 $$
+
+\westep{Los op om beide wortels te vind}
+
+%Left Column				%right column
+\begin{align*}
+p^{\frac{1}{2}} - 9 &= 0			&   p^{\frac{1}{2}} - 4 &= 0		\\
+p^{\frac{1}{2}} &= 9				&   p^{\frac{1}{2}} &= 4		\\		
+(p^{\frac{1}{2}})^2 &= (9)^2			&   (p^{\frac{1}{2}})^2 &= (4)^2\\
+p &= 81				&   p &= 16\\
+\end{align*} 
+$\therefore p=81$ of $p=16$.
+}
+\end{wex}
+\clearpage
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}., itemsep=5pt]
+\item Los op:
+\begin{enumerate}[label=\textbf{(\alph*)}, itemsep=5pt]
+\begin{multicols}{2}
+\item $ 2^{x+5} = 32 $
+\item $ 5^{2x+2} = \dfrac{1}{125} $
+\item $ 64^{y+1} = 16^{2y+5} $
+\item $ 3^{9x-2} = 27 $
+\item $ 81^{k+2} = 27^{k+4} $
+
+\item $ 25^{(1-2x)}-5^4 = 0 $
+\item $ 27^x \times 9^{x-2} = 1 $
+\item $ 2^t + 2^{t+2} = 40 $
+\item $ 2 \times 5^{2-x} = 5+ 5^x $
+\item $ 9^m + 3^{3-2m} = 28 $
+\item $ y - 2y^{\frac{1}{2}} + 1 = 0 $
+\item $4^{x+3} = 0,5$
+\item $2^a = 0,125$
+\item $10^x = 0,001$
+\item $2^{x^2-2x-3} = 1$
+\end{multicols}
+\end{enumerate}
+
+\item Die groei van alge kan gemodelleer word met die funksie $f(t) = 2^t$. Vind die waarde van $t$ as $f(t)=128$.   
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1a-m.)	02ke	&
+% Question 2
+(2.)	02kf	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+
+
+
+\summary{VMdgh}
+
+
+
+\begin{itemize}[noitemsep, label=\textbullet{}]
+    \item Eksponensiaalnotasie verwys na ’n getal wat geskryf word as ${a}^{n}$ waar $n$ ’n heelgetal is en $a$ enige reële getal is.
+    \item $a$ is die \textit{grondtal} en $n$ is die \textit{eksponent} of \textit{indeks}.
+    \item Definisie: 
+	  \begin{itemize}[noitemsep]
+	   \item ${a}^{n}=a\ensuremath{\times}a\ensuremath{\times}\cdots \ensuremath{\times}a\phantom{\rule{2.em}{0ex}}\left(\mbox{$n$ kere}\right)$
+	   \item ${a}^{0}=1,~a\ne 0$
+	   \item ${a}^{-n}=\frac{1}{{a}^{n}},~a\ne 0$
+	  \end{itemize}
+
+    
+    \item  Die eksponentwette: 
+	\begin{itemize}[itemsep=4pt]
+	    \item  ${a}^{m}\ensuremath{\times}{a}^{n}={a}^{m+n}$
+	    \item  ${\dfrac{{a}^{m}}{{a}^{n}}={a}^{m-n}$
+	    \item  ${\left(ab\right)}^{n}={a}^{n}{b}^{n}$
+            \item  $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$
+	    \item  ${\left({a}^{m}\right)}^{n}={a}^{mn}$
+	\end{itemize}
+    \end{itemize}
+
+
+\begin{eocexercises}{}
+
+  \begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+  \item Vereenvoudig:
+    \begin{multicols}{2}
+      \begin{enumerate}[label=\textbf{(\alph*)}, itemsep=7pt]
+      \item $ t^3 \times 2t^0 $
+      \item $ 5^{2x+y} 5^{3(x+z)} $
+      \item $ (b^{k+1})^k $
+      \item $ \dfrac{6^{5p}}{9^p} $
+      \item $ m^{-2t} \times (3m^t)^3 $
+      \item $\dfrac{3{x}^{-3}}{{(3x)}^{2}}$
+      \item $\dfrac{{5}^{b-3}}{{5}^{b+1}}$
+      \item $\dfrac{{2}^{a-2} {3}^{a+3}}{{6}^{a}}$
+      \item $\dfrac{{3}^{n} {9}^{n-3}}{{27}^{n-1}}$
+      \item ${\left(\dfrac{2{x}^{2a}}{{y}^{-b}}\right)}^{3}$
+      \item $\dfrac{{2}^{3x-1} {8}^{x+1}}{{4}^{2x-2}}$
+      \item $\dfrac{{6}^{2x} {11}^{2x}}{{22}^{2x-1} {3}^{2x}}$
+      \item $\dfrac{{(-3)}^{-3} {(-3)}^{2}}{{(-3)}^{-4}}$
+      \item ${({3}^{-1}+{2}^{-1})}^{-1}$
+      \item $\dfrac{{9}^{n-1} {27}^{3-2n}}{{81}^{2-n}}$
+      \item $\dfrac{{2}^{3n+2} {8}^{n-3}}{{4}^{3n-2}}$
+      \item $\dfrac{3^{t+3} + 3^t}{2 \times 3^t} $
+      \item $\dfrac{2^{3p} +1}{2^p + 1} $
+      \end{enumerate}
+    \end{multicols}
+
+\item Los op:
+    \begin{multicols}{2}
+      \begin{enumerate}[label=\textbf{(\alph*)}, itemsep=7pt]
+        \setcounter{enumi}{18}
+      \item $ 3^x = \dfrac{1}{27} $
+      \item $ 5^{t-1} = 1 $
+      \item $ 2 \times 7^{3x} = 98 $
+      \item $ 2^{m+1} = (0,5)^{m-2}$
+      \item $ 3^{y+1} = 5^{y+1} $
+      \item $ z^{\frac{3}{2}} = 64 $
+      \item $ 16x^{\frac{1}{2}} - 4 = 0 $
+      \item $ m^0 + m^{-1} = 0 $
+      \item $ t^{\frac{1}{2}} - 3t^{\frac{1}{4}} + 2 = 0 $
+      \item $ 3^p + 3^p + 3^p = 27 $
+      \item $ k^{-1} - 7k^{-\frac{1}{2}} -18 = 0 $
+      \item $ x^{\frac{1}{2}}+3x^{\frac{1}{4}}-18 = 0 $
+      \end{enumerate}
+    \end{multicols}
+  \end{enumerate}
+\end{eocexercises}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02kg	&
+% Question 2
+(2.)	02kh	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+% %     \item Simplify as far as possible:
+% % 	\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+% % 	    \item ${302}^{0}$
+% % 	    \item ${1}^{0}$
+% % 	    \item ${\left(xyz\right)}^{0}$
+% % 	    \item ${\left[{\left(3{x}^{4}{y}^{7}{z}^{12}\right)}^{5}{\left(-5{x}^{9}{y}^{3}{z}^{4}\right)}^{2}\right]}^{0}$
+% % 	    \item ${\left(2x\right)}^{3}$
+% % 	    \item ${\left(-2x\right)}^{3}$
+% % 	    \item ${\left(2x\right)}^{4}$
+% % 	    \item ${\left(-2x\right)}^{4}$
+% % 	\end{enumerate}
+%     \item Simplify
+%     \item Simplify without using a calculator. Leave your answers with positive exponents.
+% 	\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+% 	    \item $\dfrac{3{x}^{-3}}{{\left(3x\right)}^{2}}$
+% 	    \item $5{x}^{0}+{8}^{-2}-{\left(\frac{1}{2}\right)}^{-2}\ensuremath{\,.\,}{1}^{x}$
+% 	    \item $\dfrac{{5}^{b-3}}{{5}^{b+1}}$
+% 	\end{enumerate}
+%     \item Simplify, showing all steps:
+% 	\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+% 	    \item $\dfrac{{2}^{a-2}.{3}^{a+3}}{{6}^{a}}$
+% 	    \item $\dfrac{{a}^{2m+n+p}}{{a}^{m+n+p}\ensuremath{\,.\,}{a}^{m}}$
+% 	    \item $\dfrac{{3}^{n}\ensuremath{\,.\,}{9}^{n-3}}{{27}^{n-1}}$
+% 	    \item ${\left(\dfrac{2{x}^{2a}}{{y}^{-b}}\right)}^{3}$
+% 	    \item $\dfrac{{2}^{3x-1}\ensuremath{\,.\,}{8}^{x+1}}{{4}^{2x-2}}$
+% 	    \item $\dfrac{{6}^{2x}\ensuremath{\,.\,}{11}^{2x}}{{22}^{2x-1}\ensuremath{\,.\,}{3}^{2x}}$
+% 	\end{enumerate}
+%     \item Simplify, without using a calculator:
+% 	\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+% 	    \item $\dfrac{{\left(-3\right)}^{-3}\ensuremath{\,.\,}{\left(-3\right)}^{2}}{{\left(-3\right)}^{-4}}$
+% 	    \item ${\left({3}^{-1}+{2}^{-1}\right)}^{-1}$
+% 	    \item $\dfrac{{9}^{n-1}\ensuremath{\,.\,}{27}^{3-2n}}{{81}^{2-n}}$
+% 	    \item $\dfrac{{2}^{3n+2}\ensuremath{\,.\,}{8}^{n-3}}{{4}^{3n-2}}$
+% 	\end{enumerate}
+% \end{enumerate}
+% 
+% \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+% \begin{tabular}[h]{cccccc}
+% (1.) lOJ  &  (2.) lOu  &  (3.) lOS  &  (4.) lOh  & 
+% \end{tabular}

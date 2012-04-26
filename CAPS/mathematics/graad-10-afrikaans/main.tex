@@ -1,0 +1,41 @@
+\documentclass[11pt, openany]{extbook}
+    
+\include{preample}
+\usepackage{tocloft}     
+\begin{document}
+\raggedbottom
+\bibliographystyle{plain} 
+
+\catcode`\^^J=10 %ignore line feeds since they mean nothing to XML
+\catcode`\^^M=10 %ignore carriage returns since they mean nothing to XML
+\frontmatter
+
+\include{EverythingMathsTitlePages} 
+
+\tableofcontents
+\mainmatter
+
+\renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newpage
+
+% chapter includes
+ 
+\include{Gr10-AlgebraicExpressions}  %translated and proofed
+\include{Gr10-EquationsandInequalities} %translated and proofed
+\include{Gr10-Exponentials} %translated and proofed
+\include{Gr10-NumberPatterns} %translated and proofed
+\include{Gr10-FunctionsAndGraphs}
+\include{Gr10-Finance} %translated and proofed
+\include{Gr10-Trigonometry}
+\include{Gr10-AnalyticalGeometry}
+\include{Gr10-Statistics} 
+\include{Gr10-Probability} %translated and proofed
+\include{Gr10-Geometry}
+\include{Gr10-Measurement}
+\include{Gr10-ExerciseSolutions}
+
+
+\end{document}
+  

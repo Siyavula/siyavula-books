@@ -1,0 +1,2261 @@
+\chapter{Trigonometrie}
+\setcounter{figure}{1}
+\setcounter{subfigure}{1}
+
+Trigonometrie handel oor die verwantskappe tussen die hoeke en die sye van 'n reghoekige driehoek. Ons sal van trigonometriese funksies wat die basis van trigonometrie vorm leer.\par 
+
+\section{Trigonometrie is bruikbaar}
+\nopagebreak
+Daar is vele toepassings van trigonometrie. Van spesifieke belang is die tegniek van driehoeksmeting wat gebruik word in sterrekunde om die afstand na nabye sterre te meet, in aardrykskunde (geografie) om die afstand tussen landmerke te meet en in satellietnavigasie. GPS (globale posisioneringstelsels) sou nie moontlik gewees het sonder trigonometrie nie. Ander gebiede wat trigonometrie gebruik sluit in akoestiek, optika, analise van finansi\"ele markte, elektronika, waarskynlikheidsteorie, statistiek, biologie, mediese grafiese werk (CAT skandering en ultraklank), chemie, kriptologie, meteorologie, oseanografie, landmeetkunde, argitektuur, fonetika, ingenieurswese, rekenaargrafika, en in die ontwikkeling van rekenaarspeletjies.\par 
+
+% I moved this to here in die english version too. Methinks it belongs here
+% horizontal\label{m39405*id78218}% \label{m39405*secfhsst!!!underscore!!!id95}
+%             \subsection{  Bespreking : Gebruike van Trigonometrie }
+%             \nopagebreak
+%             
+%       \label{m39405*id78126}Kies een van die velde waar trigonometrie gebruik word uit die lys hierbo en skryf 'n verslag van 1 bladsy wat beskryf \textsl{hoe} trigonometrie in die gekose veld gebruik word. \par 
+
+\section{Gelykvormigheid van driehoeke}
+
+As $\triangle ABC$ gelykvormig is aan $ \triangle DEF$, dan word dit geskryf as:\par 
+
+\begin{equation*}
+\triangle ABC||| \triangle DEF
+\end{equation*}
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] 
+\begin{center}
+\begin{pspicture}(-1,-0.6)(6.6,3)
+%\psgrid[gridcolor=gray]
+\rput(1.2,0){\pstTriangle(0,0){A}(2; 25){B}(3; 125){C}}
+\rput(5.2,0){\pstTriangle[unit=0.5](0,0){D}(2; 25){E}(3; 125){F}}
+\end{pspicture}
+\end{center}   
+\end{figure}   
+\par 
+Dit is moontlik om die verhoudings af te lei tussen ooreenkomstige sye van die twee gelykvormige driehoeke:\par 
+
+
+\begin{equation*}
+\begin{array}{ccl}\hfill \dfrac{AB}{BC}& =& \dfrac{DE}{EF}\hfill \\[5pt]
+ \hfill \dfrac{AB}{AC}& =& \dfrac{DE}{DF}\hfill \\ [5pt]
+\hfill \dfrac{AC}{BC}& =& \dfrac{DF}{EF}\hfill \\[5pt]
+ \hfill \dfrac{AB}{DE}& =& \dfrac{BC}{EF}=\dfrac{AC}{DF}\hfill \end{array}
+\end{equation*}
+Nog 'n belangrike feit oor die gelykvormige driehoeke $ABC$ en $DEF$ is dat hoek $A$ gelyk aan hoek $D$ is, hoek $B$ gelyk aan hoek $E$ is en hoek $C$ gelyk aan hoek $F$ is.\par 
+
+
+\begin{equation*}
+\begin{array}{ccc}\hfill \hat A& =& \hat D\hfill \\ \hfill \hat B& =& \hat E\hfill \\ \hfill \hat C& =& \hat F\hfill \end{array}
+\end{equation*}
+
+\begin{Investigation}{Verhoudings van gelykvormige driehoeke}
+
+Teken drie gelykvormige driehoeke van verskillende groottes, met elke $\hat{A}={30}^{\circ }$; $\hat{B}={90}^{\circ }$ en $\hat{C}={60}^{\circ }$. Meet hoeke en lengtes akkuraat en skryf die metings in die tabel neer (rond die metings af na 1 desimale plek).\par 
+
+\setcounter{subfigure}{0}
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-2.3817186)(8.567187,2.3817186)
+\psline[linewidth=0.04cm](0.301875,-1.9001563)(1.942836,-1.9001563)
+\psline[linewidth=0.04cm](1.942836,-1.9001563)(1.942836,0.84772635)
+\psline[linewidth=0.04cm](0.301875,-1.9001563)(1.942836,0.8604187)
+\psline[linewidth=0.04cm](2.641875,-1.9201562)(4.641875,-1.9201562)
+\psline[linewidth=0.04cm](4.641875,-1.9201562)(4.641875,1.5438437)
+\psline[linewidth=0.04cm](2.641875,-1.9201562)(4.641875,1.5598438)
+\psline[linewidth=0.04cm](5.521875,-1.9201562)(7.801521,-1.9201562)
+\psline[linewidth=0.04cm](7.801521,-1.9201562)(7.801521,1.9617095)
+\psline[linewidth=0.04cm](5.521875,-1.9201562)(7.801521,1.9796396)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.26546875,-2.1101563){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8054688,-2.1901562){$F$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.6254687,-2.1901562){$K$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.0454688,-2.1301563){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.7654686,-2.1901562){$E$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.105469,-2.2101562){$H$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1254687,1.0898438){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.865469,1.8098438){$D$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.105469,2.1698437){$G$}
+\psframe[linewidth=0.04,dimen=outer](1.961875,-1.5601562)(1.601875,-1.9201562)
+\psframe[linewidth=0.04,dimen=outer](4.661875,-1.5801562)(4.301875,-1.9401562)
+\psframe[linewidth=0.04,dimen=outer](7.801875,-1.5801562)(7.441875,-1.9401562)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.64,-0.25){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](1.811875,0.02984375){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.9,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](0.951875,-1.6101563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](3.291875,-1.6301563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.2,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](6.131875,-1.6301563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3173437,0.4){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](4.531875,0.64984375){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.4973435,0.9){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](7.711875,1.1498437){0.03}
+\end{pspicture} 
+}    
+\end{center}  
+\par 
+% \textbf{m39405*id78604}\par
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+
+\noindent
+\setlength{\extrarowheight}{2pt}
+
+\begin{tabular}{|m{2.5cm}|m{2.5cm}|m{2.5cm}|}\hline
+% My position: 0
+% my spanname: 
+% my ct of spanspec: 0
+% my column-count: 3
+\multicolumn{3}{|c|}{Deel lengtes van sye (verhoudings) }
+\\ \hline
+%--------------------------------------------------------------------
+\Large$\frac{AB}{BC}=$
+&
+\Large$\frac{AB}{AC}=$
+&
+\Large$\frac{CB}{AC}=$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\Large$\frac{DE}{EF}=$
+&
+\Large$\frac{DE}{DF}=$
+&
+\Large$\frac{FE}{DF}=$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\Large$\frac{GH}{HK}=$
+&
+\Large$\frac{GH}{GK}=$
+&
+\Large$\frac{KH}{GK}=$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.1}\end{center}
+% \begin{caption}{\small\bfseries Table 14.1}\end{caption}
+\end{table}
+\par
+Watter waarnemings kan jy oor die verhoudings van die sye  maak?\\
+\\
+Hierdie gelyke verhoudings word gebruik om die trigonometriese verhoudings te definieer.
+\end{Investigation}
+
+
+    
+
+\section{Definisie van die trigonometriese verhoudings}
+Beskou 'n reghoekige driehoek $ABC$.\par 
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39408*id79667}
+\begin{center}
+\begin{pspicture}(-1,-0.6)(4,3)
+%\psgrid[gridcolor=gray]
+\pstTriangle(0,0){A}(2.4;90){B}(3.35;0){C}
+\pstRightAngle{B}{A}{C}
+\pstMarkAngle{B}{C}{A}{$\theta$}
+\pcline[linestyle=none](A)(B)
+\aput{:U}{teenoorstaande}
+\pcline[linestyle=none](B)(C)
+\aput{:U}{skuinssy }
+\pcline[linestyle=none](A)(C)
+\bput{:U}{ aangrensende}
+\end{pspicture}
+\end{center}
+\end{figure}       
+\par 
+
+% \Note{In algebra gebruik ons gereeld die letter $x$ om die onbekende veranderlike aan te dui (al kan ons enige ander letter soos $a$, $b$, $k$, ens. ook gebruik. In trigonometrie gebruik ons gereeld die Griekse letter $\theta $ vir 'n onbekende hoek (ons gebruik ook $\alpha $, $\beta $, $\gamma $ ens).}
+
+
+In die reghoekige driehoek verwys ons na die lengtes van die sye na gelang van hulle plasing in verhouding tot die hoek $\theta $. Die sy oorkant die regte hoek is die skuinssy, die sy oorkant $\theta $ is die teenoorstaande sy en die sy naaste aan $\theta $ is die aangrensende sy.
+Let op dat die keuse van die nie-$90^{\circ}$ binnehoek arbitrer is. Jy kan enige van die binnehoeke kies en dan die aangrensende en teenoorstaande sye definieer. Die skuinssy bly egter die skuinssy ongeag die binnehoek van belang (omdat dit \textit{altyd} oorkant die regte hoek is en \textit{altyd} die langste sy is).
+
+Ons definieer die trigonometriese verhoudings sinus, cosinus en tangens soos volg:
+
+
+\begin{equation*}
+\begin{array}{ccc}\hfill sin~\theta & =& \frac{\mbox{teenoorstaande sy}}{\mbox{skuinssy}}\hfill \\
+\\
+ \hfill cos~\theta & =& \frac{\mbox{aangrensende sy}}{\mbox{skuinssy}}\hfill \\
+\\
+ \hfill tan~\theta & =& \frac{\mbox{teenoorstande sy}}{\mbox{aangresende sy}}\hfill 
+\end{array}
+\end{equation*}
+
+Hierdie verhoudings, ook bekend as die trigonometriese definisies, bepaal die verhoudings van die lengtes van 'n driehoek se sye tot sy binnehoeke. 
+Hierdie drie verhoudings vorm die basis van trigonometrie. \par
+
+\textbf{Let wel: }die definisies van teenoorstaande sy, aangrensende sy en skuinssy is net van toepassing wanneer mens met 'n reghoekige driehoek werk! Bevestig telkens dat jou driehoek 'n regte hoek bevat alvorens jy die verhoudings gebruik, anders kry jy die verkeerde antwoord.
+
+
+
+% Hierdie volgende rympie-voorbeeld is nie vertaalbaar na Afrikaans nie, ek stel voor julle haal dit uit die Engels.
+% Jy maag hoor mense praat van ``Soh Cah Toa''. Dit is 'n mnemo-tegniek, wat verband hou met Engelse benamings, om die trigonometriese verhoudings mee to onthou. (Sien skets hierbo):\par 
+% 
+% % \textbf{m39408*id79953}\par
+% \begin{table}[H]
+% % \begin{table}[H]
+% % \\ '' '0'
+% \begin{center}
+% \label{m39408*id79953}
+% \noindent
+% 
+% \begin{tabular}{|l|}\hline
+% 
+% $\mathbf{s}in=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{h}ypotenuse}} $
+% % make-rowspan-placeholders
+% 
+% \\  \hline
+% %--------------------------------------------------------------------
+% 
+% $\mathbf{c}os=\frac{\mbox{\textbf{a}djacent}}{\mbox{\textbf{h}ypotenuse}} $
+% % make-rowspan-placeholders
+% 
+% \\ \hline
+% %--------------------------------------------------------------------
+% 
+% $\mathbf{t}an=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{a}djacent}} $
+% % make-rowspan-placeholders
+% 
+% \\   \hline
+% %--------------------------------------------------------------------
+% \end{tabular}
+% \end{center}
+% % \begin{center}{\small\bfseries Table 14.2}\end{center}
+% % \begin{caption}{\small\bfseries Table 14.2}\end{caption}
+% \end{table}
+% \par
+
+\section{Omgekeerde funksies}
+Elk van die drie trigonometriese funksies het 'n omgekeerde, ook genoem 'n resiprook. Die omgekeerdes cosecant, secant en cotangens word soos volg gedefinieer:
+
+\begin{equation*}
+\begin{array}{ccc}cosec~\theta & =& \dfrac{1}{sin~\theta } \vspace{3pt}\\
+ sec~\theta & =& \dfrac{1}{cos~\theta } \vspace{3pt}\\
+ cot~\theta & =& \dfrac{1}{tan~\theta }
+\end{array}
+\end{equation*}
+Ons kan ook hierdie omgekeerdes vir enige reghoekige driehoek definieer:
+
+\begin{equation*}
+\begin{array}{ccc}\hfill cosec~\theta & =& \frac{\mbox{skuinssy}}{\mbox{teenoorstaande sy}}\hfill \vspace{3pt}\\
+ \hfill sec~\theta & =& \frac{\mbox{skuinssy}}{\mbox{aangrensende sy}}\hfill \vspace{3pt}\\
+ \hfill cot~\theta & =& \frac{\mbox{aangrensende sy}}{\mbox{teenoorstaande sy}}\hfill 
+\end{array}
+\end{equation*}
+Nota:
+\begin{equation*}
+\begin{array}{ccc}sin~\theta \times cosec~\theta & =& 1 \vspace{3pt}\\
+ cos~\theta \times sec~\theta & =& 1 \vspace{3pt}\\
+tan~\theta \times cot~\theta & =& 1
+\end{array}
+\end{equation*}
+
+
+\mindsetvid{Discovering the tangent ratio}{VMber}
+% \begin{activity}{Sakrekenaarwerk}
+% 
+% Dit is baie belangrik dat jy vertroud is met jou sakrekenaar se trigonometrie-funksies en hoe hulle werk. \\
+% Gebruik die volgende voorbeelde om te verseker dat jy jou sakrekenaar korrek gebruik:
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+%  \item $cos~ 30^{\circ} = 0,866$
+% \item $sin~90^{\circ} = 1$
+% \item $tan~60^{\circ} = 1,732$
+% \item $4~sin~45^{\circ}=2,828$
+% \item $\frac{1}{3}~cos~60^{\circ}=1,5$
+% \end{enumerate}
+% 
+% \end{activity}
+\textbf{Let wel: }die meeste wetenskaplike sakrekenaars is naastenby dieselfde maar die stappe hieronder mag verskil afhangende van die sakrekenaar wat jy gebruik. Maak seker jou sakrekenaar is in 'degrees' (grade) modus. 
+
+\begin{wex}{Gebruik jou sakrekenaar}
+
+ {\begin{minipage}{\textwidth} Gebruik jou sakrekenaar om die volgende te bereken (korrek tot $2$ desimale plekke):
+\begin{enumerate}[itemsep=4pt, label=\textbf{\arabic*}. ] 
+ \item $cos~48^{\circ}$
+\item $2~sin~35^{\circ}$
+\item $tan^{2}~81^{\circ}$
+\item $3~sin^{2}~72^{\circ}$
+\item $\dfrac{1}{4}~cos~27^{\circ} $
+\item $\dfrac{5}{6}~tan~34^{\circ}$
+\end{enumerate}
+\end{minipage}
+}
+{
+
+\westep{}
+Press \fbox{cos} \fbox{48} \fbox{\LARGE =} $0,67$
+
+\westep{}
+Press \fbox{2} \fbox{sin} \fbox{35} \fbox{\LARGE =} $1,15$
+
+\westep{}
+Press \fbox{(} \fbox{tan} \fbox{81} \fbox{)} \fbox{x$^{2}$}  \fbox{\LARGE =} $39,86$
+\\
+OF\\
+Press \fbox{tan} \fbox{81} \fbox{\LARGE =} \fbox{ANS} \fbox{x$^{2}$} \fbox{\LARGE =} $39,86$
+
+\westep{}
+Press \fbox{3} \fbox{(} \fbox{sin} \fbox{72} \fbox{)} \fbox{x$^{2}$} \fbox{\LARGE =} $2,71$
+\\
+OF\\
+Press \fbox{sin} \fbox{72} \fbox{\LARGE =} \fbox{ANS} \fbox{x$^{2}$} \fbox{\LARGE =} \fbox{ANS} \fbox{$\times$} \fbox{3}
+
+\westep{}
+Press \fbox{(} \fbox{1} \fbox{$\div$} \fbox{4} \fbox{)} \fbox{cos} \fbox{27} \fbox{\LARGE =} $0,22$
+\\
+OF\\
+Press \fbox{cos} \fbox{27} \fbox{\LARGE =} \fbox{ANS} \fbox{$\div$} \fbox{4} \fbox{\LARGE =} $0,22$
+
+\westep{}
+Press \fbox{(} \fbox{5} \fbox{$\div$} \fbox{6} \fbox{)} \fbox{tan} \fbox{34} \fbox{\LARGE =} $0,56$
+\\
+OF\\
+Press \fbox{tan} \fbox{34} \fbox{\LARGE =} \fbox{ANS} \fbox{$\times$} \fbox{5} \fbox{$\div$} \fbox{6} \fbox{\LARGE =} $0,56$
+}
+\end{wex}
+
+
+\begin{wex}
+{Sakrekenaarwerk}
+{As $x=25^{\circ}$ en $y=65^{\circ}$ is, gebruik jou sakrekenaar om te bepaal of die volgende stelling waar of vals is:
+\begin{equation*}
+sin^{2}~x + cos^{2}~(90^{\circ}-y) = 1
+\end{equation*}
+}
+{
+\westep{Bereken die linkerkant van die uitdrukking}
+Druk \fbox{(} \fbox{sin} \fbox{25} \fbox{)} \fbox{x$^{2}$} \fbox{\LARGE +} \fbox{(} \fbox{cos} \fbox{(} \fbox{90} \fbox{\LARGE -} \fbox{65} \fbox{)} \fbox{)} \fbox{x$^{2}$}  \fbox{\LARGE =} $1$
+
+
+\westep{Skryf die finale antwoord neer}
+LK = RK dus is die stelling waar.
+
+
+
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\item In elk van die volgende driehoeke, dui aan watter van $a$, $b$ en $c$ die skuinssy, die teenoorstaande sy en die aangrensende sy van die driehoek  is ten opsigte van $\theta$. 
+% \setcounter{subfigure}{0}
+
+
+\begin{center}
+\scalebox{0.85} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-3.7754679)(20.177345,3.9279697)
+\rput (1,2){\textbf{(a)}}
+\rput (5.5,2){\textbf{(b)}}
+\rput (10.5,2){\textbf{(c)}}
+\rput (1.5,-1.5){\textbf{(d)}}
+\rput (6,-1.5){\textbf{(e)}}
+\rput (9.5,-1.5){\textbf{(f)}}
+\psdots[dotsize=0.027999999](2.9173439,-1.5720303)
+\psline[linewidth=0.04cm](5.517344,2.5079696)(7.9173436,0.107969664)
+\psline[linewidth=0.04cm](7.9173436,0.107969664)(9.0173435,1.2079697)
+\psline[linewidth=0.04cm](5.517344,2.5079696)(9.0173435,1.2079697)
+\psline[linewidth=0.04cm](7.717344,0.30796966)(7.9173436,0.5079697)
+\psline[linewidth=0.04cm](7.9173436,0.5079697)(8.117344,0.30796966)
+\psline[linewidth=0.04cm](11.0573435,2.2679696)(11.0573435,0.067969665)
+\psline[linewidth=0.04cm](11.0573435,0.067969665)(14.757344,0.067969665)
+\psline[linewidth=0.04cm](11.0573435,2.2679696)(14.757344,0.067969665)
+\psline[linewidth=0.04cm](1.2373447,-3.3120303)(3.9373438,-0.71203035)
+\psline[linewidth=0.04cm](3.9373438,-0.71203035)(3.9373438,-3.3120303)
+\psline[linewidth=0.04cm](3.9373438,-3.3120303)(1.2373447,-3.3120303)
+\psline[linewidth=0.04cm](7.477345,-1.2120303)(5.7773438,-3.3120303)
+\psline[linewidth=0.04cm](7.477345,-1.2120303)(8.9773445,-2.4120302)
+\psline[linewidth=0.04cm](8.9773445,-2.4120302)(5.7773438,-3.3120303)
+\psline[linewidth=0.04cm](7.257343,-1.5120304)(7.537344,-1.7320304)
+\psline[linewidth=0.04cm](7.517344,-1.7120303)(7.717344,-1.4320303)
+\psline[linewidth=0.04cm](11.097343,0.38796967)(11.397344,0.38796967)
+\psline[linewidth=0.04cm](11.397344,0.38796967)(11.397344,0.08796967)
+\psline[linewidth=0.04cm](3.9173427,-3.0320303)(3.6173437,-3.0320303)
+\psline[linewidth=0.04cm](3.6173437,-3.0320303)(3.6173437,-3.3320303)
+\psline[linewidth=0.04cm](10.0173435,-1.7320304)(11.417343,-3.2320304)
+\psline[linewidth=0.04cm](11.417343,-3.2320304)(13.0173435,-1.7320304)
+\psline[linewidth=0.04cm](10.0173435,-1.7320304)(13.0173435,-1.7320304)
+\psline[linewidth=0.04cm](11.217343,-3.0320303)(11.417343,-2.8320303)
+\psline[linewidth=0.04cm](11.417343,-2.8320303)(11.617344,-3.0320303)
+\usefont{T1}{ptm}{m}{n}
+\rput(8.662344,1.1179696){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(13.842344,0.29796967){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.682343,-1.3020303){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.362344,-2.9020302){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.502343,-1.9420303){$\theta$}
+\psline[linewidth=0.04cm](2.2973437,2.2879696)(0.09734377,0.18796967)
+\psline[linewidth=0.04cm](0.09734377,0.18796967)(4.4973435,0.18796967)
+\psline[linewidth=0.04cm](2.2973437,2.2879696)(4.4973435,0.18796967)
+\psline[linewidth=0.04cm](2.0973437,2.0879698)(2.2973437,1.8879696)
+\psline[linewidth=0.04cm](2.2973437,1.8879696)(2.4973438,2.0879698)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.54234374,0.37796965){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.1764063,1.5979697){$a$}
+% \rput (1, 2){1.}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1778126,-0.10203034){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.759219,1.2979697){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.596406,1.0179696){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.479219,2.1179698){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.797812,0.41796967){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(13.076406,1.4979696){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.777813,1.1979697){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(12.659219,-0.20203033){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.896407,-3.6220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2978134,-1.8220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2792187,-2.3220303){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.596406,-1.8220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.7978134,-3.1220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.579218,-1.7220303){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.496406,-2.6220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(12.397812,-2.8220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(11.579218,-1.4220303){$c$}
+\rput{-66.69996}(-0.02258055,0.761629){\psarc[linewidth=0.04](0.5673438,0.39796966){0.35}{25.785578}{138.26501}}
+\rput{106.83747}(12.386083,-6.856496){\psarc[linewidth=0.04](8.737344,1.1679693){0.34}{32.561234}{147.21713}}
+\rput{93.56388}(15.110441,-13.562675){\psarc[linewidth=0.04](13.927344,0.31796986){0.39}{24.333387}{127.3505}}
+\psarc[linewidth=0.04](14.697344,3.1279697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](14.837344,3.2279696){0.0}{0.0}{180.0}
+\rput{153.95303}(6.6359906,-3.7989676){\psarc[linewidth=0.04](3.757346,-1.1320316){0.5}{50.00946}{137.84839}}
+\psarc[linewidth=0.04](20.097343,3.9079697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](20.117344,3.8879697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](20.157345,3.8279696){0.0}{0.0}{180.0}
+\rput{-46.143967}(4.180272,3.6097476){\psarc[linewidth=0.04](6.3273435,-3.1020286){0.57}{58.40874}{128.71255}}
+\rput{-116.039185}(16.474606,6.6625834){\psarc[linewidth=0.04](10.317342,-1.8120308){0.52}{49.23777}{123.63383}}
+\end{pspicture} 
+}
+\end{center}
+
+
+\item Gebruik jou sakrekenaar om die waardes van die volgende te bepaal (korrek tot $2$ desimale plekke):
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\begin{multicols}{2} 
+% \setcounter{enumi}{6} 
+\item $tan~65^{\circ}$
+\item $sin~38^{\circ}$
+\item $cos~74^{\circ}$
+\item $sin~12^{\circ}$
+\item $cos~26^{\circ}$
+\item $tan~49^{\circ}$
+\item $\frac{1}{4}~cos~20^{\circ}$
+\item $3~tan~40^{\circ}$
+\item $\frac{2}{3}~sin~90^{\circ}$
+\end{multicols}
+\end{enumerate}
+
+\item As $x=39^{\circ}$ en $y=21^{\circ}$ is, gebruik 'n sakrekenaar om te bepaal of die volgende waar of vals is:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\begin{multicols}{2} 
+% \setcounter{enumi}{15} 
+\item $cos~x + 2~cos~x=3~cos~x$
+\item $cos~2y = cos~y+cos~y$
+\item $tan~x=\frac{sin~x}{cos~x}$
+\item $cos~(x+y) = cos~x+cos~y$
+\end{multicols}
+\end{enumerate}
+
+
+\item Voltooi elk van die volgende (die eerste voorbeeld is klaar gedoen):
+\begin{center}
+% \begin{minipage}{0.25 \textwidth}
+\setcounter{subfigure}{0}
+\scalebox{1}{
+\begin{pspicture}(0,-2.0990624)(4.21625,2.0990624)
+\psline[linewidth=0.04cm](0.4775,-1.5590625)(3.7775,1.5409375)
+\psline[linewidth=0.04cm](3.7775,1.5409375)(3.7775,-1.5590625)
+\psline[linewidth=0.04cm](0.4775,-1.5590625)(3.7775,-1.5590625)
+\psline[linewidth=0.04cm](3.4775,-1.5590625)(3.4775,-1.2590625)
+\psline[linewidth=0.04cm](3.4775,-1.2590625)(3.7775,-1.2590625)
+\rput(4.025,1.8759375){$A$}
+\rput(3.874375,-1.9240625){ $B$}
+\rput(0.10625,-1.8240625){$C$}
+\end{pspicture} 
+}
+% \end{minipage}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\begin{multicols}{2}
+% \setcounter{enumi}{19}
+\item $sin~\hat{A} = \frac{\mbox{\scriptsize teenoorstaande sy}}{\mbox{\scriptsize skuinssy}}=\frac{CB}{AC}$
+\item $cos~\hat{A} = $
+\item $tan~\hat{A}= $
+\item $sin~\hat{C}= $
+\item $cos~\hat{C}= $
+\item $tan~\hat{C}= $
+\end{multicols}
+\end{enumerate}
+
+\item Gebruik die driehoek hieronder om die volgende te voltooi:
+\begin{center}
+% \begin{minipage}{0.25\textwidth}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-1.97)(5.3271875,1.97)
+\psline[linewidth=0.04cm](0.361875,-1.95)(4.061875,-1.95)
+\psline[linewidth=0.04cm](4.061875,-1.95)(4.061875,1.95)
+\psline[linewidth=0.04cm](4.061875,1.95)(0.361875,-1.95)
+\psline[linewidth=0.04cm](3.661875,-1.95)(3.661875,-1.55)
+\psline[linewidth=0.04cm](3.661875,-1.55)(4.061875,-1.55)
+\rput(1.7398437,0.26){$2$}
+\rput(1.8,-2.2){$1$}
+\rput(1.1554687,-1.64){$60^{\circ}$}
+\rput(3.6554687,0.96){$30^{\circ}$}
+\rput(4.405469,-0.44){$\sqrt{3}$}
+\end{pspicture} 
+}
+
+% \end{minipage}
+\end{center}
+
+
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\begin{multicols}{2}
+% \setcounter{enumi}{25}
+\item $sin~60^{\circ} = $
+\item $cos~60^{\circ} = $
+\item $tan~60^{\circ}= $
+\item $sin~30^{\circ}= $
+\item $cos~30^{\circ}= $
+\item $tan~30^{\circ}= $
+\end{multicols}
+\end{enumerate}
+
+
+\item Gebruik die driehoek hieronder om die volgende te voltooi:
+\begin{center}
+% \begin{minipage}{0.25\textwidth}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-2.24)(5.0271873,2.22)
+\psline[linewidth=0.04cm](0.361875,-1.7)(4.061875,-1.7)
+\psline[linewidth=0.04cm](4.061875,-1.7)(4.061875,2.2)
+\psline[linewidth=0.04cm](4.061875,2.2)(0.361875,-1.7)
+\psline[linewidth=0.04cm](3.661875,-1.7)(3.661875,-1.3)
+\psline[linewidth=0.04cm](3.661875,-1.3)(4.061875,-1.3)
+\rput(2.2314062,-2.09){$1$}
+\rput(1.1554687,-1.39){$45^{\circ}$}
+\rput(3.7554688,1.41){$45^{\circ}$}
+\rput(1.6054688,0.51){$\sqrt{2}$}
+\rput(4.331406,0.21){$1$}
+\end{pspicture} 
+}
+% \end{minipage}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+
+% \setcounter{enumi}{31}
+\item $sin~45^{\circ} = $
+\item $cos~45^{\circ} = $
+\item $tan~45^{\circ}= $
+
+\end{enumerate}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 6
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02re	&
+% Question 2
+(2.)	02rf	&
+% Question 3
+(3.)	02rg	&
+% Question 4
+(4.)	02rh	&
+% Question 5
+(5.)	02ri	&
+% Question 6
+(6.)	02rj	\\ % End row of shortcodes
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 6
+}
+\end{exercises}
+
+\section{Spesiale hoeke}
+Vir meeste hoeke $\theta $ het ons 'n sakrekenaar nodig om die waardes van $sin~\theta $, $cos~\theta $ en $tan~\theta $ te bereken. Ons het egter in die vorige oefening gesien dat ons hierdie waardes per hand kan bereken vir sekere spesiale hoeke. Die waardes van die trigonometriese funksies van hierdie hoeke word gelys in die tabel hieronder.\par
+Onthou dat die lengtes van 'n reghoekige driehoek die stelling van Pythagoras moet bevredig: die vierkant op die skuinssy is gelyk aan die som van die vierkante op die ander twee sye.\par 
+% \textbf{m39408*id80733}\par
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+\setlength{\extrarowheight}{2.5pt}
+
+\begin{tabular}{|m{1.2cm}|l|l|l|}\hline
+&
+
+${30}^{\circ }$
+&
+${45}^{\circ }$
+&
+${60}^{\circ }$
+
+
+% make-rowspan-placeholders\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
+
+\\ \hline
+%--------------------------------------------------------------------
+$cos~\theta $
+ &
+$\frac{\sqrt{3}}{2}$
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{1}{2}$
+
+\\ \hline
+%--------------------------------------------------------------------
+$sin~\theta $
+&
+
+$\frac{1}{2} $
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{\sqrt{3}}{2}$
+
+%  make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+$tan~\theta $
+&
+
+$\frac{1}{\sqrt{3}}$
+&
+$1$ &
+$\sqrt{3}$
+
+
+
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.3}\end{center}
+% \begin{caption}{\small\bfseries Table 14.3}\end{caption}
+\end{table}
+
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-1.97)(5.3271875,1.97)
+\psline[linewidth=0.04cm](0.361875,-1.95)(4.061875,-1.95)
+\psline[linewidth=0.04cm](4.061875,-1.95)(4.061875,1.95)
+\psline[linewidth=0.04cm](4.061875,1.95)(0.361875,-1.95)
+\psline[linewidth=0.04cm](3.661875,-1.95)(3.661875,-1.55)
+\psline[linewidth=0.04cm](3.661875,-1.55)(4.061875,-1.55)
+\rput(1.7398437,0.26){\Large$2$}
+\rput(1.8,-2.2){\Large$1$}
+\rput(1.1554687,-1.64){\Large$60^{\circ}$}
+\rput(3.6554687,0.96){\Large$30^{\circ}$}
+\rput(4.405469,-0.44){\Large$\sqrt{3}$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-2.24)(5.0271873,2.22)
+\psline[linewidth=0.04cm](0.361875,-1.7)(4.061875,-1.7)
+\psline[linewidth=0.04cm](4.061875,-1.7)(4.061875,2.2)
+\psline[linewidth=0.04cm](4.061875,2.2)(0.361875,-1.7)
+\psline[linewidth=0.04cm](3.661875,-1.7)(3.661875,-1.3)
+\psline[linewidth=0.04cm](3.661875,-1.3)(4.061875,-1.3)
+\rput(2.2314062,-2.09){\Large$1$}
+\rput(1.1554687,-1.39){\Large$45^{\circ}$}
+\rput(3.65,1.31){\Large$45^{\circ}$}
+\rput(1.6054688,0.51){\Large$\sqrt{2}$}
+\rput(4.331406,0.21){\Large$1$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+
+\par
+Hierdie waardes is handig wanneer ons 'n probleem in trigonometrie moet oplos sonder die gebruik van 'n sakrekenaar.\par 
+\begin{exercises}{}
+{
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Bereken die volgende sonder 'n sakrekenaar:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $sin~45^{\circ} \times cos~45^{\circ}$
+\item $cos~60^{\circ} + tan~45^{\circ}$
+\item $sin~60^{\circ} - cos~60^{\circ}$
+\end{enumerate}
+
+\item Gebruik die tabel hierbo om aan te dui dat:
+\begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{3}
+\item $\frac{sin~60^{\circ}}{cos~60^{\circ}} = tan~60^{\circ} $
+\item $sin^{2}~45^{\circ}+ cos^{2}~45^{\circ} =1 $
+\item $cos~30^{\circ} =\sqrt{1- sin^{2}}~30^{\circ}$
+\end{enumerate}
+
+\item Gebruik die definisies van die trigonometriese verhoudings om die volgende vrae te beantwoord:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{6}
+\item Verduidelik hoekom $sin~\alpha \leq 1$ is vir alle $\alpha$.
+\item Verduidelik hoekom $cos~\beta$ 'n maksimum waarde van $1$ het.
+\item Is daar 'n maksimum vir $tan~\gamma$ ?
+\end{enumerate}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02rk	&
+% Question 2
+(2.)	02rm	&
+% Question 3
+(3.)	02rn	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}
+
+
+
+\section{Oplos van trigonometriese vergelykings}
+
+\mindsetvid{Choosing a ratio}{VMbfo}
+
+\begin{wex}{Berekening van lengtes}{Bereken die lengte van $x$ in die volgende reghoekige driehoek: \\
+\begin{center}
+\scalebox{1} 
+{
+\begin{pspicture}(0,-1.02)(4.655469,2.02)
+\psline[linewidth=0.04](4.0,-1.0)(1.0,-1.0)(4.0,2.0)(4.0,-1.0)
+\rput(2.0275,0.77){$100$}
+\psarc[linewidth=0.04](1.0,-1.0){1.0}{0.0}{45.0}
+\rput(1.6450001,-0.75){$50^{\circ}$}
+\rput(4.355,0.41){$x$}
+\psline[linewidth=0.04cm](3.6,-0.98)(3.6,-0.58)
+\psline[linewidth=0.04cm](3.6,-0.58)(4.0,-0.58)
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Identifiseer die teenoorstaande sy en die aangrensende sy}
+\begin{equation*}
+\begin{array}{ccl}
+ 
+\hfill sin~\theta &=& \dfrac{\mbox{teenoorstaande sy}}{\mbox{skuinssy}}  \hfill \vspace{5pt}\\
+\hfill sin~ 50^\circ &=& \dfrac{x}{100}  \hfill \\
+\end{array}
+\end{equation*}
+
+
+
+\westep{Herrangskik die vergelyking om vir $x$ op te los}
+\begin{equation*}
+ x=100 \times sin~50^{\circ}
+\end{equation*}
+
+\westep{Gebruik jou sakrekenaar om die antwoord te bereken}
+\begin{equation*}
+x = 76,6 
+\end{equation*}
+}
+\end{wex}
+
+
+
+\begin{exercises}{}
+{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\item Vir elke driehoek, bereken die lengte van die sy wat met 'n letter gemerk is. Gee die antwoorde korrek tot $2$ desimale plekke.
+\begin{center}
+\scalebox{0.85} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-4.11)(11.1198435,5)
+\psline[linewidth=0.04](4.974369,2.612122)(2.6350498,3.9603012)(0.6377475,0.49464345)(4.974369,2.612122)
+\psline[linewidth=0.04cm](2.8949742,3.8105037)(2.7451768,3.550579)
+\psline[linewidth=0.04cm](2.7451768,3.550579)(2.4852521,3.7003772)
+\psline[linewidth=0.04](4.557088,-3.2752385)(4.589271,-0.5754303)(0.5895552,-0.52775127)(4.557088,-3.2752385)
+\psline[linewidth=0.04cm](4.5856953,-0.8754088)(4.2857165,-0.87183315)
+\psline[linewidth=0.04cm](4.2857165,-0.87183315)(4.2892923,-0.5718545)
+\psline[linewidth=0.04](7.0587263,3.3569472)(6.922255,0.6603981)(10.917143,0.45821914)(7.0587263,3.3569472)
+\psline[linewidth=0.04cm](6.9374194,0.9600146)(7.2370353,0.94485116)
+\psline[linewidth=0.04cm](7.2370353,0.94485116)(7.2218714,0.64523476)
+\psline[linewidth=0.04](7.9354,-3.9493167)(10.598035,-3.9603012)(10.613694,-0.16448934)(7.9354,-3.9493167)
+\psline[linewidth=0.04cm](10.340361,-3.959238)(10.341382,-3.7116852)
+\psline[linewidth=0.04cm](10.341382,-3.7116852)(10.599056,-3.7127483)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.12453125,3.7196066){\textbf{(a)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.133125,3.7396066){\textbf{(b)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.11421875,-0.26039344){\textbf{(c)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.1343746,-0.28039345){\textbf{(d)}}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.197969,2.6346066){$37^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.0853126,1.2){$62$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3824998,2.5846066){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.804531,0.8146064){$23^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.595937,0.21460645){$21$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.663907,2.0646067){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2134376,-2.6453934){$ 55^\circ$}
+
+\usefont{T1}{ptm}{m}{n}
+\rput(2.166719,-2.1653934){$19$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.8759375,-1.8353934){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.953907,-1.9653934){$33$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.22,-1.1453935){ $49^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.90422,-2.0153935){$d$}
+\end{pspicture}    
+}
+\end{center}
+
+
+
+
+\begin{center}
+ \scalebox{0.85} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-3.8416457)(11.207031,3.8216705)
+\psline[linewidth=0.04](2.3197074,3.8016455)(1.0997375,1.3929795)(4.668132,-0.4143837)(2.3197074,3.8016455)
+\psline[linewidth=0.04cm](1.2352896,1.6606089)(1.5029193,1.5250567)
+\psline[linewidth=0.04cm](1.5029193,1.5250567)(1.3673671,1.2574271)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.11234375,3.5211668){\textbf{(e)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.084844,3.5211668){\textbf{(f)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.14375,-0.39883313){\textbf{(g)}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.1403127,-0.498833){\textbf{(h)}}
+\psline[linewidth=0.04](1.0870312,-0.6888331)(1.0870312,-3.3888335)(5.0870314,-3.3888335)(1.0870312,-0.6888331)
+\psline[linewidth=0.04cm](1.0870312,-3.0888333)(1.3870313,-3.0888333)
+\psline[linewidth=0.04cm](1.3870313,-3.0888333)(1.3870313,-3.3888335)
+\psline[linewidth=0.04](10.705838,-3.6336784)(10.738021,-0.93386954)(6.738305,-0.88619083)(10.705838,-3.6336784)
+\psline[linewidth=0.04cm](10.734446,-1.2338486)(10.434467,-1.2302725)
+\psline[linewidth=0.04cm](10.434467,-1.2302725)(10.438043,-0.9302939)
+\psline[linewidth=0.04](11.200404,0.87534267)(9.325028,2.8177538)(6.4473815,0.039416883)(11.200404,0.87534267)
+\psline[linewidth=0.04cm](9.533403,2.6019304)(9.31758,2.393555)
+\psline[linewidth=0.04cm](9.31758,2.393555)(9.109204,2.6093786)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.5887504,1.9261669){$e$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8853126,0.3161668){$17^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3671876,2.6761668){ $12$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.533282,0.51616687){$22^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.139219,0.2861668){$f$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.758125,1.7361668){ $31$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.028594,-1.683833){$32$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1132817,-3.123833){$23^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.949844,-3.6138332){$g$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.928438,-2.2538335){$h$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.7667193,-1.2438331){ $30^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.245001,-2.3038335){$20$}
+\end{pspicture} 
+}
+   
+\end{center}  
+
+\item Skryf twee verhoudings neer in terme van die sye vir elk van die volgende: $AB$; $BC$; $BD$; $AD$; $DC$ en $AC$\\
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-1.2515883)(4.02125,1.2515885)
+\psline[linewidth=0.04,fillstyle=solid](0.019002499,-1.2315885)(0.009700612,1.2315885)(4.00125,-1.1902716)(0.039492033,-1.2120903)(0.039492033,-1.2120903)(0.0,-1.1911051)
+\psline[linewidth=0.04](0.009700612,-0.9884115)(0.20970061,-0.9884115)(0.20970061,-1.2284116)
+\psline[linewidth=0.04,fillstyle=solid](1.3697007,0.4315885)(0.049700614,-1.1684115)(0.049700614,-1.1484115)
+\psline[linewidth=0.04](1.2297006,0.2715885)(1.0697006,0.3515885)(1.1897006,0.5115885)
+\usefont{T1}{ptm}{m}{n}
+\rput(0,-1.5){$A$}
+\rput(0, 1.5){$B$}
+\rput(1.4, 0.7){$C$}
+\rput(4, -1.5){$D$}
+\end{pspicture} 
+}
+\end{center}
+     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $sin~\hat{B}$
+    \item $cos~\hat{D}$
+    \item $tan~\hat{B}$
+    \end{enumerate}
+\vspace{10pt}
+\item In $\triangle MNP$, $\hat{N}=90^{\circ}$, $MP=20$ cm en $\hat{P}=40^{\circ}$. Bereken $NP$ en $MN$ (korrek tot $2$ desimale plekke).
+\end{enumerate}
+
+\par 
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02rp	&
+% Question 2
+(2.)	02rq	&
+% Question 3
+(3.)	02rr	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}
+
+\section{Berekening van 'n hoek}
+ 
+\mindsetvid{What about the angle}{VMbfq}
+
+\begin{wex}{Hoekberekeninge}
+{
+Vind die waarde van $\theta$ in die volgende reghoekige driehoek: \\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.9628125)(4.3034377,1.27)
+\psline[linewidth=0.04](3.24,-0.57)(0.24,-0.57)(3.24,1.25)(3.24,-0.57)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9437499,-0.9){$100$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8189065,0.28){$50$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.0326563,-0.3){$\theta$}
+\psarc[linewidth=0.04](0.8,-0.45){0.8}{351.8699}{44.06081}
+\psline[linewidth=0.04](3.26,-0.27)(2.92,-0.27)(2.92,-0.55)
+\end{pspicture} 
+}
+\end{center}
+}
+{
+
+\westep{Identifiseer die teenoorstaande en aangrensende sye en die skuinssy}
+In hierdie geval het jy die teenoorstaande sy en die aangrensende sy vir hoek $\theta$. \\
+
+\begin{equation*}
+\begin{array}{ccl}
+ 
+\hfill tan~\theta &=& \dfrac{\mbox{teenoorstaande sy}}{\mbox{aangrensende sy}}  \hfill \vspace{5pt}\\
+\hfill tan~ \theta &=& \dfrac{50}{100} \hfill \\
+\end{array}
+\end{equation*}
+% There is a horrible error here: The example show opp and hypotenuse is given, but die calc is for opp and adjacent. In die proper
+% English version as well. I am correcting this to read opp and adjacent.
+\westep{Gebruik jou sakrekenaar om vir $\theta$  op te los }
+Om vir $\theta$  op te los sal jy die inverse funksie van jou sakrekenaar benodig: \vspace{10pt}
+\\
+Druk \fbox{2ndF} \fbox{tan} \fbox{(} \fbox{50} \fbox{\div} \fbox{100} \fbox{)} \fbox{\LARGE =} $26,6$
+\westep{Skryf die finale antwoord neer}
+\begin{equation*}
+\theta = 26,6^{\circ}
+\end{equation*}
+
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item Bepaal die hoek (korrek tot $1$ desimale plek):
+    \begin{enumerate}[itemsep=3pt, label=\textbf{(\alph*)} ]
+\begin{multicols}{2}
+ \item $tan~\theta = 1,7$
+\item $sin~\theta = 0,8$
+\item $cos~\alpha = 0,32$
+\item $tan~\theta = 5\frac{3}{4}$
+\item $sin~\theta = \frac{2}{3}$
+\item $cos~\gamma = 1,2$
+\item $4~cos~\theta = 3$
+\item $cos~4\theta = 0,3$
+\item $sin~\beta + 2= 2,65$
+\item $sin~\theta = 0,8$
+\item $3 ~tan~\beta = 1$
+\item $sin~3\alpha = 1,2$
+\item $tan~(\frac{\theta}{3}) = sin~48^{\circ}$
+\item $\frac{1}{2}~cos~2\beta = 0,3$
+\item $2~sin~3\theta +1= 2,6$
+\end{multicols}
+\end{enumerate}
+
+\item Bepaal $\alpha$ in die volgende reghoekige driehoeke:
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-4.032389)(7.3778124,4.17849)
+
+\rput(0, 3.5){\textbf{(a)}}
+\rput(3.5, 3.5){\textbf{(b)}}
+\rput(0, 0.5){\textbf{(c)}}
+\rput(3.5, 0.5){\textbf{(d)}}
+\rput(0, -2.0){\textbf{(e)}}
+\rput(3.5, -2.0){\textbf{(f)}}
+\psline[linewidth=0.04,fillstyle=solid](4.128174,1.9359901)(4.129576,3.691884)(6.1603127,1.9559901)(4.142015,1.9498184)(4.142015,1.9498184)(4.115519,1.9649143)
+\psline[linewidth=0.04,fillstyle=solid](0.5403125,3.7206802)(2.3103564,3.7223134)(0.5605087,1.1162983)(0.5542749,3.7072453)(0.5542749,3.7072453)(0.5694489,3.7330344)
+\psline[linewidth=0.04](0.8203125,3.71599)(0.8203125,3.41599)(0.5403125,3.41599)
+\psline[linewidth=0.04](4.132775,2.2306225)(4.429114,2.2301245)(4.4286456,1.9555349)
+\psline[linewidth=0.04,fillstyle=solid](0.58817375,-1.2040099)(0.5895763,0.5518841)(2.6203125,-1.1840099)(0.60201496,-1.1901817)(0.60201496,-1.1901817)(0.57551914,-1.1750857)
+\psline[linewidth=0.04](0.59277505,-0.90937746)(0.889114,-0.9098756)(0.88864577,-1.184465)
+\psline[linewidth=0.04,fillstyle=solid](0.57534015,-1.9803641)(2.331222,-1.9737015)(0.6046739,-4.0123897)(0.5892318,-1.9941416)(0.5892318,-1.9941416)(0.6042059,-1.9675767)
+\psline[linewidth=0.04](0.8699906,-1.983612)(0.8708536,-2.2799501)(0.5962649,-2.2807431)
+\psline[linewidth=0.04,fillstyle=solid](6.6596694,0.2178756)(6.6803126,-0.6840099)(3.9803126,0.21599011)(6.645639,0.20423959)(6.645639,0.20423959)(6.6719236,0.18877967)
+\psline[linewidth=0.04](6.6710052,-0.076665334)(6.3803124,-0.06400988)(6.3789563,0.20247632)
+\psline[linewidth=0.04,fillstyle=solid](5.604427,-1.7804683)(6.7567835,-3.1053228)(4.0853443,-3.1304228)(5.603074,-1.7999867)(5.603074,-1.7999867)(5.632968,-1.7939644)
+\psline[linewidth=0.04](5.794496,-2.005642)(5.570731,-2.199926)(5.3907113,-1.9925796)
+\rput{-34.695152}(-0.9369147,0.7926677){\psarc[linewidth=0.024](0.8003125,1.8959901){0.3}{39.289406}{180.0}}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4359375,3.9229398){$4$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.29078126,2.4629397){$9$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.470625,3.02294){$13$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.034219,1.5829399){$7,5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.75375,-0.057060193){$2,2$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.2096875,-0.4770602){$1,7$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.716875,0.4829398){$9,1$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.0603123,-0.3170602){$4,5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.26703125,-2.8770602){$12$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9092188,-3.1370602){$15$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.5784373,-2.3170602){$1$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.54375,-3.47706){$\sqrt{2}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.2634373,-2.93706){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7834375,-3.4970603){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9234375,-0.9970602){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.1634374,-0.017060194){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3034377,3.1429398){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7634375,1.8029398){$\alpha$}
+\rput{-162.53017}(7.4652467,7.66313){\psarc[linewidth=0.024](4.3213253,3.258065){0.34310362}{39.289406}{156.30495}}
+\rput{-89.91282}(5.095528,5.0594177){\psarc[linewidth=0.024](5.081325,-0.02193504){0.34310362}{53.61859}{134.10115}}
+\rput{-319.68652}(-0.17349519,-1.5915118){\psarc[linewidth=0.024](2.0811038,-1.0320795){0.42839816}{67.16096}{156.30495}}
+\rput{-30.447884}(1.9160283,-0.06363264){\psarc[linewidth=0.024](0.8411037,-3.5520794){0.42839816}{67.16096}{156.30495}}
+\rput{-319.68652}(-0.41087502,-4.8648257){\psarc[linewidth=0.024](6.4211035,-2.9920795){0.42839816}{67.16096}{156.30495}}
+\end{pspicture} 
+
+}
+\end{center}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02rs	&
+% Question 2
+(2.)	02rt	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+
+
+\section{Twee-dimensionele probleme}
+Trigonometrie is ontwikkel deur oerbeskawings om praktiese probleme in konstruksie en navigasie, op te los. Ons sal wys dat trigonometrie ook gebruik kan word om sekere ander praktiese probleme op te los. Ons gebruik trigonometriese funksies om probleme in twee dimensies op te los met behulp van reghoekige driehoeke.\par
+
+\mindsetvid{Solving trig problems}{VMbkj}
+\clearpage
+\begin{wex}{Die vlieg van 'n vlie\"er}
+{
+\begin{minipage}{\textwidth}
+Mandla vlieg 'n vlie\"er aan 'n $17~$m lyn teen 'n skuinste van $63^{\circ}$.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Wat is die hoogte $h$ van die vlie\"er bo die grond?
+\item As Mandla se vriend Sipho direk onder die vlie\"er staan, bereken die afstand $d$ tussen die twee vriende. 
+\end{enumerate}
+\end{minipage}
+}
+{
+
+\westep{Teken 'n skets en identifiseer die teenoorstaande sy, die aangrensende sy en die skuinssy}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.7364062)(4.64375,1.7094063)
+\psline[linewidth=0.025999999](4.0978127,1.6164063)(4.0978127,1.6964062)(4.0778127,-1.2435937)(0.4178126,-1.2435937)(4.0978127,1.6764063)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.269219,0.1064063){$h$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.374844,-1.5335938){$d$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.1245313,-1.0135937){$63^{\circ}$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.31625,0.6464063){$17$}
+\psline[linewidth=0.04](4.0778127,-0.98359364)(3.7978127,-0.98359364)(3.7978127,-1.2435937)
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Gebruik die gegewens en toepaslike verhoudings om vir $h$ en $d$ op te los\\}
+\hspace*{-60pt}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill sin~63^{\circ} &= & \frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize skuinssy}} \hfill \vspace{5pt}\\
+\hfill sin~63^{\circ} &=& \dfrac{h}{17} \hfill \\
+\hfill \therefore h &= & 17~sin ~63^{\circ} \hfill \\
+\hfill &=& 15,15~\mbox{m} \hfill \\
+   \end{array}
+\end{equation*}
+\end{enumerate}
+\end{minipage}
+
+\hspace*{-60pt}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{1}
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill cos~63^{\circ} &= & \frac{\mbox{\footnotesize aangrensende sy}}{\mbox{\footnotesize skuinssy}} \hfill \vspace{5pt}\\
+\hfill cos~63^{\circ} &=& \dfrac{d}{17} \hfill \\
+\hfill \therefore d &= & 17~cos ~63^{\circ} \hfill \\
+\hfill  &=& 7,72~\mbox{m} \hfill \\
+\end{array}
+\end{equation*}
+\end{enumerate}
+\end{minipage}
+Let op dat die derde sy van die driehoek ook bereken kan word deur die stelling van Pythagoras: $d^{2} = 17^{2} - h^{2}$.
+
+\westep{Skryf die finale antwoord neer\\}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Die vlie\"er is $15,15$ m bo die grond.
+\item Mandla and Sipho is $7,72$ m van mekaar.
+\end{enumerate}
+\end{minipage}
+}
+ 
+\end{wex}
+
+\begin{wex}
+{Berekening van hoeke}
+{
+ABCD is 'n trapesium met $AB=4$ cm, $CD=6$ cm, $BC=5$ cm and $AD=5$ cm. Punt $E$ op diagonaal $AC$ verdeel die diagonaal so dat $AE=3$ cm. $B\hat{E}C = 90^{\circ}$. Vind $A\hat{B}C$.
+}
+{
+\westep{Teken die trapesium en merk al die gegewe lengtes op die diagram. Dui aan dat $B\hat{E}C$ 'n regte hoek is}
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-2.8215597)(7.3365626,2.6459403)
+\psline[linewidth=0.04](7.0446873,-2.3765597)(0.2846875,-2.3565598)(1.9846874,2.1834402)(5.5246873,2.1834402)(7.0246873,-2.3565598)
+\psline[linewidth=0.04cm](2.0246875,2.1634402)(7.0246873,-2.3765597)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.5046873,2.1634402)(3.9646876,0.44344023)
+\psline[linewidth=0.04](4.1846876,0.6834402)(4.4246874,0.48344022)(4.1646876,0.20344023)
+\rput{124.910225}(10.204001,-1.1108128){\psarc[linewidth=0.04](5.3916802,2.1056097){0.48547706}{48.07423}{180.0}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.7178125,2.4534402){$B$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.23,-2.2465599){$C$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.885,2.4534402){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.075,-2.2865598){$D$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7692187,0.15344024){$E$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7959375,2.4134402){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.61078125,0.27344024){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.790781,0.19344023){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-43.673504}(0.04067405,2.2905717){\rput(2.8509376,1.0734402){$3$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.4921875,-2.6665597){$6$ cm}
+\end{pspicture} 
+}
+\end{center}
+     
+
+\westep{Gebruik $\triangle ABE$ and $\triangle CBE$ om die twee hoeke by $\hat{B}$ te bepaal} 
+
+\westep{Vind die eerste hoek $A\hat{B}E$}
+Die skuinssy en teenoorstaande sy word vir beide driehoeke gegee, dus gebruik ons die $sin$ funksie:\\
+In $\triangle ABE$, \\
+
+\begin{equation*}
+\begin{array}{ccl}\hfill sin~A\hat{B}E& =& \frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize skuinssy}}\hfill \vspace{5pt}\\
+ \hfill & =& \dfrac{3}{4}\hfill \\
+ \therefore A\hat{B}E& =& {48,6}^{\circ }\hfill 
+\end{array}
+\end{equation*}
+
+\westep{Gebruik die stelling van Pythagoras om $EC$ te bepaal}
+In $\triangle ABE$, \\
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill BE^{2} &=& AB^{2} - AE^{2} \hfill \\
+\hfill &=& 4^{2} - 3^{2} \hfill \\
+\hfill &=&7\\
+\therefore BE &=& \sqrt{7} \mbox{ cm}
+\end{array}
+\end{equation*}
+
+% \westep{Bepaal die tweede hoek $C\hat{B}E$}
+% In $\triangle CBE$, \\
+% 
+% \begin{equation*}
+% \begin{array}{ccl}
+%  \hfill EC^{2} &=& BC^{2} - BE^{2} \hfill \\
+% \hfill &=& 5^{2} - (\sqrt{7})^{2} \hfill \\
+% \hfill &=& 18 \hfill \\
+% \therefore EC &=& 4,24 \hfill
+% \end{array}
+% \end{equation*}
+
+\westep{Vind die tweede hoek $C\hat{B}E$}
+In $\triangle CBE$, 
+\begin{equation*}
+\begin{array}{rcl}\hfill cos~C\hat{B}E &=& \frac{\mbox{\footnotesize aangrensende sy}}{\mbox{\footnotesize skuinssy}}\hfill \vspace{5pt}\\
+ \hfill &=& \dfrac{\sqrt{7}}{5}\hfill \\
+\hfill &=& 0,529 \hfill \\
+ \therefore C\hat{B}E &= & {58,1}^{\circ }
+\end{array}
+\end{equation*}
+
+\westep{Bereken die som van die hoeke}
+\begin{equation*}
+A\hat{B}C = 48,6^{\circ} + 58,1^{\circ} = 106,7^{\circ}
+\end{equation*}
+}
+\end{wex}
+
+
+
+Nog 'n toepassing is om trigonometrie te gebruik om die hoogte van 'n gebou te bepaal. Ons kan 'n maatband van die dak laat hang, maar dit is onprakties (en gevaarlik) vir ho\"e geboue. Dis veel meer sinvol om trigonometrie te gebruik.\clearpage
+
+\begin{wex}{Bepaling van 'n gebou se hoogte}
+{
+% \setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.4345315)(7.6,2.5717187)
+\psframe[linewidth=0.028222222,dimen=outer,fillstyle=crosshatch,hatchwidth=0.028222222,hatchangle=180.0](7.6,2.0682812)(5.6,-1.9317188)
+\psline[linewidth=0.028222222cm](0.6,-1.9317188)(5.6,-1.9317188)
+\psline[linewidth=0.028222222cm,linestyle=dashed,dash=0.16cm 0.16cm](0.6,-1.9317188)(5.6,2.0682812)
+\pswedge[linewidth=0.028222222](0.6,-1.9317188){0.6}{0.0}{38.66}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.05,-2.231719){$100$ m}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.6490624,-1.6317189){$38,7^\circ$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.33453125,-1.9317188){$Q$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.5490627,-2.231719){$B$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.5490627,2.3682814){$T$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.249062,0.06828115){$h$}
+\psline[linewidth=0.04](5.61,-1.6082814)(5.25,-1.6082814)(5.25,-1.9282814)
+\end{pspicture} 
+}
+
+\end{center}
+\\
+
+% \end{figure}
+% \caption{Determining die height of a building using trigonometry.}
+% \label{trig:height}
+
+Die diagram toon 'n gebou van onbekende hoogte $h$. As ons $100$ m wegstap tot by punt $Q$ en die hoek meet van die grond na die toppunt van die gebou $(T)$, vind ons die hoek is $38,{7}^{\circ }$. Hierdie word die elevasiehoek of hoogtehoek genoem.\\
+Ons het 'n reghoekige driehoek en ken die lengte van een sy en 'n hoek. Ons kan dus die hoogte van die gebou bereken (korrek tot die naaste meter.) \vspace*{-15pt}}
+{
+\westep{Identifiseer die teenoorstaande sy, aangrensende sy en die skuinssy}
+\vspace*{-15pt}
+\westep{}
+In $\triangle QTB$,
+\begin{equation*}
+\begin{array}{ccl}\hfill tan~38,7^{\circ }& =& \frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize aangrensende sy}}\hfill \vspace{4pt} \\
+ & =& \dfrac{h}{100}\hfill
+  \end{array}
+\end{equation*}
+\vspace*{-15pt}
+\westep{Herrangskik en los op vir $h$}
+
+\begin{equation*}
+\begin{array}{ccl}
+
+\hfill h& =& 100\times tan~38,7^{\circ }\hfill \\
+& =& 80,1\hfill
+  \end{array}
+\end{equation*}
+
+\westep{Skryf finale antwoord neer}
+Die hoogte van die gebou is $80$ m.\vspace*{-15pt}
+}
+\end{wex}
+
+
+\begin{wex}{Hoogte - en dieptehoeke}
+{'n Woonstelblok is $200$ m van 'n selfoontoring weg. Iemand staan by $B$. Sy meet die hoek van $B$ na die top van die toring $E$ en vind dit is $34^{\circ}$ (die hoogtehoek). Dan meet sy die hoek vanaf $B$ na die onderpunt van die toring $C$ en vind dit is $62^{\circ}$ (die dieptehoek).
+\\Wat is die hoogte van die selfoontoring (korrek tot die naaste meter)?\\
+
+\\
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-3.893125)(10.969063,3.893125)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color353b}{rgb}{0.6,0.6,0.6}
+\definecolor{color649b}{rgb}{0.8,0.8,1.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid](2.3,0.8496875)(0.18,-3.2103126)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-0.2903125)(0.4,-0.69031256)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-0.3103125)(1.1,-0.7103125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.0303124)(0.4,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,0.4896875)(0.4,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,0.4896875)(1.1,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,0.4896875)(1.8,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-0.3103125)(1.8,-0.7103125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.0303124)(1.1,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.0303124)(1.8,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.7303125)(0.4,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.7303125)(1.1,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.7303125)(1.8,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](0.5,-2.6103127)(0.2,-3.2103126)
+\pscircle[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=gradient,gradlines=2000,gradmidpoint=1.0](0.35,-2.8603127){0.05}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](10.2,2.2896874)(10.0,-3.2103126)
+\psline[linewidth=0.04cm,linecolor=color194](10.1,3.2896874)(10.1,2.2896874)
+\psline[linewidth=0.025999999cm,linecolor=color194](2.24,0.82968754)(9.98,-3.1703126)
+\psline[linewidth=0.024cm,linecolor=color194](2.28,0.8496875)(10.12,3.2896874)
+\psdots[dotsize=0.12,linecolor=color194](10.1,3.2896874)
+\psline[linewidth=0.024cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](2.26,0.82968754)(10.02,0.82968754)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.776562,-3.6903126){$200$ m}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.78,-2.7703125){$ A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2557812,1.1896875){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.574532,-3.1703126){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.527812,0.82968754){$D$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.371095,3.6896875){$E$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8720312,1.0896875){$34^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.6520312,0.44968748){$62^\circ$}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.07,1.0396874){0.49}{336.25052}{58.24052}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.56,0.80968744){0.94}{294.44397}{0.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](10.38,-3.2103126)(0.0,-3.3903124)
+\psline[linewidth=0.04](2.28,-2.886875)(2.6,-2.886875)(2.6,-3.226875)
+\psline[linewidth=0.04](9.7,0.51312506)(9.7,1.153125)(10.05669,1.1505005)
+\psline[linewidth=0.04cm](9.72,0.53312504)(10.0,0.53312504)
+\psline[linewidth=0.04cm](9.72,0.83312505)(10.0,0.83312505)
+\end{pspicture} 
+}\\
+Let op: Die diagram is nie op skaal geteken nie.
+\end{center}
+}
+{
+\westep{Om die hoogte $CE$ te bepaal, bereken eers die lengtes $DE$ en $CD$}
+$\triangle BDE$ en $\triangle BDC$ is beide reghoekige driehoeke. In elk van die driehoeke is die lengte $BD$ bekend, dus kan ons die onbekende sye bereken.
+
+\westep{Bereken $CD$}
+Die lengte $AC$ is gegee. $CABD$ is 'n reghoek, dus is $BD = AC = 200$ m.
+\\In $\triangle CBD$, 
+\begin{eqnarray*}
+tan ~C\hat{B}D &=& \frac{CD}{BD}\\
+\therefore CD&=&BD\times tan~ C\hat{B}D \\
+&=& 200\times tan~ 62^{\circ} \\
+&=& 376\mbox{ m}
+\end{eqnarray*}
+
+\westep{Bereken $DE$}
+In $\triangle DBE$,
+\begin{eqnarray*}
+tan~ D\hat{B}E &=& \frac{DE}{BD}\\
+\therefore DE&=&BD\times tan ~D\hat{B}E \\
+&=& 200\times tan~ 34^\circ \\
+&=&135\mbox{ m}
+\end{eqnarray*}
+
+\westep{Tel die twee hoogtes bymekaar om die finale antwoord te kry} 
+Die hoogte van die selfoontoring is $CE=CD+DE=135 \mbox{ m}+376\mbox{ m}=511\mbox{ m}$.
+}
+\end{wex}
+
+
+\begin{wex}{Bouplan}
+{Mnr Nkosi het 'n motorhuis by sy huis en hy besluit om 'n afdak aan die kant van die motorhuis aan te bou. Die motorhuis is $4$ m hoog en sy plaat vir die dak is $5$ m lank. As die hoogtehoek van die dak $5^\circ$ is, hoe hoog moet hy die muur $BD$ bou? Gee die antwoord korrek tot $1$ desimale plek.
+\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.783125)(9.368906,1.783125)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color247b}{rgb}{0.8,0.8,0.8}
+\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](8.471094,0.67968744)(8.311094,-1.6403126)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,0.25968745)(3.8510938,-1.6203126)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](1.2910937,0.25968745)(0.75109375,-1.6603125)
+\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,1.3196875)(0.79109377,0.19968745)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5167189,-0.20031255){Motorhuis}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.78125,1.2396874){Dak}
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.949843,-0.50031257){Muur}
+\psline[linewidth=0.04cm](0.7710937,1.2996874)(0.7710937,-1.6003126)
+\psline[linewidth=0.04cm](0.75109375,1.2996874)(4.351094,1.2996874)
+\psline[linewidth=0.04cm](4.3710938,1.2996874)(4.3710938,-1.6003126)
+\psline[linewidth=0.04cm](0.7710937,-1.6003126)(1.2710937,-1.6003126)
+\psline[linewidth=0.04cm](1.2710937,-1.6003126)(1.2710937,0.19968745)
+\psline[linewidth=0.04cm](1.2710937,0.19968745)(3.8710938,0.19968745)
+\psline[linewidth=0.04cm](3.8710938,0.19968745)(3.8710938,-1.6003126)
+\psline[linewidth=0.04cm](3.8710938,-1.6003126)(4.3710938,-1.6003126)
+\psline[linewidth=0.024cm,linecolor=color194](4.3710938,1.2996874)(8.44,0.663125)
+\psline[linewidth=0.027999999cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](8.4,0.663125)(4.2510934,0.6996874)
+\psline[linewidth=0.04cm,linecolor=color194](8.291094,0.67968744)(8.291094,-1.6203126)
+\psline[linewidth=0.04cm,linecolor=color194](8.451094,0.67968744)(8.451094,-1.6203126)
+\psline[linewidth=0.018cm,linecolor=color194](8.46,-1.616875)(0.9710938,-1.6003126)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.3,0.07968745){$4$ m}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.3395314,1.2596875){$5$ m}
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.906875,0.6996874){$ B$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.6251564,0.41968745){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.073125,0.8796874){$5^\circ$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.5270314,1.5796875){$C$}
+\psdots[dotsize=0.12,linecolor=color194](4.3710938,0.6996874)
+\psdots[dotsize=0.12,linecolor=color194](4.3710938,1.2996874)
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.858906,-1.5803125){$ D$}
+\psdots[dotsize=0.1378129,linecolor=color194](8.271093,0.67968744)
+\psline[linewidth=0.04](4.38,0.943125)(4.64,0.943125)(4.64,0.703125)(4.64,0.703125)(4.64,0.723125)
+\end{pspicture} 
+}
+\end{center}
+}{
+\westep{Identifiseer die teenoorstande sy, die aangrensende sy en die skuinssy}
+$\triangle ABC$ het 'n regte hoek. Die skuinssy en 'n hoek is bekend, dus kan ons $AC$ bereken. Die hoogte van die muur $BD$ is dan die hoogte van die motorhuis minus $AC$.
+\begin{eqnarray*}
+ sin~A\hat{B}C &=& \frac{AC}{BC} \\
+\therefore AC &=& BC \times sin~A\hat{B}C\\
+&=& 5~sin~5^{\circ}\\
+&=& 0,4\mbox{ m}\\
+\\
+\therefore BD&=& 4\mbox{ m}-0,4\mbox{ m}\\
+&=& 3,6\mbox{ m}
+\end{eqnarray*}
+
+
+\westep{Skryf die finale antwoord neer}  
+Mr Nkosi moet sy muur $3,6$ m hoog bou.
+}
+\end{wex}
+\vspace*{-30pt}
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+
+\item 'n Seun wat 'n vlie\"er vlieg staan $30~$m vanaf 'n punt direk onder die vlie\"er. As die vlie\"er se tou $50~$m lank is, vind die hoogtehoek van die vlie\"er.
+\item Wat is die hoogtehoek van die son as 'n boom, wat $7,15$ m hoog is, 'n skaduwee van $10,1$ m gooi?
+\item Van 'n afstand van $300$ m af kyk Susan op na die bopunt van 'n vuurtoring teen 'n hoogtehoek van $5^{\circ}$. Bepaal die hoogte van die vuurtoring tot die naaste meter.
+\item 'n Leer met lengte $25$ m rus teen 'n muur teen 'n hoek van $37^{\circ}$. Vind die afstand tussen die muur en die onderpunt van die leer. 
+
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 4
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02ru	&
+% Question 2
+(2.)	02rv	&
+% Question 3
+(3.)	02rw	&
+% Question 4
+(4.)	02rx	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 4
+    
+}
+\end{exercises} 
+
+
+
+\section{Definisie van verhoudings in die Cartesiese vlak}
+
+Ons het trigonometriese verhoudings gedefinieer deur reghoekige driehoeke te gebruik. Ons kan hierdie definisies uitbrei na enige hoek, deur daarop te let dat die definisies nie afhanklik is van die lengte van die sye van 'n driehoek nie, maar slegs afhanklik is van die grootte van die hoek. As ons dus enige punt op 'n Cartesiese vlak stip en 'n lyn trek vanaf die oorsprong na daardie punt kan ons die hoek bereken wat die lyn met die $x$-as maak. In die figuur hieronder is punte $P$ en $Q$ reeds gemerk. 'n Lyn word vanaf die oorsprong ($O$) na elke punt getrek. Die stippellyne wys hoe ons reghoekige driehoeke vir elke punt kan konstrueer. Die stippellyn moet altyd na die $x$-as getrek word. Nou kan ons hoeke $A$ en $B$ vind. Ons kan ook die definisies van die omgekeerdes op dieselfde manier uitbrei.
+
+
+
+\setcounter{subfigure}{0}
+\begin{center}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.116719)(8.559063,4.1567187)
+\definecolor{color4644b}{rgb}{0.7568627450980392,0.7568627450980392,0.7568627450980392}
+\rput{127.209015}(6.6994696,-3.0593522){\psframe[linewidth=0.04,linecolor=color4644b,dimen=outer,fillstyle=solid,fillcolor=color4644b](4.2116795,0.34230337)(4.0061655,-0.07666689)}
+\rput{0.05210805}(0.0,-0.0037759799){\psframe[linewidth=0.04,linecolor=color4644b,dimen=outer,fillstyle=solid,fillcolor=color4644b](4.2998266,0.5166024)(4.00418,-0.0911309)}
+\rput{0.05210805}(0.0,-0.0039762384){\psframe[linewidth=0.04,linecolor=color4644b,dimen=outer,fillstyle=solid,fillcolor=color4644b](4.460063,0.3966389)(4.284289,-0.07118539)}
+\rput{87.87539}(4.296069,-4.472766){\psframe[linewidth=0.04,linecolor=color4644b,dimen=outer,fillstyle=solid,fillcolor=color4644b](4.571679,0.20230302)(4.3661656,-0.21666722)}
+\rput{32.417133}(0.7902694,-1.9834906){\psframe[linewidth=0.04,linecolor=color4644b,dimen=outer,fillstyle=solid,fillcolor=color4644b](3.9364834,0.65755856)(3.677197,0.07755861)}
+\rput{-56.56522}(1.8740156,3.179452){\psarc[linewidth=0.04,fillstyle=solid,fillcolor=color4644b](3.8915973,-0.15175243){0.831297}{60.043613}{171.69456}}
+\rput(4.0,-0.11671885){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.15cm]{<->}(0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(4.04,-0.09671885)(6.0,2.9167187)
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(4.02,-0.14328125)(2.0,2.8832812)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.98,2.9167187)(6.0,-0.08328125)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.0,2.8364403)(2.0,-0.09671885)
+\psline[linewidth=0.04,fillstyle=solid](2.0,0.17671885)(2.26,0.17671885)(2.26,-0.07568518)(2.26,-0.09671885)
+\psline[linewidth=0.04,fillstyle=solid](5.72,-0.08328115)(5.72,0.17518039)(5.98,0.17518039)(5.98,0.19671886)
+\rput{-279.77182}(3.025072,-3.2106922){\psarc[linewidth=0.04](3.4179945,0.18995206){0.66433096}{15.686174}{126.06392}}
+\rput{-86.49843}(3.894729,4.3688884){\psarc[linewidth=0.04](4.269561,0.11427801){0.9286654}{72.6542}{148.98633}}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.849375,0.31328115){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8090625,-0.31828135){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2445314,0.25328115){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.606094,3.1332812){$P(2;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3735937,3.1532812){$Q(-2;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.184531,0.09328115){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2248435,3.9532814){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1221876,0.39328116){$B$}
+\end{pspicture} 
+}
+\end{center}
+\end{center}
+Uit die ko\"ordinate van $P(2;3)$ weet ons dat die lengte van die sy oorkant $\hat{A}$ $3$ is en die lengte van die aangrensende sy $2$. Deur $tan~\hat{A}=\frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize aangrensende sy}} = \frac{3}{2}$ te gebruik, bereken ons dat $\hat{A}=56,3^{\circ}$ is.\par
+
+
+
+Ons kan ook die stelling van Pythagoras gebruik om die skuinssy van die driehoek te bereken, dan $\hat{A}$ bereken deur $sin~\hat{A} = \frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize skuinssy}}$ of $cos~\hat{A} = \frac{\mbox{\footnotesize aangrensende sy}}{\mbox{\footnotesize skuinssy}}$.\par
+
+Beskou punt $Q(-2;3)$. Ons definieer $\hat{B}$ as die hoek tussen die lyn $OQ$ en die positiewe $x$-as. Hierdie word die standaard hoekposisie genoem. Laat $\hat{\alpha}$ die hoek tussen lyn $OQ$ en die negatiewe $x$-as wees  sodat $\hat{B} + \hat{\alpha} = 180^{\circ}$.
+\par
+
+Uit die ko\"ordinate $Q(-2;3)$ weet ons die lengte van die sy oorkant $\hat{\alpha}$ is $3$ en die lengte van die aangrensende sy is $2$. Deur $tan~\hat{\alpha}=\frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize aangrensende sy}} = \frac{3}{2}$ bereken ons $\hat{\alpha}=56,3^{\circ}$.
+\\Dus $\beta=180^{\circ} - \alpha = 123,7^{\circ}$.\par
+
+'n Alternatiewe metode is om die skuinssy deur die stelling van Pythagoras te bereken, en dan $\alpha$ deur $sin~\alpha = \frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize skuinssy}}$ of $cos~\alpha = \frac{\mbox{\footnotesize aangrensende sy}}{\mbox{\footnotesize skuinssy}}$ te gebruik. \par
+
+Sou ons 'n sirkel trek, met die oorsprong $(0)$ as middelpunt en deur punt $P$, dan is die lengte van die oorsprong tot by punt $P$ die radius van die sirkel, wat ons aandui met $r$. Ons kan al die trigonometriese funksies dan in terme van $x$, $y$ en $r$ herskryf.
+
+Die algemene definisies van die trigonometriese funksies is:
+
+\begin{equation*}
+\begin{array}{cccccc}\hfill sin~\theta & =& \frac{y}{r}\hfill & cosec~\theta & =& \frac{r}{y}\hfill \\
+ \hfill cos~\theta & =& \frac{x}{r}\hfill & sec~\theta & =& \frac{r}{x}\hfill \\
+ \hfill tan~\theta & =& \frac{y}{x}\hfill & cot~\theta & =& \frac{x}{y}\hfill \end{array}
+\end{equation*}
+% \Note{In trigonometrie word hoeke altyd gemeet vanaf die positiewe $x$-axis in 'n antiklokse rigting.}
+
+Die Cartesiese vlak is verdeel in $4$ kwadrante in 'n antikloksgewyse orde soos aangedui in die diagram hieronder. Let daarop dat $r$ altyd positief is, maar dat die waardes van $x$ en $y$ verander afhangende van die posisie van die punt op die Cartesiese vlak. As 'n resultaat kan die trigonometriese 
+verhoudings posiief of negatief wees. Die letters $C$, $A$, $S$ en $T$ dui aan watter van die funksies is positief in elke kwadrant:\\
+
+
+% \Note{$r$ is 'n lengte en dus altyd positief.}
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-4.1584377)(8.42125,4.1984377)
+\rput(4.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-4,-4)(4,4)}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.0853124,2.2715626){Kwadrant I}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.7453125,2.3115625){Kwadrant II}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8053125,-2.3084376){Kwadrant III}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.3515625,-2.2684374){Kwadrant IV}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7403126,0.8315625){A }
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.5,0.4315625){alle verhoudings}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2923439,0.8515625){S}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2390625,0.4715625){$sin~\theta$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2109375,-0.8484375){T}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.1639063,-1.1684375){$tan~\theta$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7857814,-0.8484375){C}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.815,-1.1484375){$cos~\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.275469,-0.1084375){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1557813,4.0715623){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.810625,0.0715625){$0^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.60875,-0.4484375){$360^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3410935,3.5515625){$90^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.32265624,0.0715625){$180^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.529375,-3.9084375){$270^{\circ}$}
+
+\usefont{T1}{ptm}{m}{n}
+\rput(4.170625,-0.4084375){$0$}
+\end{pspicture} 
+}
+\end{center}
+\\
+ Hierdie diagram staan bekend as die CAST diagram.\par
+\\
+Kwadrant I: alle verhoudings is positief.\\
+Kwadrant II: $y$ waardes is positief, dus is sinus en cosecant positief.\\
+Kwadrant III: beide $x$ en $y$ waardes is negatief, dus is tangens en cotangens positief. \\
+Kwadrant IV: $x$ waardes is positief, dus is cosinus en  secant positief.\par
+\textbf{Nota:} die skuinssy is altyd positief.\\
+\mindsetvid{Trigonometrie on the Cartesian plane}{VMbhy}
+%English!
+\subsubsection{Spesiale hoeke in die Cartesiese vlak}
+Waneer ons in die Cartesiese vlak werk, sluit ons twee ander spesiale hoeke in reghoekige driehoeke in:  $0^{\circ}$ en $90^{\circ}$. Hierdie is spesiaal omdat ons nie gewoonlik 'n hoek van $0^{\circ}$ of 'n hoek van $90^{\circ}$ kan hê nie.
+
+Let op dat as $\theta = 0^{\circ}$, is die lengte van die teenoorstaande sy gelyk aan $0$, dus
+\begin{equation*}
+  sin~ 0^{\circ} =
+  \dfrac{\mbox{\footnotesize teenoorstaand}}{\mbox{\footnotesize skuinssy}} =
+  \dfrac{0}{\mbox{\footnotesize skuinssy}} =
+  0
+\end{equation*}
+
+As $\theta = 90^{\circ}$, is die lengte van die aangrensende sy gelyk aan $0$, dus
+\begin{equation*}
+  cos~ 90^{\circ} =
+  \dfrac{\mbox{\footnotesize aangrensende sy }}{\mbox{\footnotesize skuinssy}} =
+  \dfrac{0}{\mbox{\footnotesize skuinssy}} =
+  0
+\end{equation*}
+
+Met behulp van die definisie $tan~ \theta=\dfrac{sin~ \theta}{cos~ \theta}$ sien ons dat vir
+$\theta =  0^{\circ}$, $sin~ 0^{\circ}=0$, dus
+\begin{equation*}
+  tan~ 0^{\circ} =
+  \dfrac{0}{cos~ 0^{\circ}} =
+  0
+\end{equation*}
+Vir $\theta =  90^{\circ}$, $cos~ 90^{\circ}=0$, dus
+\begin{equation*}
+  tan~ 90^{\circ} =
+  \dfrac{sin~ 90^{\circ}}{0} =
+  \mbox{ongedefineerd}
+\end{equation*}
+
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+\setlength{\extrarowheight}{2.5pt}
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+$\theta$
+&
+${0}^{\circ }$
+&
+${30}^{\circ }$
+&
+${45}^{\circ }$
+&
+${60}^{\circ }$
+&
+${90}^{\circ }$
+
+
+
+\\ \hline
+%--------------------------------------------------------------------
+$cos~ \theta $
+ &
+$1$
+&
+$\frac{\sqrt{3}}{2}$
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{1}{2}$
+&
+$0$
+
+
+\\ \hline
+%--------------------------------------------------------------------
+$sin~ \theta $
+&
+$0$
+&
+$\frac{1}{2} $
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{\sqrt{3}}{2}$
+&
+$1$
+
+%  make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+$tan~ \theta $
+&
+$0$
+&
+$\frac{1}{\sqrt{3}}$
+&
+$1$ &
+$\sqrt{3}$
+&
+ongedf
+
+
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.3}\end{center}
+% \begin{caption}{\small\bfseries Table 14.3}\end{caption}
+\end{table}
+
+\begin{wex}{Verhoudings in die Cartesiese vlak}
+{
+\begin{minipage}{\textwidth}
+$P(-3;4)$ is a punt in die Cartesiese vlak. $X\hat{O}P=\theta$. Sonder om 'n sakrekenaar te gebruik, bepaal die waarde van: 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $cos~\theta$
+\item $3~tan~\theta$
+\item $\frac{1}{2}~cosec~\theta$
+\end{enumerate}
+\end{minipage}
+}
+{
+
+\westep{Skets punt $P$ in die Cartesiese vlak en merk dit $\theta$} 
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
+\rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.295469,0.0115625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1757812,3.0715625){$y$}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(3.02,-0.1784375)(1.6,1.8615625)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3670312,2.2715626){$P(-3;4)$}
+\rput{-45.048485}(0.95434314,2.1533978){\psarc[linewidth=0.04]{->}(3.073445,-0.073917985){0.6961048}{36.728504}{180.0}}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.150625,-0.4484375){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2709374,0.1915625){$\theta$}
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Gebruik Pythagoras om $r$ te bereken}
+\begin{equation*}
+ \begin{array}{ccl}
+    \hfill r^{2} &= & x^{2} + y^{2} \hfill \\
+\hfill  &=& (-3)^{2} + (4)^{2} \hfill \\
+\hfill  &=& 25 \hfill \\
+\hfill r &=& \pm 5\hfill \\
+\hfill \therefore r &=& 5 \hfill \\ 
+\end{array}
+\end{equation*}
+\hspace*{-50pt}
+\begin{minipage}{\textwidth}
+\westep{Vervang waardes vir $x$, $y$ en $r$ in die nodige verhoudings}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+   \item $cos~\theta = \dfrac{x}{r} = -\dfrac{3}{5}$
+\item $3~tan~\theta = 3\left(\dfrac{y}{x}\right) = 3\left(\dfrac{4}{-3}\right) = -4 $
+\item $\dfrac{1}{2}~cosec~\theta = \dfrac{1}{2}\left(\dfrac{r}{y}\right) = \dfrac{1}{2}\left(\dfrac{5}{4}\right) = \dfrac{5}{8} $
+  \end{enumerate}
+\end{minipage}
+}
+\end{wex}
+
+
+\begin{wex}{Verhoudings in die Cartesiese vlak}{
+\begin{minipage}{\textwidth}
+$X\hat{O}K = \theta$ is 'n hoek in die derde kwadrant en $K$ is die punt $(-5;y)$. $OK$ is $13$ eenhede.
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+%English
+\item  Bepaal sonder 'n rekenaar die waarde van $y$
+\item Bewys dat $tan^{2}~\theta + 1 = sec^{2}~\theta$
+  \end{enumerate}
+\end{minipage}
+}
+{
+\westep{Teken punt $K$ in die Cartesiese vlak merk dit $\theta$} 
+\begin{center}
+\scalebox{1} % Change this value to rescale die drawing.
+{
+\begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
+\rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.295469,0.0115625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1757812,3.0715625){$y$}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(2.963227,-0.18549357)(1.6,-2.1384375)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2170312,-2.5084374){$K(-5;y)$}
+\rput{-45.048485}(1.0897402,2.0403726){\psarc[linewidth=0.04]{->}(3.0048735,-0.2936738){0.7345531}{56.389397}{272.69913}}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.150625,-0.4484375){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.4109375,0.5115625){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9303125,-1.1484375){$13$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Gebruik Pythagoras om $y$ te bereken}
+\begin{equation*}
+ \begin{array}{ccl}
+    \hfill r^{2} &= & x^{2} + y^{2} \hfill \\
+\hfill y^{2} &=& r^{2} - x^{2}\hfill \\
+\hfill  &=& (13)^{2} - (-5)^{2} \hfill \\
+\hfill  &=& 169-25 \hfill \\
+\hfill  &=& 144 \hfill \\
+\hfill  y&=& \pm 12\hfill 
+
+\end{array}
+\end{equation*}
+Gegee dat $\theta$ in die derde kwadrant val, moet $y$ negatief wees.\\
+\begin{equation*}
+ \therefore y = -12
+\end{equation*}
+
+\westep{Vervang waardes vir $x$, $y$ en $r$ en vereenvoudig}
+\begin{equation*}
+\begin{array}{rclrcl}
+ \hfill \mbox{LK} &=&  tan^{2}~\theta + 1 	&	\mbox{RK}	&=&  	sec^{2}~\theta \hfill \\
+\hfill &=& \left(\dfrac{y}{x}\right)^{2} + 1  	&	&=&  \left(\dfrac{r}{x}\right)^{2} \hfill \vspace{5pt} \\
+\hfill&=&  \left(\dfrac{-12}{-5}\right)^{2} + 1 	&	&=&  \left(\dfrac{13}{-5}\right)^{2} \hfill \vspace{5pt}\\
+\hfill&=&  \left (\dfrac{144}{25}\right) + 1  	&	&=&  \left(\dfrac{169}{25}\right)^{2} \hfill \vspace{5pt}\\
+\hfill &=& \dfrac{144 + 25}{25} 		&	&=&  \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill &=& \dfrac{169}{25}  			&	&=&  \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill \therefore \mbox{LK} &=& \mbox{RK}&& \hfill
+
+\end{array}
+\end{equation*}
+
+}
+\end{wex}
+
+
+\textbf{Nota: } Maak altyd 'n skets wanneer jy trigonometriese probleme sonder 'n sakrekenaar moet oplos.
+\begin{exercises}{}
+{
+
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+   \item $B$ is 'n punt in die Cartesiese vlak. Bepaal sonder 'n rekenaar:
+% \begin{center}
+% \scalebox{1} % Change this value to rescale die drawing.
+% {
+% \begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
+% \rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(6.295469,0.0115625){$x$}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.1757812,3.0715625){$y$}
+% \rput(3.4, -0.4){$O$}
+% \psline[linewidth=0.04cm,fillcolor=black,dotsize=0.07055555cm 2.0]{-*}(3.003227,-0.16549358)(3.78,-1.8384376)
+% \usefont{T1}{ppl}{m}{n}
+% \rput(4.577031,-1.9084375){$B(1;-3)$}
+% \rput{-45.048485}(1.0590175,2.0862904){\psarc[linewidth=0.04](3.0448735,-0.2336738){0.7345531}{50.714928}{340.5804}}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(2.393125,0.5115625){$\beta$}
+% \end{pspicture} 
+% }
+% \end{center}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item Die lengte van $OB$
+\item $cos~\beta$
+\item $cosec~\beta$
+\item $tan~\beta$
+\end{enumerate}
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1567187)(6.5990624,3.1967187)
+\rput(3.0,-0.15671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-2.5,-2.5)(2.5,2.5)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.224531,0.01328125){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1245313,2.9932814){$y$}
+\psline[linewidth=0.04cm](3.0,-0.17671876)(4.0,-2.2167187)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.98,-2.2167187)(4.02,-0.09671875)
+\psdots[dotsize=0.12](4.0,-2.2367187)
+\psarc[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.02,-0.15671875){0.4}{0.0}{284.03625}
+\psframe[linewidth=0.04,dimen=outer](4.04,-0.13671875)(3.76,-0.41671875)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.9645312,0.1){$X$}
+\usefont{T1}{ptm}{m}{n}
+% \rput(3,-0.1){\LARGE $O$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.5445313,0.33328125){\LARGE$\beta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1445312,-2.5067186){$B(1;-3)$}
+\end{pspicture} 
+}
+
+\item As $sin~\theta= 0,4$ en $\theta$ 'n stomphoek is, bepaal:
+% \begin{center}
+% \scalebox{1} % Change this value to rescale die drawing.
+% {
+% \begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
+% \rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(6.295469,0.0115625){$x$}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.1757812,3.0715625){$y$}
+% \psline[linewidth=0.04cm,fillcolor=black](3.0,-0.1784375)(0.8,0.7415625)
+% \usefont{T1}{ppl}{m}{n}
+% \rput(0.7292187,-0.4884375){$(x;2)$}
+% \rput{-45.048485}(1.0440966,2.0498228){\psarc[linewidth=0.04](2.9934452,-0.23391798){0.6961048}{50.894093}{199.87982}}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.150625,-0.4484375){$0$}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.6509376,0.5915625){$\theta$}
+% \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.8,0.7215625)(0.8,-0.1784375)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.5234375,0.2315625){$2$}
+% \end{pspicture} 
+% }
+% \end{center}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{4}
+ \item $cos~\theta$
+\item $\sqrt{21}~tan~\theta$
+\end{enumerate}
+%english
+\item Gegee $tan~ \theta = \frac{t}{2}$, waar $0^{\circ} \leq \theta \leq 90^{\circ}$.
+Bepaal die volgende in terme van $t$:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $sec~ \theta$
+\item $cot~ \theta$
+\item $cos^2~ \theta$
+\item $tan^2~ \theta-sec^2~ \theta$
+\end{enumerate}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02ry	&
+% Question 2
+(2.)	02rz	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+
+\summary{VMdwh}
+
+\begin{itemize}[noitemsep]
+\item Ons kan drie trigonometriese verhoudings definieer vir reghoekige driehoeke: sinus ($sin$), cosinus ($cos$) en tangens ($tan$).
+\item Elk van hierdie verhoudings het 'n omgekeerde: cosecant ($cosec$), secant ($sec$) en cotangens ($cot$).
+\item Ons kan die beginsels van oplossing van vergelykings en die trigonometriese verhoudings gebruik om eenvoudige trigonometriese probleme op te los.
+\item Ons kan probleme in twee dimensies oplos met reghoekige driehoeke.
+\item Vir sekere spesiale hoeke kan ons die waardes van $sin$, $cos$ en $tan$ maklik bepaal sonder 'n sakrekenaar.
+\item Ons kan die definisies van die trigonometriese funksies uitbrei na hoeke van enige grootte.
+\item Trigonometrie word gebruik om probleme op te los, soos om die hoogte van 'n gebou te bepaal.
+\end{itemize}
+
+
+\begin{eocexercises}{}
+
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Sonder om 'n sakrekenaar te gebruik, bepaal die waarde van
+\begin{equation*}
+sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
+\end{equation*}
+\item As $3~tan~\alpha = -5$ en $0^{\circ} < \alpha < 270^{\circ}$, gebruik 'n skets om te bepaal:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $cos~\alpha$
+    \item $tan^{2}~\alpha - sec^{2}~\alpha$
+    \end{enumerate}
+\item Los op vir $\theta$ as $\theta$ 'n positiewe skerphoek is:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $2~sin~\theta = 1,34$
+    \item $1 - tan~\theta = -1$
+    \item $cos~2\theta = sin~40^{\circ}$ 
+    \item $\frac{sin~\theta}{cos~\theta}= 1$
+    \end{enumerate}
+
+
+\item Bereken die onbekende sylengtes in die diagramme hieronder:
+\begin{center}
+\scalebox{1}  
+{ 
+\begin{pspicture}(0,-2.0390613)(8.035,2.0253136) 
+\psline[linewidth=0.04cm](0.02,0.02093862)(3.06,0.02093862) 
+\psline[linewidth=0.04cm](0.02,0.02093862)(0.02,-2.0190613) 
+\psline[linewidth=0.04cm](0.04,-1.9990613)(3.04,0.02093862) 
+\psframe[linewidth=0.04,dimen=outer](0.26,0.04093862)(0.0,-0.21906137) 
+\psline[linewidth=0.04cm](0.9944844,1.4531701)(3.04,0.04093862) 
+\psline[linewidth=0.04cm](0.96,1.4209386)(0.024381146,0.02542873) 
+\rput{-33.90198}(-0.5512336,0.79249614){\psframe[linewidth=0.04,dimen=outer](1.1544285,1.4305158)(0.8944285,1.1705158)} 
+\psline[linewidth=0.04cm](2.2384837,1.992771)(3.04,0.04093862) 
+\psline[linewidth=0.04cm](2.238,1.9929386)(1.0103352,1.4765087) 
+\rput{-66.64198}(-0.3803531,3.117777){\psframe[linewidth=0.04,dimen=outer](2.3111107,1.9781737)(2.0511107,1.7181737)} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(2.2601562,-0.21406138){$30^{\circ}$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(2.3034375,0.22593862){$25^{\circ}$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(2.4634376,0.77){$20^{\circ}$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(1.8576562,-1.2540613){$16$ cm} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(1.3398438,0.20593862){$a$} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(1.9,1.1){$b$} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(1.58,1.9059386){$c$} 
+\psline[linewidth=0.04cm](6.689009,-1.6241995)(6.0199666,-1.4501117) 
+\rput{-90.46057}(4.6635084,7.686732){\psframe[linewidth=0.04,dimen=outer](6.2543488,1.6402806)(6.0343485,1.4202806)} 
+\rput{-90.46057}(4.4806204,7.508202){\psframe[linewidth=0.04,dimen=outer](6.0743546,1.6417276)(5.8543544,1.4217275)} 
+\rput{-104.9971}(9.7950115,4.4890895){\psframe[linewidth=0.04,dimen=outer](6.7298956,-1.4036404)(6.509896,-1.6236403)} 
+\psline[linewidth=0.04cm](7.375193,1.6303898)(4.2549725,1.6154709) 
+\psline[linewidth=0.04cm](6.055236,1.6410005)(6.030317,-1.4588993) 
+\psline[linewidth=0.04cm](6.0304775,-1.4389)(4.2748113,1.5953108) 
+\psline[linewidth=0.04cm](7.375193,1.6303898)(6.030317,-1.4588993) 
+\psline[linewidth=0.04cm](7.375193,1.6303898)(6.689009,-1.6241995) 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(4.880625,0.005938619){$d$} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(6.7414064,1.8259386){$e$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(5.2226562,1.8259386){$5$ m} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(6.2709374,-1.7940614){$f$} 
+% \usefont{T1}{ptm}{m}{it} 
+\rput(7.2148438,-0.07406138){$g$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(4.756875,1.3859386){ $50^{\circ}$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(6.9460936,1.4059386){$60^{\circ}$} 
+% \usefont{T1}{ptm}{m}{n} 
+\rput(6.45,-1.2740613){$80^{\circ}$} 
+\end{pspicture} 
+}
+\end{center}
+
+\item In $\triangle PQR$, $PR=20$ cm, $QR=22$ cm en $P\hat{R}Q = 30^{\circ}$. Die loodlyn vanaf $P$ na $QR$ kruis $QR$ by $X$. Bereken: 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item die lengte $XR$ 
+\item die lengte $PX$
+\item die hoek $Q\hat{P}X$ 
+\end{enumerate} 
+\item 'n Leer met lengte $15$ m rus teen 'n muur. Die voet van die leer is $5$ m van die muur af. Vind die hoek tussen die muur en die leer.
+\pagebreak
+\item In die volgende driehoek, vind hoek $A\hat{B}C$:
+\begin{center}
+\begin{pspicture}(0,-2.4701562)(5.49875,2.4701562) 
+\pspolygon[linewidth=0.04](0.1665625,-1.7301563)(3.3665626,1.9698437)(5.1665626,-1.7301563)(4.1665626,-1.7301563) 
+\psline[linewidth=0.04cm](3.3665626,1.9698437)(3.3665626,-1.7301563) 
+\rput(3.3871875,2.2798438){$A$} 
+\rput(5.3459377,-2.0201561){$B$} 
+\rput(3.371875,-2.0201561){$C$} 
+\rput(0.07546875,-2.0201561){$D$} 
+\rput(3.6,0){$9$} 
+\rput(2.7525,-2.3201563){$17$} 
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0665624,-2.3301563)(5.2665625,-2.3301563) 
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.4665625,-2.3301563)(0.0665625,-2.3301563) 
+\psline[linewidth=0.04cm](3.3665626,-1.5301563)(3.5665624,-1.5301563) 
+\psline[linewidth=0.04cm](3.5665624,-1.5301563)(3.5665624,-1.7301563) 
+\rput(0.8,-1.48){$41^{\circ}$} 
+\end{pspicture} 
+\end{center}
+
+\item In die volgende driehoek, vind die lengte van sy $CD$:
+\begin{center}
+\begin{pspicture}(0,-2.2234375)(6.091875,2.2234375) 
+\pspolygon[linewidth=0.04](0.1665625,-1.776875)(5.1665626,-1.776875)(5.1665626,1.823125) 
+\psline[linewidth=0.04cm](3.4665625,-1.776875)(5.1665626,1.823125) 
+\rput(5.2871876,2.033125){$A$} 
+\rput(5.3459377,-2.066875){$B$} 
+\rput(3.471875,-2.066875){$C$} 
+\rput(0.07546875,-2.066875){$D$}
+\rput(5.4,0){$9$} 
+\rput(4.490156,0.95){$15^{\circ}$} 
+\rput(3.960156,-1.5){$35^{\circ}$} 
+\psline[linewidth=0.04cm](4.9665626,-1.576875)(5.1665626,-1.576875) 
+\psline[linewidth=0.04cm](4.9665626,-1.576875)(4.9665626,-1.776875) 
+\end{pspicture}
+\end{center} 
+
+\item Gegee $A(5;0)$ en $B(11;4)$, vind die hoek tussen die $x$-as en die lyn deur $A$ en $B$. 
+\item Gegee $C(0;-13)$ en $D(-12;14)$, vind die hoek tussen die lyn deur $C$ en $D$ en die $y$-as. 
+
+
+\item 'n Reghoekige driehoek het 'n skuinssy van $13$ mm. Vind die lengte van die ander twee sye as een van die hoeke van die driehoek $50^{\circ}$ is.
+\item Een van die hoeke van 'n rombus met omtrek $20$ cm is $30^{\circ}$. 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Vind die sylengte van die rombus. 
+\item Vind die lengtes van beide diagonale. 
+\end{enumerate} 
+\item Kaptein Jack seil na 'n krans met 'n hoogte van $10$ m. 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item As die afstand vanaf die boot na die bokant van die krans $30$ m is, bereken die hoogtehoek vanaf die boot na die bokant van die krans (korrek tot die naaste heelgetal).
+\item As die boot $7$ m nader aan die krans seil, wat is die nuwe hoogtehoek vanaf die boot na die bokant van die krans? 
+\end{enumerate} 
+\item Gegee die punte $E(5;0)$; $F(6;2)$ en $G(8;-2)$, vind die hoek $F\hat{E}G$. 
+\item  'n Driehoek met hoeke $40^{\circ}$; $40^{\circ}$ en $100^{\circ}$ het 'n omtrek van $20$ cm. Vind die lengte van elke sy  van die driehoek. 
+
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 15
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02s0	&
+% Question 2
+(2.)	02s1	&
+% Question 3
+(3.)	02s2	&
+% Question 4
+(4.)	02s3	&
+% Question 5
+(5.)	02s4	&
+% Question 6
+(6.)	02s5	\\ % End row of shortcodes
+% Question 7
+(7.)	02s6	&
+% Question 8
+(8.)	02s7	&
+% Question 9
+(9.)	02s8	&
+% Question 10
+(10.)	02s9	&
+% Question 11
+(11.)	02sa	&
+% Question 12
+(12.)	02sb	\\ % End row of shortcodes
+% Question 13
+(13.)	02sc	&
+% Question 14
+(14.)	02sd	&
+% Question 15
+(15.)	02se	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 15
+\end{eocexercises}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

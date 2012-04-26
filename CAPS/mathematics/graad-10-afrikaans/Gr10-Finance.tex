@@ -1,0 +1,925 @@
+\chapter{Finansies en groei}
+
+\section{Geldstories}
+
+Ons gaan nou wiskundige vaardighede aanleer wat jy heel waarskynlik in jou lewe gaan nodig kry.\par
+
+As jy R~$1 000$, het, kan jy dit in jou beursie hou, of jy kan dit deponeer in ’n bankrekening. As dit in jou beursie bly,
+kan jy dit enige tyd uitgee wanneer jy wil. As die bank daarna kyk vir jou, kan hulle dit aanwend met die doel om
+wins daaruit te maak. Die bank "betaal" jou gewoonlik om geld te deponeer in ’n rekening om jou aan te moedig
+om met hulle sake te doen. Hierdie betaling is soos ’n beloning, wat vir jou die rede is om die geld liewer in die
+bank te los vir ’n rukkie as om die geld in jou beursie te hou.\par 
+
+As jy geld in ’n bankrekening deponeer, is jy eintlik besig om jou geld aan die bank te leen en jy kan verwag om
+rente te ontvang van die bank. Net so, as jy geld leen van ’n bank (of van ’n afdelingswinkel, of ’n motorhandelaar,
+byvoorbeeld) dan kan jy verwag om rente te betaal op die lening. Dit is die prys vir die leen van geld.\par
+
+Die idee is eenvoudig, en tog is dit die kern van die w\^{e}reld van finansies. Boekhouers, rekenmeesters en
+bankiers, bestee hulle hele professionele loopbaan deur te werk met die gevolge van rente op
+finansiële aangeleenthede.\par
+
+\section{Enkelvoudige rente}
+\Definition{Enkelvoudige rente}{Enkelvoudige rente is wanneer jy rente verdien op die aanvanklike bedrag wat jy belê het,
+maar nie rente op rente nie.}
+  
+As ’n maklike voorbeeld van enkelvoudige rente, dink hoeveel jy sal kry deur R~$1~000$ te belê vir 1 jaar by ’n bank
+wat vir jou enkelvoudige rente teen $5\%$ per jaar gee. Aan die einde van die jaar sal jy rente ontvang van:\par
+\begin{align*}
+    \mbox{Rente} &= \mbox{R}~1~000 \times 5\%\\
+    &= \mbox{R}~1~000 \times \frac{5}{100}\\
+    &= \mbox{R}~1~000 \times 0,05\\
+    &= \mbox{R}~50
+\end{align*}
+
+Dus, met ’n aanvangsbedrag van R~$1~000$ aan die begin van die jaar, sal jou eindbedrag aan die einde van die jaar dan wees:\par 
+%english
+\begin{align*}
+    \mbox{Eindbedrag} &= \mbox{Aanvangsbedrag + Rente}\\
+    &= \mbox{R}~1~000 + \mbox{R}~50\\
+    &= \mbox{R}~1~050
+\end{align*}
+
+Ons noem soms die aanvangsbedrag in finansiële wiskunde die hoofsom, wat afgekort word as $P$ (R~$1~000$ in die voorbeeld). Die rentekoers vir die tydsinterval word gewoonlik as ’n persentasie aangedui deur $i$ ($5\%$ in die voorbeeld),  en die bedrag aan rente verdien (in terme van Rand) word aangedui deur $I$ (R~$50$ in die voorbeeld).\par 
+
+So, ons sien dat:
+        
+\begin{align*}
+    I = P \times i
+\end{align*}
+
+en
+
+\begin{align*}
+    \mbox{Eindbedrag} &= \mbox{Aanvangsbedrag + Rente} \nonumber\\
+    &= P + I \nonumber\\
+    &= P + P \times i\nonumber\\
+    &= P(1 + i)
+\end{align*}
+
+% \Tip{Onthou persentasie is 'n getal wat geskryf is oor 'n noemer van $100$. Met ander woorde, $12\%$ kan geskryf word as $\frac{12}{100}$ --- en dus $12\%$ ook uitgedruk word in desimale vorm as $0,12$.}
+
+
+Bostaande berekeninge gee vir ons 'n goeie idee van die formule vir enkelvoudige rente, maar die voorbeeld praat van 'n belegging vir slegs een jaar. As 'n belegging of lening oor 'n langer tyd gemaak word, moet dit in aanmerking geneem word. Ons gebruik die simbool '$n$' om die tydsperiode aan te dui en hierdie waarde moet altyd in jare uitgedruk word.\par
+
+Die formule wat gebruik word om enkelvoudige rente te bereken, is:
+% \Tip{Jaarlikse rentekoerse beteken die koers word bereken oor ’n periode van ’n jaar, (per annum) = per jaar.}
+
+\Identity{
+\vspace*{-2em}
+    \begin{eqnarray*}
+	\label{FG:SI}
+	A &=& P (1 + in)\\
+	\mbox{waar:~} \nonumber\\
+	A &=& \mbox{eindbedrag} \nonumber\\
+	P &=& \mbox{aanvangsbedrag/hoofsom} \nonumber\\
+	i &=& \mbox{rentekoers per tydsinterval} \nonumber\\
+	n &=& \mbox{aantal tydsintervalle} \nonumber
+    \end{eqnarray*}
+}
+
+
+
+
+\begin{wex}{Berekening van rente op 'n belegging}
+{As Carine R~$1~000$ vir 3 jaar deponeer
+in ’n spesiale bankrekening teen $7\%$ per jaar enkelvoudige rente,
+hoeveel geld sal sy aan die einde van hierdie tydperk hê?}
+{
+
+    \westep{Ons weet dat}
+    \begin{align*}
+	A &= ~?\\
+	P &= 1~000\\
+	i &= 0,07\\
+	n &= 3
+    \end{align*}
+    
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Vervang die waardes in die formule}
+    \begin{align*}
+	A &= 1~000(1 + 0,07 \times 3)\\
+	  &= 1~210
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Die eindbedrag nadat R $1~ 000$ vir 3 jaar belê is teen ’n rentekoers
+van $7\%$ per jaar, is R~$1~210$.
+    }
+\end{wex}
+
+
+\begin{wex}{Bereken rente op 'n lening}{
+    Sarah leen R~$5~000$ by haar buurvrou teen 'n ooreenkome rentekoers van $12,5\%$ p.a. Sy sal die lening in een bedrag terugbetaal aan die einde van $2$ jaar. Hoeveel sal sy moet terugsbetaal?}{
+
+    \westep{Skryf die veranderlikes neer}
+    \begin{align*}
+	A &= ~?\\
+	P &= 5~000\\
+	i &= 0,125\\
+	n &= 2
+    \end{align*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Vervang die waardes in die formule en bereken die oorblywende veranderlike}
+    \begin{align*}
+	A &= 5~000(1 + 0,125 \times 2)\\
+	  &= 6~250
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Aan die einde van 2 jaar, sal Sarah haar buurvrou R~$6~250$ moet betaal.
+    }
+\end{wex}
+
+
+Ons kan die enkelvoudige rente formule gebruik om onbekende inligting te verkry. As ons byvoorbeeld 'n bedrag geld bel\^{e} vir 'n vaste tyd om 'n sekere doel te bereik, kan ons die rentekoers bereken waareen ons die geld moet bel\^{e} om die doel te bereik. Of ons kan bereken vir hoe lank ons die geld moet bel\^{e} as ons weet wat die aanvangsbedrag en die eindbedrag en die rentekoers is. 
+
+\par
+\textbf{Belangrik:} om 'n meer akkurate antwoord te kry, doen al jou sakrekenaar werk in een berekening en moenie tussenstappe afrond nie. Dit sal keer dat afrondings 'n te groot invloed het op jou finale antwoord.
+
+
+\begin{wex}{Bepaling van die tydperk om 'n bepaalde uitkoms te bereik}
+{As Prashant  R~$30~000$ deponeer in ’n spesiale
+bankrekening wat $7,5\%$ enkelvoudige rente p.a betaal, vir hoeveel jaar moet
+sy hierdie bedrag belê om 'n eindbedgrag van R~$45~000$ laat realiseer?}
+{
+    \westep{Skryf die bekende veranderlikes neer}
+    \begin{align*}
+	A &= 45~000\\
+	P &= 30~000\\
+	i &= 0,075\\
+	n &= ~?
+    \end{align*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Vervang die bekende waardes en bereken die onbekende}
+    \begin{eqnarray*}
+	45~000 &=& 30~000(1 + 0,075 \times n)\\
+	\frac{45~000}{30~000} &=& 1 + 0,075 \times n \vspace{6pt}\\ 
+	\frac{45~000}{30~000} -1 &=& 0,075 \times n \\
+	\frac{(\frac{45~000}{30~000}) -1}{0,075} &=& n \\
+	n &=& 6\frac{2}{3}
+    \end{eqnarray*}
+
+    \westep{Skryf die finale antwoord}
+    Dit sal ’n periode van 6 jaar en 8 maande neem vir R~$30~000$ om te groei tot R~$45~000$ teen ’n enkelvoudige rentekoers van $7,5\%$ p.a.
+    }
+\end{wex}
+\vspace{-25pt}
+
+
+
+\begin{wex}{Bereken die rentekoers om 'n gevraagde mikpunt te bereik}{
+    Teen watter enkelvoudige rentekoers moet ek R~$2~500$ bel\^e om R~$4~000$ te h\^e na $5$ jaar?\\}{
+
+    \westep{Skryf die bekende veranderlikes neer}
+    \begin{align*}
+	A &= 4~000\\
+	P &= 2~500\\
+	i &= ~?\\
+	n &= 5
+    \end{align*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + in)
+    \end{align*}
+
+    \westep{Vervang die waardes en bereken die onbekende veranderlike}
+    \begin{align*}
+	4~000 &= 2~500(1 + i \times 5)\\
+	\frac{4~000}{2~500} &= 1 + i \times 5\\
+	\frac{4~000}{2~500} - 1&= i \times 5\\
+	\frac{(\frac{4~000}{2~500}) - 1}{5} &= i\\
+	i &= 0,12
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    'n Enkelvoudige rentekoers van $12\%$ p.a. is nodig om R~$2~500$ oor $5$ jaar te laat groei tot R~$4~000$.
+    }
+\end{wex}
+
+% 
+% \subsection{As die periode nie in jare is nie}
+% 
+% Dikwels kan iemand nie geld vir 'n volle jaar bel\^e nie, of hulle wil 'n lening aangaan vir 'n koter periode. Hoe bereken ons dan die eindbedrag?\par
+% 
+% Onthou in elke jaar is daar $12$ maande. As ek geld vir slegs $3$ maande wil bel\^e sal $n$ gelyk wees aan $\frac{3}{12}$. As ek 'n lening wil uitneem vir $7$ maande is, $n = \frac{7}{12}$.\\
+
+
+\begin{exercises}{}
+{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item ’n Bedrag van R~$3~500$ word belê in ’n spaarrekening wat enkelvoudige rente betaal teen ’n koers van $7,5\%$ p.a. Bereken die eindbedrag na 2 jaar.
+
+	\item Bereken die enkelvoudige rente in die volgende probleme:
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item ’n Lening van R~$300$  teen ’n koers van $8\%$ vir 1 jaar.
+
+	    \item ’n Belegging van R~$2~250$ teen ’n koers van $12,5\%$ per jaar vir 6 jaar.
+	\end{enumerate}
+
+	\item Sally wil die aantal jare bereken wat sy R~$1~000$ moet bel\^e om te groei tot R~$2~500$. Sy word 'n enkelvoudige rentekoers van $8,2\%$ p.a aangebied. Hoe lank sal dit neem vir die geld om te groei tot R~$2~500$?
+%english
+	\item Joseph het R~$5~000$ by die bank gedeponeer vir sy $5$ jaar oue seun se $21^{ste}$ verjaarsdag. Hy het vir sy seun R~$18~000$ op sy verjaarsdag gegee. Teen watter enkelvoudige rentekoers was die geld belê?
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 4
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02ki	&
+% Question 2
+(2.)	02kj	&
+% Question 3
+(3.)	02kk	&
+% Question 4
+(4.)	02km	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 4
+}
+\end{exercises}
+
+
+
+
+
+
+\section{Saamgestelde rente}
+
+Saamgestelde rente laat jou toe om rente op rente te verdien. In enkelvoudig rente, verdien jy slegs rente op jou aanvanklike bedrag, maar in saamgestelde rente kan jy rente verdien op jou oorspronklike bedrag sowel as op die rente wat reeds verdien is.\par
+
+Saamgestelde rente is 'n wonderlike konsep as jy geld bel\^e, maar as jy geld leen sal jy meer terugbetaal as rente saamgesteld bereken word en nie enkelvoudig nie.
+
+
+\Definition{Saamgestelde rente}{Saamgestelde rente is die rente wat bereken word op die aanvangsbedrag en op die
+opgeloopte rente}
+
+Beskou die voorbeeld van R $1~000$ wat vir $3$ jaar by 'n bank wat $5\%$ saamgestelde rente betaal, belê is.
+%english
+
+Aan die einde van die eerste jaar, word die opgeloopte bedrag
+\begin{align*}
+  A_1 &= P(1 + i)\\
+  &= 1~000(1+0,05)\\
+  &=1~050
+\end{align*}
+Die bedrag $A_1$ word die nuwe aanvangsbedrag waarmee die opgeloopte bedrag aan die einde van die tweede jaar bereken is. 
+
+\begin{align*}
+    A_2 &= P(1 + i)\\
+&= 1~050(1+0,05)\\
+&=1~000(1+0,05)(1+0,05)\\
+&= 1~000(1+0,05)^2
+\end{align*}
+
+Soortgelyk, gebruik ons die bedrag $A_2$ as die nuwe aanvangsbedrag om te opgeloopte bedrag aan die einde van die derde jaar te bereken.
+\begin{align*}
+    A_3 &= P(1 + i)\\
+&=1~000(1+0,05)^2(1+0,05)\\
+&= 1~000(1+0,05)^3
+\end{align*}
+Sien jy 'n patroon? Laat ons ’n formule ontwikkel vir saamgestelde rente op dieselfde manier as wat ons ’n formule ontwikkel het vir
+enkelvoudige rente.\par
+
+Indien ons aanvangsbedrag $P$ is en ons het ’n rentekoers van $i$ per jaar, dan sal die eindbedrag aan die einde
+van die eerste jaar gelyk wees aan:
+\begin{eqnarray*}
+    \mbox{Eindbedrag na 1 jaar} = P(1 + i)
+\end{eqnarray*}
+
+Dit is dieselfde as enkelvoudige rente, want dit strek net oor een tydsinterval (’n jaar in hierdie geval). As ons die
+geld dan onttrek en weer belê vir nog ’n jaar - soos wat ons in die uitgewerkte voorbeeld hierbo gedoen het - sal
+die eindbedrag aan die einde van die tweede jaar as volg wees:
+\begin{eqnarray*}
+    \mbox{Eindbedrag na 2 jaar} &=& [P(1 + i)] \times (1 + i)\\
+    &=& P(1 + i)^2
+\end{eqnarray*}
+
+As ons hierdie geld onttrek en weer vir nog ’n jaar belê, sal die eindbedrag wees:
+
+\begin{eqnarray*}
+    \mbox{Eindbedrag na 3 jaar} &=& [P(1 + i)^2] \times (1 + i)\\
+    &=& P(1 + i)^3
+\end{eqnarray*}
+
+Ons kan sien dat die eksponent van die term $(1 + i)$ gelyk is aan die aantal tydsintervalle (jare in hierdie voorbeeld.) Dus:
+
+
+\Identity{
+\vspace*{-2em}
+    \begin{eqnarray*}
+	\label{FG:CI}
+	A &=& P(1 + i)^n\\
+	\mbox{waar:~} \nonumber\\
+	A &=& \mbox{eindbedrag} \nonumber\\
+	P &=& \mbox{aanvangsbedrag} \nonumber\\
+	i &=& \mbox{rentekoers per tydsinterval, geskryf as 'n desimaal} \nonumber\\
+	n &=& \mbox{tydsduur} \nonumber
+    \end{eqnarray*}
+}
+
+
+\begin{wex}{Saamgestelde rente}{
+    Mpho wil R~$30~000$ bel\^e in 'n rekening wat saamgestelde rente van $6\%$ p.a aanbied. Hoeveel geld sal daar in die rekening wees aan die einde van $4$ jaar?}{
+    
+    \westep{Skryf bekende varanderlikes neer}
+    \begin{eqnarray*}
+	A &=& ?\\
+	P &=& 30~000\\
+	i &=& 0,06\\
+	n &=& 4
+    \end{eqnarray*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Vervang die waardes en los op vir die onbekende veranderlike}
+    \begin{align*}
+	A &= 30~000(1 + 0,06)^4\\
+	  &= 37~874,31
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Mpho sal R~$37~874,31$ in die rekening h\^e na $4$ jaar.
+    }
+\end{wex}
+
+
+\begin{wex}{Bereken die saamgestelde rentekoers om 'n mikpunt te bereik}
+{Charlie kry R~$5~000$ vir sy sestiende verjaarsdag en eerder as om dit te spandeer, besluit hy om dit te bel\^e sodat hy op sy agtiende verjaarsdag 'n deposito van R~$10~000$ kan neersit op 'n motor. Watter saamgestelde rentekoers behoort hy te kry om dit reg te kry?}
+{
+     \westep{Skryf die bekende veranderlikes neer}
+    \begin{eqnarray*}
+	A &=& 10~000\\
+	P &=& 5~000\\
+	i &=& ?\\
+	n &=& 2
+    \end{eqnarray*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Vervang die waardes en los op vir die oorblywende veranderlike}
+    \begin{align*}
+	10~000 &= 5~000(1 + i)^2\\
+	\frac{10~000}{5~000}&= (1 +i)^2\\
+	\sqrt[]{\frac{10~000}{5~000}} &= 1 + i\\
+	\sqrt[]{\frac{10~000}{5~000}} - 1 &= i\\
+	i &= 0,4142
+    \end{align*}
+%english
+    \westep{Skryf die finale antwoord}
+Charlie moet 'n beleging maak wat 'n saamgestede rente van $41,42\%$ p.a. betaal om die  verwagte groei te bereik. 'n Tipiese spaarrekening gee 'n koers van ongeveer $2\%$ p.a. en 'n aggressiewe beleggingsportefeulje gee 'n koers van ongeveer $13\%$ p.a. Dus lyk dit hoogs onwaarskynlik dat Charlie sy geld teen 'n koers van $41,42\%$ p.a. sal kan bel\^e.
+%     Charlie needs to find an account that offers a compound interest
+%     rate of $41,42\%$ to achieve the desired growth. 
+% 
+%  A typical
+%     savings account gives a return of approximately $2\%$ and an
+%     aggressive investment portfolio gives a return of approximately
+%     $13\%$. It therefore seems unlikely that Charlie will be able to
+%     invest his money at an interest rate of $41,42\%$.
+} 
+\end{wex}
+
+
+\subsection{Die krag van saamgestelde rente}
+
+Om te sien hoe belangrik "rente op rente" is, sal ons kyk na die verskil in die eindbedrae van geld wat teen
+enkelvoudige rente belê is en geld wat teen saamgestelde rente belê is. Beskou ’n bedrag van R~$10~000$  wat jy
+vir 10 jaar moet belê en aanvaar dat jy rente kan verdien teen $9\%$ per jaar. Wat sal die waarde van die belegging
+wees na 10 jaar?\par
+
+Die eindbedrag indien die geld enkelvoudige rente verdien, is:
+\begin{align*}
+    A &= P(1 + in)\\
+      &= 10~000(1 + 0,09 \times 10)\\
+      &= \mbox{R}~19~000\\
+\end{align*}
+
+Die eindbedrag indien die geld saamgestelde rente verdien, is:
+\begin{align*}
+    A &= P(1 + i)^n\\
+      &= 10~000(1 + 0,09)^{10}\\
+      &= \mbox{R}~23~673,64
+\end{align*}
+
+As ons grafieke trek van die groei van die bedrag is dit makliker om te sien hoe die geld wat enkelvoudig bel\^e is reglynig groei maar eksponensieel groei as dit saamgestelde rente verdien:
+
+\begin{figure}[H]
+    \begin{center}
+      \scalebox{0.8}{
+	\begin{pspicture}(-5,-2)(7,8)
+	    \psset{yunit=0.75,xunit=1}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12)
+	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
+% 	    \psline[linecolor=red](0,5)(10,9.5)
+	    \psplot{0}{10}{  x 0.09 mul 1 add 5 mul}
+\uput[ur](10.2,0){Jare}
+\uput [u](0,12.5){Rand}
+\psplot{0}{10}{1.09 x exp 5 mul}
+	\end{pspicture}}
+% 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+
+% \begin{figure}[H]
+%     \begin{center}
+% \scalebox{0.8}
+% 	\begin{pspicture}(-5,-2)(7,8)
+% 	    \psset{yunit=0.75,xunit=1}
+% 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.3)
+% 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000](0,0)(0,0)(10.4,12.3)
+% 	    \psplot[linecolor=red]{0}{10}{1.09 x exp 5 mul}
+% 	\end{pspicture}}\\
+% 	\begin{caption*}The growth of money in a compound interest account over 10 years.\end{caption*}
+% 	\label{FG:fig:CI10}
+%     \end{center}
+% \end{figure}
+
+Dit is nog duideliker om die enorme verskil te sien indien die rentekoers $9\%$ p.a. bly en die tydsperiode verleng word na $50$ jaar:\\
+
+\begin{figure}[H]
+    \begin{center}
+\scalebox{0.8}{
+	\begin{pspicture}(-2,-2)(7,8)
+	    \psset{yunit=0.75,xunit=0.65}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
+	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
+% 	    \psline[linecolor=red](0,0.2)(20,1.1)
+	    \psplot{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
+\uput[ur](20.2,0){Jare}
+\uput [u](0,15){Rand}
+\psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
+	\end{pspicture}}
+% 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+
+Weereens, hou in gedagte dat dit goeie nuus en slegte nuus is. As jy rente verdien op geld wat jy belê het,
+sal saamgestelde rente daartoe lei dat die bedrag eksponensieel vermeerder. Maar, as jy geld geleen het, sal
+daardie bedrag ook eksponensieel groei.
+
+
+\begin{exercises}{Saamgestelde rente}
+{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item ’n Bedrag van R~$3~500$ word belê in ’n spaarrekening wat saamgestelde rente verdien teen $7,5\%$ per jaar.
+Bereken die bedrag wat opgebou is in die rekening na verloop van 2 jaar.
+
+	\item Morgan bel\^e R~$5~000$ in 'n rekening wat aan die einde van $5$ jaar 'n groot bedrag uitbetaal. As hy R~$7~500$ kry aan die einde van die periode, watter saamgestelde rentekoers het die bank hom aangebied?
+
+	\item Nicola wil geld belê teen  $11\%$ per jaar saamgestelde rente. Hoeveel geld (tot die naaste Rand) moet sy belê
+indien sy oor 5 jaar ’n bedrag van R~$100~000$ wil hê?
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02kn	&
+% Question 2
+(2.)	02kp	&
+% Question 3
+(3.)	02kq	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}
+
+
+
+
+\subsection{Huurkoop}
+
+As 'n algemene re\"el, is dit nie 'n goeie idee om goed op krediet te koop nie. Dit beteken dat jy geld leen om vir 'n aankoop te betaal en dat jy dus meer gaan betaal omdat jy rente op 'n lening moet betaal. Maar, soms is daar toenusting, soos 'n yskas, waarsonder mens moeilik kan klaarkom. Meeste mense het nie vermo\"e om sulke items kontant te koop nie, dus koop hulle dit op huurkoop.\par
+
+'n Huurkoopooreenkoms in 'n finansi\"ele kontrak tussen die winkel en die kli\"ent oor hoe die kli\"ent gaan betaal vir die produk. Die rente op 'n huurkoopooreenkoms is altyd enkelvoudig en word slegs gehef op die uitstaande bedrag. In die meeste gevalle word verwag dat jy 'n deposito sal betaal voordat jy die produk kan huis toe neem. Die opgeloopte lening word bereken op grond van die tydperk waarvoor jy die lening wil uitneem. Die totale leningsbedrag word dan verdeel in maandelikse paaiemente oor die leningsperiode.
+
+\par
+\textbf{Onthou:} huurkoop word teen 'n enkelvoudige rentekoers bereken. Gebruik dus altyd die enkelvoudige renteformule in huurkoop berekeninge.
+
+\begin{wex}{Huurkoop}
+{Troy wil graag ’n ekstra hardeskyf vir sy
+skootrekenaar koop teen R~$2~500$ soos dit op die internet adverteer word.
+Daar is die opsie om ’n deposito van $10\%$ van die koopprys te betaal
+en dan in ’n huurkoopooreenkoms 24 gelyke maandelikse paaiemente
+te betaal waar rente bereken sal word teen $7,5\%$ per jaar enkelvoudige
+rente. Bereken wat Troy se maandelikse paaiement sal wees.}
+{
+
+    \westep{’n Nuwe aanvangsbedrag is nodig, want die $10\%$ deposito is kontant betaal}
+\begin{align*}
+      10\% &\mbox{ van } 2~500= 250\\
+      \therefore P &= 2~500-250 =2~250\\
+      i &= 0,075\\
+      n &= \frac{24}{12} =2
+    \end{align*}
+    Ons moet die eindbedrag ($A$) bepaal en dan die maandelikse\\
+paaiemente bereken.
+
+    \westep{Vervang die waardes en bereken die onbekende veranderlike}
+Van die gegewe formule weet ons dat:
+    \begin{align*}
+A &= P(1 + in)\\
+	 &= 2~250(1 + 0,075 \times 2)\\
+	  &= 2~587,50\\
+    \end{align*}
+
+    \westep{Bereken die maandelikse terugbetalings op die huurkoopooreenkoms}
+    \begin{align*}
+	\mbox{Maandelikse paaiement} &= \frac{2~587,50}{24}\\
+			&=107,81
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Troy se maandelikse paaiment = R~$107,81$.
+}
+\end{wex}
+
+
+Soms voeg die winkel 'n maandelikse versekeringspremie by die maandelikse paaiemente. Hierdie premie verseker jou van meer tyd tussen 'n onbetaalde paaiement en moontlike beslaglegging op die aangekoopte produk.
+
+
+\begin{wex}{Huurkoop met ekstra voorwaardes}{
+    Cassidy is desperaat om 'n TV te koop en gevolglik besluit sy op 'n \\huurkoopooreenkoms. Die TV se kontantsprys is R~$5~500$. Sy moet dit afbetaal oor $54$ maande teen 'n rentekoers van $21\%$p.a. 'n Versekeringspremie van R~$12,50$ per maand word bygevoeg. Hoeveel moet sy per maand betaal?}{
+
+    \westep{Skryf die bekende veranderlikes neer}
+    \begin{eqnarray*}
+	P &=& 5~500\\
+	i &=& 0,21\\
+	n &=& \frac{54}{12} = 4,5
+    \end{eqnarray*}
+(Die vraag meld niks van 'n deposito nie, daarom aanvaar ons Cassidy het nie een betaal nie)
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	    A &= P(1 + in)
+    \end{align*}
+
+    \westep{Vervang die waardes en bereken die onbekende veranderlike}
+    \begin{align*}
+	A &= 5~500(1 + 0,21 \times 4,5)\\
+	  &= 10~697,50\\
+    \end{align*}
+
+    \westep{Bereken die maandelikse terugbetalings op die huurkoopooreenkoms}
+    \begin{align*}
+	\mbox{Maandelikse betalings} &= \frac{10~697,50}{54}\\
+			&= 198,10
+    \end{align*}
+
+    \westep{Voeg die versekeringspremie by}
+    \begin{align*}
+	198,10 + 12,50 &= 210,60
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Cassidy sal R~$210,60$ vir 54 maande betaal tot haar TV afbetaal is.
+}
+\end{wex}
+
+
+\begin{exercises}{}
+{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Vanessa wil 'n yskas op huurkoop koop. Die kontantprys is R~$4~500$. Sy moet 'n deposito van $15\%$ betaal en die oorblywende bedrag oor $24$ maande teen 'n rentekoers van $12\%$ p.a.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Wat is die aanvangsbedrag (hoofsom)?
+	    \item Wat is die eindbedrag wat sy terugbetaal?
+	    \item Wat is Vanessa se maandelikse paaiemente?
+	    \item Hoeveel het Vanessa in totaal vir haar yskas betaal?
+	\end{enumerate}
+	\item Bongani koop ’n eetkamertafel van R~$8~500$ op huurkoop. Hy moet enkelvoudige rente van $17,5\%$ per jaar betaal oor 3 jaar.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Hoeveel sal Bongani in totaal betaal?
+	    \item Hoeveel rente betaal hy?
+	    \item Wat is sy maandelikse paaiement?
+	\end{enumerate}
+	\item 'n Sitkamerstel word geadverteer op TV. Dit moet oor $36$ maande terugbetaal word teen R~$150$ 'n maand.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Aanvaar daar is geen deposito nodig nie, hoeveel sal die koper betaal vir die stel teen die tyd wat dit afbetaal is?
+	    \item As die rentekoers $9\%$ p.a. is, wat is die konstantprys van die stel?\\
+	\end{enumerate}
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02kr	&
+% Question 2
+(2.)	02ks	&
+% Question 3
+(3.)	02kt	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}
+
+
+
+
+\subsection{Inflasie}
+
+Dikwels hoor mens ouer mense praat oor vervlo\"e tye toe alles goedkoper was. Jy kan dalk onthou toe jy as 'n kind dinge gekoop het en is nou geskok oor die verhogings in pryse. Daar is baie faktore wat die prysveranderings op 'n item be\"invloed en een daarvan is inflasie.\par
+
+Inflasie is die gemiddelde persentasie waarteen pryse per jaar toeneem. Aangesien die pryse jaarliks toeneem, word dit bereken met die saamgestelde groeiformule.\par
+
+\begin{wex}{Berekening van toekomstige koste gebaseer op inflasie}
+    {Melk kos R~$14$ vir $2$ liter. Hoeveel sal dit kos oor $4$ jaar as die inflasiekoers $9\%$ p.a. is?}{
+    
+    \westep{Skryf die bekende veranderlikes neer}
+    \begin{eqnarray*}
+	P &=& 14\\
+	i &=& 0,09\\
+	n &=& 4
+    \end{eqnarray*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Vervang die bekende waardes en los op vir die onbekende veranderlike}
+    \begin{align*}
+	A &= 14(1 + 0,09)^4\\
+	  &= 19,76
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Oor $4$ jaar sal melk R~$19,76$ vir 'n $2$ liter kos.
+    }
+\end{wex}
+
+
+\begin{wex}{Berekening van historiese koste gebaseer op inflasie}
+    {'n Boks sjokelade kos vandag R~$55$. Hoeveel sou dit $3$ jaar gelede gekos het as die gemiddelde inflasiekoers $11\%$ p.a. was?}
+{
+    \westep{Skryf die onbekende veranderlikes neer}
+    \begin{eqnarray*}
+	A &=& 55\\
+	i &=& 0,11\\
+	n &=& 3
+    \end{eqnarray*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Vervang die bekende waardes en los op vir die onbekende veranderlikes}
+    \begin{align*}
+	55 &= P(1 + 0,11)^3\\
+	\frac{55}{(1 + 0,11)^3} &= P\\
+	P  &= 40,22
+    \end{align*}
+
+    \westep{Verduidelik jou antwoord}
+    Drie jaar gelede sou 'n boks sjokolades R~$40,22$ gekos het.
+    }
+\end{wex}
+
+
+\subsection{Bevolkingsgroei}
+
+ Die familieboom neem eksponensieel toe omdat elkeen wat gebore word weer die vermo\"e het om deel te wees van verdere voortplanting. Daarom gebruik ons die saamgestelde renteformule om bevolkingsgroei te bereken.
+
+
+\begin{wex}{Bevolkingsgroei}
+    {As die huidige bevolking van Johannesburg $3~888~180$ is, en die gemiddelde bevolkingsgroei in Suid-Afrika $2,1\%$ p.a. is, wat sal die verwagte bevolking van Johannesburg oor 10 jaar wees?}{
+    
+    \westep{Skryf die bekende veranderlikes neer}
+    \begin{eqnarray*}
+	P &=& 3~888~180\\
+	i &=& 0,021\\
+	n &=& 10
+    \end{eqnarray*}
+
+    \westep{Skryf die formule neer}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Vervang die waardes en los op vir die oorblywende veranderlike}
+    \begin{align*}
+	A &= 3~888~180(1 + 0,021)^{10}\\
+	  &= 4~786~342,614
+    \end{align*}
+
+    \westep{Skryf die finale antwoord}
+    Stadsbeplanners kan 'n bevolking van $4~786~343$ in Johannesburg verwag oor $10$ jaar.
+    }
+\end{wex}
+
+
+\begin{exercises}{Inflation and Population}
+{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Die gemiddelde inflasiekoers vir die afgelope aantal jare is $7,3\%$ per jaar en jou water- en elektrisiteitsrekening is gemiddeld R~$1~425$ per maand. Bereken wat jy kan verwag om te betaal oor 6 jaar?
+
+	\item Die prys van springmielies en koeldrank by die fliek is nou R~$60$. As die gemiddelde inflasie koers $9,2\%$ is, wat was die prys $5$ jaar gelede?
+
+	\item 'n Klein dorpie in Ohio, VSA, ondervind 'n groot toename in geboortes. As die gemiddelde groeikoers van die bevolking $16\%$ p.a is, hoeveel babas sal gebore word vir die $1600$ inwoners in die volgende $2$ jaar?
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02ku	&
+% Question 2
+(2.)	02kv	&
+% Question 3
+(3.)	02kw	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}
+
+
+
+\subsection{Buitelandse wisselkoerse}
+
+Verskillende lande het hulle eie wisselkoerse ontwikkel oor die jare. In Engeland kos 'n big Mac van MacDonalds ongeveer £~$4$, in Suid-Afrika kos dit R~$20$ en in Noorwe\"e sal dit jou $48$~kr kos. In al drie hierdie lande sal jy dieselfde maaltyd kry, maar nie dieselfde prys betaal nie. Toe die boek geskryf is, was £~$1$ = R~$12,41$ en $1$~kr = R~$1,37$. Dit beteken dat die Big Mac kos 'n Suid-Afrikaner wat na Engeland reis R~$49,64$ en wat in Noorwe\"e reis R~$65,76$.\par
+
+Wisselkoers het 'n veel groter invloed as slegs die prys van 'n Big Mac. Die prys van olie styg wanneer die Suid-Afrikaanse rand verswak. Dit gebeur omdat ons met 'n swakker rand minder in ander geldeenhede kan koop as vantevore.\par
+
+Die wisselkoers versterk wanneer geld in die land bel\^e word. Wanneer ons produkte koop wat in Suid-Afrika vervaardig word, bel\^e ons in die land se ekonomie en hou ons die geld in die land. Wanneer ons goedere koop wat ingevoer word van ander lande, sal die rand verswak. Onthou, hoe meer Suid-Afrikaanse goedere ons koop, hoe groter word die aanvraag daarvoor wat werkskepping sal bevorder. 'Local is lekker'!
+\par
+\mindsetvid{Foreign exchange rates}{VMbcj}
+
+\begin{wex}{Buitelandse wisselkoerse}
+    {Saba wil oorsee gaan om familie in Spanje te besoek. Sy het R~$10~000$ beskikbaar om te spandeer. Hoeveel euros kan sy daarvoor koop as die wisselkoers tans €~$1$ = R~$10,68$?}
+{
+\westep{Skryf die formule neer}
+\begin{align*}
+ x &= \dfrac{10~000}{10,68}\\
+&= 936,33
+\end{align*}  
+\westep{Skryf die finale antwoord}    
+Sy kan €~$936,33$ koop met R~$10~000$.
+}
+\end{wex}
+
+
+\begin{exercises}{Buitelandse Wisselkoerse}
+{
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Bridget wil ’n iPod koop wat £~$100$ kos, en die huidige wisselkoers is £~$1$ = R~$14$. Sy glo die wisselkoers gaan verander na R~$12$ binne ’n maand.
+	\begin{enumerate}[label=\textbf{(\alph*)}]
+	    \item Hoeveel sal die Ipod speler in Rand kos as sy dit nou koop?
+	    \item Hoeveel sal sy spaar as die wisselkoers daal na R~$12$?
+	    \item Hoeveel sal sy verloor as die wisselkoers verander na R~$15$?
+	\end{enumerate}
+
+	\item Bestudeer die volgende tabel met wisselkoerse:
+	\begin{center}
+	    \begin{tabular}{ |l|l|l| }
+		\hline
+		\textbf{Land}	&	\textbf{Geldeenheid} 	&	\textbf{Wisselkoers}\\ \hline
+		Verenigde Koninkryk( VK) 	&	Ponde (£)	&	R~$14,13$\\ \hline
+		Amerika (VSA) 	&	Dollars (\$)	&	R~$7,04$\\ \hline
+	    \end{tabular}
+	\end{center}
+	
+	\begin{enumerate}[label=\textbf{(\alph*)}]
+	    \item In Suid-Afrika is die koste van ’n nuwe Honda Civic R~$173~400$. In Engeland kos dieselfde voertuig £~$12~200$ en in die VSA \$~$21~900$. In watter land is die voertuig die goedkoopste as jy die pryse omskakel na Suid-Afrikaanse rand?
+
+	    \item Sollie en Arinda is kelners in ’n Suid-Afrikaanse restaurant wat baie oorsese toeriste lok. Sollie kry ’n £~$6$ fooitjie van ’n toeris en Arinda kry \$~$12$.  Hoeveel Suid-Afrikaanse Rand het elkeen gekry?
+	\end{enumerate}
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02kx	&
+% Question 2
+(2.)	02ky	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+
+\summary{VMdib}
+
+\begin{itemize}
+    \item Daar is twee soorte rente: enkelvoudige rente en saamgetelde rente:\\
+    
+% \framebox{
+    \begin{tabularx}{\textwidth}{ XX }
+	enkelvoudige rente	&	saamgetelde rente\\
+	$A = P (1 + in)$	&	$A = P(1 + i)^n$\\
+    \end{tabularx}
+    \par
+    waar:
+    \begin{eqnarray*}
+% 	\mbox{Where:~}\\
+	A &=& \mbox{aanvangsbedrag}\\
+	P &=& \mbox{eindbedrag}\\
+	i &=& \mbox{rentekoers per tydsinterval}\\
+	n &=& \mbox{aantal tydsintervalle}
+    \end{eqnarray*}
+% }
+
+    \item Huurkoopterugbetalings word bereken met die enkelvoudige renteformule op die oorblywende leningsbedrag. Maandelikse terugbetalings word bereken deur die opgeloopte bedrag te deel deur die aantal maande waarbinne die lening moetterug betaal word .
+
+    \item Bevolkingsgroei en inflasie word bereken met behulp van die saamgestelde renteformule.
+
+    \item ’n Buitelandse wisselkoers is die prys van een geldeenheid in terme van ’n ander.
+\end{itemize}
+
+
+
+\begin{eocexercises}{Finansies en Groei}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item Alison is met vakansie in Europa. Haar hotel vra €~$200$ euro per nag. Hoeveel rand het sy nodig om die hotelrekening te betaal as die wisselkoers  €~$1$ = R~$9,20$?
+
+	\item Bereken hoeveel rente jy sal verdien as jy R~$500$ vir 1 jaar belê teen die volgende rentekoerse:
+	\begin{enumerate}[label=\textbf{(\alph*)}]
+	    \item $6,85\%$ enkelvoudige rente
+	    \item $4,00\%$ saamgetelde rente
+	\end{enumerate}
+
+	\item Bianca het R~$1~450$ om vir 3 jaar te belê. Bank A bied ’n spaarrekening aan wat enkelvoudige rente betaal
+teen ’n koers van $11\%$ per annum. Bank B bied ’n spaarrekening aan wat saamgestelde rente betaal
+teen ’n koers van $10,5\%$ per annum. Watter bank gaan vir Bianca die spaarrekening gee met die grootste
+opgeloopte bedrag aan die einde van die 3 jaar?
+
+	\item Hoeveel enkelvoudige rente is betaalbaar op ’n lening van R~$2~000$ vir ’n jaar indien die rentekoers $10\%$ per jaar is?
+
+	\item Hoeveel saamgestelde rente is betaalbaar op ’n lening van  R~$2~000$ vir ’n jaar indien die rentekoers $10\%$ per jaar is?
+
+	\item Bespreek:
+	\begin{enumerate}[label=\textbf{(\alph*)}]
+	    \item watter soort rente jy sal verkies as jy die lener is?
+
+	    \item watter soort rente jy sal verkies as jy die bankier is?
+	\end{enumerate}
+
+	\item Bereken die saamgestelde rente vir die volgende probleme.
+	\begin{enumerate}[label=\textbf{(\alph*)}]
+	    \item ’n lening van R~$2~000$ vir 2 jaar teen  $5\%$ per jaar
+	    \item ’n belegging van  R~$1~500$ vir 3 jaar teen $6\%$ per jaar
+	    \item ’n lening van R~$800$ vir l jaar teen $16\%$per jaar
+	\end{enumerate}
+
+	\item As die wisselkoers vir ¥~$100$ = R~$6,2287$ (¥ = Yen) en 1 Australiese dollar (AUD) = R~$5,1094$, bepaal die wisselkoers
+tussen die Australiese dollar en die Japanese jen.
+	\item Bonnie het ’n stoof gekoop vir R~$3~750$. Na 3 jaar het sy dit klaar betaal, asook die R~$956,25$ huurkoopkoste.
+Bereken die koers waarteen enkelvoudige rente bereken is.
+	\item Volgens die nuutste sensus, het Suid-Afrika 'n bevolking van $57~000~000$.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item Indien 'n jaarlikse groeikoers van $0,9\%$ verwag word, bereken hoeveel Suid-Afrikaners daar oor $10$ jaar sal wees (korrek tot die naaste honderdduisend).
+
+	    \item As dit na 10 jaar gevind word dat die bevolking eintlik met $10$ miljoen tot $67$ miljoen gegroei het, wat was die groeikoers?
+	\end{enumerate}
+
+    \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 10
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02kz	&
+% Question 2
+(2.)	02m0	&
+% Question 3
+(3.)	02m1	&
+% Question 4
+(4.)	02m2	&
+% Question 5
+(5.)	02m3	&
+% Question 6
+(6.)	02m4	\\ % End row of shortcodes
+% Question 7
+(7.)	02m5	&
+% Question 8
+(8.)	02m6	&
+% Question 9
+(9.)	02m7	&
+% Question 10
+(10.)	02m8	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 10
+\end{eocexercises}

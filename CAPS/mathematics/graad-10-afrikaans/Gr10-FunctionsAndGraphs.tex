@@ -1,0 +1,4476 @@
+\chapter{Funksies}
+\setcounter{figure}{0}
+\setcounter{subfigure}{0}
+
+\section{Funksies in die regte w\^ereld}
+Funksies is wiskundige verwantskappe tussen veranderlikes en hulle vorm boustene wat toepassings het in masjienontwerp, die voorspelling van natuurrampe, die mediese veld,
+ekonomiese analise en vliegtuigontwerp. ’n Funksie het vir elke invoerwaarde net ’n enkele uitvoerwaarde. Dit is moontlik dat ’n funksie meer as een inset van verskillende veranderlikes kan hê, maar dan sal dit steeds net ’n enkele uitset hê. 
+%Ons gaan egter nie in hierdie hoofstuk na sulke tipe funksies kyk nie.
+\par 
+
+% Een van die groot voordele van funksies is dat hulle visueel voorgestel kan word op die cartesiese vlak deur middel van ’n grafiek. 
+’n Grafiek is bloot ’n tekening van ’n funksie en dit word gebruik as ’n ander voorstellingswyse wat makliker is om te interpreteer as byvoorbeeld ’n tabel met getalle.\par 
+
+% Funksies se toepassing sluit van groot wetenskap- en ingenieursprobleme in, tot alledaagse probleme. So, dit is nuttig om meer te leer van funksies. ’n Funksie is altyd afhanklik van een of meer veranderlikes, soos tyd, afstand of ’n meer abstrakte entiteit.\par 
+
+’n Paar tipiese voorbeelde van funksies waarmee jy moontlik bekend is:\par 
+\begin{itemize}[noitemsep]
+\item Die hoeveelheid geld wat jy het as ’n funksie van tyd. Hier is tyd die inset vir die funksie en die uitset is die bedrag geld. Jy sal op enige oomblik net een bedrag geld hê. As jy verstaan hoe jou bedrag geld verander oor tyd, kan jy beplan hoe om jou geld beter te spandeer. Besighede teken die grafiek van hulle geldsake oor tyd, sodat hulle kan sien wanneer hulle te veel geld spandeer. %Sulke waarnemings is nie altyd duidelik deur slegs na die getalle te kyk nie.
+
+\item Die temperatuur is ’n voorbeeld van ’n funksie met veelvuldige insette, insluitend die tyd van die dag, die seisoen, die
+wolkbedekking, die wind, die plek en vele ander. Die belangrike ding om in te sien, is dat daar net een waarde vir temperatuur is op ’n spesifieke plek, op ’n spesifieke tyd. %As ons verstaan hoe die insette die temperatuur beïnvloed, kan ons ons dag beter beplan.
+
+\item Jou posisie is ’n funksie van tyd omdat jy nie op twee plekke op dieselfde tyd kan wees nie. Indien jy twee mense se posisie as ’n funksie van tyd sou teken of stip (’plot’), sal die plek waar die lyne kruis, aandui waar die mense mekaar ontmoet. Hierdie idee word gebruik in logistiek – ’n veld van Wiskunde wat probeer voorspel waar mense en items is, hoofsaaklik vir besigheid.
+% \item Jou massa is ’n funksie van hoeveel jy eet en hoe baie oefening jy doen, maar elke persoon se liggaam hanteer die
+% insette anders en mens kan dan verskillende liggame voorstel as verskillende funksies.
+\end{itemize}
+
+\chapterstartvideo{VMawb}
+
+\Definition{Funksie}{'n Funksie is 'n wiskundige verband tussen twee veranderlikes, waar elke invoerwaarde slegs een uitvoerwaarde het.}
+%\Note{Een uitvoerwaarde kan verskillende invoerwaardes h\^e.}
+
+\subsection*{Afhanklike en onafhanklike veranderlikes}
+Die $x$-waardes van 'n funksie staan bekend as die invoerwaardes of onafhanklike veranderlikes omdat die waardes vrylik gekies is. Die $y$-waarde word bepaal deur die verband, gebaseer op ’n gegewe of gekose $x$-waarde. Die berekende $y$-waardes is bekend as die afhanklike veranderlikes, omdat die waardes afhanklik is van die gekose $x$-waardes.\par 
+
+
+\subsection*{Versamelingkeurdernotasie}
+Voorbeelde:
+\\
+\begin{table}[H]
+\begin{tabular}{ |p{5cm} | p{8cm} | }
+\hline
+  $\{x: x \in \mathbb{R}, x > 0\}$ &  Die stel van alle $x$ waardes, waar $x$  ’n reële getal groter as $0$ is.
+\\ \hline
+    $\{y: y \in \mathbb{N}, 3 < y \leq 5}\}$ & Die stel van alle $y$-waardes wat so is dat $y$ 'n element is van die natuurlike getalle groter as $3$ en kleiner of gelyk aan $5$. 
+\\ \hline
+  $\{z: z \in \mathbb{Z}, z \leq 100}\}$ & Die stel van alle $z$-waardes wat so is dat $z$ 'n element is van die versameling heelgetalle kleiner of gelyk aan $100$.  
+\\ \hline
+\end{tabular}
+\end{table}
+\subsection*{Intervalnotasie}
+Hierdie notasie kan nie gebruik word om heelgetalle in ’n interval te beskryf nie.
+\par
+Voorbeelde:
+\\
+\begin{table}[H]
+\begin{tabular}{ |p{5cm} | p{8cm} | }
+\hline
+  $(3;11)$ &  ’n Ronde hakie beteken die getal word uitgesluit uit die interval. Hierdie interval dui al die re\"ele getalle groter as $3$ (maar $3$ uitgesluit) en kleiner as $11$ (maar $11$ uitgesluit).
+\\ \hline %english
+ $(- \infty; -2)$ & Ronde hakies word altyd gebruik vir positiewe en negatiewe oneindigheid. Hierdie interval sluit alle re\"ele getalle in kleiner as $-2$, maar nie gelyk aan $-2$ nie.
+\\ \hline
+ $[1; 9)$ & ’n Reghoekige hakie beteken die getal word ingesluit by die interval. Hierdie interval dui al die re\"ele getalle aan groter of gelyk aan $1$ en kleiner as $9$, maar nie gelyk aan $9$ nie.
+\\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Funksie notasie}
+Dit is 'n baie handige manier om 'n funksie voor te stel. In stede van $y=2x+1$ skryf ons $f(x) = 2x+1$. Ons s\^e  ``$f$ van $x$ is gelyk aan $2x+1$''. Enige letter kan gebruik word, b.v. $g(x)$, $h(x)$, $p(x)$ ens. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item \textbf{Bepaal die uitvoerwaarde}: \\
+``Vind die waarde van die funksie vir $x=-3$'', kan geskryf word as: `` vind $f(-3)$''.
+\\Vervang $x$ met $-3$:
+\begin{eqnarray*}
+  f(-3) & = & 2(-3)+1 \\
+  \therefore f(-3) & = & -5
+\end{eqnarray*}
+Dit beteken dat wanneer $x=-3$ is die waarde van die funksie $-5$.\\
+\item \textbf{Bepaal die invoerwaarde}: \\
+``Vind die waarde van $x$ wat 'n $y$-waarde van $27$  het'', kan geskryf word as:  ``vind $x$ as $f(x)=2x+1 = 27$''. \\
+Ons skryf die volgende vergelyking en los op vir $x$: \\
+\begin{eqnarray*}
+  2x+1 &=& 27 \\
+  \therefore x &=& 13
+\end{eqnarray*}
+Dit beteken dat die funksiewaarde $27$ sal wees.
+
+\end{enumerate}
+% \Note{$x$-waarde = invoer waarde\\
+% $y$-waarde = uitvoer waarde/of funksie waarde}
+
+\subsection*{Voorstellings van funksies}
+Funksies kan op verskillende maniere voorgestel word vir verskillende doeleindes. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Woorde: ``Die verband tussen twee getalle is so dat  die een altyd $5$ minder is as die ander een.''
+\item Vloeidiagram: 
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1360937)(6.7240624,1.1360937)
+\psframe[linewidth=1pt,dimen=outer](3.7046876,0.32890624)(2.6246874,-0.75109375)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,0.14890625)(5.0246873,0.40890625)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,-0.57109374)(5.0046873,-0.85109377)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1046877,-0.21109375)(4.9846873,-0.21109375)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.073937,-0.58032197)(1.2008146,-0.86255836)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.055675,0.13944638)(1.1888499,0.39754358)
+\psline[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.104793,-0.21942326)(1.2250762,-0.24174327)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.44671875,0.93890625){Invoer:}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.0242186,0.93890625){Uitvoer:}
+\rput(3.2,0.93890625){Funksie:}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.82609373,0.41890624){$-3$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.7753125,-0.22109374){$0$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.82953125,-0.92109376){$5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.1746874,-0.19609375){\large $x-5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.368125,0.45890626){$-8$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.3646874,-0.24109375){$-5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.3553123,-0.98109376){$0$}
+\end{pspicture} 
+}
+\end{center}
+\end{figure}
+\item Tabel: 
+
+ \begin{table}[H]
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+   \hline
+Invoer ($x$) & $-3$&$0$&$5$
+\\ \hline
+Uitvoer ($y$) &$-8$&$-5$&$0$
+\\ \hline
+  \end{tabular}
+\end{center}
+ \end{table}
+
+
+
+\item Versameling geordende getallepare: $(-3; -8)$, $(0; -5)$, $(5; 0)$
+\item Algebrai\"ese formule: $f(x) = x-5$
+\pagebreak
+\item Grafiek:
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0284376)(6.52125,3.0684376)
+\rput(3.0,-0.0284375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.3754687,0.1615625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3557813,2.9415624){$f(x)$}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.0,-2.0884376)(5.18,0.8915625)
+\psdots[dotsize=0.16](2.98,-1.1684375)
+\psdots[dotsize=0.16](4.16,-0.0284375)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1448436,0.2415625){$5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3,-1.2384375){$-5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8,-0.2){$0$}
+\end{pspicture} 
+}
+\end{center}
+\end{figure}
+\end{enumerate}
+
+
+\subsection*{Definisieversameling en waardeversameling}
+
+Die definisieversameling (ook bekend as die gebied) van ’n funskie is die stel onafhanklike $x$-waardes waarvoor daar $y$-waardes bestaan. 
+\\Die waardeversameling (ook bekend as die terrein) is die stel afhanklike $y$-waardes wat
+bepaal kan word deur die $x$-waardes.\par 
+
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Skryf die volgende in keurdernotasie:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+ \item $(-\infty; 7]$
+\item $[13; 4)$
+\item $(35; \infty)$
+\item $[\frac{3}{4}; 21)$
+\item $[-\frac{1}{2}; \frac{1}{2}]$
+\item $(-\sqrt{3}; \infty)$
+\end{enumerate}
+\item Skryf die volgende in intervalnotasie:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+ \item $\{p: p \in \mathbb{R},~ p \leq 6\}$
+ \item $\{k: k \in \mathbb{R},~ -5 < k < 5\}$
+ \item $\{x: x \in \mathbb{R},~ x > \frac{1}{5}\}$
+ \item $\{z: z \in \mathbb{R},~ 21 \leq z < 41\}$
+\end{enumerate}
+\end{enumerate}
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02m9	&
+% Question 2
+(2.)	02ma	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+} 
+\end{exercises}
+
+\section{Line\^ere funksies}
+
+
+\subsection*{Funksies van die vorm $y = x$}       
+% Funksies met die algemene vorm $y=mx+c$ word reguitlynfunksies genoem. In die vergelyking, $y=mx+c$, is $m$ en $c$ konstantes en het verskillende invloede op die grafiek van die funksie. 
+\par
+\mindsetvid{Straight line graph}{VMjlm}
+
+\begin{wex}{Trek reguitlyngrafiek}
+{
+\begin{equation*}
+ y = f(x) = x
+\end{equation*}
+Voltooi die volgende tabel van funksiewaardes vir $f(x)=x$ en stel die waardes op dieselfde assestelsel voor:
+% Complete the following table for $f(x)=x$ and plot the points on a set of axes.
+\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)$& $-2$ & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$} & \phantom{$-2$}
+\\ \hline
+\end{tabular}
+\end{center}
+\vspace{10pt}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Verbind die punte met 'n reguitlyn.
+\item Bepaal die definisieversameling en waardeversameling.
+\item Bepaal enige asse van simmetrie van $f$.
+\item Bepaal die waarde van $x$ as $f(x) = 4$. \\Bevestig jou antwoord grafies.
+\item Skryf neer waar die grafiek die asse sny.
+
+%  \item Join the points with a straight line.
+% \item Determine the domain and range.
+% \item About which line is $f$ symmetrical?
+% \item Using the graph, determine the value of $x$ for which $f(x) = 4$. Confirm your answer graphically.
+% \item Where does the graph cut the axes?
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Vervang die waardes in die vergelyking}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)$& $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+\end{tabular}
+\end{center}
+
+\westep{Stip die punte en verbind hulle met 'n reguitlyn}
+Ons kry die volgende punte uit die tabel en die grafiek:
+% From the table, we get the following points and the graph:
+\begin{equation*}
+  (-2;-2),~(-1;-1),~(0;0),~(1;1),~(2;2)
+\end{equation*}
+ \\
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+% label the axes
+%\psgrid-\infty ;q
+\psaxes[arrows=<->](0,0)(-4,-4)(4,4)
+\psset{yunit=1}
+\psplot[plotstyle=curve,arrows=<->]{-3}{3}{x}
+\psdots(-2,-2)(-1,-1)(0,0)(1,1)(2,2)
+
+% \rput(-0.2, -0.3){$0$}
+\rput(4.3, 0.1){$x$}
+\rput(0.1, 4.3){$y$}
+\rput(3.2, 2){$f(x)=x$}
+\rput(0.2,-0.2){$0$}
+\end{pspicture}
+% \caption{Graph of $f(x)=x^2-1$.}
+% \label{fig:mf:g:parabola10}
+\end{center}
+\end{figure}    
+
+\westep{Bepaal die definisieversameling en waardeversameling}
+Definisieversameling: $x \in \mathbb{R}$\\
+Waardeversameling: $f(x) \in \mathbb{R}$
+
+\westep{Bepaal die $x$ waarde waarvoor $f(x)=4$}
+Van die grafiek sien ons dat wanneer $f(x)=4$, $x=4$.
+Dit gee die punt $(4; 4)$.
+
+\westep{Bepaal die as-afsnitte}
+Die funksie $f$ sny die asse by die oorsprong $(0;0)$.
+}
+\end{wex}
+
+  
+
+\subsection*{Funksies van die vorm $y = mx+c$}
+
+\begin{Investigation}{Die invloed van $m$ en $c$ op 'n reguitlyngrafiek}
+
+Op dieselfde assestelsel, trek die volgende grafieke:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=x-2$
+\item $y_2=x-1$
+\item $y_3=x$
+\item $y_4=x+1$
+\item $y_5=x+2$
+\end{enumerate}
+Gebruik jou resultate om die invloed van verskillende waardes van $c$ op die resulterende grafieke af te lei.\\
+\par
+
+Op dieselfde assestelsel, trek die volgende grafieke:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y_6=-2x$
+\item $y_7=-x$
+\item $y_8=x$
+\item $y_9=2x$
+\end{enumerate}
+Gebruik jou resultate om die invloed van verskillende waardes van $m$ op die resulterende grafieke af te lei.
+\end{Investigation}
+
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=mx+q=c$.}
+\label{tab:mf:graphs:summarystr10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|m{2cm}|}\hline
+&\hspace{0.5cm}$m<0$&\hspace{0.5cm}$m=0$&\hspace{0.5cm}$m>0$\\ \hline
+$c>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 add}
+\end{pspicture}
+
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5}
+% \rput(-0.5, 2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 add}
+\end{pspicture}
+\\\hline
+$c=0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg}
+\end{pspicture}
+
+&
+
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x}
+\end{pspicture}
+\\ \hline
+$c<0$
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5 neg}
+% \rput(-0.5, -2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 sub}
+
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Die invloed van $m$}\\
+Jy behoort te vind dat die waarde van $m$ die helling van die grafiek beïnvloed. As $m$ vermeerder, vermeerder die helling van die grafiek ook. \\
+Indien $m>0$ sal die grafiek vermeerder van links na regs (opwaartse helling). \\
+Indien $m<0$ sal die grafiek verminder van links na regs (afwaartse helling). Dit is hoekom daar na $m$ verwys word as die helling of die gradiënt van ’n reguitlynfunksie.\par 
+
+\textbf{Die invloed van $c$}\\
+Jy behoort ook te vind dat die waarde van $c$ die punt bepaal waar die grafiek die $y$-as sny. Vir hierdie rede, staan $c$ bekend as die $y$-afsnit. \\
+As $c$ toeneem, skuif die grafieke vertikaal opwaarts. \\
+As $c$ afneem, skuif die grafiek vertikaal afwaarts.\par 
+
+% These different properties are summarised in Table 1.7.\par 
+\mindsetvid{Analysing the gradient}{VMaxf}
+\clearpage
+\subsection*{Ontdek die kenmerke} 
+Die standaardvorm van 'n reguitlynfunksie is:  $y=mx + c$. 
+\subsubsection*{Definisieversameling en waardeversameling}
+\nopagebreak
+Die definisieversameling is $\{x:x\in \mathbb{R}\}$ omdat daar geen waarde van  $x\in \mathbb{R}$ is waarvoor $f(x)$ ongedefinieerd is nie.\par 
+Die waardeversameling van $f(x)=mx+c$ is ook $\{f(x):f(x)\in \mathbb{R}\}$ omdat $f(x)$ enige re\"ele waarde kan h\^e.\par 
+\par 
+
+\subsubsection*{Afsnitte}
+\textbf{Die $y$-afsnit:}\\
+Elke punt op die $y$-as het 'n $x$-ko\"ordinaat van $0$. Daarom, bereken ons die $y$-afsnit deur $x=0$ te stel.\par
+Byvoorbeeld, die $y$-afsnit van $g(x)=x-1$ word bepaal deur $x=0$ te stel en dan op te los:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+\hfill g(0) &=& 0-1\hfill \\
+& =& -1\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;-1)$.\par
+
+\textbf{Die $x$-afsnitte word as volg bereken:}\\
+Elke punt op die $x$-as het 'n $y$-ko\"ordinaat van $0$. Daarom, bereken ons die $x$-afsnit deur $y=0$ te stel. \par
+Byvoorbeeld, die $x$-afsnit van $g(x)=x-1$ word gegee deur $y=0$ in te stel en dan op te los:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+\hfill 0& =& x-1\hfill \\
+\hfill \therefore x& =& 1\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(1;0)$.
+
+
+\subsection*{Skets grafieke van die vorm $f(x)=mx+c$}
+
+
+Om die grafieke van die vorm, $f(x)=mx+c$, te skets, het ons die volgende drie kenmerkende eienskappe nodig:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item die teken van $m$
+\item $y$-afsnit
+\item $x$-afsnit
+\end{enumerate}
+
+
+\subsection*{Afsnitte metode}
+Slegs twee punte word benodig om ’n reguitlyn te trek. Die maklikste punte is die $x$-afsnit en die $y$-afsnit.
+
+\begin{wex}{Skets 'n reguitlyngrafiek deur die afsnitte metode}
+{Skets die grafiek van $g(x)=x-1$ met die afsnitte metode.}
+{
+\westep{Ondersoek die standaardvorm van die funksie}
+$m>0$. Dus neem die grafieke toe soos $x$ toeneem.
+
+\westep{Bereken afsnitte}
+Die $y$-afsnit word bepaal deur $x=0$ te stel; daarom $g(0)=-1$. \\
+$\therefore$ $y$-afsnit is  $(0;-1)$. \\
+
+Die $x$-afsnit word bepaal deur $y=0$ te stel; daarom $x=1$.  \\
+$\therefore$ $x$-afsnit is $(1;0)$. 
+
+\westep{Stip punte en trek die grafiek}
+
+\begin{center}
+\begin{pspicture}(-4,-4)(4,3)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{4}{x 1 sub}
+\psdots(0,-1)(1,0)
+\uput[r](0,-1.3){$(0;-1)$}
+\uput[ul](1.3,0.1){$(1;0)$}
+\rput(5.2,0.3){$x$}
+\rput(0.3, 4.2){$y$}
+\rput(5.5,3){$g(x)=x-1$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+% \caption{Graph of the function $g(x)=x-1$}
+% \label{fig:mf:g:sketchexamplestr}
+\end{center}
+
+% Let op: hierdie grafiek is kontinu en gaan voort in beide rigtings.       
+}
+\end{wex}
+
+\subsection*{Gradient en $y$-afsnit metode}
+Ons kan 'n reguitlyngrafiek trek van $y=mx+c$ deur die gradi\"ent $m$ en die $y$-afsnit $c$ te gebruik. \par Ons bereken die $y$-afsnit deur $x=0$ te stel. Dit gee een punt waardeur die grafiek gaan. Bereken 'n ander punt deur die gradi\"ent ($m$) te gebruik.\par
+
+Die gradi\"ent van 'n lyn is die maatstaf van helling. Helling word gegee deur die verhouding vertikale verandering tot horisontale verandering te bepaal:
+\begin{equation*}
+m = \dfrac{\mbox{\footnotesize verandering in $y$}}{\mbox{\footnotesize verandering in $x$}} = \dfrac{\mbox{\footnotesize vertikale verandering}}{\mbox{\footnotesize horisontale verandering}}
+\end{equation*}
+Byvoorbeeld: $y=\frac{3}{2}x-1$, daarom $m > 0$ en $y$ neem toe as $x$ toeneem
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize verandering in $y$}}{\mbox{\footnotesize verandering in $x$}} = \dfrac{3\uparrow}{2\rightarrow} = \dfrac{-3\downarrow}{-2\leftarrow}
+\end{equation*}
+\begin{center}
+\scalebox{0.9} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.7584376)(9.34125,4.7584376)
+\rput(4.0,0.3215625){\psaxes[linewidth=0.04,ticksize=0.2cm, arrows=<->](0,0)(-5,-5)(5,5)}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{*-*}(1.92,-3.6984375)(5.96,2.3815625)
+\psarc[linewidth=0.04](4.49,2.3515625){0.49}{0.0}{180.0}
+\psarc[linewidth=0.04](5.51,2.3315625){0.51}{0.0}{180.0}
+\rput{178.47418}(6.9182076,-7.536676){\psarc[linewidth=0.04](3.509283,-3.7222767){0.49}{0.0}{180.0}}
+\rput{178.47418}(4.8816133,-7.4152513){\psarc[linewidth=0.04](2.4901774,-3.675124){0.51}{0.0}{180.0}}
+\rput{88.38591}(3.753576,-4.18539){\psarc[linewidth=0.04](4.029283,-0.1622766){0.49}{0.0}{180.0}}
+\rput{273.13806}(6.9809837,0.9839488){\psarc[linewidth=0.04](4.010177,-3.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(5.9635777,1.9092364){\psarc[linewidth=0.04](3.9901774,-2.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(4.9839826,2.874464){\psarc[linewidth=0.04](4.010177,-1.1951239){0.51}{0.0}{180.0}}
+\rput{88.38591}(4.694869,-3.1535814){\psarc[linewidth=0.04](3.969283,0.8377234){0.49}{0.0}{180.0}}
+\rput{88.38591}(5.6944723,-2.1817489){\psarc[linewidth=0.04](3.969283,1.8377234){0.49}{0.0}{180.0}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.2,-3.7){$(-2;-4)$}
+\rput(4.6,-0.5){$(0;1)$}
+\rput(6.5,2.5){$(2;2)$}
+\rput(9.195469,0.6515625){$x$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.355781,5.2){$y$}
+% \usefont{T1}{ptm}{m}{n}
+\psdot[dotsize=0.2](4,-0.65)
+\rput(5.1275,3.3){\LARGE$+2\rightarrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7,1.5){\LARGE$+3\uparrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.161406,-2.1884375){\LARGE$-3\downarrow$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.9578125,-4.6084375){\LARGE$-2\leftarrow$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{wex}{Skets reguitlyngrafieke deur die gradi\"ent en $y$-afsnit metode te gebruik}
+{Skets die reguitlyngrafiek $p(x)=\frac{1}{2}x-3$ deur die gradi\"ent en $y$-afsnit metode te gebruik.}
+{
+\westep{Gebruik $y$-afsnit}
+$c=-3$, wat die punt $(0;-3)$ gee.
+
+\westep{Gebruik die gradi\"ent}
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize verandering in $y$}}{\mbox{\footnotesize verandering in $x$}} = \dfrac{1\uparrow}{2\rightarrow} = \dfrac{-1\downarrow}{-2\leftarrow}
+\end{equation*}
+Begin by $(0;-3)$. Beweeg $1$ eenheid op en $2$ eenhede regs. Dit gee die tweede punt $(2;-2)$. \\
+Of begin by $(0;-3)$, beweeg $1$ eenheid af en $2$ eenhede links. Dit gee die tweede punt $(-2;-4)$.
+
+\westep{Stip punte en trek die grafiek}
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,5)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-6,-6)(7,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
+\psline[linecolor=gray,linestyle=dashed,linewidth=.7pt](0,-2)(2,-2)
+\psline[linewidth=.7pt](0,-3)(0,-2)
+\psdots(0,-3)(2,-2)(-2,-4)
+\uput[r](0,-3.3){$(0;-3)$}
+\uput[ul](4,-2.5){$(2;-2)$}
+\rput(7.4,0.3){$x$}
+\rput(0.3, 4.2){$p(x)$}
+\rput(-0.3,-0.3){$0$}
+\rput(-3.3,-4){$(-2;-4)$}
+\rput(-0.6, -2.5){\footnotesize$1\uparrow$}
+\rput(1, -1.7){\footnotesize$2\rightarrow$}
+\end{pspicture}
+\end{center}
+Let op: Die grafiek is kontinu en strek in beide rigtings.       
+}
+\end{wex}
+
+Skryf altyd die funksie voorskrif in die vorm $y=mx+c$ en let op die waarde van $m$. Na die grafiek getrek is, maak seker dat as $m>0$, neem die grafiek toe en as $m<0$, neem die grafiek af as $x$ toeneem.\\
+
+
+\begin{exercises}{}
+{
+\nopagebreak
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Gee die $x$- en $y$-afsnitte van die volgende reguitlyngrafieke. Dui aan of die grafiek toeneem of afneem as $x$ toeneem:
+      \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+      \item $y=x+1$
+      \item $y=x-1$
+      \item $h(x)=2x-1$
+      \item $y+3x=1$
+      \item $3y-2x=6$
+      \item $k(x)=-3$
+      \item $x=3y$
+      \item $\frac{x}{2} - \frac{y}{3} = 1$
+      \end{enumerate}
+
+\item Gee die vergelykings van elk van die volgende grafieke:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item $a(x)$
+  \item $b(x)$
+  \item $p(x)$
+  \item $d(x)$
+  \end{enumerate}
+
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.1467185)(9.493593,4.1867185)
+\rput(4.0,-0.1467186){\psaxes[linewidth=0.03,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,tickstyle=bottom,labels=none,ticks=none,ticksize=0.08cm]{<->}(0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm](2.74,1.7332813)(7.72,-0.9467186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1768746,3.9832811){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.234531,-0.036718614){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.4442186,1.3432813){$(0;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.9642186,0.043281388){$(4;0)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.274531,-0.9){$a(x)$}
+\psline[linewidth=0.04cm](3.2,-3.6332815)(8.42,2.3067186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.6742187,-2.8167186){$(0;-6)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.869062,2.4967186){$b(x)$}
+\psline[linewidth=0.04cm](0.96,1.0667186)(7.86,1.0467187)
+\usefont{T1}{ptm}{m}{n}
+\rput(8.274531,1.1567186){$p(x)$}
+\psline[linewidth=0.04cm](7.42,-2.0332813)(1.1,1.4667186)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.8745313,-2.1032813){$d(x)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.7745314,-0.39999998){$0$}
+\psline[linewidth=0.04cm,arrowsize=0.113cm 4.0,arrowlength=1.4,arrowinset=0.4]{>>-}(3.16,0.30671862)(2.92,0.4467186)
+\psline[linewidth=0.04cm,arrowsize=0.113cm 4.0,arrowlength=1.4,arrowinset=0.4]{>>-}(5.14,0.4067186)(4.9,0.5467186)
+\end{pspicture} 
+}
+\end{center}
+
+\end{figure}   
+\item Skets die volgende funksies op dieselfde stel asse deur die afsnitte metode te gebruik. Dui die as-afsnitte duidelik aan asook die ko\"ordinate van die snypunt van die grafieke van $x+2y-5=0$ en $3x-y-1=0$.
+\item Trek die grafieke van $f(x)=3-3x$ en $g(x)=\frac{1}{3}x+1$ met die gradi\"ent-afsnit metode.
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 4
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mb	&
+% Question 2
+(2.)	02mc	&
+% Question 3
+(3.)	02md	&
+% Question 4
+(4.)	02me	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 4
+}
+\end{exercises}
+   
+
+\section{Paraboliese funksies}
+\subsection*{Funksies van die vorm $y={x}^{2}$}      
+% Funksies van die algemene vorm  $y=a{x}^{2}+q$  word paraboliese funksies genoem. In die vergelyking $y=a{x}^{2}+q$, is $a$ en $q$ konstantes wat die parabool op bepaalde maniere be\"invloed. 
+\par
+\mindsetvid{The quadratic function}{VMaxl}
+
+\begin{wex}{Teken die grafiek van 'n kwadratiese funksie}
+{
+\begin{equation*}
+ y = f(x) = x^{2}
+\end{equation*}
+
+Voltooi die volgende tabel van funksiewaardes vir $f(x)=x^{2}$ en stel die waardes op dieselfde assestelsel voor:
+\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$
+\\ \hline
+ $f(x)$& $9$ &&&&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\vspace{10pt}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Verbind die punte met 'n gladde kurwe.
+\item Die definisieversameling van $f$ is $x \in \mathbb{R}$. Bepaal die waardeversameling.
+\item Bepaal die as van simmetrie van $f$
+\item Bepaal die waarde van $x$ as $f(x) = 6\frac{1}{4}$. \\Bevestig jou antwoord grafies.
+\item Skryf neer waar die grafiek die asse sny.
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Vervang die waardes in die vergelyking}
+\begin{equation*}
+ \begin{array}{cclcc}
+  f(x) &=& x^{2} & &\\
+ f(-3) &=& (-3)^{2} &=& 9 \\ 
+ f(-2) &=& (-2)^{2} &=& 4 \\
+ f(-1) &=& (-1)^{2} &=& 1 \\
+f(0) &=& 0^{2} &= &0 \\
+f(1) &=& (1)^{2} &= &1 \\ 
+f(2) &=& (2)^{2} &= &4 \\
+f(3) &=& (3)^{2} &= &9
+ \end{array}
+\end{equation*}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$
+\\ \hline
+ $f(x)$& $9$ &$4$&$1$&$0$&$1$&$4$&$9$
+\\ \hline
+\end{tabular}
+\end{center}
+
+\westep{Stip die punte en verbind hulle met 'n gladde kromme}
+Ons kry die volgende punte uit die tabel: \par
+$(-3;9)$, $(-2;4)$, $(-1;1)$, $(0;0)$, $(1;1)$, $(2;4)$, $(3;9)$ \\
+
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+% label the axes
+%\psgrid-\infty ;q
+\psaxes[arrows=<->,dy=0.5](0,0)(-5,-0.8)(5,5)
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-3.2}{3.2}{x 2 exp}
+\psdots(-2.5, 6.25)(2.5,6.25)(-3,9)(-2,4)(-1,1)(0,0)(1,1)(2,4)(3,9)
+\rput(-2.2, 6.3){$B$}
+\rput(2.2, 6.3){$A$}
+% \rput(-0.2, -0.3){$0$}
+\rput(5.3, 0.1){$x$}
+\rput(0.1, 10.3){$y$}
+\rput(3.7, 7){$f(x)=x^{2}$}
+\rput(-0.2,-0.4){$0$}
+\end{pspicture}
+% \caption{Graph of $f(x)=x^2-1$.}
+\label{fig:mf:g:parabola10}
+\end{center}
+\end{figure}  
+
+\westep{Bepaal die waardeversameling}
+ 
+Definisieversameling: $x \in \mathbb{R}$.\\
+Van die grafiek sien ons dat $y$ groter of gelyk aan $0$ sal wees vir alle waardes van $x$.\\
+Waardeversameling: $\{y: y \in \mathbb{R}, ~~y \ge 0\}$.
+
+\westep{Vind die simmetrie-as}
+$f$ is simmetries rondom die $y$-as. Dus is die lyn $x=0$ die as van simmertrie. 
+
+\westep{Bepaal die $x$-waarde}
+\begin{equation*}
+ \begin{array}{ccl}
+f(x) &=& \frac{25}{4} \\
+\therefore \frac{25}{4} &=& x^{2} \\
+x &=& \pm \frac{5}{2} \\
+  &=& \pm 2\frac{1}{2} 
+\end{array}
+\end{equation*}
+Sien punte $A$ en $B$ op die grafiek.
+
+\westep{Bepaal die as-afsnitte}
+Funskie $f$ sny die asse by die oorsprong $(0;0)$. \\
+Let op as die $x$-waarde toeneem van $-\infty$ tot $0$, verminder $f(x)$.\\
+By die draaipunt $(0;0)$, is $f(x) = 0$, die minimumwaarde van die funksie. \\
+Soos $x$ toeneem van $0$ tot $\infty$, neem $f(x)$ toe.
+}
+\end{wex}
+ 
+
+\clearpage
+\subsection*{Funksies van die vorm $y=a{x}^{2}+q$}
+\begin{Investigation}{Die invloed van $a$ en $q$ op 'n paraboliese grafiek}
+Voltooi die tabel en teken die volgende grafiek op dieselfde assesstelsel:
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+    \item $y_1={x}^{2}-2$
+    \item $y_2={x}^{2}-1$
+    \item $y_3={x}^{2}$
+    \item $y_4={x}^{2}+1$
+    \item $y_5={x}^{2}+2$
+    \end{enumerate}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}\hline
+      $x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ \\ \hline
+      $y_1$ & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  & \hspace{1cm}  \\ \hline
+      $y_2$ & & & & & \\ \hline
+      $y_3$ & & & & & \\ \hline
+      $y_4$ & & & & & \\ \hline
+      $y_5$ & & & & & \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+Gebruik jou resultate en maak 'n afleiding oor die invloed van $q$.\\
+\par
+Voltooi die tabel en teken die volgende grafiek op dieselfde assesstelsel:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=-2{x}^{2}$
+\item $y_7=-{x}^{2}$
+\item $y_8={x}^{2}$
+\item $y_9=2{x}^{2}$
+\end{enumerate}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}\hline
+      $x$&$-2$&$-1$&$0$&$1$&$2$\\ \hline
+      $y_6$ & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} \\ \hline
+      $y_7$&&&&&\\ \hline
+      $y_8$&&&&&\\ \hline
+      $y_9$&&&&&\\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+Gebruik jou resultate en maak 'n afleiding oor die invloed van $a$.
+\end{Investigation}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=mx+q=c$.}
+\label{tab:mf:graphs:summarystr10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|}
+\hline
+ &\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$
+\\ \hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 add}
+\end{pspicture}
+
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 add}
+\end{pspicture}
+\\\hline
+$q=0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp }
+\end{pspicture}
+
+\\ \hline
+$q<0$
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 sub}
+\end{pspicture}
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, ticks=none](0,0)(-4,-4)(4,4)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Die invloed $q$}
+\\
+Die waarde van $q$ word 'n vertikale skuif omdat alle punte dieselfde afstand in die selfde rigting beweeg (dit skuif die hele grafiek op of af). 
+\begin{itemize}
+\item Indien $q>0$, sal die grafiek van $f(x)$ $q$ eenhede vertikaal opwaarts skuif. Dir draaipunt van $f(x)$ is bokant die $y$-as.
+\item Indien $q<0$, sal die grafiek van $f(x)$ $q$ eenhede vertikaal afwaarts skuif. Die draaipunt van $f(x)$ is onderkant die $y$-as.
+\end{itemize}
+\textbf{Die invloed van $a$}
+\\
+Die waarde van $a$ bepaal die vorm van die grafiek. 
+\begin{itemize}
+ \item Indien $a>0$, sal die grafiek $f(x)$  ``glimlag'' en het 'n minimum draaipunt by $(0;q)$.\\
+Die grafiek van $f(x)$ word opwaarts gerek. Soos $a$ groter word, word die grafiek nouer. 
+\\Vir $0<a<1$, sal die grafiek van $f(x)$ wyer word as $a$ nader aan $0$ beweeg.
+\item Indien $a<0$, sal die grafiek van $f(x)$ 'frons' en het 'n maksimum draaipunt $(0;q)$. 
+\\Die grafiek van $f(x)$ word vertikaal afwaarts gerek; soos $a$ kleiner word, word die grafiek nouer. \\
+Vir $-1<a<0$, sal die grafiek van $f(x)$ wyer word as $a$ nader aan $0$ beweeg.
+\end{itemize}
+
+\setcounter{subfigure}{0}
+\begin{figure}[!ht]
+\begin{center}
+\begin{pspicture}(-4,-0.5)(6,2)
+%\psgrid
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-2}{0}{x 1 add 2 exp}
+\psplot[plotstyle=curve,arrows=<->]{3}{5}{x 4 sub 2 exp neg 1 add}
+\psdots(-1.5,3)(-0.5,3)(3.5,3)(4.5,3)
+\uput[d](-1,-0.5){$a>0$ ('n positiewe glimlag)}
+\uput[d](4,-0.5){$a<0$ ('n negatiewe frons)}
+\end{pspicture}
+% \caption{Distinctive shape of graphs of a parabola if $a>0$ and $a<0$.}
+\label{fig:mf:g:parabola10a}
+\end{center}
+\end{figure}   
+
+% This simulasie stel die invloed van veranderinge aan $a$ en $q$. Let daarop dat $q = c$ in hierdie simulasie. 'n Ekstra term, $bx$, is bygevoeg. Jy kan voorlopig $bx$ as $0$ los, of jy kan ondersoek watter invloed dit het op die grafiek.
+\simulation{Graphing}{MG10018}
+
+\subsection*{Ontdek die kenmerke}
+Die standaardvorm van die paraboliese funksie is:  $y=ax^{2} + q$.
+\subsubsection*{Definisieversameling en waardeversameling}
+
+Die definisieversameling is $\{x:x\in \mathbb{R}\}$ omdat daar nie ’n re\"ele waarde van $x$ is waarvoor $f(x)$ ongedefinieerd is nie.\par 
+
+Indien $a>0$ dan het ons:
+\begin{equation*}
+\begin{array}{cccl}\hfill {x}^{2}& \geq & 0\hfill & (\mbox{die kwadraat van ’n uitdrukking is altyd positief})\hfill \\
+ \hfill a{x}^{2}& \geq & 0\hfill & (\mbox{aangesien } a>0)\hfill \\
+ \hfill a{x}^{2}+q& \geq & q\hfill & (\mbox{tel $q$ weerskante by}) \\
+ \hfill \therefore f(x)& \geq & q\hfill & 
+\end{array}
+\end{equation*}
+Dus, indien $a>0$, is die waardeversameling gelyk aan $[q,\infty )$. Soortgelyk, kan ons aantoon dat indien  $a<0$, is die waardeversameling van $ (-\infty ,q]$. 
+\vspace*{-20pt}
+\begin{wex}{Definisie- en waardeversameling van 'n parabool}
+{As $g(x)={x}^{2}+2$, bepaal die definisieversameling en waardeversameling van die funksie.}
+{
+\westep{Bepaal die definisieversameling }
+Die definisieversameling is $\{x:x\in \mathbb{R}\}$ want daar is geen waarde van $x\in \mathbb{R}$ waarvoor $g(x)$ ongedefinieerd is nie.
+\westep{Bepaal die waardeversameling}
+
+Die waardeversameling van $g(x)$ kan as volg bereken word:
+
+\begin{equation*}
+\begin{array}{ccc}\hfill {x}^{2}& \geq & 0\hfill \\
+ \hfill {x}^{2}+2& \geq & 2\hfill \\
+ \hfill g(x)& \geq & 2\hfill 
+\end{array}
+\end{equation*}
+Dus is die waardeversameling gelyk aan $\{g(x):g(x)\geq 2\}$.
+}
+\end{wex}
+
+
+
+\subsubsection*{Afsnitte}
+\textbf{Die $y$-afsnit}:\\
+Elke punt op die $y$-as het 'n $x$ -ko\"ordinaat van $0$. Dus bereken ons die $y$-afsnit deur $x = 0$ te stel.\\
+
+Byvoorbeeld, die $y$-afsnit van $g(x)={x}^{2}+2$ word verkry deur $x=0$ te stel, en dan:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& {x}^{2}+2\hfill \\ 
+\hfill g(0)& =& {0}^{2}+2\hfill \\
+ & =& 2\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;2)$.\par
+
+\textbf{Die $x$-afsnit}:\\
+Elke punt op die $x$-as het 'n $y$--ko\"ordinaat van $0$. Dus bereken ons die $x$-afsnit deur $y=0$ te stel.\\
+
+Byvoorbeeld, die $x$-afsnit van $g(x)={x}^{2}+2$ word verkry deur $y=0$ stel, en dan:\par
+
+\begin{equation*}
+\begin{array}{ccl}\hfill g(x)& =& {x}^{2}+2\hfill \\
+ \hfill 0& =& x^{2}+2\hfill \\
+ \hfill -2& =& x^{2}\hfill 
+\end{array}
+\end{equation*}
+Hierdie antwoord is nie reëel nie. Daarom het die grafiek van $g(x)={x}^{2}+2$ geen $x$-afsnitte nie. 
+
+\subsubsection*{Draaipunte}
+
+Die draaipunte van funksies van die vorm $f(x)=ax^{2}+q$ word gegee deur na die waardeversameling van
+die funksie te kyk. 
+\begin{itemize}
+ \item Indien $a>0$, het die grafiek van $f(x)$ 'n ``glimlag''-vorm en het 'n minimum draaipunt by $(0;q)$.
+\item Indien $a<0$, het die grafiek van $f(x)$ 'n ``frons''-vorm en het 'n maksimum
+draaipunt by $(0;q)$.
+\end{itemize}
+
+
+\subsubsection*{Asse van simmetrie}
+
+Daar is een simmetrie-as vir die funksie met die vorm $f(x)=ax^{2}+q$ en dit gaan deur die draaipunt. Omdat die draaipunt op die $y$-as lê, is die simmertrie-as die lyn $x=0$. 
+
+\subsection*{Skets grafieke van die vorm $y=ax^{2}+q$}
+
+Om ’n grafiek te skets van die vorm, $f(x)=a^{2}+q$ het ons die volgende kenmerkende eienskappe nodig:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item die teken van $a$
+\item $y$-afsnit
+\item $x$-afsnit
+\item draaipunt
+
+\end{enumerate}
+
+
+\begin{wex}{Sketse van parabole}
+{Trek die grafiek van $y={2x}^{2}-4$.  Merk die afsnitte en die draaipunt.}
+{
+\westep{Ondersoek die vorm van die parabool}
+Ons sien dat $a>0$, dus het die grafiek 'n ``glimlag''-vorm en 'n minimum draaipunt.
+\westep{Bereken die afsnitte}
+Die $y$-afsnit word bepaal deur $x=0$ te stel:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 2x^{2}-4\hfill \\
+ \hfill & =& 2(0)^{2}-4\hfill \\
+ \hfill & =& -4\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;-4)$.\\
+Die $x$-afsnit word bepaal deur $y=0$ te stel:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =&2x^{2}-4\hfill \\
+ \hfill 0& =& 2x^{2}-4\hfill \\
+ \hfill x^{2}& =& 2\hfill\\
+\therefore x& =& \pm \sqrt{2} 
+\end{array}
+\end{equation*}
+Dit gee die punte $(-\sqrt{2};0)$ en $(\sqrt{2};0)$.
+
+\westep{Bepaal die  die draaipunt}
+Die draaipunt is gelyk aan die y-afsnit wat ons as $(0;-4)$ bereken het.
+
+\westep{Stip die punte en skets die grafiek}
+\begin{center}
+\scalebox{1}
+{
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-4,-5)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.8}{1.8}{x 2 exp 2 mul 4 sub}
+\psdots(0,-4)(-1.41;0)(1.41;0)
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 4.3){$y$}
+\rput (4.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(2.6,2.7){$y={2x}^{2}-4$}
+\rput(0.6,-4.2){$(0;-4)$}
+\rput(-2.2,0.35){$(-\sqrt{2};0)$}
+\rput(2.1,0.35){$(\sqrt{2};0)$}
+\end{pspicture}
+}
+\end{center}
+Definisieversameling: $\{x:x \in \mathbb{R}\}$.\\
+Waardeversameling: $\{y: y \geq -4, y \in \mathbb{R}\}$.\\
+As van simmetrie: $x=0$ ($y$-as).
+}
+\end{wex}
+
+
+
+\begin{wex}{Sketse van parabole}
+{Trek 'n grafiek van $g(x)=-\frac{1}{2}x^{2}-3$.  Merk die afsnitte en die draaipunt.}
+{
+\westep{Ondersoek die vorm van die parabool}
+Ons sien dat $a<0$, dus het die grafiek 'n ``frons''-vorm en het 'n maksimum draaipunt.
+\westep{Bereken die afsnitte}
+Die $y$-afsnit word bepaal deur $x=0$ te stel:
+\begin{equation*}
+\begin{array}{ccl}
+\hfill g(x)& =& -\frac{1}{2}x^{2}-3\hfill \\
+ g(0)& =& -\frac{1}{2}(0)^{2}-3\hfill \\
+ & =& -3\\
+\end{array}
+\end{equation*}
+Dit gee die punt $(0; -3)$.\\
+\\
+Die $x$-afsnit word bepaal deur $y=0$ te stel:
+\begin{equation*}
+\begin{array}{ccl}\hfill 0& =& -\frac{1}2x^{2}-3\hfill \\ 
+\hfill 3& =& -\frac{1}2x^{2}\hfill \\
+ \hfill -2(3)& =& x^{2}\hfill \\
+\hfill -6& =& x^{2}\hfill \\
+\end{array}
+\end{equation*}
+Die oplossing van die vergelyking is nie reëel nie. Daarom is daar geen $x$-afsnitte nie.
+\westep{Bepaal die  die draaipunt}
+Die draaipunt is gelyk aan die y-afsnit wat ons bereken het as $(0;-3)$.
+\westep{Stip die punte en skets die grafiek}
+% \begin{figure}[!ht]
+% Add g(x) label. Label all origins!!
+%TOOK THIS DIAGRAM FROM THE ENGLISH VERSION
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
+\psdots(0,-3)
+\uput[r](0,-2.7){$(0;-3)$}
+\rput(0.4, 1){$y$}
+\rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(4, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
+\end{pspicture}
+% \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+% % \label{fig:mf:g:sketchexamplepar10}
+\end{center}
+
+
+% \begin{center}
+% \begin{pspicture}(-5,-5)(5,1)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.5}
+% \psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+% \psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
+% \psdots(0,-3)
+% \uput[r](0,-2.7){\small$(0;-3)$}
+% \rput(0.4, 0.9){\small $y$}
+% \rput (5.3, 0.2){\small$x$}
+% % \rput(-0.3,-0.3){$0$}
+% \rput(4.7, -4.5){\small$g(x)=-\frac{1}{2}x^{2}-3$}
+% \end{pspicture}
+% % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+% % % \label{fig:mf:g:sketchexamplepar10}
+% \end{center}
+% \end{figure}
+\\
+Definisieversameling: $\{x:x \in \mathbb{R}\}$.\\
+Waardeversameling: $\{y: y \leq -3, ~y \in \mathbb{R}\}$. \\
+As van simmetrie: $x=0$ ($y$-as).
+}
+\end{wex}
+% 
+% 
+% \begin{wex}
+% {Sketse van Parabole}
+% {Skets die grafiek van $y={3x}^{2}+5$. Merk die afsnitte, draaipunt en die simmetrie-as.}
+% {
+% \westep{Examine the standard form of the equation}
+% Die teken van $a>0$. s positief. Die parabool sal dus ’n minimum-
+% draaipunt hê.
+% \westep{Bereken die afsnit punte}
+% Die $y$-afsnit word bepaal deur $x=0$te stel:
+% \begin{equation*}
+% \begin{array}{ccl}\hfill y& =& 3x^{2}+5\hfill \\
+%  \hfill y& =& 3(0)^{2}+5\hfill \\
+%  \hfill & =& 5\hfill 
+% \end{array}
+% \end{equation*}
+% Die koördinate van die $y$-as is dan $(0;5)$.
+% Die $x$-afsnit word bepaal deur $y=0$ te stel:
+% \begin{equation*}
+% \begin{array}{ccc}\hfill y& =& 3x^{2}+5\hfill \\
+%  \hfill 0& =& 3x^{2}+5\hfill \\
+%  \hfill x^{2}& =& -\frac{3}{5}\hfill 
+% \end{array}
+% \end{equation*}
+% Die oplossing van die vergelyking is nie reëel nie. Daarom is daar geen $x$ -afsnitte nie.
+%  $x$-intercepts.
+% 
+% \westep{bereken die draaipunte}
+% Die draaipunt is by (0, q). Vir hierdie funksie is q = 5, dus die
+% draaipunt is by $(0;5)$.
+% 
+% \westep{Plot the points and sketch the graph}
+% \begin{center}
+% \scalebox{1}
+% {
+% \psset{xunit=1.0cm,yunit=0.5cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+% \begin{pspicture*}(-2,-2)(4,8)
+% \psaxes[xAxis=true,yAxis=true,Dx=1,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2,0)(2,8)[,140] [,-40]
+% \rput{0}(0,5){\psplot{-2}{2}{x^2/2/0.17}}
+% % \rput[bl](0.56,5.34){$y = 3x^{2} + 5$}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.3,7.6){$y$}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(2.3,0.3){$x$}
+% \end{pspicture*}
+% }
+% \end{center}\\
+% Die definisievesameling is alle reële getalle $\{x:x \in \mathbb{R}\}$\\
+% die waardeversameling $\{y: y \geq 5, y \in \mathbb{R}\}$\\
+% Ons weet dat die y -as die simmetrie-as is $x=0$.
+% }
+% 
+% \end{wex}
+
+
+   
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item  Wys dat indien $a<0$ sal die waardeversameling van  $f(x)=ax^{2}+q$ \\ $\{f(x):f(x) \leq q \}$ wees.
+\item Skets die grafiek van die funksie $y=-x^{2}+4$ en toon al die afsnitte met die asse.
+\item Twee parabole is geteken: $g(x)=y=ax^{2}+p$ en $h(x)=y=bx^{2}+q$.
+\setcounter{subfigure}{0}
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[arrows=<->,dx=2,Dx=2,dy=2,Dy=2, labels=none, ticks=none](0,0)(-10,-15)(10,28)
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp  9 sub}
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp 1 mul neg 23 add}
+
+\rput(0.6,28){$y$}
+\rput(0.6,-10){$-9$}
+\rput(-5.5,7.5){$(-4;7)$} 
+\rput(5.1,7.5){$(4;7)$}
+\rput(5.3,-0.95){$3$}
+\rput(5.6,17){$g$}
+\rput(5.6,-4){$h$}
+
+\rput(0.5, 24){$23$}
+\rput (10.4, 0.2){$x$}
+\rput(-0.5,-0.95){$0$}
+
+\end{pspicture}
+\end{center}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+    \item Vind die waardes van $a$ en $p$.
+    \item Vind die waardes van $b$ en $q$.
+    \item Vind die waardes van $x$ waarvoor $g({x})\geq h({x})$.
+    \item Vir watter waardes van $x$ is $g(x)$ toenemend?
+    \end{enumerate}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 3
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mf	&
+% Question 2
+(2.)	02mg	&
+% Question 3
+(3.)	02mh	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 3
+}
+\end{exercises}   
+\clearpage
+\section{Hiperboliese funksies}
+
+\mindsetvid{The hyperbolic function}{VMaxw}
+
+\subsection*{Funksies van die vorm $y=\frac{1}{x}$}  
+% Funksies van die vorm $y=\frac{a}{x}+q$ staan bekend as hiperboliese funksies. 
+
+\begin{wex}
+{Trek die grafiek van 'n hiperbool}
+{
+\begin{equation*}
+ y = h(x) = \frac{1}{x}
+\end{equation*}
+
+Voltoi die volgende tabel vir $h(x) = \frac{1}{x}$ en stip die punte op 'n assesstelsel.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
+\\ \hline
+ $h(x)$& $-\frac{1}{3}$ &&&&&&&&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{minipage}{0.9\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Verbind die punte met 'n gladde kromme.
+\item Wat gebeur as $x=0$?
+\item Verduidelik waarom die grafiek uit twee aparte krommes bestaan.
+\item Wat gebeur met $h(x)$ as die waarde van $x$ baie klein of baie groot word?
+\item Die definisieversameling van $h(x)$ is $\{x : x \in \mathbb{R}, ~x \ne 0\}$. Bepaal die waardeversameling.
+\item Rondom watter twee lyne is die grafiek simmetries?
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Stel waardes in die vergelyking in}{
+\begin{equation*}
+ \begin{array}{cllll}
+  h(x) &=& \frac{1}{x} & &\\
+ h(-3) &=& \frac{1}{-3} &=& -\frac{1}{3} \vspace{5pt}\\ 
+ h(-2) &=& \frac{1}{-2} &=& -\frac{1}{2}\vspace{5pt} \\ 
+ h(-1) &=& \frac{1}{-1} &=& -1 \vspace{5pt}\\ 
+ h(-\frac{1}{2}) &=& \dfrac{1}{-\frac{1}{2}} &=& -2 \vspace{5pt}\\ 
+ h(-\frac{1}{4}) &=& \dfrac{1}{-\frac{1}{4}} &=& -4 \vspace{5pt}\\ 
+ h(0) &=& \frac{1}{0} &=& \mbox{ongedefinieer}\vspace{5pt} \\ 
+ h(\frac{1}{4}) &=& \dfrac{1}{\frac{1}{4}} &=& 4 \vspace{5pt}\\ 
+ h(\frac{1}{2}) &=& \dfrac{1}{\frac{1}{2}} &=& 2 \vspace{5pt}\\ 
+ h(1) &=& \frac{1}{1} &=& 1 \vspace{5pt}\\ 
+ h(2) &=& \frac{1}{2} &=& \frac{1}{2} \vspace{5pt}\\ 
+ h(3) &=& \frac{1}{3} &=& \frac{1}{3} \vspace{5pt}\\ 
+ \end{array}
+\end{equation*}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+  $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
+\\ \hline
+ $h(x)$& $-\frac{1}{3}$ &$-\frac{1}{2}$&$-1$&$-2$&$-4$&ongedefinieer&$4$&$2$&$1$&$\frac{1}{2}$&$\frac{1}{3}$
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+}
+\westep{Stip die punte en verbind hulle apart met gladde krommes}
+Vanaf die tabel kry ons die volgende punte: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; -4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$ en $(3; \frac{1}{3})$. \vspace{8pt} \\
+
+\setcounter{subfigure}{0}
+% \begin{figure}[tbp]
+\begin{center}
+\begin{pspicture}(-5,-2)(5,5)
+%\psgrid
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.2}{x -1 exp}
+\psplot[plotstyle=curve,arrows=<->]{0.2}{5}{x -1 exp}
+\psdots(-3,-0.33)(-2,-0.5)(-1,-1)(-0.5,-2)(-0.25, -4)(0.25, 4)(0.5, 2)(1, 1)(2,0.5)(3,0.33) 
+\rput(5.3,0.3){$x$}
+\rput(0.3,5.3){$y$}
+\rput(2,1.5) {$h(x) = \frac{1}{x}$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+
+\end{center}
+
+Funksie $h$ is ongedefineerd vir $x=0$. Daar is dus 'n breuk (diskontinu\"iteit) by $x=0$. \vspace{8pt} \\
+$y=h(x) = \frac{1}{x}$ dus kan ons skryf $x \times y = 1$. Aangesien die produk van twee positiewe getalle \textbf{asook} die produk van twee negatiewe getalle gelyk aan $1$ kan wees, l\^e die grafiek in die eerste en derde kwadrante.
+
+\westep{Bepaal die asimptote}
+As die waarde van $x$ toeneem, kom die waarde van $h(x)$ al nader aan $0$ maar word nooit $0$ nie. Dus noem ons die $x$-as, die lyn $y=0$, 'n horisontale asimptoot van die grafiek. Dieselfde gebeur in die derde kwadrant: as $x$ kleiner word, sal $h(x)$ die $x$-as asimptoties nader.\vspace{8pt} \\
+
+Let op dat daar ook 'n vertikale asimptoot is: die $y$-as met vergelyking $x=0$; hoe nader $x$ kom aan $0$, hoe nader $h(x)$ kom aan die $y$-as asimptotes.
+\westep{Bepaal die waardeversameling}
+Definisieversameling: $\{x : x \in \mathbb{R}, ~x \ne 0\}$\\
+Van die grafiek sien ons $y$ is gedefinieer vir alle waardes van $x$ behalwe $x=0$.\\
+Waardeversameling: $\{y : y \in \mathbb{R}, ~y \ne 0\}$ 
+\westep{Bepaal die asse van simmetrie}
+Die grafiek van $h(x)$ het twee asse van simmetrie, naamlik die lyne $y=x$ en $y=-x$. Die twee helftes van die hiperbool is spie\"elbeelde van mekaar met betrekking tot hierdie lyne. 
+}
+\end{wex}
+
+
+
+
+\subsection*{Funksies van die vorm $y=\frac{a}{x}+q$}
+\begin{Investigation}{Die invloed van $a$ en $q$ op 'n hiperbool}
+ Op dieselfde assestelsel, trek die volgende grafieke:
+  \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+  \item $y_1=\dfrac{1}{x}-2$
+  \item $y_2=\dfrac{1}{x}-1$
+  \item $y_3=\dfrac{1}{x}$
+  \item $y_4=\dfrac{1}{x}+1$
+  \item $y_5=\dfrac{1}{x}+2$
+  \end{enumerate}
+Gebruik jou resultate om die invloed van  $q$ af te lei.\par
+
+Op dieselfde assestelsel, trek die volgende grafieke:
+\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=\dfrac{-2}{x}$
+\item $y_7=\dfrac{-1}{x}$
+\item $y_8=\dfrac{1}{x}$
+\item $y_9=\dfrac{2}{x}$
+\end{enumerate}
+Gebruik jou resultate om die invloed van $a$ af te lei.
+\end{Investigation}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|}\hline
+&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm, arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
+\end{pspicture}
+&
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{5}{x -1 exp 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
+\end{pspicture}
+\\\hline
+$q=0$ & 
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrowsize=0.07cm,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.3}{-0.25}{x -1 exp neg }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.3}{x -1 exp neg }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.4}{-0.25}{x -1 exp }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.4}{x -1 exp }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
+\end{pspicture}
+\\ \hline
+$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-2}{4}{2 neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2 neg}
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Die invloed van $q$}\newline
+Jy behoort te vind dat die waarde van $q$ bepaal of die grafiek op- of afskuif ten opsigte van die $x$-as. Dit word 'n vertikale skuif genoem omdat al die punte dieselfde afstand in dieselfde rigting skuif. Die hele grafiek skuif op of af.  
+\begin{itemize}
+\item Vir $q>0$, skuif die grafiek van $h(x)$ $q$ eenhede vertikale op. 
+\item Vir $q<0$, skuif die grafiek van $h(x)$ $q$ eenhede vertikale af.
+\end{itemize}
+Die horisontale asimptoot is die lyn $y=q$ en die vertikale asimptoot is die $y$-as, die lyn $x=0$.\par
+\vspace{8pt}
+\textbf{Die invloed van $a$}\newline
+Jy behoort te vind dat die waarde van $a$ bepaal die vorm van die grafiek en of die grafiek in die eeste en derde kwardrante of in die tweede
+en vierde kwadrante van die Cartesiese vlak lê. 
+\begin{itemize}
+ \item Indien $a>0$, sal die grafiek van $h(x)$ in die eeste en derde kwadrante lê. \\
+Vir $a>1$, sal die grafiek van $h(x)$ verder weg l\^e van die asse as $y=\frac{1}{x}$.
+%english
+\\Vir $0<a<1$, as $a$ neig na $0$, skuif die grafiek nader aan die asse as $y=\frac{1}{x}$. 
+\item Indien $a<0$, sal die grafiek van $h(x)$ in die tweede
+en vierde kwadrante van die Cartesiese vlak lê.\\
+Vir $a<-1$, sal die grafiek van $h(x)$ verder weg l\^e van die asse as $y=-\frac{1}{x}$.
+%english
+\\Vir $-1<a<0$, as $a$ neig na $0$, skuif die grafiek nader aan die asse as $y=-\frac{1}{x}$. 
+\end{itemize}
+
+
+
+\subsection*{Ontdek die kenmerke}  
+Die standaard vorm van die hiperboliese funksie is $y=\frac{a}{x}+q$.
+
+\subsubsection*{Definisieversameling en waardeversameling}
+
+Die funksie $y=\frac{a}{x}+q$ is ongedefinieerd vir $x=0$. \\
+Die definisieversameling is dus $\{x:x\in \mathbb{R},~x\ne 0\}$.\par 
+Ons kan sien dat $y=\frac{a}{x}+q$ herskryf kan word as:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& \dfrac{a}{x}+q\hfill \vspace{4pt} \\
+ \hfill y-q& =& \dfrac{a}{x}\hfill \\
+ \hfill \mbox{Indien }x \ne  0 ~\mbox{dan}:(y-q)x& =& a\hfill \\
+ \hfill x& =& \dfrac{a}{y-q}\hfill 
+\end{array}
+\end{equation*}
+Dit wys dat die funksie ongedefinieerd is by $y=q$. \\
+Die waardeversameling van $f(x)=\frac{a}{x}+q$ is $\{f(x):f(x) \in \mathbb{R},~f(x)\ne q\}$.\par 
+
+\begin{wex}{Definisie- en waardeversameling van 'n hiperbool}
+%english
+{As $g(x)=\frac{2}{x}+2$, vind die definisieversameling en waardeversameling van die funksie.}
+{
+\westep{Bereken die definisieversameling}
+Die definisieversameling is $\{x:x\in \mathbb{R},~x\ne 0\}$ omdat $g(x)$ \\ongedefinieerd is by $x=0$.
+\westep{Bereken die waardeversameling}
+Ons sien dat  $g(x)$ ongedefinieerd is by $y=2$.  Die waardeversamling is dus $\{g(x):g(x) \in \mathbb{R},~g(x)\ne 2\}$.
+}
+\end{wex}
+
+
+\subsubsection*{Afsnitte}
+
+\textbf{Die $y$-afsnit}: \\
+Elke punt op die $y$-as het 'n $x$-ko\"ordinaat van $0$. Dus bereken ons die $y$-afsnit deur $x=0$ te stel.\\
+As $g(x)=\frac{2}{x}+2$ stel $x=0$:
+\begin{equation*}
+\begin{array}{ccc}\hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
+ \hfill y& =& \dfrac{2}{0}+2\hfill 
+\end{array}
+\end{equation*}
+Dit is ongedefinieerd omdat ons deur nul deel. Daar is dus geen $y$-afsnit nie.\\
+\\
+
+\textbf{Die $x$-afsnit}: \\
+Elke punt op die $x$-as het 'n $y$-ko\"ordinaat van $0$. Dus bereken ons die $x$-afsnit deur $y=0$ te stel.\\
+As $g(x)=\frac{2}{x}+2$ stel $y=0$:
+\begin{equation*}
+\begin{array}{ccl}
+\hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
+ \hfill 0& =& \dfrac{2}{x}+2\hfill \vspace{4pt} \\
+ \hfill \dfrac{2}{x}& =& -2\hfill \vspace{4pt}\\
+ \hfill x& =& \dfrac{2}{-2}\hfill \\
+ \hfill x& =& -1\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt  $(-1; 0)$.
+
+
+\subsubsection*{Asimptote}
+
+Daar is twee asimptote vir funksies van die vorm $y=\frac{a}{x}+q$. \par 
+Ons het gesien dat die funksie ongedefenieer is by $x=0$ en $y=q$. Dus is die asimtote $y=q$ en $x=0$ ($y$-as). 
+
+\subsubsection*{Asse van simmetrie}
+Daar is twee lyne ten opsigte waarvan die hiperbool simmertries is, naamlik $y=ax+q$ en $y = -ax +q$. As $y = \frac{2}{x} + 2$, is die simmertrie-asse $y = x + 2$ en $y = -x + 2$.
+
+
+\subsection*{Skets grafieke van die vorm  $f(x)=\frac{a}{x}+q$}
+
+Om grafieke van funksies van die vorm $f(x)=\frac{a}{x}+q$ te skets, het ons vier eienskappe nodig.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item teken van $a$
+\item $y$-afsnitte
+\item $x$-afsnitte
+\item asimptote
+\end{enumerate}
+
+\begin{wex}{Skets ’n hiperbool}
+{Skets die grafiek $g(x)=\frac{2}{x}+2$. Merk die afsnitte en asimptote.}
+{
+\westep{Ondersoek die standaardvorm van die hiperbool}
+Ons sien dat $a>0$, dus l\^e die grafiek $g(x)$ in die eeste en derde kwardrante. 
+\westep{Bereken die afsnitte}
+$y$-afsnit, stel $x=0$:
+\begin{equation*}
+\begin{array}{ccl}
+  g(x) = & \dfrac{2}{x} + 2  \vspace{4pt} \\
+  g(0) = & \dfrac{2}{0} +2  
+ \end{array}
+\end{equation*}
+Dit is ongedefinieerd, dus is daar geen $y$-afsnit nie. 
+\\
+$x$-afsnit, stel $y=0$:
+\begin{equation*}
+ \begin{array}{ccl}
+  g(x) = &  \dfrac{2}{x} + 2 \vspace{4pt}\\
+ 0 = & \dfrac{2}{x} +2 \\
+\dfrac{2}{x} = & -2 \\
+\therefore x = &-1
+ \end{array}
+\end{equation*}
+
+Dit gee die punt $(-1;0)$.
+
+
+\westep{Bepaal die asimptote}
+Die horisontale asimptoot is die lyn $y=2$ en die vertikale asimptoot is die lyn $x=0$.
+
+\westep{Skets die grafieke}
+\setcounter{subfigure}{0}
+% \begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-4)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.4}{x -1 exp 2 mul 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.4}{5}{x -1 exp 2 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.2,0.2){$x$}
+\rput(0.2, 7.3){$y$}
+\rput(3.5,3.3){$g(x)=\frac{2}{x}+2$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+% \caption{Graph of $g(x)=\frac{2}{x} + 2$.}
+% \label{fig:mf:g:hyperbolasketchexample}
+\end{center}
+% \end{figure} 
+\\
+Definisieversameling: $\{x:x \in \mathbb{R},~x\ne 0\}$.\\
+Waardeversameling: $\{y:y \in \mathbb{R},~y\ne 2\}$.
+}
+\end{wex}
+
+
+
+
+\begin{wex}
+{Skets ’n hiperbool}
+{
+Skets die grafiek van $y=\frac{-4}{x}+7$.}
+{
+
+\westep{Ondersoek die standaardvorm van die hiperbool}
+Ons sien dat $a<0$, dus die grafiek l\^e in kwadrante $2$ en $4$.
+\westep{Bereken die afsnitte}
+Die $y$-afsnit is waar $x=0$:
+\begin{equation*}
+ \begin{array}{ccc}
+ \hfill  y &= & \dfrac{-4}{x}+7 \vspace{4pt}\hfill \\
+ \hfill &= & \dfrac {-4}{0} +7  \hfill \\
+
+ \end{array}
+\end{equation*}
+Die funksie is ongedefinieerd by $x=0$. Daar is geen $y$-afsnit nie. \\
+Die $x$-afsnit is waar $y=0$:
+\begin{equation*}
+ \begin{array}{ccl}
+ y &=&  \dfrac{-4}{x}+7\vspace{4pt}\\
+ 0 &=&  \dfrac{-4}{x}+7\vspace{4pt}\\ 
+ \dfrac{-4}{x} &=& -7\vspace{4pt} \\
+\therefore x &= &\dfrac{4}{7}
+ \end{array}
+\end{equation*}
+
+Daar is dus een $x$-afsnit by $\left(\dfrac{4}{7};0\right)$.
+
+
+\westep{Bepaal die asimptote}
+Ons kyk na die definisieversameling en die waardeversameling om te bepaal waar die asimptote lê. Van die definisieversameling kan ons sien dat die funksie ongedefinieerd
+is wanneer $x=0$, dus daar is een asimptoot by $x=0$. Die funksie is
+ongedefinieerd by $ y = q$. Dus die tweede asimptoot is by $y=7$. 
+
+\westep{Skets die grafiek}
+% %TOOK DIAGRAM FROM ENGLISH
+% \par
+% \setcounter{subfigure}{0}
+% % \begin{figure}[]
+% \begin{center}
+% \scalebox{1}{
+% \begin{pspicture}(-5,-3)(5,6)
+% %\psgrid
+% \psset{yunit=0.65,xunit=0.65}
+% \psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
+% \psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+% \psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
+% \psline[linestyle=dashed](-7,7)(7,7)
+% \rput(7.3,0.3){$x$}
+% \rput(0.3, 15.3){$y$}
+% \rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+% \rput(8.2,7){$y=7$}
+% \rput(-0.3,-0.3){$0$}
+% \end{pspicture}
+% }
+% \end{center}
+
+\setcounter{subfigure}{0}
+% \begin{figure}[]
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
+\psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+\psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
+\psline[linestyle=dashed](-7,7)(7,7)
+\rput(7.3,0.3){$x$}
+\rput(0.3, 15.3){$y$}
+\rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+\rput(8.2,7){$y=7$}
+% \rput(-0.3,-0.5){$0$}
+\end{pspicture}
+}
+\end{center}
+
+Definisieversameling: $\{x:x \in \mathbb{R},~x\ne 0\}$.\\
+Waardeversameling: $\{y:y \in \mathbb{R},~y\ne 7\}$.\\
+Asse van simmetrie: $y=x+7$ en $y=-x+7$.
+
+
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Gebruik grafiekpapier en teken die grafiek van  $xy=-6$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+    \item Lê die punt $(-2; 3)$  op die grafiek? Gee ’n rede vir jou antwoord.
+    \item As die $x$-waarde van ‘n punt op die grafiek gelyk is aan $0,25$ wat is die ooreenstemmende $y$-waarde?
+    \item Wat gebeur met die $y$-waardes as die $x$-waardes baie groot word?
+   % \item Bereken die kortste afstand van die oorsprong na die grafiek $P$.
+    \item Gee die vergelykings van die asimptote.
+    \item Met die lyn $y=-x$ as ’n lyn van simmetrie, watter punt is simmetries ten opsigte van $(-2; 3)$?
+    \end{enumerate}
+\item Skets die grafiek van  $h(x)=\frac{8}{x}$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+    \item Hoe sal die grafiek $g(x)=\frac{8}{x}+3$ vergelyk met die grafiek van $h(x)=\frac{8}{x}$? Verduidelik jou antwoord.
+    \item Skets die grafiek van $y=\frac{8}{x}+3$ op dieselfde assestelsel. Toon die asimptote, asse van simmetrie en die ko\"ordinate van een punt op die grafiek.
+    \end{enumerate}
+
+ \end{enumerate}
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mi	&
+% Question 2
+(2.)	02mj	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+\section{Eksponensiële funksies}
+
+\subsection*{Funksies van die vorm $y=b^{x}$}        
+% Funksies van die vorm $y=ab^{x}+q$ staan bekend as eksponensiële funksies. Konstantes $a$ en $q$ be\"invloed die vergelyking op verskillende maniere.
+\par
+\mindsetvid{The exponential function}{VMaxx}
+
+\begin{wex}{Trek die grafiek van 'n eksponensiële funksie}
+ {
+\begin{equation*} y=f(x) =b^{x} \mbox{ vir } b>0 \mbox{ en } b \neq 1 \end{equation*}
+
+Voltooi die tabel vir elk van die funksies en trek die grafieke op dieselfde assesstelsel:
+$f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)=2^{x}$& \hspace{1cm}   & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
+\\ \hline
+ $g(x)=3^{x}$&  &&&&
+\\ \hline
+ $h(x)=5^{x}$&  &&&&
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+\begin{minipage}{0.9
+\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item By watter punt sny al die grafieke?
+\item Verduidelik waarom hulle nie die $x$-as sny nie.
+\item Gee die definisieversameling en waardeversameling van $h(x)$.
+\item Neem die waarde van $x$ af of toe soos $h(x)$ toeneem?
+\item Watter een van hierdie grafieke neem toe teen die stadigste tempo?
+\item Is die volgende bewering waar of vals ten opsigte van $y=k^{x}$ met $k>1$: \\
+      ``Hoe groter $k$, hoe steiler die grafiek van $y=k^{x}$``?
+\end{enumerate}
+
+% \vspace*{20pt}
+Voltooi die volgende tabel vir elk van die funksies en trek die grafieke op dieselfde asse stelsel:
+$F(x) =(\frac{1}{2})^{x}$, $G(x) =(3)^{-x}$, $H(x) =(\frac{1}{5})^{x}$\end{minipage}\\ 
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$F(x)=(\frac{1}{2})^{x}$&  \hspace{1cm}  & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
+\\ \hline
+$G(x)=(\frac{1}{3})^{x}$&  &&&&
+\\ \hline
+$H(x)=(\frac{1}{5})^{x}$&  &&&&
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+\begin{minipage}{\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+\item Gee die $y$-afsnit vir elke funksie.
+\item Bespreek die verband tussen die grafieke van $f(x)$ en $F(x)$.
+\item Bespreek die verband tussen die grafieke $g(x)$ en $G(x)$.
+\item Gee die definisieversameling en waardeversameling van $H(x)$.
+\item Is die bewering waar of vals ten opsigte van $y=(\frac{1}{k})^{x}$ met $k>1$:\\
+      ``Hoe groter die waarde van $k$, hoe steiler is die grafiek''?
+\item Gee die vergelykings van die asimptote van elke funksie.
+\end{enumerate}
+\end{minipage}
+}
+{
+\westep{Vervang waardes in die vergelykings}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $f(x)=2^{x}$& $\frac{1}{4}$ &$\frac{1}{2}$&$1$&$2$&$4$
+\\ \hline
+ $g(x)=3^{x}$& $\frac{1}{9}$ &$\frac{1}{3}$&$1$&$3$&$9$
+\\ \hline
+ $g(x)=5^{x}$& $\frac{1}{25}$ &$\frac{1}{5}$&$1$&$5$&$25$
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+ $F(x)=(\frac{1}{2})^{x}$& $4$ &$2$&$1$&$\frac{1}{2}$&$\frac{1}{4}$
+\\ \hline
+$G(x)=(\frac{1}{3})^{x}$&  $9$&$3$&$1$&$\frac{1}{3}$&$\frac{1}{9}$
+\\ \hline
+$H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+\westep{Stip die punte en verbind hulle met 'n gladde kromme}
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-3}{2}{2 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{0.9}{5 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(2.2,4.2){$f(x)$}
+\rput(1.4,4.4){$g(x)$}
+\rput(0.6,4.4){$h(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+
+\end{center}
+\end{figure}  
+\hspace*{-60pt}
+\begin{minipage}{0.9\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Ons sien al die grafieke gaan deur die punt $(0;1)$. Enige getal tot die mag $0$ is gelyk aan $1$.
+\item Die grafieke sny nie die $x$-as nie omdat $0^{0}$ ongedefenieerd is.
+\item Definisieversameling: $\{x: x \in \mathbb{R}\}$.\\
+Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
+\item As $x$ toeneem, neem $h(x)$ toe.
+\item $f(x)=2^{x}$ neem teen die stadigste tempo toe omdat dit die kleinste grondtal het.
+\item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek $y=k^{x}$.
+\end{enumerate}
+\end{minipage}
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-2}{3}{0.5 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-1.3}{2}{0.33 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-0.9}{1}{0.2 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(-2.2,4.2){$F(x)$}
+\rput(-1.4,4.4){$G(x)$}
+\rput(-0.6,4.4){$H(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+\end{center}
+\end{figure}  
+\hspace*{-60pt}
+\begin{minipage}{0.9\textwidth}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+\item Die $y$-afsnitte is die punt $(0; 1)$ vir al die grafieke. Vir enige re\"ele getal $z$, $z^{0}=1$.
+\item $F(x)$ is die spie\"elbeeld (refleksie) van $f(x)$ in die $y$-as. 
+\item $G(x)$ is die spie\"elbeeld (refleksie) van $g(x)$ in die $y$-as. 
+\item  Definisieversameling: $\{x: x \in \mathbb{R}\}$\\
+Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
+\item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek van $y=(\frac{1}{k})^{x}$.
+\item Die vergelyking van die horisontale asimptoot is $y=0$, die $x$-as.
+\end{enumerate}
+\end{minipage}
+}
+\end{wex}
+
+% \par 
+% \setcounter{subfigure}{0}
+% \begin{figure}[H]
+% \begin{center}
+% \begin{pspicture}(-5,-1)(5,4)
+% %\psgrid
+% \psset{yunit=0.75,xunit=0.75}
+% \psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+% \psplot[plotstyle=curve,arrows=<->]{-5}{1.2}{2 x exp 2 add}
+% \end{pspicture}
+% % \caption{General shape and position of the graph of a function of the form $f(x)=ab^{x} + q$.}
+% % \label{fig:mf:g:exponential10}
+% \end{center}
+% \end{figure}     
+
+\subsection*{Funksies van die vorm $y=ab^{x}+q$}
+\begin{Investigation}{Die invloed van $a$ en $q$ op die eksponentgrafiek}
+Op dieselfde assestelsel, skets die volgende grafieke ($b=2$, $a=1$ en $q$ verander):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=2^{x}-2$
+\item $y_2=2^{x}-1$
+\item $y_3=2^{x}$
+\item $y_4=2^{x}+1$
+\item $y_5=2^{x}+2$
+\end{enumerate}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$y_1=2^{x}-2$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
+\\ \hline
+ $y_2=2^{x}-1$&  &&&&
+\\ \hline
+$y_3=2^{x}$&  &&&&
+\\ \hline
+$y_4=2^{x}+1$&  &&&&
+\\ \hline
+$y_5=2^{x}+2$&  &&&&
+\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+Gebruik jou antwoorde om ’n gevolgtrekking te maak ten opsigte van die invloed van $q$.
+\\
+\par
+Op dieselfde assestelsel, skets die volgende grafieke ($b=2$, $q=0$ en $a$ verander):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=2^{x}$
+\item $y_7=2 \times 2^{x}$
+\item $y_8=-2^{x}$
+\item $y_9=-2 \times 2^{x}$
+\end{enumerate}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+   &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
+\\ \hline
+$y_6=2^{x}$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
+\\ \hline
+$y_7=2 \times 2^{x}$&  &&&&
+\\ \hline
+$y_8=-2^{x}$&  &&&&
+\\ \hline
+$y_9=-2 \times 2^{x}$&  &&&&
+\\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+Gebruik jou antwoorde om ’n gevolgtrekking te maak ten opsigte van die invloed van $a$.
+\end{Investigation}
+
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|m{1.5cm}|m{2cm}|m{2cm}|}\hline
+\hspace{0.25cm}\fbox{$b>1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02, arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
+\end{pspicture}
+\\\hline
+\hspace{0.25cm}$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|m{1.5cm}|m{2cm}|m{2cm}|}\hline
+\fbox{$0<b<1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
+\end{pspicture}
+\\\hline
+\hspace{0.25cm}$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Die invloed van $q$}\newline
+
+Jy sou gevind het dat die waarde van $q$ 'n vertikale skuif veroorsaak omdat alle punte dieselfde afstand in dieselfde rigting beweeg, dus die hele grafiek skuif op of af. 
+\begin{itemize}
+\item As $q>0$, skuif die grafiek $q$ eenhede vertikaal op. 
+\item As $q<0$, skuif die grafiek $q$ eenhede vertikaal af.
+\end{itemize}
+Die horisontale asimptoot skuif $q$ eenhede en is die lyn $y=q$. \vspace{8pt}\\
+
+
+\textbf{Die invloed van $a$}\newline
+Jy sou gevind het dat die waarde van $a$ bepaal die vorm van die grafiek.
+\begin{itemize}
+ \item Indien $a>0$, dan sal die grafiek opwaarts buig.
+\item If $a<0$, dan sal die grafiek afwaarts buig. Die twee grafieke is spie\"elbeelde van mekaar rondom die horisontale asimptoot.
+\end{itemize}
+
+\subsection*{Ontdek die kenmerke}
+Die standaardvorm van die eksponentgrafiek is $y=ab^{x} + q$.
+\subsubsection*{Definisieversameling en waardeversameling}
+
+Die funksie $y=ab^{x}+q$ is gedefinieer vir alle reële waardes van $x$. Dus is die definisieversameling $\{x:x\in \mathbb{R}\}$.\par 
+Die waardeversameling van $y=ab^{x}+q$ word bepaal deur die teken van $a$.\par 
+Indien $a>0$ dan:\par
+\begin{equation*}
+\begin{array}{ccc}\hfill b^{x}& > & 0\hfill \\
+ \hfill ab^{x}& > & 0\hfill \\ 
+\hfill ab^{x}+q& > & q\hfill \\ 
+\hfill f(x)& > & q\hfill 
+\end{array}
+\end{equation*}
+Dus, as  $a>0$, dan is die waardeversameling  $\{f(x):f(x) > q\}$.\par 
+Indien $a<0$ dan:\par 
+
+\begin{equation*}
+\begin{array}{ccc}\hfill b^{x}&< & 0\hfill \\
+ \hfill ab^{x}& < & 0\hfill \\
+\hfill ab^{x}+q& < & q\hfill \\
+ \hfill f(x)& < & q\hfill 
+\end{array}
+\end{equation*}
+Dus, as $a<0$, dan is die waardeversameling  $\{f(x):f(x) < q\}$.\par 
+
+\begin{wex}{Definisie- en waardeversameling van 'n eksponentfunksie}
+{Vind die definisieversameling en waardeversameling van $g(x)=5 \times 2^{x}+1$}
+{
+\westep{Vind die definisieversameling}
+Die definisieversameling van  $g(x)=5 \times 2^{x}+1$ is $\{x:x\in \mathbb{R}\}$.
+\westep{Vind die waardeversameling}
+\begin{equation*}
+\begin{array}{ccc}\hfill 2^{x}& > & 0\hfill \\
+ \hfill 5 \times 2^{x}& > & 0\hfill \\
+ \hfill 5 \times 2^{x}+1& > & 1\hfill 
+\end{array}
+\end{equation*}
+Dus is die waardeversameling $\{g(x):g(x) > 1)\}$.\par 
+}
+ 
+\end{wex}
+
+
+
+
+\subsubsection*{Afsnitte}
+\textbf{Die $y$-afsnit}:\\
+Die $y$-afsnit word gegee deur $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& ab^{x}+q\hfill \\
+ \hfill y}& =& ab^{0}+q\hfill \\
+ & =& a(1)+q\hfill \\
+ & =& a+q\hfill 
+\end{array}
+\end{equation*}
+
+Byvoorbeeld, die $y$-afsnit van $g(x)=5 \times 2^{x}+1$  word gegee deur 
+ $x=0$ te stel, om dan te kry:\par 
+
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 5 \times 2^{x}+1\hfill \\
+ \hfill & =& 5 \times 2^{0}+1\hfill \\
+ & =& 5+1\hfill \\ & =& 6\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;6)$.\vspace{10pt}
+\\
+\textbf{Die $x$-afsnit}:\\
+Die $x$-afsnitte word bereken deur $y=0$ te stel. \\
+Byvoorbeeld, die $x$-afsnit van $g(x)=5 \times 2^{x}+1$ word gegee deur $y=0$ te stel:\par 
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 5 \times 2^{x}+1\hfill \\
+ \hfill 0& =& 5 \times 2^{x}+1\hfill \\
+ \hfill -1& =& 5 \times 2^{x}\hfill \\
+ \hfill {2}^{x}& =& -\dfrac{1}{5}\hfill 
+\end{array}
+\end{equation*}
+Dit het nie ‘n reële oplossing nie. Dus het die grafiek $g(x)$ geen $x$-afsnitte nie.\par 
+
+\subsubsection*{Asimptote}
+
+Daar is een asimptoot vir funksies van die vorm $y=ab^{x}+q$. Die horisontale asimptoot lê by $x=q$. 
+
+
+\subsection*{Skets grafieke van die vorm $y=ab^{x}+q$}
+
+Om grafieke van funksies van die vorm $f(x)=ab^{x}+q$ te skets, moet ons die volgende eienskappe in ag neem:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+%english
+\item teken en waarde van $a$ 
+\item waarde van $q$
+\item $y$-afsnit
+\item $x$-afsnit
+\item asimptote
+\end{enumerate}
+\clearpage
+\begin{wex}{Skets die grafiek van 'n eksponentfunksie}
+{ Skets die grafiek van $g(x)=3 \times 2^{x}+2$. Merk die afsnitte en asimptote.}
+{
+\westep{Ondersoek die standaardvorm van die vergelyking}
+Ons sien $a>1$, dus buig die kromme opwaarts. $q>0$ dus word die grafiek $2$ eenhede vertikale opgeskuif.
+
+\westep{Bereken die afsnitte}
+Ons kry die $y$-afsnit waar $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill & =& 3 \times 2^{0}+2\hfill \\
+ & =& 3+2\hfill \\ & =& 5\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;5)$.\\
+
+Ons kry die $x$-afsnit waar $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill 0& =& 3 \times 2^{x}+2\hfill \\
+ \hfill -2& =& 3 \times 2^{x}\hfill \\
+ \hfill {2}^{x}& =& \dfrac{-2}{3}\hfill 
+\end{array}
+\end{equation*}
+Daar is geen re\"ele oplossing nie, dus is daar geen $x$-afsnitte nie.
+
+\westep{Bepaal die asimptoot}
+Die lyn $y=2$ is die horisontale asimptoot.
+
+\westep{Stip die punte en skets die grafiek}
+\setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.6}{2 x exp 3 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.6,2.2){$y=2$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,3){$y= 3 \times 2^{x}+2$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+% \end{figure}   
+\\
+Definisieversameling: $\{x \in \mathbb{R}\}$.\\
+Waardeversameling: $\{g(x): g(x) >2\}$.\\
+
+Eksponentgrafieke het geen simmetrie asse nie.
+} 
+\end{wex}
+
+
+ 
+\begin{wex}{Skets ’n eksponsiële grafiek}
+{
+Skets die grafiek van $y=-2 \times 3^{x}+6$.}
+{
+\westep{Ondersoek die standaardvorm van die vergelyking} 
+ $a<0$ dus buig die grafiek af. $q>0$ dus skuif die grafiek $6$ eenhede vertikaal opwaarts.
+\westep{Bereken die afsnitte}
+
+Ons kry die $y$-afsnit waar $x=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill & =& -2 \times 3^{0}+6\hfill \\
+ & =& 4\hfill \\
+
+\end{array}
+\end{equation*}
+Dit gee die punt $(0;4)$.\\
+
+Ons kry die $x$-afsnit waar $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill 0& =& -2 \times 3^{x}+6\hfill \\
+ \hfill -6& =& -2 \times 3^{x}\hfill \\
+ \hfill {3}^{1}& =& {3}^{x}\hfill \\
+\hfill \therefore x & =& 1 
+\end{array}
+\end{equation*}
+Dit gee die punt $(1; 0)$.
+\westep{Bepaal die asimptoot} 
+Funksies van hierdie vorm het een asimptoot. Dit lê by $y=q$, dus by $y=5$.
+
+
+
+\westep{Stip die punte en skets die grafiek} 
+\setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-3)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp -2 mul 6 add}
+\psdots(0,4)(1,0)
+\psline[linestyle=dashed](-5,6)(5,6)
+\rput(5.6,6.2){$y=6$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,5.3){$y= -2 \times 3^{x}+6$}
+\rput(-0.3,-0.3){$0$}
+\rput(0.8,4){$(0;4)$}
+\rput(1.5,0.5){$(1;0)$}
+\end{pspicture}
+\end{center}
+% \end{figure} 
+\\
+Definisieversameling: $\{x \in \mathbb{R}\}$\\
+Waardeversameling: $\{g(x): g(x) <6\}$\\
+
+}
+\end{wex}
+
+
+
+
+\begin{exercises}{ }
+ {
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Skets die grafieke van $y=2^{x}$ en $y=(\frac{1}{2})^{x}$ op dieselfde assestelsel.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Is die $x$-as die asimptoot en/of simmetrie-as in albei grafieke? Verduidelik jou antwoord.
+\item Watter grafiek word aangedui met vergelyking $y=2^{-x}$ ? Verduidelik jou antwoord.
+\item Los op die vergelyking $2^{x}=(\frac{1}{2})^{x}$ met behulp van ’n skets en kontroleer jou antwoord deur middel van substitusie.
+\end{enumerate}
+\item Die kurwe van die eksponensi\"ele funksie $f$ in die meegaande diagram sny die y-as by die punt $A(0; 1)$ en $B(2; 9)$ is op $f$.
+\begin{center}
+\begin{pspicture}(-3,-1)(4,4)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-2)(5,10)
+\psplot[plotstyle=curve,arrows=<->]{-2}{2.1}{3 x exp}
+\psdots(0,1)(2,9)
+\rput(1,1){$A(0;1)$}
+\rput(3,9){$B(2;9)$}
+
+
+\rput(5.2,0.2){$x$}
+\rput(0.2,10.2){$y$}
+
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item  Bepaal die vergelyking van funksie $f$.
+\item  Bepaal die vergelyking van $h$, die refleksie van die kurwe van $f$ in die $x$-as.
+\item  Bepaal die waardeversameling van $h$.
+\item Bepaal die vergelyking van  $g$, die refleksie van die kurwe van $f$ in die $y$-as.
+\item Bepaal die vergelyking van $j$ indien $j$ 'n vertikale strekking is van $f$ met $+2$ eenhede.
+\item Bepaal die vergelyking van $k$ indien $k$ 'n vertikale skuif is van $f$ met $-3$ eenhede.
+\end{enumerate}
+\end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mk	&
+% Question 2
+(2.)	02mm	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+\section{Trigonometriese funksies}
+\nopagebreak
+% Aangesien die trigonometriese berhoudings verbande tussen, twee veranderlikes is, b.v, $y=sinx$, kan hulle oook grafies voorgestel word.
+Hierdie afdeling beskryf die grafieke van trigonometriese funksies.\par 
+
+\mindsetvid{Sine and cosine graphs}{VMazc}
+
+\subsection{Sinusfunksie}
+\subsection*{Funksies van die vorm $y=sin~\theta$}
+\nopagebreak
+%english
+\begin{wex}
+{Trek die grafiek van 'n sinusfunksie}
+{
+\begin{equation*}
+  y = f(\theta) = ~sin~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+
+Gebruik jou sakrekenaar om die volgende tabel te voltooi.\\
+Kies 'n geskikte skaal en stip die waardes van $\theta $ op die $x$-as en van $sin~\theta $ op die $y$-as. Rond die antwoorde af tot $2$ desimale plekke. 
+% Use your calculator to complete the following table. \\
+% Choose an appropriate scale and plot the values of $\theta $ on the $x$-axis and of $sin~\theta $ on the $y$-axis. (Round answers to $2$ decimal places). 
+
+
+\begin{table}[H]
+
+% \begin{center}
+
+\begin{tabular}{|c|m{0.3cm}|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$~sin~\theta$&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+% \end{center}
+
+\end{table}
+}
+{
+\westep{Stel waardes van $\theta$ in}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$~sin~\theta$&
+\footnotesize$0$&
+\footnotesize$0,5$&
+
+\footnotesize$0,87$&
+\footnotesize$1$&
+\footnotesize$0,87$&
+\footnotesize$0,5$&
+\footnotesize$0$&
+\footnotesize$-0,5$&
+\footnotesize$-0,87$&
+\footnotesize$-1$&
+\footnotesize$-0,87$&
+\footnotesize$-0,5$&
+\footnotesize$0$&
+
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Stip die punte en verbind met 'n gladde kromme}
+\setcounter{subfigure}{0}
+
+\begin{center}
+\begin{pspicture}(0,-1)(5,1)
+\psset{xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30,  xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psdots(30,0.5)(60,0.87)(90,1)(120,0.87)(150,0.5)(180,0)(210,-0.5)(240,-0.87)(270,-1)(300,-0.87)(330,-0.5)(360,0)
+\rput(370, 0.2){$\theta$}
+\rput(10, 1.5){$y$}
+
+\end{pspicture}
+\end{center}     
+\\
+Let op die golf vorm van die grafiek. Elke golf neem $360^{\circ}$ om te voltooi. Dit staan bekend as die periode. Die hoogte van die golf bo en onder die $x$-as staan bekend as die amplitude van die grafiek. Die maksimumwaarde van  $y=~sin~\theta$ is $1$ en die minimumwaarde is $-1$.\\
+% Notice the wave shape of the graph. Each complete wave takes $360^{\circ}$ to complete. This is called the period. The height of the wave above and below the $x$-axis is called the graph's amplitude. The maximum value of $y=~sin~\theta$ is $1$ and the minimum value is $-1$.\\
+\\
+Definisieversameling: $[~0^{\circ}; 360^{\circ}]$\\
+Waardeversameling: $[-1; 1]$\\
+$x$-afsnitte: $(0^{\circ}; 0)$, $(180^{\circ}; 0)$, $(360^{\circ}; 0)$\\
+$y$-afsnit: $(0^{\circ};0)$\\
+Maksimum draaipunt: $(90^{\circ};1)$\\
+Minimum draaipunt: $(270^{\circ};-1)$
+}
+\end{wex}
+
+\clearpage
+
+\subsection*{Funksies van die vorm $y=a~sin~\theta+q$}
+
+\begin{Investigation}{Die invloed van $a$ en $q$ op die sinusgrafiek}
+%english
+In die vergelyking $y=a~sin~\theta+q$, is $a$ en $q$ konstantes wat verskillende invloede op die grafiek het.\\
+Op dieselfde stel asse, trek die volgende grafieke vir $0^{\circ}\leq \theta\leq 360^ {\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=~sin~\theta -2$
+\item $y_2=~sin~\theta -1$
+\item $y_3=~sin~\theta $
+\item $y_4=~sin~\theta +1$
+\item $y_5=~sin~\theta +2$
+\end{enumerate}
+Gebruik jou resultate om afleidings te maak oor die invloed van $q$.\\
+\\
+Trek grafieke van die volgende op dieselfde stel asse vir $0^{\circ}\leq \theta\leq 360^ {\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=-2~sin~\theta $
+\item $y_7=-~sin~\theta $
+\item $y_8=~sin~\theta $
+\item $y_9=2~sin~\theta $
+\end{enumerate}
+Gebruik jou resultate om die invloed van $a$ af te lei.
+\end{Investigation}
+%english
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Invloed van $a$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x sin 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x sin 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x sin -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+}
+
+
+\\ 
+&
+\\  \cline{1-1}
+% $a>1$: vertical stretch, amplitude increases&\\ \cline{1-1}
+$a>1$: vertikale vergroting, amplitude word groter&\\ \cline{1-1}
+$a=1$: standaard sinusgrafiek&\\ \cline{1-1}
+
+$0<a<1$: vertikale verkleining, amplitude word kleiner&\\ \cline{1-1}
+$-1<a<0$: refleksie in $x$-as t.o.v. grafiek met $0<a<1$&\\ \cline{1-1}
+$a<-1$: refleksie in $x$-as t.o.v. grafiek met $a>1$&\\ 
+ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Invloed van $q$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x sin 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin 1.3 sub}  
+\psline[linewidth=1pt](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+}
+\\ 
+&
+\\  \cline{1-1}
+$q>0$: vertikale skuif opwaarts met $q$ eenhede&\\ \cline{1-1}
+
+$q=0$: standaard sinusgrafiek &\\ \cline{1-1}
+$q<0$: vertikale skuif afwaarts met $q$ eenhede&\\ \cline{1-1}
+ 
+& 
+\\
+&
+\\
+&
+\\
+&
+\\ \hline
+ \end{tabular}
+\end{center}
+\end{table}
+%english
+
+\textbf{Die invloed van $q$}
+\\
+Die invloed van $q$ staan bekend as 'n vertikale skuif omdat die hele sinusgrafiek $q$ eenhede opwaarts of afwaarts skuif.
+
+\begin{itemize}
+\item Indien $q>0$, skuif die grafiek $q$ eenhede opwaarts. 
+\item Indien $q<0$, skuif die grafiek $q$ eenhede afwaarts. 
+\end{itemize}
+
+\textbf{Die invloed van $a$}
+\\
+Die waarde van  $a$ bepaal die amplitude van die grafiek; die hoogte van die pieke en die diepte van die trôe.
+\begin{itemize}
+ \item Vir $a>1$, is daar 'n vertikale vergroting en die amplitude groter word.\\
+Vir $0<a<1$, word die amplitude kleiner.
+\item Vir $a<0$, is daar 'n refleksie in die $x$-as.\\ 
+Vir $-1<a<0$, is daar 'n refleksie in die $x$-as en die amplitude word kleiner.\\
+Vir $a<-1$, is daar 'n refleksie in die $x$-as en die amplitude word groter.
+\end{itemize}
+
+Let op dat amplitude altyd positief is.\\
+
+\subsection*{Ontdek die kenmerke}
+\subsubsection*{Definisieversameling en waardeversameling}
+\nopagebreak
+%english
+Vir die funksie $f(\theta )=a~sin~\theta +q$, is die definisieversameling $[~0^{\circ}; 360^{\circ}]$.\par 
+Die waardeversameling van $f(\theta )=a~sin~\theta +q$ hang af van die waardes van $a$ en $q$.\par 
+As $a>0$:\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+  \begin{array}{rcccl}
+    \hfill   -1 & \leq &  ~sin~\theta     & \leq & 1   \hfill \\
+    \hfill   -a & \leq & a~sin~\theta     & \leq & a   \hfill \\
+    \hfill -a+q & \leq & a~sin~\theta + q & \leq & a+q \hfill \\
+    \hfill -a+q & \leq &  f(\theta)      & \leq & a+q \hfill 
+  \end{array}
+\end{equation*}
+Dit vertel ons dat vir alle waardes van $\theta $, is $f(\theta )$ altyd tussen $-a+q$ en $a+q$.\par
+Daarom, as $a>0$, sal die waardeversameling $\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$ wees.\\
+Ingelyks kan daar getoon word dat as $a<0$, sal die waardeversameling \\$\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$.\par 
+
+%\Tip{Die maklikste manier om die waardeversameling te bepaal is om bloot vir die "bokant" en die "onderkant" van die grafiek te soek.}
+
+%english
+\subsubsection*{Periode}
+Die periode van $y=a~sin~\theta+q$ is $360^{\circ}$. Dit beteken dat een sinusgolf in $360^{\circ}$ voltooi word. 
+
+
+\subsubsection*{Afsnitte}
+\nopagebreak
+%english
+Die $y$-afsnit van $f(\theta )=a~sin~\theta+q$ is die waarde van $f(\theta )$ by $\theta =0^{\circ }$.
+
+\begin{eqnarray*}
+  y & = & f(0^{\circ }) \\
+    & = & a~sin~ 0^{\circ } + q \\
+    & = & a(0) + q \\
+    & = & q
+\end{eqnarray*}
+Dit gee die punt $(0;q)$.\par
+%english
+\textbf{Belangrik:} wanneer jy sinusgrafieke skets, begin altyd met die standaard sinusgrafiek en  beskou dan die invloede van $a$ en $q$.
+%english
+\begin{wex}{Skets die grafiek van 'n sinus funskie}
+{Skets die grafiek van $f(\theta)=2~sin~\theta+3$ as $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Ondersoek die standaardvorm van die vergelyking}
+Vanaf die vergelyking sien ons dat $a>1$, dus word die grafiek vertikaal vergroot. Ons sien ook dat $q>0$, dus skuif  die grafiek opwaarts met $3$ eenhede.
+\westep{Stel waardes vir $\theta$ in}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$f(\theta) $&
+\footnotesize$3$&
+\footnotesize$4$&
+\footnotesize$4,73$&
+\footnotesize$5$&
+\footnotesize$4,73$&
+\footnotesize$4$&
+\footnotesize$3$&
+\footnotesize$2$&
+\footnotesize$1,27$&
+\footnotesize$1$&
+\footnotesize$1,27$&
+\footnotesize$2$&
+\footnotesize$3$
+ \\ \hline
+
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Stip die punte en verbind met 'n gladde kromme }
+\begin{center}
+\scalebox{0.95}{
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
+     {0}{360}{x sin 2 mul 3 add}  
+\psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
+     {0}{360}{3}  
+\rput(370, 0.2){$\theta$}
+\rput(0.4, 6.2){$f(\theta)$}
+\rput(380,3.4){$f(\theta)=2~sin~\theta+3$}
+\psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
+
+\end{pspicture}}
+\end{center} 
+\\
+Definisieversameling: $[~0^{\circ}; 360^{\circ}]$\\
+Waardeversameling: $[1;5]$\\
+$x$-afsnitte: geen\\
+$y$-afsnit: $(0^{\circ};3)$\\
+Maksimum draaipunt: $(90^{\circ};5)$\\
+Minimum draaipunt: $(270^{\circ};1)$
+}
+\end{wex}
+\clearpage
+\subsection{Cosinusfunksie}
+\subsection*{Funksies van die vorm  $y=cos~\theta$}
+%english
+\vspace*{-30pt}
+\begin{wex}
+{Trek die grafiek van ’n cosinusfunksie
+}
+{
+\begin{equation*}
+  y=f(\theta)=~cos~  \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+% Use your calculator to complete the following table. \\
+% Choose an appropriate scale and plot the values of
+% $\theta$ on the $x$-axis and $~cos~\theta$ on the $y$-axis. (Round
+% answers to $2$ decimal places.)
+
+Gebruik jou sakrekenaar om die volgende tabel te voltooi.\\
+Kies ’n geskikte skaal en stip die waardes van $\theta$ op die $x$-as en $~cos~\theta$ op die $y$-as. Rond die antwoorde af tot $2$ desimale plekke.
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|m{0.3cm}|m{0.3cm}|m{0.3cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$~cos~\theta $&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+\end{table}
+}
+{
+\westep{Stel waardes vir $\theta$ in}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$~cos~\theta $&
+\footnotesize$1$&
+\footnotesize$0,87$&
+\footnotesize$0,5$&
+\footnotesize$0$&
+\footnotesize$-0,5$&
+\footnotesize$-0,87$&
+\footnotesize$-1$&
+\footnotesize$-0,87$&
+\footnotesize$-0,5$&
+\footnotesize$0$&
+\footnotesize$0,5$&
+\footnotesize$0,87$&
+\footnotesize$1$&
+   \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table} 
+
+
+
+\westep{Stip die punte en verbind met ’n gladde kromme
+}
+\setcounter{subfigure}{0}
+
+\begin{center}
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.8)
+\psplot[plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos}  
+\psdots(0,1)(30,0.87)(60,0.5)(90,0)(120,-0.5)(150,-0.87)(180,-1)(210,-0.87)(240,-0.5)(270,0)(300,0.5)(330,0.87)(360,1)
+\rput(370, 0.2){$\theta$}
+\rput(10, 1.8){$y$}
+\end{pspicture}
+\end{center}    
+
+Let op die golfvorm van die grafiek is soortgelyk aan die sinusgrafiek. Die periode is ook $360^{\circ}$ en die amplitude is $1$. Die maksimum waarde van $y = cos~\theta$ 
+is $1$ en die minimum waarde is $−1$.\\
+Definisieversameling: $[~0^{\circ}; 360^{\circ}]$\\
+Waardeversameling: $[-1;1]$\\
+$x$-afsnitte: $(90^{\circ}; 0)$, $(270^{\circ}; 0)$\\
+$y$-afsnit: $(0^{\circ};1)$\\
+Maksimum draaipunt: $(0^{\circ};1),~(360^{\circ};1)$\\
+Minimum draaipunt: $(180^{\circ};-1)$
+
+}
+\end{wex}
+    
+\vspace*{-30pt}
+\subsection*{Funksies van die vorm  $y=a~cos~\theta+q$}
+\nopagebreak
+\begin{Investigation}{Die invloed van $a$ en $q$ op die cosinusgrafiek}
+%english
+In die vereglyking, $y=a~cos~\theta+q$, s $a$ en $q$ konstantes wat verskillende invloede het op die
+grafiek.
+\\
+
+Trek grafieke van die volgende op dieselfde stel asse vir $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=~cos~\theta -2$
+\item $y_2=~cos~\theta -1$
+\item $y_3=~cos~\theta $
+\item $y_4=~cos~\theta +1$
+\item $y_5=~cos~\theta +2$
+\end{enumerate}
+Gebruik jou resultate om die invloed van $q$ af te lei.\\
+\\
+Trek grafieke van die volgende op dieselfde stel asse vir $0^{\circ} \leq \theta \leq 360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
+\item $y_6=-2~cos~\theta $
+\item $y_7=-~cos~\theta $
+\item $y_8=~cos~\theta $
+\item $y_9=2~cos~\theta $\end{enumerate}
+Gebruik jou resultate om die invloed van $a$ af te lei.
+\end{Investigation}
+
+%english
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Invloed van $a$}&\\
+&
+
+\multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x cos 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x cos 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x cos -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+
+}
+
+
+\\ 
+&
+\\  \cline{1-1}
+$a>1$: vertikale vergroting, amplitude word groter
+&\\ \cline{1-1}
+ $a=1$: standaard cosinusgrafiek
+&\\ \cline{1-1}
+$0<a<1$: amplitude word kleiner&\\ \cline{1-1}
+$-1<a<0$: refleksie in die $x$-as, amplitude word kleiner&\\ \cline{1-1}
+$a<-1$: refleksie in die $x$-as, amplitude word groter&
+\\
+& 
+
+\\ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|p{6.5cm}|m{7cm}|}
+      \hline
+      \textbf{Invloed van $q$} & \\
+      & \multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x cos 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos 1.3 sub}  
+\psline[linewidth=1pt](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
+\end{pspicture}
+} \\ 
+& \\ \cline{1-1}
+$q>0$: vertikale skuif opwaarts met $q$ eenhede
+&\\ \cline{1-1}
+$q=0$: standaard cosinusgrafiek
+&\\ \cline{1-1}
+$q<0$: vertikale skuif afwaarts met $q$ eenhede&\\ \cline{1-1}
+& \\
+& \\
+& \\
+& \\ \hline
+ \end{tabular}
+  \end{center}
+\end{table}
+
+\textbf{Die invloed van $q$} \\
+Die invloed van $q$ staan bekend as ’n vertikale skuif omdat die hele cosinusgrafiek $q$ eenhede opwaarts of afwaarts skuif.
+
+% The effect of $q$ is called a vertical shift because the whole cosine graph shifts up or down by $q$ units. 
+\begin{itemize}
+\item Indien $q > 0$, skuif die grafiek $q$ eenhede opwaarts.
+\item Indien $q < 0$, skuif die grafiek $q$ eenhede afwaarts.
+\end{itemize}
+
+\textbf{Die invloed van $a$} \\
+Die waarde van $a$ bepaal die amplitude van die grafiek; die hoogte van die pieke en die diepte van
+die trôe.
+
+\begin{itemize}
+ \item Vir $a > 1$, is daar ’n vertikale vergroting en die amplitude groter word.\\
+Vir $0 < a < 1$, word die amplitude kleiner.
+
+\item 
+Vir $a < 0$, is daar ’n refleksie in die $x$-as.\\
+Vir $−1 < a < 0$, is daar ’n refleksie in die $x$-as en die amplitude word kleiner.
+Vir $a < −1$, is daar ’n refleksie in die $x$-as en die amplitude word groter.
+
+\end{itemize}
+
+Let op dat amplitude altyd positief is.
+
+
+\subsection*{Ontdek die kenmerke}
+\subsubsection*{Definisieversameling en waardeversameling}
+\nopagebreak
+Vir $f(\theta )=a~cos~\theta +q$, is die definisieversameling $[~0^{\circ}; 360^{\circ}]$.\par
+ 
+Dit is maklik om te sien dat die waarde versameling van $f(\theta )$ dieselfde sal wees as die waardeversameling van $a~sin(\theta )+q$. Dit is omdat die maksimum- en minimumwaardes van $a~cos(\theta )+q$ dieselfde is as die maksimum- en minimumwaardes van $a~sin(\theta )+q$.\par 
+%english
+As $a>0$, is die waardeversameling $\{f(\theta): f(\theta) \in [-a+q; a+q]\}$. \\
+As $a<0$, is die waardeversameling $\{f(\theta): f(\theta) \in [a+q; -a+q]\}$.
+%english
+\subsubsection*{Periode}
+Die periode van  $y=a~cos~\theta+q$ is $360^{\circ}$. Dit beteken dat een cosinusgolf in $360^{\circ}$ voltooi word. 
+\subsubsection*{Afsnitte}
+\nopagebreak
+Die $y$-afsnit van $f(\theta )=a~cos~x+q$ word bereken op dieselfde manier as vir sinus.\par 
+\nopagebreak\noindent{}
+\begin{eqnarray*}
+  y &=& f({0}^{\circ}) \\
+    &=& a~cos~ 0^{\circ } + q \\
+    &=& a(1) + q \\
+    &=& a + q
+\end{eqnarray*}
+Dit gee die punt $(0^{\circ};a+q)$.
+
+%english
+\begin{wex}{Skets die grafiek van 'n cosinusfunskie}
+{Skets die grafiek van
+ $f(\theta)=2~cos~\theta+3$ as $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Ondersoek die standaardvorm van die vergelyking
+}
+Vanaf die vergelyking sien ons dat $a > 1$, dus word die grafiek vertikaal vergroot. Ons sien ook dat $q > 0$, dus skuif die grafiek opwaarts met $3$ eenhede.
+
+
+\westep{Stel waardes vir $\theta$ in}
+\begin{table}[H]
+
+\begin{center}
+
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$f(\theta) $&
+\footnotesize$5$&
+\footnotesize$4,73$&
+\footnotesize$4$&
+\footnotesize$3$&
+\footnotesize$2$&
+\footnotesize$1,27$&
+\footnotesize$1$&
+\footnotesize$1,27$&
+\footnotesize$2$&
+\footnotesize$3$&
+\footnotesize$4$&
+\footnotesize$4,73$&
+\footnotesize$5$&
+% \hline0.4
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+
+\westep{Stip die punte en verbind met ’n gladde kromme
+}
+\begin{center}
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2.4}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos 2 mul 3 add}  
+\psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
+     {0}{360}{3}  
+\rput(370, 0.2){$\theta$}
+\rput(0.4, 6.2){$f(\theta)$}
+\rput(380,5.4){$f(\theta)=2~cos ~\theta+3$}
+\psdots(0,5)(30,4.73)(60,4)(90,3)(120,2)(150,1.27)(180,1)(210,1.27)(240,2)(270,3)(300,4)(330,4.73)(360,5)
+
+\end{pspicture}
+\end{center} 
+\\
+Definisieversameling: $[~0^{\circ}; 360^{\circ}]$\\
+Waardeversameling: $[1;5]$\\
+$x$-afsnitte: geen\\
+$y$-afsnit: $(0^{\circ};5)$\\
+Maksimum draaipunte: $(0^{\circ};5)$, $(360^{\circ};5)$\\
+Minimum draaipunt: $(180^{\circ};1)$
+}
+\end{wex}
+
+
+\subsection*{Vergelyk die grafieke van $y=sin~\theta $ en \\$y=cos~\theta $}
+\nopagebreak
+\begin{center}
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2.5}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.8)
+\psplot[plotpoints=300, linewidth=1pt]
+     {0}{360}{x cos}  
+\psplot[plotpoints=300, linestyle=dashed, linewidth=1pt]
+     {0}{360}{x sin}  
+
+\rput(390, 1.2){$y=cos ~\theta$}
+\rput(400, 0.2){$y=sin~\theta$}
+\rput(385, -0.2){$\theta$}
+\rput(10, 1.8){$y$}
+\end{pspicture}
+\end{center} 
+Let daarop dat die twee grafieke baie eenders lyk. Beide ossilleer op en af rondom die $x$-as soos wat jy langs die as beweeg. Die afstande tussen die pieke van die twee grafieke is dieselfde en is konstant vir elke grafiek. Die hoogte van elke piek en die diepte van elke trog is dieselfde.\par 
+Die enigste verskil is dat die $sin$  grafiek $90 ^{\circ }$ na regs skuif ten opsigte van die $cos$ grafiek. Dit beteken dat as ons die hele $cos$ grafiek $90 ^{\circ }$ na regs skuif, sal dit perfek oorvleuel met die $sin$ grafiek. Jy kan ook die $sin$ grafiek $90 ^{\circ }$na links skuif en dan sal dit perfek oorvleuel met die $cos$  grafiek. Dit beteken dat:\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+  \begin{array}{rcll}
+    ~sin~\theta & = & ~cos~ (\theta - 90^{\circ}) & (\mbox{skuif die grafiek na die regterkant}) \\
+    ~cos~\theta & = & ~sin~ (\theta + 90^{\circ}) & (\mbox{skuif die grafiek na die linkerkant})
+  \end{array}
+\end{equation*}
+
+
+
+\subsection{Tangensfunksie}
+\subsection*{Funksies van die vorm $y=tan~\theta$}
+%english
+%  %MANUAL PAGE BREAK TO FORCE WEX TO SPLIT OVER TWO PAGES
+\begin{wex}
+{Trek die grafiek van ’n tangensfunksie
+}
+{
+\begin{equation*}
+ y=f(\theta)=tan ~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+\end{equation*}
+
+Gebruik jou sakrekenaar om die volgende tabel te voltooi.
+Kies ’n geskikte skaal en stip die waarde van $\theta $ op die $x$-as en $tan ~\theta$ op die $y$-as. Rond die antwoorde af tot $2$ desimale plekke.
+
+
+\begin{table}[H]
+\begin{tabular}{|c|m{0.3cm}|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$tan ~\theta $&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+&
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+% \end{center}
+
+\end{table}
+\vspace*{-30pt}
+}
+{
+\westep{Stel waardes van 
+ $\theta$ in}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c|} \hline
+
+\scriptsize$\theta $&
+\scriptsize$0^{\circ }$&
+\scriptsize$30^{\circ }$&
+\scriptsize$60^{\circ }$&
+\scriptsize$90^{\circ }$&
+\scriptsize$120^{\circ }$&
+\scriptsize$150^{\circ }$&
+\scriptsize$180^{\circ }$&
+\scriptsize$210^{\circ }$&
+\scriptsize$240^{\circ }$&
+\scriptsize$270^{\circ }$&
+\scriptsize$300^{\circ }$&
+\scriptsize$330^{\circ }$&
+\scriptsize$360^{\circ }$
+\\ \hline
+
+\scriptsize$tan ~\theta $&
+\scriptsize$0$&
+\scriptsize$0,58$&
+
+\scriptsize$1.73$&
+\scriptsize ongedf&
+\scriptsize$-1,73$&
+\scriptsize$-0,58$&
+\scriptsize$0$&
+\scriptsize$0,58$&
+\scriptsize$1,73$&
+\scriptsize ongedf&
+\scriptsize$-1,73$&
+\scriptsize$-0,58$&
+\scriptsize$0$&
+% \hline
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+\vspace*{-10pt}
+\westep{ Stip die punte en verbind met ’n gladde kromme
+}
+
+\begin{center}
+\begin{pspicture}(-6,-3)(6,3)
+\psset{xunit=1}
+\psaxes[Dx=90, dx=1, Dy=1, dy=1, xlabelFactor=^{\circ}]{<->}(0,0)(0,-3)(4.5,3)
+\psline[linestyle=dashed](1,-2.5)(1,2.5)
+\psline[linestyle=dashed](3,-2.5)(3,2.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{70}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div}
+ \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
+
+\rput(.2,3.3){$f(\theta)$}
+\rput(4.7,0.3){$\theta$}
+\end{pspicture}
+\end{center}
+
+Daar is 'n maklik manier om die tangens grafiek te visualiseer. Beskou die definisies van $sin~\theta $ and $cos ~\theta $ vir reghoekige driehoeke. \par 
+% There is an easy way to visualise the tangent graph. Consider our definitions of for right-angled triangles.\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+\frac{sin~\theta }{cos ~\theta }=\frac{\frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize skuinssy}}}{\frac{\mbox{\footnotesize aangrensende sy}}{\mbox{\footnotesize skuinssy}}}=\frac{\mbox{\footnotesize teenoorstaande sy}}{\mbox{\footnotesize aangrensende sy}}=tan ~\theta 
+\end{equation*}
+Dus, vir enige waarde van $\theta$:
+\nopagebreak\noindent{}
+\begin{equation*}
+tan ~\theta =\frac{sin~\theta }{cos ~\theta }
+\end{equation*}
+
+Ons weet dat vir die waardes van $\theta $ waarvoor $sin~\theta =0$, moet $tan ~\theta =0$. Verder, as $cos ~\theta =0$ sal die waarde van $tan ~\theta $ ongedefinieerd wees want ons kan nie deur $0$ deel nie. Die vertikale stippellyne lê by die waardes van $\theta $ waarvoor $tan ~\theta $  nie gedefinieer is, en word die asimptote genoem.
+\vspace{8pt}\\
+
+Asimptote: die lyne $\theta = 90^{\circ}$ en $\theta = 270^{\circ}$ \\
+
+Periode: $180^{\circ}$ \\
+Definisieversameling: $\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$\\
+Waardeversameling: $\{f(\theta): f(\theta) \in \mathbb{R}\}$\\
+$x$-afsnitte: $(0^{\circ}; 0)$, $(180^{\circ}; 0)$, $(360^{\circ}; 0)$\\
+$y$-afsnit: $(0^{\circ};0)$\vspace*{-15pt}
+}
+\end{wex}
+
+\vspace*{-15pt}
+\subsection*{Funksies van die vorm $y=a ~tan~\theta+q$}
+
+\begin{Investigation}{Die invloed van $a$ en $q$ op 'n tangensgrafiek}
+Op dieselfde assestelsel, trek die volgende grafieke, $0^{\circ}\leq\theta\leq360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=~tan~\theta -2$
+\item $y_2=~tan~\theta -1$
+\item $y_3=~tan~\theta $
+\item $y_4=~tan~\theta +1$
+\item $y_5=~tan~\theta +2$
+\end{enumerate}
+Gebruik jou resultate om die invloed van $q$ af te lei.\\
+\\
+Op dieselfde assestelsel, trek die volgende grafieke, $0^{\circ}\leq\theta\leq360^{\circ}$:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
+\item $y_6=-2~tan~\theta $
+\item $y_7=-~tan~\theta $
+\item $y_8=~tan~\theta $
+\item $y_9=2~tan~\theta $
+\end{enumerate}
+Gebruik jou resultate om die invloed van $a$ af te lei.
+\end{Investigation}
+
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|m{0.9cm}|m{4cm}|m{4cm}|}\hline
+&\hspace{1.5cm}$a<0$&\hspace{1.5cm}$a>0$\\ 
+\hline
+
+$q>0$&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, linewidth=0.02,labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linewidth=0.04,linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+
+
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linewidth=0.04,linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 add}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\\hline
+$q=0$ & 
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linewidth=0.02,linestyle=dashed](1,-2)(1,2)
+\psline[linewidth=0.02,linestyle=dashed](3,-2)(3,2)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul}
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linewidth=0.02,linestyle=dashed](1,-2)(1,2)
+\psline[linewidth=0.02,linestyle=dashed](3,-2)(3,2)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div }
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div }
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div }
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\ \hline
+$q<0$&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linewidth=0.04,linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div -1 mul 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+
+&
+\begin{center}
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[linewidth=0.02,Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linewidth=0.04,linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{65}{x sin x cos div 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 sub}
+\psplot[linewidth=0.02,xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\end{center}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+\textbf{Die invloed van $q$}
+\\
+
+Die invloed van $q$ staan bekend as ’n vertikale skuif omdat die hele tangensgrafiek $q$ eenhede opwaarts of afwaarts skuif. 
+\begin{itemize}
+\item Vir $q>0$, skuif die grafiek $q$ eenhede opwaarts.
+
+\item Vir $q<0$, skuif die grafiek $q$ eenhede afwaarts.
+\end{itemize}
+
+\textbf{Die invloed van $a$}
+\\
+Die waarde van $a$ be\"invloed die helling van elke segment van die grafiek; hoe groter die waarde van $a$, hoe vinniger sal die segmente van die grafiek die asimptote nader. 
+
+% The value of $a$ affects the steepness of each of the branches of the graph. The greater the value of $a$, the quicker the branches of the graph approach the asymptotes.
+
+
+
+
+\subsection*{Ontdek die kenmerke}
+\subsubsection*{Definisieversameling en waardeversameling}
+\nopagebreak
+%english
+Van die grafiek sien ons dat $~tan~\theta$ ongedefinieer is by $\theta = 90^{\circ}$ en $\theta = 270^{\circ}$. \\
+Dus is die definisieversameling
+$\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$.\\
+
+Die waardeversameling is $\{f(\theta): f(\theta) \in \mathbb{R}\}$.
+
+\subsubsection*{Periode}
+Die periode van $y=a~tan~\theta+q$ is $180^{\circ}$. Dit beteken dat een tangenssiklus in $180^{\circ}$ voltooi word. 
+
+
+\subsubsection*{Afsnitte}
+\nopagebreak
+Die $y$-afsnit van $f(\theta)=a~tan~\theta+q$ is die waarde van $f(\theta)$ by $\theta = {0}^{\circ}$.
+
+\begin{equation*}
+\begin{array}{ccl}\hfill y& =& f({0}^{\circ })\hfill \\
+ & =& a~tan~ {0}^{\circ } + q \hfill \\
+ & =& a(0)+q\hfill \\
+ & =& q\hfill 
+\end{array}
+\end{equation*}
+Dit gee die punt $(0^{\circ}; q)$.
+\subsubsection*{Asimptote}
+\nopagebreak
+Die grafiek het asimptote by $\theta ={90}^{\circ }$ en $\theta={270}^{\circ }$.
+
+\begin{wex}{Skets die grafiek van 'n tangensfunskie}
+{Skets die grafiek van $y=2~tan~\theta+1$ as $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{
+\westep{Ondersoek die standaardvorm van die vergelyking
+}
+Ons sien dat $a>1$, dus sal die segmente van die kromme 'n groter helling h\^e. Ons sien ook dat $q>0$, so die grafiek sal $1$ eenhede vertikaal opskuif. 
+
+\westep{Stel waardes van $\theta$ in}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+
+\footnotesize$\theta $&
+\footnotesize$0^{\circ }$&
+\footnotesize$30^{\circ }$&
+\footnotesize$60^{\circ }$&
+\footnotesize$90^{\circ }$&
+\footnotesize$120^{\circ }$&
+\footnotesize$150^{\circ }$&
+\footnotesize$180^{\circ }$&
+\footnotesize$210^{\circ }$&
+\footnotesize$240^{\circ }$&
+\footnotesize$270^{\circ }$&
+\footnotesize$300^{\circ }$&
+\footnotesize$330^{\circ }$&
+\footnotesize$360^{\circ }$
+\\ \hline
+
+\footnotesize$y $&
+\footnotesize$1$&
+\footnotesize$2,15$&
+\footnotesize$4,46$&
+\footnotesize --&
+\footnotesize$-2,46$&
+\footnotesize$-0,15$&
+\footnotesize$1$&
+\footnotesize$2,15$&
+\footnotesize$4,46$&
+\footnotesize--&
+\footnotesize$-2,46$&
+\footnotesize$-0,15$&
+\footnotesize$1$&
+% \hline
+
+ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+
+\end{table}
+\vspace*{-20pt}
+\westep{Stip die punte en verbind met ’n gladde kromme
+}
+
+
+
+% \begin{center}
+% \begin{pspicture}(-6,-3)(6,3)
+% \psset{xunit=1}
+% \psaxes[Dx=180, dx=2, Dy=1, dy=1]{<->}(0,0)(0,-3)(4.5,3)
+% \psline[linestyle=dashed](1,-2.5)(1,2.5)
+% \psline[linestyle=dashed](3,-2.5)(3,2.5)
+% \psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{70}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
+%  \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
+% 
+% \rput(.2,3.3){$y$}
+% \rput(4.3,0.3){$\theta$}
+% \end{pspicture}
+% \end{center}
+
+
+\begin{center}
+\begin{pspicture}(0,-3)(6,3)
+
+\psaxes[Dx=180, dx=2, Dy=1, dy=0.5,xlabelFactor=^{\circ} ]{<->}(0,0)(0,-3)(4.5,3)
+% \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
+\psline[linestyle=dashed](1,-3)(1,3)
+% \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
+\psline[linestyle=dashed](3,-3)(3,3)
+\psline[linestyle=dashed](0,0.5)(4.5,0.5)
+\psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{70}{x sin x cos div 2 mul 1 add}
+
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
+% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
+% \rput(5.1,-.3){$\theta$\ Degrees}
+ \psdots(0,0.5)(0.33,1.08)(0.66,2.23)(1.33,-1.23)(1.66,-0.08)(2,0.5)(2.33,1.08)(2.66,2.23)(3.33,-1.23)(3.66,-0.08)(4,0.5)
+\rput(.2,3.3){$y$}
+\rput(4.7,0.2){$\theta$}
+\end{pspicture}
+\end{center}\\
+Definisieversameling: $\left\{ \theta: 0^{\circ} \leq \theta \leq 360^{\circ},~~\theta \ne 90^{\circ};~ 270^{\circ}\right\}$.\\
+Waardeversameling: $\{f(\theta): f(\theta) \in \mathbb{R}\}$.
+}
+\end{wex}
+
+
+\begin{exercises}{Trigonometriese Funksies}
+{
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Deur jou kennis van die invloed van $a$ en $q$ te gebruik, skets elk van die volgende grafieke  sonder om ’n
+tabel van waardes te gebruik, vir $\theta \in [{0}^{\circ };{360}^{\circ }]$.
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $y=2~sin~\theta $
+\item $y=-4~cos~\theta $
+\item $y=-2~cos~\theta +1$
+\item $y=~sin~\theta -3$
+\item $y=~tan~\theta -2$\item $y=2~cos~\theta -1$
+\end{enumerate}
+ \item Gee die vergelykings van elk van die volgende grafieke:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+
+\item
+\begin{pspicture}(-2.5,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}
+
+
+\item
+\begin{pspicture}(-0.3,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}
+\end{enumerate}
+\end{enumerate}
+% Automatically inserted shortcodes - number to insert 2
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mn	&
+% Question 2
+(2.)	02mp	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 2
+}
+\end{exercises}
+
+
+\section{Interpretasie van grafieke}
+\begin{wex}{Bepaal die vergelyking van 'n  parabool}
+{Gebruik die skets hieronder om die waardes van $a$ en $q$ vir die parabool van die vorme $y=ax^{2}+q$ te bepaal.
+
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,3)
+\psplot[plotstyle=curve,arrows=<->]{-1.8}{1.8}{x 2 exp -1 mul 1 add}
+ \psdots(0,1)(-1,0)
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 3.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.6,1.2){$(0;1)$}
+\rput(-2.1,-0.4){$(-1;0)$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Beskou die skets}
+Van die skets af sien ons dat die grafiek 'n ``frons''-vorm het, dus $a<0$. Ons sien ook dat die grafiek vertikale opwaarts geskuif is, dus $q>0$
+
+\westep{Bereken $q$ deur die $y$-afsnit te gebruik}
+Die $y$-afsnit is die punt $(0;1)$.
+\begin{eqnarray*}
+  y &=& ax^{2} + q \\
+  1 &=& a(0)^{2} +q \\
+  \therefore q&=&1
+\end{eqnarray*}
+
+\westep{Gebruik die ander punt wat gegee is om $a$ te bereken}
+Vervang die waarde van die punt $(-1;0)$ in die vergelyking in:
+\begin{eqnarray*}
+  y &=& ax^{2} + q\\
+  0 &=& a(-1)^{2} +1\\
+  \therefore a&=&-1
+\end{eqnarray*}
+
+\westep{Skryf die finale antwoord}
+$a=-1$ en $q=1$, dus die vergelyking van die parabool is \\$y=-x^{2} +1$.
+}
+\end{wex}
+
+\begin{wex}{Bepaal die vergelyking van 'n  hiperbool}
+{Gebruik die skets hieronder om die waardes van $a$ en $q$ vir die hiperbool van die vorm $y=\dfrac{a}{x}+q$ te bepaal.
+
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,4)
+
+\psplot[plotstyle=curve,arrows=<->]{-2.8}{-0.35}{x -1 exp -1 mul 1 add}
+\psplot[plotstyle=curve,arrows=<->]{0.3}{2.8}{x -1 exp -1 mul 1 add}
+ \psdots(1,0)(-1,2)
+\psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 4.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(1.4,-0.4){$(1;0)$}
+\rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Beskou die skets}
+Die twee krommes van die hiperbool lê in die tweede en vierde kwadrante, dus is $a<0$. Ons sien ook
+dat die grafiek vertikaal opwaarts geskuif is, dus is $q > 0$.
+
+\westep{Vervang die punte wat gegee is in die vergelyking in en los op}
+Vervang die punt $(-1;2)$ in:
+\begin{eqnarray*}
+  y&=& \dfrac{a}{x}+q \vspace{7pt}\\
+  2&=& \dfrac{a}{-1}+q \\
+  \therefore 2&=&-a+q
+\end{eqnarray*}
+\\
+Vervang die punt $(1;0)$ in:
+\begin{eqnarray*}
+ y&=& \dfrac{a}{x}+q \vspace{7pt}\\
+  0&=& \dfrac{a}{1}+q\\
+  \therefore a&=&-q
+\end{eqnarray*}
+
+\westep{Los die vergelykings gelyktydig op deur vervanging te gebruik}
+\begin{eqnarray*}
+  2 & = &-a+q \\
+    & = & q+q \\
+    & = & 2q \\
+  \therefore q & = & 1 \\
+  \therefore a & = & -q \\
+    & = & -1
+\end{eqnarray*}
+
+\westep{Skryf die finale antwoord}
+$a=-1$ en $q=1$, dus is die vergelyking van die hiperbool\\$y=\frac{-1}{x}+1$.
+}
+\end{wex}
+\vspace*{-30pt}
+\begin{wex}{Interpretasie van grafieke}
+{
+\begin{minipage}{\textwidth}
+Die grafieke $y=-x^{2}+4$ en $y=x-2$ is gegee. Bereken die volgende:\\
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item ko\"ordinate van $A$, $B$, $C$, $D$
+\item ko\"ordinate van $E$
+\item lengte van $CD$ 
+\end{enumerate}
+\end{minipage}
+
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-6)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-3.2}{3.2}{x 2 exp -1 mul 4 add}
+\psplot[plotstyle=curve,arrows=<->]{-4}{3}{x 2 sub}
+ \psdots(-2,0)(2,0)(0,-2)(0,4)(-3,-5)
+
+\rput(0.3, 5.3){$y$}
+\rput(5.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.3,4.3){$C$}
+\rput(2.4,-0.3){$B$}
+\rput(-2.4,-0.3){$A$}
+\rput(0.3,-2.3){$D$}
+\rput(-2.6,-5){$E$}
+\rput(4.2,1){$y=x-2$}
+\rput(-2.5,3.3){$y=-x^{2}+4$}
+\end{pspicture}
+\end{center}
+}
+{
+\westep{Bereken die afsnitte}
+Om die $y$-afsnit van die parabool te bereken, laat $x=0$:
+\begin{eqnarray*}
+  y&=& -x^{2}+4\\
+  &=& -0^{2}+4 \\
+  &=&4
+\end{eqnarray*}
+Dit gee die punt $C(0;4)$.
+\\\\
+Om die $x$-afsnit te bereken, laat $y=0$:
+\begin{eqnarray*}
+  y&=& -x^{2}+4\\
+  0&=& -x^{2}+4 \\
+  x^{2}-4&=&0\\
+  (x+2)(x-2)&=&0\\
+  \therefore x&=& \pm2
+\end{eqnarray*}
+Dit gee die punte $A(-2;0)$ en $B(2;0)$.
+\\\\
+Om die $y$-afsnit van die reguitlyn te bereken, laat $x=0$:
+\begin{eqnarray*}
+  y&=&x-2\\
+  &=& 0-2 \\
+  &=&-2
+\end{eqnarray*}
+Dit gee die punt $D(0;-2)$.\\
+
+Om die $x$-afsnit te bereken, laat $y=0$:
+\begin{eqnarray*}
+  y&=&x-2\\
+  0&=& x-2 \\
+  x&=&2
+\end{eqnarray*}
+Dit gee die punt $B(2;0)$.
+
+\westep{Bereken die snypunt $E$}
+By $E$ sny die twee grafieke mekaar, so die twee uitdrukkings gelyk sal wees:
+\begin{eqnarray*}
+  x-2 &=& -x^{2}+4 \\
+  \therefore x^2 + x - 6 &=& 0 \\
+  \therefore (x-2)(x+3) &=& 0 \\
+  \therefore x &=& 2 \mbox{ of } -3
+\end{eqnarray*}
+By $E$, $x=-3$, dus $y=x-2=-3-2=-5$. \\
+Dit gee die punt $E(-3;-5)$.
+
+\westep{Bereken lengte $CD$}
+\begin{equation*}
+ \begin{array}{rcl}
+  CD&=&CO+OD\\
+ &=& 4+2 \\
+&=&6\\
+ \end{array}
+\end{equation*}
+Lengte $CD$ is $6$ eenhede.
+}
+\end{wex}
+
+\begin{wex}{Interpretasie van trigonometriese grafieke}
+{Gebruik die skets hieronder om die vergelyking van die trigonometriese funskie van die vorm $y=a~f(\theta)+q$ te bepaal.
+\\
+\begin{center}
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, labels=none, ticks=none]{<->}(0,0)(-30,-1)(370,2)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 0.5 add}  
+\rput(370, 0.2){$\theta$}
+\rput(0.4, 2.2){$y$}
+\psdots(210,0)(90,1.5)(0,0.5)
+\rput(120,1.8){$M(90^{\circ}; \frac{3}{2})$}
+\rput(240,0.3){$N(210^{\circ};0)$}
+\rput(-7,-0.2){$0$}
+\end{pspicture}
+\end{center} 
+}
+{
+\westep{Beskou die skets
+}
+Van die skets af sien ons dat die grafiek 'n sinusfunskie is wat vertikaal opgeskuif is. Die algemene vorm van die vergelyking is $y=a~sin~\theta +q$.
+
+\westep{Vervang die gegewe punte in die vergelyking in en los op}
+By $N$, $\theta = 210^{\circ}$ en $y=0$:
+\begin{eqnarray*}
+  y&=&a~sin~\theta +q\\
+  0&=& a~sin~ 210^{\circ}+q \\
+  &=&a\left(-\frac{1}{2}\right)+q\\
+  \therefore q&=&\dfrac{a}{2}
+\end{eqnarray*}
+
+By $M$, $\theta = 90^{\circ}$ en $y=\dfrac{3}{2}$:
+\begin{eqnarray*}
+  \dfrac{3}{2}&=&a~sin~ 90^{\circ} +q\\
+  &=& a+q \\
+\end{eqnarray*}
+
+\westep{Los die vergelykings gelyktydig op deur vervanging te gebruik}
+\begin{eqnarray*}
+  \frac{3}{2}  &=& a + q \\
+               &=& a + \frac{a}{2} \\
+            3  &=& 2a + a \\
+           3a  &=& 3 \\
+  \therefore a &=& 1 \\
+  \therefore q &=& \frac{a}{2} \\
+               &=& \frac{1}{2}
+\end{eqnarray*}
+
+\westep{Skryf die finale antwoord}
+\begin{equation*}
+  y = ~sin~\theta + \frac{1}{2}
+\end{equation*}
+}
+\end{wex}
+
+
+
+
+
+
+
+
+\summary{VMdkf}
+
+\begin{itemize}[noitemsep]
+\item Kenmerke van funksies: 
+\begin{itemize}[noitemsep]
+\item Die gegewe of gekose $x$-waarde staan bekend as die onafhanklike veranderlike want die waarde van $x$ kan
+vrylik gekies word. Die berekende $y$-waarde staan bekend as die afhanklike veranderlike aangesien
+die waarde van y afhang van die gekose waarde van $x$.
+\item Die definisieversameling van ’n verband is die versameling van al die $x$ waardes waarvoor daar ten minste een $y$ waarde bestaan volgens die funksievoorskrif. Die waardeversameling is die versameling van al die $y$-waardes wat verkry kan word deur ten minste een van die $x$ waardes te gebruik.
+\item Die afsnit is die punt waar die grafiek ’n as sny. Die $x$-afsnit(te) is die punt(e) waar die grafiek die $x$-as
+sny en die $y$-afsnit(te) is die punt(e) waar die grafiek die $y$-as sny. 
+\item Vir grafieke van funksies met ’n hoogste mag van groter as 1, is daar twee tipes draaipunte: ’n
+minimum draaipunt en ’n maksimum draaipunt. ’n Minimum draaipunt is ’n punt op die grafiek waar
+die grafiek ophou afneem in waarde en begin toeneem in waarde. ’n Maksimum draaipunt is ’n punt
+op die grafiek waar die grafiek ophou toeneem in waarde en begin afneem in waarde. 
+\item ’n Asimptoot is ’n reguitlyn of kurwe wat die grafiek van ’n funksie sal nader, maar nooit sny of raak nie.
+\item n Grafiek is kontinu as daar geen onderbreking in die grafiek is nie. 
+\end{itemize}
+% \item 
+% Versamelingnotasie: ’n versameling van sekere x-waardes het die volgende notasie: \{$x$ : voorwaardes,
+% meer voorwaardes\}
+% \item Interval notasie: hier skryf ons ’n interval in die vorm ’laer hakie, laer getal, kommapunt, hoër getal, hoër hakie’
+\item  Jy moet die volgende funksies en hulle eienskappe ken:
+    \begin{itemize}[noitemsep]
+    \item Line\^ere funksies van die vorm $y=ax+q$. 
+    \item Paraboliese funksies van die vorm $y=a{x}^{2}+q$.
+    \item Hiperboliese funksies van die vorm $y=\frac{a}{x}+q$. 
+    \item Eksponensi\"ele funksies van die vorm $y=a{b}^{x}+q$. 
+    \item Trigonometriese funksies van die vorm 
+	  \\$y=a~sin~\theta+q$ \\$y=a~cos~\theta+q$\\ $y=a~tan~\theta+q$ 
+    \end{itemize}
+\end{itemize}
+
+\begin{eocexercises}{}
+\nopagebreak
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Skets die grafieke van die volgende: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $y=2x+4$ 
+    \item $y-3x=0$ 
+    \item $2y=4-x$
+    \end{enumerate}
+\item Skets die volgende funksies: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{3} 
+    \item $y=x^{2}+3$ 
+    \item $y=\frac{1}{2}x^{2}+4$
+    \item $y=2x^{2}-4$
+    \end{enumerate}
+\item Skets die volgende funksies en identifiseer die asimptote: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{6} 
+    \item $y=3^{x}+2$ 
+    \item $y=-4 \times 2^{x}$ 
+    \item $y=\left(\dfrac{1}{3}\right)^{x}-2$ 
+    \end{enumerate}
+\item Skets die volgende funksies en identifiseer die asimptote: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{9} 
+    \item $y=\frac{3}{x}+4$ 
+    \item $y=\frac{1}{x}$ 
+    \item $y=\frac{2}{x}-2$ 
+    \end{enumerate}
+\item Bepaal of die volgende bewerings waar of vals is. As 'n bewering vals is, gee redes hoekom
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item  Die gegewe of gekose y-waarde staan bekend as die afhanklike veranderlike.
+    \item 'n Grafiek wat geen onderbrekings het nie, word kongruent genoem.
+    \item Funksies van die vorm $y=ax+q$ is reguitlyne.
+    \item Funksies van die vorm $y=\frac{a}{x}+q$ is eksponensiële funksies.
+    \item 'n Asimptoot is 'n reguit of gekromde lyn wat 'n grafiek ten minste een keer sny. 
+    \item Gegee die funksie in die vorm $y=ax+q$, word die $y$-afsnit gevind deur $x=0$ te stel en op te los vir $y$.
+    \end{enumerate}
+\item Gegee die funksies $f(x)=2{x}^{2}-6$ en $g(x)=-2x+6$:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Skets $f$ en $g$ op dieselfde assestelsel.
+    \item Bereken die snypunte van $f$ en $g$.
+    \item Gebruik nou die grafieke en hulle snypunte om vir $x$ op te los wanneer:
+	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
+      \item $f(x)>0$
+      \item $g(x)<0$
+      \item $f(x)\leq g(x)$
+	\end{enumerate}
+    \item Gee die vergelyking van die refleksie van $f$ in die $x$-as.
+    \end{enumerate}
+\item Nadat ’n bal laat val word, is die hoogte wat die bal terugbons elke keer minder. Die vergelyking $y=5{(0,8)}^{x}$ toon die verwantskap tussen
+ $x$, die nommer van die bons, en $y$, die hoogte van die bons vir ’n
+spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste tiende van ’n eenheid?
+\item Mark het $15$ muntstukke in R$~5$ en R$~2$-stukke. Hy het $3$ meer R$~2$-stukke as R$~5$-stukke. Hy het ‘n stelsel van vergelykings opgestel om die situasie te toon, waar $x$  die aantal R$~5$-stukke voorstel en $y$ die aantal R$~2$-stukke. Hy het vervolgens die probleem grafies opgelos.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Skryf die sisteem van vergelykings neer.
+    \item Skets die grafieke op dieselfde assestelsel.
+    \item Wat is die oplossing?
+    \end{enumerate}
+%lots of english
+ \item Skets die grafieke van die volgende trigonometriese funksies as
+    $\theta \in[~0^{\circ};360^{\circ}]$. Wys die afsnitte en asimptote.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{27} 
+    \item $y=-4~cos~\theta$
+    \item $y=sin~\theta -2$
+    \item $y=-2~sin~\theta +1$
+    \item $y=tan~\theta+2$
+    \item $y=\frac{cos~\theta}{2}$
+    \end{enumerate}
+  \item As die algemene vergelykings $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ en $y=a~tan~x$ gegee is, bereken die spesifieke vergelykings vir elkeen van die volgende grafieke:\vspace{-25pt}\\
+    \begin{center}
+      \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+%           \hline
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-7)(6,6)
+                \psline[linewidth=0.02, linestyle=dashed](-2,0)(-2,-6)
+                \psline[linewidth=0.02, linestyle=dashed](-0,-6)(-2,-6)
+                \psplot[plotstyle=curve,arrows=<->]{-2.2}{2}{x 3 mul}
+                \rput(-5,5){\textbf{(a)}}
+                \psdots(-2,-6)
+                \rput(0.3, 6.3){$y$}
+                \rput(6.2, 0.2){$x$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(-3.7,-6){$(-2;-6)$}
+              \end{pspicture}
+            }
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-1.7}{1.7}{x 2 exp -2 mul 3 add}
+                \rput(-5,5){\textbf{(b)}}
+                \psdots(1,1)(0,3)
+                \rput(0.3, 5.3){$y$}
+                \rput(5.2, 0.2){$x$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(1.8,1.5){$(1;1)$}
+
+\rput(1,3.3){$(0;3)$}
+            \end{pspicture}}
+          \end{center}
+          \\ %\hline
+   
+   
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-4.5}{-0.6}{x -1 exp -3 mul}
+                \psplot[plotstyle=curve,arrows=<->]{0.6}{4.5}{x -1 exp -3 mul }
+                \psdots(3,-1)
+                \rput(-5,5){\textbf{(c)}}
+                \rput(0.3, 5.3){$y$}
+                \rput(5.2, 0.2){$x$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(3.8,-1.7){$(3;-1)$}
+            \end{pspicture}}
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-2)(6,7)
+                \psplot[plotstyle=curve,arrows=<->]{-3.5}{5}{x 2 add}
+                \rput(-5,7){\textbf{(d)}}
+                \psdots(0,2)(4,6)
+                \rput(0.3, 7.3){$y$}
+                \rput(6.2, 0.2){$x$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(1.2,2){$(0;2)$}
+                \rput(5.2,6){$(4;6)$}
+            \end{pspicture}}
+          \end{center}
+          \\ %\hline
+          
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-6,-5)(5,6)
+                \psset{yunit=0.4, xunit=1}
+                \psset{xunit=0.01111}
+                \psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-45,-4.5)(400,6.5)
+                \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 5 mul 1 add}  
+                \rput(415, 0.2){$x$}
+                \rput(15, 6.7){$y$}
+                \rput(-90,5){\textbf{(e)}}
+%                 \psline[linewidth=0.02, linestyle=dashed](0,6)(360,6)
+                \psline[linewidth=0.02, linestyle=dashed](0,1)(360,1)
+%                 \psline[linewidth=0.02, linestyle=dashed](0,-4)(360,-4)
+                \rput(-30,6){$6$}
+                \rput(-30,1){$1$}
+                \rput(-30,-4){$-4$}
+                \psdots(195,0)(350,0)(90,6)(270,-4)
+                \rput(160,-0.8){$180^{\circ}$}
+                \rput(340,-0.8){$360^{\circ}$}
+                \rput(-20,-0.5){$0$}
+              \end{pspicture}
+            }
+          \end{center}
+          &
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
+                \psset{yunit=0.5,xunit=0.5}
+                \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-3)(5,5)
+                \psplot[plotstyle=curve,arrows=<->]{-4}{1}{2 x exp 2 mul 1 add}
+                \psdots(0,3)
+                \psline[linewidth=0.02,linestyle=dashed](-5,1)(5,1)
+                \rput(-5,5){\textbf{(f)}}
+                \rput(0.3, 5.3){$y$}
+                \rput(5.3, 0.2){$x$}
+                \rput(-0.37,-0.3){$0$}
+                \rput(6,1){$y=1$}
+                \rput(1,3){$(0;3)$}
+            \end{pspicture}}
+          \end{center}
+          \\ %\hline
+%         \end{tabular}
+%       \end{table}
+%     \end{center}
+% 
+%    \begin{center}
+%       \begin{table}[H]
+%         \begin{tabular}{m{6cm}m{6cm}}
+%   
+          \begin{center}
+            \scalebox{0.7}{
+              \begin{pspicture}(0,-2.5)(4,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-4)(4.5,2)
+                \rput(-1,3){\textbf{(g)}}
+                \psline[linewidth=0.02,linestyle=dashed](1,-4)(1,2)
+                \psline[linewidth=0.02,linestyle=dashed](3,-4)(3,2)
+                \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul 2 sub}
+                \rput(0.2,2.3){$y$}
+                \rput(4.5,0.2){$x$}
+                \rput(-0.5,-1){$-2$}
+  \rput(2,-0.4){$180^{\circ}$}
+                \rput(4,-0.4){$360^{\circ}$}
+                \psdots(1.5,-0.5)(2,-1)
+                \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
+              \end{pspicture}
+            }
+          \end{center}
+          
+          \\ %\hline
+          
+        \end{tabular}
+      \end{table}
+    \end{center}
+
+
+\clearpage
+
+  \item $y=2^x$ en $y=-2^x$ is hieronder geskets. Antwoord die vrae wat volg:
+\begin{center}
+    \scalebox{0.9}{
+      \begin{pspicture}(-5,-5)(5,1)
+        %\psgrid
+        \psset{yunit=1.3,xunit=1.3}
+        \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-2.5,-2.5)(2,2.5)
+        \psplot[plotstyle=curve,arrows=<->]{-1.7}{0.6}{2 x exp}
+        \psplot[plotstyle=curve,arrows=<->]{-1.7}{0.6}{2 x exp -1 mul}
+        \psdots(0,1)(0,-1)(-1,0.5)(-1,-0.5)
+        \rput(0.2, 2.6){$y$}
+        \rput(2.1, 0.2){$x$}
+        \rput(-0.2,-0.2){$0$}
+        \rput(0.3,1){$M$}
+        \rput(0.3,-1){$N$}
+        \rput(-1,0.8){$P$}
+        \rput(-1,-0.8){$Q$}
+        \rput(-1.2,0.15){$R$}
+        \psline[linewidth=0.01,linestyle=dashed, dash=0.10cm 0.10cm](-1,0.5)(-1,-0.5)
+        \psline[linewidth=0.01](-1,0.2)(-0.8,0.2)
+        \psline[linewidth=0.01](-0.8,0.2)(-0.8,0)
+    \end{pspicture}}
+\end{center}
+    \\
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{39}
+    \item Bereken die ko\"ordinate van $M$ en $N$.
+    \item Bereken die lengte $MN$.
+    \item Bereken lengte van $PQ$ as $OR$ $1$ eenheid is.
+    \item Gee die vergelyking as $y=2^x$ weerspieël word in die $y$-as.
+    \item Gee die waardeversameling van elke grafiek.
+    \end{enumerate}
+    
+  \item$f(x)=4^x$ en $g(x)=4x^2+q$ is hieronder geskets. Die punte $A(0;1)$, $B(1;4)$ is $C$ gegee. Antwoord die vrae wat volg:
+  \begin{center}  
+    \scalebox{1}{
+      \begin{pspicture}(-5,-5)(5,1)
+        %\psgrid
+        \psset{yunit=0.5,xunit=1}
+        \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-2.5,-5)(2,5)
+        \psplot[plotstyle=curve,arrows=<->]{-1}{1.2}{4 x exp}
+        \psplot[plotstyle=curve,arrows=<->]{-1.2}{1.2}{x 2 exp -4 mul 1 add}
+        \psdots(0,1)(1,4)(1,-3)
+        \rput(0.2, 5.2){$y$}
+        \rput(2.2, 0.1){$x$}
+        \rput(-0.3,1.3){$A$}
+        \rput(1.2,4){$B$}
+        \rput(1.3,-3){$C$}
+        \rput(-0.2,-0.4){$0$}
+        \rput(2,5){$f(x)=4^x$}
+        \rput(2.5,-4){$g(x)=-4x^2+q$}
+        \psline[linewidth=0.01,linestyle=dashed, dash=0.10cm 0.10cm](1,4)(1,-3)
+        \psline[linewidth=0.02](1,0.4)(1.2,0.4)
+        \psline[linewidth=0.02](1.2,0.4)(1.2,0)
+        
+    \end{pspicture}}
+\end{center}
+    \\
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{44}
+    \item Bepaal die waarde van $q$.
+    \item Bereken die lengte van $BC$.
+    \item Gee die vergelyking van $f(x)$ weerspieël in die $x$-as.
+    \item Gee die vergelyking van $f(x)$ $1$ eenheid vertikaal opwaarts geskuif.
+    \item Gee die vergelyking van die asimpotote van $f(x)$.
+    \item Gee die waardeversamelings van $f(x)$ en $g(x)$.
+    \end{enumerate}
+    
+  \item Skets die grafieke van $h(x)=x^2-4$ en $k(x)=-x^2+4$ op dieselfde assestelsel en antwoord die vrae wat volg: 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{49}
+    \item Beskryf die verhouding tussen $h$ en $k$.
+    \item Gee die vergelyking van $k(x)$ weerspieël in die lyn $y=4$.
+    \item Gee die definisieversameling en die waardeversameling van $h$.
+    \end{enumerate}
+    
+  \item Skets die grafieke van $f(\theta)=2~ sin~\theta$ en $g(\theta)=cos~\theta-1$ op dieselfde assestelsel. Gebruik jou skets om te bepaal:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+      % \setcounter{enumi}{52}
+    \item $f(180^{\circ})$
+    \item $g(180^{\circ})$
+    \item $g(270^{\circ}) -f(270^{\circ})$
+    \item Die definisieversameling en die waardeversameling van $g$.
+    \item Die amplitude en periode van $f$.
+    \end{enumerate}
+%additional interpretation of graph exercises
+\item Die grafieke van $y=x$ en $y=\frac{8}{x}$ word in die diagram getoon.\\
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[labels=none, ticks=none]{<->}(0,0)(-5,-8)(5,8)
+
+\psplot[plotstyle=curve,arrows=<->]{1}{5}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{-1}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{5}{x}
+\psdots(2.83,2.83)(-2.83,-2.83)
+% \psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 8.3){$y$}
+\rput(5.4, 0.2){$x$}
+\psline(-2,0)(-2,-4)
+\psline[linestyle=dashed](-2.83,0)(-2.83,-2.83)
+\psline[linestyle=dashed](2.83,0)(2.83,2.83)
+\psline(2.83, 0.5)(3.3,0.5)
+\psline(3.3,0.5)(3.3,0)
+\psline(-2.83, -0.5)(-3.3,-0.5)
+\psline(-3.3,-0.5)(-3.3,0)
+
+\uput[u](-2.83,0){$C$}
+\uput[d](2.83,0){$D$}
+\uput[u](-2,0) {$G$}
+\uput[u](2.83,2.85){$A$}
+\uput[ur] (5,5) {$y=x$}
+\uput[d](-2.83,-2.85){$B$}
+\uput[r](-2,-4){$E$}
+\uput[dr](-2,-2){$F$}
+\uput[dr](0,0) {$0$}
+% \rput(-0.37,-0.3){$0$}
+% \rput(1.4,-0.4){$(1;0)$}
+% \rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+}
+\end{center}
+    Bereken:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item die ko\"ordinate van $A$ en $B$.
+    \item die lengte van $CD$.
+    \item die lengte van $AB$.
+    \item die lengte van $EF$, gegewe $G(-2;0)$.
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\item In die diagram word die skets van  $y=-3x^2+3$ en $y=-\frac{18}{x}$ getoon.\\
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[dx=1, dy=1, Dy=1,Dx=1, arrows=<->, labels=none, ticks=none](0,0)(-5,-14)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.3}{2.3}{x 2 exp -3 mul 3 add}
+\psplot[plotstyle=curve,arrows=<->]{1.3}{5}{x -1 exp -18 mul}
+
+ \psdots(2,-9)(-1,0)(1,0)(0,3)
+
+\rput(0.3, 7.3){$y$}
+\rput(5.2, 0.4){$x$}
+\uput[dl](0,0){$0$}
+% \rput(0.3,4.3){$C$}
+% \rput(2.4,-0.3){$B$}
+% \rput(-2.4,-0.3){$A$}
+% \rput(0.3,-2.3){$D$}
+% \rput(-2.6,-5){$E$}
+\rput(4.8,-3){$y=-\frac{18}{x}$}
+\rput(-4,-5){$y=-3x^2+3$}
+\uput[ul](-1,0){$A$}
+\uput[ur](1,0){$B$}
+\uput[ur](0,3){$C$}
+\uput[l](2,-9){$D$}
+\end{pspicture}
+\end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Bereken die ko\"ordinate van $A$, $B$ en $C$.
+    \item Beskryf in woorde wat gebeur by punt $D$.
+    \item Bereken die ko\"ordinate van $D$.
+    \item Bepaal die vergelyking van die reguitlyn wat deur $C$ en $D$ pas.
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\item In die diagram hieronder is $f(\theta)=3~sin~\theta$ en $g(\theta)=-tan~\theta$ geskets.
+\begin{center}
+            \scalebox{0.8}{
+              \begin{pspicture}(0,-2.5)(4,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-3)(4.5,3)
+             
+                \psline[linewidth=0.01,linestyle=dashed](1,-3)(1,3)
+                \psline[linewidth=0.01,linestyle=dashed](3,-3)(3,3)
+%                 \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{0}{360}{x sin 3 mul}
+                \rput(0.2,3.3){$y$}
+                \rput(4.5,0.2){$x$}
+%                 \rput(-0.5,-1){$-2$}
+  \rput(2,-0.3){$180^{\circ}$}
+                \rput(4,-0.3){$360^{\circ}$}
+\rput(1,-0.3){$90^{\circ}$}
+\rput(3,-0.3){$270^{\circ}$}
+                \psdots(2,0)(1,1.5)(3,-1.5)
+\rput(3.7,-1){$f$}
+\rput(3.5,2){$g$}
+\uput[l](0,1.5){$3$}
+\uput[l](0,-1.5){$-3$}
+%                 \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
+              \end{pspicture}
+            }
+          \end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Gee die definisieversameling van $g$.
+    \item Wat is die amplitude van $f$?
+    \item Bepaal vir watter waardes van $\theta$:
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ]
+	    \item $f(\theta)=0=g(\theta)$
+	    \item $f(\theta)\times g(\theta)<0$
+	    \item $\dfrac{g(\theta)}{f(\theta)}>0$
+	    \item $f(\theta)$ toenemend is?
+  \end{enumerate}
+%NEED DIAGRAM HERE
+  \end{enumerate}
+  \end{enumerate}
+
+% Automatically inserted shortcodes - number to insert 17
+\par \practiceinfo
+\par \begin{tabular}[h]{cccccc}
+% Question 1
+(1.)	02mq	&
+% Question 2
+(2.)	02mr	&
+% Question 3
+(3.)	02ms	&
+% Question 4
+(4.)	02mt	&
+% Question 5
+(5.)	02mu	&
+% Question 6
+(6.)	02mv	\\ % End row of shortcodes
+% Question 7
+(7.)	02mw	&
+% Question 8
+(8.)	02mx	&
+% Question 9
+(9.)	02my	&
+% Question 10
+(10.)	02mz	&
+% Question 11
+(11.)	02n0	&
+% Question 12
+(12.)	02n1	\\ % End row of shortcodes
+% Question 13
+(13.)	02n2	&
+% Question 14
+(14.)	02n3	&
+% Question 15
+(15.)	02n4	&
+% Question 16
+(16.)	02n5	&
+% Question 17
+(17.)	02n6	&
+\end{tabular}
+% Automatically inserted shortcodes - number inserted 17
+
+\end{eocexercises}

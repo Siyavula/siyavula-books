@@ -1,0 +1,28 @@
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tikzpicture}
+      \begin{scope}[scale=3]
+        \draw \samplespace; \labelsamplespace;
+        \draw \circleseparatea; \labelseparatea;
+        \draw \circleseparateb; \labelseparateb;
+      \end{scope}
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}
+      \begin{scope}[scale=3]
+        \draw \samplespace; \labelsamplespace;
+        \draw[fill=lightgray] \circleseparatea;
+        \draw[fill=lightgray] \circleseparateb;
+        \draw (0.3,0.2) node[anchor=west] {$A \cup B$};
+      \end{scope}
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}
+      \begin{scope}[scale=3]
+        \draw \samplespace; \labelsamplespace;
+        \draw[dotted] \circleseparatea;
+        \draw[dotted] \circleseparateb;
+      \end{scope}
+    \end{tikzpicture}
+  \end{tabular}
+\end{center}
