@@ -1,0 +1,896 @@
+\chapter{Probability}
+
+\begin{exercises}{}
+{
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+  \item 
+A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
+    balls. A ball is picked at random. Determine the probability that it
+    is:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item red
+    \item blue or white
+    \item not green
+    \item not green or red
+    \end{enumerate}
+  \item 
+A playing card is selected randomly from a pack of $52$
+    cards. Determine the probability that it is:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item the $2$ of hearts
+    \item a red card
+    \item a picture card
+    \item an ace
+    \item a number less than $4$
+    \end{enumerate}
+\item Even numbers in the range $2$ to $100$ are written on cards. 
+  What is
+    the probability of selecting a multiple of $5$, if a card is drawn
+    at random?
+\end{enumerate}
+}
+\end{exercises}
+
+
+ \begin{solutions}{}{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item %solution 1
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{6}{12} &=& \frac{1}{2}$
+    \item $\frac{(3 + 1)}{12} &=& \frac{1}{3}$
+    \item $1 - (\frac{2}{12}) &=& \frac{5}{6}$
+    \item $1 - \frac{(2 + 6)}{12} &= \frac{4}{12}\\
+				  &= \frac{1}{3}$   
+    \end{enumerate}
+\item %solution 2
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{1}{52}$ (only one in the deck)
+    \item $\frac{1}{2}$ (half the cards are red, half are black)
+    \item $\frac{3}{13}$ (for each suite of 13 cards, there are three picture cards: J, Q, K)
+    \item $\frac{4}{52} = \frac{1}{13}$ (four aces in the deck)
+    \item $\frac{3}{13}$ (for each suite of 13 cards, there are three cards less than $4$: A, $2$ and $3$)
+    \end{enumerate}
+\item %solution 3
+    There are $50$ cards.  They are all even.\\
+    All even numbers that are also multiples of $5$ are multiples of $10$ $(10,~ 20, \ldots, 100)$.\\
+    There are $10$ of them.\\
+    Therefore, the probability is $\frac{10}{50} = \frac{1}{5}$.
+\end{enumerate}}
+\end{solutions}
+
+
+% \section{Relative frequency}
+% \section{Venn diagrams}
+\begin{exercises}{}
+{
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+   \item Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
+    denote the set of even numbers from $1$ to $16$ and $Y$ denote the
+    set of prime numbers from $1$ to $16$. Draw a Venn diagram accurately depicting $S$, $X$ and $Y$.
+\item
+  There are $79$ Grade $10$ learners at school. All of these
+    take some combination of Maths, Geography and History. The number who take
+    Geography is $41$, those who take History is $36$, and $30$ take
+    Maths. The number who take Maths and History is $16$; the number
+    who take Geography and History is $6$, and there are $8$ who take
+    Maths only and $16$ who take only History.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Draw a Venn diagram to illustrate all this information.
+    \item How many learners take Maths and Geography but not History?
+    \item How many learners take Geography only?
+    \item How many learners take all three subjects?
+    \end{enumerate}
+ \item Pieces of paper labelled with the numbers $1$ to $12$ are
+    placed in a box and the box is shaken. One piece of paper is taken
+    out and then replaced.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item What is the sample space, $S$?
+    \item Write down the set $A$, representing the event of taking a
+      piece of paper labelled with a factor of $12$.
+    \item Write down the set $B$, representing the event of taking a
+      piece of paper labelled with a prime number.
+    \item Represent $A$, $B$ and $S$ by means of a Venn diagram.
+    \item Find
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*.} ]
+      \item $n\left(S\right)$
+      \item $n\left(A\right)$
+      \item $n\left(B\right)$
+      \end{enumerate}
+    \end{enumerate}
+  \end{enumerate}
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
+}
+\end{exercises}
+
+
+ \begin{solutions}{}{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item %solution 1
+	  \scalebox{0.8} % Change this value to rescale the drawing.
+	  {
+	  \begin{pspicture}(0,-2.2)(4.5590625,2.2)
+	  \pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+	  \pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+	  \pscircle[linewidth=0.04,dimen=outer](2.82,0.48){1.18}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(4.184531,1.89){\LARGE$S$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.1845312,0.27){\LARGE$2$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.2445313,0.89){\LARGE$4$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.64453125,0.51){\LARGE$6$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.3245312,0.19){\LARGE$8$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.6745312,-0.15){\LARGE$10$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.6045313,1.19){\LARGE$3$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.3245313,1.13){\LARGE $5$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.9645312,0.63){\LARGE$7$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.9045312,-1.41){\LARGE$9$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.0045313,1.5){\LARGE$X$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.4945312,1.9){\LARGE$Y$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.75453126,-0.59){\LARGE$12$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.7545313,-0.61){\LARGE$14$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.3945312,-1.03){\LARGE$16$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.5145311,0.35){\LARGE$11$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.2545311,-0.17){\LARGE$13$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.8445313,-1.69){\LARGE$1$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.6745312,-0.87){\LARGE$15$}
+	  \end{pspicture} 
+	  }
+\item%solution 2
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item
+		      \scalebox{0.8} % Change this value to rescale the drawing.
+		      {
+		      \begin{pspicture}(0,-2.393125)(4.7790623,2.393125)
+		      \pscircle[linewidth=0.04,dimen=outer](1.64,0.7196875){1.18}
+		      \pscircle[linewidth=0.04,dimen=outer](1.16,-0.8203125){1.16}
+		      \pscircle[linewidth=0.04,dimen=outer](2.64,-0.2603125){1.18}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(4.3,0.6096875){\LARGE$G:41$}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(0.77453125,-2.2){\LARGE$H:36$}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(1.9145312,2.1896875){\LARGE$M:30$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(0.81453127,-1.1503125){\LARGE$16$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.7445313,1.3096875){\LARGE$8$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.9245312,-0.7503125){\LARGE$6$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.1945312,-0.0303125){\LARGE$16$}
+		      \end{pspicture} 
+		      }
+
+    \item Each student must do exactly one of the following:
+    \begin{itemize}
+	\item Take only geography;
+	\item Only take maths and/or history;
+    \end{itemize}
+    There are $30 + 36 -16 =50$ students doing the second one, therefore there must be $79 - 50 = 29$ students only doing geography.
+    \newline
+    Each student must do exactly one of:
+    \begin{itemize}
+	\item Only take geography;
+	\item Only take maths;
+	\item Take history;
+	\item Take geography and maths, but not history;
+    \end{itemize}
+    There are $29, 8$ and $36$ of the first three, so the answer to b) is:\\
+    $79 - 29 -8 - 36 = 6$ students
+
+    \item Calculated already: $29$
+
+    \item Each student must do exactly one of:
+    \begin{itemize}
+	\item Geography
+	\item Only maths
+	\item Only history
+	\item Maths and history but not geography
+    \end{itemize}
+    Using the same method as before, the number of students in the last group is:\\
+ 
+    $79 - 41 - 8 - 16 = 14$\\
+
+    But, $16$ students do maths and history, so there must be $16 - 14=2$ students who do all three.
+    \end{enumerate}
+
+\item %solution 3
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $S = \{1; 2;\ldots; 12\}$
+    
+    \item $A = \{1; 2; 3; 4; 6; 12\}$
+
+    \item $B = \{2; 3; 5; 7; 11\}$
+
+    \item
+
+    		  \scalebox{0.8} % Change this value to rescale the drawing.
+
+		  {
+		  \begin{pspicture}(0,-2.2)(4.5590625,2.2)
+		  \pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+		  \pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+		  \pscircle[linewidth=0.04,dimen=outer](2.82,0.48){1.18}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(4.184531,1.89){\LARGE $S$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.0045311,0.65){\LARGE$2$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.8645313,0.19){\LARGE$4$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.4645313,-0.27){\LARGE$6$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.9245312,-1.67){\LARGE$8$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(3.5345314,-1.03){\LARGE$10$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.2245312,0.07){\LARGE$3$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.7645311,1.17){\LARGE$5$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(3.3045313,0.57){\LARGE$7$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.8045313,-1.47){\LARGE$9$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.9945313,1.41){\LARGE$A$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.4945312,1.83){\LARGE$B$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.6145313,-0.95){\LARGE$12$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(3.1945312,-0.01){\LARGE$11$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.9845312,0.77){\LARGE$1$}
+		  \end{pspicture} 
+		  }
+
+    \item
+	\begin{enumerate}[noitemsep, label=\textbf{\roman*.} ]
+	\item $12$
+	\item $6$
+	\item $5$
+	
+	\end{enumerate}
+    
+
+    \end{enumerate}
+\end{enumerate}}
+\end{solutions}
+
+
+% \section{Union and intersection}
+% \section{Probability identities}
+% \section{Mutually exclusive events}
+% \section{Complementary events}
+\begin{exercises}{}
+{
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+  \item A box contains coloured blocks. The number of each colour is
+    given in the following table.
+    \begin{center}
+      \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Colour} & Purple & Orange & White & Pink \\ \hline
+        \textbf{Number of blocks} & $24$ & $32$ & $41$ & $19$ \\ \hline
+      \end{tabular}
+    \end{center}
+   A block is selected randomly. What is the probability that the block will be:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item purple
+    \item purple or white
+    \item pink and orange
+    \item not orange?
+    \end{enumerate}
+  \item A small school has a class with children of various ages. The
+    table gives the number of pupils of each age in the class.
+    \begin{center}
+      \begin{tabular}{|l|c|c|c|}
+        \hline
+               & $3$ years old & $4$ years old & $5$ years old \\\hline
+        \textbf{Male}   & $2$ & $7$ & $6$ \\\hline
+        \textbf{Female} & $6$ & $5$ & $4$ \\\hline
+      \end{tabular}
+    \end{center}
+    If a pupil is selected at random what is the probability that the
+    pupil will be:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item a female
+    \item a $4$ year old male
+    \item aged $3$ or $4$
+    \item aged $3$ and $4$
+    \item not $5$
+    \item either $3$ or female?
+    \end{enumerate}
+  \item Fiona has $85$ labelled discs, which are numbered from $1$ to
+    $85$. If a disc is selected at random what is the probability that
+    the disc number:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \setcounter{enumi}{10}
+    \item ends with $5$
+    \item is a multiple of $3$
+    \item is a multiple of $6$
+    \item is number $65$
+    \item is not a multiple of $5$
+    \item is a multiple of $4$ or $3$
+    \item is a multiple of $2$ and $6$
+    \item is number $1$?
+    \end{enumerate}
+
+ \end{enumerate}
+
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
+}
+\end{exercises}
+
+
+\begin{solutions}{}{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+
+\item %solution 1
+    Before we answer the questions we first work out how many blocks there are in total. This gives us the sample space\\
+    $n(S) = 24 + 32 + 41 + 19$\\
+	 $= 116$
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+
+    \item The probability that a block is purple is:\\
+    $P(\mbox{purple}) = \frac{n(E)}{n(S)}\\
+     P(\mbox{purple}) = \frac{24}{116}\\
+     P(\mbox{purple}) = 0,21$
+
+    \item The probability that a block is either purple or white is:\\
+    $P(\mbox{purple} \cup \mbox{white}) = P(\mbox{purple}) + P(\mbox{white}) - P(\mbox{purple} \cap \mbox{white})\\
+    = \frac{24}{116} + \frac{41}{116} - \frac{24}{116} \times \frac{41}{116}\\
+    = 0,64$
+
+    \item Since one block cannot be two colours the probability of this event is $0$.
+
+    \item We first work out the probability that a block is orange:\\
+    $P(\mbox{orange}) = \frac{32}{116}
+	       = 0,28$\\
+    The probability that a block is not orange is:\\
+    $P(\mbox{not orange}) = 1 - 0,28\\
+		   = 0,72$
+    \end{enumerate}
+    
+\item %solution 2
+We calculate the total number of pupils at the school:\\
+$6 + 2 + 5 + 7 + 4 + 6 = 30$
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item The total number of female children is $6 + 5 + 4 = 15$.\\
+    The probability of a randomly selected child being female is:\\
+    $P(\mbox{female}) = \frac{n(E)}{n(S)}\\
+     P(\mbox{female}) = \frac{15}{30}\\
+     P(\mbox{female}) = 0,5$
+
+    \item The probability of a randomly selected child being a 4 year old male is:\\
+    $P(\mbox{male}) = \frac{7}{30}\\
+	      = 0,23$
+
+    \item There are $6 + 2 + 5 + 7 = 20$ children aged 3 or 4.\\
+    The probability of a randomly selected child being either 3 or 4 is:\\
+    $\frac{20}{30} = 0,67$
+
+    \item A child cannot be both 3 and 4, so the probability is $0$.
+
+    \item This is the same as a randomly selected child being either 3 or 4 and so is $0,67$.
+
+    \item The probability of a child being either 3 or female is:\\
+    $P(3 \cup \mbox{female}) = P(3) + P(\mbox{female}) - P(3 \cap \mbox{female})\\
+		      = \frac{10}{30} + 0,5 - \frac{10}{30} \times \frac{15}{30}\\
+		      = 0,67$
+    \end{enumerate}
+    
+\item %solution 3
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item The set of all discs ending with $5$ is: $\{5$; $15$; $25$; $35$; $45$; $55$; $65$; $75$; $85\}$. This has $9$ elements.\\
+ 
+    The probability of drawing a disc that ends with $5$ is:\\
+    $P(5) = \frac{n(E)}{n(S)}\\
+     P(5) = \frac{9}{85}\\
+     P(5) = 0,11$
+
+    \item The set of all discs that are multiples of $3$ is: $\{3$; $6$; $ 9$; $ 12$; $ 15$; $ 18$; $ 21$; $ 24$; $ 27$; $ 30$; $ 33$; $ 36$; $ 39$; $ 42$; $ 45$; $ 48$; $ 51$; $ 54$; $ 57$; $ 60$; $ 63$; $ 66$; $ 69$; $ 72$; $ 75$; $ 78$; $ 81$; $ 84\}$. This has $28$ elements.\\
+ 
+    The probability of drawing a disc that is a multiple of $3$ is:
+    $P(3_m) = \frac{28}{85}
+	    = 0,33$
+
+    \item The set of all discs that are multiples of $6$ is: $\{6$; $ 12$; $ 18$; $ 24$; $ 30$; $ 36$; $ 42$; $ 48$; $ 54$; $ 60$; $ 66$; $ 72$; $ 78$; $ 84\}$. This set has $14$ elements.
+    The probability of drawing a disc that is a multiple of $6$ is:\\
+    $P(6_m) = \frac{14}{85}\\
+	    = 0,16$
+
+    \item There is only one element in this set and so the probability of drawing $65$ is:\\
+    $P(65) = \frac{1}{85}\\
+	   = 0,01$
+
+    \item The set of all discs that is a multiple of $5$ is: $\{5$; $ 10$; $ 15$; $ 20$; $ 25$; $ 30$; $ 35$; $ 40$; $ 45$; $ 50$; $ 55$; $ 60$; $ 65$; $ 70$; $ 75$; $ 80$; $ 85\}$. This set contains $17$ elements. Therefore the number of discs that are not multiples of $5$ is: $85 − 17 = 68$.\\
+   
+    The probability of drawing a disc that is not a multiple of $5$ is:\\
+    $P(\mbox{not }5_m) = \frac{68}{85}\\
+	       = 0,80$
+
+    \item In part b), we worked out the probability for a disc that is a multiple of $3$. Now we work out the number of elements in the set of all discs that are multiples of $4$: $\{4$; $ 8$; $ 12$; $ 16$; $ 20$; $ 24$; $ 28$; $ 32$; $ 36$; $ 40$; $ 44$; $ 48$; $ 52$; $ 56$; $ 60$; $ 64$; $ 68$; $ 72$; $ 76$; $ 80$; $ 84\}$. This has $28$ elements.\\
+    
+    The probability that a disc is a multiple of either $3$ or $4$ is:\\
+    $P(3_m \cup 4_m) = P(3_m) + P(4_m) - P(3_m \cap 4_m)\\
+    = 0,33 + \frac{28}{85} - 0,33 \times \frac{28}{85}\\
+    = 0,55$
+    
+    \item The set of all discs that are a multiples of $2$ and $6$ is the same as the set of all discs that are a multiple of $6$. Therefore the probability of drawing a disc that is both a multiple of $2$ and $6$ is:
+ 
+    $0,16$
+    
+    \item There is only $1$ element in this set and so the probability is $0,01$.
+    \end{enumerate}
+
+\end{enumerate}}
+\end{solutions}
+
+
+\begin{eocexercises}{}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+  \item A group of $45$ children were asked if they eat Frosties and/or
+    Strawberry Pops. $31$ eat both and $6$ eat only Frosties. What is the
+    probability that a child chosen at random will eat only Strawberry
+    Pops?
+  \item In a group of $42$ pupils, all but $3$ had a packet of chips
+    or a Fanta or both. If $23$ had a packet of chips and $7$ of these
+    also had a Fanta, what is the probability that one pupil chosen at
+    random has:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item both chips and Fanta
+    \item only Fanta
+    \end{enumerate}
+  \item Use a Venn diagram to work out the following probabilities
+    from a die being rolled:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item a multiple of $5$ and an odd number
+    \item a number that is neither a multiple of $5$ nor an odd
+      number
+    \item a number which is not a multiple of $5$, but is odd
+    \end{enumerate}
+  \item A packet has yellow and pink sweets. The probability of taking
+    out a pink sweet is $\frac{7}{12}$.What is the probability of taking out a yellow sweet?
+  \item In a car park with $300$ cars, there are $190$ Opels. What is the
+    probability that the first car to leave the car park is:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item an Opel
+    \item not an Opel
+    \end{enumerate}
+  \item Tamara has $18$ loose socks in a drawer. Eight of these are
+    orange and two are pink. Calculate the probability that the first
+    sock taken out at random is:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item orange
+    \item not orange
+    \item pink
+    \item not pink
+    \item orange or pink
+    \item neither orange nor pink
+    \end{enumerate}
+  \item A plate contains $9$ shortbread cookies, $4$ ginger biscuits,
+    $11$ chocolate chip cookies and $18$ Jambos. If a biscuit is
+    selected at random, what is the probability that:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item it is either a ginger biscuit of a Jambo
+    \item it is not a shortbread cookie
+    \end{enumerate}
+  \item $280$ tickets were sold at a raffle. Ingrid bought $15$
+    tickets. What is the probability that Ingrid:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item wins the prize
+    \item does not win the prize
+    \end{enumerate}
+  \item The children in a nursery school were classified by hair and
+    eye colour. $44$ had red hair and not brown eyes, $14$ had brown eyes
+    and red hair, $5$ had brown eyes but not red hair and $40$ did not
+    have brown eyes or red hair.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item How many children were in the school?
+    \item What is the probability that a child chosen at random has:
+      \begin{enumerate}
+      \item brown eyes
+      \item red hair
+      \end{enumerate} 
+    \item A child with brown eyes is chosen randomly. What is the
+      probability that this child will have red hair?
+    \end{enumerate}
+  \item A jar has purple, blue and black sweets in it. The probability
+    that a sweet chosen at random will be purple is $\frac{1}{7}$
+    and the probability that it will be black is $\frac{3}{5}$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item If I choose a sweet at random what
+      is the probability that it will be:
+      \begin{enumerate}
+      \item purple or blue
+      \item black
+      \item purple
+      \end{enumerate}
+    \item If there are $70$ sweets in the jar how many purple ones are
+      there?
+    \item $\frac{2}{5}$ of the purple sweets in b) have streaks on
+      them and the rest do not. How many purple sweets have streaks?
+    \end{enumerate}
+\item For each of the following, draw a Venn diagram to represent
+    the situation and find an example to illustrate the situation.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item a sample space in which there are two events that are not
+      mutually exclusive
+    \item a sample space in which there are two events that are
+      complementary
+    \end{enumerate}
+\item Use a Venn diagram to prove that the probability of either
+    event $A$ or $B$ occurring is given by: ($A$ and $B$ are not
+    exclusive)
+    \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
+\item All the clubs are taken out of a pack of cards. The remaining
+    cards are then shuffled and one card chosen. After being chosen,
+    the card is replaced before the next card is chosen.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item What is the sample space?
+    \item Find a set to represent the event, $P$, of drawing a picture
+      card.
+    \item Find a set for the event, $N$, of drawing a numbered card.
+    \item Represent the above events in a Venn diagram.
+    \item What description of the sets $P$ and $N$ is suitable?
+      (Hint: Find any elements of $P$ in $N$ and of $N$ in $P$).
+    \end{enumerate}
+\item A survey was conducted at Mutende Primary School to establish how many of the $650$ learners buy vetkoek and how many buy sweets during break. The following was found:
+\begin{itemize}[noitemsep]
+ \item $50$ learners bought nothing
+\item $400$ learners bought vetkoek
+\item $300$ learners bought sweets
+\end{itemize}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item Represent this information with a Venn diagram
+\item If a learner is chosen randomly, calculate the probability that this learner buys:
+\begin{enumerate}[itemsep=1pt,  label=\textbf{\roman*}. ]
+\item sweets only
+\item vetkoek only
+\item neither vetkoek nor sweets
+\item vetkoek and sweets
+\item vetkoek or sweets
+\end{enumerate}
+\end{enumerate}
+\item In a survey at Lwandani's Secondary School $80$ people were questioned to find out how many read the Sowetan and how many read the Daily Sun newspaper or both. The survey revealed that $45$ read the Daily Sun, $30$ read the Sowetan and $10$ read neither. Use a Venn diagram to find the percentage of people that read:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item Only the Daily Sun
+\item Only the Sowetan
+\item Both the Daily Sun and the Sowetan
+\end{enumerate}
+  \end{enumerate}
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA& (4.) AAA& (5.) AAA\\
+%     (6.) AAA& (7.) AAA& (8.) AAA& (9.) AAA& (10.) AAA\\
+%     (11.) AAA& (12.) AAA& (13.) AAA \\
+%   \end{tabularx}
+\end{eocexercises}
+
+
+ \begin{eocsolutions}{}{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+
+
+\item %solution 1
+
+$45($All$) - 6($only Frosties$) - 31 ($both$) = 8 ($only Strawberry Pops$)$\\
+Therefore $\frac{8}{45}=0,18$
+
+\item %solution 2
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{7}{42} = \frac{1}{6}$
+
+    \item Since $42 - 3 = 39$ had at least one, and $23 + 7$ had a packet of chips, then $39 - 30 = 9$ only had Fanta.\\
+    $\frac{9}{42} = \frac{3}{14}$
+    \end{enumerate}
+
+\item %solution 3
+	    \scalebox{0.8} % Change this value to rescale the drawing.
+	    {
+	    \begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+	    \pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+	    \pscircle[linewidth=0.04,dimen=outer](1.08,-0.03671875){0.94}
+	    \pscircle[linewidth=0.04,dimen=outer](2.01,1.2132813){0.45}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(3.1245313,1.7132813){\LARGE$S$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.0045313,0.5132812){\LARGE$2$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(0.6045312,0.03328125){\LARGE$4$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.3245312,-0.34671876){\LARGE$6$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(2.8445313,-0.50671875){\LARGE$3$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.9845313,1.1732812){\LARGE$5$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(2.7645311,0.03328125){\LARGE$1$}
+	    \pscircle[linewidth=0.04,dimen=outer](2.81,-0.20671874){0.69}
+	    \end{pspicture}
+	    }\\
+    Multiples of $5 :5$\\
+    Odd number: $1, 3, 5$\\
+    Neither: $2, 4, 6$\\
+    Both: $5$
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{1}{6}$
+    \item $\frac{3}{6} = \frac{1}{2}$
+    \item $\frac{2}{6} = \frac{1}{3}$
+    \end{enumerate}
+\item %solution 4\\
+$1 - \frac{7}{12} = \frac{5}{12}$
+\item %solution 5
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{190}{300} = \frac{19}{30}$
+    \item $1 - \frac{19}{30} = \frac{11}{30}$
+    \end{enumerate}
+\item %solution 6
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{8}{18} = \frac{4}{9}$
+    \item $1 - \frac{4}{9} = \frac{5}{9}$
+    \item $\frac{2}{18} = \frac{1}{9}$
+    \item $1 - \frac{1}{9} = \frac{8}{9}$
+    \item $\frac{1}{9} + \frac{4}{9} = \frac{5}{9}$
+    \item $1 - \frac{5}{9} = \frac{4}{9}$
+    \end{enumerate}
+\item %solution 7
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Total number of biscuits is $9 + 4 + 11 + 18 = 42$\\
+    $\frac{4}{42} + \frac{18}{42} = \frac{22}{42}$\\
+    $=\frac{11}{21}$
+    \item $1 - \frac{9}{42} = 1 - \frac{3}{14}$\\
+    $=\frac{11}{14}$
+    \end{enumerate}
+\item %solution 8
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{15}{280} = \frac{3}{56}$
+    \item $1 - \frac{3}{56} = \frac{53}{56}$
+    \end{enumerate}
+\item %solution 9
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item All $4$ groups are mutually exclusive, so total number of children is $44 + 14 + 5 + 40 = 103$.
+    \item
+	\begin{enumerate}[itemsep=1pt,  label=\textbf{\roman*}. ]
+	\item $\frac{19}{103}$
+	\item $\frac{58}{103}$
+	\end{enumerate}
+    \item $\frac{14}{(14 + 5)} = \frac{14}{19}$
+    \end{enumerate}
+\item %solution 10
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item 
+	\begin{enumerate}[itemsep=1pt,  label=\textbf{\roman*}. ]
+	\item Same as not black: $1 - \frac{3}{5} = \frac{2}{5}$
+	\item $\frac{3}{5}$
+	\item $\frac{1}{7}$
+	\end{enumerate}
+    \item $\frac{1}{7} \times 70 = 10$
+    \item $10 \times \frac{2}{5} = 4$
+    \end{enumerate}
+\item %solution 11
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item
+    			\scalebox{0.8} % Change this value to rescale the drawing.
+			{
+			\begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+			\pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+			\pscircle[linewidth=0.04,dimen=outer](1.2,-0.07671875){0.94}
+			\usefont{T1}{ppl}{m}{n}
+			\rput(3.1245313,1.7132813){\LARGE$S$}
+			\pscircle[linewidth=0.04,dimen=outer](2.45,-0.06671875){0.87}
+			\end{pspicture}
+			}
+    \item
+			\scalebox{0.8} % Change this value to rescale the drawing.
+			{
+			\begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+			\pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+			\usefont{T1}{ppl}{m}{n}
+			\rput(3.1245313,1.7132813){\LARGE$S$}
+			\psline[linewidth=0.04cm](2.78,1.4032812)(0.88,-1.5767188)
+			\end{pspicture}
+			}
+    \end{enumerate}
+
+\item %solution 12
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+    \begin{pspicture}(-2,-2)(3.5,2)
+    \usefont{T1}{ppl}{m}{n}
+    \rput(0.0,0.0){\LARGE$A$ not $B$}
+    \rput(1.0,2.3){\LARGE$A$}
+    \rput(3.0,2.3){\LARGE$B$}
+    \pscircle[linewidth=0.04,dimen=outer](1.0,0.0){2.0}
+    \usefont{T1}{ppl}{m}{n}
+    \rput(4.0,0.0){\LARGE$B$ not $A$}
+    \pscircle[linewidth=0.04,dimen=outer](3,0.0){2.0}
+    \usefont{T1}{ppl}{m}{n}
+    \rput(2.0,0.0){\LARGE$A$ and $B$}
+    \end{pspicture}
+}
+\item 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\{$deck of cards without clubs$\}$
+    \item $P = \{J$; $Q$; $K$ of hearts, diamonds or spades$\}$
+    \item $N = \{A$; $2$; $ 3$; $ 4$; $ 5$; $ 6$; $ 7$; $ 8$; $ 9$; $ 10$ of hearts, diamonds or spades$\}$
+    \item
+	      \scalebox{0.7} % Change this value to rescale the drawing.
+			{
+			\begin{pspicture}(0,-2.4442186)(8.7890625,2.4442186)
+			\pscircle[linewidth=0.04,dimen=outer](2.0654688,0.26078126){1.37}
+			\pscircle[linewidth=0.04,dimen=outer](5.905469,-0.17921875){2.21}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(1.4245312,1.1407813){\LARGE$J\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(1.9445312,0.50078124){\LARGE$Q\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(2.5845313,-0.07921875){\LARGE$K\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(2.1845312,-0.61921877){\LARGE$K\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(1.4645312,-0.33921874){\LARGE$K\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(2.9845314,0.68078125){\LARGE$Q\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(2.4,1.2807813){\LARGE$Q\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(1.3845313,0.7){\LARGE$J\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(1.1045313,0.22078125){\LARGE$J\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.924531,1.5207813){\LARGE$A\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.374531,-1.2992188){\LARGE$2\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.6345315,-1.6592188){\LARGE$3\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.174531,-0.95921874){\LARGE$4\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.494531,0.48078126){\LARGE$5\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.7345314,1.4807812){\LARGE$6\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.2145314,1.7607813){\LARGE$7\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.334531,-0.33921874){\LARGE$8\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(7.214531,0.06078125){\LARGE$9\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.9245315,0.30078125){\LARGE$10\diamondsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.824531,1.1007812){\LARGE$A\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.684531,0.82078123){\LARGE$A\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.774531,1.1607813){\LARGE$7\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.554531,0.98078126){\LARGE$7\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(7.394531,0.48078126){\LARGE$6\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.854531,0.68078125){\LARGE$6\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(7.5745316,-0.35921875){\LARGE$9\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(7.2345314,-0.67921877){\LARGE$9\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.124531,-0.11921875){\LARGE$10\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.284531,-0.63921875){\LARGE$10\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.6945314,0.12078125){\LARGE$5\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.134531,-0.23921876){\LARGE$5\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.774531,-0.63921875){\LARGE$8\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.454531,-1.0392188){\LARGE$8\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.7145314,-1.2592187){\LARGE$4\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(4.6945314,-1.5592188){\LARGE$4\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.2745314,-2.0192187){\LARGE$3\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.014531,-2.0){\LARGE$3\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(7.2745314,-1.0792187){\LARGE$2\heartsuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(6.7745314,-1.7792188){\LARGE$2\spadesuit$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(2.0845313,1.9007813){\LARGE$P$}
+			\usefont{T1}{ptm}{m}{n}
+			\rput(5.974531,2.2407813){\LARGE$N$}
+			\end{pspicture} 
+			}
+\item Mutually exclusive and complementary
+ 
+    \end{enumerate}
+\item 
+\begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ]
+ \item 
+\scalebox {0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.97)(5.0,1.97)
+\psframe[linewidth=0.04,dimen=outer](5.0,1.97)(0.0,-1.97)
+\pscircle[linewidth=0.04,dimen=outer](1.78,0.35){1.08}
+\pscircle[linewidth=0.04,dimen=outer](3.0,-0.25){1.0}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.365,1.34){50}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.59625,0.2){300}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.4796875,-0.18){200}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.3825,-0.04){100}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.84625,1.12){V}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.4192188,-0.88){S}
+\end{pspicture} 
+}
+\item %If a learner is chose randomly, calculate the probability that this learner buys:
+\begin{enumerate}[noitemsep, label=\textbf{(\roman*)} ]
+\item $\frac{200}{650} = 30,8\%$
+\item $\frac{300}{650} = 46,2\%$
+\item $\frac{50}{650} = 7,7\%$
+\item $\frac{100}{650} = 15,4\%$
+\item $\frac{600}{650} = 92,3\%$
+\end{enumerate}
+\end{enumerate}
+\item 
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.97)(5.0,1.97)
+\psframe[linewidth=0.04,dimen=outer](5.0,1.97)(0.0,-1.97)
+\pscircle[linewidth=0.04,dimen=outer](1.78,0.35){1.08}
+\pscircle[linewidth=0.04,dimen=outer](3.0,-0.25){1.0}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3525,1.34){10}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.5107813,0.2){40}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3842187,-0.18){25}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.3895311,0.04){5}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7873437,1.02){D/S}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1070313,-0.84){D/B}
+\end{pspicture} 
+}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $\frac{40}{80} = 50\%$
+\item $\frac{25}{80} = 31,25\%$
+\item $\frac{5}{80} = 6,25\%$
+\end{enumerate}
+\end{enumerate}}
+\end{eocsolutions}
+
+

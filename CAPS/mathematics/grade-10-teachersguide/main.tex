@@ -1,0 +1,46 @@
+\documentclass[9pt]{extbook}
+    
+\include{preample}
+
+     
+\begin{document}
+    \raggedbottom
+    \bibliographystyle{plain} 
+    
+    \catcode`\^^J=10 %ignore line feeds since they mean nothing to XML
+    \catcode`\^^M=10 %ignore carriage returns since they mean nothing to XML
+    \frontmatter 
+   
+    \tableofcontents
+    \mainmatter
+    
+    \renewcommand{\sectionmark}[1]{\markright{\thesection}{}}
+    \renewcommand{\footrulewidth}{0.4pt}
+    
+    \newpage
+
+
+% chapter includes
+\part{Introduction}
+\include{TG_Gr10-Introduction}
+
+\part{Solutions}
+\setcounter{chapter}{0}
+\include{TG_Gr10-AlgebraicExpressions}
+\include{TG_Gr10-EquationsandInequalities}
+\include{TG_Gr10-Exponentials}
+\include{TG_Gr10-NumberPatterns}
+\include{TG_Gr10-FunctionsAndGraphs}
+\include{TG_Gr10-Finance}
+\include{TG_Gr10-Trigonometry}
+\include{TG_Gr10-AnalyticalGeometry}
+\include{TG_Gr10-Statistics}
+\include{TG_Gr10-Probability}
+\include{TG_Gr10-Geometry}
+\include{TG_Gr10-Measurement}
+
+
+
+
+\end{document}
+  
